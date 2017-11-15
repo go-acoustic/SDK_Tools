@@ -1,0 +1,20 @@
+<!-- control_table.tlt version_7 -->
+<div id="{{["id"]}}"
+  data-tealeaf-native="true"
+  style="position: absolute;
+        {{if(exists(["style"],"bgColorRGBA"),concat("background-color:",concat(["style"]["bgColorRGBA"],";")),
+                                            if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
+                                                                           cssDecl("inherit","background-color")))}}
+        {{if(exists([], "style", "textAlphaColor"), cssDecl(["style"]["textAlphaColor"], "opacity"), "/* TLT_WARN: opacity not rendered */")}}
+        {{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}">
+  {{
+    if(
+      exists([],"currState","data"),
+      template(["currState"]["data"],"iOS\\array_controls.tlt"),
+      "<!-- TLT_WARNING: MISSING currState.data, if table is empty, then it is ok disregard warning. -->\r\n"
+    )
+}}
+</div>

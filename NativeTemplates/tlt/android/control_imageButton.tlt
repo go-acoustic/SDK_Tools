@@ -1,0 +1,38 @@
+<!-- control_imageButton.tlt version_11 -->
+<div id="{{["id"]}}"
+  data-tealeaf-native="true" 
+  style="position:fixed;
+        padding:0px 0px 0px 0px;
+        {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}
+        {{if(exists([],"image"),cssDecl("visible","visibility"),cssDecl("hidden","visibility"))}}
+        {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+        {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+        {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+        {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+        {{if(and(exists([],"image"),and(exists(["image"],"type"),eq(["image"]["type"],"url"))),
+            concat("background-image:url",["image"]["value"],");")
+        ,"")}}
+        {{if(and(exists([],"image"),exists(["image"],"base64Image")),
+            concat("background-image:url(data:image/",concat(["image"]["mimeExtension"],";base64,"),["image"]["base64Image"],");")
+        ,"")}}
+        {{if(and(exists([],"image"),exists(["image"],"value")), 
+            concat("background-image:url(http://localhost:38000/images/", concat(["image"]["value"], ".",if(eq(["image"]["mimeExtension"], "xml"), "png", ["image"]["mimeExtension"]) ), ");")
+        ,"")}}
+        {{if(exists([],"image"),concat("background-size:100%",";"),"")}}
+        {{if(exists([],"image"),concat("background-repeat:no-repeat",";"),"")}}" >
+  <label style="box-sizing:border-box;
+               position:fixed;
+               {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+               {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+               {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+               {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"line-height","px")}}
+               {{if(exists(["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
+               {{if(exists(["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}
+               {{if(exists(["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"text-align: center;")}}
+               {{if(and(exists(["style"],"textAlign"),eq(["style"]["textAlign"],"left")),"padding-left: 10;","")}}
+               {{if(and(exists(["style"],"textAlign"),eq(["style"]["textAlign"],"right")),"padding-right: 10;","")}}
+               {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+               {{default(template(["currState"]["font"],"android\\css_font.tlt"),"<!-- json currState\font not specified or problem with css_font.tlt-->") }}"
+      >{{default(["currState"]["text"],"<!-- currState\text was not found -->")}}
+  </label>
+</div>

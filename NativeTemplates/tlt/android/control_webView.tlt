@@ -1,0 +1,13 @@
+<!-- control_webView.tlt version_5 -->
+<div style="{{default(template(["position"], "android\\css_position.tlt"), "<!--json position not specified or problem with css_position.tlt -->")}}
+           {{if(exists(["style"],"zIndex"), cssDecl(["style"]["zIndex"], "z-index"),"")}}
+           background-color: white;">
+  <iframe style="width: 100%;
+                height: 100%;
+                box-sizing: border-box;"
+    id="{{["id"]}}"
+    data-tealeaf-native="true"
+    name="{{["id"]}}"
+    src="{{if(exists([],"currState","dcid"),concat("!!tldcid5525!!",["currState"]["dcid"],"!!tlurl5525!!",["currState"]["url"]),["currState"]["url"])}}">
+  </iframe>
+</div>

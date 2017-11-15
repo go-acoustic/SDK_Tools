@@ -1,0 +1,28 @@
+<!-- control_slider.tlt version_7 -->
+<div data-tealeaf-native="true"
+  name="{{["id"]}}" 
+  id="{{["id"]}}" 
+  class="form-range-control" 
+  style="position:fixed;
+        {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+        {{cssDecl(add(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),8),"left","px")}}
+        {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+        {{if(exists(["style"],"paddingRight"),
+          cssDecl(div(numericToFloat(sub(["position"]["width"],["style"]["paddingRight"])),[$"clientEnvironment"]["pixelDensity"]),"width","px"),
+            cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px"))}}
+        {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
+  <div class="tlThemeColor"
+    id="{{["id"]}}-range"
+    style="width: {{if(gt(["currState"]["value"],"0"),["currState"]["value"],0)}}%;
+           height: 2px;
+           bottom: 50%;
+           position: absolute;
+           {{cssDecl(div(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2),"margin-top","px")}}
+           margin-left: 2px;"></div>
+    <input type="range"
+      id="{{["id"]}}-input" 
+      value="{{["currState"]["value"]}}" 
+      min="0" 
+      max="{{["currState"]["maxValue"]}}"
+      style="{{cssDecl(div(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2),"margin-top","px")}}">
+</div>  

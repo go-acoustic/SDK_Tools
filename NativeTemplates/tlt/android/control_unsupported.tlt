@@ -1,0 +1,14 @@
+<!-- control_unsupported.tlt version_3 -->
+<div
+    id="{{["id"]}}" data-tealeaf-native="true" 
+    style="position:fixed;
+           background-color:yellow;
+           opacity:0.4;
+           filter: alpha(opacity=40); /* For IE8 and earlier */
+           {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+           {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
+    <label>Unsupported control: {{["type"]}}<label>
+</div>

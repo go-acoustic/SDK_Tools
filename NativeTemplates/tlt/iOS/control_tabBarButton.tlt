@@ -1,0 +1,14 @@
+<!-- control_tabBarButton.tlt version_4 -->
+<td id="{{["id"]}}"
+  data-tealeaf-native="true"
+  style="border-left-style: solid;
+        border-left-width: 1px;
+        border-color: inherit;
+        {{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}
+        background-color: {{if(exists([], "style", "bgColor"),concat("",htmlColor(["style"]["bgColor"])),"inherit")}};
+        color: {{if(exists([], "style", "bgColor"),"#ffffff;","inherit")}};">
+  {{if(exists([], "currState", "text"),["currState"]["text"],"")}}
+</td>

@@ -1,0 +1,216 @@
+<!-- root.tlt version_23 -->
+<html>
+<head>
+  <!-- Android replay -->
+  <title>{{["layout"]["name"]}}</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <link rel="stylesheet" href="http://localhost:38000/fontAwesome/css/font-awesome.min.css">
+  {{template([],"android\\custom\\headAdditions1.tlt","")}}
+  <style>
+  :root {
+    --theme-color: #{{if(exists([],"layout","style","colorAccent"),htmlColor(["layout"]["style"]["colorAccent"]),"ff0080")}};
+    --hot-pink: #ff0080;
+    --dark-grey: #7e7e7e;
+    --grey: #d3d3d3;
+  }
+
+  .mblBackground {
+    background-color: white;
+  }
+
+  body {
+    position:relative;
+    margin: 0;
+  }
+
+  #mask {
+    background-color: navy;
+    background: linear-gradient(to bottom,  rgb(63,84,97) 0%,rgb(34,42,48) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    padding: 10px;
+    color: white;
+    font-family: arial;
+    font-size: 12px;
+  }
+
+  #mask b {
+    color: DarkOrange;
+  }
+    
+  #mask p {
+    width: 330px;
+  }
+
+  .tlCurrentDeviceHeight {
+    height: {{if(exists([],"deviceHeight"),["deviceHeight"],div(numericToFloat([$"clientEnvironment"]["height"]),[$"clientEnvironment"]["pixelDensity"]))}}px;
+  }
+
+  .tlCurrentDeviceWidth {
+    width: {{if(exists([],"deviceWidth"),["deviceWidth"],div(numericToFloat([$"clientEnvironment"]["width"]),[$"clientEnvironment"]["pixelDensity"]))}}px;
+  }
+
+  /* app background color */
+  .tlBackgroundColor {
+    {{if(exists(["layout"]["style"],"bgColor"),cssDecl(htmlColor(["layout"]["style"]["bgColor"]),"background-color"),"background-color: white;")}}
+  }
+  
+  .tlThemeColor {
+    background-color: var(--theme-color);
+  }
+  
+  /* checkbox styles */
+  .checkbox-custom, .radio-custom {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .checkbox-custom, .checkbox-custom-label, .radio-custom, .radio-custom-label {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .checkbox-custom-label, .radio-custom-label {
+    position: relative;
+  }
+
+  .checkbox-custom + .checkbox-custom-label:before {
+    content: '';
+    background: white;
+    border: 2px solid var(--dark-grey);
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+    border-radius: 5px;
+  }
+
+  .checkbox-custom:checked + .checkbox-custom-label:before {
+    content: "\f00c";
+    font-family: 'FontAwesome';
+    background: var(--theme-color);
+    color: white;
+  }
+    
+  .checkbox-custom:focus + .checkbox-custom-label, .radio-custom:focus + .radio-custom-label {
+    outline: 1px solid var(--dark-grey);
+  }
+
+  /*radio buttons*/
+  .radio-custom + .radio-custom-label:before {
+    content: '';
+    background: white;
+    border: 2px solid var(--dark-grey);
+    display: inline-block;
+    vertical-align: middle;
+    width: 14px;
+    height: 14px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+  }
+
+  .radio-custom + .radio-custom-label:before {
+    border-radius: 50%;
+  }
+
+  .radio-custom:checked + .radio-custom-label:before {
+    background: var(--theme-color);
+    border: 2px solid var(--theme-color);
+    box-shadow: inset 0px 0px 0px 4px white;
+  }
+
+  /* slider */
+  .form-range-control input[type="range"] {
+    -webkit-appearance: none;
+    background-color: #d3d3d3;
+    height: 2px;
+    width: 100%;
+  }
+    
+  .form-range-control input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    background: var(--theme-color);
+    border-radius: 50%;
+    cursor: -moz-grab;
+    cursor: -webkit-grab; 
+  }
+
+  .form-range-control input[type=range]::-moz-range-thumb {
+    width: 16px;
+    height: 16px;
+    background: var(--theme-color);
+    border-radius: 50%;
+    cursor: -moz-grab;
+    cursor: -webkit-grab; 
+  }
+
+  .form-range-control input[type=range]::-ms-thumb {
+    width: 16px;
+    height: 16px;
+    background: var(--theme-color);
+    border-radius: 50%;
+    cursor: -moz-grab;
+    cursor: -webkit-grab; 
+  }
+
+  .form-range-control input[type=range]::-ms-fill-lower {
+    background: var(--theme-color);
+  }
+
+  .form-range-control input[type=range]::-moz-range-progress {
+    background: var(--theme-color);
+  }
+  
+  </style>
+  <script> 
+  // To fix progress spinners, because we only render in Mozilla
+  function checkStyle() {
+    var progressContainers = document.getElementsByClassName("mblProgContainer");
+    if (progressContainers) {
+      for (var i=0; i < progressContainers.length;i++) {
+        var styles = progressContainers[i].attributes["style"].value.split(";");
+        for (var j=0; j < styles.length;j++) {
+          var t1 = addChromeStyles(styles[j],"transform:","-webkit-transform");
+          var t2 = addChromeStyles(styles[j],"transform-origin:","-webkit-transform-origin");
+          progressContainers[i].attributes["style"].value = progressContainers[i].attributes["style"].value + t1 + t2;
+        }
+      }
+    }
+  }
+  
+  function addChromeStyles(styleObj, styleProp, newStyleProp) {
+    if(styleObj.lastIndexOf(styleProp) > -1) {
+      var styleFound = styleObj.split(":");
+      return newStyleProp + ": " + styleFound[1] + ";";
+    }
+    return "";
+  }
+  </script>
+  {{template([],"android\\custom\\headAdditions2.tlt","")}}
+</head>
+<body class="tlBackgroundColor" onload="checkStyle();" {{template([],"android\\custom\\bodyAttrs.tlt","")}} >
+<input type="hidden" id="originalPageOrientation" value="{{if(exists([],"orientation"),["orientation"],0)}}">
+<div id="orientationBox"
+     style="{{default(template([],"android\\css_orientation.tlt"),"<!--json position not specified or problem with css_orientation.tlt -->")}}">
+{{
+  if(
+    exists([], "layout","controls"), 
+    template(["layout"]["controls"],"android\\array_controls.tlt"), 
+    "<!--  TLT_ERROR: MISSING [layout][controls]  -->\r\n"
+  )
+}}
+</div>
+</body>
+</html>

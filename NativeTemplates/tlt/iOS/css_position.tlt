@@ -1,0 +1,20 @@
+/* css_position.tlt version_1 */
+position:absolute;
+{{if(exists([],"x"),cssDecl(["x"],"left","px"),             "/* TLT_WARN: [x] not specified */")}}
+{{if(exists([],"y"),cssDecl(["y"],"top", "px"),             "/* TLT_WARN: [y] not specified */")}}
+{{if(
+	exists([],"width"),
+	if(
+		eq(["width"],0),
+		"/* TLT_ERROR: zero [width] specified */",
+		cssDecl(["width"], "width","px")),
+	"/* TLT_WARN: [width] not specified */"
+)}}
+{{if(
+	exists([],"height"),
+	if(
+		eq(["height"],0),
+		"/* TLT_ERROR: zero [height] specified */",
+		cssDecl(["height"], "height","px")),
+	"/* TLT_WARN: [height] not specified */"
+)}}

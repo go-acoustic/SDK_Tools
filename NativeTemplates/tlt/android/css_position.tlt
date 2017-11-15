@@ -1,0 +1,9 @@
+position:fixed;
+
+{{cssDecl(div(numericToFloat(["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+
+{{cssDecl(div(numericToFloat(["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+
+{{cssDecl(div(numericToFloat(["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+
+{{cssDecl(div(numericToFloat(["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}

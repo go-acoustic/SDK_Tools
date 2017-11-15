@@ -1,0 +1,34 @@
+<!-- control_image.tlt version_3 -->
+<div id="{{["id"]}}" data-tealeaf-native="true">
+<img 
+id="{{["id"]}}-image" data-tealeaf-native="true"  
+style=" 
+padding:0; box-sizing:border-box; -moz-box-sizing:border-box;
+{{if(exists([],"image","awesomeFontIcon"),"display: none;","")}}
+{{template(["position"],"iOS\\css_position.tlt")}}
+"
+src="{{
+if(exists([], "image", "type"),
+	if(
+		eq(["image"]["type"],"url"),
+		["image"]["value"],
+		if(
+			exists([], "image", "base64Image"), 
+			concat("data:image/png;base64,",["image"]["base64Image"]),
+			concat("http://localhost:38000/images/",["image"]["value"],".",["image"]["mimeExtension"])
+		)
+	),
+"")
+
+}}"
+/>
+<span>
+  <i class="{{if(exists([], "image", "awesomeFontIcon"),concat("fa ",["image"]["awesomeFontIcon"]),"")}}"
+    style="font-size: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
+          color: inherit;
+          line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
+          {{if(exists([],"image","awesomeFontIcon"),"","display: none;")}}
+          height: {{if(exists([],"image","awesomeFontIcon"),"inherit","0px;")}};
+          vertical-align: bottom;"></i>
+</span>
+</div>

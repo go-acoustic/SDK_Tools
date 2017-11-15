@@ -1,0 +1,18 @@
+<!-- control_checkBox.tlt version_9 -->
+<div id="{{["id"]}}"
+  data-tealeaf-native="true"
+  name="{{["id"]}}"
+  templatetype="checkbox"
+  style="position:fixed;
+         {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}
+         display: inline-flex;
+         {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+         {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}">
+  <input id="{{["id"]}}-input"
+    class="checkbox-custom"
+    type="checkbox"
+    {{if(["currState"]["isChecked"], "checked", "")}}/>
+  <label for="{{["id"]}}" class="checkbox-custom-label">{{default(["currState"]["text"],"<!-- currState\text was not found -->")}}</label>
+</div>

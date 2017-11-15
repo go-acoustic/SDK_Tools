@@ -1,0 +1,57 @@
+<!-- control_alert.tlt version_10 -->
+<div style="{{cssDecl(div(numericToFloat([$"clientEnvironment"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+           {{cssDecl(div(numericToFloat([$"clientEnvironment"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           position:fixed;
+           left:0;
+           top:0;
+           z-index:701;">
+  {{arrayConcat(
+    foreach(["currState"]["background"],
+      "iter",
+      default(template([@"iter"],
+        concat("android\\control_", [@"iter"]["tlType"], ".tlt") ),
+          concat("<!-- file not found: android\\control_", [@"iter"]["tlType"], ".tlt -->")
+      )
+    ),
+  " ")}}
+</div>
+
+<div id="alertGrayPanel"
+  class="tlCurrentDeviceHeight tlCurrentDeviceWidth"
+  style="position:fixed;
+         left:0;
+         top:0;
+         background-color: var(--dark-grey);
+         z-index:702;
+         filter: alpha(opacity=65); /* internet explorer */
+         -khtml-opacity: 0.65;      /* khtml, old safari */
+         -moz-opacity: 0.65;       /* mozilla, netscape */
+         opacity: 0.65;           /* fx, safari, opera */">
+</div>
+
+<div style="{{cssDecl(div(numericToFloat([$"clientEnvironment"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+           {{cssDecl(div(numericToFloat([$"clientEnvironment"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           position:fixed;
+           left:0;
+           top:0;
+           z-index:705;">
+  <div class="tlBackgroundColor"
+    style="position:relative;
+           display:block;
+           z-index:705;
+           {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           border-radius: 2px;">
+    {{arrayConcat(
+      foreach(["currState"]["alert"],
+        "iter",
+        default(template([@"iter"],
+          concat("android\\control_", [@"iter"]["tlType"], ".tlt") ),
+            concat("<!-- file not found: android\\control_", [@"iter"]["tlType"], ".tlt -->")
+        )
+      ),
+    " ")}}
+  </div>
+</div>

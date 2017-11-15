@@ -1,0 +1,36 @@
+/* css_backgroundImage.tlt version_1 */
+{{
+	concat(
+		"background-image:url('",
+		if(
+			eq(["type"],"url"),
+			["value"],
+			if(exists([], "base64Image"), 
+				concat("data:image/png;base64,",["base64Image"]),
+				concat("http://localhost:38000/images/",["value"]))
+		),
+		"');"
+	)
+}}
+
+{{
+if(and(exists([], "position", "x"), exists([], "position", "y")), 
+	concat(
+		"background-position:", 
+		concat(str(["position"]["x"]),"px "),
+		concat(str(["position"]["y"]),"px;")
+	),
+	"/* TLT_WARN: background-position not rendered */"
+)
+}}
+
+{{
+if(and(exists([], "position", "width"), exists([], "position", "height")), 
+	concat(
+		"background-size: ", 
+		concat(str(["position"]["width"]),"px "),
+		concat(str(["position"]["height"]),"px;")
+	),
+	"/* TLT_WARN: background-size not rendered */"
+)
+}}

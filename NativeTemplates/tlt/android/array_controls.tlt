@@ -1,0 +1,34 @@
+<!-- array_controls.tlt version_5 -->
+{{
+	arrayConcat(
+		foreach(
+			[],
+			"control",
+			let(
+				"tlTypeRemap",
+				{
+					"collectionItem": "control_canvas.tlt",
+					"radioGroup":     "control_canvas.tlt",
+					"switch":         "control_toggleButton.tlt",
+					"timePicker":     "control_unsupported.tlt",
+					"datePicker":     "control_unsupported.tlt"
+				},
+				let(
+					"nativeTypeRemap",
+					readJsonFile("android\\custom\\nativeTypeRemap.json",{}),
+					if(
+						and(exists([@"control"],"type"),exists([@"nativeTypeRemap"],[@"control"]["type"])),
+						template([@"control"], concat("android\\custom\\", [@"nativeTypeRemap"][ [@"control"]["type"] ] )),
+                        if(
+                            and(exists([@"control"],"tlType"),exists([@"tlTypeRemap"],[@"control"]["tlType"])),
+                            template([@"control"], concat("android\\", [@"tlTypeRemap"][ [@"control"]["tlType"] ] )),
+                            if(fileExists(concat("android\\control_", [@"control"]["tlType"], ".tlt" )),
+                                template([@"control"], concat("android\\control_", [@"control"]["tlType"], ".tlt" )),
+                                template([@"control"], "android\\control_unsupported.tlt"))
+                        )
+					)
+				)
+			)
+		)
+	)
+}}

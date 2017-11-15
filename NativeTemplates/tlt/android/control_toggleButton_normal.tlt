@@ -1,0 +1,21 @@
+<!-- control_toggleButton_normal.tlt version_5 -->
+<div
+      id="{{["id"]}}" data-tealeaf-native="true"
+      style="vertical-align:middle;
+             display: table-cell;
+            {{if(exists([],"image"),"","border: solid 1px black;")}}
+            {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+            {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+            {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+            {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+            {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),"background-color: 5a595b;")}}
+            {{if(exists(["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
+            {{if(exists(["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}
+            {{if(exists(["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"")}}
+            {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+            {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}
+            border-bottom-color: 33b5e5;
+            border-bottom-width: 2px;"
+     checked="{{["currState"]["isToggled"]}}"
+/><label>{{default(["currState"]["text"],"<!-- currState\text was not found -->")}}</label>
+</div>

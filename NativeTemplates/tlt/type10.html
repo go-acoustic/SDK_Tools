@@ -1,0 +1,38 @@
+<!--
+   Licensed Materials - Property of IBM
+   © Copyright IBM Corp. 2014
+   US Government Users Restricted Rights - Use, duplication or disclosure
+   restricted by GSA ADP Schedule Contract with IBM Corp.
+ -->
+<!-- Message Count: {{if(exists([],"count"),["count"],"null")}} -->                           
+<!-- j2hVersion: {{assert( versionGE([$"j2hVersion"], "1.0"), "minimum j2h version is 1.0" ,
+                   assert( versionLT([$"j2hVersion"], "2"  ), "templates have not been validated against j2h version > 1.x" ,
+                   [$"j2hVersion"] ) ) }} -->
+<!-- msgVersion: {{[$"msgVersion"]}} --> 
+<!-- type10Version: {{
+                      if(versionLT([$"msgVersion"], "5"),"legacy",
+                      assert( exists([],"version"), "template update needed - missing type 10 message version",
+                      assert( versionGE(["version"], "1.0"), "template update needed - minimum type 10 message version is 1.0" ,
+                      assert( versionLT(["version"], "2"), "template update needed - templates have not been validated against type 10 message version > 1.x" ,
+                      ["version"] ) ) ) ) }} -->
+<!-- templateLangVersion: {{assert( versionGE(getTemplateLanguageVersion(), "1.0"), "minimum template language version is 1.0" ,
+                            assert( versionLT(getTemplateLanguageVersion(), "2"  ), "templates have not been validated against template language version > 1.x" ,
+                            getTemplateLanguageVersion() ) ) }} -->
+<!-- templateLibVersion: {{assert( versionGE(getTemplateLibraryVersion(), "1.1"), "minimum template library version is 1.0" ,
+                           assert( versionLT(getTemplateLibraryVersion(), "2"  ), "templates have not been validated against template library version > 1.x" , 
+                           getTemplateLibraryVersion() ) ) }} -->
+{{
+  if(
+    eq([$"osType"],"Android"),
+    template([], "android\\root.tlt"),
+    if(
+      or(eq([$"osType"],"iPhone OS"),eq([$"osType"],"iOS")),
+      template([], "ios\\root.tlt"),
+      concat("<!--  unexpected osType ",[$"osType"] ,"-->")
+    )
+  )
+}}
+
+
+
+

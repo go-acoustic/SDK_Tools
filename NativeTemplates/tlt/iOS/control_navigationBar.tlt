@@ -1,0 +1,74 @@
+<!-- control_navigationBar.tlt version_3 -->
+<div id="{{["id"]}}-background"
+  data-tealeaf-native="true"
+  style="padding:0;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        z-index: 2;
+        border-radius:{{if(exists([], "style", "borderRadius"),["style"]["borderRadius"],0)}}px;
+        {{if(exists([], "style", "hasBorder"),if(eq(["style"]["hasBorder"],true),"border-width: 1px;border-style: solid;",""),"")}}
+        {{if(exists([], "style", "borderColor"),cssDecl(htmlColor(["style"]["borderColor"]),"border-color"),"")}}
+        {{if(exists([], "position"), template(["position"],"iOS\\css_position.tlt"),"/* TLT_WARN: [postion] not rendered */")}}
+
+        position:{{if(eq(["type"],"_UIQueuingScrollView"),"static","absolute")}};
+        {{if(exists(["position"],"x"),cssDecl(["position"]["x"],"left","px"),             "/* TLT_WARN: [x] not specified */")}}
+        {{if(exists(["position"],"y"),cssDecl(["position"]["y"],"top", "px"),             "/* TLT_WARN: [y] not specified */")}}
+        {{if(
+            exists(["position"],"width"),
+            if(
+                eq(["position"]["width"],0),
+                "/* TLT_ERROR: zero [width] specified */",
+                cssDecl(["position"]["width"], "width","px")),
+            "/* TLT_WARN: [position][width] not specified */"
+        )}}
+        {{if(
+            exists(["position"],"height"),
+            if(
+                eq(["position"]["height"],0),
+                "/* TLT_ERROR: zero [height] specified */",
+                cssDecl(["position"]["height"], "height","px")),
+            "/* TLT_WARN: [position][height] not specified */"
+        )}}
+
+        {{if(exists(["style"],"bgColorRGBA"),concat("background-color:",concat(["style"]["bgColorRGBA"],";")),
+                                            if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
+                                                                           cssDecl("inherit","background-color")))}}
+        {{if(and(exists([], "style", "isTranslucent"),eq(["style"]["isTranslucent"],true)), "opacity: .80;filter: alpha(opacity=80);-ms-filter: \"alpha(opacity=80)\";-khtml-opacity: .80;-moz-opacity: .80;", "")}}
+        ">
+</div>
+<div id="{{["id"]}}"
+  data-tealeaf-native="true"
+  style="padding:0;
+        z-index: 3;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        border-radius:{{if(exists([], "style", "borderRadius"),["style"]["borderRadius"],0)}}px;
+        {{if(exists([], "style", "hasBorder"),if(eq(["style"]["hasBorder"],true),"border-width: 1px;border-style: solid;",""),"")}}
+        {{if(exists([], "style", "borderColor"),cssDecl(htmlColor(["style"]["borderColor"]),"border-color"),"")}}
+        {{if(exists([], "position"), template(["position"],"iOS\\css_position.tlt"),"/* TLT_WARN: [postion] not rendered */")}}
+
+        position:{{if(eq(["type"],"_UIQueuingScrollView"),"static","absolute")}};
+        {{if(exists(["position"],"x"),cssDecl(["position"]["x"],"left","px"),             "/* TLT_WARN: [x] not specified */")}}
+        {{if(exists(["position"],"y"),cssDecl(["position"]["y"],"top", "px"),             "/* TLT_WARN: [y] not specified */")}}
+        {{if(
+            exists(["position"],"width"),
+            if(
+                eq(["position"]["width"],0),
+                "/* TLT_ERROR: zero [width] specified */",
+                cssDecl(["position"]["width"], "width","px")),
+            "/* TLT_WARN: [position][width] not specified */"
+        )}}
+        {{if(
+            exists(["position"],"height"),
+            if(
+                eq(["position"]["height"],0),
+                "/* TLT_ERROR: zero [height] specified */",
+                cssDecl(["position"]["height"], "height","px")),
+            "/* TLT_WARN: [position][height] not specified */"
+        )}}
+
+
+        {{if(exists([], "style", "textAlphaColor"), cssDecl(["style"]["textAlphaColor"], "opacity"), "/* TLT_WARN: opacity not rendered */")}}
+        ">
+{{if(exists([], "currState", "data"), template(["currState"]["data"],"iOS\\array_controls.tlt"), "<!--  TLT_WARNING: MISSING [currState][data]  -->\r\n")}} 
+</div>

@@ -1,0 +1,17 @@
+<!-- control_selectList.tlt version_5 -->
+<select id="{{["id"]}}"
+  data-tealeaf-native="true"
+  style="{{default(template(["position"],"android\\css_position.tlt"),"<!--json position not specified or problem with css_position.tlt -->")}}
+         {{default(template(["currState"]["font"],"android\\css_font.tlt"),"<!-- json currState\font not specified or problem with css_font.tlt-->")}}
+         {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),"")}}
+         {{if(exists(["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
+         {{if(exists(["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}
+         {{if(exists(["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"")}}
+         {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+         {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}
+         border:0px;
+         outline:0px;
+         background-color: inherit;
+         {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
+  <option selected>{{default(["currState"]["text"],"<!-- currState\text was not found -->")}}</option>
+</select>

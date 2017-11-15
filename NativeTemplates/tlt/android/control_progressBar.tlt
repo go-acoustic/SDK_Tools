@@ -1,0 +1,25 @@
+<!-- control_progressBar.tlt version_6 -->
+<div id="{{["id"]}}" 
+  data-tealeaf-native="true"
+  style="position: fixed;
+         {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+         {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+         {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
+  <div id="{{["id"]}}-progressbar"
+    style="width: {{if(gt(["currState"]["value"],"0"),["currState"]["value"],0)}}%;
+           background: var(--theme-color);
+           height: 3px;
+           bottom: 50%;
+           position: absolute;
+           margin-left: 2px;"></div>
+  <div style="width: 100%;
+              background: var(--grey);
+              height: 3px;
+              bottom: 50%;
+              position: absolute;
+              z-index: -1;
+              margin-left: 2px;"></div>
+<div>

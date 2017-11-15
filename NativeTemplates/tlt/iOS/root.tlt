@@ -1,0 +1,85 @@
+<!-- root.tlt version_7 -->
+<html>
+<head>
+  <!-- iOS replay -->
+  <title>{{["layout"]["name"]}}</title>
+  <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+  <link rel="stylesheet" href="http://localhost:38000/fontAwesome/css/font-awesome.min.css">
+  {{template([],"iOS\\custom\\headAdditions1.tlt","")}}
+  <style>
+  :root {
+      --theme-color: #007AFF;
+      --hot-pink: #ff0080;
+      --dark-grey: #7e7e7e;
+      --grey: #d3d3d3;
+      --green: #4CD964;
+  }
+  .mblBackground {
+      background-color: white;
+  }
+
+  .mblProgressIndicatorCenter .mblProgContainer {
+      left: 0%;
+      -webkit-transform-origin: 0% 0;
+      transform-origin: 0% 0;
+  }        
+
+  body {
+    position:relative;
+    margin: 0;
+  }
+
+  #mask {
+      background-color: navy;
+      background: linear-gradient(to bottom,  rgb(63,84,97) 0%,rgb(34,42,48) 100%);
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1000;
+      padding: 10px;
+      color: white;
+      font-family: arial;
+      font-size: 12px;
+  }
+
+  #mask b {
+      color: DarkOrange;
+  }
+
+  #mask p {
+      width: 330px;
+  }
+
+  .tlCurrentDeviceHeight {
+    height: {{if(exists([],"deviceHeight"),["deviceHeight"],div(numericToFloat([$"clientEnvironment"]["height"]),[$"clientEnvironment"]["pixelDensity"]))}}px;
+  }
+
+  .tlCurrentDeviceWidth {
+    width: {{if(exists([],"deviceWidth"),["deviceWidth"],div(numericToFloat([$"clientEnvironment"]["width"]),[$"clientEnvironment"]["pixelDensity"]))}}px;
+  }
+        
+  .tlThemeColor {
+      background-color: var(--theme-color);
+  }
+
+  </style>
+  {{template([],"iOS\\custom\\headAdditions2.tlt","")}}
+
+</head>
+<body {{template([],"iOS\\custom\\bodyAttrs.tlt","")}}>
+
+<input type="hidden" id="originalPageOrientation" value="{{if(exists([],"orientation"),["orientation"],0)}}">
+<div id="orientationBox"
+     style="{{default(template([],"android\\css_orientation.tlt"),"<!--json position not specified or problem with css_orientation.tlt -->")}}">
+{{
+  if(
+    exists([], "layout","controls"), 
+    template(["layout"]["controls"],"iOS\\array_controls.tlt"), 
+    "<!--  TLT_ERROR: MISSING [layout][controls]  -->\r\n"
+  )
+}}
+</div>    
+</body>
+</html>

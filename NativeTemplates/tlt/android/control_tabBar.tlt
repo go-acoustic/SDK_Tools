@@ -1,0 +1,14 @@
+<!-- control_tabBar.tlt version_3 -->
+<div style="{{default(template(["position"],"android\\css_position.tlt"),"<!--json position not specified or problem with css_position.tlt -->")}}
+            {{if(exists(["style"],"paddingTop"),cssDecl(div(["style"]["paddingTop"],[$"clientEnvironment"]["pixelDensity"]),"padding-top"),"")}}
+            {{if(exists(["style"],"paddingBottom"),cssDecl(div(["style"]["paddingBottom"],[$"clientEnvironment"]["pixelDensity"]),"padding-bottom"),"")}}
+            {{if(exists(["style"],"paddingLeft"),cssDecl(div(["style"]["paddingLeft"],[$"clientEnvironment"]["pixelDensity"]),"padding-left"),"")}}
+            {{if(exists(["style"],"paddingRight"),cssDecl(div(["style"]["paddingRight"],[$"clientEnvironment"]["pixelDensity"]),"padding-right"),"")}}
+            {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
+  <div
+     id="{{["id"]}}" data-tealeaf-native="true" 
+     style="{{default(template(["position"],"android\\css_position.tlt"),"<!--json position not specified or problem with css_position.tlt -->")}}
+        {{default(template(["style"],"android\\css_color.tlt"),"<!-- json style not specified or problem with css_color.tlt -->") }}
+        padding:0px 0px 0px 0px;"
+  />
+</div>

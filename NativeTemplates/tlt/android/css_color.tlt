@@ -1,0 +1,9 @@
+{{if(exists([],"paddingTop"),cssDecl(div(numericToFloat(["paddingTop"]),[$"clientEnvironment"]["pixelDensity"]),"padding-top"),"")}}
+{{if(exists([],"paddingBottom"),cssDecl(div(numericToFloat(["paddingBottom"]),[$"clientEnvironment"]["pixelDensity"]),"padding-bottom"),"")}}
+{{if(exists([],"paddingLeft"),cssDecl(div(numericToFloat(["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left"),"")}}
+{{if(exists([],"paddingRight"),cssDecl(div(numericToFloat(["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right"),"")}}
+{{if(exists([],"bgColor"),cssDecl(htmlColor(["bgColor"]),"background-color"),cssDecl("inherit","background-color"))}}
+{{if(exists([],"textColor"),cssDecl(htmlColor(["textColor"]),"color"),"")}}
+{{if(exists([],"textAlphaColor"),cssDecl(["textAlphaColor"],"opacity"),"")}}
+{{if(exists([],"textAlign"),cssDecl(["textAlign"],"text-align"),"")}}
+{{if(["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}

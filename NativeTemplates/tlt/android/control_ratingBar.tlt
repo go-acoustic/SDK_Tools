@@ -1,0 +1,58 @@
+<!-- control_ratingBar.tlt version_9 -->
+<style>
+/*rating bar*/
+  .rating{{if(exists([], "cssId"),["cssId"],"")}} {
+    border: none;
+    float: left;
+  }
+
+  .rating{{if(exists([], "cssId"),["cssId"],"")}} > input {
+    display: none;
+  }
+
+  .rating{{if(exists([], "cssId"),["cssId"],"")}} > label:before {
+    font-family: FontAwesome;
+    display: inline-block;
+    content: "\f005";
+  }
+
+  .rating{{if(exists([], "cssId"),["cssId"],"")}} > .half:before {
+    content: "\f089";
+    position: absolute;
+  }
+
+  .rating{{if(exists([], "cssId"),["cssId"],"")}} > label {
+    color: var(--grey);
+    float: right;
+  }
+
+  .rating{{if(exists([], "cssId"),["cssId"],"")}} > input:checked ~ label {
+    color: var(--theme-color);
+  }
+</style>
+<div class="rating{{if(exists([], "cssId"),["cssId"],"")}}"
+  id="{{["id"]}}"
+  data-tealeaf-native="true"
+  maxValue={{["currState"]["maxValue"]}}
+  numStars={{["currState"]["numStars"]}}
+  value={{["currState"]["value"]}}
+  actualValue={{div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"])))}}
+  style="position:fixed;
+        {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+        {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+        {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+        {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+        {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}
+        text-align: center;
+        font-size:{{div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"])}};">
+  <input type="radio" id="{{["id"]}}5"   name="rating{{if(exists([], "cssId"),["cssId"],"")}}" value="5"   {{if(eq(div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"]))),numericToFloat(5)),"checked","")}}  ><label class="full" for="{{["id"]}}5"></label>
+  <input type="radio" id="{{["id"]}}4.5" name="rating{{if(exists([], "cssId"),["cssId"],"")}}" value="4.5" {{if(eq(div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"]))),numericToFloat(4.5)),"checked","")}}><label class="half" for="{{["id"]}}4.5"></label>
+  <input type="radio" id="{{["id"]}}4"   name="rating{{if(exists([], "cssId"),["cssId"],"")}}" value="4"   {{if(eq(div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"]))),numericToFloat(4)),"checked","")}}  ><label class="full" for="{{["id"]}}4"></label>
+  <input type="radio" id="{{["id"]}}3.5" name="rating{{if(exists([], "cssId"),["cssId"],"")}}" value="3.5" {{if(eq(div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"]))),numericToFloat(3.5)),"checked","")}}><label class="half" for="{{["id"]}}3.5"></label>
+  <input type="radio" id="{{["id"]}}3"   name="rating{{if(exists([], "cssId"),["cssId"],"")}}" value="3"   {{if(eq(div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"]))),numericToFloat(3)),"checked","")}}  ><label class="full" for="{{["id"]}}3"></label>
+  <input type="radio" id="{{["id"]}}2.5" name="rating{{if(exists([], "cssId"),["cssId"],"")}}" value="2.5" {{if(eq(div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"]))),numericToFloat(2.5)),"checked","")}}><label class="half" for="{{["id"]}}2.5"></label>
+  <input type="radio" id="{{["id"]}}2"   name="rating{{if(exists([], "cssId"),["cssId"],"")}}" value="2"   {{if(eq(div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"]))),numericToFloat(2)),"checked","")}}  ><label class="full" for="{{["id"]}}2"></label>
+  <input type="radio" id="{{["id"]}}1.5" name="rating{{if(exists([], "cssId"),["cssId"],"")}}" value="1.5" {{if(eq(div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"]))),numericToFloat(1.5)),"checked","")}}><label class="half" for="{{["id"]}}1.5"></label>
+  <input type="radio" id="{{["id"]}}1"   name="rating{{if(exists([], "cssId"),["cssId"],"")}}" value="1"   {{if(eq(div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"]))),numericToFloat(1)),"checked","")}}  ><label class="full" for="{{["id"]}}1"></label>
+  <input type="radio" id="{{["id"]}}0.5" name="rating{{if(exists([], "cssId"),["cssId"],"")}}" value="0.5" {{if(eq(div(stringToFloat(["currState"]["value"]),div(stringToFloat(["currState"]["maxValue"]),stringToFloat(["currState"]["numStars"]))),numericToFloat(0.5)),"checked","")}}><label class="half" for="{{["id"]}}0.5"></label>
+</div>

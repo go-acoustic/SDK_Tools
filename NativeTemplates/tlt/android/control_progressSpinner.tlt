@@ -1,0 +1,19 @@
+<!-- control_progressSpinner.tlt version_7 -->
+<div id="{{["id"]}}"
+  data-tealeaf-native="true"
+  style="position: fixed;
+         {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+         {{cssDecl(sub(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),mult(5,[$"clientEnvironment"]["pixelDensity"])),"height","px")}}
+         {{cssDecl(sub(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),mult(5,[$"clientEnvironment"]["pixelDensity"])),"width","px")}}
+         {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+         transform: matrix(0.2, 0.8, -0.8, 0.2, 0, 0);
+         border-bottom-color: var(--theme-color);
+         border-right-color: var(--theme-color);
+         border-top-color: var(--theme-color);
+         border-left-color: transparent;
+         border-radius: 50%;
+         border-style: solid;
+         border-width: {{div(mult(sub(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),mult(5,[$"clientEnvironment"]["pixelDensity"])),10),100)}}px;
+         {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
+</div>

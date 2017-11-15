@@ -1,0 +1,7 @@
+/* css_backgroundSize.tlt version_1 */
+{{if(
+	and(exists([],"width"),exists([],"height")),
+	concat("background-size:",str([]["width"]),"px ",concat(str([]["height"]),"px;")),
+	""
+)}}
+

@@ -1,0 +1,2 @@
+<!-- control_clock.tlt version_1 -->
+{{if(eq([]["type"],"DigitalClock"),template([],"android\\control_label.tlt"),template([],"android\\control_unsupported.tlt"))}}

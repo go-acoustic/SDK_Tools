@@ -1,0 +1,36 @@
+<!-- control_label.tlt version_9 -->
+<label
+  id="{{["id"]}}"
+  data-tealeaf-native="true"
+  style="padding:0;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        display:inline;
+        overflow: hidden;
+        {{
+        if (
+          and(exists([], "style", "textNumberOfLines"), eq(["style"]["textNumberOfLines"],1)),
+          if (
+            exists([],"position","height"),
+            cssDecl(["position"]["height"],"line-height","px"),
+            "/* TLT_ERROR: line-height not rendered */"
+          ),
+          "/* TLT_INFO multi-line label */"
+        )
+        }}
+        position:absolute;
+        {{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"), "/* TLT_WARN: [x] not rendered */")}}
+        {{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [height] not rendered */")}}
+        {{if(and(exists([], "position", "width"),and(exists([],"style","textAlignment"),eq(["style"]["textAlignment"],"center"))), cssDecl(add(["position"]["width"],2),"width","px"), cssDecl(add(["position"]["width"],2),"width","px"))}}
+        {{if(exists([],"style","textAlignment"),cssDecl(["style"]["textAlignment"],"text-align"),"/* TLT_WARN: text-align not rendered */")}}
+        {{if(exists([], "currState", "font"),template(["currState"]["font"],"iOS\\css_font.tlt"),"/* TLT_WARN: [font] not rendered */") }}
+        {{if(exists([], "style", "textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"/* TLT_WARN: [textColor] not rendered */")}}
+        {{if(exists([], "style", "textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"/* TLT_WARN: [textAlphaColor] not rendered */")}}
+        {{if(and(exists([], "style", "lineBreak"),eq(["style"]["lineBreak"],"elipsisEnd")),"text-overflow: ellipsis;","")}}
+        {{if(and(exists([], "style", "textNumberOfLines"),eq(["style"]["textNumberOfLines"],1)),"white-space: nowrap;","")}}
+        transform: translate3d(0px, 0px, 0px) rotateX({{if(exists([],"style","rotateX"),["style"]["rotateX"],"0")}}deg);
+        {{if(exists(["style"],"bgColorRGBA"),concat("background-color:",concat(["style"]["bgColorRGBA"],";")),
+                                            if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
+                                                                           cssDecl("inherit","background-color")))}}"
+>{{if(exists([], "currState", "text"), ["currState"]["text"],"")}}</label>

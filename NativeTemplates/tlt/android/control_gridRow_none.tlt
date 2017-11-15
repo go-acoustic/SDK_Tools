@@ -1,0 +1,16 @@
+<!-- control_gridRow_none.tlt version_5 -->
+<div id="{{["id"]}}"
+  data-tealeaf-native="true"
+  style="{{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+         {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),cssDecl("inherit","background-color"))}}
+         {{cssDecl("none","border-bottom-style")}}
+         {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
+  {{
+    concat(
+      foreach(["currState"]["data"],
+        "iter",
+        default(template([@"iter"],"android\\control_gridCell.tlt"),"<!-- problem invoking template android\\control_gridCell.tlt --> ")
+      )
+    )
+  }}
+</div>

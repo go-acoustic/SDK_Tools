@@ -1,0 +1,115 @@
+<!-- control_compoundButton.tlt version_6 -->
+<div id="{{["id"]}}"
+  data-tealeaf-native="true" 
+  style="position:fixed;
+         {{if(exists([],"image"),"","border: solid 1px black;")}}
+         {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+         {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),cssDecl("inherit","background-color"))}}
+         {{if(exists(["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
+         {{if(exists(["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}
+         {{if(exists(["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"")}}
+         {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+         {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
+
+  {{if(exists(["currState"]["compoundDrawables"],"left"),"<img id='comButLeft' style='position: fixed;z-index:2;","")}}
+  {{if(exists(["currState"]["compoundDrawables"],"left"),
+    if(gt(["currState"]["compoundDrawables"]["left"]["position"]["height"],["position"]["height"]),"height:inherit;",
+      cssDecl(div(numericToFloat(["currState"]["compoundDrawables"]["left"]["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px"))
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"left"),cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px"),"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"left"),cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px"),"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"left"),
+    if(exists(["style"],"paddingLeft"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left"),"")
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"left"),
+    if(exists(["style"],"paddingRight"),cssDecl(div(numericToFloat(["style"]["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right"),"")
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"left"),
+    if(exists(["style"],"paddingTop"),cssDecl(div(numericToFloat(["style"]["paddingTop"]),[$"clientEnvironment"]["pixelDensity"]),"padding-top"),"")
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"left"),
+    if(exists(["style"],"paddingBottom"),cssDecl(div(numericToFloat(["style"]["paddingBottom"]),[$"clientEnvironment"]["pixelDensity"]),"padding-bottom"),"")
+  ,"")}}
+
+  {{if(exists(["currState"]["compoundDrawables"],"left"),"'","")}}
+  {{if(exists(["currState"]["compoundDrawables"],"left"),
+    if(exists(["currState"]["compoundDrawables"]["left"],"base64Image"),concat("src=data:image/",["currState"]["compoundDrawables"]["left"]["mimeExtension"],";base64,",["currState"]["compoundDrawables"]["left"]["base64Image"]),
+      if(exists(["currState"]["compoundDrawables"]["left"],"value"),concat("src=http://localhost:38000/images/",concat(["currState"]["compoundDrawables"]["left"]["value"], ".",if(eq(["currState"]["compoundDrawables"]["left"]["mimeExtension"], "xml"), "png", ["currState"]["compoundDrawables"]["left"]["mimeExtension"]) )),"")
+    )
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"left"),"/>","")}}
+    
+  {{if(exists(["currState"]["compoundDrawables"],"top"),"<img id='comButTop' style='height: inherit; position: fixed;z-index:2;","")}}
+  {{if(exists(["currState"]["compoundDrawables"],"top"),cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px"),"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"top"),cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px"),"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"top"),"'","")}}
+  {{if(exists(["currState"]["compoundDrawables"],"top"),
+    if(exists(["currState"]["compoundDrawables"]["top"],"base64Image"),concat("src=data:image/",["currState"]["compoundDrawables"]["top"]["mimeExtension"],";base64,",["currState"]["compoundDrawables"]["top"]["base64Image"]),
+      if(exists(["currState"]["compoundDrawables"]["top"],"value"),concat("src=http://localhost:38000/images/",concat(["currState"]["compoundDrawables"]["top"]["value"], ".",if(eq(["currState"]["compoundDrawables"]["top"]["mimeExtension"], "xml"), "png", ["currState"]["compoundDrawables"]["top"]["mimeExtension"]) )),"")
+    )
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"top"),"/>","")}}
+    
+  <label style="box-sizing:border-box;
+               position: absolute;
+               z-index:2;
+               {{if(exists(["currState"]["compoundDrawables"],"left"),
+                 cssDecl(div(add(numericToFloat(["position"]["x"]),["currState"]["compoundDrawables"]["left"]["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")
+                ,"")}}
+               {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"line-height","px")}}
+               {{if(exists(["style"],"paddingLeft"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left"),"")}}
+               {{if(exists(["style"],"paddingRight"),cssDecl(div(numericToFloat(["style"]["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right"),"")}}
+               {{if(exists(["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
+               {{if(exists(["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}
+               {{if(exists(["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"")}}
+               {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+               {{default(template(["currState"]["font"],"android\\css_font.tlt"),"<!-- json currState\font not specified or problem with css_font.tlt-->") }}"
+      >{{default(["currState"]["text"],"<!-- currState\text was not found -->")}}
+  </label>
+    
+  {{if(exists(["currState"]["compoundDrawables"],"right"),"<img id='comButRight' style='z-index:2;float: right;","")}}
+  {{if(exists(["currState"]["compoundDrawables"],"right"),cssDecl(sub(div(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2),div(div(numericToFloat(["currState"]["compoundDrawables"]["right"]["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2)),"top","px"),"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"right"),
+    if(exists(["style"],"paddingLeft"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left"),"")
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"right"),
+    if(exists(["style"],"paddingTop"),cssDecl(div(numericToFloat(["style"]["paddingTop"]),[$"clientEnvironment"]["pixelDensity"]),"padding-top"),"")
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"right"),
+    if(exists(["style"],"paddingBottom"),cssDecl(div(numericToFloat(["style"]["paddingBottom"]),[$"clientEnvironment"]["pixelDensity"]),"padding-bottom"),"")
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"right"),
+    if(exists(["style"],"paddingRight"),cssDecl(div(numericToFloat(["style"]["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right"),"")
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"right"),
+    if(gt(["currState"]["compoundDrawables"]["right"]["position"]["height"],["position"]["height"]),"height:inherit;",
+      cssDecl(div(numericToFloat(["currState"]["compoundDrawables"]["right"]["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px"))
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"right"),"'","")}}
+  {{if(exists(["currState"]["compoundDrawables"],"right"),
+    if(exists(["currState"]["compoundDrawables"]["right"],"base64Image"),concat("src=data:image/",["currState"]["compoundDrawables"]["right"]["mimeExtension"],";base64,",["currState"]["compoundDrawables"]["right"]["base64Image"]),
+      if(exists(["currState"]["compoundDrawables"]["right"],"value"),concat("src=http://localhost:38000/images/",concat(["currState"]["compoundDrawables"]["right"]["value"], ".",if(eq(["currState"]["compoundDrawables"]["right"]["mimeExtension"], "xml"), "png", ["currState"]["compoundDrawables"]["right"]["mimeExtension"]) )),"")
+      )
+  ,"")}}
+  {{if(exists(["currState"]["compoundDrawables"],"right"),"/>","")}}
+    
+  <div style="z-index:1;
+             padding:0px 0px 0px 0px;
+             {{if(exists([],"image"),cssDecl("visible","visibility"),cssDecl("hidden","visibility"))}}
+             {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+             {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+             {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+             {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+             {{if(exists([],"image"),
+               if(and(exists(["image"],"type"),eq(["image"]["type"],"url")),concat("background-image:url",["image"]["value"],");"),  
+                 if(exists(["image"],"base64Image"),concat("background-image:url(data:image/",concat(["image"]["mimeExtension"],";base64,"),["image"]["base64Image"],");"),
+                   if(exists(["image"],"value"), concat("background-image:url(http://localhost:38000/images/", concat(["image"]["value"], ".",if(eq(["image"]["mimeExtension"], "xml"), "png", ["image"]["mimeExtension"]) ), ");"),"")
+                 )
+               )
+             ,"")}}
+             {{if(exists([],"image"),concat("background-size:100%",";"),"")}}
+             {{if(exists([],"image"),concat("background-repeat:no-repeat",";"),"")}}"/>
+</div>

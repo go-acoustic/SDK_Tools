@@ -1,0 +1,18 @@
+<!-- control_radioButton.tlt version_10 -->
+<div id="{{["id"]}}"
+  data-tealeaf-native="true"
+  name="{{["id"]}}"
+  templatetype="radioButton"
+  style="position:fixed;
+         display: inline-flex;
+         {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+         {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+         {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+         {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
+  <input id="{{["id"]}}-input"
+    class="radio-custom"
+    type="radio"
+    {{if(["currState"]["isSelected"], "checked", "")}}/>
+  <label for="{{["id"]}}" class="radio-custom-label">{{default(["currState"]["text"],"<!-- currState\text was not found -->")}}</label>
+</div>

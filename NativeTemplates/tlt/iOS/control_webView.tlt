@@ -1,0 +1,12 @@
+<!-- control_webView.tlt version_4 -->
+<div style="{{if(exists([], "position"), template(["position"],"iOS\\css_position.tlt"), "/* TLT_WARN: [postion] not rendered */")}}
+           background-color: white;">
+  <iframe style="width: 100%;
+                height: 100%;
+                box-sizing: border-box;"
+    id="{{["id"]}}"
+    data-tealeaf-native="true"
+    name="{{["id"]}}"
+    src="{{if(exists([],"currState","dcid"),concat("!!tldcid5525!!",["currState"]["dcid"],"!!tlurl5525!!",["currState"]["url"]),["currState"]["url"])}}">
+  </iframe>
+</div>

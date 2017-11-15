@@ -1,0 +1,30 @@
+<!-- array_controls.tlt version_6 -->
+{{ 
+	arrayConcat(
+		foreach(
+			[], 
+			"control",
+			let(
+				"tlTypeRemap",
+				{
+					"collectionItem": "control_collectionItem.tlt",
+					"mapView":		  "control_unsupported.tlt",
+					"unknown":		  "control_unsupported.tlt"
+				},
+				let(
+					"nativeTypeRemap",
+					readJsonFile("iOS\\custom\\nativeTypeRemap.json",{}),
+					if(
+						and(exists([@"control"],"type"),exists([@"nativeTypeRemap"],[@"control"]["type"])),
+						template([@"control"], concat("iOS\\custom\\", [@"nativeTypeRemap"][ [@"control"]["type"] ] )),
+						if(
+							and(exists([@"control"],"tlType"),exists([@"tlTypeRemap"],[@"control"]["tlType"])),
+							template([@"control"], concat("iOS\\", [@"tlTypeRemap"][ [@"control"]["tlType"] ] )),
+							template([@"control"], concat("iOS\\control_", [@"control"]["tlType"], ".tlt" ))
+						)
+					)					
+				)
+			)
+		)
+	)
+}}

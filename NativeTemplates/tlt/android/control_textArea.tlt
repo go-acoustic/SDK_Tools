@@ -1,0 +1,24 @@
+<!-- control_textArea.tlt version_3 -->
+<textarea id="{{["id"]}}" 
+  data-tealeaf-native="true"
+  style="position:fixed;
+        {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),"background-color: inherit;")}}
+        {{if(exists(["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
+        {{if(exists(["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}
+        {{if(exists(["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"")}}
+        {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+        {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+        {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+        {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+        {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+        {{if(exists(["style"],"paddingLeft"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left","px"),"")}}
+        {{if(exists(["style"],"paddingRight"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right","px"),"")}}
+        {{if(exists(["style"],"paddingTop"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-top","px"),"")}}
+        {{if(exists(["style"],"paddingBottom"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-bottom","px"),"")}}
+        {{default(template(["currState"]["font"],"android\\css_font.tlt"),"<!-- json currState\font not specified or problem with css_font.tlt-->")}}
+        {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}
+        resize: none;
+        box-sizing: border-box;
+        overflow: hidden;
+        border: 0px;
+        outline: 0px;"/>{{if(exists(["currState"],"text"),["currState"]["text"],"")}}</textarea>

@@ -1,0 +1,10 @@
+/* css_color.tlt version_1 */
+{{if(exists([],"borderColor"),cssDecl(htmlColor(["borderColor"]),"border-color"),	"/* TLT_INFO: [borderColor] not rendered */")}}
+{{if(exists([],"textColor"),cssDecl(htmlColor(["textColor"]),"color"),				"/* TLT_INFO: [textColor] not rendered */")}}
+{{if(
+	exists([],"hasBorder"),
+	if(["hasBorder"],cssDecl("solid","border-style"),cssDecl("none","border-style")),
+	"/* TLT_INFO: [hasBorder] not rendered */"
+)}}
+{{if(exists([],"textAlphaColor"),cssDecl(["textAlphaColor"], "opacity"),			"/* TLT_INFO: [textAlphaColor] not rendered */")}}
+{{if(exists([],"bgColor"),cssDecl(htmlColor(["bgColor"]),"background-color"),		"background-color:transparent !important;")}}

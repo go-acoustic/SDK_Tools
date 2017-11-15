@@ -1,0 +1,74 @@
+<!-- control_toggleButton.tlt version_3 -->
+<style>
+ input[type="checkbox"].switch-custom {
+  position: absolute;
+  opacity: 0;
+ }
+
+ /* Normal Track */
+ input[type="checkbox"].switch-custom + div {
+  vertical-align: middle;
+  {{if(exists([], "position", "width"), cssDecl(sub(["position"]["width"],2),"height","px"), "width:51px;")}}
+  {{if(exists([], "position", "height"), cssDecl(sub(["position"]["height"],2),"height","px"), "height:31px;")}}
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 999px;
+  background-color: rgba(0, 0, 0, 0);
+  -webkit-transition-duration: .4s;
+  -webkit-transition-property: background-color, box-shadow;
+  box-shadow: inset 0 0 0 0px rgba(0,0,0,0.4);
+ }
+
+ /* Normal Knob */
+ input[type="checkbox"].switch-custom + div > div {
+  float: left;
+  {{if(exists([], "position", "height"), cssDecl(sub(["position"]["height"],4),"width","px"), "width:29px;")}}
+  {{if(exists([], "position", "height"), cssDecl(sub(["position"]["height"],4),"height","px"), "height:29px;")}}
+  border-radius: inherit;
+  background: #ffffff;
+  -webkit-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+  -webkit-transition-duration: 0.4s;
+  -webkit-transition-property: transform, background-color, box-shadow;
+  -moz-transition-timing-function: cubic-bezier(.54,1.85,.5,1);
+  -moz-transition-duration: 0.4s;
+  -moz-transition-property: transform, background-color;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1), 0px 0px 0 1px rgba(0, 0, 0, 0.2);
+  pointer-events: none;
+  margin-top: 1px;
+  margin-left: 1px;
+ }
+
+ /* Checked Track */
+ input[type="checkbox"].switch-custom:checked + div {
+  {{if(exists([], "position", "width"), cssDecl(sub(["position"]["width"],2),"width","px"), "width:51px;")}}
+  background-position: 0 0;
+  background-color: {{if(exists([], "style", "bgColor"),concat("",htmlColor(["style"]["bgColor"])),"#4CD964")}};
+  border: 1px solid {{if(exists([], "style", "bgColor"),concat("",htmlColor(["style"]["bgColor"])),"#4CD964")}};
+  box-shadow: inset 0 0 0 10px {{if(exists([], "style", "bgColor"),concat("",htmlColor(["style"]["bgColor"])),"#4CD964")}};
+ }
+
+ /* Checked Knob */
+ input[type="checkbox"].switch-custom:checked + div > div {
+  -webkit-transform: translate3d({{if(and(exists([], "position", "width"),exists([], "position", "height")), sub(sub(["position"]["width"],["position"]["height"]),2), 21)}}px, 0, 0);
+  -moz-transform: translate3d({{if(and(exists([], "position", "width"),exists([], "position", "height")), sub(sub(["position"]["width"],["position"]["height"]),2), 21)}}px, 0, 0);
+  background-color: #ffffff;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3), 0px 0px 0 1px {{if(exists([], "style", "bgColor"),concat("",htmlColor(["style"]["bgColor"])),"#4CD964")}};
+}
+</style>
+<div id="{{["id"]}}"
+  data-tealeaf-native="true"
+  templatetype="toggleButton"
+  style="position: absolute;
+        {{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}">
+  <label>
+    <input id="{{["id"]}}-input"
+      type="checkbox"
+      class="switch-custom"
+      {{if(and(exists([], "currState", "isOn"),eq(["currState"]["isOn"],true)),"checked","")}} />
+    <div>
+      <div></div>
+    </div>
+  </label>
+</div>

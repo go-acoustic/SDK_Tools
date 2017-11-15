@@ -1,0 +1,9 @@
+<!-- control_CollectionCell.tlt version_2 -->
+<div 
+id="{{["id"]}}" data-tealeaf-native="true"  
+style="
+padding:0; box-sizing:border-box; -moz-box-sizing:border-box;
+{{if(exists([], "position"), template(["position"],"iOS\\css_position.tlt"), "/* TLT_WARN: [position] not rendered */")}}
+">
+{{if(exists([],"currState","data"), template(["currState"]["data"],"iOS\\array_controls.tlt"), "<!-- TLT_ERROR: MISSING currState.data -->\r\n") }}
+</div>

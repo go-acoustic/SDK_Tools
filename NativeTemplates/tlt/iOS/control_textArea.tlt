@@ -1,0 +1,21 @@
+<!-- control_textArea.tlt version_5 -->
+<textarea id="{{["id"]}}" 
+  data-tealeaf-native="true"
+  style="resize:none; 
+        overflow:hidden; 
+        padding:0; 
+        box-sizing:border-box; 
+        -moz-box-sizing:border-box;
+        border-radius:{{if(exists([], "style", "borderRadius"),["style"]["borderRadius"],0)}}px;
+        {{if(exists([], "style", "borderColor"),cssDecl(htmlColor(["style"]["borderColor"]),"border-color"),"/* TLT_WARN: [borderColor] not rendered */")}}
+        {{if(exists([], "position"),               template(["position"],"iOS\\css_position.tlt"),            "/* TLT_WARN: [position] not rendered */")}}
+        {{if(exists([], "currState", "font"),      template(["currState"]["font"],"iOS\\css_font.tlt"),       "/* TLT_WARN: [font] not rendered */") }}
+        {{if(exists([], "style", "textAlignment"), cssDecl(["style"]["textAlignment"],"text-align"),          "/* TLT_WARN: text-align not rendered */")}}
+        {{if(exists([], "style", "textBorder"),    if(eq(["style"]["textBorder"],"none"),"border-style:none;",""), "/* TLT_WARN: [textBorder] not specified */")}}
+        {{if(exists([], "image"),                  template(["image"],"iOS\\css_backgroundImage.tlt"),"background-image:none;") }}
+        {{if(exists([], "style", "bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),"")}}"
+  >{{if(exists([], "currState", "text"),["currState"]["text"],"")}}
+</textarea>
+
+
+

@@ -1,0 +1,21 @@
+<!-- control_button.tlt version_1 -->
+{{
+if(
+	and(
+		exists([],"style","buttonType"),
+				or(
+					eq(["style"]["buttonType"],"bar"),
+					or(
+						eq(["style"]["buttonType"],"barLeft"), eq(["style"]["buttonType"],"barRight")
+					)
+				)
+	),
+	template([], "iOS\\control_button_toolbar.tlt" ),
+	if (
+		and(exists([],"style","buttonType"),eq(["style"]["buttonType"],"system"))
+		,
+		template([], "iOS\\control_button_button.tlt" ),
+		template([], "iOS\\control_collectionView.tlt" )
+		)
+)
+}}

@@ -1,0 +1,4 @@
+<!-- control_toggleButton.tlt version_2 -->
+{{if(exists([],"image"),
+    if(or(exists(["image"],"base64Image"),exists(["image"],"value")),template([],"android\\control_imageButton.tlt"),template([],"android\\control_toggleButton_normal.tlt")),
+    template([],"android\\control_toggleButton_normal.tlt"))}}

@@ -1,0 +1,137 @@
+<!-- control_slider.tlt version_6 -->
+<style>
+/* slider */
+  .form-range-control input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 11px 0;
+  }
+  .form-range-control input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    box-shadow: 0px 0px px var(--grey), 0px 0px 0px var(--theme-color);
+    background: var(--grey);
+    border-radius: 0px;
+    border: 0px solid var(--grey);
+  }
+  .form-range-control input[type=range]::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px var(--grey), 0px 0px 1px var(--grey);
+    border: 1px solid var(--grey);
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background: #ffffff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -11px;
+    z-index: 5;
+  }
+  .form-range-control input[type=range]:focus::-webkit-slider-runnable-track {
+    // background: var(--theme-color);
+  }
+  .form-range-control input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2px;
+    cursor: pointer;
+    box-shadow: 0px 0px px var(--grey), 0px 0px 0px var(--theme-color);
+    background: var(--grey);
+    border-radius: 0px;
+    border: 0px solid var(--grey);
+  }
+  .form-range-control input[type=range]::-moz-range-thumb {
+    box-shadow: 1px 1px 1px var(--grey), 0px 0px 1px var(--grey);
+    border: 1px solid var(--grey);
+    height: 24px;
+    width: 24px;
+    border-radius: 50px;
+    background: #ffffff;
+    cursor: pointer;
+  }
+  .form-range-control input[type=range]::-moz-range-progress {
+    background-color: var(--theme-color);
+  }
+  .form-range-control input[type=range]::-ms-track {
+    width: 100%;
+    height: 2px;
+    background: transparent;
+    border-color: transparent;
+    border-width: 6px 0;
+    color: transparent;
+  }
+  .form-range-control input[type=range]::-ms-fill-lower {
+    background: #007AFF;
+    border-radius: 20px;
+    box-shadow: 0px 0px px #d3d3d3, 0px 0px 0px #007AFF;
+  }
+  .form-range-control input[type=range]::-ms-fill-upper {
+    background: #d3d3d3;
+    border-radius: 20px;
+    box-shadow: 0px 0px px #d3d3d3, 0px 0px 0px #007AFF;
+  }
+  .form-range-control input[type=range]::-ms-thumb {
+    border: 1px solid #d3d3d3;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background: #ffffff;
+    cursor: pointer;
+    z-index: 5;
+  }
+  .form-range-control input[type=range]:focus::-ms-fill-lower {
+    background: #007AFF;
+  }
+  .form-range-control input[type=range]:focus::-ms-fill-upper {
+    background: #d3d3d3;
+  }
+</style>
+<div data-tealeaf-native="true"
+  name="{{["id"]}}"
+  id="{{["id"]}}"
+  templatetype="slider"
+  class="form-range-control"
+  style="position:absolute;
+        {{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}">
+  <div class="tlThemeColor lowerThumbBar"
+    id="{{["id"]}}-range"
+    style="width: {{if(gt(["currState"]["value"],0),sub(div(mult(div(mult(["currState"]["value"],100),["currState"]["maxValue"]),["position"]["width"]),100),12),0)}}px;
+           height: 3px;
+           bottom: 50%;
+           z-index: 1;
+           position: absolute;"></div>
+           <script>
+           function changeRangeLowerTrackBarBottom() {
+             if(navigator.userAgent.indexOf("Chrome") != -1 )
+             {
+                 document.getElementsByClassName("lowerThumbBar")[0].style.bottom = "60%";
+             }
+             else if(navigator.userAgent.indexOf("Safari") != -1)
+             {
+                 document.getElementsByClassName("lowerThumbBar")[0].style.bottom = "55%";
+             }
+             else if(navigator.userAgent.indexOf("Firefox") != -1 )
+             {
+                 document.getElementsByClassName("lowerThumbBar")[0].style.bottom = "30%";
+                 document.getElementsByClassName("lowerThumbBar")[0].style.height = "0px";
+             }
+             else if((navigator.userAgent.indexOf("MSIE") != -1 ) || (!!document.documentMode == true )) //IF IE > 10
+             {
+                 document.getElementsByClassName("lowerThumbBar")[0].style.bottom = "0%";
+                 document.getElementsByClassName("lowerThumbBar")[0].style.height = "0px";
+             }
+             else
+             {
+                 document.getElementsByClassName("lowerThumbBar")[0].style.bottom = "50%";
+             }
+           }
+           changeRangeLowerTrackBarBottom();
+           </script>
+    <input type="range"
+      id="{{["id"]}}-input"
+      value="{{mult(["currState"]["value"],100)}}"
+      min="0"
+      max="{{mult(["currState"]["maxValue"],100)}}">
+</div>

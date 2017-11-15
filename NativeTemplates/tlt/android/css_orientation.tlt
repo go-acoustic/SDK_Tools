@@ -1,0 +1,2 @@
+{{if(exists([],"orientation"),if(or(eq(["orientation"],0),eq(["orientation"],180)),cssDecl(["deviceWidth"],"width","px"),cssDecl(["deviceHeight"],"width","px")),"")}}
+{{if(exists([],"orientation"),if(or(eq(["orientation"],0),eq(["orientation"],180)),cssDecl(["deviceHeight"],"height","px"),cssDecl(["deviceWidth"],"height","px")),"")}};

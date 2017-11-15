@@ -1,0 +1,25 @@
+<!-- control_button_normal.tlt version_5 -->
+<div style="position:fixed;
+           {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}
+           {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}">
+  <div id="{{["id"]}}" 
+    data-tealeaf-native="true" 
+    style="line-height:{{div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"])}}px;
+           {{default(template(["currState"]["font"],"android\\css_font.tlt"),"<!-- json currState\font not specified or problem with css_font.tlt -->")}}
+           {{if(exists([]["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
+           {{if(exists([]["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}
+           {{if(exists([]["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"")}}
+           {{if(and(exists([]["style"],"textAlign"),eq([]["style"]["textAlign"],"center")),"vertical-align: middle;","")}}
+           {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
+           {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
+                if(versionGT([$"clientEnvironment"]["osVersion"],"2.9"),
+                    "background-color: inherit;",
+                    ""))}}
+           height:100%;
+           width:100%;">
+    {{default(["currState"]["text"],"<!-- json curState test not specified -->")}}
+  </div>
+</div>

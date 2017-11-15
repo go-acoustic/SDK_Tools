@@ -1,0 +1,4 @@
+<!-- control_gridCell.tlt version_1 -->
+{{
+    default(template([], concat("android\\control_", []["tlType"], ".tlt")), concat("<!-- file not found: control_", []["tlType"], ".tlt -->"))
+}}

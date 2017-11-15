@@ -1,0 +1,24 @@
+<!-- control_canvas.tlt version_5 -->
+<div style="{{default(template(["position"],"android\\css_position.tlt"),"<!--json position not specified or problem with css_position.tlt -->")}}
+            {{if(exists([],"paddingTop"),cssDecl(div(numericToFloat(["paddingTop"]),[$"clientEnvironment"]["pixelDensity"]),"padding-top"),"")}}
+            {{if(exists([],"paddingBottom"),cssDecl(div(numericToFloat(["paddingBottom"]),[$"clientEnvironment"]["pixelDensity"]),"padding-bottom"),"")}}
+            {{if(exists([],"paddingLeft"),cssDecl(div(numericToFloat(["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left"),"")}}
+            {{if(exists([],"paddingRight"),cssDecl(div(numericToFloat(["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right"),"")}}
+            {{if(and(versionGT([$"clientEnvironment"]["osVersion"],"2"),eq(["type"],"ActionBarContainer")),"border-bottom:2px #33b5e5;border-bottom-style:solid;","")}}
+            {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
+    <div
+         id="{{["id"]}}" data-tealeaf-native="true"
+         style="{{default(template(["position"],"android\\css_position.tlt"),"<!--json position not specified or problem with css_position.tlt -->")}}
+                {{default(template(["style"],"android\\css_color.tlt"),"<!-- json style not specified or problem with css_color.tlt -->") }}
+                padding:0px 0px 0px 0px;
+                {{if(exists([],"image"),
+                    if(and(exists(["image"],"type"),eq(["image"]["type"],"url")),concat("background-image:url",["image"]["value"],");"),  
+                        if(exists(["image"],"base64Image"),concat(concat("background-image:url(data:image/",["image"]["mimeExtension"],";base64,",["image"]["base64Image"]),");"),
+                            if(exists(["image"],"value"), concat("background-image:url(http://localhost:38000/images/", concat(["image"]["value"], ".",if(eq(["image"]["mimeExtension"], "xml"), "png", ["image"]["mimeExtension"]) ), ");"),"")
+                        )
+                    )
+                ,"")}}
+                {{if(exists([],"image"),concat("background-size:100%",";"),"")}}
+                {{if(exists([],"image"),concat("background-repeat:no-repeat",";"),"")}}"
+    />
+</div>

@@ -1,0 +1,4 @@
+{{cssDecl(sub(div(numericToFloat(["size"]),[$"clientEnvironment"]["pixelDensity"]),[$"clientEnvironment"]["pixelDensity"]),"font-size","px")}}
+{{cssDecl(if(["bold"],"bold","normal"),"font-weight")}}
+{{cssDecl(if(["italic"],"italic","normal"),"font-style")}}
+{{cssDecl(if(["name"],"sans-serif","sans-serif"),"font-family")}}

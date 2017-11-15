@@ -1,0 +1,24 @@
+<!-- control_label.tlt version_6 -->
+<div
+    id="{{["id"]}}" data-tealeaf-native="true" 
+    style="display: table;
+           position:fixed;
+           line-height:1;
+           {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+           {{if(exists(["style"],"paddingLeft"),
+                cssDecl(div(numericToFloat(add(["position"]["x"],["style"]["paddingLeft"])),[$"clientEnvironment"]["pixelDensity"]),"left","px"),
+                cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px"))}}
+           {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),cssDecl("inherit","background-color"))}}
+           {{if(exists(["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
+           {{if(exists(["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}
+           {{if(exists(["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"")}}
+           {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}"
+    >
+    <div style="display: table-cell;
+                vertical-align: middle;
+                {{default(template(["currState"]["font"],"android\\css_font.tlt"),"<!-- json currState\font not specified or problem with css_font.tlt-->") }}"
+    >{{default(["currState"]["text"],"<!-- currState\text was not found -->")}}
+    </div>
+</div>

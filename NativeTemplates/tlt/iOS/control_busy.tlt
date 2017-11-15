@@ -1,0 +1,10 @@
+<!-- control_busy.tlt version_2 -->
+<div
+id="{{["id"]}}" data-tealeaf-native="true"
+style="
+{{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"), "/* TLT_WARN: [y] not rendered */")}}
+{{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"),"/* TLT_WARN: [x] not rendered */")}}
+"
+{{["currState"]["animating"]}}
+size="{{["position"]["width"]}}"
+></div>

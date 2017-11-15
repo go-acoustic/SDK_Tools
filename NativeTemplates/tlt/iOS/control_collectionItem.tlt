@@ -1,0 +1,10 @@
+<!-- control_collectionItem.tlt version_1 -->
+{{
+if(
+		and(exists([],"subType"),
+			eq(["subType"],"tableCell")
+	),
+	template([], "iOS\\control_tableCell.tlt" ),
+	template([], "iOS\\control_collectionCell.tlt" )
+)
+}}

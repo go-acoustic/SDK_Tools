@@ -1,0 +1,49 @@
+<!-- control_textBox.tlt version_7 -->
+<style>
+::-webkit-input-placeholder {
+   text-align: {{if(exists([], "style", "placeHolderTextAlignment"),["style"]["placeHolderTextAlignment"],"left")}};
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   text-align: {{if(exists([], "style", "placeHolderTextAlignment"),["style"]["placeHolderTextAlignment"],"left")}};
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   text-align: {{if(exists([], "style", "placeHolderTextAlignment"),["style"]["placeHolderTextAlignment"],"left")}};
+}
+
+:-ms-input-placeholder {
+   text-align: {{if(exists([], "style", "placeHolderTextAlignment"),["style"]["placeHolderTextAlignment"],"left")}};
+}
+</style>
+<input id="{{["id"]}}"
+  data-tealeaf-native="true"
+  style="resize:none;
+        overflow:hidden;
+        padding:0;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        position:absolute;
+        {{if(exists([],"position","x"),cssDecl(["position"]["x"],"left","px"),"/* TLT_WARN: [x] not specified */")}}
+        {{if(exists([],"position","y"),cssDecl(["position"]["y"],"top", "px"),"/* TLT_WARN: [y] not specified */")}}
+    		{{if(exists([],"position","width"),
+    			if(eq(["position"]["width"],0),"/* TLT_ERROR: zero [width] specified */",cssDecl(["position"]["width"], "width","px")),
+    			"/* TLT_WARN: [width] not specified */"
+    		)}}
+    		{{if(exists([],"position","height"),
+    			if(eq(["position"]["height"],0),"/* TLT_ERROR: zero [height] specified */",cssDecl(["position"]["height"], "height","px")),
+    			"/* TLT_WARN: [height] not specified */"
+    		)}}
+        {{if(exists([], "currState", "font"),template(["currState"]["font"],"iOS\\css_font.tlt"),"/* TLT_WARN: [font] not rendered */") }}
+        {{if(exists([], "style", "textAlignment"),cssDecl(["style"]["textAlignment"],"text-align"),"/* TLT_WARN: text-align not rendered */")}}
+        {{if(exists([], "style", "textBorder"),if(eq(["style"]["textBorder"],"none"),"border-style:none;",""), "/* TLT_WARN: [textBorder] not specified */")}}
+        {{if(exists([], "style", "textBorder"),if(or(eq(["style"]["textBorder"],"line"),eq(["style"]["textBorder"],"roundedRect")),"border-width: 1px;",""), "/* TLT_WARN: [textBorder] not specified */")}}
+        border-radius:{{if(exists([], "style", "borderRadius"),["style"]["borderRadius"],0)}}px;
+        {{if(exists([], "style", "borderColor"),cssDecl(htmlColor(["style"]["borderColor"]),"border-color"),"/* TLT_WARN: [borderColor] not rendered */")}}
+        {{if(exists([], "image"),template(["image"],"iOS\\css_backgroundImage.tlt"),"background-image:none;") }}
+        {{if(exists(["style"],"bgColorRGBA"),concat("background-color:",concat(["style"]["bgColorRGBA"],";")),
+                                            if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
+                                                                           cssDecl("inherit","background-color")))}}"
+  {{if(exists([], "currState", "text"),htmlAttr(["currState"]["text"],"value"),"")}}
+  {{if(exists([], "currState", "placeholder"),htmlAttr(["currState"]["placeholder"],"placeholder"),"")}}
+/>

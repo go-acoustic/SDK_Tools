@@ -1,0 +1,17 @@
+<!-- control_canvas.tlt version_4 -->
+<div id="{{["id"]}}"
+  data-tealeaf-native="true"
+  style="padding:0;
+        box-sizing:border-box;
+        -moz-box-sizing:border-box;
+        border-radius:{{if(exists([], "style", "borderRadius"),["style"]["borderRadius"],0)}}px;
+        {{if(exists([], "style", "hasBorder"),if(eq(["style"]["hasBorder"],true),"border-width: 1px;border-style: solid;",""),"")}}
+        {{if(exists([], "style", "borderColor"),cssDecl(htmlColor(["style"]["borderColor"]),"border-color"),"")}}
+        {{if(exists([], "position"), template(["position"],"iOS\\css_position.tlt"),"/* TLT_WARN: [postion] not rendered */")}}
+        {{if(exists(["style"],"bgColorRGBA"),concat("background-color:",concat(["style"]["bgColorRGBA"],";")),
+                                            if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
+                                                                           cssDecl("inherit","background-color")))}}
+        {{if(exists([], "style", "textAlphaColor"), cssDecl(["style"]["textAlphaColor"], "opacity"), "/* TLT_WARN: opacity not rendered */")}}
+        ">
+ {{if(exists([], "currState", "data"), if(eq(["type"],"_UIQueuingScrollView"),template(["currState"]["data"][0],"iOS\\control_canvas_static.tlt"), template(["currState"]["data"],"iOS\\array_controls.tlt")), "<!--  TLT_WARNING: MISSING [currState][data]  -->\r\n")}}
+</div>

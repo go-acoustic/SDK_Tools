@@ -1,0 +1,205 @@
+<!-- progressSpinner.tlt version_3 -->
+<style>
+div.spinner, div.activeSpinner {
+}
+
+div.spinner div, div.activeSpinner div {
+  width: 8%;
+  height: 25%;
+  position: absolute;
+  left: 47%;
+  top: 37%;
+  -webkit-border-radius: 50px;
+  -webkit-box-shadow: 0 0 3px rgba(0,0,0,0.2);
+  opacity: 0;
+}
+
+div.activeSpinner div {
+  -webkit-animation: fade 1s linear infinite;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1;}
+  to {opacity: 0.25;}
+}
+
+div.spinner div.bar1, div.activeSpinner div.activeBar1 {
+  -webkit-transform:rotate(0deg) translate(0, -130%);
+}
+
+div.spinner div.bar2, div.activeSpinner div.activeBar2 {
+  -webkit-transform:rotate(30deg) translate(0, -130%);
+}
+
+div.spinner div.bar3, div.activeSpinner div.activeBar3 {
+  -webkit-transform:rotate(60deg) translate(0, -130%);
+}
+
+div.spinner div.bar4, div.activeSpinner div.activeBar4 {
+  -webkit-transform:rotate(90deg) translate(0, -130%);
+}
+
+div.spinner div.bar5, div.activeSpinner div.activeBar5 {
+  -webkit-transform:rotate(120deg) translate(0, -130%);
+}
+
+div.spinner div.bar6, div.activeSpinner div.activeBar6 {
+  -webkit-transform:rotate(150deg) translate(0, -130%);
+}
+
+div.spinner div.bar7, div.activeSpinner div.activeBar7 {
+  -webkit-transform:rotate(180deg) translate(0, -130%);
+}
+
+div.spinner div.bar8, div.activeSpinner div.activeBar8 {
+  -webkit-transform:rotate(210deg) translate(0, -130%);
+}
+
+div.spinner div.bar9, div.activeSpinner div.activeBar9 {
+  -webkit-transform:rotate(240deg) translate(0, -130%);
+}
+
+div.spinner div.bar10, div.activeSpinner div.activeBar10 {
+  -webkit-transform:rotate(270deg) translate(0, -130%);
+}
+
+div.spinner div.bar11, div.activeSpinner div.activeBar11 {
+  -webkit-transform:rotate(300deg) translate(0, -130%);
+}
+
+div.spinner div.bar12,div.activeSpinner div.activeBar12 {
+  -webkit-transform:rotate(330deg) translate(0, -130%);
+}
+
+div.spinner div.bar12 {
+  opacity: 0.17;
+}
+
+div.spinner div.bar11 {
+  opacity: 0.08;
+}
+
+div.spinner div.bar10 {
+  opacity: 1;
+}
+
+div.spinner div.bar9 {
+  opacity: 0.92;
+}
+
+div.spinner div.bar8 {
+  opacity: 0.83;
+}
+
+div.spinner div.bar7 {
+  opacity: 0.75;
+}
+
+div.spinner div.bar6 {
+  opacity: 0.67;
+}
+
+div.spinner div.bar5 {
+  opacity: 0.58;
+}
+
+div.spinner div.bar4 {
+  opacity: 0.5;
+}
+
+div.spinner div.bar3 {
+  opacity: 0.42;
+}
+
+div.spinner div.bar2 {
+  opacity: 0.33;
+}
+
+div.spinner div.bar1 {
+  opacity: 0.25;
+}
+
+div.activeSpinner div.activeBar1 {
+  -webkit-animation-delay: 0s;
+}
+
+div.activeSpinner div.activeBar2 {
+  -webkit-animation-delay: -0.9167s;
+}
+
+div.activeSpinner div.activeBar3 {
+  -webkit-animation-delay: -0.833s;
+}
+
+div.activeSpinner div.activeBar4 {
+  -webkit-animation-delay: -0.7497s;
+}
+
+div.activeSpinner div.activeBar5 {
+  -webkit-animation-delay: -0.667s;
+}
+
+div.activeSpinner div.activeBar6 {
+  -webkit-animation-delay: -0.5837s;
+}
+
+div.activeSpinner div.activeBar7 {
+  -webkit-animation-delay: -0.5s;
+}
+
+div.activeSpinner div.activeBar8 {
+  -webkit-animation-delay: -0.4167s;
+}
+
+div.activeSpinner div.activeBar9 {
+  -webkit-animation-delay: -0.333s;
+}
+
+div.activeSpinner div.activeBar10 {
+  -webkit-animation-delay: -0.2497s;
+}
+
+div.activeSpinner div.activeBar11 {
+  -webkit-animation-delay: -0.167s;
+}
+
+div.activeSpinner div.activeBar12 {
+  -webkit-animation-delay: -0.0833s;
+}
+</style>
+<div id="{{["id"]}}"
+  data-tealeaf-native="true"
+  class="{{if(eq(["currState"]["animating"],true),"activeSpinner","spinner")}}"
+  style="position:absolute;
+        display: inline-block;
+        {{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}
+        background: {{if(exists([], "style", "bgColor"),concat("",htmlColor(["style"]["bgColor"])),"")}};"
+  animating={{["currState"]["animating"]}}>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar1","bar1")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar2","bar2")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar3","bar3")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar4","bar4")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar5","bar5")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar6","bar6")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar7","bar7")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar8","bar8")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar9","bar9")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar10","bar10")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar11","bar11")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+  <div class="{{if(eq(["currState"]["animating"],true),"activeBar12","bar12")}}"
+    style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>
+</div>

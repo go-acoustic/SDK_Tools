@@ -1,0 +1,34 @@
+<!-- control_alert.tlt version_2 -->
+
+<div id="alertGrayPanel"
+  class="tlCurrentDeviceHeight tlCurrentDeviceWidth"
+  style="position:fixed;
+         left:0;
+         top:0;
+         background-color: var(--dark-grey);
+         z-index:2;
+         filter: alpha(opacity=65); /* internet explorer */
+         -khtml-opacity: 0.65;      /* khtml, old safari */
+         -moz-opacity: 0.65;       /* mozilla, netscape */
+         opacity: 0.65;           /* fx, safari, opera */">
+</div>
+
+<div style="{{cssDecl(div(numericToFloat([$"clientEnvironment"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+           {{cssDecl(div(numericToFloat([$"clientEnvironment"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           position:fixed;
+           left:0;
+           top:0;
+           z-index:5;">
+  <div class="tlBackgroundColor"
+    style="{{cssDecl(["position"]["width"],"width","px")}}
+           {{cssDecl(["position"]["height"],"height","px")}}
+           {{cssDecl(["position"]["y"],"top","px")}}
+           {{cssDecl(["position"]["x"],"left","px")}}
+           {{if(exists([], "style", "bgColor"),        cssDecl(htmlColor(["style"]["bgColor"]),"background-color"), "/* TLT_WARN: background-color not rendered */")}}
+           position:relative;
+           display:block;
+           z-index:5;
+           border-radius: 10px;">
+    {{if(exists([], "currState", "data"), template(["currState"]["data"],"iOS\\array_controls.tlt"), "<!--  TLT_WARNING: MISSING [currState][data]  -->\r\n")}}
+  </div>
+</div>
