@@ -1,0 +1,24 @@
+/*******************************************************************************
+* Licensed Materials - Property of IBM
+* (C) Copyright IBM Corp. 2016
+* US Government Users Restricted Rights - Use, duplication or disclosure
+* restricted by GSA ADP Schedule Contract with IBM Corp.
+******************************************************************************/
+{
+  "AutoLayout": {
+    "MyActivityOrMyFragment": {
+      "do": false,
+      "screenViewName": "MyScreenViewName",
+      "delay": 500,
+      "takeScreenShot": false
+    }
+  },
+  "AppendMapIds": {
+    "com.any.package:id/givenIdOnXmlLayout1": {
+      "mid": "giveAdditionalId1"
+    },
+    "com.any.package:id/givenIdOnXmlLayout2": {
+      "mid": "giveAdditionalId2"
+    }
+  }
+}

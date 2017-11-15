@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.ibm.tealeaf.aurora.CheckoutActivity" >
+
+    <item
+        android:id="@+id/action_logout"
+        android:orderInCategory="100"
+        android:title="@string/logout"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_next"
+        android:orderInCategory="100"
+        android:title="@string/action_next"
+        app:showAsAction="always"/>
+
+</menu>

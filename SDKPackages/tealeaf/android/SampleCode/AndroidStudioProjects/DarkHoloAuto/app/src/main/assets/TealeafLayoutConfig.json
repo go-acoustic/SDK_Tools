@@ -1,0 +1,72 @@
+/*******************************************************************************
+* Licensed Materials - Property of IBM
+* (C) Copyright IBM Corp. 2016
+* US Government Users Restricted Rights - Use, duplication or disclosure
+* restricted by GSA ADP Schedule Contract with IBM Corp.
+******************************************************************************/
+{
+  "AutoLayout": {
+    "UICAndroidControlsAppActivity": {
+      "do": false,
+      "screenViewName": "UICAndroidControlsAppActivity",
+      "delay": 1,
+      "takeScreenShot": false
+    },
+    "ControlsActivity1": {
+      "do": true,
+      "screenViewName": "CAuto1",
+      "delay": 500,
+      "takeScreenShot": false
+    },
+    "ControlsActivity2": {
+      "do": true,
+      "screenViewName": "CAuto2",
+      "delay": 50,
+      "takeScreenShot": false
+    },
+    "ControlsActivity3": {
+      "do": true,
+      "screenViewName": "CAuto3",
+      "delay": 50,
+      "takeScreenShot": false
+    },
+    "ControlsActivity4": {
+      "do": true,
+      "screenViewName": "CAuto4",
+      "delay": 50,
+      "takeScreenShot": false
+    },
+    "ControlsActivity5": {
+      "do": true,
+      "screenViewName": "CAuto5",
+      "delay": 50,
+      "takeScreenShot": false
+    },
+    "ControlsActivity6": {
+      "do": true,
+      "screenViewName": "CAuto6",
+      "delay": 50,
+      "takeScreenShot": false
+    },
+    "ControlsActivity7": {
+      "do": true,
+      "screenViewName": "CAuto7",
+      "delay": 50,
+      "takeScreenShot": false
+    },
+    "ControlsActivity8": {
+      "do": true,
+      "screenViewName": "CAuto8",
+      "delay": 50,
+      "takeScreenShot": false
+    }
+  },
+  "AppendMapIds": {
+    "com.any.package:id/givenIdOnXmlLayout1": {
+      "mid": "giveAdditionalId1"
+    },
+    "com.any.package:id/givenIdOnXmlLayout2": {
+      "mid": "giveAdditionalId2"
+    }
+  }
+}

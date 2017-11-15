@@ -1,0 +1,537 @@
+#-------------------------------------------------------------------------------
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corp. 2016
+# US Government Users Restricted Rights - Use, duplication or disclosure
+# restricted by GSA ADP Schedule Contract with IBM Corp.
+#-------------------------------------------------------------------------------
+
+require_relative 'JsonUtil'
+require 'rexml/document'
+require 'yaml'
+include REXML
+
+task :default => 'tl:all'
+
+namespace :tl do
+
+  $config = YAML.load(File.open("settings.yml"))
+
+  desc "Run thru all the steps for integration"
+  task :all => [:validateParameters, :createLayoutFile, :updateAssetsLibs, :fixGradle, :updateManifest, :updateApplicationFile, :updateActivityFiles, :updateFragmentFiles] do
+    puts "Completed installing tealeaf into Android project."
+  end
+
+  desc "Validate parameters on command line"
+  task :validateParameters do
+    $modulePath = ENV['modulePath']
+    $appKey = ENV['appKey']
+    $postMessageUrl = ENV['postMessageUrl']
+    $killSwitchUrl = ENV['killSwitchUrl']
+
+    if $modulePath.nil?
+      raise ArgumentError, "Missing required argument modulePath, example modulePath=\"....\""
+    end
+
+    if !(File.directory?($modulePath))
+      raise ArgumentError, "modulePath directory for #{modulePath} does not exist."
+    end
+
+    if $postMessageUrl.nil?
+      raise ArgumentError, "Missing required argument postMessageUrl, example postMessageUrl=\"http....\""
+    end
+
+    $manifestFile = $modulePath + $config["manifestFilePath"]
+    $assetDirectory = $modulePath + $config["assetDirectoryPath"]
+    $libsDirectory = $modulePath + $config["libsDirectoryPath"]
+
+    puts "Starting to install tealeaf into Android project located at #{$modulePath} which currently only supports standard Android Studio modules."
+  end
+
+  desc "Create layout file"
+  task :createLayoutFile do
+    tealeafLayoutConfigFile = $assetDirectory + $config["tealeafLayoutConfigFilePath"]
+
+    if !(File.file?($manifestFile))
+      raise ArgumentError, "Manifest file (#{$manifestFile}) for modulePath does not exist."
+    end
+
+    # Read in manifest file from Android application
+    xmlfile = File.new($manifestFile)
+    xmldoc = Document.new(xmlfile)
+
+    # Create json data based on manifest file
+    json = "{"
+
+    # Create AutoLayout data
+    autoLayout = "\"AutoLayout\": {"
+    xmldoc.elements.each("manifest/application/activity") do |element|
+      autoLayout = autoLayout + "\"" + getClassName(element.attributes["android:name"]) + "\":{\"do\":true, \"screenViewName\":\"" + getClassName(element.attributes["android:name"]) + "\", \"delay\":#{$config["layoutDelay"]}, \"takeScreenShot\":false},"
+    end
+
+    # Get all the base fragment files
+    fragmentFileNames = Array.new
+    baseFragmentFiles = getFiles(/(\s?extends\s?Fragment)|(\sextends\s?android.support.v4.app.Fragment)|(\sextends\s?android.app.Fragment)/)
+    #pp fragmentFiles
+    baseFragmentFiles.keys.each do |file|
+      fragmentFileNames << getFileName(file).gsub(/\.java/, "")
+    end
+
+    fragmentFileNames.each do |file|
+      extendedBaseFragments = getFiles(/\s?extends\s?#{file}/)
+      extendedBaseFragments.keys.each do |extfile|
+        fragmentFileNames << getFileName(extfile).gsub(/\.java/, "")
+      end
+    end
+
+    puts fragmentFileNames
+    fragmentFileNames.each do |fragName|
+      autoLayout = autoLayout + "\"#{fragName}\":{\"do\":true, \"screenViewName\":\"#{fragName}\", \"delay\":#{$config["layoutDelay"]}, \"takeScreenShot\":false},"
+    end
+
+    # Remove extra comma at end of line
+    autoLayout = autoLayout[0, autoLayout.length - 1]
+    autoLayout = autoLayout + "}"
+
+    # Create AppendMapIds data
+    appendMapIds = "\"AppendMapIds\": {\"com.any.package:id/givenIdOnXmlLayout1\":{\"mid\": \"giveAdditionalId1\"},\"com.any.package:id/givenIdOnXmlLayout2\":{\"mid\": \"giveAdditionalId2\"}}"
+    
+    # Construct TealeafLayoutConfig data
+    json = json + autoLayout + "," + appendMapIds + "}"
+    #puts json
+
+    createAssetDirectory($assetDirectory)
+
+    json = JsonUtil.new(tealeafLayoutConfigFile, json)
+    #json.print
+    json.save
+
+    puts "Created TealeafLayoutConfig located at #{tealeafLayoutConfigFile}"
+  end
+
+  desc "Copy over items to assets and libs directory"
+  task :updateAssetsLibs do
+    if !(File.directory?($libsDirectory))
+      Dir.mkdir($libsDirectory)
+    end
+
+    # Copy over items to assets directory
+    FileUtils.cp_r $config["eocoreJarPath"], $libsDirectory, remove_destination: true
+    FileUtils.cp_r $config["eocoreEOCoreBasicConfigPath"], $assetDirectory, remove_destination: true
+    FileUtils.cp_r $config["eocoreEOCoreAdvancedConfigPath"], $assetDirectory, remove_destination: true
+    FileUtils.cp_r $config["tealeafModJarPath"], $libsDirectory, remove_destination: true
+    FileUtils.cp_r $config["tealeafBasicConfigPath"], $assetDirectory, remove_destination: true
+    FileUtils.cp_r $config["tealeafAdvancedConfigPath"], $assetDirectory, remove_destination: true
+    FileUtils.cp_r $config["teaCutsJarPath"], $libsDirectory, remove_destination: true
+
+    # Check that there is an assets folder
+    createAssetDirectory($assetDirectory)
+    FileUtils.cp_r $config["teaCutsBasicConfigPath"], $assetDirectory, remove_destination: true
+    FileUtils.cp_r $config["teaCutsAdvancedConfigPath"], $assetDirectory, remove_destination: true
+
+    # Read in gradle and convert to an array
+    tealeafModBasicConfigPath = $assetDirectory + "/TealeafBasicConfig.properties"
+    contents = File.readlines(tealeafModBasicConfigPath)
+
+    killSwitchEnabled = "true"
+    killSwitchEnabledIndex = getIndexOfRegExp(contents, /KillSwitchEnabled=/)
+
+    if $killSwitchUrl.nil?
+      killSwitchEnabled = "false"
+    end
+    contents[killSwitchEnabledIndex] = "KillSwitchEnabled=" + killSwitchEnabled
+
+    if !($killSwitchUrl.nil?)
+      killSwitchUrlIndex = getIndexOfRegExp(contents, /KillSwitchUrl=/)
+      contents[killSwitchUrlIndex] = "KillSwitchUrl=" + $killSwitchUrl
+    end
+
+    postMessageIndex = getIndexOfRegExp(contents, /PostMessageUrl=/)
+    contents[postMessageIndex] = "PostMessageUrl=" + $postMessageUrl
+    
+    if !($appKey.nil?)
+      appKeyIndex = getIndexOfRegExp(contents, /AppKey=/)
+      contents[appKeyIndex] = "AppKey=" + $appKey
+    end
+
+    # Save changes
+    File.open(tealeafModBasicConfigPath, "w") {|file| file.puts contents }
+
+    puts "Copied over items to assets and libs directory"
+  end
+
+  desc "Update Gradle settings"
+  task :fixGradle do
+    # Add libraries to the dependencies section in gradle
+    $gradleFile = $modulePath + "/build.gradle"
+    
+    # Read in gradle and convert to an array
+    contents = File.readlines($gradleFile)
+    dependenciesStartIndex = getIndexOfRegExp(contents, /\Adependencies\s{/)
+
+    # Sub dependencies array
+    dependenciesArray = contents.slice(dependenciesStartIndex + 1,contents.length)
+
+    dependenciesEndIndex = getIndexOfRegExp(dependenciesArray, /.?}.?/)
+
+    # Adjust end index value
+    dependenciesEndIndex = dependenciesStartIndex + dependenciesEndIndex + 1
+    # Create dependencies array
+    dependenciesArray = contents.slice(dependenciesStartIndex,dependenciesEndIndex)
+
+    # Check dependencies section
+    dependenciesAppcompatIndex = getIndexOfRegExp(dependenciesArray, /com.android.support:appcompat/)
+    dependenciesDesignIndex = getIndexOfRegExp(dependenciesArray, /com.android.support:design/)
+    dependenciesEocoreIndex = getIndexOfRegExp(dependenciesArray, /compile\s?files\('libs\/eocore.jar'\)/)
+    dependenciesTealeafmodIndex = getIndexOfRegExp(dependenciesArray, /compile\s?files\('libs\/tealeafmod.jar'\)/)
+    dependenciesTeacutsIndex = getIndexOfRegExp(dependenciesArray, /compile\s?files\('libs\/teacuts.jar'\)/)
+    dependenciesAspectJIndex = getIndexOfRegExp(dependenciesArray, /org.aspectj:aspectjrt/)
+
+    # Check import section
+    dependenciesAjcMainIndex = getIndexOfRegExp(contents, /import\s?org.aspectj.tools.ajc.Main/)
+    dependenciesIMessageIndex = getIndexOfRegExp(contents, /import\s?org.aspectj.bridge.IMessage/)
+    dependenciesMessageHandlerIndex = getIndexOfRegExp(contents, /import\s?org.aspectj.bridge.MessageHandler/)
+
+    # Insert values if needed
+    insertValueToArrayIfNil(dependenciesAppcompatIndex, $config["dependenciesAppcompat"], dependenciesEndIndex - 1, contents)
+    insertValueToArrayIfNil(dependenciesDesignIndex, $config["dependenciesDesign"], dependenciesEndIndex - 1, contents)
+    insertValueToArrayIfNil(dependenciesEocoreIndex, $config["dependenciesEocore"], dependenciesEndIndex - 1, contents)
+    insertValueToArrayIfNil(dependenciesTealeafmodIndex, $config["dependenciesTealeafmod"], dependenciesEndIndex - 1, contents)
+    insertValueToArrayIfNil(dependenciesTeacutsIndex, $config["dependenciesTeacuts"], dependenciesEndIndex - 1, contents)
+    insertValueToArrayIfNil(dependenciesAspectJIndex, $config["dependenciesAspectJ"], dependenciesEndIndex - 1, contents)
+
+    # Add mavenCentral section if needed
+    mavenCentralIndex = getIndexOfRegExp(contents, /mavenCentral\s?\(\s?\)/)
+    repositoriesIndex = getIndexOfRegExp(contents, /repositories\s?{/)
+    buildscriptIndex = getIndexOfRegExp(contents, /buildscript\s?{/)
+    dependenciesIndex = getIndexOfRegExp(contents, /\s?dependencies\s{/)
+    aspectJ187Index = getIndexOfRegExp(contents, /classpath\s?'org.aspectj:aspectjtools:1.8.7'/)
+    if (mavenCentralIndex == -1 && repositoriesIndex == -1 && buildscriptIndex == -1)
+      insertValueToArrayIfNil(mavenCentralIndex, $config["buildscript"], 0, contents)
+    elsif (mavenCentralIndex == -1 && dependenciesIndex == -1 && aspectJ187Index == -1)
+      insertValueToArrayIfNil(mavenCentralIndex, $config["mavenRepositoriesScript"], repositoriesIndex + 1, contents)
+      insertValueToArrayIfNil(dependenciesIndex, $config["dependenciesBuildscript"], buildscriptIndex + 1, contents)
+    elsif (mavenCentralIndex == -1 && aspectJ187Index == -1)
+      insertValueToArrayIfNil(mavenCentralIndex, $config["mavenRepositoriesScript"], repositoriesIndex + 1, contents)
+      insertValueToArrayIfNil(aspectJ187Index, $config["aspectjDependenciesBuildscript"], dependenciesIndex + 2, contents)
+    elsif (mavenCentralIndex == -1)
+      insertValueToArrayIfNil(mavenCentralIndex, $config["mavenRepositoriesScript"], repositoriesIndex + 1, contents)
+    end
+
+    insertValueToArrayIfNil(dependenciesAjcMainIndex, $config["importAjcMain"], 0, contents)
+    insertValueToArrayIfNil(dependenciesAjcMainIndex, "", 1, contents)
+    insertValueToArrayIfNil(dependenciesIMessageIndex, $config["importAjcIMessage"], 0, contents)
+    insertValueToArrayIfNil(dependenciesMessageHandlerIndex, $config["importAjcMessageHandler"], 0, contents)
+
+    # Add variants section if needed
+    variantsIndex = getIndexOfRegExp(contents, /final\s?def\s?variants\s?=\s?project.android.applicationVariants/)
+    insertValueToArrayIfNil(variantsIndex, $config["variants"], contents.length, contents)
+
+    # Save changes
+    File.open($gradleFile, "w") {|file| file.puts contents }
+
+    puts "Updated gradle file located at #{$gradleFile}"
+  end
+
+  desc "Update manifest file"
+  task :updateManifest do
+    # Read in manifest file from Android application
+    contents = File.readlines($manifestFile)
+
+    # Check dependencies section
+    accessNetworkStateIndex = getIndexOfRegExp(contents, /uses-permission\s?android:name=\"android.permission.ACCESS_NETWORK_STATE\"/)
+    accessWifiStateIndex = getIndexOfRegExp(contents, /uses-permission\s?android:name=\"android.permission.ACCESS_WIFI_STATE\"/)
+    readPhoneStateIndex = getIndexOfRegExp(contents, /uses-permission\s?android:name=\"android.permission.READ_PHONE_STATE\"/)
+    internetIndex = getIndexOfRegExp(contents, /uses-permission\s?android:name=\"android.permission.INTERNET\"/)
+    usesPermissionIndex = getIndexOfRegExp(contents, /uses-permission/)
+    applicationIndex = getIndexOfRegExp(contents, /<application/)
+    
+    if (usesPermissionIndex == -1)
+      usesPermissionIndex = applicationIndex
+    end
+
+    insertValueToArrayIfNil(accessNetworkStateIndex, getSpacedText($config["permissionAccessNetworkState"]), usesPermissionIndex, contents)
+    insertValueToArrayIfNil(accessWifiStateIndex, getSpacedText($config["permissionAccessWIFIState"]), usesPermissionIndex, contents)
+    insertValueToArrayIfNil(readPhoneStateIndex, getSpacedText($config["permissionReadPhoneState"]), usesPermissionIndex, contents)
+    insertValueToArrayIfNil(internetIndex, getSpacedText($config["permissionInternet"]), usesPermissionIndex, contents)
+
+    # Save changes
+    File.open($manifestFile, "w") {|file| file.puts contents }
+
+    puts "Updated manifest file located at #{$manifestFile}"
+  end
+
+  desc "Update application file"
+  task :updateApplicationFile do
+    # Read in manifest file from Android application
+    contents = File.readlines($manifestFile)
+
+    # Check application section
+    applicationStartIndex = getIndexOfRegExp(contents, /<application/)
+
+    # Sub application array
+    applicationArray = contents.slice(applicationStartIndex + 1, contents.length)
+    applicationEndIndex = getIndexOfRegExp(applicationArray, /\s?<activity/)
+
+    # Create application section array
+    applicationSectionArray = contents.slice(applicationStartIndex, applicationEndIndex)
+
+    # Check application section
+    applicationNameIndex = getIndexOfRegExp(applicationSectionArray, /\s?android:name/)
+
+    # Get application file name if found
+    if applicationNameIndex > -1
+      applicationName = applicationSectionArray[applicationNameIndex]
+      applicationName = applicationName.gsub(/\s?android:name\s?=\s?\"/, "")
+      applicationName = applicationName.gsub(/\s?\"\s?>?/, "")
+      applicationName = applicationName.gsub(/\s+/, "")
+      applicationName = getClassName(applicationName)
+
+      applicationFilePath = getFilePath(applicationName)
+
+      importTealeaf = $config["importTealeaf"]
+
+      # Read in the application class
+      applicationContents =  File.readlines(applicationFilePath)
+      importTealeafIndex = getIndexOfRegExp(applicationContents, /\s?import\s?com.tl.uic.Tealeaf;\s?/)
+      lastImportIndex = getLastIndexOfRegExp(applicationContents, /\s?import\s?/)
+      onCreateIndex = getIndexOfRegExp(applicationContents, /void\s?onCreate\s?\(/)
+      onLowMemoryIndex = getIndexOfRegExp(applicationContents, /void\s?onLowMemory\s?\(/)  
+      onTerminateIndex = getIndexOfRegExp(applicationContents, /void\s?onTerminate\s?\(/)
+      lastBracketIndex = getIndexOfRegExp(applicationContents, /\}/)
+        
+      insertValueToArrayIfNil(importTealeafIndex, $config["importTealeaf"], lastImportIndex, applicationContents)
+
+      if importTealeafIndex == -1
+        lastBracketIndex += 1
+      end
+
+      insertValueToArrayIfNil(onTerminateIndex, getSpacedText($config["onTerminateSnippet"]), lastBracketIndex, applicationContents)
+      insertValueToArrayIfNil(onLowMemoryIndex, getSpacedText($config["onLowMemorySnippet"]), lastBracketIndex, applicationContents)
+      insertValueToArrayIfNil(onCreateIndex, getSpacedText($config["onCreateSnippet"]), lastBracketIndex, applicationContents)
+
+      # Save changes
+      File.open(applicationFilePath, "w") {|file| file.puts applicationContents }
+      puts "Updated application file located at #{applicationFilePath}"
+    else
+      # Check application section
+      activityStartIndex = getIndexOfRegExp(contents, /\s?<activity/)
+
+      # Sub application array
+      activityArray = contents.slice(activityStartIndex + 1, contents.length)
+      activityEndIndex = getIndexOfRegExp(activityArray, /\s?<\/activity>/)
+
+      # Create application section array
+      activitySectionArray = contents.slice(activityStartIndex, activityEndIndex)
+
+      # Check application section
+      activityNameIndex = getIndexOfRegExp(activitySectionArray, /\s?android:name/)
+
+      # Get name of the start activity
+      activityName = activitySectionArray[activityNameIndex]
+      puts activityName
+      activityName = activityName.gsub(/<activity\s?/, "")
+      activityName = activityName.gsub(/\s?android:name\s?=\s?\"/, "")
+      activityName = activityName.gsub(/\s?\"\s?>?/, "")
+      activityName = activityName.gsub(/\s+/, "")
+      activityName = getClassName(activityName)
+      puts "Activity file in manifest:" + activityName
+
+      activityFilePath = getFilePath(activityName)
+      if activityFilePath != ""
+        # Read in the activity class
+        puts "Read in activity file at:" + activityFilePath
+        activityContents =  File.readlines(activityFilePath)
+
+        importTealeafIndex = getIndexOfRegExp(activityContents, /(\s?import\s?com.tl.uic.Tealeaf;\s?)|(\s?import\s?com.tl.uic.\*;\s?)/)
+        firstImportIndex = getIndexOfRegExp(activityContents, /\s?import\s?/)
+        newTealeafInstanceIndex = getIndexOfRegExp(activityContents, /\s?new\s?Tealeaf\(/)
+        tealeafEnableIndex = getIndexOfRegExp(activityContents, /\sTealeaf.enable\(/)
+        lastBracketIndex = getIndexOfRegExp(activityContents, /super.onCreate\(/)
+
+        insertValueToArrayIfNil(importTealeafIndex, "", firstImportIndex, activityContents)
+        insertValueToArrayIfNil(importTealeafIndex, $config["tealeafImport"], firstImportIndex, activityContents)
+
+        if importTealeafIndex > -1
+          lastBracketIndex = lastBracketIndex + 1
+        else
+          lastBracketIndex = lastBracketIndex + 3    
+        end
+
+        insertValueToArrayIfNil(tealeafEnableIndex, getSpacedText($config["tealeafEnable"]), lastBracketIndex, activityContents)
+        insertValueToArrayIfNil(newTealeafInstanceIndex, getSpacedText($config["tealeafInstance"]), lastBracketIndex, activityContents)
+
+        # Save changes
+        File.open(activityFilePath, "w") {|file| file.puts activityContents }
+        puts "Updated activity file located at #{activityFilePath}"
+      end
+    end
+  end
+
+  desc "Update activity files"
+  task :updateActivityFiles do
+    # Get all the base activities
+    pageFiles = getFiles(/(\sextends\s?Activity)|(\sextends\s?AppCompatActivity)|(\sextends\s?android.support.v7.app.AppCompatActivity)/)
+    print "pageFiles"
+    pp pageFiles
+
+    pageFiles.each do |key, value|
+      # Read in the activity class
+      pageContents =  File.readlines(key)
+      onPauseIndex = getIndexOfRegExp(pageContents, /void\s?onPause\s?\(/)
+      onResumeIndex = getIndexOfRegExp(pageContents, /void\s?onResume\s?\(/)  
+      onDestroyIndex = getIndexOfRegExp(pageContents, /void\s?onDestroy\s?\(/)
+      onDispatchTouchEventIndex = getIndexOfRegExp(pageContents, /boolean\s?dispatchTouchEvent\s?\(/)
+      importMotionEventIndex = getIndexOfRegExp(pageContents, /\s?import\s?android.view.MotionEvent;\s?/)
+      lastImportIndex = getLastIndexOfRegExp(pageContents, /\s?import\s?/)
+      lastBracketIndex = getLastIndexOfRegExp(pageContents, /\}/) - 1
+
+      insertValueToArrayIfNil(importMotionEventIndex, $config["motionEventImport"], lastImportIndex, pageContents)
+
+      if importMotionEventIndex == -1
+        lastBracketIndex += 1
+      end
+
+      insertValueToArrayIfNil(onDispatchTouchEventIndex, getSpacedText($config["onDispatchTouchEventSnippet"]), lastBracketIndex, pageContents)
+      insertValueToArrayIfNil(onDestroyIndex, getSpacedText($config["onDestroySnippet"]), lastBracketIndex, pageContents)
+      insertValueToArrayIfNil(onResumeIndex, getSpacedText($config["onResumeSnippet"]), lastBracketIndex, pageContents)
+      insertValueToArrayIfNil(onPauseIndex, getSpacedText($config["onPauseSnippet"]), lastBracketIndex, pageContents)
+
+      # Save changes
+      File.open(key, "w") {|file| file.puts pageContents }
+      puts "Updated activity file located at #{key}"
+    end
+  end
+
+  desc "Update fragment files"
+  task :updateFragmentFiles do
+    # Get all the base fragment files
+    fragmentFiles = getFiles(/(\s?extends\s?Fragment)|(\s?extends\s?android.support.v4.app.Fragment)|(\s?extends\s?android.app.Fragment)|(\s?extends\s?DialogFragment)|(\s?extends\s?android.app.DialogFragment)|(\s?extends\s?ListFragment)|(\s?extends\s?android.app.ListFragment)|(\s?extends\s?PreferenceFragment)|(\s?extends\s?android.preference.PreferenceFragment)/)
+    #pp fragmentFiles
+
+    fragmentFiles.each do |key, value|
+      # Read in the fragment class
+      pageContents =  File.readlines(key)
+      importTealeafIndex = getIndexOfRegExp(pageContents, /\s?import\s?com.tl.uic.Tealeaf;\s?/)
+      lastImportIndex = getLastIndexOfRegExp(pageContents, /\s?import\s?/)
+      onPauseIndex = getIndexOfRegExp(pageContents, /void\s?onPause\s?\(/)
+      onResumeIndex = getIndexOfRegExp(pageContents, /void\s?onResume\s?\(/)
+      lastBracketIndex = getLastIndexOfRegExp(pageContents, /\}/) - 1
+
+      insertValueToArrayIfNil(importTealeafIndex, $config["importTealeaf"], lastImportIndex, pageContents)
+
+      if importTealeafIndex == -1
+        lastBracketIndex += 1
+      end
+
+      insertValueToArrayIfNil(onPauseIndex, getSpacedText($config["onPauseFragmentSnippet"]), lastBracketIndex, pageContents)
+      insertValueToArrayIfNil(onResumeIndex, getSpacedText($config["onResumeFragmentSnippet"]), lastBracketIndex, pageContents)
+
+      # Save changes
+      File.open(key, "w") {|file| file.puts pageContents }
+      puts "Updated fragment file located at #{key}"
+    end
+  end
+
+  def getClassName(className)
+     classNameArray = className.split(".")
+     return classNameArray[classNameArray.length - 1]
+  end
+
+  def createAssetDirectory(assetDirectory)
+    if !(File.directory?(assetDirectory))
+      Dir.mkdir(assetDirectory)
+    end
+  end
+
+  def getIndexOfRegExp(testArray, regExp)
+    index = 0
+    while index < testArray.length
+      #puts (index).to_s + ":" + testArray[index]
+      if (regExp.match(testArray[index]))
+        return index
+      end
+      index += 1
+    end
+    return -1  
+  end
+
+  def getLastIndexOfRegExp(testArray, regExp)
+    index = testArray.length - 1
+    while index > 0
+      if (regExp.match(testArray[index]))
+        return index + 1
+      end
+      index -= 1
+    end
+    return -1  
+  end
+
+  def insertValueToArrayIfNil(indexToTest, insertText, indexToInsert, arrayToBeUpdated)
+    if (indexToTest == -1)
+      arrayToBeUpdated.insert(indexToInsert, insertText)
+    end
+  end
+
+  def getFilePath(fileName)
+    filePath = ""
+    puts "Look for file " + fileName + " in directory " + $modulePath
+    # Fix file path for windows to unix
+    Dir.glob($modulePath.gsub('\\','/') + "/**/" + fileName + ".java").each do|f| 
+        filePath = f
+    end
+    if filePath == ""
+      puts "File: " + fileName + " not found"
+    end
+    return filePath
+  end
+
+  def getSpacedText(text)
+    return getSpacedTextHelper(text, $config["spaces"])
+  end
+
+  def getSpacedTextHelper(text, amountOfSpaces)
+    if text.nil?
+      return text
+    end
+
+    spaces = getSpacesText(amountOfSpaces)
+
+    textArray = text.split(/\n/)
+    index = 0
+    while index < textArray.length
+      textArray[index] = spaces + textArray[index]
+      index += 1
+    end
+    return textArray
+  end
+
+  def getSpacesText(amountOfSpaces)
+    spaces = ""  
+    index = 0
+    while index < amountOfSpaces
+      spaces = spaces + " "
+      index += 1
+    end
+    return spaces
+  end
+
+  def getFiles(regExp)
+    files = Hash.new
+    # Fix file path for windows to unix
+    Dir.glob($modulePath.gsub('\\','/') + "/**/*.java").each do |f|
+        #puts f
+        result = File.open(f).grep(regExp)
+        #puts result
+        if result.size > 0
+          files[f] = result
+        end
+    end
+    return files
+  end
+
+  def getFileName(className)
+     classNameArray = className.split("/")
+     return classNameArray[classNameArray.length - 1]
+  end
+
+end

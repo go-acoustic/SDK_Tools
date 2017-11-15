@@ -1,0 +1,50 @@
+query("*")
+query("imageview")
+query("imageview")
+query("view marked:'action_logout'")
+query("* marked:'action_logout'")
+query("menu")
+query("item")
+query("actionbar")
+query("IconMenuItemView")
+query("button marked:'action_logout'")
+query("* id:'action_logout'")
+query("actionbar")
+query("view id:'action_logout'")
+query("menu")
+query("relativelayout")
+query("IconMenuView")
+query("view menu:*")
+query("view menu:'*'")
+touch("Settings")
+touch("Menu")
+query("* marked:'action_logout'")
+query("* marked:''")
+query("* marked:'more'")
+query("* marked:'Logout'")
+touch("* marked:'Logout'")
+query("* marked:'Logout'")
+query("button")
+query("imagebutton")
+query("tab")
+query("tabcontrol")
+query("android.widget.Button")
+query("android.widget.Image")
+query("android.widget.ImageButton")
+  performAction('press_menu')
+  performAction('press_menu')
+  performAction('press_menu_button')
+press_
+exit
+start_test_server_in_background
+exit
+reinstall_apps
+start_test_server_in_background
+query("button marked:'Login'")
+query("button text:'Login'")
+query("button, : text")
+query("button, :text")
+query("button", :text)
+start_test_server_in_background
+reinstall_apps
+start_test_server_in_background

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">aurora</string>
+    <string name="logo_image">Aurora Logo</string>
+
+    <!-- Login Fragment -->
+    <string name="login_username_label">Username</string>
+    <string name="login_password_label">Password</string>
+    <string name="login_button_label">Login</string>
+    <string name="aurora_version_label">Version:</string>
+    <string name="tealeaf_version_label">Framework:</string>
+    <string name="sessionId_label">Tealeaf Session Id:  </string>
+
+    <!-- Main Activity -->
+    <string name="tab_one_title">SHOP</string>
+    <string name="tab_two_title">CART</string>
+    <string name="tab_three_title">ORDERS</string>
+    <string name="logout">Logout</string>
+    <string name="logout_warning">Are you sure you want to logout?</string>
+    
+    <!-- Shipping Acitivty -->
+    <string name="action_next">Next</string>
+    <string name="action_submit">Submit</string>
+    
+    <!-- Shop Fragment -->
+    <string name="shop_title">Categories</string>
+    <string name="shop_list_item_description">Item</string>
+
+    <!-- Product Fragment -->
+    <string name="product_add_button">Add to cart</string>
+    <string name="product_price_label">Price: $</string>
+
+    <!-- Cart Fragment -->
+    <string name="cart_discount">Discount:</string>
+    <string name="cart_price">Grand Total:</string>
+    <string name="cart_checkout_button">Checkout</string>
+    <string name="cart_empty_label">Your cart is empty.</string>
+
+    <!-- auroraV2 -->
+    <!-- Login Fragment -->
+    <string name="login_alert_successful">Login Successful</string>
+    <string name="login_alert_fail">Login Failed</string>
+    <string name="title_activity_checkout">Card Info</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- Checkout -->
+    <string name="card_label">Credit Card Number:</string>
+    <string name="security_code_label">Security Code:</string>
+    <string name="expiration_date_label">Expiration Date:</string>
+    <string name="date_separator">/</string>
+    <string name="american_express">American Express</string>
+    <string name="master_card">Master Card</string>
+    <string name="visa">VISA</string>
+    <string name="title_activity_shipping">Shipping</string>
+    <string name="address_label">Address:</string>
+    <string name="city_label">City:</string>
+    <string name="state_label">State:</string>
+    <string name="zipcode_label">Zip:</string>
+
+</resources>

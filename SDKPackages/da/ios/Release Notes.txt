@@ -1,0 +1,61 @@
+###############################################################################
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corp. 2017
+# US Government Users Restricted Rights - Use, duplication or disclosure
+# restricted by GSA ADP Schedule Contract with IBM Corp.
+###############################################################################
+
+Oct 2017 Release
+DAMod 1.0.3.17 and EOCore 2.0.0.68:
+Built with iOS 11.
+
+May 2017 Release
+DAMod 1.0.3.15 and EOCore 2.0.0.61:
+Bitcode enabled on debug and release builds
+Added ability to set values before EOCore is enabled.
+Added country code to fire registration tag.
+
+Oct 2016 Release
+DAMod 1.0.3.7 and EOCore 2.0.0.39:
+Advertising id can now be used in conjection with CXA linking.
+Builds are done using iOS 10 release build has bit code enabled and debug build has bit code disabled.
+
+Hot Fix Sep 22 2016
+DAMod 1.0.3.0 and EOCore 2.0.0.31:
+Libraries now support from iOS 8 to 10.
+Fixed an issue with name collision for orientationChanged with a private Apple method. It got renamed to eoOrientaionChanged.
+
+Feb 2016
+————————
+
+*Release Notes DigitalAnalytics Module 1.0.2.1 and EOCore 2.0.0.9:
+*Fixed Reachability Duplicate Symbol Error when customer or 3rd party is using Reachability.h
+*Fixed Issue with Lots of Compiler Warnings in Xcode 7
+*Added Swift DigitalAnalytics integration sample application. 
+
+
+Integration Changes:
+————————————————————
+*EOCore.framework has been replaced by libEOCore.a
+*While reading the Chapter “Implementing the SDK for iOS”; please read “EOCore.framework” as libEOCore.a
+*While integrating the SDK, before you start using new Digital Analytics SDK files, please delete all old Digital Analytics SDK first.
+*Then deep clean your Xcode project by pressing Keys Cmd+Opt+Shift+K
+*Now start integrating the new SDK using instructions in the Chapter “Implementing the SDK for iOS”
+
+Swift Integration:
+———————————————————
+
+Integrating the Swift2 application
+Integrate the Swift2 application with the IBM Digital Analytics SDK.
+Procedure
+1. Create a header file and name it DigitalAnalyticsBridgingHeader.h. 
+2. Import DAMod/DigitalAnalytics.h into the header file.
+3. Add the newly created DigitalAnalyticsBridgingHeader.h header file to your project settings.
+ a. Selecting your project in the XCode left pane.
+ b. Clicking Build Settings and find Objective-C Bridging Header. 
+ c. Set the value of Objective-C Bridging Header to DigitalAnalyticsBridgingHeader.h. 
+4. Rest of the steps about integration of the library files are same as under section “Integrating the SDK into your iOS application” of Chapter 2 “Integrating the SDK into your iOS application” of Digital Analytics User’s Guide
+5. Open the app delegate file of your application and locate the didFinishLaunchingWithOptions function and call DigitalAnalytics.startup() from there or from another suitable location.
+6. Locate the applicationWillTerminate function and call DigitalAnalytics.shutdown() from applicationWillTerminate or from another suitable location.
+7. Call the Digital Analytics fireXXX APIs from any appropriate location after DigitalAnalytics.startup() is called the first time.
+

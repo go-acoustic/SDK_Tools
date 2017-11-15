@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed Materials - Property of IBM
+  5725-K23
+  (c) Copyright IBM Corp. 2013, 2014
+  US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<resources>
+    <string name="app_name">DarkHoloAuto</string>
+    <string name="planet_prompt">Choose a planet</string>
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+    <string name="textView">TextView</string>
+    <string name="largeText">Large Text</string>
+    <string name="mediumText">Medium Text</string>
+    <string name="smallText">Small Text</string>
+    <string name="button">Button</string>
+    <string name="coumpoundButton">Coumpound Button</string>
+    <string name="imageButtonDesc">Image button displayed</string>
+    <string name="toggleButton">ToggleButton</string>
+    <string name="checkBox">CheckBox</string>
+    <string name="radioButton">RadioButton</string>
+    <string name="radioButton1">RadioButton1</string>
+    <string name="radioButton2">RadioButton2</string>
+    <string name="radioButton3">RadioButton3</string>
+    <string name="typeInputTest">Type input test</string>
+    <string name="autoCompleteTextView">AutoCompleteTextView</string>
+    <string name="multiAutoCompleteTextView">MultiAutoCompleteTextView</string>
+    <string name="imageView">ImageView</string>
+    <string name="imageButton">ImageButton</string>
+    <string name="chronometer">Chronometer</string>
+    <string name="digitalClock">DigitalClock</string>
+    <string name="primary">Primary</string>
+    <string name="hint">Hint</string>
+    <string name="alert1">Alert 1 Button</string>
+    <string name="alert2">Alert 2 Button</string>
+    <string name="alertTitle">Example Alert</string>
+    <string name="alertMessage1">Alert 1 Button</string>
+    <string name="alertMessage2">Alert 2 Button</string>
+    <string name="productDesc">Product</string>
+    <string name="itemName">Item Name</string>
+</resources>

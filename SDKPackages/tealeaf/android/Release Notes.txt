@@ -1,0 +1,160 @@
+###############################################################################
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corp. 2017
+# US Government Users Restricted Rights - Use, duplication or disclosure
+# restricted by GSA ADP Schedule Contract with IBM Corp.
+###############################################################################
+
+Hot Fix Sep 26 2017
+Tealeaf Module 10.2.1.182, EOCore 2.0.0.103 and TeaCuts 2.0.0.27
+Fixed an issue with Alerts not displaying correctly. Make sure to update the templates also.
+
+Hot Fix Aug 29 2017
+Tealeaf Module 10.2.1.171, EOCore 2.0.0.103 and TeaCuts 2.0.0.27
+There was an issue with older Cordova/PhoneGap not having an object intialized. It was blocking the javascript bridge data.
+
+Aug 2017 Release 
+Tealeaf Module 10.2.1.170, EOCore 2.0.0.103 and TeaCuts 2.0.0.27
+Added support for multiple Hybrid WebViews DCID mapping, and default to numeric Ids when resource name not specified.
+Added a delay in case customer would like to set a device id that is used for killswitch configuration.
+Added EditTextViewEnabled property to auto instrument EditText control.
+Added extra degrees for orientation. It was too sensitive.
+Adjusted tag logic for image file names.
+Adding support for masking using an id from string.xml. Review documentation for integration steps.
+Added support for FormCompletion use Tealeaf.logFormCompletion.
+Added Google WebView auto instrumentation.
+Added support for detailed User Agent string.
+Added dynamic control masking capabilities.
+Added default DCID-None string when library can’t get DCID when logging WebView in type 10.
+
+Hot Fix May 31 2017
+Tealeaf Module 10.2.1.124, EOCore 2.0.0.83 and TeaCuts 2.0.0.21
+Added two new properties in the SDK to in order to support Pega WebView replay:
+SingleScreenHybridApp - Ability to send payload to Eocore as bridge data becomes available.	
+WebViewSetTagForId - Ability to support Pega or similar WebView container implementation.
+
+Hot Fix May 24 2017
+Tealeaf Module 10.2.1.117, EOCore 2.0.0.86 and TeaCuts 2.0.0.21
+Added ability in Teacuts to detect multiple application processes causing duplicate Killswitch hits.
+
+May 2017 Release
+Tealeaf Module 10.2.1.117, EOCore 2.0.0.86 and TeaCuts 2.0.0.19
+Set FragmentLifecycleEnabled=false by default.
+Set TextViewEnabled=false by default.
+Bug fixes.  Performance improvement.  
+
+Hot Fix April 28 2017
+Tealeaf Module 10.2.1.113, EOCore 2.0.0.83 and TeaCuts 2.0.0.19
+Improved touch event performance.  Added ability to detect duplicate lifecycle events in Teacuts library.
+
+Hot Fix April 19 2017
+Tealeaf Module 10.2.1.111, EOCore 2.0.0.83 and TeaCuts 2.0.0.17
+Fixed ConnectionReceiver and BatteryReceiver unit test issues on Roboelectric framework.
+
+Hot Fix April 18 2017
+Tealeaf Module 10.2.1.111, EOCore 2.0.0.82 and TeaCuts 2.0.0.16
+Improved gesture performance.
+
+Hot Fix April 13 2017
+Tealeaf Module 10.2.1.110, EOCore 2.0.0.82 and TeaCuts 2.0.0.16
+Added new TealeafAdvancedConfig property called StripDrawableFolderExt for image path mapping.
+Bug fixes.
+
+
+March 2017 Release
+
+Tealeaf Module 10.2.1.94, EOCore 2.0.0.79 and TeaCuts 2.0.0.16:
+Added z-index support for proper UI control layering.
+Change SDK and image extraction tool to use upper case MD5 checksum.
+
+
+February 2017 Release
+
+Tealeaf Module 10.2.1.85, EOCore 2.0.0.76 and TeaCuts 2.0.0.16:
+Updated to support Android API 4.0.3 (15) to 7.1.1 (25).
+Performance tuning for getting advertisingId, and improved post task interval timing.
+Some minor bug fixes.
+Updated documentation base on recent customer feedback.
+
+Hot Fix Jan 17 2017
+
+Tealeaf Module 10.2.1.69, EOCore 2.0.0.59 and TeaCuts 2.0.0.15:
+Replaced AsyncTask with AsyncTaskCompat to take advantage of parallel execution and better utilization of system resource for post task.
+
+Hot Fix Nov 1 2016
+
+Tealeaf Module 10.2.1.54, EOCore 2.0.0.58 and TeaCuts 2.0.0.14:
+Fixed AlertDialog version incompatible issue in teacuts library.
+Added Coarse GeoLocation when GPS signal is not available.
+Added capability to flush web data for single screen view HybridApps.
+
+Hot Fix Oct 5 2016
+Tealeaf Module 10.2.1.47, EOCore 2.0.0.54 and TeaCuts 2.0.0.11:
+Added Google advertising id feature.
+Added support for new menu buttons in v7 supported classes.
+Added adjustment in Teacuts for view pager edge cases.
+Adjusted templates and library for alert dialogs to show proper colors.
+Adjusted library for low memory situations.
+Provided a flag in Teacuts to adjust for instrumentation.
+Fixed an issue with post not sending data back to server in edge cases.
+User agent information will be sent with all the hits for CXA data integration.
+Added support for new templates.
+
+Hot Fix Sep 15 2016
+Tealeaf Module 10.2.1.36, EOCore 2.0.0.47 and TeaCuts 2.0.0.6:
+Added support to drawables in v7 controls like Menu buttons.
+
+Hot Fix Sep 13 2016
+Tealeaf Module 10.2.1.33, EOCore 2.0.0.41 and TeaCuts 2.0.0.6:
+Added support to android.support.v7.app.AlertDialog
+
+Hot Fix Aug 26 2016
+Tealeaf Module 10.2.1.31, EOCore 2.0.0.41 and TeaCuts 2.0.0.5:
+Fixed an issue with getViewTreeObserver() not being checked for null.
+Fixed templates and adjust data fo alert dialog replay.
+
+Hot Fix Aug 2016
+Tealeaf Module 10.2.1.27, EOCore 2.0.0.41 and TeaCuts 2.0.0.4:
+Made changed to post data back to server when application crashes. There was an issue with data in temp queue in Tealeaf module, because page did not unload.
+Added message for developers that forget to add Teacuts in logcat.
+Fixed issue with Ruby installer not parsing correctly activity file name.
+
+Hot Fix 2 July 2016
+Tealeaf Module 10.2.1.21, EOCore 2.0.0.34 and TeaCuts 2.0.0.4:
+Made changed to post method from using chunked streaming mode to giving actual payload size to fix issues with older http 1.1 servers that need actual content length.
+
+Hot Fix July 2016
+Tealeaf Module 10.2.1.21, EOCore 2.0.0.32 and TeaCuts 2.0.0.4:
+Added ability to remove ip data in json payload.
+Added ability to adjust for fragment instrumentation.
+
+June 2016 Release
+Tealeaf Module 10.2.1.17, EOCore 2.0.0.31 and TeaCuts 2.0.0.2:
+Adding Ease of Use initiative.
+Adding new TealeafLayoutConfig.json to help with Native Replay.
+Adding new AppendMapIds section for eventing.
+
+Hot Fix 4/26/2016 
+
+Release Notes Tealeaf Module 10.1.0.16 and EOCore 2.0.0.12:
+Fixed issue spinners with Teacuts that used layouts.
+
+Hot Fix 4/20/2016 
+
+Release Notes Tealeaf Module 10.1.0.15 and EOCore 2.0.0.12:
+Fixed issue spinners that have layouts.
+
+Hot Fix 3/10/2016 
+
+Release Notes Tealeaf Module 10.1.0.14 and EOCore 2.0.0.12:
+Fixed issue with not posting exception back to server for not finding control id being triggered by gestures.
+
+Hot Fix 2/24/2016 
+
+Release Notes Tealeaf Module 10.1.0.13 and EOCore 2.0.0.12:
+Fixed issue with not being able to get gravity, left padding and right padding values for TextView which was producing an error.
+
+Feb 2016
+
+Release Notes Tealeaf Module 10.1.0.11 and EOCore 2.0.0.12:
+Fixed issue with CDMA devices that were not reporting a carrier value.

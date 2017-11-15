@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--
+  Licensed Materials - Property of IBM
+  (C) Copyright IBM Corp. 2014
+  US Government Users Restricted Rights - Use, duplication or disclosure
+  restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<!DOCTYPE suppressions PUBLIC "-//Puppy Crawl//DTD Suppressions 1.1//EN" "http://www.puppycrawl.com/dtds/suppressions_1_1.dtd">
+<suppressions>
+    <suppress checks="[a-zA-Z0-9]*" files="R\.java"/>
+    <suppress checks="." files=".*\.properties"/>
+    <suppress checks="." files=".*[\\/]grammars[\\/]Generated[a-zA-Z]*\.java"/>
+    <suppress checks="." files=".*[\\/]checkstyle[\\/]gui[\\/]"/>
+    <suppress checks="." files=".*\.java.svn-base"/>
+    <suppress checks="[a-zA-Z0-9]*" files="BuildConfig\.java"/>
+    <suppress checks="DesignForExtension" files="ClientMessageHeader.java" />
+    <suppress checks="DesignForExtension" files="UICActivity.java" />
+    <suppress checks="DesignForExtension" files="UICApplication.java" />
+    <suppress checks="DesignForExtension" files="UICWebView.java" />
+    <suppress checks="DesignForExtension" files="UICWebViewClient.java" />
+    <suppress checks="DesignForExtension" files="BaseTarget.java" />
+    <suppress checks="HideUtilityClassConstructorCheck" files="Tealeaf.java" />
+</suppressions>

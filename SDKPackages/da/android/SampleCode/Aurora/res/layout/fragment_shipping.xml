@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ibm.tealeaf.aurora.ShippingActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/address_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/address_label"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/address_label"
+        android:layout_toRightOf="@id/address_label"
+        android:inputType="textPostalAddress"
+        android:minWidth="200dp" />
+
+    <TextView
+        android:id="@+id/city_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/address_label"
+        android:layout_below="@id/address_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/city_label"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/city_label"
+        android:layout_toRightOf="@id/city_label"
+        android:inputType="textPostalAddress"
+        android:minWidth="200dp" />
+
+    <TextView
+        android:id="@+id/state_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/city_label"
+        android:layout_below="@id/city_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/state_label"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/state_label"
+        android:layout_toRightOf="@id/state_label"
+        android:inputType="textPostalAddress"
+        android:minWidth="100dp" />
+
+    <TextView
+        android:id="@+id/zipcode_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/state_label"
+        android:layout_below="@id/state_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/zipcode_label"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/zipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/zipcode_label"
+        android:layout_toRightOf="@id/zipcode_label"
+        android:inputType="number"
+        android:minWidth="100dp" />
+
+</RelativeLayout>

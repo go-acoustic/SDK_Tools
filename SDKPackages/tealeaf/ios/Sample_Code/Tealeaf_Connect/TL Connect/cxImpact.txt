@@ -1,0 +1,7 @@
+IBM® Tealeaf® cxImpact transforms the rich customer experience dataset captured by the Tealeaf CX platform in real time into visually replayable and completely searchable customer sessions. cxImpact not only captures the page-by-page, browser-level recording of each customer session, but also offers one-click access to all of the supporting HTTP(S) request-and-response information for further technical analysis. With immediate visibility into your online customers and the hidden problems affecting your business, you can detect, quantify, and quickly resolve issues and sources of customer struggle.
+Tealeaf cxImpact can help customers to:
+Increase conversion and revenue by visualizing exactly what customers viewed in their web browsers and the specific actions they took on each page in real time, including form interactions in the order that the page was completed by the customer.
+Quickly resolve application and customer-experience problems for all customer sessions with powerful and flexible search capabilities.
+Gain immediate awareness and insight into customer struggles, business process health, customer activity, application and page errors, and resolve response-time problems with real-time events and alerts.
+Quantify real-time revenue impact analysis and segmentation analysis by specific behavior, using an intuitive, drag-and-drop dimensional report builder.
+Monitor and manage a holistic view into the health and performance of your website with dashboards and pre-packaged reports or create-your-own custom reports.

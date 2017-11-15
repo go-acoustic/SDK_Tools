@@ -1,0 +1,23 @@
+/*******************************************************************************
+* Licensed Materials - Property of IBM
+* (C) Copyright IBM Corp. 2016
+* US Government Users Restricted Rights - Use, duplication or disclosure
+* restricted by GSA ADP Schedule Contract with IBM Corp.
+******************************************************************************/
+{
+  "LibraryVersion": "10.2.1.36",
+  "FilterMessageTypes": false,
+  "MessageTypes": "4,5",
+  "AddMessageTypeHeader": false,
+  "MessageTypeHeader": "WorklightHit",
+  "KillSwitchAsync": true,
+  "WebViewDelay": "1000",
+  "ExcludeTextViewStyleForOS": "",
+  "DefaultTextViewGravity": "left",
+  "DefaultTextViewPaddingLeft": 5,
+  "DefaultTextViewPaddingRight": 5,
+  "DefaultAutoLayoutDelay": 500,
+  "ScreenViewUnloadDelay": 5000,
+  "RemoveIp": false,
+  "IpPlaceholder": "N/A"
+}

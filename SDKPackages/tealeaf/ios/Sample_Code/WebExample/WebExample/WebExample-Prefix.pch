@@ -1,0 +1,26 @@
+//
+//  Licensed Materials - Property of IBM
+//  (C) Copyright IBM Corp. 2015
+//  US Government Users Restricted Rights - Use, duplication or disclosure
+//  restricted by GSA ADP Schedule Contract with IBM Corp.
+//
+
+#ifndef WebExample_WebExample_Prefix_pch
+#define WebExample_WebExample_Prefix_pch
+#endif
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <Tealeaf/TLFApplication.h>
+    #import <Tealeaf/TLFApplicationHelper.h>
+    #import <Tealeaf/TLFCustomEvent.h>
+    #import <Tealeaf/TLFPublicDefinitions.h>
+
+#endif
+
+
+

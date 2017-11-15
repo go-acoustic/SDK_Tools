@@ -1,0 +1,5 @@
+<resources>
+  <item type="id" name="fragment_tab_root_one"/>
+  <item type="id" name="fragment_tab_root_two"/>
+  <item type="id" name="fragment_tab_root_three"/>
+</resources>

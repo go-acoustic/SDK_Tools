@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" manifest="html5demo_manifest.php">
+<head>
+	<title>Tealeaf HTML5 Support</title>
+	<meta charset="utf-8" />
+	
+    <script type="text/javascript" src="http://www.straussandplesser.com/store/js/tealeaf/Tealeaf.js"></script> 
+    <script type="text/javascript" src="js/h5utils.js"></script>
+    <script src="js/html5.js"></script> 
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+	
+
+	<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+		
+	<!--[if lt IE 7]>
+		<link rel="stylesheet" type="text/css" media="all" href="css/ie6.css"/><![endif]-->
+
+</head>
+
+<body id="index" class="home">
+
+	<header id="banner" class="body">
+		<h1><a href="#">Tealeaf Blog<br /><strong> HTML5 in the year <del>2022</del> <ins>2012</ins></strong></a></h1>
+		<nav><ul>
+			<li class="active"><a  id="0" href="#" onclick="toggle(document.getElementById('index1'), this)">Home</a></li>
+			<li><a id="1" href="#" onclick="toggle(document.getElementById('p2'), this)">DragnDrop</a></li>
+			<li><a id="2" href="#" onclick="toggle(document.getElementById('p21'), this)">HistoryAPI</a></li>
+			<li><a id="3" href="#" onclick="toggle(document.getElementById('p22'), this)">OfflineApp</a></li>
+		</ul></nav>
+	</header><!-- /#banner -->
+	
+	<div id="index1" style="display:block;">
+	<aside id="featured" class="body"><article>
+		<figure>
+		<div id="wrapper">
+            <canvas id="myCanvas" width="500" height="200" style="background-color: #000;">
+
+            </canvas>
+            <div id="buttonWrapper">
+                <input class="cbutton" type="button" id="plus" value="+"><input class="cbutton" type="button" id="minus" value="-">
+            </div>
+        </div>
+        </figure>
+		<hgroup>
+			<h2>Featured Canvas!</h2>
+		</hgroup>
+		<p>The canvas element provides scripts with a resolution-dependent bitmap canvas, which can be used for rendering graphs, game graphics, or other visual images on the fly!</p>
+	</article></aside><!-- /#featured -->
+	
+	<aside id="featured0" class="body"><article>
+		<figure>
+		<video width="500" controls="controls" >
+		<source src="video/mov_bbb.mp4" type="video/mp4" />
+		<source src="video/mov_bbb.ogg" type="video/ogg" />
+			Your browser does not support the video tag.
+			</video>
+        </figure>
+		<hgroup>
+			<h2>Featured Movie!</h2>
+		</hgroup>
+		<p>Until now, there has not been a standard for showing a video/movie on a web page.
+          Today, most videos are shown through a plug-in (like flash). However, different browsers may have different plug-ins.
+          HTML5 defines a new element which specifies a standard way to embed a video/movie on a web page: the &lt;video&gt; element.</p>
+	</article></aside><!-- /#featured2 -->
+	
+	<aside id="featured1" class="body"><article>
+		<figure>
+			<audio controls="controls">
+				<source src="audio/song.ogg" type="audio/ogg" />
+				<source src="audio/song.mp3" type="audio/mpeg" />
+				Your browser does not support the audio element.
+			</audio>
+        </figure>
+		<hgroup>
+			<h2>Featured Audio!</h2>
+		</hgroup>
+		<p>The &lt;audio&gt;tag defines sound, such as music or other audio streams.</p>
+	</article></aside><!-- /#featured3 -->
+	
+	<aside id="featured2" class="body"><article>
+		<form>
+			<fieldset>
+				<legend>Personalia:</legend>
+				<table>
+					<tr>
+						<td>Select your favorite color:</td>
+						<td> <input type="color" name="favcolor" /></td>
+					</tr>
+					<tr>
+						<td>Birthday:</td>
+						<td><input type="date" name="bday" /></td>
+					</tr>
+					<tr>
+						<td>Birthday (date and time/zone):</td>
+						<td><input type="datetime" name="bdaytime" /></td>
+					</tr>
+					<tr>
+						<td>Birthday (date and time):</td>
+						<td><input type="datetime-local" name="bdaytime" /></td>
+					</tr>
+					<tr>
+						<td>E-mail:</td>
+						<td><input type="email" name="usremail" /></td>
+					</tr>
+					<tr>
+						<td>Birthday (month and year):</td>
+						<td><input type="month" name="bdaymonth" /></td>
+					</tr>
+					<tr>
+						<td>Telephone:</td>
+						<td><input type="tel" name="usrtel" /></td>
+					</tr>
+				</table>				
+			</fieldset>
+			<fieldset>
+				<legend>Additional HTML inputs</legend>
+				<table>
+					<tr>
+						<td>Quantity (between 1 and 5): </td>
+						<td><input type="number" name="quantity" min="1" max="5" /></td>
+					</tr>
+					<tr>
+						<td>Range (1-10)</td>
+						<td><input type="range" name="points" min="1" max="10" /></td>
+					</tr>
+					<tr>
+						<td>Search Google:</td>
+						<td><input type="search" name="googlesearch" /></td>
+					</tr>
+					<tr>
+						<td>Select a time:</td>
+						<td><input type="time" name="usr_time" /></td>
+					</tr>
+					<tr>
+						<td>Add your homepage:</td>
+						<td><input type="url" name="homepage" /></td>
+					</tr>
+					<tr>
+						<td>Select a week:</td>
+						<td><input type="week" name="week_year" /></td>
+						
+					</tr>
+				</table>
+			</fieldset>
+			
+		</form>
+	     	
+	</article></aside><!-- /#featured4 -->
+	</div>
+	
+	<div id="p2" style="display:none;">
+		<aside id="featured3" class="body">
+			<article>
+		<p>Drag the list items over the dustbin, and drop them to have the bin eat the item</p>
+		<P>Try dragging the tabs into the bin as well. opps!</P>
+  		<div id="bin"></div>
+  			<ul class="dragul">
+    			<li><a class="dragobj" id="one" href="#">one</a></li>
+    			<li><a class="dragobj" href="#" id="two">two</a></li>
+				<li><a class="dragobj" href="#" id="three">three</a></li>
+    			<li><a class="dragobj" href="#" id="four">four</a></li>
+    			<li><a class="dragobj" href="#" id="five">five</a></li>
+  			</ul>
+			</article>
+		</aside><!-- /#featured5-->	
+	</div>
+	
+	<div id="p21" style="display:none;">
+		<aside id="featured4" class="body">
+			<article>
+				<p id="status">HTML5 History API not supported</p>
+  				<p><em>Last event fired: <span id="lastevent">(none)</span></em></p>
+  				<p>To test the History API, click through the urls below. Note that none of these urls point to <em>real</em> pages. JavaScript will intercept these clicks, load data and the browser address bar will <em>appear</em> to change - but this is the History API in action!</p>
+  				<p>Use the back and forward buttons in your browser to navigate the history.</p>
+  			<ul id="examples">
+    			<li><a href="/history/first">first</a></li>
+    			<li><a href="/history/second">second</a></li>
+    			<li><a href="/history/third">third</a></li>
+    			<li><a href="/history/fourth">fourth</a></li>
+  			</ul>
+  				<p><small>Note: since these urls aren't real, refreshing the page will land on an invalid url.</small></p>
+  				<div id="output"></div>
+			</article>
+		</aside><!-- /#featured6-->	
+	</div>
+	
+	<div id="p22" style="display:none;">
+		<aside id="featured4" class="body">
+			<article>
+				<p>Online Status:</p>
+				<span id="status1" class="" style="width: 60px; font-size: 14pt;">
+						&nbsp;
+				</span>
+				<p></p>
+				 
+				<p>A good working example is to load this demo up, then disconnection your web connection - the page will still reload. </p>
+				<p>The link below is cached, thus go offline (file->Work Offline). The above status should say offline in red.</p>
+				<p id="status" class="success" > Note: make sure you are in offline mode before you click the link below.
+			     <br /> Click on the link below to open a cached page:</p>
+				<a href="offlineapp.html">Offline Page</a>
+     	</article>
+		</aside><!-- /#featured7-->	
+	</div>
+
+	<section id="extras" class="body">
+		<div class="blogroll">
+			<h2>blogroll</h2>
+			<ul>
+				<li><a href="#" rel="external">HTML5 Spec (working draft)</a></li>
+				<li><a href="#" rel="external">W3C</a></li>
+			</ul>
+		</div><!-- /.blogroll -->
+		
+		<div class="social">
+			<h2>social</h2>
+			<ul>
+				<li><a href="http://www.tealeaf.com/#" rel="me">facebook</a></li>
+				<li><a href="http://www.tealeaf.com/#" rel="me">twitter</a></li>
+			</ul>
+		</div><!-- /.social -->
+	</section><!-- /#extras -->
+	
+	<footer id="contentinfo" class="body">
+		<address id="about" class="vcard body">
+			<span class="primary">
+				<strong><a href="#" class="fn url">Tealeaf</a></strong>
+				<span class="role">About</span>
+			</span><!-- /.primary -->
+		
+			<span class="bio">Tealeaf's customer experience management (CEM) solutions empower companies to optimize ebusiness by eliminating the obstacles that block successful conversions or completion of business processes.</span>
+		
+		
+		</address><!-- /#about -->
+		
+<!-- HTML5 Microdata -->
+			<div itemscope itemtype="http://data-vocabulary.org/Organization">
+				<h1 itemprop="name">Teleaf Technology</h1>
+				<p itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address">
+					<span itemprop="street-address">45 fremont st</span>, <span itemprop="locality">San Francisco</span>, <span itemprop="region">CA</span>
+					<span itemprop="postal-code">94105</span>.
+				</p>
+			</div>
+		<p>&copy;2012 <a href="http://tealeaf.com">Tealeaf</a>.</p>
+	</footer><!-- /#contentinfo -->
+<script type="text/javascript" src="js/h5demo.js"></script>
+</body>
+</html>

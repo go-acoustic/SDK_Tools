@@ -1,0 +1,21 @@
+{
+    "AutoLayout": {
+        "MyView": {
+            "do": false,
+            "screenViewName": "MyScreenViewName",
+            "delay": 500,
+            "takeScreenShot": false
+        }
+    },
+    "AppendMapIds": {
+        "[w,9290],[v,0]": {
+            "mid": "ASimpleUIView"
+        },
+        "tag2999999": {
+            "mid": "giveAdditionalId1"
+        },
+        "idxPathValue": {
+            "mid": "giveAdditionalId2"
+        }
+    }
+}

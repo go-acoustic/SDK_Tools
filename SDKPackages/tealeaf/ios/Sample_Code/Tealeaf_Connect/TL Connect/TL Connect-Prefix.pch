@@ -1,0 +1,26 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (C) Copyright IBM Corp. 2016
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ ******************************************************************************/
+
+#import <Availability.h>
+#import "TLConnectHelper.h"
+
+
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+	#import <Foundation/Foundation.h>
+	#import <Tealeaf/TLFApplication.h>
+	#import <Tealeaf/TLFApplicationHelper.h>
+	#import <Tealeaf/TLFCustomEvent.h>
+	#import <Tealeaf/TLFPublicDefinitions.h>
+
+#endif

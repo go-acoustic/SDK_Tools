@@ -1,0 +1,231 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head>
+	<script type="text/javascript" src="js/jquery-1.8.1.js" ></script>
+	<script type="text/javascript" src="js/hammer1.js" ></script>
+	<script type="text/javascript" src="js/W3C.js" ></script>
+	<script type="text/javascript" src="js/TLGesture.js" ></script>
+	<script type="text/javascript" src="js/defaultNativeDomCaptureGesturesConfigurationHammer1.js" ></script>
+    <style type="text/css">
+    table, td, th
+    {
+        border:0px;
+    }
+    table
+    {
+        width:450px;
+    }
+    th, tr
+    {
+        height:25px;
+    }
+
+    input[type=checkbox] {
+        width: 13px;
+        height: 13px;
+        padding: 0px;
+    }
+
+    input[type=radio] {
+        width: 13px;
+        height: 13px;
+        padding: 0px;
+    }
+
+    input[type=button] {
+        -webkit-appearance: button;
+        width: 80px;
+        height: 20px;
+    }
+
+    input[type=text] {
+        -webkit-appearance: none;
+        width: 149px;
+        height: 14px;
+        padding: 0px;
+        -webkit-border-horizontal-spacing: 0;
+        -webkit-border-vertical-spacing: 0;
+        border: 2px inset;
+    }
+
+    input[type=password] {
+        -webkit-appearance: none;
+        width: 149px;
+        height: 14px;
+        padding: 0px;
+        -webkit-border-horizontal-spacing: 0;
+        -webkit-border-vertical-spacing: 0;
+        border: 2px inset;
+    }
+
+    select {
+      -webkit-appearance: none;
+      width: 82px;
+      height: 19px;
+      padding: 0px;
+      font-size: 10px;
+      border: 0px inset;
+
+
+    }
+
+    </style>
+
+    <title>HTML 4 Test Elements</title>
+
+    <script type="text/javascript">
+      function doOnload() {
+        //TLT.Log.screenviewLoad("TestApplication", null, null);
+/*
+        var x;
+
+        setTimeout(function () { 
+    
+    alert(x.name); 
+        
+    }, 10000);
+*/
+      }
+    
+    function postData(){
+    
+    setTimeout(function () { 
+    
+    TLT.Log.flushQueue();
+        
+    }, 100);
+    
+    
+    }
+
+    </script>
+
+</head>
+
+<body onload="doOnload()">
+<a id "hash" href="#lorem">Go to Description</a>
+    <table>
+      <tr>
+        <td>1. Button</td>
+      </tr>
+      <tr>
+        <td><input type="button" name="buttonInput" id="bi" value="Continue" /></td>
+      </tr>
+      <tr>
+        <td><input type="image" name="imageInput" id="ii" value="My Image" alt="Alt text" src="images/image.gif" /></td>
+      </tr>
+      <tr>
+        <td><input type="submit" name="submitInput" id="si" value="Send" onclick="postData()" /></td>
+      </tr>
+      <tr>
+        <td><input type="reset" name="resetInput" id="ri" value="Reset" /></td>
+      </tr>
+      <tr>
+        <td>2. Checkbox</td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="redBox" id="cb1" value="red" style="height:13px;width:13px;"/><label for="cb1">RED</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="greenBox" id="cb2" value="green" /><label for="cb2">GREEN</label></td>
+      </tr>
+      <tr>
+        <td><input type="checkbox" name="blueBox" id="cb3" value="blue" /><label for="cb3">BLUE</label></td>
+      </tr>
+      <tr>
+        <td>3. Radio</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="radioButton" id="rb1" value="red" />Red</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="radioButton" id="rb2" value="green" checked="checked" />Green</td>
+      </tr>
+      <tr>
+        <td><input type="radio" name="radioButton" id="rb3" value="blue"  />Blue</td>
+      </tr>
+      <tr>
+        <td>4. Menu</td>
+      </tr>
+      <tr>
+        <td>
+            <select name="selectList" >
+            <optgroup label="color">
+                <option label="red">RED</option>
+                <option label="green">GREEN</option>
+                <option label="blue">BLUE</option>
+            </optgroup>
+            <optgroup label="days">
+                <option>Mon</option>
+                <option>Tue</option>
+                <option>Wed</option>
+            </optgroup>
+            </select>
+        </td>
+      </tr>
+      <tr>
+        <td>5. Text</td>
+      </tr>
+      <tr>
+        <td>Regular Text: <input type="text" name="textInput" id="ti" /></td>
+      </tr>
+      <tr>
+        <td>Password: <input type="password" name="passwordInput" id="pi" /></td>
+      </tr>
+      <tr>
+        <td>Textarea: <textarea cols="60" rows="10" name="textareaInput" id="ai" style="height:131px;width:490px;-webkit-appearance: textarea;
+        padding: 0px;
+        -webkit-border-horizontal-spacing: 0;
+        -webkit-border-vertical-spacing: 0;
+        border: 2px inset;"></textarea></td>
+      </tr>
+      <tr>
+        <td>6. File</td>
+      </tr>
+      <tr>
+        <td>Select <input type="file" name="fileInput" id="fi" /></td>
+      </tr>
+      <tr>
+        <td>7. Link</td>
+      </tr>
+      <tr>
+        <td><a href="http://www.tealeaf.com">Click to visit Tealeaf</a></td>
+      </tr>
+	   <tr>
+        <td>8. UTF-8 charecters "¦ ¨ À" Test :</td>
+      </tr>
+      <tr>
+        <td><input type="text" name="textInputUTF" id="utf"> </input></td>
+      </tr>
+	     <tr> 
+	   <td><a href="#google_image_in_link"><img id="google_logo" src="https://www.google.com/images/srpr/logo3w.png" /></a></td>
+	   </tr>
+	   <tr>
+	   <td>
+     <button type="button"><span><span>Click Me</span></span></button>
+     </td>
+     </tr>
+     <tr>
+         <td>
+         <button id="rawButton" type="button"><span><span>Click Me</span></span></button>
+         </td>
+     </tr>
+     <tr>
+       <td>
+       <button id="attButton" type="button"><span><span id="cm">Click Me</span></span></button>
+       </td>
+     </tr>
+	      <tr>
+	   <td>
+	  <a id="TL" href="#Tealeaf"><img id="google" src="image/g.png"><span>Link</span></img></a>
+	   </td>
+	   </tr>
+    </table>
+<Div id="lorem">
+	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</div>
+</body>
+
+</html>

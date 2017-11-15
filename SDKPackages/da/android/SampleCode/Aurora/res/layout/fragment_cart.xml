@@ -1,0 +1,97 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        
+   	<!-- Invisible Unless Cart Is Empty -->
+    <TextView android:id="@+id/cart_emptyTextView"
+	    android:visibility="gone"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:textColor="@color/orange"
+		android:textSize="28sp"
+		android:text="@string/cart_empty_label"/>    
+     
+   	<RelativeLayout android:id="@+id/cart_contentsLayout"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent">
+   	    
+	    <LinearLayout android:id="@+id/cart_infoLayout"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+			android:orientation="vertical" 
+		    android:background="@drawable/shop_title">
+		    
+		    <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center" >
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingRight="4dp"
+     				android:textSize="18sp"
+			        android:text="@string/cart_discount" />
+			    
+			    <TextView android:id="@+id/cart_discount"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+     				android:textSize="18sp"/>
+			    
+		    </LinearLayout>
+		    
+		    <LinearLayout
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:gravity="center" >
+			    
+			    <TextView
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:paddingRight="4dp"
+     				android:textSize="18sp"
+			        android:text="@string/cart_price" />
+			    
+			    <TextView android:id="@+id/cart_price"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+     				android:textSize="18sp"/>	    
+		    </LinearLayout>
+	    
+	    </LinearLayout>
+	    
+	    <RelativeLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="fill_parent" 
+	            android:layout_below="@id/cart_infoLayout"
+	            android:layout_above="@+id/cart_checkout_Button">
+	            
+	        <ProgressBar android:id="@android:id/empty"
+	        	android:paddingTop="32dp"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_alignParentTop="true"
+			    android:layout_centerHorizontal="true" />
+	        
+			<ListView
+		            android:id="@android:id/list"
+		            android:layout_width="match_parent"
+		            android:layout_height="fill_parent"
+		            android:drawSelectorOnTop="false" />
+		
+		</RelativeLayout>
+	
+	    <Button android:id="@id/cart_checkout_Button"
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignParentBottom="true"
+		    android:enabled="false"
+		    android:text="@string/cart_checkout_button"/>
+	    
+	</RelativeLayout>
+        
+</RelativeLayout>
+

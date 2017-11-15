@@ -1,0 +1,10 @@
+{
+  "CachedFileMaxBytesSize": 512000,
+  "PostMessageMaxBytesSize": 200000,
+  "PostMessageTimeout": 300,
+  "CompressPostMessage": 1,
+  "TurnOffCorrectOrientationUpdates": false,
+  "DefaultOrientation": 0,
+  "LibraryVersion": "2.0.0.68",
+  "MessageVersion": "6.0.0.0"
+}

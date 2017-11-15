@@ -1,0 +1,10 @@
+CACHE MANIFEST
+
+CACHE:
+/H5/img/offlineapp.html
+/H5/img/bg.png
+/H5/img/bin.jpg
+/H5/js/h5utils-offline.js
+
+NETWORK:
+*

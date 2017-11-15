@@ -1,0 +1,55 @@
+#-------------------------------------------------------------------------------
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corp. 2017
+# US Government Users Restricted Rights - Use, duplication or disclosure
+# restricted by GSA ADP Schedule Contract with IBM Corp.
+#-------------------------------------------------------------------------------
+version: 2
+# EOCore Paths
+eocoreJarPath: '../DigitalAnalytics/eocore.jar'
+eocoreEOCoreBasicConfigPath: '../DigitalAnalytics/EOCoreBasicConfig.properties'
+eocoreEOCoreAdvancedConfigPath: '../DigitalAnalytics/EOCoreAdvancedConfig.json'
+
+# DAMod Paths
+dAModJarPath: '../DigitalAnalytics/DigitalAnalyticsMod.jar'
+dABasicConfigPath: '../DigitalAnalytics/DigitalAnalyticsBasicConfig.properties'
+dAAdvancedConfigPath: '../DigitalAnalytics/DigitalAnalyticsAdvancedConfig.json'
+
+# Android Studio Project Paths
+manifestFilePath: '/src/main/AndroidManifest.xml'
+assetDirectoryPath: '/src/main/assets'
+libsDirectoryPath: '/libs'
+
+# Tealeaf code snippets
+spaces: 4
+permissionAccessNetworkState: '<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />'
+permissionAccessWIFIState: '<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />'
+permissionInternet: '<uses-permission android:name="android.permission.INTERNET" />'
+dependenciesEocore: "    compile files('libs/eocore.jar')"
+dependenciesDAmod: "    compile files('libs/DigitalAnalyticsMod.jar')"
+daInstance: "    DigitalAnalytics.startup(this.getApplication());"
+importDigitalanalytics: |
+
+ import com.digitalanalytics.api.DigitalAnalytics;
+onCreateSnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void onCreate() {
+        // Startup the Digital Analytics Module
+        DigitalAnalytics.startup(this);
+        super.onCreate();
+    }
+onTerminateSnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void onTerminate() {
+        // Shutdown the Digital Analytics Module
+        DigitalAnalytics.shutdown();
+        super.onTerminate();
+    }

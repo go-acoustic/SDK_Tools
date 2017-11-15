@@ -1,0 +1,120 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.ibm.tealeaf.aurora.CheckoutActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/cardno_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/card_label"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/cardno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/cardno_label"
+        android:layout_toRightOf="@id/cardno_label"
+        android:inputType="number"
+        android:minWidth="150dp" />
+
+    <TextView
+        android:id="@+id/security_code_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/cardno_label"
+        android:layout_below="@id/cardno_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/security_code_label"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/security_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/security_code_label"
+        android:layout_toRightOf="@id/security_code_label"
+        android:inputType="number"
+        android:maxLength="4"
+        android:minWidth="65dp" />
+
+    <TextView
+        android:id="@+id/expiration_date_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/security_code_label"
+        android:layout_below="@id/security_code"
+        android:layout_marginTop="20dp"
+        android:text="@string/expiration_date_label"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/expiration_date_label"
+        android:layout_toRightOf="@id/expiration_date_label"
+        android:inputType="number"
+        android:maxLength="2"
+        android:minWidth="50dp" />
+
+    <TextView
+        android:id="@+id/date_separator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/security_code"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/month"
+        android:text="@string/date_separator"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/year"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/expiration_date_label"
+        android:layout_toRightOf="@id/date_separator"
+        android:inputType="number"
+        android:maxLength="4"
+        android:minWidth="65dp" />
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/expiration_date_label"
+        android:layout_below="@+id/expiration_date_label"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@string/american_express"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_credit1" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/imageView1"
+        android:layout_toRightOf="@id/imageView1"
+        android:contentDescription="@string/master_card"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_credit2" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@id/imageView2"
+        android:layout_toRightOf="@id/imageView2"
+        android:contentDescription="@string/visa"
+        android:scaleType="fitXY"
+        android:src="@drawable/logo_credit3" />
+
+</RelativeLayout>

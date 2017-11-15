@@ -1,0 +1,8 @@
+{
+  "CachedFileMaxBytesSize": 512000,
+  "PostMessageMaxBytesSize": 200000,
+  "PostMessageTimeout": 300,
+  "CompressPostMessage": 1,
+  "LibraryVersion": "2.0.0.65",
+  "MessageVersion": "6.0.0.0"
+}

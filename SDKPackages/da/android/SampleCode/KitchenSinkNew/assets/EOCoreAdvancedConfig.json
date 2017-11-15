@@ -1,0 +1,17 @@
+/*******************************************************************************
+ * Licensed Materials - Property of IBM
+ * (C) Copyright IBM Corp. 2015
+ * US Government Users Restricted Rights - Use, duplication or disclosure
+ * restricted by GSA ADP Schedule Contract with IBM Corp.
+ ******************************************************************************/
+ 
+{
+	"PostMessageMaxBytesSize":"20000",
+    "PostMessageTimeout":"60000",
+	"PostMessageSocketTimeout":"60000",
+	"CompressPostMessage":"true",
+	"BufferLimit":"100",
+	"BufferPercent":"20",
+	"TimeIntervalBetweenSnapshots":"60",
+	"LibraryVersion":"1.0.0.0"
+}

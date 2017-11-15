@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed Materials - Property of IBM
+  5725-K23
+  (c) Copyright IBM Corp. 2013, 2014
+  US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+	<LinearLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="vertical" >
+	<!-- 
+	http://developer.android.com/resources/tutorials/views/hello-gallery.html
+	    <Gallery
+	        android:id="@+id/gallery1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />
+	
+	    <MediaController
+	        android:id="@+id/mediaController1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" >
+	    </MediaController>
+	
+	    <VideoView
+	        android:id="@+id/videoView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" />
+	-->
+	
+	    <TimePicker
+	        android:id="@+id/timePicker1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	
+	    <DatePicker
+	        android:id="@+id/datePicker1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	
+	    <Chronometer
+	        android:id="@+id/chronometer1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/chronometer" />
+	
+	    <AnalogClock
+	        android:id="@+id/analogClock1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	
+	    <DigitalClock
+	        android:id="@+id/digitalClock1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/digitalClock" />
+	
+	    <ZoomButton
+	        android:id="@+id/zoomButton1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:src="@android:drawable/btn_plus" />
+	
+	    <ZoomControls
+	        android:id="@+id/zoomControls1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+<!--  Not a common control 
+	    <DialerFilter
+	        android:id="@+id/dialerFilter1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	        <EditText
+	            android:id="@android:id/hint"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:text="@string/hint"
+	            android:inputType="text"
+	             >
+	            <requestFocus />
+	        </EditText>
+	
+	        <EditText
+	            android:id="@android:id/primary"
+	            android:layout_width="fill_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@android:id/hint"
+	            android:text="@string/primary"
+	            android:inputType="text" />
+	    </DialerFilter>
+-->	
+	    <TwoLineListItem
+	        android:id="@+id/twoLineListItem1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content" />
+	</LinearLayout>
+</ScrollView>

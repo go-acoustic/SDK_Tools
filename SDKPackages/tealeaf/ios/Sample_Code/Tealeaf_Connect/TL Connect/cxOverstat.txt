@@ -1,0 +1,6 @@
+IBM® Tealeaf® cxOverstat allows companies to identify problematic hotspots, optimize page content and improve form conversion rates. Tealeaf cxOverstat, from a leader in customer experience management (CEM), is a scalable enterprise solution capable of supporting massive, high-volume sites and is an add-on product to the Tealeaf CX platform and cxImpact.
+Replay dynamic, browser-based user sessions and use highly visual segmentation and drill-down capabilities to understand why their online users struggle
+Understand how users are engaged with the site with Click Heat Maps
+Understand the user completion and abandonment rate from Form Field Analytics
+Analyze which links are most effective with Link Analytics
+Gain insight into where users are focusing on your page with Attention Map

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Licensed Materials - Property of IBM
+  5725-K23
+  (c) Copyright IBM Corp. 2013, 2014
+  US Government Users Restricted Rights - Use, duplication or disclosure restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:showDividers="none"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:showDividers="none"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:contentDescription="@string/productDesc"
+            android:id="@+id/item_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_launcher" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/item_name"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="0.5"
+            android:paddingLeft="10dip"
+            android:text="@string/itemName"
+            android:textSize="16sp" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <tl.hybridhtmlembedded.MyWebView
+        android:id="@+id/myWebView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="0.86" />
+    
+    <View 
+        android:layout_width="wrap_content"
+        android:layout_height="5dip" />
+    <!---->
+    <!--<tl.hybridhtmlembedded.MyWebView-->
+        <!--android:id="@+id/myWebView2"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="0dip"-->
+        <!--android:layout_weight="0.86" />-->
+
+    <!--<Button-->
+        <!--android:id="@+id/button1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/return_menu" />-->
+
+    <!--<CheckBox-->
+        <!--android:id="@+id/checkBox1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/test" />-->
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="4dp" >
+
+    <ImageView
+        android:id="@+id/shop_list_item_mainImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/shop_list_item_description"
+        android:paddingRight="8dp" />
+
+    <TextView
+        android:id="@+id/shop_list_item_titleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/shop_list_item_mainImageView"
+        android:includeFontPadding="false"
+        android:textSize="18sp"
+        android:lines="2" />
+
+    <TextView
+        android:id="@+id/shop_list_item_subtitleTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/shop_list_item_titleTextView"
+        android:layout_toRightOf="@id/shop_list_item_mainImageView"
+        android:includeFontPadding="false"
+        android:lines="2" />
+
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" >
+	<head>
+		<script type="text/javascript" src="../js/hammer1.js" ></script>
+		<script type="text/javascript" src="../js/jquery-1.7.1.min.js" ></script>
+		<script type="text/javascript" src="../js/W3C.js" ></script>
+		<script type="text/javascript" src="../js/TLGesture.js" ></script>
+	    <script type="text/javascript" src="../js/defaultNativeDomCaptureGesturesConfigurationHammer1.js" ></script>
+	    <script type="text/javascript" src="./js/actionsForH1.js" ></script>
+	</head>    
+	<body>
+		Pinch Area:<br>
+	
+		<font id="pinch1" size="7">SOME TEXT</font><br>
+		<br/>
+		<input type="image" name="imageInput" id="ii" alt="Alt grid" src="images/GRIDimage.jpg" />
+		<br/>
+		<img name="tealeafImage" id="TL" alt="Tealeaf" src="images/image.gif" />
+		<br>
+	
+		Swipe Area:<br>
+		<input type="button" id="swipe1" onclick="alert('Works!')" value="Button"></input><br>
+		<input type="checkbox" id="swipe2" value="red" style="height:13px;width:13px;"></input><br>
+		<br>
+		
+		Tap Area:<br>
+		
+		<img id="tap1" src="images/image.gif" width="100px" height="100px" onclick="alert('Works!')"></img>
+		
+		<br>
+		<select id="tap2">
+		  <option value="1">1</option>
+		  <option value="2">2</option>
+		  <option value="3">3</option>
+		  <option value="4">4</option>
+		</select>
+		<br>
+		<input type="text" id="tap3"></input><br>
+		<input type="password" id="tap4"></input><br>
+		<textarea cols="60" rows="10" id="tap5"></textarea><br>
+		<br><br><br>
+		
+		<div id="eventText"></div>
+		Gesture SandBox:
+		<textarea id="sandbox" style="width:500px;height:500px;border:1px solid #000;"></textarea>
+	
+	</body>
+</html>

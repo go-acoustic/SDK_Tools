@@ -1,0 +1,4 @@
+OTHER_LDFLAGS = $(inherited) -ObjC -lz -framework CoreTelephony -framework SystemConfiguration -lEOCore -framework DAMod
+HEADER_SEARCH_PATHS = $(inherited) "DAMod/DAMod.framework/Headers/"
+LIBRARY_SEARCH_PATHS = $(inherited) "DAMod/"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "DAMod/"

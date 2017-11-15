@@ -1,0 +1,143 @@
+###############################################################################
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corp. 2017
+# US Government Users Restricted Rights - Use, duplication or disclosure
+# restricted by GSA ADP Schedule Contract with IBM Corp.
+###############################################################################
+
+Sep 2017 Release
+Tealeaf Module 10.2.0.126 and EOCore 2.0.0.65:
+Built with iOS 11.
+Support UIPickerView and UIDatePicker replay. For onpremise replay server, you will need to patch the splice file. For SaaS, it will supported in . You will need to update your templates for Native Replay.
+Added support for whitelist for killswitch to have same parity as Android.
+
+June 2017 HotFix 1
+Tealeaf Module 10.2.0.115 and EOCore 2.0.0.61:
+Added text of label for UITabBarItem for system icons.
+Made change to be able to get filename of UIImageView from storyboard when you use tlfFileReference value from User Defined Runtime Attributes.
+
+May 2017 Release
+Tealeaf Module 10.2.0.112 and EOCore 2.0.0.61:
+Bitcode enabled on debug and release builds
+Fixed an issue averageColor and fabric io combination.
+Added ability to set values before EOCore is enabled.
+Added new method to log form completion.
+Added changes to library to fix issues with NSString values that get garbage collected prematurely.
+Had to change NSString to get copy to avoid having EXC_BAD_ACCESS due to 3rd party library.
+Adjusted logic in TLFMessageQueue due to issues with textfields.
+Added ability to turn off auto logging for pageControl using autolog:pageControl in TealeafAdvancedConfig.json.
+Adjusted logic for view being unloaded on viewwilldisapear.
+Also fixed an issue with TLFMessageQueue having a Fatal Exception: NSGenericException on flush.
+Made adjustment to fix issues with UIButtonLabel masking.
+Made adjustments with try/catch for exception in TLFMessageQueue.
+Also noticed that previousMainViewController was nil, so made some changes to fix issue that would also create issues on type 10 data.
+Made adjustment with try/catch for exception in TLFMessageQueue.
+
+Mar 2017 Release
+Tealeaf Module 10.2.0.86 and EOCore 2.0.0.55:
+Fixed an issue with Navigation Bar not getting correct color on the device.
+Fixed an issue with missing type 10 data.
+Fixed an issue with getting actual correct color due UIColorSpace.
+
+Feb 2017 Release
+Tealeaf Module 10.2.0.84 and EOCore 2.0.0.55:
+Added support for UISearchBar.
+Assed support for Swift bridging.
+Added suport for view that just have a background color with no content to get correct look and feel.
+Fixed issue with tables not apperaing on correct position and not having correct height.
+Added ability to update any property in the module's configuration item from AdvancedConfig.json or BasicConfig.plist using EOApplicationHelper.h.
+Made changes to get color for borders and adjusted templates.
+Fixed an issue with not capturing data from table cells that have cell.subviews.
+Fixed an issue with posting data back to server after application goes to background.
+Removed clearCache which is no longer used.
+Adjusted ordering of text and keyboard events to fix replay in BBR.
+Adding support for Page Control * It will only have initial UI look and feel. Page Control change events will be reported, but UI will not update until a future update has been done on server. Will update and add notes in this file when that is available.
+New build is done against iOS 8.0 to 10.2 for both EOCore and Tealeaf.
+Masking feature has changed. Please follow guide to update to new settings used. We now are able to mask any item like on Android and UIC.
+
+Known issues
+When using an IBM Tealeaf on-premise Replay server, at the time of this publication:
+You will need to use fixpack 4 and update the templates to get controls to work.
+- UISegmentedControl 
+- UISlider
+- UIStepper
+- UISwitch
+
+You will need to use fixpack 5 and update the templates to get controls to work.
+- UIPageControl to replay. If you apply the templates you will correct UI.
+- UISearchBar
+
+When using an IBM Tealeaf SaaS Replay server, at the time of this publication:
+- UIPageControl will be supported in March 2017. If a page contains a UIPageControl it will show a blank page.
+
+
+Oct 2016 Release
+Tealeaf Module 10.2.0.60 and EOCore 2.0.0.39:
+Advertising id can now be used in conjection with CXA linking.
+Builds are done using iOS 10 release build has bit code enabled and debug build has bit code disabled.
+Taking screenshots will be placed into type 10 data and no longer will be sent as its own post.
+Added support for UIAlertController.
+Added ability to understand borders around buttons and textviews to represent them correctly on templates.
+User agent information will be sent with all the hits for CXA data integration.
+Adjusted alerts to have same look and feel as iOS.
+For image replay png will be for base 64 data and jpg for md5 hash value which helps map to all the devices.
+Update image extractor tool with version
+Libraries now support from iOS 8 to 10.
+Fixed an issue with name collision for orientationChanged with a private Apple method. It got renamed to eoOrientaionChanged.
+Fixed issue with library not disabling.
+Added support for StatusBar.
+Added support for stepper.
+Added support for SegmentBar.
+Fixed issues with templates and table not lining up correct with gestures.
+Added support for new templates.
+
+Known issues
+At the time of this publication the following controls are not supported with replay when using an IBM Tealeaf on-premise Replay server.
+- UISegmentedControl 
+- UISlider
+- UIStepper
+- UISwitch
+
+Aug 2016 Release
+Tealeaf Module 10.2.0.29 and EOCore 2.0.0.28:
+Adjusted support of WKWebView for iOS 8.0.
+
+Hot Fix 2 July 19 2016
+Tealeaf Module 10.2.0.15 and EOCore 2.0.0.25:
+Added ability to remove ip data in json payload.
+Used weak reference to not interfere with third party libraries doing same swizzling methods. Example, the use of BlocksKit.
+
+Hot Fix July 2016
+Tealeaf Module 10.2.0.12 and EOCore 2.0.0.25:
+Support of WKWebView.
+Fixed UI hits generated by the Tealeaf iOS Logging Framework SDK 10.1.0.22 are lost if the mobile application is closed before they get posted.
+
+June 2016 Release
+Tealeaf Module 10.2.0.10 and EOCore 2.0.0.23:
+Adding new TealeafLayoutConfig.json to help with Native Replay.
+Adding new AppendMapIds section for eventing.
+
+Hot Fix June 2016 
+Tealeaf Module 10.1.0.27 and EOCore 2.0.0.15:
+Fixed an issue with startung new sessions not creating a new session id.
+
+Hot Fix April 2016 
+Tealeaf Module 10.1.0.24 and EOCore 2.0.0.11:
+Fixed issue with MIME type given for image data, using the new image extractor tool
+Fix issue with delegate assignment for Cordova apps
+New app files in ApacheCordova folder for developer to include in their Cordova apps
+Two new configuration items for Cordova apps in TealeafAdvancedConfig.json: IsCordovaApp, CordovaLayoutDelay
+
+March 2016 Release Notes 
+Release Notes  Tealeaf Module 10.1.0.22 and EOCore 2.0.0.11:
+Fixed Double call to NSURLConnection connectionWithRequest:delegate
+Fixed issue with Bitcode when used with Archive
+
+Feb 2016
+
+Release Notes Tealeaf Module 10.1.0.19 and EOCore 2.0.0.8:
+Fixed Performance issue with Gestures and ImageView
+Fixed Reachability Duplicate Symbol Error when customer or 3rd party is using Reachability.h
+Fixed Issue with Lots of Compiler Warnings in Xcode 7
+Fixed Crash Issue when logging Synchronous NSURL Connections
+Fixed Rare Crash Issue when Logging Alert View

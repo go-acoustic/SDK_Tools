@@ -1,0 +1,7 @@
+IBM® Tealeaf® cxReveal makes use of the core functionality of the Tealeaf CX platform — session replay and search — and packages it into a simple user interface for efficient use by customer service representatives, sales associates and marketing personnel. Using one-click retrieval, users have instant access to both live and historical customer sessions from any existing CRM solution.
+Tealeaf cxReveal helps the Customer Contact Center organization to:
+Accelerate the customer's problem resolution and reduce call-handle time with shadow-browsing live customer sessions or quickly search and replay any historical customer session.
+Gain session history summary reports of historical activities of any given customer.
+Replay session quick views about a chosen customer's session without having to replay the entire session.
+Deliver activity dashboards and reporting to management with insight into CSR usage and training needs.
+Quickly deploy to onsite and distributed employees through universal, web-based access.

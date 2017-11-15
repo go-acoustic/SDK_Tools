@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name" translatable="false">HybridHTMLEmbeddedAuto</string>
+    <string name="dummy_button" translatable="false">Dummy Button</string>
+    <string name="dummy_content" translatable="false">DUMMY\nCONTENT</string>
+	<string name="return_menu" translatable="false">Return to main menu</string>
+	<string name="test" translatable="false">Is this a test?</string>
+</resources>

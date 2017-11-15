@@ -1,0 +1,7 @@
+IBM® Tealeaf® CX captures and manages visitor interactions on a customer’s web site. It provides extensive visibility into customers’ online experiences and insight into customer behaviors within web browsers. The Tealeaf CX platform can be used throughout an organization to support a range of functions, including e-business, production support, customer service and compliance administration.
+Tealeaf CX features enable you to:
+Capture detailed network traffic passively with no impact on site performance.
+Provide extensive visibility into customer interactions on web sites, including in-page and Rich Internet Application (RIA) interactions that occur solely in the browser.
+Discover unexpected customer experiences and discover customer struggles in near real time.
+Take advantage of time-tested architecture that can scale to fit large, sophisticated web sites.
+Deliver data security and privacy functions that include global data destruction, authenticated client access and role-based filtering.

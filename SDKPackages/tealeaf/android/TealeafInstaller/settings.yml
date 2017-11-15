@@ -1,0 +1,190 @@
+#-------------------------------------------------------------------------------
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corp. 2016
+# US Government Users Restricted Rights - Use, duplication or disclosure
+# restricted by GSA ADP Schedule Contract with IBM Corp.
+#-------------------------------------------------------------------------------
+version: 26
+# EOCore Paths
+eocoreJarPath: '../EOCore/eocore.jar'
+eocoreEOCoreBasicConfigPath: '../EOCore/EOCoreBasicConfig.properties'
+eocoreEOCoreAdvancedConfigPath: '../EOCore/EOCoreAdvancedConfig.json'
+
+# TealeafMod Paths
+tealeafModJarPath: '../TealeafMod/tealeafmod.jar'
+tealeafBasicConfigPath: '../TealeafMod/TealeafBasicConfig.properties'
+tealeafAdvancedConfigPath: '../TealeafMod/TealeafAdvancedConfig.json'
+
+# TeaCuts Path
+teaCutsJarPath: '../TeaCuts/teacuts.jar'
+teaCutsBasicConfigPath: '../TeaCuts/TeaCutsBasicConfig.properties'
+teaCutsAdvancedConfigPath: '../TeaCuts/TeaCutsAdvancedConfig.json'
+
+# Android Studio Project Paths
+manifestFilePath: '/src/main/AndroidManifest.xml'
+assetDirectoryPath: '/src/main/assets'
+libsDirectoryPath: '/libs'
+tealeafLayoutConfigFilePath: '/TealeafLayoutConfig.json'
+
+layoutDelay: 500
+
+# Tealeaf code snippets
+spaces: 4
+permissionAccessNetworkState: '<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />'
+permissionAccessWIFIState: '<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />'
+permissionReadPhoneState: '<uses-permission android:name="android.permission.READ_PHONE_STATE" />'
+permissionInternet: '<uses-permission android:name="android.permission.INTERNET" />'
+buildscript: |+
+
+    buildscript {
+        repositories {
+            mavenCentral()
+        }
+        dependencies {
+            classpath 'org.aspectj:aspectjtools:1.8.8'
+        }
+    }
+    
+dependenciesBuildscript: |
+        dependencies {
+            classpath 'org.aspectj:aspectjtools:1.8.8'
+        }
+mavenRepositoriesScript: '        mavenCentral()'
+aspectjDependenciesBuildscript: "        classpath 'org.aspectj:aspectjtools:1.8.8'"
+importAjcMain: 'import org.aspectj.tools.ajc.Main'
+importAjcIMessage: 'import org.aspectj.bridge.IMessage'
+importAjcMessageHandler: 'import org.aspectj.bridge.MessageHandler'
+variants: |
+
+    final def log = project.logger
+    final def variants = project.android.applicationVariants
+    variants.all { variant ->
+
+        JavaCompile javaCompile = variant.javaCompile
+        javaCompile.doLast {
+            String[] args = ["-showWeaveInfo",
+                             "-1.8",
+                             "-inpath", javaCompile.destinationDir.toString(),
+                             "-aspectpath", javaCompile.classpath.asPath,
+                             "-d", javaCompile.destinationDir.toString(),
+                             "-classpath", javaCompile.classpath.asPath,
+                             "-bootclasspath", project.android.bootClasspath.join(File.pathSeparator)]
+            log.debug "ajc args: " + Arrays.toString(args)
+
+            MessageHandler handler = new MessageHandler(true);
+            new Main().run(args, handler);
+            for (IMessage message : handler.getMessages(null, true)) {
+                switch (message.getKind()) {
+                    case IMessage.ABORT:
+                    case IMessage.ERROR:
+                    case IMessage.FAIL:
+                        log.error message.message, message.thrown
+                        break;
+                    case IMessage.WARNING:
+                        log.warn message.message, message.thrown
+                        break;
+                    case IMessage.INFO:
+                        log.info message.message, message.thrown
+                        break;
+                    case IMessage.DEBUG:
+                        log.debug message.message, message.thrown
+                        break;
+                }
+            }
+        }
+    }
+dependenciesAppcompat: "    compile 'com.android.support:appcompat-v7:25.1.1'"
+dependenciesDesign: "    compile 'com.android.support:design:25.1.1'"
+dependenciesEocore: "    compile files('libs/eocore.jar')"
+dependenciesTealeafmod: "    compile files('libs/tealeafmod.jar')"
+dependenciesTeacuts: "    compile files('libs/teacuts.jar')"
+dependenciesAspectJ: "    compile 'org.aspectj:aspectjrt:1.8.8'"
+tealeafImport: "import com.tl.uic.Tealeaf;"
+motionEventImport: "import android.view.MotionEvent;"
+tealeafInstance: "    Tealeaf tealeaf = new Tealeaf(this.getApplication());"
+tealeafEnable: "    Tealeaf.enable();"
+importTealeaf: |
+
+ import com.tl.uic.Tealeaf;
+onCreateSnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void onCreate() {
+        super.onCreate();
+        Tealeaf.enable();
+    }
+onLowMemorySnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void onLowMemory() {
+        super.onLowMemory();
+    }
+onTerminateSnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void onTerminate() {
+        super.onTerminate();
+    }
+onPauseSnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void onPause() {
+        super.onPause();
+    }
+onResumeSnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+onDestroySnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+    }
+onDispatchTouchEventSnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public boolean dispatchTouchEvent(MotionEvent e) {
+        return super.dispatchTouchEvent(e);
+    }
+onResumeFragmentSnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void onResume() {
+        super.onResume();
+    }
+onPauseFragmentSnippet: |
+
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public void onPause() {
+        super.onPause();
+    }

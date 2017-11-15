@@ -1,0 +1,61 @@
+<!--
+  Licensed Materials - Property of IBM
+  (C) Copyright IBM Corp. 2015
+  US Government Users Restricted Rights - Use, duplication or disclosure
+  restricted by GSA ADP Schedule Contract with IBM Corp.
+-->
+<catalog>
+    <category>
+        <id>/kitchensink/mobilesdk/BREAKFAST</id>
+        <name>Breakfast</name>
+        <products>
+            <product>
+                <id>/kitchensink/mobilesdk/CHEERIOS</id>
+                <name>Cheerios</name>
+                <baseUnitPrice>5.00</baseUnitPrice>
+                <attributes>
+                    <attribute>honey</attribute>
+                    <attribute>kellogs</attribute>
+                    <attribute>healthy</attribute>
+                </attributes>
+            </product>
+            <product>
+                <id>/kitchensink/mobilesdk/COCOAPUFFS</id>
+                <name>Cocoa Puffs</name>
+                <baseUnitPrice>2.00</baseUnitPrice>
+                <attributes>
+                    <attribute>sweet</attribute>
+                    <attribute>general_mills</attribute>
+                    <attribute>unhealthy</attribute>
+                </attributes>
+            </product>
+        </products>
+    </category>
+    
+    <category>
+        <id>/kitchensink/mobilesdk/LUNCH</id>
+        <name>Lunch</name>
+        <products>
+            <product>
+                <id>/kitchensink/mobilesdk/HOTPOCKETS</id>
+                <name>Hot Pockets</name>
+                <baseUnitPrice>1.00</baseUnitPrice>
+                <attributes>
+                    <attribute>spicy</attribute>
+                    <attribute>hot_pockets</attribute>
+                    <attribute>quick_meal</attribute>
+                </attributes>
+            </product>
+            <product>
+                <id>/kitchensink/mobilesdk/LEANCUISINE</id>
+                <name>Lean Cusine</name>
+                <baseUnitPrice>2.00</baseUnitPrice>
+                <attributes>
+                    <attribute>salty</attribute>
+                    <attribute>lean_cuisine</attribute>
+                    <attribute>healthy</attribute>
+                </attributes>
+            </product>
+        </products>
+    </category>
+</catalog>
