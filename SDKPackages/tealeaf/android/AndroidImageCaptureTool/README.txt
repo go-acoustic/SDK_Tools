@@ -27,23 +27,23 @@ Pre-requisites
 How to install?
     MAC OS
 
-    1) Following Ruby installation guide to install Ruby version 2.1.2:
-	https://www.ruby-lang.org/en/documentation/installation/
+    1) Following Ruby installation guide to install Ruby version 2.4.2p198:
+	https://www.ruby-lang.org/en/documentation/installation/#homebrew
     2) Run terminal command:
         xcode-select --install
     3) Install below required Ruby gems by running the below command:
 
-        a) gem install rubyzip '1.1.7'
-        b) gem install nokogiri '1.6.7.2'
+        a) gem install rubyzip '1.2.1'
+        b) gem install nokogiri '1.8.1'
 
 	Windows OS
 
-    1) Following Ruby installation guide to install Ruby version 1.9.3-p551:
-        http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-1.9.3-p551.exe
+    1) Following Ruby installation guide to install Ruby version 2.4.2p198:
+        https://rubyinstaller.org/downloads/
     2) Install below required Ruby gems by running the below command:
 
-        a) gem install zip '1.1.7'
-        b) gem install nokogiri '1.6.7.2'
+        a) gem install rubyzip '1.2.1'
+        b) gem install nokogiri '1.8.1'
 
 How to run it?
     1) Unzip the file named “AndroidImageCaptureTool” to your local path
@@ -59,6 +59,8 @@ How to run it?
        (Note: For Android Studio, You can reformat any updated XML files by clicking on "layout->Reformat Code"
        For Eclipse, click on "layout->source->format")
     7) Copy the contents of the image resources to the destination folder Tealeaf Replay Server.
-       Typically it’s installed under the below path (NOTE:  This folder is for both IOS and Android images:
+       For onPrem installation, it’s installed under the below path (NOTE:  This folder is for both IOS and Android images:
 
-	C:\Tealeaf\Replay Server\Images
+	    C:\Tealeaf\Replay Server\Images
+
+	  For SaaS server, please follow online documentation for image upload.

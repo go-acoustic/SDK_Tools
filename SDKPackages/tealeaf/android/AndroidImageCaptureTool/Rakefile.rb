@@ -4,9 +4,8 @@
 # US Government Users Restricted Rights - Use, duplication or disclosure
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 #-------------------------------------------------------------------------------
-require 'zip'
+require 'Zip'
 require 'fileutils'
-require 'digest'
 require 'nokogiri'
 Zip.warn_invalid_date = false
 
@@ -18,7 +17,7 @@ RES_FOLDER_PATH = ENV['res_folder_path']
 
 DESTINATION_DIR = File.join(WORKING_DIR, '/images')
 TEMP_DIR = './tmp'
-APK_FOLDER_PATTERN = '/drawable**/*.{png,9.png,jpg,gif,webp,bmp}'
+APK_FOLDER_PATTERN = '/**/*.{png,9.png,jpg,gif,webp,bmp,svg,ico}'
 
 desc 'Unzip the APK'
 task :unpack_apk do
@@ -36,7 +35,7 @@ task :copy_apk_resource do
   res_path = File.join(TEMP_DIR, '/res')
 
   #
-  # Copy image files that starts with drawable under res folder from the unzipped APK file
+  # Copy image files under res folder from the unzipped APK file
   #
   Dir.glob(res_path + APK_FOLDER_PATTERN) do |fPath|
     dir = File.dirname(fPath)
@@ -54,26 +53,6 @@ task :copy_apk_resource do
   unless File.directory?(DESTINATION_DIR)
     puts 'Creating directory:  ' + DESTINATION_DIR
     FileUtils.mkdir_p(DESTINATION_DIR)
-  end
-
-  #
-  # Copy the file using the MD5 checksum filename format, and put under the images/ folder
-  # For each file under the copied folder, create MD5 checksum file name using base64 hash.
-  # Glob all files that starts with the folder string pattern, and associated extensions.
-  #
-  # puts "Number of files matched: #{Dir.glob(res_path + APK_FOLDER_PATTERN)}"
-  Dir.glob(res_path + APK_FOLDER_PATTERN) do |fPath|
-    extension = File.extname(fPath)
-    md5_checksum = Digest::MD5.file fPath
-    md5_checksum = md5_checksum.to_s.upcase
-
-    dPath = "#{DESTINATION_DIR}/#{md5_checksum}#{extension}"
-
-    if File.exist?(dPath) && FileUtils.compare_file(fPath, dPath)
-      puts 'File already exists, skipped: ' + File.basename(fPath, '.*')
-    else
-      FileUtils.cp fPath, dPath
-    end
   end
 end
 
@@ -176,7 +155,8 @@ end
 
 desc 'Rake file version'
 task :version do
-  puts "\nAndroid Image Extraction Tool Version => 1.5.0'"
+  puts "\nAndroid Image Extraction Tool Version => 1.6.0'"
+  puts "\nAdded support for all images under res folder, and svg, ico extensions'"
 end
 
 desc 'Default Rake task driver'

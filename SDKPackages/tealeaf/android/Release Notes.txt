@@ -5,13 +5,26 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+October 2017 Mini Release
+Tealeaf Module 10.2.1.206, EOCore 2.0.0.109 and TeaCuts 2.0.0.28
+Updated Android Image Extraction tool for more image types.
+Updated SDK to support API level 16 to 26.
+
+Hot Fix Oct 5 2017
+Tealeaf Module 10.2.1.182, EOCore 2.0.0.105 and TeaCuts 2.0.0.27
+Made a change to enable orientation to be fixed, because hybrid is not able to replay orientation changes.
+
+Hot Fix Sep 28 2017
+Tealeaf Module 10.2.1.183, EOCore 2.0.0.105 and TeaCuts 2.0.0.27
+Fixed an issue with Kill-switch and screen view out of sync.
+
 Hot Fix Sep 26 2017
 Tealeaf Module 10.2.1.182, EOCore 2.0.0.103 and TeaCuts 2.0.0.27
 Fixed an issue with Alerts not displaying correctly. Make sure to update the templates also.
 
 Hot Fix Aug 29 2017
 Tealeaf Module 10.2.1.171, EOCore 2.0.0.103 and TeaCuts 2.0.0.27
-There was an issue with older Cordova/PhoneGap not having an object intialized. It was blocking the javascript bridge data.
+There was an issue with older Cordova/PhoneGap not having an object initialized. It was blocking the javascript bridge data.
 
 Aug 2017 Release 
 Tealeaf Module 10.2.1.170, EOCore 2.0.0.103 and TeaCuts 2.0.0.27
