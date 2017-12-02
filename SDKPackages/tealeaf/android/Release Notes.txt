@@ -6,7 +6,7 @@
 ###############################################################################
 
 October 2017 Mini Release
-Tealeaf Module 10.2.1.206, EOCore 2.0.0.109 and TeaCuts 2.0.0.28
+Tealeaf Module 10.2.1.206, EOCore 2.0.0.116 and TeaCuts 2.0.0.28
 Updated Android Image Extraction tool for more image types.
 Updated SDK to support API level 16 to 26.
 
