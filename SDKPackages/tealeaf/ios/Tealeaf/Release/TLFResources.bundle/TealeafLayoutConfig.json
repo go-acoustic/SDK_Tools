@@ -1,10 +1,12 @@
 {
     "AutoLayout": {
-        "MyView": {
+        "MyViewControllerExample": {
             "do": false,
             "screenViewName": "MyScreenViewName",
             "delay": 500,
-            "takeScreenShot": false
+            "takeScreenShot": false,
+            "isWebView": false,
+            "numberOfWebviews": 0
         }
     },
     "AppendMapIds": {

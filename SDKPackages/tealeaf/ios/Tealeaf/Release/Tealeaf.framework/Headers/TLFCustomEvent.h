@@ -9,7 +9,6 @@
  @file TLFCustomEvent.h
  @brief Header file defining all manual API calls that can be made to the TeaLeaf library
  @copyright IBM Corp. 2017
- @version 9.0.2
  */
 
 #import <Foundation/Foundation.h>
@@ -21,7 +20,6 @@
  @brief TLFCustomEvent is a singleton class providing API method calls to the logging interface in the Tealeaf module. 
  @superclass Superclass: NSObject
  */
-
 @interface TLFCustomEvent : NSObject<TLFCustomEventJSProtocol>
 
 /*!
@@ -29,7 +27,6 @@
  @discussion The TLFCustomEvent singleton reference.
  @return  TLFCustomEvent Returns the singleton custom event logger, used for custom event logging.
  */
-
 + (TLFCustomEvent *)sharedInstance;
 
 /*!
@@ -38,7 +35,6 @@
  @param eventName - the name of the event to be logged this will appear in the posted json
  @return BOOL Whether the message was successfully logged or not
  */
-
 - (BOOL)logEvent:(NSString *)eventName;
 
 /*!
@@ -60,48 +56,6 @@
  */
 - (BOOL)logEvent:(NSString *)eventName values:(NSDictionary *)values level:(kTLFMonitoringLevelType)level;
 
-/*!
- @deprecated in version 9.0.2
- @brief logEvent allows for the logging of custom event and level.
- @discussion When connected to a Cellular network only events with a log level less than or equal to the PostMessageLevelCellular level (configured in EOCoreSettings.bundle > BasicConfig.plist) will be posted. When connected to a Wifi network only events with a log level less than or equal to the PostMessageLevelWifi level (configured in EOCoreSettings.bundle > BasicConfig.plist) will be posted. If the network state cannot be determined then PostMessageLevelCellular will be used by default.
- @param eventName - the name of the event to be logged this will appear in the posted json
- @param level - set a custom log level to the event. This will override the configured log level for that event.
- @return BOOL Whether the message was successfully logged or not
- */
-- (BOOL)logEvent:(NSString *)eventName level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
-
-/*!
- @deprecated in version 9.0.2
- @brief logEvent allows for the logging of custom event and message.
- @discussion When logging an event the event will be posted with the log level posted in "EventLevels" (configured in EOCoreSettings.bundle > BasicConfig.plist) will be used. If the event is not configured in EventLevels the default logging level "LoggingLevel" (configured in EOCoreSettings.bundle > AdvancedConfig.plist)\nWhen connected to a Cellular network only events with a log level less than or equal to the PostMessageLevelCellular level (configured in EOCoreSettings.bundle > BasicConfig.plist) will be posted. When connected to a Wifi network only events with a log level less than or equal to the PostMessageLevelWifi level (configured in EOCoreSettings.bundle > BasicConfig.plist) will be posted. If the network state cannot be determined then PostMessageLevelCellular will be used by default.
- @param eventName - the name of the event to be logged this will appear in the posted json
- @param value - additional string message to be logged with the event
- @return BOOL Whether the message was successfully logged or not
- */
-- (BOOL)logEvent:(NSString *)eventName value:(NSString*)value __attribute__((deprecated));
-
-/*!
- @deprecated in version 9.0.2
- @brief logEvent allows for the logging of custom event, message, and level.
- @discussion When connected to a Cellular network only events with a log level less than or equal to the PostMessageLevelCellular level (configured in EOCoreSettings.bundle > BasicConfig.plist) will be posted. When connected to a Wifi network only events with a log level less than or equal to the PostMessageLevelWifi level (configured in EOCoreSettings.bundle > BasicConfig.plist) will be posted. If the network state cannot be determined then PostMessageLevelCellular will be used by default.
- @param eventName - the name of the event to be logged this will appear in the posted json
- @param value - additional string message to be logged with the event
- @param level - set a custom log level to the event. This will override the configured log level for that event.
- @return BOOL Whether the message was successfully logged or not
- */
-- (BOOL)logEvent:(NSString *)eventName value:(NSString *)value level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
-
-
-/*!
- @deprecated in version 9.0.2
- @brief Log Carrier Event allows for the logging of device carrier and isoCountryCode.
- @discussion Carrier information can be generated from the iOS CoreTelephony framework. For more information on how to gather this information please consult Apple CoreTelephony documentation. Note if running on an iOS Simulator or Device not connected to a Carrier CoreTelephony will return nil for carrier information.
- @param carrierName - the name of network carrier.
- @param isoCountryCode - the iso country code associated with the device.
- @param level - set a custom log level to the event. This will override the configured log level for that event.
- @return BOOL Whether the message was successfully logged or not
- */
-- (BOOL)logCarrierEvent:(NSString *)carrierName country:(NSString *)isoCountryCode level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
 #pragma mark - Errors and Exceptions
 /*!
  @abstract Log an NSException.
@@ -111,7 +65,6 @@
  */
 - (BOOL)logNSExceptionEvent:(NSException *)exception;
 
-
 /*!
  @brief Log an NSException with any additional data.
  @discussion In the event of an NSException, the developer can log that exception using the following API. In addition to the data provided by the exception additional data can be logged by passing a dictionary into the dataDictionary field. Using this API call the unhandled field will be defaulted to NO.
@@ -120,28 +73,6 @@
  @return BOOL Whether the message was successfully logged or not
  */
 - (BOOL)logNSExceptionEvent:(NSException *)exception dataDictionary:(NSDictionary*)dataDictionary;
-
-
-/*!
- @deprecated in version 9.0.2
- @brief Log an NSException with any additional data while overriding the configured log level for exceptions.
- @discussion In the event of an NSException, the developer can log that exception using the following API. In addition to the data provided by the exception additional data can be logged by passing a dictionary into the dataDictionary field. Using this API call the unhandled field will be defaulted to NO.
- @param exception - the exception to be logged.
- @param level - set a custom log level to the event. This will override the configured log level for the exception event.
- @return BOOL Whether the message was successfully logged or not
- */
-- (BOOL)logNSExceptionEvent:(NSException *)exception level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
-
-/*!
- @deprecated in version 9.0.2
- @brief Log an NSException with any additional data while overriding the configured log level for exceptions.
- @discussion In the event of an NSException, the developer can log that exception using the following API. In addition to the data provided by the exception additional data can be logged by passing a dictionary into the dataDictionary field. Using this API call the unhandled field will be defaulted to NO.
- @param exception - the exception to be logged.
- @param dataDictionary - a dictionary of additional values to be logged with the exception.
- @param level - set a custom log level to the event. This will override the configured log level for the exception event.
- @return BOOL Whether the message was successfully logged or not
- */
-- (BOOL)logNSExceptionEvent:(NSException *)exception dataDictionary:(NSDictionary*)dataDictionary level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
 
 /*!
  @brief Log an NSException with any additional data and setting the unhandled flag
@@ -174,7 +105,6 @@
  @return BOOL Whether the message was successfully logged or not
  */
 - (BOOL)logNSErrorEvent:(NSError *)error message:(NSString *)message file:(const char *)file line:(unsigned int)line level:(kTLFMonitoringLevelType)level;
-
 
 #pragma mark - Network Logging
 /*!
@@ -286,25 +216,7 @@
  */
 - (BOOL)logUILabelTextChange:(UILabel*)label;
 
-/**
-@deprecated in version 10.1.1
- This example shows how to log Custom Controls. Any control must conform to the TLFCustomControlDelegate.
- @param customControl - The control to be logged.
- @return if the event was successfully logged or not.
- */
-- (BOOL)logCustomControl:(id<TLFCustomControlDelegate>)customControl __attribute__((deprecated));
 #pragma mark - Screenview
-/*!
- @brief Requests that the framework logs an application context.
- @param logicalPageName - Page name or title e.g. "Login View Controller"; Must not be empty.
- @param applicationContext - valid values are "LOAD" or "UNLOAD"; Must not be empty.
- @param referrer - Page name or title that loads logicalPageName. Could be empty.
- @return BOOL If the event was successfully logged or not.
- */
--(BOOL)logAppContext:(NSString*)logicalPageName
-  applicationContext:(NSString*)applicationContext
-            referrer:(NSString*)referrer __deprecated_msg("use '-logScreenViewContext:applicationContext:referrer:' instead.");
-
 /*!
  @brief Requests that the framework logs an application context.
  @param logicalPageName - Page name or title e.g. "Login View Controller"; Must not be empty.
@@ -427,4 +339,3 @@ Requests that the framework logs an Image.
  */
 -(BOOL)logJSONMessagePayloadStr:(NSString*)payload;
 @end
-

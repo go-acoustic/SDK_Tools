@@ -1,8 +1,0 @@
-IBM® Tealeaf® CX Mobile helps customers apply the power of Tealeaf’s powerful customer experience management solutions to their mobile websites, native applications, and hybrid applications, including support for HTML5. Tealeaf gives customers visibility where they don’t have it today, helping to deliver winning mobile services. Tealeaf CX Mobile is an add-on to the Tealeaf CX platform.
-Tealeaf CX Mobile helps customers to:
-Optimize customer experiences of their mobile channel for all users of mobile web, HTML5-based sites, hybrid app or native apps (such as iOS and Android).
-Gain complete mobile visibility by capturing user information for mobile websites, including HTML5-based sites, native applications, and hybrid apps, including both network and client interactions and touch-screen gestures such as pinching, zooming, scrolling and device rotation.
-Build and manage an early warning system to detect mobile user problems and provide proactive awareness into mobile application failures, usability issues or other obstacles that lead to failed transactions, abandonment, poor app store rankings and negative feedback.
-Quantify revenue impact and segmentation with real-time drag-and-drop analysis by specific mobile user behaviors or device attributes.
-Quickly find and isolate problems within mobile customer sessions — for both individual customers and aggregates — with powerful ad hoc discovery and segmentation without pre-defining tags or beacons.
-

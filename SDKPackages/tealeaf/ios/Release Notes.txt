@@ -5,6 +5,40 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+Dec 2017 Release
+Tealeaf Module 10.2.0.141 and EOCore 2.0.0.73:
+Fixed an issue on hybrid applications that have no internet connection and get an exception "Uncaught Exception: ReferenceError: Can't find variable: iOSJsonPayloadArray", which was a javscript error in tealeaf hybrid bridge.
+Removed JavaScriptToObjectiveCProtocol and JavaScriptToObjectiveCProtocolCode keys and values from TealeafBasicConfig, because it is no longer used extrenally.
+Made an adjustment EOCore tracking of battery level. There seems to be a thread issue with the use of setBatteryMonitoringEnabled. I added some checks, if an issue happens battery level will be -1.
+Fixed an issue with capturing root view controller as UIAlertController’s background when UIAlertController’s parent was presented modally.
+Fixed an issue with getting gestures on webview althought CaptureNativeGesturesOnWebview has been set to NO.
+Made changes to support opacity property of background color for controls like UITableView, UILabel, UITextField etc
+Made changes to automatically capture the view controller, when there is a webview on it.
+EOCore now has ability to turn off orientation changes, because Replay does not orient correcly on hybrid the device data.
+Made changes to support new NavigationBar changes for iOS 11, please update your templates.
+Made changes for NSData and UIImage to support changes on method signature that now has nullable to support Swift.
+Removed deprecated apis from Tealeaf:
+TLFApplicationHelper.h:
+- (void)setCurrentMonitoringLevelType:(kTLFMonitoringLevelType)monitoringLevelType __deprecated_msg(" Deprecated in version 10.1.0.0");
+- (kTLFMonitoringLevelType)currentMonitoringLevelType __deprecated_msg(" Deprecated in version 10.1.0.0");
+- (BOOL)reloadRemoteConfiguration:(NSString*)configURLString levelsConfigURLString:(NSString*) levelsConfigURLString maskingLevelsConfigURLString:(NSString*) maskingLevelsConfigURLString eventsLevelsConfigURLString:(NSString*) eventsLevelsConfigURLString;
+TLFCustomEvent.h:
+- (BOOL)logEvent:(NSString *)eventName level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
+- (BOOL)logEvent:(NSString *)eventName value:(NSString*)value __attribute__((deprecated));
+- (BOOL)logEvent:(NSString *)eventName value:(NSString *)value level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
+- (BOOL)logCarrierEvent:(NSString *)carrierName country:(NSString *)isoCountryCode level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
+- (BOOL)logNSExceptionEvent:(NSException *)exception level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
+- (BOOL)logNSExceptionEvent:(NSException *)exception dataDictionary:(NSDictionary*)dataDictionary level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
+- (BOOL)logCustomControl:(id<TLFCustomControlDelegate>)customControl __attribute__((deprecated));
+-(BOOL)logAppContext:(NSString*)logicalPageName
+  applicationContext:(NSString*)applicationContext
+            referrer:(NSString*)referrer __deprecated_msg("use '-logScreenViewContext:applicationContext:referrer:' instead.");
+TLFCustomEventLogger.h:
++ (BOOL)logEvent:(NSString *)eventName level:(kTLFMonitoringLevelType)level;
++ (BOOL)logEvent:(NSString *)eventName value:(NSString*)value;
++ (BOOL)logEvent:(NSString *)eventName value:(NSString *)value level:(kTLFMonitoringLevelType)level;
+
+
 Sep 2017 Release
 Tealeaf Module 10.2.0.126 and EOCore 2.0.0.65:
 Built with iOS 11.

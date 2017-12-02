@@ -1,13 +1,11 @@
 {
-  "LibraryVersion": "10.2.0.126",
+  "LibraryVersion": "10.2.0.141",
   "FilterMessageTypes": false,
   "MessageTypes": "4,5,6",
   "AddMessageTypeHeader": true,
   "MessageTypeHeader": "WORKLIGHTHIT",
   "TreatJsonDictionariesAsString": false,
   "ScreenTimeNeededToPost": 5,
-  "IsCordovaApp": false,
-  "CordovaLayoutDelay": 750,
   "button:click": 1,
   "button:load": 0,
   "toggleButton:click": 1,
@@ -44,5 +42,8 @@
   "UseJPGForReplayImagesExtension": false,
   "pageControl:valueChanged": 1,
   "autolog:pageControl": 1,
-  "autolog:textBox:_searchFieldEndEditing": 1
+  "autolog:textBox:_searchFieldEndEditing": 1,
+  "AutoWebViewCaptureDelay": 1,
+  "DefaultAutoLayoutDelay": 500,
+  "DisableKeyboardCapture": false
 }

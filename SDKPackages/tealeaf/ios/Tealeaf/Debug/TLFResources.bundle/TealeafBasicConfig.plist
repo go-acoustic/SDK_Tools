@@ -14,10 +14,6 @@
 	<false/>
 	<key>JavaScriptInjectionDelay</key>
 	<integer>100</integer>
-	<key>JavaScriptToObjectiveCProtocol</key>
-	<string>tealeafjsdatashuttle</string>
-	<key>JavaScriptToObjectiveCProtocolCode</key>
-	<string>&quot;var script = document.createElement(&apos;script&apos;); script.type = &apos;text/javascript&apos;; script.text = \&quot;var iOSJsonPayloadShuttle; var iOSJsonPayloadArray = new Array(); function iOSJSONShuttle( payloadString ) { var x=iOSJsonPayloadArray.length; iOSJsonPayloadArray[x]=payloadString; iOSJsonPayloadShuttle = payloadString; window.location.href = &apos;%@&apos; + &apos;:&apos; + payloadString;}\&quot;; document.getElementsByTagName(&apos;head&apos;)[0].appendChild(script);&quot;</string>
 	<key>KillSwitchEnabled</key>
 	<false/>
 	<key>KillSwitchMaxNumberOfTries</key>

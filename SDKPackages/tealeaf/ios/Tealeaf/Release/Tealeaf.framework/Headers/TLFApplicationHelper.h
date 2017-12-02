@@ -22,24 +22,12 @@
  * @return Returns YES or NO based on whether the framework was successfully enabled or not.
  */
 - (BOOL)enableTealeafFramework;
+
 /**
  * @abstract Turns off the Tealeaf Framework.
  * @return Returns YES or NO based on whether the framework was successfully enabled or not.
  */
 - (BOOL)disableTealeafFramework;
-
-/**
- Setup the current monitoring level type. The framework remembers this logging level even when the application goes to the background or exits.
- @param monitoringLevelType - The new monitoring level type.
- */
-- (void)setCurrentMonitoringLevelType:(kTLFMonitoringLevelType)monitoringLevelType __deprecated_msg(" Deprecated in version 10.1.0.0");
-;
-
-/**
- Returns the current monitoring level type.
- @return the current monitoring level type.
- */
-- (kTLFMonitoringLevelType)currentMonitoringLevelType __deprecated_msg(" Deprecated in version 10.1.0.0");
 
 /**
  Setup the Kill Switch URL. This is the URL to be checked when the framework initializes. If the page is not reachable the framework will not initialize. Setting the URL will update the configurable plist file for that user's device.
@@ -70,8 +58,6 @@
  */
 - (NSString*)currentSessionId;
 
-
-
 /**
  Returns a BOOL value indicating if the Tealeaf Framework is enabled or not.
  @return If the Tealeaf Framework is enabled or not.
@@ -83,15 +69,6 @@
  @return The string representation of the Tealeaf Framework version.
  */
 - (NSString*)frameworkVersion;
-/**
- Loads configuration files located remotely.
- @param configURLString - The URL address of TLFConfigurableItems.plist to be used.
- @param levelsConfigURLString - The URL address of TLFEventsLevels.plist to be used.
- @param maskingLevelsConfigURLString - The URL address of TLFMaskingLevelsConfiguration.plist to be used.
- @param eventsLevelsConfigURLString - The URL address of TLFMaskingLevelsConfiguration.plist to be used.
- @return If the remote files files successfully loaded or not.
- */
-- (BOOL)reloadRemoteConfiguration:(NSString*)configURLString levelsConfigURLString:(NSString*) levelsConfigURLString maskingLevelsConfigURLString:(NSString*) maskingLevelsConfigURLString eventsLevelsConfigURLString:(NSString*) eventsLevelsConfigURLString;
 
 /**
  Sets logging level for an event. Event names are listed in TLFEventsLevels.plist. If you call this method for an event not listed in the TLFEventsLevels.plist then the set will fail.
@@ -122,12 +99,12 @@
  */
 - (id)valueForConfigurableItem:(NSString*)configItem;
 
-/**
- Gets default value of a configurable item in TLFConfigurableItems.plist file.
- @param configItem - the name of the configurable item. See TLFConfigurableItems.plist for a list of items.
- @return the value of the configurable item.
- */
-- (id)defaultValueForConfigurableItem:(NSString*)configItem;
+///**
+// Gets default value of a configurable item in TLFConfigurableItems.plist file.
+// @param configItem - the name of the configurable item. See TLFConfigurableItems.plist for a list of items.
+// @return the value of the configurable item.
+// */
+//- (id)defaultValueForConfigurableItem:(NSString*)configItem;
 
 /**
  Setup the Device ID.
@@ -166,38 +143,45 @@
  @param headers - Dictionary of headers with key value pairs to be sent over the HTTP Request.
  */
 - (void) setAdditionalHttpHeaders:(NSMutableDictionary*)headers;
+
 /**
  Set an application specific header into each HTTP request to PostMessageURL
  @param name - Header key name to be sent over the HTTP Request.
  @param value - Header value to be sent over the HTTP Request.
  */
 - (void) addAdditionalHttpHeader:(NSString*)value forName:(NSString*)name;
+
 /**
  Set any application specific cookies into each HTTP request to PostMessageURL
  @param cookies - Array of NSHTTPCookie objects to be sent over the HTTP Request.
  */
 - (void) setAdditionalHttpCookies:(NSMutableArray*)cookies;
+
 /**
  Set any application specific cookie into each HTTP request to PostMessageURL
  @param cookie - NSHTTPCookie object to be sent over the HTTP Request.
  */
 - (void) addAdditionalHttpCookie:(NSHTTPCookie*)cookie;
+
 /**
  Get all HTTP Headers that are sent with each HTTP request to PostMessageURL
  @return Dictonary of HTTP Headers as key value pairs.
  */
 - (NSDictionary*) getAdditionalHttpHeaders;
+
 /**
  Get all HTTP cookies that are sent with each HTTP request to PostMessageURL
  @return Array of HTTP Cookies as NSHTTPCookie objects.
  */
 - (NSArray*) getAdditionalHttpCookies;
+
 /**
  Add session cookie to given NSMutableURLRequest object. Typically used when manually instrumenting the application.
  @param request - NSMutableURLRequest object to be sessionized.
  @return YES when successful else NO.
  */
 - (BOOL) sessionizeRequest:(NSMutableURLRequest*)request;
+
 /**
  Confirms if given NSURLRequest coming from javascript is a Tealeaf request URL. Typically used when manually instrumenting the application.
  @param request - NSMutableURLRequest object to be checked if is a Tealeaf request URL.
@@ -205,17 +189,20 @@
  @return YES when Tealeaf hybrid bridge request else NO.
  */
 - (BOOL) isTealeafHybridBridgeRequest:(NSURLRequest*)request webView:(UIWebView*)webView;
+
 /**
  Injects Tealeaf hybrid bridge javascript code into the webpage loaded into UIWebView. Typically used when manually instrumenting the application.
  @param webView - UIWebView object into which Tealeaf hybrid bridge javascript code needs to be injected.
  @return YES when Tealeaf hybrid bridge javascript code injection is successful request else NO.
  */
 - (BOOL) InjectTealeafHybridBridgeOnWebViewDidFinishLoad:(UIWebView *)webView;
+
 /**
  UIApplication sendEvent API which needs to be overriden in case developers are using their own class derived from UIApplication. Please see UIApplication documentation for details.
  @param event - UIEvent object that application will be processing.
  */
 - (void)sendEvent:(UIEvent*)event;
+
 /**
  UIApplication sendAction API which needs to be overriden in case developers are using their own class derived from UIApplication. Please see UIApplication documentation for details.
  @param action - selector of the event/action handler.
@@ -225,12 +212,9 @@
  */
 - (void)sendAction:(SEL)action to:(id)target from:(id)sender forEvent:(UIEvent *)event;
 
-
 /**
  Requests that the framework returns the AutoLayoutConfiguration set by user
  @return Dictionary of configuration items in TealeafLayoutConfig.json file for AutoLayout
  */
-
 -(NSDictionary *)layoutConfigItems;
-
 @end
