@@ -5,6 +5,11 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+Dec 2017 Release
+DAMod 1.0.3.18 and EOCore 2.0.0.73:
+Fixed an issue with Debug build od DAMod that produced a Dsymutil warning.
+Made an adjustment EOCore tracking of battery level. There seems to be a thread issue with the use of setBatteryMonitoringEnabled. I added some checks, if an issue happens battery level will be -1.
+
 Oct 2017 Release
 DAMod 1.0.3.17 and EOCore 2.0.0.68:
 Built with iOS 11.
