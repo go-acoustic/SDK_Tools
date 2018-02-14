@@ -5,6 +5,12 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+Jan 2018 Release
+DAMod 1.0.18 and EOCore 2.0.0.74
+The changes are in EOCore. DAMod bits remain the same. Except that they have been recompiled with the Xcode 9.2. So we recommend updating all the bits DAMod and EOCore.
+User-Agent of the fire APIs is now same as if you get one from UIWebView or WKWebView. Please add WebKit.framework and UIKit.framework to Link Binary With Libraries.
+EOCore now exposes getConfigItem and setConfigItem APIs. This will be part of the January documentation which will be updated end of January. Until then please refer to RTC ticket 281822 for how to use these APIs or contact Support.
+
 Dec 2017 Release
 DAMod 1.0.3.18 and EOCore 2.0.0.73:
 Fixed an issue with Debug build od DAMod that produced a Dsymutil warning.
