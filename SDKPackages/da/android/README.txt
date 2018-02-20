@@ -41,5 +41,5 @@ the library.
 
 Documentation links:
 
-iOS SDK: https://www.ibm.com/support/knowledgecenter/SSPG9M/Analytics/sdk_container.html
-Android SDK: https://www.ibm.com/support/knowledgecenter/SSPG9M/Analytics/sdk_container.html
+iOS SDK: https://developer.ibm.com/customer-engagement/docs/watson-marketing/ibm-watson-customer-experience-analytics/digital-analytics-sdk-ios/
+Android SDK: https://developer.ibm.com/customer-engagement/docs/watson-marketing/ibm-watson-customer-experience-analytics/digital-analytics-sdk-android/
