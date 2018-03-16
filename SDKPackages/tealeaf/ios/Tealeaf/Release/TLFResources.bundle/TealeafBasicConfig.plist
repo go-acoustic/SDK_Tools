@@ -6,7 +6,7 @@
 	<string>NoApplication</string>
 	<key>CaptureNativeGesturesOnWebview</key>
 	<false/>
-	<key>Connection</key>
+	<key>connection</key>
 	<integer>5</integer>
 	<key>DisableAutoInstrumentation</key>
 	<false/>
@@ -63,7 +63,7 @@
 	<integer>100</integer>
 	<key>PostMessageUrl</key>
 	<string>http://tealeafdemostore.demos.ibm.com/webapp/wcs/stores/Aurora/TealeafTarget.jsp</string>
-	<key>PrintScreen</key>
+	<key>printScreen</key>
 	<integer>3</integer>
 	<key>ScreenshotFormat</key>
 	<string>png</string>

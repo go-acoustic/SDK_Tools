@@ -12,7 +12,7 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <Tealeaf/TLFPublicDefinitions.h>
+#import "TLFPublicDefinitions.h"
 #import <CoreLocation/CoreLocation.h>
 
 /*!

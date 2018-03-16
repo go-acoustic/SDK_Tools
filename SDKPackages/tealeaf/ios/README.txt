@@ -1,11 +1,11 @@
 ###############################################################################
 # Licensed Materials - Property of IBM
-# (C) Copyright IBM Corp. 2017
+# (C) Copyright IBM Corp. 2018
 # US Government Users Restricted Rights - Use, duplication or disclosure
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
-There are six folders created for the Tealeaf iOS release.
+There are three folders created for the Tealeaf iOS release.
   
 EOCore folder - Contains Debug and Release of base library needed for Tealeaf and Digital Analytics to communicate to server.
 Tealeaf folder - Contains Debug and Release of library that will collect Tealeaf data that passed to EOCore.

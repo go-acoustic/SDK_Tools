@@ -1,18 +1,37 @@
 ###############################################################################
 # Licensed Materials - Property of IBM
-# (C) Copyright IBM Corp. 2017
+# (C) Copyright IBM Corp. 2018
 # US Government Users Restricted Rights - Use, duplication or disclosure
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+March 2018 Release
+Tealeaf Module 10.2.0.149 and EOCore 2.0.0.80:
+Fixed an issue with Alert Controller not getting detached from Screen after it was dismissed.
+Made changes to capture UIAlertController's long title and message without truncating the text in replay. Please update your templates.
+Fixed an issue with UIButton's transparent background showing as black in replay.
+Fixed an issue with Frozen/not responding screens in the app because of an issue in Tealeaf SDK
+
+Feb 2018 Hot Fix
+Tealeaf Module 10.2.0.146 and EOCore 2.0.0.80:
+Made changes to capture UIAlertController's long title and message without truncating the text in replay. Please update your templates.
+Fixed an issue with UIButton's transparent background showing as black in replay.
+
+Jan 2018 Hot Fix
+Tealeaf Module 10.2.0.145 and EOCore 2.0.0.74:
+Fixed an issue with Frozen/not responding screens in the app because of an issue in Tealeaf SDK
+
 Dec 2017 Release
 Tealeaf Module 10.2.0.141 and EOCore 2.0.0.73:
-Fixed an issue on hybrid applications that have no internet connection and get an exception "Uncaught Exception: ReferenceError: Can't find variable: iOSJsonPayloadArray", which was a javscript error in tealeaf hybrid bridge.
-Removed JavaScriptToObjectiveCProtocol and JavaScriptToObjectiveCProtocolCode keys and values from TealeafBasicConfig, because it is no longer used extrenally.
-Made an adjustment EOCore tracking of battery level. There seems to be a thread issue with the use of setBatteryMonitoringEnabled. I added some checks, if an issue happens battery level will be -1.
+Fixed an issue on hybrid applications that have no internet connection and get the exception “Uncaught Exception: ReferenceError: Can’t find variable: iOSJsonPayloadArray”, which was a javascript error in the Tealeaf hybrid bridge.
+Removed JavaScriptToObjectiveCProtocol and JavaScriptToObjectiveCProtocolCode keys and values from TealeafBasicConfig, because it is no longer used externally.
+Made an adjustment EOCore tracking of the battery level. There seems to be a thread issue with the use of setBatteryMonitoringEnabled. If an issue occurs, the battery level will be -1.
 Fixed an issue with capturing root view controller as UIAlertController’s background when UIAlertController’s parent was presented modally.
-Fixed an issue with getting gestures on webview althought CaptureNativeGesturesOnWebview has been set to NO.
-Made changes to support opacity property of background color for controls like UITableView, UILabel, UITextField etc
+Fixed an issue with getting gestures on webview even when CaptureNativeGesturesOnWebview has been set to NO.
+Made changes to support opacity property of background color for controls like UITableView, UILabel, UITextField, etc…
+
+Oct 2017 Release
+Tealeaf Module 10.2.0.133 and EOCore 2.0.0.68
 Made changes to automatically capture the view controller, when there is a webview on it.
 EOCore now has ability to turn off orientation changes, because Replay does not orient correcly on hybrid the device data.
 Made changes to support new NavigationBar changes for iOS 11, please update your templates.
@@ -29,7 +48,7 @@ TLFCustomEvent.h:
 - (BOOL)logCarrierEvent:(NSString *)carrierName country:(NSString *)isoCountryCode level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
 - (BOOL)logNSExceptionEvent:(NSException *)exception level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
 - (BOOL)logNSExceptionEvent:(NSException *)exception dataDictionary:(NSDictionary*)dataDictionary level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
-- (BOOL)logCustomControl:(id<TLFCustomControlDelegate>)customControl __attribute__((deprecated));
+- (BOOL)logCustomControl:(id)customControl __attribute__((deprecated));
 -(BOOL)logAppContext:(NSString*)logicalPageName
   applicationContext:(NSString*)applicationContext
             referrer:(NSString*)referrer __deprecated_msg("use '-logScreenViewContext:applicationContext:referrer:' instead.");
@@ -37,7 +56,6 @@ TLFCustomEventLogger.h:
 + (BOOL)logEvent:(NSString *)eventName level:(kTLFMonitoringLevelType)level;
 + (BOOL)logEvent:(NSString *)eventName value:(NSString*)value;
 + (BOOL)logEvent:(NSString *)eventName value:(NSString *)value level:(kTLFMonitoringLevelType)level;
-
 
 Sep 2017 Release
 Tealeaf Module 10.2.0.126 and EOCore 2.0.0.65:

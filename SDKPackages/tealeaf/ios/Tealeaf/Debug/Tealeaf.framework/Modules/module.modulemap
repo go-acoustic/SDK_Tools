@@ -1,7 +1,0 @@
-framework module Tealeaf {
-    umbrella header "TealeafBridgingHeader.h"
-    
-    export *
-    module * { export * }
-}
-

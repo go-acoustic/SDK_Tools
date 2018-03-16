@@ -87,7 +87,6 @@ extern NSString* kTLFMobileStateEvent;
 #define kConfigurableItemManualPostEnabled					@"ManualPostEnabled"
 #define kConfigurableItemDelayTimeOfTLFInitialization		@"DelayTimeOfTLFInitialization"
 #define kConfigurableItemDoPostOnScreenChange               @"DoPostOnScreenChange"
-#define kConfigurableItemScreenTimeNeededToPost             @"ScreenTimeNeededToPost"
 #define kConfigurableItemPostMessageTimeout                 @"PostMessageTimeout"
 #define kConfigurableItemMaxStringsLength                   @"MaxStringsLength"
 #define kConfigurableItemDisableAutoInstrumentation         @"DisableAutoInstrumentation"
