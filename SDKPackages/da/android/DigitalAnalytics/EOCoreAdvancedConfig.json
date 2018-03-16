@@ -13,7 +13,10 @@
   "BufferPercent": 20,
   "OrientationSensorDelay": 3,
   "OrientationDelayNotificationToModules": 1000,
-  "LibraryVersion": "2.0.0.103",
+  "ApplicationBackgroundTimeInterval": 60,
+  "TurnOffCorrectOrientationUpdates": false,
+  "DefaultOrientation": 0,
+  "LibraryVersion": "2.0.0.116",
   "MessageVersion": "6.0.0.0",
   "MNCMCC": {
     "00": "N/A",
