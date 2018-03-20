@@ -1,4 +1,4 @@
-<!-- control_button_normal.tlt version_5 -->
+<!-- control_button_normal.tlt version_6 -->
 <div style="position:fixed;
            {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}
            {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
@@ -14,10 +14,7 @@
            {{if(exists([]["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"")}}
            {{if(and(exists([]["style"],"textAlign"),eq([]["style"]["textAlign"],"center")),"vertical-align: middle;","")}}
            {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
-           {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
-                if(versionGT([$"clientEnvironment"]["osVersion"],"2.9"),
-                    "background-color: inherit;",
-                    ""))}}
+           background-color: {{if(exists([], "style", "bgColor"), concat("#",htmlColor(["style"]["bgColor"])), "inherit")}};
            height:100%;
            width:100%;">
     {{default(["currState"]["text"],"<!-- json curState test not specified -->")}}

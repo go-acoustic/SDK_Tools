@@ -126,3 +126,85 @@ Requirements:
                 }
 
 7.- Perform "Start Tealeaf Services"
+
+
+
+
+*******************************************************************************************************************************************
+
+If you Android application uses any Switch control. You will need to patch your ReplaySpliceStart_00XX.js file.
+
+Requirements:
+
+- You must have updated your system up to 902 FP6, which can be found in fix central.
+- You should have latest TLT folder from the latest Mobile SDK package
+
+1.- Go to <IBM Location>\IBM\IBM Tealeaf CX\System directory.
+2.- Look for a latest version of the file that starts with ReplaySpliceStart_00 and create a back up copy.
+3.- Perform "Stop Tealeaf Services" and make sure all TL services stopped.
+4.- Edit ReplaySpliceStart_00XX.js file and look for the following location:
+
+                // Android native replay for RatingBar
+                if (subType == "RatingChanged") {
+                    var idSubFix = elementValue / (node.getAttribute("maxvalue") / node.getAttribute("numstars"));
+                    var ratingInput = document.getElementById(node.id + idSubFix);
+                    if (ratingInput) {
+                        var inputs = node.getElementsByTagName('input');
+                        for (index = 0; index < inputs.length; ++index) {
+                            inputs[index].checked = 0;
+                            ReplaySpliceJS.fireEvent(inputs[index], 'change');
+                        }
+                        ratingInput.checked = 1;
+                        ReplaySpliceJS.fireEvent(ratingInput, 'change');
+                    }
+                }
+
+5.- At the end of "if" statement for "Android native replay for RatingBar" add the following code:
+
+                // Android native replay for Switch
+                if (subType == "click" && node.hasAttribute("templatetype") && node.getAttribute("templatetype") == "switch") {
+                    var switchThumb = document.getElementById(node.id + "-thumb");
+                    if (switchThumb && curState && typeof curState.thumbText != 'undefined') {
+                        switchThumb.innerHTML = curState.thumbText;
+                    }
+                    if (switchThumb && curState && typeof curState.isToggled != 'undefined') {
+                        if (curState.isToggled) {
+                            switchThumb.style.float = "right";
+                        } else {
+                            switchThumb.style.float = "left";
+                        }
+                    }
+                }
+
+6.- After change, you should have a file with the following changes:
+
+                // Android native replay for RatingBar
+                if (subType == "RatingChanged") {
+                    var idSubFix = elementValue / (node.getAttribute("maxvalue") / node.getAttribute("numstars"));
+                    var ratingInput = document.getElementById(node.id + idSubFix);
+                    if (ratingInput) {
+                        var inputs = node.getElementsByTagName('input');
+                        for (index = 0; index < inputs.length; ++index) {
+                            inputs[index].checked = 0;
+                            ReplaySpliceJS.fireEvent(inputs[index], 'change');
+                        }
+                        ratingInput.checked = 1;
+                        ReplaySpliceJS.fireEvent(ratingInput, 'change');
+                    }
+                }
+                // Android native replay for Switch
+                if (subType == "click" && node.hasAttribute("templatetype") && node.getAttribute("templatetype") == "switch") {
+                    var switchThumb = document.getElementById(node.id + "-thumb");
+                    if (switchThumb && curState && typeof curState.thumbText != 'undefined') {
+                        switchThumb.innerHTML = curState.thumbText;
+                    }
+                    if (switchThumb && curState && typeof curState.isToggled != 'undefined') {
+                        if (curState.isToggled) {
+                            switchThumb.style.float = "right";
+                        } else {
+                            switchThumb.style.float = "left";
+                        }
+                    }
+                }
+
+7.- Perform "Start Tealeaf Services"

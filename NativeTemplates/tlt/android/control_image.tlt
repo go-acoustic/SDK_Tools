@@ -1,7 +1,8 @@
-<!-- control_image.tlt version_8 -->
+<!-- control_image.tlt version_9 -->
 <div id="{{["id"]}}"
   data-tealeaf-native="true" 
-  style="{{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+  style="position:fixed;
+         {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
          {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
          {{cssDecl(sub(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2),"height","px")}}
          {{cssDecl(sub(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),2),"width","px")}}

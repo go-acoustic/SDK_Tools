@@ -1,0 +1,110 @@
+<!-- control_switch.tlt version_3 -->
+<style>
+.tl-switch-{{["cssId"]}} {
+  height: {{if(exists([], "position", "height"), div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]), "25")}}px;
+  width: {{if(exists([], "style", "switchWidth"), if(eq(["style"]["switchWidth"],0),"60",div(numericToFloat(["style"]["switchWidth"]),[$"clientEnvironment"]["pixelDensity"])), "100")}}px;
+  left:  {{if(exists([], "position", "width"), sub(div(add(numericToFloat(["position"]["x"]),numericToFloat(["position"]["width"])),[$"clientEnvironment"]["pixelDensity"]),div(numericToFloat(["style"]["switchWidth"]),[$"clientEnvironment"]["pixelDensity"])), "0")}}px;
+  background-color: {{if(and(exists([], "style", "trackColor"),exists([], "style", "thumbColor")), if(eq(["style"]["trackColor"],["style"]["thumbColor"]),"var(--theme-color)",htmlColor(["style"]["trackColor"])), "inherit")}};
+  border-radius: 1px;
+  float: right;
+  display: inline-block;
+  position: fixed;
+}
+
+.tl-switch-checked-{{["cssId"]}} {
+  display: inline-block;
+  z-index: 1;
+  top: 1px;
+  left: {{if(["currState"]["isToggled"], if(exists([], "style", "switchWidth"),  if(eq(["style"]["switchWidth"],0),"30", div(div(numericToFloat(["style"]["switchWidth"]),[$"clientEnvironment"]["pixelDensity"]),2)), "50"), "1")}}px;
+  width: {{if(exists([], "style", "switchWidth"), if(eq(["style"]["switchWidth"],0),"30",div(div(numericToFloat(["style"]["switchWidth"]),[$"clientEnvironment"]["pixelDensity"]),2)), "50")}}px;
+  height: {{if(exists([], "position", "height"), sub(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2), "22")}}px;
+  background-color:  {{if(exists([], "style", "thumbColor"), htmlColor(["style"]["thumbColor"]), "var(--theme-color)")}};
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.5), 0 0 2px rgba(0, 0, 0, 0.2);
+  #shadow on the selected button
+  text-shadow: 0 1px rgba(255, 255, 255, 0.25);
+  text-align: center;
+  line-height: {{if(exists([], "position", "height"), div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]), "25")}}px;
+  {{cssDecl(sub(div(numericToFloat(["currState"]["font"]["size"]),[$"clientEnvironment"]["pixelDensity"]),[$"clientEnvironment"]["pixelDensity"]),"font-size","px")}}
+}
+
+.tl-switch-label-{{["cssId"]}} {
+  text-align: center;
+  padding-left: 5px;
+  height: {{if(exists([], "position", "height"), sub(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2), "22")}}px;
+  line-height: {{if(exists([], "position", "height"), div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]), "25")}}px;
+  {{cssDecl(sub(div(numericToFloat(["currState"]["font"]["size"]),[$"clientEnvironment"]["pixelDensity"]),[$"clientEnvironment"]["pixelDensity"]),"font-size","px")}}
+}
+
+
+
+
+.tl-switch-mat-lbl {
+  position: relative;
+  display: block;
+  height: 16px;// background slider height
+  width: 100px;// background slider width
+  background: black; // slider color
+  border-radius: 100px;
+  cursor: pointer;
+  transition: all .3s ease;
+  &:after {
+    position: absolute;
+    left: -2px;
+    top: -5px; // center slider on button vertically
+    display: block;
+    width: 26px; // radius of button
+    height: 26px; // radius of button
+    border-radius: 50px; // create circle
+    background: red; // button color
+    box-shadow: 0px 3px 3px rgba(#000,.05);
+    content: '';
+    transition: all .3s ease;
+  }
+  &:active {
+    &:after {
+      transform: scale(1.15, .85);
+    }
+  }
+}
+
+.tl-switch-mat-cbx:checked ~ label {
+  background: purple;
+  &:after {
+    left: 100px; // slide button to right
+    background: cyan;
+  }
+}
+  
+.tl-switch-mat-hidden {
+  display: none;
+}
+
+  
+
+  
+
+</style>
+<div {{htmlAttr(["id"],"id")}} 
+  data-tealeaf-native="true"
+  templatetype="switch"
+  style="position: fixed;
+        color: {{if(exists([], "style", "textColor"), htmlColor(["style"]["textColor"]), "inherit")}};
+        {{if(exists([], "position", "y"), cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "x"), cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "height"), cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "position", "width"), cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px"), "/* TLT_WARN: [y] not rendered */")}}">
+  <span class="tl-switch-label-{{["cssId"]}}">{{default(["currState"]["text"],"")}}</span>
+  <span class="tl-switch-{{["cssId"]}}">
+    <span id="{{["id"]}}-thumb" class="tl-switch-checked-{{["cssId"]}}" style="{{if(["currState"]["isToggled"], "float: right;", "float: left;")}}">{{if(["currState"]["thumbText"], ["currState"]["thumbText"], "")}}</span>
+  </span>
+
+
+</div>
+<!--
+<div>
+  <input type="checkbox" id="checked" class="tl-switch-mat-cbx tl-switch-mat-hidden" checked/>
+  <label for="checked" class="tl-switch-mat-lbl"></label>
+</div>
+-->

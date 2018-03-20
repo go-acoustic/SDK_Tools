@@ -1,4 +1,4 @@
-<!-- array_controls.tlt version_5 -->
+<!-- array_controls.tlt version_6 -->
 {{
 	arrayConcat(
 		foreach(
@@ -9,7 +9,6 @@
 				{
 					"collectionItem": "control_canvas.tlt",
 					"radioGroup":     "control_canvas.tlt",
-					"switch":         "control_toggleButton.tlt",
 					"timePicker":     "control_unsupported.tlt",
 					"datePicker":     "control_unsupported.tlt"
 				},

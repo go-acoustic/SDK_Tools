@@ -1,23 +1,25 @@
-<!-- control_tableCell.tlt version_4 -->
+<!-- control_tableCell.tlt version_5 -->
 <div id="{{["id"]}}"
   data-tealeaf-native="true"
   style="position: absolute;
          {{if(and(exists(["style"],"hasBorder"),["style"]["hasBorder"]),"border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: var(--grey);","")}}
          {{if(exists(["style"],"hasBorder"),"","border-bottom-style: solid;border-bottom-width: 1px;border-bottom-color: var(--grey);")}}
          box-sizing: border-box;
-         {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),cssDecl("inherit","background-color"))}}
+         {{if(exists(["style"],"bgColorRGBA"),concat("background-color:",concat(["style"]["bgColorRGBA"],";")),
+                                             if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
+                                                                            cssDecl("inherit","background-color")))}}
          {{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"), "/* TLT_WARN: [y] not rendered */")}}
          {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
          {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}">
-{{ 
+{{
   if(
-    exists([],"currState","data"), 
-    template(["currState"]["data"],"iOS\\array_controls.tlt"), 
+    exists([],"currState","data"),
+    template(["currState"]["data"],"iOS\\array_controls.tlt"),
     "<!-- TLT_ERROR: MISSING currState.data -->\r\n"
-  )          
+  )
 }}
 
-  <i class="fa fa-angle-right" 
+  <i class="fa fa-angle-right"
     style="font-size:{{if(exists([], "position", "height"), div(["position"]["height"],2), "10")}}px;
           color: var(--grey);
           position: absolute;

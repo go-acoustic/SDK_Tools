@@ -1,5 +1,5 @@
-/* css_font.tlt version_2 */
+/* css_font.tlt version_3 */
 {{if(exists([],"weight"),cssDecl(["weight"],"font-weight"),"font-weight:normal;")}}
 {{if(exists([],"style"),cssDecl(["style"],"font-style"),"/* TLT_WARN: font-style not rendered */")}}
-{{if(and(exists([],"size"),not(eq(["size"],0))),cssDecl(["size"],"font-size","px"),"/* TLT_WARN: font-size not rendered */")}}
+{{if(and(exists([],"size"),not(eq(["size"],0))),cssDecl(sub(["size"],1),"font-size","px"),"/* TLT_WARN: font-size not rendered */")}}
 {{if(exists([],"family"),cssDecl(["family"],"font-family"),"/* TLT_WARN: font-family not rendered */")}}
