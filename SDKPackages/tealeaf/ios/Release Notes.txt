@@ -5,6 +5,12 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+March 2018 Hot Fix
+Tealeaf Module 10.2.0.150 and EOCore 2.0.0.81:
+Added support for custom alerts (custom controls that are implemented like UIAlertController).
+Added a configuration item (EnableLogViewLayoutOnScreenTransitionAlerts) inside TealeafAdvancedConfig.json file to capture alerts (UIAlertView/UIAlertController) when autocapture was turnedoff. 
+Fixed an issue with url encoding in EOCore (DA SDK specific) because of a deprecated method (stringByAddingPercentEscapesUsingEncoding:).
+
 March 2018 Release
 Tealeaf Module 10.2.0.149 and EOCore 2.0.0.80:
 Fixed an issue with Alert Controller not getting detached from Screen after it was dismissed.

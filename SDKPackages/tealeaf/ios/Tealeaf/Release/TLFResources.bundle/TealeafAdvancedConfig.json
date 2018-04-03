@@ -1,5 +1,5 @@
 {
-  "LibraryVersion": "10.2.0.149",
+  "LibraryVersion": "10.2.0.151",
   "FilterMessageTypes": false,
   "MessageTypes": "4,5,6",
   "AddMessageTypeHeader": true,
@@ -42,5 +42,6 @@
   "autolog:textBox:_searchFieldEndEditing": 1,
   "AutoWebViewCaptureDelay": 1,
   "DefaultAutoLayoutDelay": 500,
-  "DisableKeyboardCapture": false
+  "DisableKeyboardCapture": false,
+  "EnableLogViewLayoutOnScreenTransitionAlerts": true
 }
