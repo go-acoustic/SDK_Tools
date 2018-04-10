@@ -5,6 +5,10 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+Apr 2018 Release
+EOCore 2.0.0.81:
+Fixed an issue with url encoding in EOCore (DA SDK specific) because of a deprecated method (stringByAddingPercentEscapesUsingEncoding:).
+
 Jan 2018 Release
 DAMod 1.0.18 and EOCore 2.0.0.74
 The changes are in EOCore. DAMod bits remain the same. Except that they have been recompiled with the Xcode 9.2. So we recommend updating all the bits DAMod and EOCore.
