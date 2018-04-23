@@ -1,4 +1,4 @@
-<!-- control_textArea.tlt version_3 -->
+<!-- control_textArea.tlt version_4 -->
 <textarea id="{{["id"]}}" 
   data-tealeaf-native="true"
   style="position:fixed;
@@ -21,4 +21,4 @@
         box-sizing: border-box;
         overflow: hidden;
         border: 0px;
-        outline: 0px;"/>{{if(exists(["currState"],"text"),["currState"]["text"],"")}}</textarea>
+        outline: 0px;">{{if(exists(["currState"],"text"),["currState"]["text"],"")}}</textarea>
