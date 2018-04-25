@@ -1,27 +1,37 @@
 <!-- control_image.tlt version_9 -->
 <div id="{{["id"]}}"
   data-tealeaf-native="true" 
-  style="position:fixed;
-         {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+  style="{{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
          {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
          {{cssDecl(sub(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2),"height","px")}}
          {{cssDecl(sub(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),2),"width","px")}}
          {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
-         {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
-  <img
-    {{if(exists([],"image","position"),
-      concat("style=\"position:fixed;",
-        concat(cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px"),
-          concat(cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px"),
-            concat(cssDecl(sub(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2),"height","px"),
-              cssDecl(sub(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),2),"width","px"))))
-        ,"\"")
-      ,"")}}
-    {{if(exists([],"image"),
-      if(and(exists(["image"],"type"),eq(["image"]["type"],"url")),concat("src=",["image"]["value"]),
-        if(exists(["image"],"base64Image"),concat("src=data:image/",["image"]["mimeExtension"],";base64,",["image"]["base64Image"]),
-          if(exists(["image"],"value"),concat("src=\"http://localhost:38000/images/",concat(["image"]["value"], ".",if(eq(["image"]["mimeExtension"], "xml"), "png", ["image"]["mimeExtension"]),"\"")),"")
-        ))
-    ,"")}}
-  />
+         {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}
+         position: fixed;
+         {{if(exists([],"imageBackground"),
+                    if(and(exists(["imageBackground"],"type"),eq(["imageBackground"]["type"],"url")),concat("background-image:url",["imageBackground"]["value"],");"),  
+                        if(exists(["imageBackground"],"base64Image"),concat(concat("background-image:url(data:image/",["imageBackground"]["mimeExtension"],";base64,",["imageBackground"]["base64Image"]),");"),
+                            if(exists(["imageBackground"],"value"), concat("background-image:url(http://localhost:38000/images/", concat(["imageBackground"]["value"], ".",if(eq(["imageBackground"]["mimeExtension"], "xml"), "png", ["imageBackground"]["mimeExtension"]) ), ");"),"")
+                        )
+                    )
+                ,"")}}
+        {{if(exists([],"imageBackground"),concat("background-size:100%",";"),"")}}
+        {{if(exists([],"imageBackground"),concat("background-repeat:no-repeat",";"),"")}}
+         "> 
+	  <img
+		{{if(exists([],"image","position"),
+		  concat("style=\"position:fixed;",
+			concat(cssDecl(div(numericToFloat(["image"]["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px"),
+			  concat(cssDecl(div(numericToFloat(["image"]["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px"),
+				concat(cssDecl(sub(div(numericToFloat(["image"]["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2),"height","px"),
+				  cssDecl(sub(div(numericToFloat(["image"]["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),2),"width","px"))))
+			,"\"")
+		  ,"")}}
+		{{if(exists([],"image"),
+		  if(and(exists(["image"],"type"),eq(["image"]["type"],"url")),concat("src=",["image"]["value"]),
+			if(exists(["image"],"base64Image"),concat("src=data:image/",["image"]["mimeExtension"],";base64,",["image"]["base64Image"]),
+			  if(exists(["image"],"value"),concat("src=\"http://localhost:38000/images/",concat(["image"]["value"], ".",if(eq(["image"]["mimeExtension"], "xml"), "png", ["image"]["mimeExtension"]),"\"")),"")
+			))
+		,"")}}
+	  />
 </div>
