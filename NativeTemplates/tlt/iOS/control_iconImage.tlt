@@ -1,0 +1,74 @@
+<!-- control_image.tlt version_1 -->
+<div id="{{["id"]}}" data-tealeaf-native="true"
+style=" 
+padding:0; box-sizing:border-box; -moz-box-sizing:border-box;
+{{if(exists([],"image","awesomeFontIcon"),"display: none;","")}}
+position:absolute;
+{{if(exists([],"position","x"),cssDecl(["position"]["x"],"left","px"),             "/* TLT_WARN: [position][x] not specified */")}}
+{{if(exists([],"position","y"),cssDecl(["position"]["y"],"top", "px"),             "/* TLT_WARN: [position][y] not specified */")}}
+{{if(
+	exists([],"position","width"),
+	if(
+		eq(["position"]["width"],0),
+		"/* TLT_ERROR: zero [position][width] specified */",
+		cssDecl(["position"]["width"], "width","px")),
+	"/* TLT_WARN: [position][width] not specified */"
+)}}
+{{if(
+	exists([],"position","height"),
+	if(
+		eq(["position"]["height"],0),
+		"/* TLT_ERROR: zero [height] specified */",
+		cssDecl(["position"]["height"], "height","px")),
+	"/* TLT_WARN: [position][height] not specified */"
+)}}
+text-align:{{if(exists([],"style","textAlignment"),["style"]["textAlignment"],"center")}};
+"
+>
+<img 
+id="{{["id"]}}-image" data-tealeaf-native="true"  
+style=" 
+padding:0; box-sizing:border-box; -moz-box-sizing:border-box;
+{{if(exists([],"image","awesomeFontIcon"),"display: none;","")}}
+{{if(
+	exists([],"image","width"),
+	if(
+		eq(["image"]["width"],0),
+		"/* TLT_ERROR: zero [image][width] specified */",
+		cssDecl(["image"]["width"], "width","px")),
+	"/* TLT_WARN: [image][width] not specified */"
+)}}
+{{if(
+	exists([],"image","height"),
+	if(
+		eq(["image"]["height"],0),
+		"/* TLT_ERROR: zero [height] specified */",
+		cssDecl(["image"]["height"], "height","px")),
+	"/* TLT_WARN: [image][height] not specified */"
+)}}
+"
+src="{{
+if(exists([], "image", "type"),
+	if(
+		eq(["image"]["type"],"url"),
+		["image"]["value"],
+		if(
+			exists([], "image", "base64Image"), 
+			concat("data:image/png;base64,",["image"]["base64Image"]),
+			concat("http://localhost:38000/images/",["image"]["value"],".",["image"]["mimeExtension"])
+		)
+	),
+"")
+
+}}"
+/>
+<span>
+  <i class="{{if(exists([], "image", "awesomeFontIcon"),concat("fa ",["image"]["awesomeFontIcon"]),"")}}"
+    style="font-size: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
+          color: inherit;
+          line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
+          {{if(exists([],"image","awesomeFontIcon"),"","display: none;")}}
+          height: {{if(exists([],"image","awesomeFontIcon"),"inherit","0px;")}};
+          vertical-align: bottom;"></i>
+</span>
+</div>
