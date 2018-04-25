@@ -1,4 +1,4 @@
-<!-- root.tlt version_23 -->
+<!-- root.tlt version_24 -->
 <html>
 <head>
   <!-- Android replay -->
@@ -8,7 +8,7 @@
   {{template([],"android\\custom\\headAdditions1.tlt","")}}
   <style>
   :root {
-    --theme-color: #{{if(exists([],"layout","style","colorAccent"),htmlColor(["layout"]["style"]["colorAccent"]),"ff0080")}};
+    --theme-color: {{if(exists([],"layout","style","colorAccent"),htmlColor(["layout"]["style"]["colorAccent"]),"ff0080")}};
     --hot-pink: #ff0080;
     --dark-grey: #7e7e7e;
     --grey: #d3d3d3;
@@ -21,6 +21,7 @@
   body {
     position:relative;
     margin: 0;
+    color: {{if(exists([],"layout","style","textColor"),htmlColor(["layout"]["style"]["textColor"]),"ff0080")}};
   }
 
   #mask {
