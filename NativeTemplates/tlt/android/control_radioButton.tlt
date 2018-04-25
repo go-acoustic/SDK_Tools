@@ -1,4 +1,4 @@
-<!-- control_radioButton.tlt version_10 -->
+<!-- control_radioButton.tlt version_11 -->
 <div id="{{["id"]}}"
   data-tealeaf-native="true"
   name="{{["id"]}}"
@@ -8,6 +8,9 @@
          {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
          {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
          {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+         {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),cssDecl("inherit","background-color"))}}
+         {{if(exists(["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
+         {{if(exists(["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}         
          {{if(["style"]["hidden"],cssDecl("hidden","visibility"),cssDecl("visible","visibility"))}}
          {{if(exists(["style"],"zIndex"),cssDecl(["style"]["zIndex"],"z-index"),"")}}">
   <input id="{{["id"]}}-input"
