@@ -37,7 +37,7 @@
   {{if(exists(["currState"]["compoundDrawables"],"left"),"'","")}}
   {{if(exists(["currState"]["compoundDrawables"],"left"),
     if(exists(["currState"]["compoundDrawables"]["left"],"base64Image"),concat("src=data:image/",["currState"]["compoundDrawables"]["left"]["mimeExtension"],";base64,",["currState"]["compoundDrawables"]["left"]["base64Image"]),
-      if(exists(["currState"]["compoundDrawables"]["left"],"value"),concat("src=\"http://localhost:38000/images/",concat(["currState"]["compoundDrawables"]["left"]["value"], ".",if(eq(["currState"]["compoundDrawables"]["left"]["mimeExtension"], "xml"), "png\"", ["currState"]["compoundDrawables"]["left"]["mimeExtension"]) )),"")
+      if(exists(["currState"]["compoundDrawables"]["left"],"value"),concat("src=\"http://localhost:38000/images/",concat(["currState"]["compoundDrawables"]["left"]["value"], ".",if(eq(["currState"]["compoundDrawables"]["left"]["mimeExtension"], "xml"), "png\"", ["currState"]["compoundDrawables"]["left"]["mimeExtension"]),"\"" )),"")
     )
   ,"")}}
   {{if(exists(["currState"]["compoundDrawables"],"left"),"/>","")}}
@@ -48,7 +48,7 @@
   {{if(exists(["currState"]["compoundDrawables"],"top"),"'","")}}
   {{if(exists(["currState"]["compoundDrawables"],"top"),
     if(exists(["currState"]["compoundDrawables"]["top"],"base64Image"),concat("src=data:image/",["currState"]["compoundDrawables"]["top"]["mimeExtension"],";base64,",["currState"]["compoundDrawables"]["top"]["base64Image"]),
-      if(exists(["currState"]["compoundDrawables"]["top"],"value"),concat("src=\"http://localhost:38000/images/",concat(["currState"]["compoundDrawables"]["top"]["value"], ".",if(eq(["currState"]["compoundDrawables"]["top"]["mimeExtension"], "xml"), "png\"", ["currState"]["compoundDrawables"]["top"]["mimeExtension"]) )),"")
+      if(exists(["currState"]["compoundDrawables"]["top"],"value"),concat("src=\"http://localhost:38000/images/",concat(["currState"]["compoundDrawables"]["top"]["value"], ".",if(eq(["currState"]["compoundDrawables"]["top"]["mimeExtension"], "xml"), "png\"", ["currState"]["compoundDrawables"]["top"]["mimeExtension"]),"\"" )),"")
     )
   ,"")}}
   {{if(exists(["currState"]["compoundDrawables"],"top"),"/>","")}}
@@ -91,7 +91,7 @@
   {{if(exists(["currState"]["compoundDrawables"],"right"),"'","")}}
   {{if(exists(["currState"]["compoundDrawables"],"right"),
     if(exists(["currState"]["compoundDrawables"]["right"],"base64Image"),concat("src=data:image/",["currState"]["compoundDrawables"]["right"]["mimeExtension"],";base64,",["currState"]["compoundDrawables"]["right"]["base64Image"]),
-      if(exists(["currState"]["compoundDrawables"]["right"],"value"),concat("src=\"http://localhost:38000/images/",concat(["currState"]["compoundDrawables"]["right"]["value"], ".",if(eq(["currState"]["compoundDrawables"]["right"]["mimeExtension"], "xml"), "png\"", ["currState"]["compoundDrawables"]["right"]["mimeExtension"]) )),"")
+      if(exists(["currState"]["compoundDrawables"]["right"],"value"),concat("src=\"http://localhost:38000/images/",concat(["currState"]["compoundDrawables"]["right"]["value"], ".",if(eq(["currState"]["compoundDrawables"]["right"]["mimeExtension"], "xml"), "png\"", ["currState"]["compoundDrawables"]["right"]["mimeExtension"]),"\"" )),"")
       )
   ,"")}}
   {{if(exists(["currState"]["compoundDrawables"],"right"),"/>","")}}
