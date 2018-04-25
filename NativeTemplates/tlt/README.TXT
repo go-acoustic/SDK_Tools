@@ -161,18 +161,18 @@ Requirements:
 
 5.- At the end of "if" statement for "Android native replay for RatingBar" add the following code:
 
-                // Android native replay for Switch
-                if (subType == "click" && node.hasAttribute("templatetype") && node.getAttribute("templatetype") == "switch") {
-                    var switchThumb = document.getElementById(node.id + "-thumb");
-                    if (switchThumb && curState && typeof curState.thumbText != 'undefined') {
-                        switchThumb.innerHTML = curState.thumbText;
-                    }
-                    if (switchThumb && curState && typeof curState.isToggled != 'undefined') {
-                        if (curState.isToggled) {
-                            switchThumb.style.float = "right";
-                        } else {
-                            switchThumb.style.float = "left";
+                // Android native replay for RatingBar
+                if (subType == "RatingChanged") {
+                    var idSubFix = elementValue / (node.getAttribute("maxvalue") / node.getAttribute("numstars"));
+                    var ratingInput = document.getElementById(node.id + idSubFix);
+                    if (ratingInput) {
+                        var inputs = node.getElementsByTagName('input');
+                        for (index = 0; index < inputs.length; ++index) {
+                            inputs[index].checked = 0;
+                            ReplaySpliceJS.fireEvent(inputs[index], 'change');
                         }
+                        ratingInput.checked = 1;
+                        ReplaySpliceJS.fireEvent(ratingInput, 'change');
                     }
                 }
 
@@ -200,10 +200,11 @@ Requirements:
                     }
                     if (switchThumb && curState && typeof curState.isToggled != 'undefined') {
                         if (curState.isToggled) {
-                            switchThumb.style.float = "right";
+                            switchThumb.style.left = switchThumb.clientWidth;
                         } else {
-                            switchThumb.style.float = "left";
+                            switchThumb.style.left = 0;
                         }
+                        ReplaySpliceJS.fireEvent(switchThumb, 'change');
                     }
                 }
 
