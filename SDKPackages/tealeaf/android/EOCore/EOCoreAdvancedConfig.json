@@ -1,6 +1,6 @@
 /*******************************************************************************
 * Licensed Materials - Property of IBM
-* (C) Copyright IBM Corp. 2017
+* (C) Copyright IBM Corp. 2018
 * US Government Users Restricted Rights - Use, duplication or disclosure
 * restricted by GSA ADP Schedule Contract with IBM Corp.
 ******************************************************************************/
@@ -16,7 +16,8 @@
   "ApplicationBackgroundTimeInterval": 60,
   "TurnOffCorrectOrientationUpdates": false,
   "DefaultOrientation": 0,
-  "LibraryVersion": "2.0.0.116",
+  "ApplicationInBackgroundEnabled": true,
+  "LibraryVersion": "2.0.0.137",
   "MessageVersion": "6.0.0.0",
   "MNCMCC": {
     "00": "N/A",

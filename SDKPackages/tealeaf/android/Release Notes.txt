@@ -1,9 +1,17 @@
 ###############################################################################
 # Licensed Materials - Property of IBM
-# (C) Copyright IBM Corp. 2017
+# (C) Copyright IBM Corp. 2018
 # US Government Users Restricted Rights - Use, duplication or disclosure
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
+
+April 2018 Release
+Tealeaf Module 10.2.1.240, EOCore 2.0.0.137 and TeaCuts 2.0.0.28
+Fixed an issue with image size and placement.
+Fixed an issue with get style for drawable of track.
+Fixed some issues with color values.
+Improved Event ordering.
+Fixed an Activity leak issue.
 
 October 2017 Mini Release
 Tealeaf Module 10.2.1.206, EOCore 2.0.0.116 and TeaCuts 2.0.0.28
