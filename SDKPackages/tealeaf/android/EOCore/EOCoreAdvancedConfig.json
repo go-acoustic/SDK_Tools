@@ -17,7 +17,7 @@
   "TurnOffCorrectOrientationUpdates": false,
   "DefaultOrientation": 0,
   "ApplicationInBackgroundEnabled": true,
-  "LibraryVersion": "2.0.0.137",
+  "LibraryVersion": "2.0.0.140",
   "MessageVersion": "6.0.0.0",
   "MNCMCC": {
     "00": "N/A",
