@@ -1,4 +1,4 @@
-<!-- control_checkBox.tlt version_9 -->
+<!-- control_checkBox.tlt version_10 -->
 <div id="{{["id"]}}"
   data-tealeaf-native="true"
   name="{{["id"]}}"
@@ -14,5 +14,5 @@
     class="checkbox-custom"
     type="checkbox"
     {{if(["currState"]["isChecked"], "checked", "")}}/>
-  <label for="{{["id"]}}" class="checkbox-custom-label">{{default(["currState"]["text"],"<!-- currState\text was not found -->")}}</label>
+  <label for="{{["id"]}}" class="checkbox-custom-label" style="color: {{if(exists(["style"],"textColor"),htmlColor(["style"]["textColor"]),"var(--textColor)")}};">{{default(["currState"]["text"],"<!-- currState\text was not found -->")}}</label>
 </div>

@@ -1,4 +1,4 @@
-<!-- control_compoundButton.tlt version_8 -->
+<!-- control_compoundButton.tlt version_10 -->
 <div id="{{["id"]}}"
   data-tealeaf-native="true" 
   style="position:fixed;
@@ -22,16 +22,16 @@
   {{if(exists(["currState"]["compoundDrawables"],"left"),cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px"),"")}}
   {{if(exists(["currState"]["compoundDrawables"],"left"),cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px"),"")}}
   {{if(exists(["currState"]["compoundDrawables"],"left"),
-    if(exists(["style"],"paddingLeft"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left"),"")
+    if(exists(["style"],"paddingLeft"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left","px"),"")
   ,"")}}
   {{if(exists(["currState"]["compoundDrawables"],"left"),
-    if(exists(["style"],"paddingRight"),cssDecl(div(numericToFloat(["style"]["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right"),"")
+    if(exists(["style"],"paddingRight"),cssDecl(div(numericToFloat(["style"]["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right","px"),"")
   ,"")}}
   {{if(exists(["currState"]["compoundDrawables"],"left"),
-    if(exists(["style"],"paddingTop"),cssDecl(div(numericToFloat(["style"]["paddingTop"]),[$"clientEnvironment"]["pixelDensity"]),"padding-top"),"")
+    if(exists(["style"],"paddingTop"),cssDecl(div(numericToFloat(["style"]["paddingTop"]),[$"clientEnvironment"]["pixelDensity"]),"padding-top","px"),"")
   ,"")}}
   {{if(exists(["currState"]["compoundDrawables"],"left"),
-    if(exists(["style"],"paddingBottom"),cssDecl(div(numericToFloat(["style"]["paddingBottom"]),[$"clientEnvironment"]["pixelDensity"]),"padding-bottom"),"")
+    if(exists(["style"],"paddingBottom"),cssDecl(div(numericToFloat(["style"]["paddingBottom"]),[$"clientEnvironment"]["pixelDensity"]),"padding-bottom","px"),"")
   ,"")}}
 
   {{if(exists(["currState"]["compoundDrawables"],"left"),"'","")}}
@@ -60,8 +60,8 @@
                  cssDecl(div(add(numericToFloat(["position"]["x"]),["currState"]["compoundDrawables"]["left"]["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")
                 ,"")}}
                {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"line-height","px")}}
-               {{if(exists(["style"],"paddingLeft"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left"),"")}}
-               {{if(exists(["style"],"paddingRight"),cssDecl(div(numericToFloat(["style"]["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right"),"")}}
+               {{if(exists(["style"],"paddingLeft"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left","px"),"")}}
+               {{if(exists(["style"],"paddingRight"),cssDecl(div(numericToFloat(["style"]["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right","px"),"")}}
                {{if(exists(["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
                {{if(exists(["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}
                {{if(exists(["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"")}}
@@ -73,16 +73,16 @@
   {{if(exists(["currState"]["compoundDrawables"],"right"),"<img id='comButRight' style='z-index:2;float: right;","")}}
   {{if(exists(["currState"]["compoundDrawables"],"right"),cssDecl(sub(div(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2),div(div(numericToFloat(["currState"]["compoundDrawables"]["right"]["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),2)),"top","px"),"")}}
   {{if(exists(["currState"]["compoundDrawables"],"right"),
-    if(exists(["style"],"paddingLeft"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left"),"")
+    if(exists(["style"],"paddingLeft"),cssDecl(div(numericToFloat(["style"]["paddingLeft"]),[$"clientEnvironment"]["pixelDensity"]),"padding-left","px"),"")
   ,"")}}
   {{if(exists(["currState"]["compoundDrawables"],"right"),
-    if(exists(["style"],"paddingTop"),cssDecl(div(numericToFloat(["style"]["paddingTop"]),[$"clientEnvironment"]["pixelDensity"]),"padding-top"),"")
+    if(exists(["style"],"paddingTop"),cssDecl(div(numericToFloat(["style"]["paddingTop"]),[$"clientEnvironment"]["pixelDensity"]),"padding-top","px"),"")
   ,"")}}
   {{if(exists(["currState"]["compoundDrawables"],"right"),
-    if(exists(["style"],"paddingBottom"),cssDecl(div(numericToFloat(["style"]["paddingBottom"]),[$"clientEnvironment"]["pixelDensity"]),"padding-bottom"),"")
+    if(exists(["style"],"paddingBottom"),cssDecl(div(numericToFloat(["style"]["paddingBottom"]),[$"clientEnvironment"]["pixelDensity"]),"padding-bottom","px"),"")
   ,"")}}
   {{if(exists(["currState"]["compoundDrawables"],"right"),
-    if(exists(["style"],"paddingRight"),cssDecl(div(numericToFloat(["style"]["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right"),"")
+    if(exists(["style"],"paddingRight"),cssDecl(div(numericToFloat(["style"]["paddingRight"]),[$"clientEnvironment"]["pixelDensity"]),"padding-right","px"),"")
   ,"")}}
   {{if(exists(["currState"]["compoundDrawables"],"right"),
     if(gt(["currState"]["compoundDrawables"]["right"]["position"]["height"],["position"]["height"]),"height:inherit;",
