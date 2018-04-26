@@ -1,4 +1,4 @@
-<!-- root.tlt version_24 -->
+<!-- root.tlt version_25 -->
 <html>
 <head>
   <!-- Android replay -->
@@ -12,6 +12,7 @@
     --hot-pink: #ff0080;
     --dark-grey: #7e7e7e;
     --grey: #d3d3d3;
+    --textColor: {{if(exists([],"layout","style","textColor"),htmlColor(["layout"]["style"]["textColor"]),"ff0080")}};
   }
 
   .mblBackground {

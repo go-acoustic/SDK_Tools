@@ -1,7 +1,7 @@
-<!-- control_selectList.tlt version_6 -->
+<!-- control_selectList.tlt version_7 -->
 <select id="{{["id"]}}"
   data-tealeaf-native="true"
-  style="color: {{if(exists(["style"],"textColor"),htmlColor(["style"]["textColor"]),"inherit")}};
+  style="color: {{if(exists(["style"],"textColor"),htmlColor(["style"]["textColor"]),"var(--textColor)")}};
          {{default(template(["position"],"android\\css_position.tlt"),"<!--json position not specified or problem with css_position.tlt -->")}}
          {{default(template(["currState"]["font"],"android\\css_font.tlt"),"<!-- json currState\font not specified or problem with css_font.tlt-->")}}
          {{if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),"")}}
