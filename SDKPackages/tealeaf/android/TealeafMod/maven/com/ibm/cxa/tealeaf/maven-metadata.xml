@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <metadata>
   <groupId>com.ibm.cxa</groupId>
-  <artifactId>eocore</artifactId>
+  <artifactId>tealeaf</artifactId>
   <versioning>
-    <release>2.0.0.140</release>
+    <release>10.2.1.242</release>
     <versions>
-      <version>2.0.0.140</version>
+      <version>10.2.1.242</version>
     </versions>
-    <lastUpdated>20180426020429</lastUpdated>
+    <lastUpdated>20180426021857</lastUpdated>
   </versioning>
 </metadata>
