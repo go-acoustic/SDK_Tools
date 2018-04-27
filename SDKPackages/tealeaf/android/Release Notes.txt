@@ -6,7 +6,7 @@
 ###############################################################################
 
 April 2018 Release
-Tealeaf Module 10.2.1.242, EOCore 2.0.0.140 and TeaCuts 2.0.0.28
+Tealeaf Module 10.2.1.242, EOCore 2.0.0.147 and TeaCuts 2.0.0.28
 Fixed an issue with font color on AbsSpinner.
 Fixed an issue with font color on checkbox.
 Fixed an issue with RippleDrawable images that use a differnt image format that produced black borders that missing the transparency.
