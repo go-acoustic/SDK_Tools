@@ -5,6 +5,12 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+April 2018 Hot Fix
+Tealeaf Module 10.2.0.153 and EOCore 2.0.0.81:
+Added support for capturing UIWebView when auto capture is turned-off.
+Fixed an issue with UIButton's background image hiding button's title in the replay.
+Added a configuration item (DisableAlertAutoCapture) inside TealeafAdvancedConfig.json file to disable the autocapture of alerts(UIAlertController/UIAlertView)
+
 March 2018 Hot Fix
 Tealeaf Module 10.2.0.150 and EOCore 2.0.0.81:
 Added support for custom alerts (custom controls that are implemented like UIAlertController).
