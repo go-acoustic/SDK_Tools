@@ -3,3 +3,4 @@
 /sdkmanager/ibm-sdk/node_modules/ibm-tealeaf
 /sdkmanager/ibm-sdk/node_modules/mobilesdkinstaller
 /sdkmanager/LICENSE
+.DS_Store
