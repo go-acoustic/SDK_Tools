@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AppKey</key>
-	<string>NoApplication</string>
+	<string>b3cdcba438954a8482dbcaa453886597</string>
 	<key>CaptureNativeGesturesOnWebview</key>
 	<false/>
 	<key>connection</key>
@@ -62,7 +62,7 @@
 	<key>PercentToCompressImage</key>
 	<integer>100</integer>
 	<key>PostMessageUrl</key>
-	<string>http://tealeafdemostore.demos.ibm.com/webapp/wcs/stores/Aurora/TealeafTarget.jsp</string>
+	<string>http://devqa2.collector.tealeaf.test.spop-sl.com/collector/collectorPost</string>
 	<key>printScreen</key>
 	<integer>3</integer>
 	<key>ScreenshotFormat</key>

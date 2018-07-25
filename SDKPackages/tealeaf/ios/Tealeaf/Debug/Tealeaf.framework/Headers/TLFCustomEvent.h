@@ -1,6 +1,6 @@
 //
 //  Licensed Materials - Property of IBM
-//  (C) Copyright IBM Corp. 2017
+//  (C) Copyright IBM Corp. 2018
 //  US Government Users Restricted Rights - Use, duplication or disclosure
 //  restricted by GSA ADP Schedule Contract with IBM Corp.
 //
@@ -338,4 +338,10 @@ Requests that the framework logs an Image.
  @return if the event was successfully logged or not.
  */
 -(BOOL)logJSONMessagePayloadStr:(NSString*)payload;
+
+///**
+// Retrieves the current view controller that appear during view did appear.
+// @return current view controller that appear during view did appear.
+// */
+//-(UIViewController*)getCurrentDidAppearViewController;
 @end

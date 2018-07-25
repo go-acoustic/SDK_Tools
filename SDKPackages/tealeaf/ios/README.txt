@@ -21,7 +21,7 @@ TealeafTargetSimulator folder  - Tool used to convert sessions into images which
 Templates folder               - It has the latest native templates compatible with libray.
                                  It can be found at https://github.com/ibm-watson-cxa/SDK_Tools/tree/master/NativeTemplates
 
-Libraries are compatible from 8.0 to 11.1 using simulator or device on 32 bit or 64 bit with bitcode enabled on release package.
+Libraries are compatible from 9.0 to 11.4 using simulator or device on 32 bit or 64 bit with bitcode enabled on release package.
 
 Documentation links:
 

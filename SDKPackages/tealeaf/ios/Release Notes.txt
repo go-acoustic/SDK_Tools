@@ -5,6 +5,25 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+July 2018 Release
+Tealeaf Module 10.2.0.210 and EOCore 2.0.0.82:
+Fixed an issue where SDK is capturing incorrect name for alert controller and linking alert load event with previous screen.
+Tealeaf SDK affects the behaviour of webview in iOS. Fixed didFinishNavigation swizzled method to call application didFinishNavigation method.
+Deleted EnableLogViewLayoutOnScreenTransitionAlerts flag and changed logic to use DisableAlertAutoCapture on its behalf.
+Removed support for UIActionSheet and UIAlertView because these no longer should be used with iOS 9.0.
+Adjusted pickerview to get correct column and data values to avoid exception.
+Fixed an issue where SDK is not capturing navBar if root view controller is tab bar controller.
+Added safety checks for pickerView capture if titleForRow: delegate method is not implemented.
+Fixed an issue where SDK is not capturing tab bar.
+Updated sdk to use 9.0 as minimal version and removed deprecated items due to no longer supporting 8.0.
+Fixed issues with alerts.
+Fixed an issue where SDK is not capturing font of textView in iOS 9 iphone 6 device.
+Change POST MIME type from text/json to application/json.
+
+Known issues:
+Unload events need to adjusted and will be completed in next release.
+
+
 April 2018 Hot Fix
 Tealeaf Module 10.2.0.153 and EOCore 2.0.0.81:
 Added support for capturing UIWebView when auto capture is turned-off.

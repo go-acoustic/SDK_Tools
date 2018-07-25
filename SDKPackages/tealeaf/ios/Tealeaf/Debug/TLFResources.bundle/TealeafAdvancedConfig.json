@@ -1,5 +1,5 @@
 {
-  "LibraryVersion": "10.2.0.156",
+  "LibraryVersion": "10.2.0.210",
   "FilterMessageTypes": false,
   "MessageTypes": "4,5,6",
   "AddMessageTypeHeader": true,
@@ -43,8 +43,8 @@
   "AutoWebViewCaptureDelay": 1,
   "DefaultAutoLayoutDelay": 500,
   "DisableKeyboardCapture": false,
-  "EnableLogViewLayoutOnScreenTransitionAlerts": true,
   "EnableWebViewInjectionForDisabledAutoCapture": true,
   "DisableAlertAutoCapture": false,
-  "DisableAlertBackgroundForDisabledLogViewLayout": false
+  "DisableAlertBackgroundForDisabledLogViewLayout": false,
+  "canvas:click": 1
 }
