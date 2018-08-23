@@ -1,4 +1,4 @@
-<!-- control_collectionView.tlt version_6 -->
+<!-- control_collectionView.tlt version_7 -->
 <div id="{{["id"]}}"
   data-tealeaf-native="true"
   style="padding:0;
@@ -32,6 +32,7 @@
         {{if(exists(["style"],"bgColorRGBA"),concat("background-color:",concat(["style"]["bgColorRGBA"],";")), if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"), cssDecl("inherit","background-color")))}}
         {{if(exists([], "style", "textColor"), cssDecl(htmlColor(["style"]["textColor"]), "color"), "/* TLT_WARN: opacity not rendered */")}}
         {{if(exists([], "style", "textAlphaColor"), cssDecl(["style"]["textAlphaColor"], "opacity"), "/* TLT_WARN: opacity not rendered */")}}
+        {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}
         ">
 {{if(exists([], "currState", "data"), template(["currState"]["data"],"iOS\\array_controls.tlt"), "<!--  TLT_WARNING: MISSING [currState][data]  -->\r\n")}}
 </div>

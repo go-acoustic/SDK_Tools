@@ -1,4 +1,4 @@
-<!-- control_pageControl.tlt version_3 -->
+<!-- control_pageControl.tlt version_4 -->
 <style>
   .tlPageControlIcon {
     padding-left: 2px;
@@ -17,7 +17,7 @@
     color: {{if(exists([], "style", "pageIndicatorColor"),htmlColor(["style"]["pageIndicatorColor"]),"#FFFFFF")}};
   }
 </style>
-<div id="{{["id"]}}" 
+<div id="{{["id"]}}"
   data-tealeaf-native="true"
   templatetype="pageControl"
   style="position:absolute;
@@ -26,69 +26,70 @@
         {{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"), "/* TLT_WARN: [y] not rendered */")}}
         {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
         {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}
-        font-size: 12px;">
-  
+        font-size: 12px;
+        {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}">
+
     <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],0),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=1 
-      style="display: {{if(le(1,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>     
+      idex=1
+      style="display: {{if(le(1,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
     <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],1),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=2 
+      idex=2
       style="display: {{if(le(2,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],2),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=3 
+      idex=3
       style="display: {{if(le(3,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],3),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=4 
+      idex=4
       style="display: {{if(le(4,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],4),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=5 
+      idex=5
       style="display: {{if(le(5,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],5),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=6 
+      idex=6
       style="display: {{if(le(6,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],6),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=7 
-      style="display: {{if(le(7,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>         
+      idex=7
+      style="display: {{if(le(7,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],7),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=8 
-      style="display: {{if(le(8,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>     
+      idex=8
+      style="display: {{if(le(8,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
       <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],8),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=9 
+      idex=9
       style="display: {{if(le(9,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],9),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=10 
+      idex=10
       style="display: {{if(le(10,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],10),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=11 
+      idex=11
       style="display: {{if(le(11,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],11),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=12 
+      idex=12
       style="display: {{if(le(12,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],12),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=13 
+      idex=13
       style="display: {{if(le(13,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],13),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=14 
+      idex=14
       style="display: {{if(le(14,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],14),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=15 
-      style="display: {{if(le(15,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>     
+      idex=15
+      style="display: {{if(le(15,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
       <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],15),"tlPageControlSelectedColor","tlPageControlColor")}}"
       idex=16
       style="display: {{if(le(16,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],16),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=17 
+      idex=17
       style="display: {{if(le(17,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],17),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=18 
+      idex=18
       style="display: {{if(le(18,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],18),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=19 
+      idex=19
       style="display: {{if(le(19,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],19),"tlPageControlSelectedColor","tlPageControlColor")}}"
       idex=20
       style="display: {{if(le(20,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
      <i class="fa fa-circle tlPageControlIcon {{if(eq(["currState"]["currentPage"],20),"tlPageControlSelectedColor","tlPageControlColor")}}"
-      idex=21 
+      idex=21
       style="display: {{if(le(21,["currState"]["numberOfPages"]), "inline-block","none")}};"></i>
 </div>

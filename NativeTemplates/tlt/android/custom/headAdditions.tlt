@@ -1,0 +1,31 @@
+<!-- Only html style comment are accepted in the templates -->
+<!-- The following is only be used for SaaS environment, to reproduce this item for in prem you will need to create a directory named auxiliary on the replay server
+Using font-face, you will need to place fonts into auxiliary directory
+
+<style>
+@font-face {
+	font-family: "Roboto Black";
+	src: url("http://localhost:38000/auxiliary/Roboto-Black.eot?") format("eot"),
+	     url("http://localhost:38000/auxiliary/Roboto-Black.woff") format("woff"),
+	     url("http://localhost:38000/auxiliary/Roboto-Black.ttf") format("truetype"),
+	     url("http://localhost:38000/auxiliary/Roboto-Black.svg#Roboto-Black") format("svg");
+	font-weight:normal;
+	font-style:normal;
+}
+
+* {
+    font-family: "Roboto Black" !important;
+}
+</style>
+-->
+
+<!--
+Inline files, you will need to place files into auxiliary directory
+<link rel="stylesheet" href="http://localhost:38000/auxiliary/styles.css">
+-->
+
+<!--
+You can also add javascript actions that will run on replay 
+-->
+
+<!-- get the required files from 3rd party sources -->

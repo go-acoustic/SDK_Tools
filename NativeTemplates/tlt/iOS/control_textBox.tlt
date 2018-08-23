@@ -1,4 +1,4 @@
-<!-- control_textBox.tlt version_7 -->
+<!-- control_textBox.tlt version_8 -->
 <style>
 ::-webkit-input-placeholder {
    text-align: {{if(exists([], "style", "placeHolderTextAlignment"),["style"]["placeHolderTextAlignment"],"left")}};
@@ -43,7 +43,8 @@
         {{if(exists([], "image"),template(["image"],"iOS\\css_backgroundImage.tlt"),"background-image:none;") }}
         {{if(exists(["style"],"bgColorRGBA"),concat("background-color:",concat(["style"]["bgColorRGBA"],";")),
                                             if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
-                                                                           cssDecl("inherit","background-color")))}}"
+                                                                           cssDecl("inherit","background-color")))}}
+        {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}"
   {{if(exists([], "currState", "text"),htmlAttr(["currState"]["text"],"value"),"")}}
   {{if(exists([], "currState", "placeholder"),htmlAttr(["currState"]["placeholder"],"placeholder"),"")}}
 />

@@ -1,6 +1,6 @@
-<!-- control_image.tlt version_1 -->
+<!-- control_image.tlt version_2 -->
 <div id="{{["id"]}}" data-tealeaf-native="true"
-style=" 
+style="
 padding:0; box-sizing:border-box; -moz-box-sizing:border-box;
 {{if(exists([],"image","awesomeFontIcon"),"display: none;","")}}
 position:absolute;
@@ -23,11 +23,11 @@ position:absolute;
 	"/* TLT_WARN: [position][height] not specified */"
 )}}
 text-align:{{if(exists([],"style","textAlignment"),["style"]["textAlignment"],"center")}};
-"
+{{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}"
 >
-<img 
-id="{{["id"]}}-image" data-tealeaf-native="true"  
-style=" 
+<img
+id="{{["id"]}}-image" data-tealeaf-native="true"
+style="
 padding:0; box-sizing:border-box; -moz-box-sizing:border-box;
 {{if(exists([],"image","awesomeFontIcon"),"display: none;","")}}
 {{if(
@@ -53,7 +53,7 @@ if(exists([], "image", "type"),
 		eq(["image"]["type"],"url"),
 		["image"]["value"],
 		if(
-			exists([], "image", "base64Image"), 
+			exists([], "image", "base64Image"),
 			concat("data:image/png;base64,",["image"]["base64Image"]),
 			concat("http://localhost:38000/images/",["image"]["value"],".",["image"]["mimeExtension"])
 		)

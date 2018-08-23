@@ -1,4 +1,4 @@
-<!-- control_compoundButton.tlt version_10 -->
+<!-- control_compoundButton.tlt version_11 -->
 <div id="{{["id"]}}"
   data-tealeaf-native="true" 
   style="position:fixed;
@@ -7,7 +7,7 @@
          {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
          {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
          {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
-         background-color: {{if(exists([], "style", "bgColor"), concat("#",htmlColor(["style"]["bgColor"])), "inherit")}};
+         background-color: {{if(exists([], "style", "bgColor"), htmlColor(["style"]["bgColor"]), "inherit")}};
          {{if(exists(["style"],"textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"")}}
          {{if(exists(["style"],"textAlphaColor"),cssDecl(["style"]["textAlphaColor"],"opacity"),"")}}
          {{if(exists(["style"],"textAlign"),cssDecl(["style"]["textAlign"],"text-align"),"")}}

@@ -1,4 +1,4 @@
-<!-- root.tlt version_25 -->
+<!-- root.tlt version_26 -->
 <html>
 <head>
   <!-- Android replay -->
@@ -200,7 +200,7 @@
     return "";
   }
   </script>
-  {{template([],"android\\custom\\headAdditions2.tlt","")}}
+  {{template([],"android\\custom\\headAdditions.tlt","")}}
 </head>
 <body class="tlBackgroundColor" onload="checkStyle();" {{template([],"android\\custom\\bodyAttrs.tlt","")}} >
 <input type="hidden" id="originalPageOrientation" value="{{if(exists([],"orientation"),["orientation"],0)}}">

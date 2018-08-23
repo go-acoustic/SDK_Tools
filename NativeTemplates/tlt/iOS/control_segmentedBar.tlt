@@ -1,20 +1,20 @@
-<!-- control_segmentedBar.tlt version_3 -->
+<!-- control_segmentedBar.tlt version_4 -->
 <style>
   .{{["id"]}}Selected {
-      background-color: #{{if(exists([], "style", "tintColor"),htmlColor(["style"]["tintColor"]),"007AFF")}};
+      background-color: {{if(exists([], "style", "tintColor"),htmlColor(["style"]["tintColor"]),"#007AFF")}};
       {{if(exists([], "style", "tintAlpha"),cssDecl(["style"]["tintAlpha"],"opacity"),"")}}
       color: #ffffff;
   }
 
   .tlSegmentedBarSelected {
-      background-color: #{{if(exists([], "style", "tintColor"),htmlColor(["style"]["tintColor"]),"007AFF")}};
+      background-color: {{if(exists([], "style", "tintColor"),htmlColor(["style"]["tintColor"]),"#007AFF")}};
       {{if(exists([], "style", "tintAlpha"),cssDecl(["style"]["tintAlpha"],"opacity"),"")}}
       color: #ffffff;
   }
 
   table.tlSegmentedBarTable {
       border-radius: 4px;
-      border-width: 1px; 
+      border-width: 1px;
       border-style: solid;
       border-color: {{if(exists([], "style", "tintColor"),htmlColor(["style"]["tintColor"]),"#007AFF;")}};
       border-spacing: 0px;
@@ -44,14 +44,15 @@
         {{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"), "/* TLT_WARN: [y] not rendered */")}}
         {{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"), "/* TLT_WARN: [y] not rendered */")}}
         {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
-        {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}">
+        {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}">
   <tr>
-{{ 
+{{
 	if(
-		exists([],"currState","data"), 
-		template(["currState"]["data"],"iOS\\array_controls.tlt"), 
+		exists([],"currState","data"),
+		template(["currState"]["data"],"iOS\\array_controls.tlt"),
 		"<!-- TLT_ERROR: MISSING currState.data -->\r\n"
-	)          
+	)
 }}
   </tr>
 </table>

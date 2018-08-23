@@ -1,14 +1,14 @@
-<!-- contdol_statusBar.tlt version_7 -->
+<!-- contdol_statusBar.tlt version_8 -->
 <div id="statusBarBackground"
       style="top: 0px;
             left: 0px;
-            position: fixed;
+            position: absolute;
             display: table-cell;
-            z-index: 2;
             {{if(exists([], "style", "bgColor"), cssDecl(htmlColor(["style"]["bgColor"]), "background-color"),"/* TLT_WARN: background-color not rendered */")}}
             {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
             {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}
-            {{if(and(exists([], "style", "isTranslucent"),eq(["style"]["isTranslucent"],true)), "opacity: .80;filter: alpha(opacity=80);-ms-filter: \"alpha(opacity=80)\";-khtml-opacity: .80;-moz-opacity: .80;", "")}}"
+            {{if(and(exists([], "style", "isTranslucent"),eq(["style"]["isTranslucent"],true)), "opacity: .80;filter: alpha(opacity=80);-ms-filter: \"alpha(opacity=80)\";-khtml-opacity: .80;-moz-opacity: .80;", "")}}
+            {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 2)}}"
     ></div>
 <div id="statusBarTime"
       style="top: 0px;
@@ -16,15 +16,15 @@
       		  line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
       		  text-align: center;
             font-family: sans-serif;
-            position: fixed;
+            position: absolute;
             font-size: 12;
             font-weight: bold;
             vertical-align: middle;
             display: table-cell;
-            z-index: 3;
             color: {{if(exists([], "style", "contentColor"),htmlColor(["style"]["contentColor"]),"#000000")}};
             {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
-            {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}"
+            {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}
+            {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}"
     >{{if(exists([], "currState", "currentTime"),["currState"]["currentTime"],"")}}</div>
 
 <div id="{{["id"]}}-left"
@@ -32,19 +32,19 @@
       	left: 2px;
       	text-align: left;
         font-family: sans-serif;
-        position: fixed;
+        position: absolute;
         font-size: 12;
         font-weight: bold;
         vertical-align: middle;
         display: table-cell;
-        z-index: 3;
         line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
         color: {{if(exists([], "style", "contentColor"),htmlColor(["style"]["contentColor"]),"#000000")}};
         {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
-        {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}"
+        {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}
+        {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}"
 >
   <span style="color: {{if(exists([], "style", "tintColor"),htmlColor(["style"]["tintColor"]),"#000000")}};
-              z-index: 3;
+              {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}
       		    {{if(and(exists([],"currState","wifiEnabled"),eq(["currState"]["wifiEnabled"],false)),"" ,"display:none;")}}">
       <i class="fa fa-circle"
 	    style="font-size: 8px;
@@ -52,7 +52,7 @@
 	          display: inline-block;
 	          line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
 	          text-align: center;
-            z-index: 3;
+            {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}
 	          vertical-align: bottom;"></i>
 	  <i class="fa fa-circle"
 	    style="font-size: 8px;
@@ -60,7 +60,7 @@
 	          display: inline-block;
 	          line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
 	          text-align: center;
-            z-index: 3;
+            {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}
 	          vertical-align: bottom;"></i>
 	  <i class="fa fa-circle"
 	    style="font-size: 8px;
@@ -68,7 +68,7 @@
 	          display: inline-block;
 	          line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
 	          text-align: center;
-            z-index: 3;
+            {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}
 	          vertical-align: bottom;"></i>
       <i class="fa fa-circle"
 	    style="font-size: 8px;
@@ -76,7 +76,7 @@
 	          display: inline-block;
 	          line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
 	          text-align: center;
-            z-index: 3;
+            {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}
 	          vertical-align: bottom;"></i>
 	  <i class="fa fa-circle-o"
 	    style="font-size: 8px;
@@ -84,17 +84,17 @@
 	          display: inline-block;
 	          line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
 	          text-align: center;
-            z-index: 3;
+            {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}
 	          vertical-align: bottom;"></i>
   </span>
   <span id="statusBarCarrier"
       style="color: {{if(exists([], "style", "contentColor"),htmlColor(["style"]["contentColor"]),"#000000")}};
-            z-index: 3;"
+            {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}"
     >{{if(exists([], "currState", "carrier"),["currState"]["carrier"],"Carrier")}}</span>
   <span>
 	  <i class="fa fa-wifi"
 	    style="font-size: 12px;
-            z-index: 3;
+            {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}
 	          color: {{if(exists([], "style", "contentColor"),htmlColor(["style"]["contentColor"]),"#000000")}};
 	          line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
 	          {{if(and(exists([],"currState","wifiEnabled"),eq(["currState"]["wifiEnabled"],true)),"" ,"display: none;")}}
@@ -109,12 +109,12 @@
       	left: 2px;
       	text-align: right;
         font-family: sans-serif;
-        position: fixed;
+        position: absolute;
         font-size: 12;
         font-weight: bold;
         vertical-align: middle;
         display: table-cell;
-        z-index: 3;
+        {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}
         line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
         color: {{if(exists([], "style", "contentColor"),htmlColor(["style"]["contentColor"]),"#000000")}};
         {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
@@ -128,7 +128,7 @@
   <span>
     <i class="fa fa-battery-{{if(exists([], "currState", "batteryId"),["currState"]["batteryId"],"empty")}}"
       style="font-size: 12px;
-            z-index: 3;
+            {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 3)}}
             color: {{if(exists([], "style", "batteryColor"),htmlColor(["style"]["batteryColor"]),"#000000")}};
             display: inline-block;
             line-height: 12px;"></i>

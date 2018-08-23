@@ -1,10 +1,10 @@
-<!-- control_button_button.tlt version_2 -->
+<!-- control_button_button.tlt version_3 -->
 <button
 id="{{["id"]}}" data-tealeaf-native="true"
 style="
 padding:0; margin:0; box-sizing:border-box; -moz-box-sizing:border-box; line-height:normal;
 {{if(exists([], "position"), template(["position"],"iOS\\css_position.tlt"),                  "/* TLT_WARN: [position] not rendered */")}}
-{{if(exists([], "style"),    template(["style"],"iOS\\css_color.tlt"),                        "/* TLT_WARN: [style] not rendered */") }} 
+{{if(exists([], "style"),    template(["style"],"iOS\\css_color.tlt"),                        "/* TLT_WARN: [style] not rendered */") }}
 {{if(exists([], "currState", "font"), template(["currState"]["font"],"iOS\\css_font.tlt"),    "/* TLT_WARN: [font] not rendered */") }}
 {{if(exists([], "image"),
 	concat(
@@ -21,6 +21,6 @@ padding:0; margin:0; box-sizing:border-box; -moz-box-sizing:border-box; line-hei
 		"/* TLT_INFO: normal border */"
 	)
 }}
-">
+{{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}">
 {{if(exists([], "currState", "text"), ["currState"]["text"], "")}}
 </button>

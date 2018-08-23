@@ -1,4 +1,4 @@
-<!-- control_datePicker.tlt version_2 -->
+<!-- control_datePicker.tlt version_3 -->
 <div id="{{["id"]}}"
   data-tealeaf-native="true"
   templatetype="datePicker"
@@ -10,6 +10,6 @@
         {{if(exists([], "position"), template(["position"],"iOS\\css_position.tlt"),"/* TLT_WARN: [postion] not rendered */")}}
         {{if(exists([], "style", "bgColor"), cssDecl(htmlColor(["style"]["bgColor"]), "background-color"),"/* TLT_WARN: background-color not rendered */")}}
         {{if(exists([], "style", "textAlphaColor"), cssDecl(["style"]["textAlphaColor"], "opacity"), "/* TLT_WARN: opacity not rendered */")}}
-        ">
+        {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}">
  {{if(exists([], "currState", "data"), if(eq(["type"],"_UIQueuingScrollView"),template(["currState"]["data"][0],"iOS\\control_canvas_static.tlt"), template(["currState"]["data"],"iOS\\array_controls.tlt")), "<!--  TLT_WARNING: MISSING [currState][data]  -->\r\n")}}
 </div>

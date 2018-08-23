@@ -1,4 +1,4 @@
-<!-- progressSpinner.tlt version_3 -->
+<!-- progressSpinner.tlt version_4 -->
 <style>
 div.spinner, div.activeSpinner {
 }
@@ -176,7 +176,8 @@ div.activeSpinner div.activeBar12 {
         {{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"), "/* TLT_WARN: [y] not rendered */")}}
         {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
         {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}
-        background: {{if(exists([], "style", "bgColor"),concat("",htmlColor(["style"]["bgColor"])),"")}};"
+        background: {{if(exists([], "style", "bgColor"),concat("",htmlColor(["style"]["bgColor"])),"")}};
+        {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}"
   animating={{["currState"]["animating"]}}>
   <div class="{{if(eq(["currState"]["animating"],true),"activeBar1","bar1")}}"
     style="background: {{if(exists([], "style", "color"),concat("",htmlColor(["style"]["color"])),"background: #ffffff;")}}"></div>

@@ -1,4 +1,4 @@
-<!-- root.tlt version_7 -->
+<!-- root.tlt version_8 -->
 <html>
 <head>
   <!-- iOS replay -->
@@ -65,7 +65,7 @@
   }
 
   </style>
-  {{template([],"iOS\\custom\\headAdditions2.tlt","")}}
+  {{template([],"iOS\\custom\\headAdditions.tlt","")}}
 
 </head>
 <body {{template([],"iOS\\custom\\bodyAttrs.tlt","")}}>

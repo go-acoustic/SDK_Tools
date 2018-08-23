@@ -1,10 +1,10 @@
-<!-- control_textArea.tlt version_7 -->
-<textarea id="{{["id"]}}" 
+<!-- control_textArea.tlt version_8 -->
+<textarea id="{{["id"]}}"
   data-tealeaf-native="true"
-  style="resize:none; 
-        overflow:hidden; 
-        padding:0; 
-        box-sizing:border-box; 
+  style="resize:none;
+        overflow:hidden;
+        padding:0;
+        box-sizing:border-box;
         -moz-box-sizing:border-box;
         border-radius:{{if(exists([], "style", "borderRadius"),["style"]["borderRadius"],0)}}px;
         {{if(exists([], "style", "borderColor"),cssDecl(htmlColor(["style"]["borderColor"]),"border-color"),"/* TLT_WARN: [borderColor] not rendered */")}}
@@ -16,9 +16,7 @@
         {{if(exists([], "style", "textColor"),cssDecl(htmlColor(["style"]["textColor"]),"color"),"/* TLT_WARN: [textColor] not rendered */")}}
         {{if(exists(["style"],"bgColorRGBA"),concat("background-color:",concat(["style"]["bgColorRGBA"],";")),
                                            if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
-                                                                          cssDecl("inherit","background-color")))}}"
+                                                                          cssDecl("inherit","background-color")))}}
+        {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}"
   >{{if(exists([], "currState", "text"),["currState"]["text"],"")}}
 </textarea>
-
-
-

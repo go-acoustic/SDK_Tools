@@ -1,4 +1,4 @@
-<!-- control_tableCell.tlt version_5 -->
+<!-- control_tableCell.tlt version_6 -->
 <div id="{{["id"]}}"
   data-tealeaf-native="true"
   style="position: absolute;
@@ -10,7 +10,8 @@
                                                                             cssDecl("inherit","background-color")))}}
          {{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"), "/* TLT_WARN: [y] not rendered */")}}
          {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"), "/* TLT_WARN: [y] not rendered */")}}
-         {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}">
+         {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"), "/* TLT_WARN: [y] not rendered */")}}
+         {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}">
 {{
   if(
     exists([],"currState","data"),

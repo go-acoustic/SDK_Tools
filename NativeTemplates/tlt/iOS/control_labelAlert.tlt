@@ -1,4 +1,4 @@
-<!-- control_labelAlert.tlt version_1 -->
+<!-- control_labelAlert.tlt version_2 -->
 <label
   id="{{["id"]}}"
   data-tealeaf-native="true"
@@ -31,5 +31,6 @@
         transform: translate3d(0px, 0px, 0px) rotateX({{if(exists([],"style","rotateX"),["style"]["rotateX"],"0")}}deg);
         {{if(exists(["style"],"bgColorRGBA"),concat("background-color:",concat(["style"]["bgColorRGBA"],";")),
                                             if(exists(["style"],"bgColor"),cssDecl(htmlColor(["style"]["bgColor"]),"background-color"),
-                                                                           cssDecl("inherit","background-color")))}}"
+                                                                           cssDecl("inherit","background-color")))}}
+        {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}"
 >{{if(exists([], "currState", "text"), ["currState"]["text"],"")}}</label>
