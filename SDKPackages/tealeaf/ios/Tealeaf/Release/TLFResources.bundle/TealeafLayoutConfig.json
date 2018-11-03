@@ -6,7 +6,8 @@
             "delay": 500,
             "takeScreenShot": false,
             "isWebView": false,
-            "numberOfWebviews": 0
+            "numberOfWebviews": 0,
+            "CaptureScreenContents": false
         }
     },
     "AppendMapIds": {

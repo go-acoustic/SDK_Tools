@@ -5,6 +5,22 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+November 2018 Release
+Tealeaf Module 10.2.0.264 and EOCore 2.0.1.35:
+Made new build using xcode 10.1 which library now supports from 9.0 to 12.1.
+Adding ability to capture click events on UIActionAction.
+Fixed issues with custom alert. I noticed that textfield did not have correct background color.
+It seems there was no type 4 data whwich became a new feature. Also the injection was using @selector(tableView:didDeselectRowAtIndexPath:) vs @selector(tableView:didSelectRowAtIndexPath:).
+Removed code for UIAlertView and UIAlertViewDelegate which no longer are supported in iOS 9.0 or higher.
+Removed deprecated control UIPopoverController.
+Removed deprecated controls UIAlertView and UIActionSheet.
+Added new pause and resume functionailty which will have load and unload breadcrumbs.
+Added new z-index format of data to remove nested json data in type 10. Easier to event off. Also performance enhancement.
+Fixed an issue with current state being erased and not sent for pickerview.
+Moved unload screen event capture to viewDidDisappear from viewWillDisappear.
+Fixed an issue where Tealeaf is not posting messages to EOCore because of a textChange placeholder.
+Fixed issues with dynamic build and static build having the following architectures armv7, armv7s, i386, x86_64, and arm64. But with bitcode enabled static have armv7, armv7s, i386, x86_64, and arm64 and dymanic have armv7, armv7s, and arm64. Dynamic build can not have bitcode enabled. When submitting to Apple, application needs to remove any i386 and x86_64 build. So it is not needed.
+
 July 2018 Release
 Tealeaf Module 10.2.0.210 and EOCore 2.0.0.82:
 Fixed an issue where SDK is capturing incorrect name for alert controller and linking alert load event with previous screen.

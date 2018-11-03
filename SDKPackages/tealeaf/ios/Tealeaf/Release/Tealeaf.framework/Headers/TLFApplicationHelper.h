@@ -1,10 +1,11 @@
 //
 //  Licensed Materials - Property of IBM
-//  (C) Copyright IBM Corp. 2017
+//  (C) Copyright IBM Corp. 2018
 //  US Government Users Restricted Rights - Use, duplication or disclosure
 //  restricted by GSA ADP Schedule Contract with IBM Corp.
 //
 #import <Foundation/Foundation.h>
+#import <WebKit/WebKit.h>
 #import "TLFPublicDefinitions.h"
 
 @interface TLFApplicationHelper : NSObject <TLFLibDelegate, TLFApplicationHelperJSProtocol>
@@ -28,6 +29,18 @@
  * @return Returns YES or NO based on whether the framework was successfully enabled or not.
  */
 - (BOOL)disableTealeafFramework;
+
+/*!
+ * @abstract Pauses capture of data on the Tealeaf framework
+ * @return Returns YES or NO based on whether the framework was successfully paused or not.
+ */
+- (BOOL)pauseTealeaf;
+
+/**
+ * @abstract Resumes capture of data on the Tealeaf framework
+ * @return Returns YES or NO based on whether the framework was successfully resumed or not.
+ */
+- (BOOL)resumeTealeaf;
 
 /**
  Setup the Kill Switch URL. This is the URL to be checked when the framework initializes. If the page is not reachable the framework will not initialize. Setting the URL will update the configurable plist file for that user's device.
@@ -185,17 +198,17 @@
 /**
  Confirms if given NSURLRequest coming from javascript is a Tealeaf request URL. Typically used when manually instrumenting the application.
  @param request - NSMutableURLRequest object to be checked if is a Tealeaf request URL.
- @param webView - UIWebView object which contains Tealeaf hybrid bridge javascript code.
+ @param webView - UIWebView or WKWebView object which contains Tealeaf hybrid bridge javascript code.
  @return YES when Tealeaf hybrid bridge request else NO.
  */
-- (BOOL) isTealeafHybridBridgeRequest:(NSURLRequest*)request webView:(UIWebView*)webView;
+- (BOOL) isTealeafHybridBridgeRequest:(NSURLRequest*)request webView:(id)webView;
 
 /**
  Injects Tealeaf hybrid bridge javascript code into the webpage loaded into UIWebView. Typically used when manually instrumenting the application.
- @param webView - UIWebView object into which Tealeaf hybrid bridge javascript code needs to be injected.
+ @param webView - UIWebView or WKWebView object into which Tealeaf hybrid bridge javascript code needs to be injected.
  @return YES when Tealeaf hybrid bridge javascript code injection is successful request else NO.
  */
-- (BOOL) InjectTealeafHybridBridgeOnWebViewDidFinishLoad:(UIWebView *)webView;
+- (BOOL) InjectTealeafHybridBridgeOnWebViewDidFinishLoad:(id)webView;
 
 /**
  UIApplication sendEvent API which needs to be overriden in case developers are using their own class derived from UIApplication. Please see UIApplication documentation for details.

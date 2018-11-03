@@ -1,5 +1,5 @@
 {
-  "LibraryVersion": "10.2.0.210",
+  "LibraryVersion": "10.2.0.264",
   "FilterMessageTypes": false,
   "MessageTypes": "4,5,6",
   "AddMessageTypeHeader": true,
@@ -46,5 +46,7 @@
   "EnableWebViewInjectionForDisabledAutoCapture": true,
   "DisableAlertAutoCapture": false,
   "DisableAlertBackgroundForDisabledLogViewLayout": false,
-  "canvas:click": 1
+  "canvas:click": 1,
+  "InitialZIndex": 500,
+  "UseXpathId": false
 }
