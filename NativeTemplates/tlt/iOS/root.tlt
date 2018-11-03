@@ -1,4 +1,4 @@
-<!-- root.tlt version_8 -->
+<!-- root.tlt version_10 -->
 <html>
 <head>
   <!-- iOS replay -->
@@ -63,22 +63,34 @@
   .tlThemeColor {
       background-color: var(--theme-color);
   }
-
+  
+  .tlBorderElement {
+      border-color: hotpink;
+      border-width: 1px;
+      border-style: dotted;
+  }
   </style>
-  {{template([],"iOS\\custom\\headAdditions.tlt","")}}
+  {{template([],"iOS\\custom\\headAdditions2.tlt","")}}
 
 </head>
 <body {{template([],"iOS\\custom\\bodyAttrs.tlt","")}}>
 
 <input type="hidden" id="originalPageOrientation" value="{{if(exists([],"orientation"),["orientation"],0)}}">
 <div id="orientationBox"
-     style="{{default(template([],"android\\css_orientation.tlt"),"<!--json position not specified or problem with css_orientation.tlt -->")}}">
+     style="{{default(template([],"android\\css_orientation.tlt"),"<!--json position not specified or problem with css_orientation.tlt -->")}}
+            padding:0; margin:0; box-sizing:border-box; -moz-box-sizing:border-box; line-height:normal;
+            {{if(exists([], "backgroundImage"),
+              concat(
+              template(["backgroundImage"],"iOS\\css_backgroundSize.tlt"),
+              template(["backgroundImage"],"iOS\\css_backgroundImage.tlt")),
+              "background-image:none;") }}
+">
 {{
-  if(
-    exists([], "layout","controls"), 
+  if(and(exists([], "layout","controls"),exists([], "backgroundImage")), 
+    template(["layout"]["controls"],"iOS\\ER\\array_controls.tlt"), 
+    if(exists([], "layout","controls"), 
     template(["layout"]["controls"],"iOS\\array_controls.tlt"), 
-    "<!--  TLT_ERROR: MISSING [layout][controls]  -->\r\n"
-  )
+    "<!--  TLT_ERROR: MISSING [layout][controls]  -->\r\n"))
 }}
 </div>    
 </body>

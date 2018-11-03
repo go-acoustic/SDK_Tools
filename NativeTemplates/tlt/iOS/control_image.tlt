@@ -1,35 +1,41 @@
-<!-- control_image.tlt version_4 -->
-<div id="{{["id"]}}" data-tealeaf-native="true">
-<img
-id="{{["id"]}}-image" data-tealeaf-native="true"
-style="
-padding:0; box-sizing:border-box; -moz-box-sizing:border-box;
-{{if(exists([],"image","awesomeFontIcon"),"display: none;","")}}
-{{template(["position"],"iOS\\css_position.tlt")}}
-{{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}
-"
-src="{{
-if(exists([], "image", "type"),
-	if(
-		eq(["image"]["type"],"url"),
-		["image"]["value"],
-		if(
-			exists([], "image", "base64Image"),
-			concat("data:image/png;base64,",["image"]["base64Image"]),
-			concat("http://localhost:38000/images/",["image"]["value"],".",["image"]["mimeExtension"])
-		)
-	),
-"")
-
-}}"
-/>
-<span>
-  <i class="{{if(exists([], "image", "awesomeFontIcon"),concat("fa ",["image"]["awesomeFontIcon"]),"")}}"
-    style="font-size: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
-          color: inherit;
-          line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
-          {{if(exists([],"image","awesomeFontIcon"),"","display: none;")}}
-          height: {{if(exists([],"image","awesomeFontIcon"),"inherit","0px;")}};
-          vertical-align: bottom;"></i>
-</span>
+<!-- control_image.tlt version_8 -->
+<div id="{{["id"]}}" data-tealeaf-native="true"
+	style="{{template(["position"],"iOS\\css_position.tlt")}}
+	       {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}">
+	<img
+		id="{{["id"]}}-image" data-tealeaf-native="true"
+		style="padding: 1px; box-sizing:border-box; -moz-box-sizing:border-box;
+			   {{if(exists([],"image","awesomeFontIcon"),"display: none;","")}}
+	           position:absolute;
+         	   {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"),   "/* TLT_WARN: [height] not rendered */")}}
+               {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"),   "/* TLT_WARN: [width] not rendered */")}}
+	           {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}"
+		src="{{
+				if(exists([], "image", "type"),
+					if(
+						eq(["image"]["type"],"url"),
+						["image"]["value"],
+						if(
+							exists([], "image", "base64Image"),
+							concat("data:image/png;base64,",["image"]["base64Image"]),
+							concat("http://localhost:38000/images/",["image"]["value"],".",["image"]["mimeExtension"])
+						)
+					),
+				"")
+			}}"
+	/>
+	<span style="position:absolute;
+	             {{if(exists([],"image","awesomeFontIcon"),"","display: none;")}}
+	             {{if(exists([], "position", "height"), cssDecl(["position"]["height"],"height","px"),   "/* TLT_WARN: [height] not rendered */")}}
+                 {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"),   "/* TLT_WARN: [width] not rendered */")}}">
+	  <i class="{{if(exists([], "image", "awesomeFontIcon"),concat("fa ",["image"]["awesomeFontIcon"]),"")}}"
+	    style="font-size: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;    	  
+	          color:  {{if(exists([],"image","awesomeFontIcon"),
+	                    if(exists([], "style", "bgColor"), htmlColor(["style"]["bgColor"]), "inherit")
+	                   ,"inherit")}};
+	          line-height: {{if(exists([], "position", "height"), ["position"]["height"], "20")}}px;
+	          {{if(exists([],"image","awesomeFontIcon"),"","display: none;")}}
+	          height: {{if(exists([],"image","awesomeFontIcon"),"inherit","0px;")}};
+	          vertical-align: bottom;"></i>
+	</span>
 </div>

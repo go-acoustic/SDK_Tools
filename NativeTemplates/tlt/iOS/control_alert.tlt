@@ -1,4 +1,4 @@
-<!-- control_alert.tlt version_3 -->
+<!-- control_alert.tlt version_4 -->
 
 <div id="alertGrayPanel"
   class="tlCurrentDeviceHeight tlCurrentDeviceWidth"
@@ -6,7 +6,7 @@
          left:0;
          top:0;
          background-color: var(--dark-grey);
-         z-index:2;
+         z-index:1502;
          filter: alpha(opacity=65); /* internet explorer */
          -khtml-opacity: 0.65;      /* khtml, old safari */
          -moz-opacity: 0.65;       /* mozilla, netscape */
@@ -18,7 +18,7 @@
            position:fixed;
            left:0;
            top:0;
-           {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 5)}}">
+           z-index:1520;">
   <div class="tlBackgroundColor"
     style="{{cssDecl(["position"]["width"],"width","px")}}
            {{cssDecl(["position"]["height"],"height","px")}}
@@ -27,7 +27,7 @@
            {{if(exists([], "style", "bgColor"),        cssDecl(htmlColor(["style"]["bgColor"]),"background-color"), "/* TLT_WARN: background-color not rendered */")}}
            position:relative;
            display:block;
-           {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 5)}}
+           {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 1505)}}
            border-radius: 10px;">
     {{if(exists([], "currState", "data"), template(["currState"]["data"],"iOS\\array_controls.tlt"), "<!--  TLT_WARNING: MISSING [currState][data]  -->\r\n")}}
   </div>

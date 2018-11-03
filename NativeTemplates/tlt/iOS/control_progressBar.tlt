@@ -1,11 +1,11 @@
-<!-- control_progressBar.tlt version_4 -->
-<div id="{{["id"]}}" data-tealeaf-native="true"
+<!-- control_progressBar.tlt version_5 -->
+<progress id="{{["id"]}}" data-tealeaf-native="true"
   type="range"
-  {{["currState"]["progress"]}}
+  value="{{["currState"]["progress"]}}" max="1"
   style="padding:0; margin:0; box-sizing:border-box; -moz-box-sizing:border-box; line-height:normal;
          position:absolute;
          {{if(exists([], "position", "y"), cssDecl(["position"]["y"],"top","px"),         "/* TLT_WARN: [y] not rendered */")}}
          {{if(exists([], "position", "x"), cssDecl(["position"]["x"],"left","px"),        "/* TLT_WARN: [x] not rendered */")}}
          {{if(exists([], "position", "width"), cssDecl(["position"]["width"],"width","px"),   "/* TLT_WARN: [width] not rendered */")}}
          {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}">
-</div>
+</progress>

@@ -1,0 +1,32 @@
+<!-- iOSER - array_controls.tlt version_2 -->
+{{ 
+	arrayConcat(
+		foreach(
+			[], 
+			"control",
+			let(
+				"tlTypeRemap",
+				{
+          "unknown":"control_canvas.tlt",
+          "navigationBar":"control_canvas.tlt",
+          "label":"control_canvas.tlt",
+          "table":"control_canvas.tlt",
+          "collectionItem":"control_canvas.tlt"
+				},
+				let(
+					"nativeTypeRemap",
+					readJsonFile("iOS\\custom\\nativeTypeRemap.json",{}),
+					if(
+						and(exists([@"control"],"type"),exists([@"nativeTypeRemap"],[@"control"]["type"])),
+						template([@"control"], concat("iOS\\custom\\", [@"nativeTypeRemap"][ [@"control"]["type"] ] )),
+						if(
+							and(exists([@"control"],"tlType"),exists([@"tlTypeRemap"],[@"control"]["tlType"])),
+							template([@"control"], concat("iOS\\ER\\", [@"tlTypeRemap"][ [@"control"]["tlType"] ] )),
+							template([@"control"], concat("iOS\\ER\\control_", [@"control"]["tlType"], ".tlt" ))
+						)
+					)					
+				)
+			)
+		)
+	)
+}}
