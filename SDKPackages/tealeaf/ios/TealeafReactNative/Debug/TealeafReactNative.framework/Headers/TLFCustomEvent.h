@@ -109,28 +109,28 @@
 #pragma mark - Network Logging
 /*!
  @brief Requests that the framework logs the connection information.
- @param connection - The NSURLConnection object
+ @param connection - The NSURLSession object
  @param error - An NSError object
  @return BOOL If the event was successfully logged or not.
  */
--(BOOL)logConnection:(NSURLConnection*)connection error:(NSError*)error;
+-(BOOL)logConnection:(id)connection error:(NSError*)error;
 
 /*!
  @brief Requests that the framework logs the connection information.
- @param connection - The NSURLConnection object
+ @param connection - The NSURLSession object
  @param response - The NSURLResponse object from the connection request
  @param responseTime - The time in milliseconds taken by the server to respond
  @return BOOL If the event was successfully logged or not.
  */
--(BOOL)logConnection:(NSURLConnection*)connection response:(NSURLResponse*)response responseTimeInMilliseconds:(long long)responseTime;
+-(BOOL)logConnection:(id)connection response:(NSURLResponse*)response responseTimeInMilliseconds:(long long)responseTime;
 
 /*!
  @brief Requests that the framework logs the connection information.
- @param connection - The NSURLConnection object
+ @param connection - The NSURLSession object
  @param request - The NSURLRequest object associated with the connection
  @return BOOL If the event was successfully logged or not.
  */
--(BOOL)logConnection:(NSURLConnection*)connection request:(NSURLRequest*)request;
+-(BOOL)logConnection:(id)connection request:(NSURLRequest*)request;
 
 /*!
  @brief Requests that the framework logs the connection information.
@@ -138,7 +138,7 @@
  @param error - any NSError object
  @return BOOL If the event was successfully logged or not.
  */
--(BOOL)logNSURLSession:(NSObject*)urlSession error:(NSError*)error;
+-(BOOL)logNSURLSession:(id)urlSession error:(NSError*)error;
 
 /*!
  @brief Requests that the framework logs the connection information.
@@ -147,7 +147,7 @@
  @param responseTime time taken by the server to respond.
  @return BOOL If the event was successfully logged or not.
  */
--(BOOL)logNSURLSession:(NSObject*)urlSession response:(NSURLResponse*)response responseTimeInMilliseconds:(long long)responseTime;
+-(BOOL)logNSURLSession:(id)urlSession response:(NSURLResponse*)response responseTimeInMilliseconds:(long long)responseTime;
 
 /*!
  @brief Requests that the framework logs the connection information.
@@ -155,7 +155,7 @@
  @param request - Any NSURLRequest object
  @return BOOL If the event was successfully logged or not.
  */
--(BOOL)logNSURLSession:(NSObject*)urlSession request:(NSURLRequest*)request;
+-(BOOL)logNSURLSession:(id)urlSession request:(NSURLRequest*)request;
 
 /*!
  @brief Requests that the framework logs the connection information.
@@ -167,7 +167,7 @@
  @param error - any NSError object
  @return BOOL If the event was successfully logged or not.
  */
-- (BOOL)logConnectionWithInitTime:(NSNumber*)initTime loadTime:(NSNumber*)loadTime connection:(NSObject*)connection  request:(NSURLRequest*)request response:(NSURLResponse*)response error:(NSError*)error;
+- (BOOL)logConnectionWithInitTime:(NSNumber*)initTime loadTime:(NSNumber*)loadTime connection:(id)connection  request:(NSURLRequest*)request response:(NSURLResponse*)response error:(NSError*)error;
 
 #pragma mark - Location
 /*!
@@ -246,7 +246,7 @@ Requests that the framework logs an Image.
  @param image - The UIImage to be logged.
  @return if the event was successfully logged or not.
  */
-- (BOOL)logImageSynchronous:(UIImage*)image;
+- (BOOL)logImageSynchronous:(UIImage*)image; __attribute((deprecated("This item is no longer being supported. Please fill a support request if needed.")));
 
 /**
  Requests that the framework logs the layout of the screen

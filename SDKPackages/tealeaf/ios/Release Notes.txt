@@ -5,6 +5,13 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+December 2018 Release
+Tealeaf Module 10.2.0.267 and EOCore 2.0.1.35:
+Fixed NSURLConnection deprecated objects.
+Removed NSURLConnection swizzling.
+logImageSynchronous api is now deprecated.
+Changed “Load” to “Visit” type for when CaptureScreenContents is set to false.
+
 November 2018 Release
 Tealeaf Module 10.2.0.264 and EOCore 2.0.1.35:
 Made new build using xcode 10.1 which library now supports from 9.0 to 12.1.

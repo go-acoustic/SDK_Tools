@@ -17,8 +17,9 @@
 #define kItemLogLevels @"ItemLogLevels"
 
 typedef NS_ENUM(NSUInteger, TLFScreenViewType) {
-	TLFScreenViewTypeLoad = 2,
-	TLFScreenViewTypeUnload = 1,
+    TLFScreenViewTypeVisit = 3,
+    TLFScreenViewTypeLoad = 2,
+    TLFScreenViewTypeUnload = 1,
     TLFScreenViewTypeNil = 0
 };
 
@@ -64,28 +65,28 @@ extern NSString* kTLFMobileStateEvent;
 // The configurable items, needs to match with keys of "TLFResources.bundle/TLFConfigurableItems.plist" file.
 #define kConfigurableItemLoggingLevel                                       @"LoggingLevel"
 #define kConfigurableItemCachingLevel                                       @"CachingLevel"
-#define kConfigurableItemCachedFileMaxBytesSize				                @"CachedFileMaxBytesSize"
-#define kConfigurableItemHasToPersistLocalCache				                @"HasToPersistLocalCache"
-#define kConfigurableItemPostMessageLevelWifi				                @"PostMessageLevelWiFi"
-#define kConfigurableItemPostMessageLevelCellular			                @"PostMessageLevelCellular"
-//#define kConfigurableItemPostMessageUrl					                @"PostMessageURL"
-#define kConfigurableItemPostMessageTimeIntervals			                @"PostMessageTimeIntervals"
-#define kConfigurableItemPostMessageMaxBytesSize			                @"PostMessageMaxBytesSize"
-#define kConfigurableItemPostMessageSecondLevel				                @"PostMessageSecondLevel"
-#define kConfigurableItemDoPostOnIntervals					                @"DoPostOnIntervals"
-#define kConfigurableItemDoPostAppIsLaunched				                @"DoPostAppIsLaunched"
-#define kConfigurableItemDoPostAppGoesToBackground			                @"DoPostAppGoesToBackground"
+#define kConfigurableItemCachedFileMaxBytesSize                             @"CachedFileMaxBytesSize"
+#define kConfigurableItemHasToPersistLocalCache                             @"HasToPersistLocalCache"
+#define kConfigurableItemPostMessageLevelWifi                               @"PostMessageLevelWiFi"
+#define kConfigurableItemPostMessageLevelCellular                           @"PostMessageLevelCellular"
+//#define kConfigurableItemPostMessageUrl                                   @"PostMessageURL"
+#define kConfigurableItemPostMessageTimeIntervals                           @"PostMessageTimeIntervals"
+#define kConfigurableItemPostMessageMaxBytesSize                            @"PostMessageMaxBytesSize"
+#define kConfigurableItemPostMessageSecondLevel                             @"PostMessageSecondLevel"
+#define kConfigurableItemDoPostOnIntervals                                  @"DoPostOnIntervals"
+#define kConfigurableItemDoPostAppIsLaunched                                @"DoPostAppIsLaunched"
+#define kConfigurableItemDoPostAppGoesToBackground                          @"DoPostAppGoesToBackground"
 #define kConfigurableItemDoPostAppGoesToClose                               @"DoPostAppGoesToClose"
-#define kConfigurableItemDoPostAppComesFromBackground		                @"DoPostAppComesFromBackground"
-#define kConfigurableItemKillSwitchEnabled					                @"KillSwitchEnabled"
-#define kConfigurableItemKillSwitchUrl						                @"KillSwitchUrl"
-#define kConfigurableItemKillSwitchTimeout					                @"KillSwitchTimeout"
-#define kConfigurableItemKillSwitchMaxNumberOfTries			                @"KillSwitchMaxNumberOfTries"
+#define kConfigurableItemDoPostAppComesFromBackground                       @"DoPostAppComesFromBackground"
+#define kConfigurableItemKillSwitchEnabled                                  @"KillSwitchEnabled"
+#define kConfigurableItemKillSwitchUrl                                      @"KillSwitchUrl"
+#define kConfigurableItemKillSwitchTimeout                                  @"KillSwitchTimeout"
+#define kConfigurableItemKillSwitchMaxNumberOfTries                         @"KillSwitchMaxNumberOfTries"
 #define kConfigurableItemKillSwitchTimeInterval                             @"KillSwitchTimeInterval"
-#define kConfigurableItemUseWhiteList						                @"UseWhiteList"
-#define kConfigurableItemWhiteListParam						                @"WhiteListParam"
-#define kConfigurableItemManualPostEnabled					                @"ManualPostEnabled"
-#define kConfigurableItemDelayTimeOfTLFInitialization		                @"DelayTimeOfTLFInitialization"
+#define kConfigurableItemUseWhiteList                                       @"UseWhiteList"
+#define kConfigurableItemWhiteListParam                                     @"WhiteListParam"
+#define kConfigurableItemManualPostEnabled                                  @"ManualPostEnabled"
+#define kConfigurableItemDelayTimeOfTLFInitialization                       @"DelayTimeOfTLFInitialization"
 #define kConfigurableItemDoPostOnScreenChange                               @"DoPostOnScreenChange"
 #define kConfigurableItemPostMessageTimeout                                 @"PostMessageTimeout"
 #define kConfigurableItemMaxStringsLength                                   @"MaxStringsLength"
