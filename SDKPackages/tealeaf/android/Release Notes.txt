@@ -1,15 +1,49 @@
-###############################################################################
-# Licensed Materials - Property of IBM
-# (C) Copyright IBM Corp. 2018
-# US Government Users Restricted Rights - Use, duplication or disclosure
-# restricted by GSA ADP Schedule Contract with IBM Corp.
-###############################################################################
+/*******************************************************************************
+* Licensed Materials - Property of IBM
+* (C) Copyright IBM Corp. 2018
+* US Government Users Restricted Rights - Use, duplication or disclosure
+* restricted by GSA ADP Schedule Contract with IBM Corp.
+******************************************************************************/
+
+December 2018 Release
+Tealeaf Module 10.2.1.318, EOCore 2.0.0.214 and TeaCuts 2.0.0.28
+Started to generate AndroidX builds that have x in the name for eocorex and tealeamodx, but currently not supported for teacuts. So only manual instrumentation supports AndroidX for this release.
+New build now uses api 16 to 28 with latest settings.
+Adding Pause and Resume functionilty by using CaptureScreenContents property in TealeafLayoutConfig.json. In order to not capture user events on indicated pages.
+Fixed issues with background color.
+React Native support which can be found at https://www.npmjs.com/package/react-native-wcxa
+
+October 2018 Release
+Tealeaf Module 10.2.1.303, EOCore 2.0.0.192 and TeaCuts 2.0.0.28
+Added custom log GeoLocation API for parity.
+Added React-Native framework support feature.
+Added Pause and Resume feature per screen view.
+Added try catch on TealeafMod SDK to prevent app crashing.
+Improved performance.
+Fixed bugs.
+
+Hot Fix Aug 31 2018
+Tealeaf Module 10.2.1.264, EOCore 2.0.0.164 and TeaCuts 2.0.0.28
+Fixed an issue with Post-task not posting when app goes to background.
+
+Hot Fix Aug 10 2018
+Tealeaf Module 10.2.1.262, EOCore 2.0.0.161 and TeaCuts 2.0.0.28
+Fixed an issue with ConnectionReceiver not being unregistered from Activity.
+Fixed an issue with API level 22 where View.setBound and View.setPadding methods raised checkThread exception.
+
+Hot Fix July 2 2018
+Tealeaf Module 10.2.1.257, EOCore 2.0.0.158 and TeaCuts 2.0.0.28
+Fixed an issue with ARN when resume from airplane mode, or logging multiple screens quickly.
+
+Hot Fix Jun 14 2018
+Tealeaf Module 10.2.1.254, EOCore 2.0.0.152 and TeaCuts 2.0.0.28
+Updated to have same parity with IOS for Killswitch logic that will query server whenever Tealeaf.enable(..) is called.
 
 April 2018 Release
 Tealeaf Module 10.2.1.242, EOCore 2.0.0.147 and TeaCuts 2.0.0.28
 Fixed an issue with font color on AbsSpinner.
 Fixed an issue with font color on checkbox.
-Fixed an issue with RippleDrawable images that use a differnt image format that produced black borders that missing the transparency.
+Fixed an issue with RippleDrawable images that use a different image format that produced black borders that missing the transparency.
 Fixed an issue with image size and placement.
 Fixed an issue with get style for drawable of track.
 Fixed some issues with color values.

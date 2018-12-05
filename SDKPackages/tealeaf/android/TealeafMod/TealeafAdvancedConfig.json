@@ -5,7 +5,7 @@
 * restricted by GSA ADP Schedule Contract with IBM Corp.
 ******************************************************************************/
 {
-  "LibraryVersion": "10.2.1.242",
+  "LibraryVersion": "10.2.1.318",
   "FilterMessageTypes": false,
   "MessageTypes": "4,5",
   "AddMessageTypeHeader": false,
@@ -25,5 +25,7 @@
   "WebViewSetTagForId": false,
   "KillSwitchDelay": 300,
   "GenerateImageMD5Hash": true,
-  "SwitchWidth": 140
+  "SwitchWidth": 140,
+  "EnableActivityLifeCycleListener": true,
+  "UseXpathId": false
 }
