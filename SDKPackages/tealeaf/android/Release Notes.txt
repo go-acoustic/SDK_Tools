@@ -7,6 +7,10 @@
 
 December 2018 Release
 Tealeaf Module 10.2.1.318, EOCore 2.0.0.214 and TeaCuts 2.0.0.28
+
+
+December 2018 Release
+Tealeaf Module 10.2.1.318, EOCore 2.0.0.214 and TeaCuts 2.0.0.28
 Started to generate AndroidX builds that have x in the name for eocorex and tealeamodx, but currently not supported for teacuts. So only manual instrumentation supports AndroidX for this release.
 New build now uses api 16 to 28 with latest settings.
 Adding Pause and Resume functionilty by using CaptureScreenContents property in TealeafLayoutConfig.json. In order to not capture user events on indicated pages.
