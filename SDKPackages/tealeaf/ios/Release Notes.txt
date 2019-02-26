@@ -1,9 +1,87 @@
 ###############################################################################
 # Licensed Materials - Property of IBM
-# (C) Copyright IBM Corp. 2018
+# (C) Copyright IBM Corp. 2019
 # US Government Users Restricted Rights - Use, duplication or disclosure
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
+
+February 25 2019 Release
+Tealeaf Module 10.3.286
+Enhancements
+
+- Added support to log UILabel which are used as button with click events which helps with custom controls.
+- Pause and resume has been adjusted with edge cases capture subset data in TealeafLayoutConfig.json.
+- Gave ability to enable or disable visit for type 2 for view controller that has been removed from capture.
+- New global settings for view controllers has been added "IBMGlobalScreenSettings". Also adds the object automatically if it is not found. Also adding no capture to WKActionSheet.
+- Changed library from 3 dot notation to 2 dot notation.
+- Removed deprecated methods - (BOOL)logImageSynchronous:(UIImage*)image; from TLFCustomEvent.
+
+Bug Fixes
+
+- Fixed an issue with TLFHttpHelper messageTypesFromJson which has an exception with objectAtIndexedSubscript.
+- Fixed issues with NSArray ans NSMutableArray due to thread and garbage collection.
+
+EOCore Module 2.1.41
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+
+Bug Fixes
+
+- None.
+
+
+February 25 2019 Release
+Tealeaf Module 10.3.286
+Enhancements
+
+- Added support to log UILabel which are used as button with click events which helps with custom controls.
+- Pause and resume has been adjusted with edge cases capture subset data in TealeafLayoutConfig.json.
+- Gave ability to enable or disable visit for type 2 for view controller that has been removed from capture.
+- New global settings for view controllers has been added "IBMGlobalScreenSettings". Also adds the object automatically if it is not found. Also adding no capture to WKActionSheet.
+- Changed library from 3 dot notation to 2 dot notation.
+- Removed deprecated methods - (BOOL)logImageSynchronous:(UIImage*)image; from TLFCustomEvent.
+
+Bug Fixes
+
+- Fixed an issue with TLFHttpHelper messageTypesFromJson which has an exception with objectAtIndexedSubscript.
+- Fixed issues with NSArray ans NSMutableArray due to thread and garbage collection.
+
+EOCore Module 2.1.41
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+
+Bug Fixes
+
+- None.
+
+
+February 25 2019 Release
+Tealeaf Module 10.3.286
+Enhancements
+
+- Added support to log UILabel which are used as button with click events which helps with custom controls.
+- Pause and resume has been adjusted with edge cases capture subset data in TealeafLayoutConfig.json.
+- Gave ability to enable or disable visit for type 2 for view controller that has been removed from capture.
+- New global settings for view controllers has been added "IBMGlobalScreenSettings". Also adds the object automatically if it is not found. Also adding no capture to WKActionSheet.
+- Changed library from 3 dot notation to 2 dot notation.
+- Removed deprecated methods - (BOOL)logImageSynchronous:(UIImage*)image; from TLFCustomEvent.
+
+Bug Fixes
+
+- Fixed an issue with TLFHttpHelper messageTypesFromJson which has an exception with objectAtIndexedSubscript.
+- Fixed issues with NSArray ans NSMutableArray due to thread and garbage collection.
+
+EOCore Module 2.1.41
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+
+Bug Fixes
+
+- None.
+
 
 December 2018 Release
 Tealeaf Module 10.2.0.267 and EOCore 2.0.1.35:
