@@ -3,12 +3,12 @@
 //  EOCore
 //
 //  Licensed Materials - Property of IBM
-//  (C) Copyright IBM Corp. 2016
+//  (C) Copyright IBM Corp. 2019
 //  US Government Users Restricted Rights - Use, duplication or disclosure
 //  restricted by GSA ADP Schedule Contract with IBM Corp.
 //
 
-#define EOCORE_FRAMEWORK_VER @"2.0.1.35"
+#define EOCORE_FRAMEWORK_VER @"2.1.41"
 
 // Constants Config Items
 #define kEOConfig_CriticalBatteryLevel @"CriticalBatteryLevel"
