@@ -5,6 +5,23 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+March 15 2019 EOCore Release
+
+Tealeaf Module 10.2.15, EOCore 2.0.3 and TeaCuts 2.0.0.28
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+
+
 March 15 2019 Tealeaf Release
 
 Tealeaf Module 10.2.15, EOCore 2.0.3 and TeaCuts 2.0.0.28
