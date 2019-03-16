@@ -1,11 +1,11 @@
 /*******************************************************************************
 * Licensed Materials - Property of IBM
-* (C) Copyright IBM Corp. 2018
+* (C) Copyright IBM Corp. 2019
 * US Government Users Restricted Rights - Use, duplication or disclosure
 * restricted by GSA ADP Schedule Contract with IBM Corp.
 ******************************************************************************/
 {
-  "LibraryVersion": "10.2.1.318",
+  "LibraryVersion": "10.2.15",
   "FilterMessageTypes": false,
   "MessageTypes": "4,5",
   "AddMessageTypeHeader": false,
@@ -20,6 +20,7 @@
   "ScreenViewUnloadDelay": 1000,
   "RemoveIp": false,
   "IpPlaceholder": "N/A",
+  "UseZindex": false,
   "InitialZIndex": 500,
   "StripDrawableFolderExt": true,
   "WebViewSetTagForId": false,
@@ -27,5 +28,7 @@
   "GenerateImageMD5Hash": true,
   "SwitchWidth": 140,
   "EnableActivityLifeCycleListener": true,
-  "UseXpathId": false
+  "UseXpathId": false,
+  "RemoveAllCookies": false,
+  "EnableEnhancedMobileReplay": true
 }

@@ -94,7 +94,7 @@ namespace :tl do
 
     # Create AppendMapIds data
     appendMapIds = "\"AppendMapIds\": {\"com.any.package:id/givenIdOnXmlLayout1\":{\"mid\": \"giveAdditionalId1\"},\"com.any.package:id/givenIdOnXmlLayout2\":{\"mid\": \"giveAdditionalId2\"}}"
-
+    
     # Construct TealeafLayoutConfig data
     json = json + autoLayout + "," + appendMapIds + "}"
     #puts json
@@ -147,7 +147,7 @@ namespace :tl do
 
     postMessageIndex = getIndexOfRegExp(contents, /PostMessageUrl=/)
     contents[postMessageIndex] = "PostMessageUrl=" + $postMessageUrl
-
+    
     if !($appKey.nil?)
       appKeyIndex = getIndexOfRegExp(contents, /AppKey=/)
       contents[appKeyIndex] = "AppKey=" + $appKey
@@ -163,7 +163,7 @@ namespace :tl do
   task :fixGradle do
     # Add libraries to the dependencies section in gradle
     $gradleFile = $modulePath + "/build.gradle"
-
+    
     # Read in gradle and convert to an array
     contents = File.readlines($gradleFile)
     dependenciesStartIndex = getIndexOfRegExp(contents, /\Adependencies\s{/)
@@ -180,8 +180,6 @@ namespace :tl do
 
     # Check dependencies section
     dependenciesAppcompatIndex = getIndexOfRegExp(dependenciesArray, /com.android.support:appcompat/)
-    dependenciesSupportIndex = getIndexOfRegExp(dependenciesArray, /com.android.support-v4/)
-    dependenciesCustomtabsIndex = getIndexOfRegExp(dependenciesArray, /com.android.support:customtabs/)
     dependenciesDesignIndex = getIndexOfRegExp(dependenciesArray, /com.android.support:design/)
     dependenciesEocoreIndex = getIndexOfRegExp(dependenciesArray, /compile\s?files\('libs\/eocore.jar'\)/)
     dependenciesTealeafmodIndex = getIndexOfRegExp(dependenciesArray, /compile\s?files\('libs\/tealeafmod.jar'\)/)
@@ -195,8 +193,6 @@ namespace :tl do
 
     # Insert values if needed
     insertValueToArrayIfNil(dependenciesAppcompatIndex, $config["dependenciesAppcompat"], dependenciesEndIndex - 1, contents)
-    insertValueToArrayIfNil(dependenciesSupportIndex, $config["dependenciesSupport"], dependenciesEndIndex - 1, contents)
-    insertValueToArrayIfNil(dependenciesCustomtabsIndex, $config["dependenciesCustomtabs"], dependenciesEndIndex - 1, contents)
     insertValueToArrayIfNil(dependenciesDesignIndex, $config["dependenciesDesign"], dependenciesEndIndex - 1, contents)
     insertValueToArrayIfNil(dependenciesEocoreIndex, $config["dependenciesEocore"], dependenciesEndIndex - 1, contents)
     insertValueToArrayIfNil(dependenciesTealeafmodIndex, $config["dependenciesTealeafmod"], dependenciesEndIndex - 1, contents)
@@ -244,16 +240,18 @@ namespace :tl do
     # Check dependencies section
     accessNetworkStateIndex = getIndexOfRegExp(contents, /uses-permission\s?android:name=\"android.permission.ACCESS_NETWORK_STATE\"/)
     accessWifiStateIndex = getIndexOfRegExp(contents, /uses-permission\s?android:name=\"android.permission.ACCESS_WIFI_STATE\"/)
+    readPhoneStateIndex = getIndexOfRegExp(contents, /uses-permission\s?android:name=\"android.permission.READ_PHONE_STATE\"/)
     internetIndex = getIndexOfRegExp(contents, /uses-permission\s?android:name=\"android.permission.INTERNET\"/)
     usesPermissionIndex = getIndexOfRegExp(contents, /uses-permission/)
     applicationIndex = getIndexOfRegExp(contents, /<application/)
-
+    
     if (usesPermissionIndex == -1)
       usesPermissionIndex = applicationIndex
     end
 
     insertValueToArrayIfNil(accessNetworkStateIndex, getSpacedText($config["permissionAccessNetworkState"]), usesPermissionIndex, contents)
     insertValueToArrayIfNil(accessWifiStateIndex, getSpacedText($config["permissionAccessWIFIState"]), usesPermissionIndex, contents)
+    insertValueToArrayIfNil(readPhoneStateIndex, getSpacedText($config["permissionReadPhoneState"]), usesPermissionIndex, contents)
     insertValueToArrayIfNil(internetIndex, getSpacedText($config["permissionInternet"]), usesPermissionIndex, contents)
 
     # Save changes
@@ -297,14 +295,18 @@ namespace :tl do
       importTealeafIndex = getIndexOfRegExp(applicationContents, /\s?import\s?com.tl.uic.Tealeaf;\s?/)
       lastImportIndex = getLastIndexOfRegExp(applicationContents, /\s?import\s?/)
       onCreateIndex = getIndexOfRegExp(applicationContents, /void\s?onCreate\s?\(/)
+      onLowMemoryIndex = getIndexOfRegExp(applicationContents, /void\s?onLowMemory\s?\(/)  
+      onTerminateIndex = getIndexOfRegExp(applicationContents, /void\s?onTerminate\s?\(/)
       lastBracketIndex = getIndexOfRegExp(applicationContents, /\}/)
-
+        
       insertValueToArrayIfNil(importTealeafIndex, $config["importTealeaf"], lastImportIndex, applicationContents)
 
       if importTealeafIndex == -1
         lastBracketIndex += 1
       end
 
+      insertValueToArrayIfNil(onTerminateIndex, getSpacedText($config["onTerminateSnippet"]), lastBracketIndex, applicationContents)
+      insertValueToArrayIfNil(onLowMemoryIndex, getSpacedText($config["onLowMemorySnippet"]), lastBracketIndex, applicationContents)
       insertValueToArrayIfNil(onCreateIndex, getSpacedText($config["onCreateSnippet"]), lastBracketIndex, applicationContents)
 
       # Save changes
@@ -352,7 +354,7 @@ namespace :tl do
         if importTealeafIndex > -1
           lastBracketIndex = lastBracketIndex + 1
         else
-          lastBracketIndex = lastBracketIndex + 3
+          lastBracketIndex = lastBracketIndex + 3    
         end
 
         insertValueToArrayIfNil(tealeafEnableIndex, getSpacedText($config["tealeafEnable"]), lastBracketIndex, activityContents)
@@ -375,6 +377,9 @@ namespace :tl do
     pageFiles.each do |key, value|
       # Read in the activity class
       pageContents =  File.readlines(key)
+      onPauseIndex = getIndexOfRegExp(pageContents, /void\s?onPause\s?\(/)
+      onResumeIndex = getIndexOfRegExp(pageContents, /void\s?onResume\s?\(/)  
+      onDestroyIndex = getIndexOfRegExp(pageContents, /void\s?onDestroy\s?\(/)
       onDispatchTouchEventIndex = getIndexOfRegExp(pageContents, /boolean\s?dispatchTouchEvent\s?\(/)
       importMotionEventIndex = getIndexOfRegExp(pageContents, /\s?import\s?android.view.MotionEvent;\s?/)
       lastImportIndex = getLastIndexOfRegExp(pageContents, /\s?import\s?/)
@@ -387,6 +392,9 @@ namespace :tl do
       end
 
       insertValueToArrayIfNil(onDispatchTouchEventIndex, getSpacedText($config["onDispatchTouchEventSnippet"]), lastBracketIndex, pageContents)
+      insertValueToArrayIfNil(onDestroyIndex, getSpacedText($config["onDestroySnippet"]), lastBracketIndex, pageContents)
+      insertValueToArrayIfNil(onResumeIndex, getSpacedText($config["onResumeSnippet"]), lastBracketIndex, pageContents)
+      insertValueToArrayIfNil(onPauseIndex, getSpacedText($config["onPauseSnippet"]), lastBracketIndex, pageContents)
 
       # Save changes
       File.open(key, "w") {|file| file.puts pageContents }
@@ -444,7 +452,7 @@ namespace :tl do
       end
       index += 1
     end
-    return -1
+    return -1  
   end
 
   def getLastIndexOfRegExp(testArray, regExp)
@@ -455,7 +463,7 @@ namespace :tl do
       end
       index -= 1
     end
-    return -1
+    return -1  
   end
 
   def insertValueToArrayIfNil(indexToTest, insertText, indexToInsert, arrayToBeUpdated)
@@ -468,7 +476,7 @@ namespace :tl do
     filePath = ""
     puts "Look for file " + fileName + " in directory " + $modulePath
     # Fix file path for windows to unix
-    Dir.glob($modulePath.gsub('\\','/') + "/**/" + fileName + ".java").each do|f|
+    Dir.glob($modulePath.gsub('\\','/') + "/**/" + fileName + ".java").each do|f| 
         filePath = f
     end
     if filePath == ""
@@ -498,7 +506,7 @@ namespace :tl do
   end
 
   def getSpacesText(amountOfSpaces)
-    spaces = ""
+    spaces = ""  
     index = 0
     while index < amountOfSpaces
       spaces = spaces + " "

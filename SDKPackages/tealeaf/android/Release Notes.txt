@@ -1,9 +1,39 @@
-/*******************************************************************************
-* Licensed Materials - Property of IBM
-* (C) Copyright IBM Corp. 2018
-* US Government Users Restricted Rights - Use, duplication or disclosure
-* restricted by GSA ADP Schedule Contract with IBM Corp.
-******************************************************************************/
+###############################################################################
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corp. 2019
+# US Government Users Restricted Rights - Use, duplication or disclosure
+# restricted by GSA ADP Schedule Contract with IBM Corp.
+###############################################################################
+
+March 15 2019 Tealeaf Release
+
+Tealeaf Module 10.2.15, EOCore 2.0.3 and TeaCuts 2.0.0.28
+Enhancements
+
+- Added Click event placeholder to help keeping message in corresponding screen view.
+- Changed library from 3 dot notation to 2 dot notation.
+- Adjusted use and test of array to fix out of index issue.
+- Adjusted pause/resume for enable/disable.
+- Added debug statements from this location that helps for debugging on the queue.
+- Removed ContextCompat import since it was removed from the v4 support library.
+- Changed data structure to use CopyOnWriteArrayList instead, which should avoid ConcurrentModification error.
+- Adding IBMGlobalScreenSettings section.
+- Adding gesture place holders for the temp queue.
+- Added RemoveAllCookies property to advanced property to help not remove the cookies for edge cases.
+
+Bug Fixes
+
+- java.util.Vector$Itr.checkForComodification.
+- LayerDrawable! Drawable already belongs to another owner but does not expose a constant state.
+- Fixed to turn on and off zindex.
+- Fixed GestureDetector compatibility issue.  The Gesture compat library has conflict which throws runtime exception when you run it under AndroidX projects.
+- Fixed resolve textview alignment issue, and image position meta data missing whne using tagging or file path.
+- Fixed contraint image size for replay.
+
+Known Issues
+
+- None.
+
 
 December 2018 Release
 Tealeaf Module 10.2.1.318, EOCore 2.0.0.214 and TeaCuts 2.0.0.28
