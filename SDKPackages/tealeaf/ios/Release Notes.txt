@@ -5,6 +5,78 @@
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
+March 20 2019 Release
+Tealeaf Module 10.3.293
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with Status Bar having issue with CFThrowFormattedException for XR devices.
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+- Fixed Crashes on iOS 10.3.1 / iPhone 5 - removed assign from a property.
+- Fixed DatePicker and Picker for replay.
+- Fixed crash in while getting NSLocale's preferredLanguages
+- Fixed crash in logEvent:values API
+
+Known Issues
+
+- Alerts are broken on replay. It will be fixed in next version.
+- On iOS 12.x SDK will not capture carrier name. It will be recorded "Carrier". This is because "Apple API [[CTTelephonyNetworkInfo alloc] init]" on iOS 12 is not stable.
+
+
+
+EOCore Module 2.1.42
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+
+Known Issues
+
+- None.
+
+
+March 20 2019 Release
+Tealeaf Module 10.3.293
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with Status Bar having issue with CFThrowFormattedException for XR devices.
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+- Fixed Crashes on iOS 10.3.1 / iPhone 5 - removed assign from a property.
+- Fixed DatePicker and Picker for replay.
+- Fixed crash in while getting NSLocale's preferredLanguages
+- Fixed crash in logEvent:values API
+
+Known Issues
+
+- Alerts are broken on replay. It will be fixed in next version.
+- On iOS 12.x SDK will not capture carrier name. It will be recorded "Carrier". This is because "Apple API [[CTTelephonyNetworkInfo alloc] init]" on iOS 12 is not stable.
+
+
+
+EOCore Module 2.1.42
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+
+Known Issues
+
+- None.
+
+
 February 25 2019 Release
 Tealeaf Module 10.3.286
 Enhancements

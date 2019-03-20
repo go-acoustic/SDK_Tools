@@ -235,13 +235,6 @@
 - (BOOL)logPrintScreenEvent;
 
 /**
-Requests that the framework logs an Image.
-@param image - The UIImage to be logged.
-@return if the event was successfully logged or not.
-*/
-- (BOOL)logImage:(UIImage*)image; __attribute((deprecated("This item is no longer being supported. Please fill a support request if needed.")));
-
-/**
  Requests that the framework logs the layout of the screen
  @param viewController - UIViewController object whose layout needs to be logged
  @return if the event was successfully logged or not.
