@@ -8,7 +8,7 @@
 //  restricted by GSA ADP Schedule Contract with IBM Corp.
 //
 
-#define EOCORE_FRAMEWORK_VER @"2.1.41"
+#define EOCORE_FRAMEWORK_VER @"2.1.42"
 
 // Constants Config Items
 #define kEOConfig_CriticalBatteryLevel @"CriticalBatteryLevel"

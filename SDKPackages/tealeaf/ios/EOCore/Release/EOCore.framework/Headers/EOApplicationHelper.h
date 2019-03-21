@@ -12,6 +12,7 @@
  @version 9.0.2
  */
 #import <Foundation/Foundation.h>
+#import "EOCore/String Types/NSString+EOCoreExtensions.h"
 
 /* Module Names */
 #define kEOCoreModule @"EOCore"
