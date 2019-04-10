@@ -1,6 +1,6 @@
-###############################################################################
+d###############################################################################
 # Licensed Materials - Property of IBM
-# (C) Copyright IBM Corp. 2017
+# (C) Copyright IBM Corp. 2019
 # US Government Users Restricted Rights - Use, duplication or disclosure
 # restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
@@ -24,7 +24,7 @@ TealeafTargetSimulator folder  - Tool used to convert sessions into images which
 Templates folder               - It has the latest native templates compatible with libray.
                                  It can be found at https://github.com/ibm-watson-cxa/SDK_Tools/tree/master/NativeTemplates
 
-Libraries are compatible from 4.1.x (16) to 8.0 (26).
+Libraries are compatible from 4.1.x (16) to 9.0 (28).
 
 Documentation links:
 
