@@ -1,0 +1,59 @@
+<!-- androidER - array_controls.tlt version_1 -->
+{{ 
+	arrayConcat(
+		foreach(
+			[], 
+			"control",
+			let(
+				"tlTypeRemap",
+				{
+          "button":"control_canvas.tlt",
+          "button_normal":"control_canvas.tlt",
+          "canvas":"control_canvas.tlt",
+          "checkBox":"control_canvas.tlt",
+          "clock":"control_canvas.tlt",
+          "compoundButton":"control_canvas.tlt",
+          "grid":"control_canvas.tlt",
+          "gridCell":"control_canvas.tlt",
+          "gridRow_none":"control_canvas.tlt",
+          "gridRow_solid":"control_canvas.tlt",
+          "image":"control_canvas.tlt",
+          "imageButton":"control_canvas.tlt",
+          "label":"control_canvas.tlt",
+          "progressBar":"control_canvas.tlt",
+          "progressSpinner":"control_canvas.tlt",
+          "radioButton":"control_canvas.tlt",
+          "ratingBar":"control_canvas.tlt",
+          "scroll":"control_canvas.tlt",
+          "selectList":"control_canvas.tlt",
+          "slider":"control_canvas.tlt",
+          "switch":"control_canvas.tlt",
+          "tabBar":"control_canvas.tlt",
+          "tabContainer":"control_canvas.tlt",
+          "textArea":"control_canvas.tlt",
+          "textBox":"control_canvas.tlt",
+          "toggleButton":"control_canvas.tlt",
+          "toggleButton_normal":"control_canvas.tlt",
+          "unsupported":"control_canvas.tlt"
+				},
+				let(
+					"nativeTypeRemap",
+					readJsonFile("android\\custom\\nativeTypeRemap.json",{}),
+					if(
+						and(exists([@"control"],"type"),exists([@"nativeTypeRemap"],[@"control"]["type"])),
+						template([@"control"], concat("android\\custom\\", [@"nativeTypeRemap"][ [@"control"]["type"] ] )),
+						if(
+							and(exists([@"control"],"tlType"),exists([@"tlTypeRemap"],[@"control"]["tlType"])),
+							template([@"control"], concat("android\\ER\\", [@"tlTypeRemap"][ [@"control"]["tlType"] ] )),
+							template([@"control"], concat("android\\ER\\control_", [@"control"]["tlType"], ".tlt" ))
+						)
+					)					
+				)
+			)
+		)
+	)
+}}
+<!--
+control_alert.tlt
+
+-->

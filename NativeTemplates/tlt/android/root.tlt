@@ -1,4 +1,4 @@
-<!-- root.tlt version_26 -->
+<!-- root.tlt version_28 -->
 <html>
 <head>
   <!-- Android replay -->
@@ -205,13 +205,34 @@
 <body class="tlBackgroundColor" onload="checkStyle();" {{template([],"android\\custom\\bodyAttrs.tlt","")}} >
 <input type="hidden" id="originalPageOrientation" value="{{if(exists([],"orientation"),["orientation"],0)}}">
 <div id="orientationBox"
-     style="{{default(template([],"android\\css_orientation.tlt"),"<!--json position not specified or problem with css_orientation.tlt -->")}}">
+     style="{{default(template([],"android\\css_orientation.tlt"),"<!--json position not specified or problem with css_orientation.tlt -->")}}
+            padding:0; margin:0; box-sizing:border-box; -moz-box-sizing:border-box; line-height:normal;
+            
+              
+            {{if(and(exists([], "backgroundImage"),and(exists([],"deviceWidth"),exists([],"deviceHeight"))),
+                   concat("background-size:",str([]["deviceWidth"]),"px ",concat(str([]["deviceHeight"]),"px;","background-position:0px,0px;")),
+                "background-image:none;"
+            )}}
+            {{if(exists([], "backgroundImage"),
+                   concat("background-image:url('",
+                        if(
+                            eq(["backgroundImage"]["type"],"url"),
+                            ["backgroundImage"]["value"],
+                            if(exists([],"backgroundImage", "base64Image"), 
+                                concat("data:image/png;base64,",["backgroundImage"]["base64Image"]),
+                                concat("http://localhost:38000/images/",["backgroundImage"]["value"]))
+                        ),
+                        "');"
+                    ),
+                "background-image:none;"
+            )}}
+">
 {{
-  if(
-    exists([], "layout","controls"), 
+  if(and(exists([], "layout","controls"),exists([], "backgroundImage")), 
+    template(["layout"]["controls"],"android\\ER\\array_controls.tlt"), 
+    if(exists([], "layout","controls"), 
     template(["layout"]["controls"],"android\\array_controls.tlt"), 
-    "<!--  TLT_ERROR: MISSING [layout][controls]  -->\r\n"
-  )
+    "<!--  TLT_ERROR: MISSING [layout][controls]  -->\r\n"))
 }}
 </div>
 </body>

@@ -1,0 +1,19 @@
+<!-- iOSER - control_alert.tlt version_1 -->
+<div style="{{cssDecl(div(numericToFloat([$"clientEnvironment"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+           {{cssDecl(div(numericToFloat([$"clientEnvironment"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           position:fixed;
+           left:0;
+           top:0;
+           z-index:1520;">
+  <div
+    style="{{cssDecl(["position"]["width"],"width","px")}}
+           {{cssDecl(["position"]["height"],"height","px")}}
+           {{cssDecl(["position"]["y"],"top","px")}}
+           {{cssDecl(["position"]["x"],"left","px")}}
+           position:relative;
+           display:block;
+           {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), 1505)}}
+           border-radius: 10px;">
+    {{if(exists([], "currState", "data"), template(["currState"]["data"],"iOS\\ER\\array_controls.tlt"), "<!--  TLT_WARNING: MISSING [currState][data]  -->\r\n")}}
+  </div>
+</div>

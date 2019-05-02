@@ -1,0 +1,17 @@
+/* css_backgroundImage.tlt version_2 */
+{{
+	concat(
+		"background-image:url('",
+		if(
+			eq(["type"],"url"),
+			["value"],
+			if(exists([], "base64Image"), 
+				concat("data:image/png;base64,",["base64Image"]),
+				concat("http://localhost:38000/images/",["value"]))
+		),
+		"');"
+	)
+}}
+
+
+

@@ -1,4 +1,4 @@
-<!-- iOSER - array_controls.tlt version_2 -->
+<!-- iOSER - array_controls.tlt version_3 -->
 {{ 
 	arrayConcat(
 		foreach(
@@ -7,11 +7,37 @@
 			let(
 				"tlTypeRemap",
 				{
-          "unknown":"control_canvas.tlt",
-          "navigationBar":"control_canvas.tlt",
+          "busy":"control_canvas.tlt",
+          "button":"control_canvas.tlt",
+          "canvas":"control_canvas.tlt",
+          "collectionCell":"control_canvas.tlt",
+          "collectionItem":"control_canvas.tlt",
+          "collectionView":"control_canvas.tlt",
+          "datePicker":"control_canvas.tlt",
+          "iconImage":"control_canvas.tlt",
+          "image":"control_canvas.tlt",
           "label":"control_canvas.tlt",
+          "labelAlert":"control_canvas.tlt",
+          "navigationBar":"control_canvas.tlt",
+          "pageControl":"control_canvas.tlt",
+          "picker":"control_canvas.tlt",
+          "progressBar":"control_canvas.tlt",
+          "progressSpinner":"control_canvas.tlt",
+          "searchBar":"control_canvas.tlt",
+          "segmentedBar":"control_canvas.tlt",
+          "slider":"control_canvas.tlt",
+          "statusBar":"control_canvas.tlt",
+          "stepper":"control_canvas.tlt",
+          "tabBar":"control_canvas.tlt",
+          "tabBarButton":"control_canvas.tlt",
           "table":"control_canvas.tlt",
-          "collectionItem":"control_canvas.tlt"
+          "tableCell":"control_canvas.tlt",
+          "textarea":"control_canvas.tlt",
+          "textbox":"control_canvas.tlt",
+          "toggleButton":"control_canvas.tlt",
+          "unsupported":"control_canvas.tlt",
+          "unknown":"control_canvas.tlt",
+          "mapView":"control_canvas.tlt"
 				},
 				let(
 					"nativeTypeRemap",
@@ -30,3 +56,7 @@
 		)
 	)
 }}
+<!--
+control_alert.tlt
+
+-->

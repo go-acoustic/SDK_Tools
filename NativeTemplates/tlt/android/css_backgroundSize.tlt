@@ -1,0 +1,7 @@
+/* css_backgroundSize.tlt version_2 */
+{{if(
+	and(exists([],"deviceWidth"),exists([],"deviceHeight")),
+	concat("background-size:",str([]["deviceWidth"]),"px ",concat(str([]["deviceHeight"]),"px;","background-position:0px,0px;")),
+	""
+)}}
+{{[]}}}

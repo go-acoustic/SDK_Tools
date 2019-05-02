@@ -1,4 +1,4 @@
-<!-- iOSER - control_canvas.tlt version_2 -->
+<!-- androidER - control_canvas.tlt version_2 -->
 <style>
 /* Tooltip container */
 .tooltip_{{["cssId"]}} {
@@ -46,9 +46,9 @@
   style="padding:0;
         box-sizing:border-box;
         -moz-box-sizing:border-box;
-        {{if(exists([], "position"), template(["position"],"iOS\\css_position.tlt"),"/* TLT_WARN: [postion] not rendered */")}}
+        {{if(exists([], "position"), template(["position"],"android\\css_position.tlt"),"/* TLT_WARN: [postion] not rendered */")}}
         {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}"
         ">
   <span class="tooltiptext_{{["cssId"]}}">Original json:{{[]}}</span>
-  {{if(exists([], "currState", "data"), template(["currState"]["data"],"iOS\\ER\\array_controls.tlt"), "")}}
+  {{if(exists([], "currState", "data"), template(["currState"]["data"],"android\\ER\\array_controls.tlt"), "")}}
 </div>

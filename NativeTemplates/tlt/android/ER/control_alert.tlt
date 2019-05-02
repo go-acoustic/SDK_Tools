@@ -1,0 +1,29 @@
+<!-- androidER - control_alert.tlt version_1 -->
+<div style="{{cssDecl(div(numericToFloat([$"clientEnvironment"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+           {{cssDecl(div(numericToFloat([$"clientEnvironment"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           position:fixed;
+           left:0;
+           top:0;
+           z-index:701;">
+
+  {{if(exists([], "currState", "background"), template(["currState"]["background"],"android\\ER\\array_controls.tlt"), "<!--  TLT_WARNING: MISSING [currState][data]  -->\r\n")}}
+</div>
+
+<div style="{{cssDecl(div(numericToFloat([$"clientEnvironment"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+           {{cssDecl(div(numericToFloat([$"clientEnvironment"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           position:fixed;
+           left:0;
+           top:0;
+           z-index:705;">
+  <div class="tlBackgroundColor"
+    style="position:relative;
+           display:block;
+           z-index:705;
+           {{cssDecl(div(numericToFloat(["position"]["y"]),[$"clientEnvironment"]["pixelDensity"]),"top","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["x"]),[$"clientEnvironment"]["pixelDensity"]),"left","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px")}}
+           {{cssDecl(div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]),"height","px")}}
+           border-radius: 2px;">
+    {{if(exists([], "currState", "alert"), template(["currState"]["alert"],"android\\ER\\array_controls.tlt"), "<!--  TLT_WARNING: MISSING [currState][data]  -->\r\n")}}
+  </div>
+</div>
