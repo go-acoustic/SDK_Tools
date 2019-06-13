@@ -1,4 +1,4 @@
-<!-- androidER - control_canvas.tlt version_2 -->
+<!-- androidER - control_canvas.tlt version_3 -->
 <style>
 /* Tooltip container */
 .tooltip_{{["cssId"]}} {
@@ -11,7 +11,7 @@
 }
 
 /* Tooltip text */
-.tooltip_{{["cssId"]}} .tooltiptext_{{["cssId"]}} {
+/*.tooltip_{{["cssId"]}} .tooltiptext_{{["cssId"]}} {
   visibility: hidden;
     width: 120px;
     background-color: gray;
@@ -24,9 +24,9 @@
     top: -5px;
   left: 110%;
   word-wrap: break-word;
-}
+}*/
 
-.tooltip_{{["cssId"]}} .tooltiptext_{{["cssId"]}}::after {
+/*.tooltip_{{["cssId"]}} .tooltiptext_{{["cssId"]}}::after {
   content: "";
   position: absolute;
   top: 50%;
@@ -38,7 +38,7 @@
 }
 .tooltip_{{["cssId"]}}:hover .tooltiptext_{{["cssId"]}} {
   visibility: visible;
-}
+}*/
 </style>
 <div id="{{["id"]}}"
   data-tealeaf-native="true"
@@ -49,6 +49,6 @@
         {{if(exists([], "position"), template(["position"],"android\\css_position.tlt"),"/* TLT_WARN: [postion] not rendered */")}}
         {{if(exists([], "zIndex"), cssDecl(["zIndex"],"z-index"), "/* TLT_WARN: z-index not rendered */")}}"
         ">
-  <span class="tooltiptext_{{["cssId"]}}">Original json:{{[]}}</span>
+  <!-- <span class="tooltiptext_{{["cssId"]}}">Original json:{{[]}}</span> -->
   {{if(exists([], "currState", "data"), template(["currState"]["data"],"android\\ER\\array_controls.tlt"), "")}}
 </div>
