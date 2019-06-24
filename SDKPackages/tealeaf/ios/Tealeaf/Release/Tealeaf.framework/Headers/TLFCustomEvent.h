@@ -109,31 +109,6 @@
 #pragma mark - Network Logging
 /*!
  @brief Requests that the framework logs the connection information.
- @param connection - The NSURLSession object
- @param error - An NSError object
- @return BOOL If the event was successfully logged or not.
- */
--(BOOL)logConnection:(id)connection error:(NSError*)error;
-
-/*!
- @brief Requests that the framework logs the connection information.
- @param connection - The NSURLSession object
- @param response - The NSURLResponse object from the connection request
- @param responseTime - The time in milliseconds taken by the server to respond
- @return BOOL If the event was successfully logged or not.
- */
--(BOOL)logConnection:(id)connection response:(NSURLResponse*)response responseTimeInMilliseconds:(long long)responseTime;
-
-/*!
- @brief Requests that the framework logs the connection information.
- @param connection - The NSURLSession object
- @param request - The NSURLRequest object associated with the connection
- @return BOOL If the event was successfully logged or not.
- */
--(BOOL)logConnection:(id)connection request:(NSURLRequest*)request;
-
-/*!
- @brief Requests that the framework logs the connection information.
  @param urlSession - The NSURLSession object
  @param error - any NSError object
  @return BOOL If the event was successfully logged or not.
