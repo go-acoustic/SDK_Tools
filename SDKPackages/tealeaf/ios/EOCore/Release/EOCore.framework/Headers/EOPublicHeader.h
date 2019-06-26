@@ -8,7 +8,7 @@
 //  restricted by GSA ADP Schedule Contract with IBM Corp.
 //
 
-#define EOCORE_FRAMEWORK_VER @"2.1.42"
+#define EOCORE_FRAMEWORK_VER @"2.1.44"
 
 // Constants Config Items
 #define kEOConfig_CriticalBatteryLevel @"CriticalBatteryLevel"
@@ -62,9 +62,8 @@
 //Enums
 typedef enum {
     kEOMonitoringLevelIgnore = 0,
-    kEOMonitoringLevelCritical = 1,
-    kEOMonitoringLevelImportant = 2,
-    kEOMonitoringLevelInfo = 3
+    kEOMonitoringLevelCellularAndWiFi = 1,
+    kEOMonitoringLevelWiFi = 2,
 } kEOMonitoringLevel;
 
 typedef NS_ENUM(NSUInteger, kEONetworkStatus) {
