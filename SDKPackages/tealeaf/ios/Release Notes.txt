@@ -122,15 +122,14 @@ The following issues are for Enhanced Replay:
 - When configured to capture nothing for a page, the library captures the UIAlertController screen.
 
 
-EOCore Module 2.1.46
+EOCore Module 2.1.47
 Enhancements
 
--  Treat anything greater than kEOMonitoringLevelCellularAndWiFi to be WiFi ONLY for backwards compatibility - updated EOSession file to support backwards compatiblity with log levels. Anything above 1 will be treatd as WiFi and Cellular. 0 is don't log, 1 is cellular and WiFi and 2 is WiFi only.
-- Adding support for arm64e.
+-  None.
 
 Bug Fixes
 
-- None.
+- Fixed an issue with cocoapods using two dot natation versus three dot notation.
 
 Known Issues
 
