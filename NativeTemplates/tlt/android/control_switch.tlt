@@ -1,4 +1,4 @@
-<!-- control_switch.tlt version_4 -->
+<!-- control_switch.tlt version_5 -->
 <style>
   .tl-switch-{{["cssId"]}} {
   height: {{if(exists([], "position", "height"), div(numericToFloat(["position"]["height"]),[$"clientEnvironment"]["pixelDensity"]), "25")}}px;
@@ -90,6 +90,9 @@
         {{if(exists([], "position", "width"), cssDecl(div(numericToFloat(["position"]["width"]),[$"clientEnvironment"]["pixelDensity"]),"width","px"), "/* TLT_WARN: [y] not rendered */")}}">
   <span class="tl-switch-label-{{["cssId"]}}">{{default(["currState"]["text"],"")}}</span>
   <span class="tl-switch-{{["cssId"]}}">
-    <span id="{{["id"]}}-thumb" class="tl-switch-checked-{{["cssId"]}}" style="{{if(["currState"]["isToggled"], "float: right;", "float: left;")}}">{{if(["currState"]["thumbText"], ["currState"]["thumbText"], "")}}</span>
+    <span id="{{["id"]}}-thumb" 
+          thumbWidth="{{if(exists([], "style", "switchWidth"), if(eq(["style"]["switchWidth"],0),"30",div(div(numericToFloat(["style"]["switchWidth"]),[$"clientEnvironment"]["pixelDensity"]),2)), "50")}}px" 
+          class="tl-switch-checked-{{["cssId"]}}" 
+          style="{{if(["currState"]["isToggled"], "float: right;", "float: left;")}}">{{if(["currState"]["thumbText"], ["currState"]["thumbText"], "")}}</span>
   </span>
 </div>
