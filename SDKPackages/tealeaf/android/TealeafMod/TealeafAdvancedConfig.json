@@ -5,7 +5,7 @@
 * restricted by GSA ADP Schedule Contract with IBM Corp.
 ******************************************************************************/
 {
-  "LibraryVersion": "10.2.15",
+  "LibraryVersion": "10.3.4",
   "FilterMessageTypes": false,
   "MessageTypes": "4,5",
   "AddMessageTypeHeader": false,
@@ -30,5 +30,7 @@
   "EnableActivityLifeCycleListener": true,
   "UseXpathId": false,
   "RemoveAllCookies": false,
-  "EnableEnhancedMobileReplay": true
+  "ColorPrimary": "#3F51B5",
+  "ColorPrimaryDark": "#303F9F",
+  "ColorAccent": "#FF4081"
 }
