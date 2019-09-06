@@ -7,7 +7,7 @@
 
 July 24 2019 Tealeaf Release
 
-Tealeaf Module 10.3.4, EOCore 2.0.6 and TeaCuts 2.0.0.28 (Kotlin apps require manual instrumentation)
+Tealeaf Module 10.3.4, EOCore 2.0.6 and TeaCuts 2.0.0.28 (Kotlin and AndroidX apps require manual instrumentation)
 Enhancements
 
 - Added Click event placeholder to help keeping message in corresponding screen view.
