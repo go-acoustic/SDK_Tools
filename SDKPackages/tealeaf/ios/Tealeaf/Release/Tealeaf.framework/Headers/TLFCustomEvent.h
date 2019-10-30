@@ -1,14 +1,17 @@
 //
-//  Licensed Materials - Property of IBM
-//  (C) Copyright IBM Corp. 2019
-//  US Government Users Restricted Rights - Use, duplication or disclosure
-//  restricted by GSA ADP Schedule Contract with IBM Corp.
+// Copyright (C) 2019 Acoustic, L.P. All rights reserved.
+//
+// NOTICE: This file contains material that is confidential and proprietary to
+// Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
+// industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
+// Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+// prohibited.
 //
 
 /*!
  @file TLFCustomEvent.h
  @brief Header file defining all manual API calls that can be made to the TeaLeaf library
- @copyright IBM Corp. 2017
+ @copyright Acoustic, L.P. 2017
  */
 
 #import <Foundation/Foundation.h>
@@ -58,8 +61,8 @@
 
 #pragma mark - Errors and Exceptions
 /*!
- @abstract Log an NSException.
- @brief In the event of an NSException, the developer can log that exception using the following API. Using this API call the unhandled field will be defaulted to NO.
+ @brief Log an NSException
+ @discussion In the event of an NSException, the developer can log that exception using the following API. Using this API call the unhandled field will be defaulted to NO.
  @param exception - the exception to be logged.
  @return BOOL Whether the message was successfully logged or not
  */
@@ -276,6 +279,14 @@
  @return if the event was successfully logged or not.
  */
 -(BOOL)logScreenLayoutWithViewController:(UIViewController *)viewController andRelatedViews:(NSArray*)views andDelay:(CGFloat)delay andName:(NSString*)name;
+
+/**
+ Requests that the framework logs the layout of the screen w/o logging a screenview change event
+ @param viewController - UIViewController object whose layout needs to be logged.
+ @param views - Array of related views to be logged
+ @return if the event was successfully logged or not.
+ */
+-(BOOL)logScreenLayoutDynamicUpdateWithViewController:(UIViewController *)viewController andRelatedViews:(NSArray*)views ;
 
 /**
  Message type to indicate form completion on view.
