@@ -2,13 +2,16 @@
 //  EOPublicHeader.h
 //  EOCore
 //
-//  Licensed Materials - Property of IBM
-//  (C) Copyright IBM Corp. 2019
-//  US Government Users Restricted Rights - Use, duplication or disclosure
-//  restricted by GSA ADP Schedule Contract with IBM Corp.
+// Copyright (C) 2019 Acoustic, L.P. All rights reserved.
+//
+// NOTICE: This file contains material that is confidential and proprietary to
+// Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
+// industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
+// Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+// prohibited.
 //
 
-#define EOCORE_FRAMEWORK_VER @"2.1.42"
+#define EOCORE_FRAMEWORK_VER @"2.1.83"
 
 // Constants Config Items
 #define kEOConfig_CriticalBatteryLevel @"CriticalBatteryLevel"
@@ -23,6 +26,7 @@
 #define kEOConfig_DynamicConfigurationEnabled @"DynamicConfigurationEnabled"
 #define kEOConfig_CachedFileMaxBytesSize @"CachedFileMaxBytesSize"
 #define kEOConfig_PostMessageMaxBytesSize @"PostMessageMaxBytesSize"
+#define kEOConfig_MaxNumberOfFilesToCache @"MaxNumberOfFilesToCache"
 #define kEOConfig_TurnOffCorrectOrientationUpdates @"TurnOffCorrectOrientationUpdates"
 #define kEOConfig_DefaultOrientation @"DefaultOrientation"
 
@@ -39,6 +43,7 @@
 #define kEOLoggingLevel @"LoggingLevel"
 #define kEOConfig_LibraryVersion @"LibraryVersion"
 #define kEOConfig_MessageVersion @"MessageVersion"
+#define kEOConfig_QueryStringEncodeCharSet @"QueryStringEncodeCharSet"
 
 //Keys for Environmental services and others consumed by TLFEnvironmentManager
 #define keyEONetworkStatus @"keyOENetworkStatus"
@@ -62,9 +67,8 @@
 //Enums
 typedef enum {
     kEOMonitoringLevelIgnore = 0,
-    kEOMonitoringLevelCritical = 1,
-    kEOMonitoringLevelImportant = 2,
-    kEOMonitoringLevelInfo = 3
+    kEOMonitoringLevelCellularAndWiFi = 1,
+    kEOMonitoringLevelWiFi = 2,
 } kEOMonitoringLevel;
 
 typedef NS_ENUM(NSUInteger, kEONetworkStatus) {
