@@ -1,13 +1,110 @@
-###############################################################################
-# Licensed Materials - Property of IBM
-# (C) Copyright IBM Corp. 2017
-# US Government Users Restricted Rights - Use, duplication or disclosure
-# restricted by GSA ADP Schedule Contract with IBM Corp.
+# Copyright (C) 2019 Acoustic, L.P. All rights reserved.
+# 
+# NOTICE: This file contains material that is confidential and proprietary to
+# Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
+# industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
+# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+# prohibited.
 ###############################################################################
 
-Apr 2018 Release
-EOCore 2.0.0.81:
-Fixed an issue with url encoding in EOCore (DA SDK specific) because of a deprecated method (stringByAddingPercentEscapesUsingEncoding:).
+October 31 2019 Release
+DigitalAnalytics Module 1.1.23
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+- Adding support for arm64e.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+EOCore Module 2.1.83
+Enhancements
+
+- Add networkCarrierNames for modules.
+- Add ipv6 for modules.
+
+Bug Fixes
+
+- Fixed an issue with cocoapods using two dot notation versus three dot notation.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# prohibited.
+###############################################################################
+
+October 31 2019 Release
+DigitalAnalytics Module 1.1.21
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+- Adding support for arm64e.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+EOCore Module 2.1.83
+Enhancements
+
+- Add networkCarrierNames for modules.
+- Add ipv6 for modules.
+
+Bug Fixes
+
+- Fixed an issue with cocoapods using two dot notation versus three dot notation.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+
+March 21 2019 Release
+DigitalAnalytics Module 1.1.12
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+- Adding support for arm64e.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+EOCore Module 2.1.42
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+
+Known Issues
+
+- None.
+
 
 Jan 2018 Release
 DAMod 1.0.18 and EOCore 2.0.0.74
@@ -73,4 +170,3 @@ Procedure
 5. Open the app delegate file of your application and locate the didFinishLaunchingWithOptions function and call DigitalAnalytics.startup() from there or from another suitable location.
 6. Locate the applicationWillTerminate function and call DigitalAnalytics.shutdown() from applicationWillTerminate or from another suitable location.
 7. Call the Digital Analytics fireXXX APIs from any appropriate location after DigitalAnalytics.startup() is called the first time.
-
