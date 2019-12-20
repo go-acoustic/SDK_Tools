@@ -24,6 +24,23 @@ Known Issues
 - None.
 
 
+
+December 20 2019 Tealeaf Module 10.3.21, EOCore 2_0_9 and TeaCuts 2.0.0.29
+
+EOCore Release
+Enhancements
+
+- Changed to support Android Enhance Image Replay feature with per screen configuration.
+
+Bug Fixes
+
+- Fixed an issue when instrument with Tealeaf & DA in the sample app when posting data.
+
+Known Issues
+
+- None.
+
+
 Tealeaf Module 10.3.4, EOCore 2.0.6 and TeaCuts 2.0.0.28
 Enhancements
 
