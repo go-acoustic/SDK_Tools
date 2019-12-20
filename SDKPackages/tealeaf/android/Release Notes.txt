@@ -1,13 +1,30 @@
-###############################################################################
-# Licensed Materials - Property of IBM
-# (C) Copyright IBM Corp. 2019
-# US Government Users Restricted Rights - Use, duplication or disclosure
-# restricted by GSA ADP Schedule Contract with IBM Corp.
-###############################################################################
+###############################################################################################
+# Copyright (C) 2019 Acoustic, L.P. All rights reserved.
+# 
+# NOTICE: This file contains material that is confidential and proprietary to
+# Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
+# industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
+# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+# prohibited.
+###############################################################################################
 
-July 24 2019 Tealeaf Release
+December 20 2019 Tealeaf Module 10.3.21, EOCore 2_0_9 and TeaCuts 2.0.0.29
 
-Tealeaf Module 10.3.4, EOCore 2.0.6 and TeaCuts 2.0.0.28 (Kotlin and AndroidX apps require manual instrumentation)
+EOCore Release
+Enhancements
+
+- Changed to support Android Enhance Image Replay feature with per screen configuration.
+
+Bug Fixes
+
+- Fixed an issue when instrument with Tealeaf & DA in the sample app when posting data.
+
+Known Issues
+
+- None.
+
+
+Tealeaf Module 10.3.4, EOCore 2.0.6 and TeaCuts 2.0.0.28
 Enhancements
 
 - Added Click event placeholder to help keeping message in corresponding screen view.
@@ -38,7 +55,6 @@ Known Issues
 - On Enhanced Replay, change events are not currently captured on Android SDK.
 - On SaaS, on Layout capture we are missing toggle control during session replay.
 - Tap Hold sometimes produces a type 11 gesture on Linear Layout.
-- Per screen screenshotlayout configuration is not supported in this version.
 
 
 March 15 2019 EOCore Release

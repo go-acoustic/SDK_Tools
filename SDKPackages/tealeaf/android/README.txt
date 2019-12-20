@@ -1,11 +1,8 @@
 ###############################################################################
-# Copyright (C) 2019 Acoustic, L.P. All rights reserved.
-# 
-# NOTICE: This file contains material that is confidential and proprietary to
-# Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
-# industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
-# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
-# prohibited.
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corp. 2017
+# US Government Users Restricted Rights - Use, duplication or disclosure
+# restricted by GSA ADP Schedule Contract with IBM Corp.
 ###############################################################################
 
 There are five folders created for the Tealeaf Android release.
@@ -27,7 +24,7 @@ TealeafTargetSimulator folder  - Tool used to convert sessions into images which
 Templates folder               - It has the latest native templates compatible with libray.
                                  It can be found at https://github.com/ibm-watson-cxa/SDK_Tools/tree/master/NativeTemplates
 
-Libraries are compatible from 4.1.x (16) to 9.0 (28).
+Libraries are compatible from 4.1.x (16) to 8.0 (26).
 
 Documentation links:
 

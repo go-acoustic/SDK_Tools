@@ -1,9 +1,3 @@
-/*******************************************************************************
-* Licensed Materials - Property of IBM
-* (C) Copyright IBM Corp. 2019
-* US Government Users Restricted Rights - Use, duplication or disclosure
-* restricted by GSA ADP Schedule Contract with IBM Corp.
-******************************************************************************/
 {
   "CachedFileMaxBytesSize": 5120000,
   "PostMessageMaxBytesSize": 2000000,
@@ -17,7 +11,7 @@
   "TurnOffCorrectOrientationUpdates": false,
   "DefaultOrientation": 0,
   "ApplicationInBackgroundEnabled": true,
-  "LibraryVersion": "2.0.3",
+  "LibraryVersion": "2.0.9",
   "MessageVersion": "6.0.0.0",
   "MNCMCC": {
     "00": "N/A",
