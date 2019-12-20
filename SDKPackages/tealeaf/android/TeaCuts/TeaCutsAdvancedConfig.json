@@ -5,7 +5,7 @@
  * restricted by GSA ADP Schedule Contract with IBM Corp.
  ******************************************************************************/
 {
-	"TeaCutsLibraryVersion":"2.0.0.28",
+	"TeaCutsLibraryVersion":"2.0.0.29",
     "DefaultAlertDialogLayoutDelay": 500,
     "ExtendsGoogleWebViewClient": false
 }
