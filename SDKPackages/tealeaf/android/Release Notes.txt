@@ -10,6 +10,38 @@
 
 December 20 2019 Tealeaf Module 10.3.21, EOCore 2_0_9 and TeaCuts 2.0.0.29
 
+Tealeaf Release
+Enhancements
+
+- Updated to support Android 4 to 10, or API 16 to 29.
+- Simplified library distribution with one jar supports AndroidX and legacy Android frameworks.
+- Added auto screen logging when swipe gesture to support ScrollView and Fragments use cases.
+- Added capability to do screenshot per screen configuration in Layout Config.
+- Added Visited property to track visited screens without layout.
+
+
+Bug Fixes
+
+- ScrollView manual logging creates white background.
+- On SaaS, replay displays black blocks in place of Android switch control.
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- On SaaS, replay of the attached Hybrid session does not scrolls to replay the gestures during replay resulting.
+- On Enhanced Replay, change events are not currently captured on Android SDK.
+- On SaaS, on Layout capture we are missing toggle control during session replay.
+- Tap Hold sometimes produces a type 11 gesture on Linear Layout.
+- On Android 10 device, replay page might contain blank region on the top.
+  When ER is enabled, last change event on EditText captures next screen visit due to lifecycle.
+  Also Enhanced mobile replay for tap event might show Y-coordinate incorrectly.
+- Hybrid app using Google Webview creates multiple screenviews on AndroidX & Android 9.
+- Click event on the viewGroup on the android application does not highlight on both On-Prem and SaaS.
+
+
+
+December 20 2019 Tealeaf Module 10.3.21, EOCore 2_0_9 and TeaCuts 2.0.0.29
+
 EOCore Release
 Enhancements
 

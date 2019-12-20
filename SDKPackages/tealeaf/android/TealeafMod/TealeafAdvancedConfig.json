@@ -1,11 +1,5 @@
-/*******************************************************************************
-* Licensed Materials - Property of IBM
-* (C) Copyright IBM Corp. 2019
-* US Government Users Restricted Rights - Use, duplication or disclosure
-* restricted by GSA ADP Schedule Contract with IBM Corp.
-******************************************************************************/
 {
-  "LibraryVersion": "10.3.4",
+  "LibraryVersion": "10.3.21",
   "FilterMessageTypes": false,
   "MessageTypes": "4,5",
   "AddMessageTypeHeader": false,
