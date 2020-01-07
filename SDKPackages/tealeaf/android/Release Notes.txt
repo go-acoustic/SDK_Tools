@@ -14,6 +14,7 @@ Tealeaf Release
 Enhancements
 
 - Updated to support Android 4 to 10, or API 16 to 29.
+- TeaCuts 2.0.0.29 now supports Kotlin automated instrucmentation similar to Java.
 - Simplified library distribution with one jar supports AndroidX and legacy Android frameworks.
 - Added auto screen logging when swipe gesture to support ScrollView and Fragments use cases.
 - Added capability to do screenshot per screen configuration in Layout Config.
