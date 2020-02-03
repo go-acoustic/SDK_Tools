@@ -1,9 +1,52 @@
-# Copyright (C) 2019 Acoustic, L.P. All rights reserved.
+###############################################################################
+# Copyright (C) 2020 Acoustic, L.P. All rights reserved.
 # 
 # NOTICE: This file contains material that is confidential and proprietary to
 # Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
 # industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
 # Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+# prohibited.
+###############################################################################
+
+February 3 2020 Release
+Tealeaf Module 10.5.3
+Enhancements
+
+- Removed support for UIWebView due to reported Apple warnings when applications are submitted to AppStore: 
+  ITMS-90809: Deprecated API Usage.
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS 13 (single window full screen app) onwards are in beta. Multi Window apps are not YET supported.
+
+
+EOCore Module 2.2.6
+Enhancements
+
+- Removed support for UIWebView due to reported Apple warnings when applications are submitted to AppStore: 
+  ITMS-90809: Deprecated API Usage.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
 # prohibited.
 ###############################################################################
 
