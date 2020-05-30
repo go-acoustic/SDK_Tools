@@ -6,19 +6,19 @@
 	<dict>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
-		eMxaswFqUhLdV8jkfa8gVupkvwg=
+		pq1lTGCPWtqDIR+zYGCyCMFfbAA=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/MainMenu.nib</key>
 		<data>
-		cQr9cnlbJub6NPKEVNVsfO/7/mU=
+		R5GURu6VGOEAAZWUV2uyv+kdFGU=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib</key>
 		<data>
-		KS5ES/KnwSSewDmeusIUbq/FnyA=
+		S/DouzPgRV6S8166t6SIgC5SN1k=
 		</data>
 		<key>Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib</key>
 		<data>
-		tJTHVjulgksLnq24GWPwvjCKsE8=
+		8B5mWJZvDkU3c5avk0uNYZmEk8U=
 		</data>
 		<key>Resources/Default.png</key>
 		<data>
@@ -26,53 +26,71 @@
 		</data>
 		<key>Resources/Info.plist</key>
 		<data>
-		QHGgnH3lCDRhBPlShpR1c4zBBvM=
+		CXjHzdjtTNJG9EB9D6s9QKxFyT0=
 		</data>
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Frameworks/TealeafMD5Hash.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			HdOby3PO3F4X5r1eBS4JyTsM5MI=
+			</data>
+			<key>requirement</key>
+			<string>identifier "acoustic.TealeafMD5Hash" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Shridhar Damale (72K723G9XT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+		</dict>
+		<key>Frameworks/TealeafSHA2Hash.framework</key>
+		<dict>
+			<key>cdhash</key>
+			<data>
+			zSOTi1MX4jLwBRWIAs/MfBXHa+0=
+			</data>
+			<key>requirement</key>
+			<string>identifier "acoustic.TealeafSHA2Hash" and anchor apple generic and certificate leaf[subject.CN] = "Apple Development: Shridhar Damale (72K723G9XT)" and certificate 1[field.1.2.840.113635.100.6.2.1] /* exists */</string>
+		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			eMxaswFqUhLdV8jkfa8gVupkvwg=
+			pq1lTGCPWtqDIR+zYGCyCMFfbAA=
 			</data>
 			<key>hash2</key>
 			<data>
-			VijR1aSi3OLuUeOqNakJSw3U3GwyIXUQM+nMUGjK20w=
+			OJ/ilu63MimV8ub9klKcItCeUXjo+iu9IAB9HMpy29s=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/MainMenu.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cQr9cnlbJub6NPKEVNVsfO/7/mU=
+			R5GURu6VGOEAAZWUV2uyv+kdFGU=
 			</data>
 			<key>hash2</key>
 			<data>
-			uUSOXmYhDMdYdyTWGv2YtLUHeN/j/99cCPrZsgYh6Jg=
+			kxO4Vwt+75P3hKYfIWJLJqyp3vs4LohVr32rBg/u0Yk=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			KS5ES/KnwSSewDmeusIUbq/FnyA=
+			S/DouzPgRV6S8166t6SIgC5SN1k=
 			</data>
 			<key>hash2</key>
 			<data>
-			f8DOI9UPHsjW29EWK4LHeYZVwirVetW7JMtcQFGuC9I=
+			2uPgOR7pLVtr98t91XNRpzugUY3j0p/gzRjvTmqzrz0=
 			</data>
 		</dict>
 		<key>Resources/Base.lproj/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			tJTHVjulgksLnq24GWPwvjCKsE8=
+			8B5mWJZvDkU3c5avk0uNYZmEk8U=
 			</data>
 			<key>hash2</key>
 			<data>
-			iXqXVoNOAyIntFymlwJwq8sZtyiQDQlWDp/7qA0Yoys=
+			npkw1AToBQhJpVJjfUvkY7vCOVbWZ46H712zGFcb8RU=
 			</data>
 		</dict>
 		<key>Resources/Default.png</key>
@@ -90,11 +108,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			QHGgnH3lCDRhBPlShpR1c4zBBvM=
+			CXjHzdjtTNJG9EB9D6s9QKxFyT0=
 			</data>
 			<key>hash2</key>
 			<data>
-			az69p6FCxeK5jwuzOMYlyGoGV+xJkCGKmjyGaivW7Ug=
+			6JQ+SvVfYB+gdnqHMbcJuBrXWHN1STtM4dVpQnhD0K4=
 			</data>
 		</dict>
 	</dict>
