@@ -97,6 +97,7 @@ extern NSString* kTLFMobileStateEvent;
 #define kConfigurableItemLogViewLayoutOnScreenTransition	                @"LogViewLayoutOnScreenTransition"
 #define kConfigurableItemGetImageDataOnScreenLayout                         @"GetImageDataOnScreenLayout"
 #define kConfigurableItemSessionizationCookieName                           @"SessionizationCookieName"
+#define kConfigurableItemSessionizationCookieSecure                         @"CookieSecure"
 #define kConfigurableItemSetGestureDetector                                 @"SetGestureDetector"
 #define kConfigurableItemCaptureNativeGesturesOnWebview                     @"CaptureNativeGesturesOnWebview"
 #define kConfigurableItemLogLocationEnabled                                 @"LogLocationEnabled"
@@ -111,6 +112,7 @@ extern NSString* kTLFMobileStateEvent;
 #define kConfigurableItemDisableAlertAutoCapture                            @"DisableAlertAutoCapture"  
 #define kConfigurableItemDisableAlertBackgroundForDisabledLogViewLayout     @"DisableAlertBackgroundForDisabledLogViewLayout"
 #define kConfigurableItemInitialZIndex                                      @"InitialZIndex"
+#define kConfigurableItemSubViewArrayZIndexIncrementTrigger                 @"SubViewArrayZIndexIncrementTrigger"
 #define kConfigurableItemUseXpathId                                         @"UseXpathId"
 
 // TLF Public Protocols

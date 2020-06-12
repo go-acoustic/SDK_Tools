@@ -139,7 +139,7 @@
  @brief Requests that the framework logs the connection information.
  @param initTime - Time duration since current session start
  @param loadTime - Time duration since current session start //TODO: EVALUATE what param loadTime actually means
- @param connection - The NSURLConnection object
+ @param connection - The NSURLSession object, can be nil
  @param request - The NSURLRequest object associated with the connection
  @param response - The NSURLResponse object from the connection request
  @param error - any NSError object
@@ -211,6 +211,13 @@
  @return if the event was successfully logged or not.
  */
 - (BOOL)logPrintScreenEvent;
+
+/**
+ Requests that the framework log an image as a background in a type 10 screen layout event.
+ @param image - UIImage object that needs to be added as a background for the layout
+ @return if the event was successfully logged or not.
+ */
+- (BOOL)logScreenLayoutWithImage:(UIImage *)image;
 
 /**
  Requests that the framework logs the layout of the screen
