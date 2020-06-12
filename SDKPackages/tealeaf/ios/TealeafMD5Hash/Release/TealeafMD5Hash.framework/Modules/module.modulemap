@@ -1,0 +1,6 @@
+framework module TealeafMD5Hash {
+  umbrella header "TealeafMD5Hash.h"
+
+  export *
+  module * { export * }
+}

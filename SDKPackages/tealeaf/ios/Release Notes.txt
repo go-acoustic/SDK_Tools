@@ -1,0 +1,951 @@
+/********************************************************************************************
+# Copyright (C) 2020 Acoustic, L.P. All rights reserved.
+# 
+# NOTICE: This file contains material that is confidential and proprietary to
+# Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
+# industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
+# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+# prohibited.
+********************************************************************************************/
+
+June 12 2020 Release
+TealeafMD5Hash Release
+Enhancements
+- None.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+
+TealeafSHA2Hash Release
+Enhancements
+- None.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+Tealeaf Module 10.6.20
+Enhancements
+
+- Added logLayoutWithImage API.
+- Added masking configurations for individual screens.
+- Added support for masking based on contents of a Text Field. Only supported in Layout Based Replay. Feature is and will not be available for Enhanced Replay.
+- Add CookieSecure flag to TealeafBasicConfig.
+- Updated Image tool to support:
+	1. MacOS catalina
+	2. Dark Mode on desktop
+	3. Other compiler errors/warnings.
+	4. MD5, SHA256 and SHA512 hashing algorithms for images.
+- Implemented posting data on screen change if DoPostOnScreenChange is set to YES.
+- Basic data collection and replay on a single window, full screen iPadOS 13.x applications.
+- Intercept NSURLSession HTTP requests and log them as type 3.
+- Add "darkMode" ClentState json object that tells if dark mode is active.
+- Updated Tealeaf SDK to use SHA256 hash algorithm by default instead of MD5.
+- Created a separate optional MD5 library.
+- Created a separate optional SHA512 library.
+- Added support for Enhanced Replay for React Native.
+- Removed references to NSURLConnection
+
+
+Bug Fixes
+
+- Fix bug in reading user agent from WKWebView.
+- Type 2 was broken for hybrid because of WKActionSheet related class, its fixed.
+- Fixed background color for Navigation and Status Bar.
+- Added SubViewArrayZIndexIncrementTrigger property in TealeafAdvancedConfig.json to help with zindex overlapped objects.
+
+Known Issues
+
+- The pink boarder on Gestures screenview is off when captured using ER, because if timing or garbage collection.
+- Template issue - The back link is missing during capture on some screens Progressindicator, AlertViewController, Gestures screenview and picker view.
+- Template issue - Battery icon not visible in green anymore.
+- Improvement :- "connectionType" remains N/A if device is on WiFi on app start. 
+- DoPostOnScreenChange is not working as expected, because of temp queue.
+- Reporting of multiple carrier names in JSON if the device has Dual SIM is a beta feature.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Certain Alerts may appear correctly during replay.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS Multi Window apps are not YET supported.
+
+EOCore Module 2.3.10
+Enhancements
+
+- Created a separate optional MD5 library.
+- Created a separate optional SHA512 library.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+
+March 16 2020 Release
+Tealeaf Module 10.5.5
+Enhancements
+
+- Added support for Enhanced Replay for React Native.
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS 13 (single window full screen app) onwards are in beta. Multi Window apps are not YET supported.
+
+
+EOCore Module 2.2.6
+Enhancements
+
+- Removed support for UIWebView due to reported Apple warnings when applications are submitted to AppStore: 
+  ITMS-90809: Deprecated API Usage.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# prohibited.
+###############################################################################
+
+February 3 2020 Release
+Tealeaf Module 10.5.3
+Enhancements
+
+- Removed support for UIWebView due to reported Apple warnings when applications are submitted to AppStore: 
+  ITMS-90809: Deprecated API Usage.
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS 13 (single window full screen app) onwards are in beta. Multi Window apps are not YET supported.
+
+
+EOCore Module 2.2.6
+Enhancements
+
+- Removed support for UIWebView due to reported Apple warnings when applications are submitted to AppStore: 
+  ITMS-90809: Deprecated API Usage.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+# prohibited.
+###############################################################################
+
+February 3 2020 Release
+Tealeaf Module 10.5.3
+Enhancements
+
+- Removed support for UIWebView due to reported Apple warnings when applications are submitted to AppStore: 
+  ITMS-90809: Deprecated API Usage.
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS 13 (single window full screen app) onwards are in beta. Multi Window apps are not YET supported.
+
+
+EOCore Module 2.2.6
+Enhancements
+
+- Removed support for UIWebView due to reported Apple warnings when applications are submitted to AppStore: 
+  ITMS-90809: Deprecated API Usage.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# prohibited.
+###############################################################################
+
+November 13 2019 Release
+Tealeaf Module 10.4.36
+Enhancements
+
+- New build using Catalina OS and XCode 11.2.
+
+Bug Fixes
+
+- User events are getting captured even when they have been configured not to : refactored code to track disabled viewcontroller in the screen manager state machine.
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+
+
+
+EOCore Module 2.1.83
+Enhancements
+
+- Add networkCarrierNames for modules.
+- Add ipv6 for modules.
+
+Bug Fixes
+
+- Fixed an issue with cocoapods using two dot notation versus three dot notation.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# prohibited.
+###############################################################################
+
+October 29 2019 Release
+Tealeaf Module 10.4.34
+Enhancements
+
+- Added accessibility data to json payload - id, hint and label to type 4, type 10 and type 11
+- Added IPV6. IP address is already there in the payload. Configuration settings RemoveIp and IpPlaceholder will apply to both ip and ipv6
+- Added support for MaxNumberOfFilesToCache in case of archival of unsent json data. HasToPersistLocalCache has to be true to make it work. If HasToPersistLocalCache is false, nothing is cached to local storage like before.
+- Add support for multiple carriers in the json payload
+- Add exact name of the iOS device to json payload. It is called machineNameEnglish and machineNameHW and can be found in mobileEnvironment.
+- Added support for "Dynamic Update" i.e. sending multiple layout type 10 messages for a single screen view load type 2 message. Before each type 10 would require its own type 2. 
+- Code injection can now be turned off individually for : NSData, UIViewController, UITableView, UITableViewCell, UIImage, UIAlertAction, UIPageControl, UIPickerView, UIDatePicker, UIWebView, WKWebView. Look for NSObject+TealeafEarlyLoads.m file for details. Add those methods to your NSObject extensions.
+- Pixel Density for screenshots is now configurable via TealeafBasicConfig.plist ScreenShotPixelDensity setting. Default is 1.5. 0 or negative values are invalid.
+
+Bug Fixes
+
+- Fixed bugs related to layout config, enhanced replay, log levels.
+- Fixed an issue where mobile state was missing from json payload
+- Fixed issue related to wkactionsheet unload which was causing incorrect navlist and replay 
+- Fixed issue related to PostMessageMaxBytesSize
+- Fixed React Native specific exception about textStorage
+- Fixed logEvent method to accept empty values dictionary
+- Fixed iOS 13.x relates issues - TabBar crash, Status Bar crash, custom UIColor crash
+- Fixed issue related to highlight not showing up correctly on type 4 textChange events
+- Ignored new found apple classes/view controllers such as PredicationViewController
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+
+
+
+EOCore Module 2.1.83
+Enhancements
+
+- Add networkCarrierNames for modules.
+- Add ipv6 for modules.
+
+Bug Fixes
+
+- Fixed an issue with cocoapods using two dot notation versus three dot notation.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+# prohibited.
+###############################################################################
+
+October 29 2019 Release
+Tealeaf Module 10.4.34
+Enhancements
+
+- Added accessibility data to json payload - id, hint and label to type 4, type 10 and type 11
+- Added IPV6. IP address is already there in the payload. Configuration settings RemoveIp and IpPlaceholder will apply to both ip and ipv6
+- Added support for MaxNumberOfFilesToCache in case of archival of unsent json data. HasToPersistLocalCache has to be true to make it work. If HasToPersistLocalCache is false, nothing is cached to local storage like before.
+- Add support for multiple carriers in the json payload
+- Add exact name of the iOS device to json payload. It is called machineNameEnglish and machineNameHW and can be found in mobileEnvironment.
+- Added support for "Dynamic Update" i.e. sending multiple layout type 10 messages for a single screen view load type 2 message. Before each type 10 would require its own type 2. 
+- Code injection can now be turned off individually for : NSData, UIViewController, UITableView, UITableViewCell, UIImage, UIAlertAction, UIPageControl, UIPickerView, UIDatePicker, UIWebView, WKWebView. Look for NSObject+TealeafEarlyLoads.m file for details. Add those methods to your NSObject extensions.
+- Pixel Density for screenshots is now configurable via TealeafBasicConfig.plist ScreenShotPixelDensity setting. Default is 1.5. 0 or negative values are invalid.
+
+Bug Fixes
+
+- Fixed bugs related to layout config, enhanced replay, log levels.
+- Fixed an issue where mobile state was missing from json payload
+- Fixed issue related to wkactionsheet unload which was causing incorrect navlist and replay 
+- Fixed issue related to PostMessageMaxBytesSize
+- Fixed React Native specific exception about textStorage
+- Fixed logEvent method to accept empty values dictionary
+- Fixed iOS 13.x relates issues - TabBar crash, Status Bar crash, custom UIColor crash
+- Fixed issue related to highlight not showing up correctly on type 4 textChange events
+- Ignored new found apple classes/view controllers such as PredicationViewController
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+
+
+
+EOCore Module 2.1.83
+Enhancements
+
+- Add networkCarrierNames for modules.
+- Add ipv6 for modules.
+
+Bug Fixes
+
+- Fixed an issue with cocoapods using two dot notation versus three dot notation.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+
+July 12 2019 Release
+Tealeaf Module 10.4.6
+Enhancements
+
+-  None.
+
+Bug Fixes
+
+- Fixed an issue with cocoapods using two dot natation versus three dot notation.
+
+Known Issues
+
+- Support for arm64e will be added soon, Apple has not completed the specification. Currently it is just beta.
+- Actionsheets with webviews are not fully supported replay gets broken up into different pages.
+- Date Picker change events are no longer replayed on SaaS and On-Prem for regular replay. These work correctly with Enhanced Replay.
+- Hybrid session sometime load javascript bridge late and it is not possible to get dcid correctly. So you will have an error "dcid=dcid-none. The page was not captured correctly" for the first page. You you selected next page. It should be fixed afterwards.
+- Captures click event twice on all table view controller.
+- Support for arm64e will be added soon, Apple has not completed the specification. Currently it is just beta.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+- On iOS 12.x SDK will not capture carrier name. It will be recorded "Carrier". This is because "Apple API [[CTTelephonyNetworkInfo alloc] init]" on iOS 12 is not stable.
+
+The following issues are for Enhanced Replay:
+- When configured to capture nothing for a page, the library captures the UIAlertController screen.
+
+
+EOCore Module 2.1.44
+Enhancements
+
+-  Treat anything greater than kEOMonitoringLevelCellularAndWiFi to be WiFi ONLY for backwards compatibility - updated EOSession file to support backwards compatiblity with log levels. Anything above 1 will be treatd as WiFi and Cellular. 0 is don't log, 1 is cellular and WiFi and 2 is WiFi only.
+- Adding support for arm64e.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+
+March 21 2019 Release
+Tealeaf Module 10.3.293
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with Status Bar having issue with CFThrowFormattedException for XR devices.
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+- Fixed Crashes on iOS 10.3.1 / iPhone 5 - removed assign from a property.
+- Fixed DatePicker and Picker for replay.
+- Fixed crash in while getting NSLocale's preferredLanguages
+- Fixed crash in logEvent:values API
+
+Known Issues
+
+- Alerts are broken on replay. It will be fixed in next version.
+- On iOS 12.x SDK will not capture carrier name. It will be recorded "Carrier". This is because "Apple API [[CTTelephonyNetworkInfo alloc] init]" on iOS 12 is not stable.
+
+
+
+EOCore Module 2.1.42
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+
+Known Issues
+
+- None.
+
+
+March 21 2019 Release
+Tealeaf Module 10.3.293
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with Status Bar having issue with CFThrowFormattedException for XR devices.
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+- Fixed Crashes on iOS 10.3.1 / iPhone 5 - removed assign from a property.
+- Fixed DatePicker and Picker for replay.
+- Fixed crash in while getting NSLocale's preferredLanguages
+- Fixed crash in logEvent:values API
+
+Known Issues
+
+- Alerts are broken on replay. It will be fixed in next version.
+- On iOS 12.x SDK will not capture carrier name. It will be recorded "Carrier". This is because "Apple API [[CTTelephonyNetworkInfo alloc] init]" on iOS 12 is not stable.
+
+
+
+EOCore Module 2.1.42
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+
+Known Issues
+
+- None.
+
+
+March 21 2019 Release
+Tealeaf Module 10.3.293
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with Status Bar having issue with CFThrowFormattedException for XR devices.
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+- Fixed Crashes on iOS 10.3.1 / iPhone 5 - removed assign from a property.
+- Fixed DatePicker and Picker for replay.
+- Fixed crash in while getting NSLocale's preferredLanguages
+- Fixed crash in logEvent:values API
+
+Known Issues
+
+- Alerts are broken on replay. It will be fixed in next version.
+- On iOS 12.x SDK will not capture carrier name. It will be recorded "Carrier". This is because "Apple API [[CTTelephonyNetworkInfo alloc] init]" on iOS 12 is not stable.
+
+
+
+EOCore Module 2.1.42
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+
+Known Issues
+
+- None.
+
+
+March 20 2019 Release
+Tealeaf Module 10.3.293
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with Status Bar having issue with CFThrowFormattedException for XR devices.
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+- Fixed Crashes on iOS 10.3.1 / iPhone 5 - removed assign from a property.
+- Fixed DatePicker and Picker for replay.
+- Fixed crash in while getting NSLocale's preferredLanguages
+- Fixed crash in logEvent:values API
+
+Known Issues
+
+- Alerts are broken on replay. It will be fixed in next version.
+- On iOS 12.x SDK will not capture carrier name. It will be recorded "Carrier". This is because "Apple API [[CTTelephonyNetworkInfo alloc] init]" on iOS 12 is not stable.
+
+
+
+EOCore Module 2.1.42
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+
+Known Issues
+
+- None.
+
+
+March 20 2019 Release
+Tealeaf Module 10.3.293
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with Status Bar having issue with CFThrowFormattedException for XR devices.
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+- Fixed Crashes on iOS 10.3.1 / iPhone 5 - removed assign from a property.
+- Fixed DatePicker and Picker for replay.
+- Fixed crash in while getting NSLocale's preferredLanguages
+- Fixed crash in logEvent:values API
+
+Known Issues
+
+- Alerts are broken on replay. It will be fixed in next version.
+- On iOS 12.x SDK will not capture carrier name. It will be recorded "Carrier". This is because "Apple API [[CTTelephonyNetworkInfo alloc] init]" on iOS 12 is not stable.
+
+
+
+EOCore Module 2.1.42
+Enhancements
+
+- Adding support for arm64e.
+
+Bug Fixes
+
+- Fixed an issue with swift code not giving the correct view controller name which affected view controller names in TealeafLayoutConfig.json.
+
+Known Issues
+
+- None.
+
+
+February 25 2019 Release
+Tealeaf Module 10.3.286
+Enhancements
+
+- Added support to log UILabel which are used as button with click events which helps with custom controls.
+- Pause and resume has been adjusted with edge cases capture subset data in TealeafLayoutConfig.json.
+- Gave ability to enable or disable visit for type 2 for view controller that has been removed from capture.
+- New global settings for view controllers has been added "IBMGlobalScreenSettings". Also adds the object automatically if it is not found. Also adding no capture to WKActionSheet.
+- Changed library from 3 dot notation to 2 dot notation.
+- Removed deprecated methods - (BOOL)logImageSynchronous:(UIImage*)image; from TLFCustomEvent.
+
+Bug Fixes
+
+- Fixed an issue with TLFHttpHelper messageTypesFromJson which has an exception with objectAtIndexedSubscript.
+- Fixed issues with NSArray ans NSMutableArray due to thread and garbage collection.
+
+Known Issues
+
+- DatePicker and Picker is broken on replay. It will be fixed in next version.
+
+EOCore Module 2.1.41
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+
+February 25 2019 Release
+Tealeaf Module 10.3.286
+Enhancements
+
+- Added support to log UILabel which are used as button with click events which helps with custom controls.
+- Pause and resume has been adjusted with edge cases capture subset data in TealeafLayoutConfig.json.
+- Gave ability to enable or disable visit for type 2 for view controller that has been removed from capture.
+- New global settings for view controllers has been added "IBMGlobalScreenSettings". Also adds the object automatically if it is not found. Also adding no capture to WKActionSheet.
+- Changed library from 3 dot notation to 2 dot notation.
+- Removed deprecated methods - (BOOL)logImageSynchronous:(UIImage*)image; from TLFCustomEvent.
+
+Bug Fixes
+
+- Fixed an issue with TLFHttpHelper messageTypesFromJson which has an exception with objectAtIndexedSubscript.
+- Fixed issues with NSArray ans NSMutableArray due to thread and garbage collection.
+
+EOCore Module 2.1.41
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+
+Bug Fixes
+
+- None.
+
+
+February 25 2019 Release
+Tealeaf Module 10.3.286
+Enhancements
+
+- Added support to log UILabel which are used as button with click events which helps with custom controls.
+- Pause and resume has been adjusted with edge cases capture subset data in TealeafLayoutConfig.json.
+- Gave ability to enable or disable visit for type 2 for view controller that has been removed from capture.
+- New global settings for view controllers has been added "IBMGlobalScreenSettings". Also adds the object automatically if it is not found. Also adding no capture to WKActionSheet.
+- Changed library from 3 dot notation to 2 dot notation.
+- Removed deprecated methods - (BOOL)logImageSynchronous:(UIImage*)image; from TLFCustomEvent.
+
+Bug Fixes
+
+- Fixed an issue with TLFHttpHelper messageTypesFromJson which has an exception with objectAtIndexedSubscript.
+- Fixed issues with NSArray ans NSMutableArray due to thread and garbage collection.
+
+EOCore Module 2.1.41
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+
+Bug Fixes
+
+- None.
+
+
+February 25 2019 Release
+Tealeaf Module 10.3.286
+Enhancements
+
+- Added support to log UILabel which are used as button with click events which helps with custom controls.
+- Pause and resume has been adjusted with edge cases capture subset data in TealeafLayoutConfig.json.
+- Gave ability to enable or disable visit for type 2 for view controller that has been removed from capture.
+- New global settings for view controllers has been added "IBMGlobalScreenSettings". Also adds the object automatically if it is not found. Also adding no capture to WKActionSheet.
+- Changed library from 3 dot notation to 2 dot notation.
+- Removed deprecated methods - (BOOL)logImageSynchronous:(UIImage*)image; from TLFCustomEvent.
+
+Bug Fixes
+
+- Fixed an issue with TLFHttpHelper messageTypesFromJson which has an exception with objectAtIndexedSubscript.
+- Fixed issues with NSArray ans NSMutableArray due to thread and garbage collection.
+
+EOCore Module 2.1.41
+Enhancements
+
+- Changed library from 3 dot notation to 2 dot notation.
+
+Bug Fixes
+
+- None.
+
+
+December 2018 Release
+Tealeaf Module 10.2.0.267 and EOCore 2.0.1.35:
+Fixed NSURLConnection deprecated objects.
+Removed NSURLConnection swizzling.
+logImageSynchronous api is now deprecated.
+Changed “Load” to “Visit” type for when CaptureScreenContents is set to false.
+
+November 2018 Release
+Tealeaf Module 10.2.0.264 and EOCore 2.0.1.35:
+Made new build using xcode 10.1 which library now supports from 9.0 to 12.1.
+Adding ability to capture click events on UIActionAction.
+Fixed issues with custom alert. I noticed that textfield did not have correct background color.
+It seems there was no type 4 data whwich became a new feature. Also the injection was using @selector(tableView:didDeselectRowAtIndexPath:) vs @selector(tableView:didSelectRowAtIndexPath:).
+Removed code for UIAlertView and UIAlertViewDelegate which no longer are supported in iOS 9.0 or higher.
+Removed deprecated control UIPopoverController.
+Removed deprecated controls UIAlertView and UIActionSheet.
+Added new pause and resume functionailty which will have load and unload breadcrumbs.
+Added new z-index format of data to remove nested json data in type 10. Easier to event off. Also performance enhancement.
+Fixed an issue with current state being erased and not sent for pickerview.
+Moved unload screen event capture to viewDidDisappear from viewWillDisappear.
+Fixed an issue where Tealeaf is not posting messages to EOCore because of a textChange placeholder.
+Fixed issues with dynamic build and static build having the following architectures armv7, armv7s, i386, x86_64, and arm64. But with bitcode enabled static have armv7, armv7s, i386, x86_64, and arm64 and dymanic have armv7, armv7s, and arm64. Dynamic build can not have bitcode enabled. When submitting to Apple, application needs to remove any i386 and x86_64 build. So it is not needed.
+
+July 2018 Release
+Tealeaf Module 10.2.0.210 and EOCore 2.0.0.82:
+Fixed an issue where SDK is capturing incorrect name for alert controller and linking alert load event with previous screen.
+Tealeaf SDK affects the behaviour of webview in iOS. Fixed didFinishNavigation swizzled method to call application didFinishNavigation method.
+Deleted EnableLogViewLayoutOnScreenTransitionAlerts flag and changed logic to use DisableAlertAutoCapture on its behalf.
+Removed support for UIActionSheet and UIAlertView because these no longer should be used with iOS 9.0.
+Adjusted pickerview to get correct column and data values to avoid exception.
+Fixed an issue where SDK is not capturing navBar if root view controller is tab bar controller.
+Added safety checks for pickerView capture if titleForRow: delegate method is not implemented.
+Fixed an issue where SDK is not capturing tab bar.
+Updated sdk to use 9.0 as minimal version and removed deprecated items due to no longer supporting 8.0.
+Fixed issues with alerts.
+Fixed an issue where SDK is not capturing font of textView in iOS 9 iphone 6 device.
+Change POST MIME type from text/json to application/json.
+
+Known issues:
+Unload events need to adjusted and will be completed in next release.
+
+
+April 2018 Hot Fix
+Tealeaf Module 10.2.0.153 and EOCore 2.0.0.81:
+Added support for capturing UIWebView when auto capture is turned-off.
+Fixed an issue with UIButton's background image hiding button's title in the replay.
+Added a configuration item (DisableAlertAutoCapture) inside TealeafAdvancedConfig.json file to disable the autocapture of alerts(UIAlertController/UIAlertView)
+
+March 2018 Hot Fix
+Tealeaf Module 10.2.0.150 and EOCore 2.0.0.81:
+Added support for custom alerts (custom controls that are implemented like UIAlertController).
+Added a configuration item (EnableLogViewLayoutOnScreenTransitionAlerts) inside TealeafAdvancedConfig.json file to capture alerts (UIAlertView/UIAlertController) when autocapture was turnedoff. 
+Fixed an issue with url encoding in EOCore (DA SDK specific) because of a deprecated method (stringByAddingPercentEscapesUsingEncoding:).
+
+March 2018 Release
+Tealeaf Module 10.2.0.149 and EOCore 2.0.0.80:
+Fixed an issue with Alert Controller not getting detached from Screen after it was dismissed.
+Made changes to capture UIAlertController's long title and message without truncating the text in replay. Please update your templates.
+Fixed an issue with UIButton's transparent background showing as black in replay.
+Fixed an issue with Frozen/not responding screens in the app because of an issue in Tealeaf SDK
+
+Feb 2018 Hot Fix
+Tealeaf Module 10.2.0.146 and EOCore 2.0.0.80:
+Made changes to capture UIAlertController's long title and message without truncating the text in replay. Please update your templates.
+Fixed an issue with UIButton's transparent background showing as black in replay.
+
+Jan 2018 Hot Fix
+Tealeaf Module 10.2.0.145 and EOCore 2.0.0.74:
+Fixed an issue with Frozen/not responding screens in the app because of an issue in Tealeaf SDK
+
+Dec 2017 Release
+Tealeaf Module 10.2.0.141 and EOCore 2.0.0.73:
+Fixed an issue on hybrid applications that have no internet connection and get the exception “Uncaught Exception: ReferenceError: Can’t find variable: iOSJsonPayloadArray”, which was a javascript error in the Tealeaf hybrid bridge.
+Removed JavaScriptToObjectiveCProtocol and JavaScriptToObjectiveCProtocolCode keys and values from TealeafBasicConfig, because it is no longer used externally.
+Made an adjustment EOCore tracking of the battery level. There seems to be a thread issue with the use of setBatteryMonitoringEnabled. If an issue occurs, the battery level will be -1.
+Fixed an issue with capturing root view controller as UIAlertController’s background when UIAlertController’s parent was presented modally.
+Fixed an issue with getting gestures on webview even when CaptureNativeGesturesOnWebview has been set to NO.
+Made changes to support opacity property of background color for controls like UITableView, UILabel, UITextField, etc…
+
+Oct 2017 Release
+Tealeaf Module 10.2.0.133 and EOCore 2.0.0.68
+Made changes to automatically capture the view controller, when there is a webview on it.
+EOCore now has ability to turn off orientation changes, because Replay does not orient correcly on hybrid the device data.
+Made changes to support new NavigationBar changes for iOS 11, please update your templates.
+Made changes for NSData and UIImage to support changes on method signature that now has nullable to support Swift.
+Removed deprecated apis from Tealeaf:
+TLFApplicationHelper.h:
+- (void)setCurrentMonitoringLevelType:(kTLFMonitoringLevelType)monitoringLevelType __deprecated_msg(" Deprecated in version 10.1.0.0");
+- (kTLFMonitoringLevelType)currentMonitoringLevelType __deprecated_msg(" Deprecated in version 10.1.0.0");
+- (BOOL)reloadRemoteConfiguration:(NSString*)configURLString levelsConfigURLString:(NSString*) levelsConfigURLString maskingLevelsConfigURLString:(NSString*) maskingLevelsConfigURLString eventsLevelsConfigURLString:(NSString*) eventsLevelsConfigURLString;
+TLFCustomEvent.h:
+- (BOOL)logEvent:(NSString *)eventName level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
+- (BOOL)logEvent:(NSString *)eventName value:(NSString*)value __attribute__((deprecated));
+- (BOOL)logEvent:(NSString *)eventName value:(NSString *)value level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
+- (BOOL)logCarrierEvent:(NSString *)carrierName country:(NSString *)isoCountryCode level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
+- (BOOL)logNSExceptionEvent:(NSException *)exception level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
+- (BOOL)logNSExceptionEvent:(NSException *)exception dataDictionary:(NSDictionary*)dataDictionary level:(kTLFMonitoringLevelType)level __attribute__((deprecated));
+- (BOOL)logCustomControl:(id)customControl __attribute__((deprecated));
+-(BOOL)logAppContext:(NSString*)logicalPageName
+  applicationContext:(NSString*)applicationContext
+            referrer:(NSString*)referrer __deprecated_msg("use '-logScreenViewContext:applicationContext:referrer:' instead.");
+TLFCustomEventLogger.h:
++ (BOOL)logEvent:(NSString *)eventName level:(kTLFMonitoringLevelType)level;
++ (BOOL)logEvent:(NSString *)eventName value:(NSString*)value;
++ (BOOL)logEvent:(NSString *)eventName value:(NSString *)value level:(kTLFMonitoringLevelType)level;
+
+Sep 2017 Release
+Tealeaf Module 10.2.0.126 and EOCore 2.0.0.65:
+Built with iOS 11.
+Support UIPickerView and UIDatePicker replay. For onpremise replay server, you will need to patch the splice file. For SaaS, it will supported in . You will need to update your templates for Native Replay.
+Added support for whitelist for killswitch to have same parity as Android.
+
+June 2017 HotFix 1
+Tealeaf Module 10.2.0.115 and EOCore 2.0.0.61:
+Added text of label for UITabBarItem for system icons.
+Made change to be able to get filename of UIImageView from storyboard when you use tlfFileReference value from User Defined Runtime Attributes.
+
+May 2017 Release
+Tealeaf Module 10.2.0.112 and EOCore 2.0.0.61:
+Bitcode enabled on debug and release builds
+Fixed an issue averageColor and fabric io combination.
+Added ability to set values before EOCore is enabled.
+Added new method to log form completion.
+Added changes to library to fix issues with NSString values that get garbage collected prematurely.
+Had to change NSString to get copy to avoid having EXC_BAD_ACCESS due to 3rd party library.
+Adjusted logic in TLFMessageQueue due to issues with textfields.
+Added ability to turn off auto logging for pageControl using autolog:pageControl in TealeafAdvancedConfig.json.
+Adjusted logic for view being unloaded on viewwilldisapear.
+Also fixed an issue with TLFMessageQueue having a Fatal Exception: NSGenericException on flush.
+Made adjustment to fix issues with UIButtonLabel masking.
+Made adjustments with try/catch for exception in TLFMessageQueue.
+Also noticed that previousMainViewController was nil, so made some changes to fix issue that would also create issues on type 10 data.
+Made adjustment with try/catch for exception in TLFMessageQueue.
+
+Mar 2017 Release
+Tealeaf Module 10.2.0.86 and EOCore 2.0.0.55:
+Fixed an issue with Navigation Bar not getting correct color on the device.
+Fixed an issue with missing type 10 data.
+Fixed an issue with getting actual correct color due UIColorSpace.
+
+Feb 2017 Release
+Tealeaf Module 10.2.0.84 and EOCore 2.0.0.55:
+Added support for UISearchBar.
+Assed support for Swift bridging.
+Added suport for view that just have a background color with no content to get correct look and feel.
+Fixed issue with tables not apperaing on correct position and not having correct height.
+Added ability to update any property in the module's configuration item from AdvancedConfig.json or BasicConfig.plist using EOApplicationHelper.h.
+Made changes to get color for borders and adjusted templates.
+Fixed an issue with not capturing data from table cells that have cell.subviews.
+Fixed an issue with posting data back to server after application goes to background.
+Removed clearCache which is no longer used.
+Adjusted ordering of text and keyboard events to fix replay in BBR.
+Adding support for Page Control * It will only have initial UI look and feel. Page Control change events will be reported, but UI will not update until a future update has been done on server. Will update and add notes in this file when that is available.
+New build is done against iOS 8.0 to 10.2 for both EOCore and Tealeaf.
+Masking feature has changed. Please follow guide to update to new settings used. We now are able to mask any item like on Android and UIC.
+
+Known issues
+When using an IBM Tealeaf on-premise Replay server, at the time of this publication:
+You will need to use fixpack 4 and update the templates to get controls to work.
+- UISegmentedControl 
+- UISlider
+- UIStepper
+- UISwitch
+
+You will need to use fixpack 5 and update the templates to get controls to work.
+- UIPageControl to replay. If you apply the templates you will correct UI.
+- UISearchBar
+
+When using an IBM Tealeaf SaaS Replay server, at the time of this publication:
+- UIPageControl will be supported in March 2017. If a page contains a UIPageControl it will show a blank page.
+
+
+Oct 2016 Release
+Tealeaf Module 10.2.0.60 and EOCore 2.0.0.39:
+Advertising id can now be used in conjection with CXA linking.
+Builds are done using iOS 10 release build has bit code enabled and debug build has bit code disabled.
+Taking screenshots will be placed into type 10 data and no longer will be sent as its own post.
+Added support for UIAlertController.
+Added ability to understand borders around buttons and textviews to represent them correctly on templates.
+User agent information will be sent with all the hits for CXA data integration.
+Adjusted alerts to have same look and feel as iOS.
+For image replay png will be for base 64 data and jpg for md5 hash value which helps map to all the devices.
+Update image extractor tool with version
+Libraries now support from iOS 8 to 10.
+Fixed an issue with name collision for orientationChanged with a private Apple method. It got renamed to eoOrientaionChanged.
+Fixed issue with library not disabling.
+Added support for StatusBar.
+Added support for stepper.
+Added support for SegmentBar.
+Fixed issues with templates and table not lining up correct with gestures.
+Added support for new templates.
+
+Known issues
+At the time of this publication the following controls are not supported with replay when using an IBM Tealeaf on-premise Replay server.
+- UISegmentedControl 
+- UISlider
+- UIStepper
+- UISwitch
+
+Aug 2016 Release
+Tealeaf Module 10.2.0.29 and EOCore 2.0.0.28:
+Adjusted support of WKWebView for iOS 8.0.
+
+Hot Fix 2 July 19 2016
+Tealeaf Module 10.2.0.15 and EOCore 2.0.0.25:
+Added ability to remove ip data in json payload.
+Used weak reference to not interfere with third party libraries doing same swizzling methods. Example, the use of BlocksKit.
+
+Hot Fix July 2016
+Tealeaf Module 10.2.0.12 and EOCore 2.0.0.25:
+Support of WKWebView.
+Fixed UI hits generated by the Tealeaf iOS Logging Framework SDK 10.1.0.22 are lost if the mobile application is closed before they get posted.
+
+June 2016 Release
+Tealeaf Module 10.2.0.10 and EOCore 2.0.0.23:
+Adding new TealeafLayoutConfig.json to help with Native Replay.
+Adding new AppendMapIds section for eventing.
+
+Hot Fix June 2016 
+Tealeaf Module 10.1.0.27 and EOCore 2.0.0.15:
+Fixed an issue with startung new sessions not creating a new session id.
+
+Hot Fix April 2016 
+Tealeaf Module 10.1.0.24 and EOCore 2.0.0.11:
+Fixed issue with MIME type given for image data, using the new image extractor tool
+Fix issue with delegate assignment for Cordova apps
+New app files in ApacheCordova folder for developer to include in their Cordova apps
+Two new configuration items for Cordova apps in TealeafAdvancedConfig.json: IsCordovaApp, CordovaLayoutDelay
+
+March 2016 Release Notes 
+Release Notes  Tealeaf Module 10.1.0.22 and EOCore 2.0.0.11:
+Fixed Double call to NSURLConnection connectionWithRequest:delegate
+Fixed issue with Bitcode when used with Archive
+
+Feb 2016
+
+Release Notes Tealeaf Module 10.1.0.19 and EOCore 2.0.0.8:
+Fixed Performance issue with Gestures and ImageView
+Fixed Reachability Duplicate Symbol Error when customer or 3rd party is using Reachability.h
+Fixed Issue with Lots of Compiler Warnings in Xcode 7
+Fixed Crash Issue when logging Synchronous NSURL Connections
+Fixed Rare Crash Issue when Logging Alert View
