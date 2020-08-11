@@ -1,5 +1,5 @@
 ###############################################################################################
-# Copyright (C) 2019 Acoustic, L.P. All rights reserved.
+# Copyright (C) 2020 Acoustic, L.P. All rights reserved.
 # 
 # NOTICE: This file contains material that is confidential and proprietary to
 # Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -8,13 +8,31 @@
 # prohibited.
 ###############################################################################################
 
+August 11 2020 EOCore Module 2.0.59
+
+EOCore Release
+Enhancements
+
+- Changed to support Android Enhance Image Replay feature with per screen configuration.
+- Changed to support Sha256 and Sha512 image hashing.
+
+Bug Fixes
+
+- Fixed an issue when instrument with Tealeaf & DA in the sample app when posting data.
+- Secure cookie.
+
+Known Issues
+
+- None.
+
+
+
 December 20 2019 Tealeaf Module 10.3.21, EOCore 2_0_9 and TeaCuts 2.0.0.29
 
 Tealeaf Release
 Enhancements
 
 - Updated to support Android 4 to 10, or API 16 to 29.
-- TeaCuts 2.0.0.29 now supports Kotlin automated instrucmentation similar to Java.
 - Simplified library distribution with one jar supports AndroidX and legacy Android frameworks.
 - Added auto screen logging when swipe gesture to support ScrollView and Fragments use cases.
 - Added capability to do screenshot per screen configuration in Layout Config.
