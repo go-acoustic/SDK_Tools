@@ -1,5 +1,5 @@
 {
-  "LibraryVersion": "10.3.21",
+  "LibraryVersion": "10.3.94",
   "FilterMessageTypes": false,
   "MessageTypes": "4,5",
   "AddMessageTypeHeader": false,
@@ -19,12 +19,15 @@
   "StripDrawableFolderExt": true,
   "WebViewSetTagForId": false,
   "KillSwitchDelay": 300,
-  "GenerateImageMD5Hash": true,
+  "GenerateImageHash": true,
   "SwitchWidth": 140,
   "EnableActivityLifeCycleListener": true,
   "UseXpathId": false,
   "RemoveAllCookies": false,
   "ColorPrimary": "#3F51B5",
   "ColorPrimaryDark": "#303F9F",
-  "ColorAccent": "#FF4081"
+  "ColorAccent": "#FF4081",
+  "EnableGestureSwipeLogScreen": true,
+  "EnableScreenshotCache": false,
+  "FlushUpdatedPlaceHolders": false
 }

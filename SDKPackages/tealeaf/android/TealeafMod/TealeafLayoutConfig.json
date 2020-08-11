@@ -1,24 +1,70 @@
-/*******************************************************************************
-* Licensed Materials - Property of IBM
-* (C) Copyright IBM Corp. 2016
-* US Government Users Restricted Rights - Use, duplication or disclosure
-* restricted by GSA ADP Schedule Contract with IBM Corp.
-******************************************************************************/
+/********************************************************************************************
+* Copyright (C) 2020 Acoustic, L.P. All rights reserved.
+ *
+ * NOTICE: This file contains material that is confidential and proprietary to
+ * Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
+ * industrial property rights of Acoustic, L.P. except as may be provided in an agreement with
+ * Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+ * prohibited.
+********************************************************************************************/
 {
   "AutoLayout": {
-    "MyActivityOrMyFragment": {
-      "do": false,
-      "screenViewName": "MyScreenViewName",
-      "delay": 500,
-      "takeScreenShot": false
+    "IBMGlobalScreenSettings": {
+      "ScreenChange": true,
+      "DisplayName": "",
+      "CaptureLayoutDelay": 500,
+      "ScreenShot": false,
+      "NumberOfWebViews": 0,
+      "CaptureUserEvents": true,
+      "CaptureScreenVisits": true,
+      "CaptureLayoutOn": 2,
+      "CaptureScreenshotOn": 0,
+      "Masking": {
+        "HasMasking": true,
+        "HasCustomMask": true,
+        "Sensitive": {
+          "capitalCaseAlphabet": "X",
+          "number": "9",
+          "smallCaseAlphabet": "x",
+          "symbol": "#"
+        },
+        "MaskIdList": [
+          "textView1",
+          "login.password",
+          "editText*"
+        ],
+        "MaskValueList": [
+          "^3[47][0-9]{13}$",
+          "^4[0-9]{12}(?:[0-9]{3})?$"
+        ]
+      }
+    },
+    "BaseFragment": {
+      "ScreenChange": false,
+      "DisplayName": "Base Fragment",
+      "CaptureLayoutDelay": 1
+    },
+    "ControlsActivity1": {
+      "ScreenChange": true,
+      "DisplayName": "C1",
+      "CaptureLayoutDelay": 1,
+      "Masking": {
+        "MaskIdList": [],
+        "MaskValueList": []
+      }
+    },
+    "EOCoreMockAppActivityLayout": {
+      "ScreenChange": true,
+      "DisplayName": "BaseTestPage",
+      "CaptureLayoutDelay": 1
     }
   },
   "AppendMapIds": {
-    "com.any.package:id/givenIdOnXmlLayout1": {
-      "mid": "giveAdditionalId1"
+    "com.tl.uic.appDarkHoloAuto:id/imageButton": {
+      "mid": "botonDeImagen"
     },
-    "com.any.package:id/givenIdOnXmlLayout2": {
-      "mid": "giveAdditionalId2"
+    "com.tl.uic.appDarkHoloAuto:id/toggleButton1": {
+      "mid": "toggleButton"
     }
   }
 }
