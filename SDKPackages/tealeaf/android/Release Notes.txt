@@ -8,6 +8,23 @@
 # prohibited.
 ###############################################################################################
 
+August 11 2020 TeaCuts Module 3.0.4
+
+TeaCuts Release
+Enhancements
+
+- Support Android API 16 to 30.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+
+
 August 11 2020 Tealeaf Module 10.3.94
 
 Tealeaf Release
