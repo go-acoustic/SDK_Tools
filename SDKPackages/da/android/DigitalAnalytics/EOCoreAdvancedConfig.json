@@ -1,12 +1,7 @@
-/*******************************************************************************
-* Licensed Materials - Property of IBM
-* (C) Copyright IBM Corp. 2017
-* US Government Users Restricted Rights - Use, duplication or disclosure
-* restricted by GSA ADP Schedule Contract with IBM Corp.
-******************************************************************************/
 {
-  "CachedFileMaxBytesSize": 5120000,
-  "PostMessageMaxBytesSize": 2000000,
+  "MaxNumberOfFilesToCache": 5,
+  "CachedFileMaxBytesSize": 1024000,
+  "PostMessageMaxBytesSize": 2048000,
   "PostMessageTimeout": 3000,
   "PostMessageSocketTimeout": 3000,
   "CompressPostMessage": true,
@@ -16,7 +11,8 @@
   "ApplicationBackgroundTimeInterval": 60,
   "TurnOffCorrectOrientationUpdates": false,
   "DefaultOrientation": 0,
-  "LibraryVersion": "2.0.0.116",
+  "ApplicationInBackgroundEnabled": true,
+  "LibraryVersion": "2.0.59",
   "MessageVersion": "6.0.0.0",
   "MNCMCC": {
     "00": "N/A",
