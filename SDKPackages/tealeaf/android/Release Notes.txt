@@ -8,6 +8,25 @@
 # prohibited.
 ###############################################################################################
 
+August 11 2020 tealeafMD5 Module 1.0.9
+
+tealeafMD5 Release
+Enhancements
+
+- None.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
 August 11 2020 tealeafSHA Module 1.0.9
 
 tealeafSHA Release
