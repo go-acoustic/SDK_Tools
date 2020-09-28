@@ -13,3 +13,4 @@ SDK packages and tools that are used for UIC, iOS or Android
   * **tealeaf** \- Tealeaf SDK
     * **android**
     * **ios**
+    * **UIC**
