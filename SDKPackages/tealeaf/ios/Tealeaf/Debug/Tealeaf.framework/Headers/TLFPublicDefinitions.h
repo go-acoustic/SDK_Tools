@@ -61,7 +61,7 @@ extern NSString* kTLFMobileStateEvent;
 #define kConfigurableItemHasToPersistLocalCache                             @"HasToPersistLocalCache"
 #define kConfigurableItemPostMessageLevelWifi                               @"PostMessageLevelWiFi"
 #define kConfigurableItemPostMessageLevelCellular                           @"PostMessageLevelCellular"
-//#define kConfigurableItemPostMessageUrl                                   @"PostMessageURL"
+#define kConfigurableItemPostMessageUrl                                   @"PostMessageURL"
 #define kConfigurableItemPostMessageTimeIntervals                           @"PostMessageTimeIntervals"
 #define kConfigurableItemPostMessageMaxBytesSize                            @"PostMessageMaxBytesSize"
 #define kConfigurableItemPostMessageSecondLevel                             @"PostMessageSecondLevel"

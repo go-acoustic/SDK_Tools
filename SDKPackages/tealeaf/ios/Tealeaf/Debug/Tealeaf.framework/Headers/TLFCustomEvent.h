@@ -147,6 +147,19 @@
  */
 - (BOOL)logConnectionWithInitTime:(NSNumber*)initTime loadTime:(NSNumber*)loadTime connection:(id)connection  request:(NSURLRequest*)request response:(NSURLResponse*)response error:(NSError*)error;
 
+/*!
+ @brief Requests that the framework logs the connection information.
+ @param initTime - Time duration since current session start
+ @param loadTime - Time duration since current session start //TODO: EVALUATE what param loadTime actually means
+ @param connection - The NSURLSession object, can be nil
+ @param request - The NSURLRequest object associated with the connection
+ @param response - The NSURLResponse object from the connection request
+ @param data - The NSData object from the connection request or response
+ @param error - any NSError object
+ @return BOOL If the event was successfully logged or not.
+ */
+- (BOOL)logConnectionWithInitTime:(NSNumber*)initTime loadTime:(NSNumber*)loadTime connection:(id)connection  request:(NSURLRequest*)request response:(NSURLResponse*)response data:(NSData*)data error:(NSError*)error;
+
 #pragma mark - Location
 /*!
  @brief Requests that the framework logs a geographic location

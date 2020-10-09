@@ -4,12 +4,12 @@
             "ScreenChange": true,
             "DisplayName": "",
             "CaptureLayoutDelay": 0,
-            "ScreenShot": false,
+            "ScreenShot": true,
             "NumberOfWebViews": 0,
             "CaptureUserEvents": true,
             "CaptureScreenVisits": false,
             "CaptureLayoutOn": 2,
-            "CaptureScreenshotOn": 0
+            "CaptureScreenshotOn": 2
         }
     },
     "AppendMapIds": {

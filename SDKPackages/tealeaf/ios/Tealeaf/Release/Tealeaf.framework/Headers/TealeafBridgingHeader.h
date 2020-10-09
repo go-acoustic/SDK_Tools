@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2017 Acoustic, L.P. All rights reserved.
+// Copyright (C) 2020 Acoustic, L.P. All rights reserved.
 //
 // NOTICE: This file contains material that is confidential and proprietary to
 // Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -15,5 +15,11 @@
 #import "TLFApplicationHelper.h"
 #import "TLFCustomEvent.h"
 #import "TLFPublicDefinitions.h"
+
+//! Project version number for Tealeaf.
+FOUNDATION_EXPORT double TealeafVersionNumber;
+
+//! Project version string for Tealeaf.
+FOUNDATION_EXPORT const unsigned char TealeafVersionString[];
 
 #endif /* TealeafBridgingHeader_h */
