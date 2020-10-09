@@ -62,9 +62,7 @@
 - (NSDictionary *)httpHeadersForSessionId:(NSString*)sessionId andJson:(NSString*)json;
 
 /*!
- * @abstract Method to request any additional Http Header values required by the queues post URL.
- * @discussion This is an optional method. If there are no additional headers required then this method can be omitted. This is called at before each time the the queue is flushed to a particular target URL. If there are any cookies that need to be created or updated at the time of post then the cookie can be generated and posted to [NSHTTPCookieStorage sharedHTTPCookieStorage]. This call is executed in a background thread, any actions executed in this call must remain thread safe.
- * @return A dictionary containing all of the header keys and their repsective values.
+ * @abstract Method to request any additional cookies to request
  */
 - (void)addCookiesToRequest:(NSMutableURLRequest*)request;
 
