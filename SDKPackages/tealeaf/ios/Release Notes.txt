@@ -8,6 +8,36 @@
 # prohibited.
 ###############################################################################################
 
+October 14 2020 Tealeaf Module 10.6.35
+
+Tealeaf Release
+Enhancements
+
+- Tested for iOS 14 using xCode 12.0.1.
+- Intercept NSURLSession and log and send full Request /response payloads.
+- Support automatic code injection of shouldRecognizeSimultaneouslyWithGestureRecognizer.
+
+Bug Fixes
+
+- Fixed xCode 12 issues on release build 10.6.35 with cocopods.
+
+Known Issues
+
+- Captures gesture even when the gestureRecognizer is set to return 'NO', this is an Apple defect.
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- The pink boarder on Gestures screenview is off when captured using ER, because if timing or garbage collection.
+- Template issue - The back link is missing during capture on some screens Progressindicator, AlertViewController, Gestures screenview and picker view.
+- Template issue - Battery icon not visible in green anymore.
+- Improvement :- "connectionType" remains N/A if device is on WiFi on app start. 
+- DoPostOnScreenChange is not working as expected, because of temp queue.
+- Reporting of multiple carrier names in JSON if the device has Dual SIM is a beta feature.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Certain Alerts may appear correctly during replay.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS Multi Window apps are not YET supported.
+
+
+
 October 9 2020 Tealeaf Module 10.6.35
 
 Tealeaf Release
@@ -35,6 +65,25 @@ Known Issues
 - Certain Alerts may appear correctly during replay.
 - If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
 - iPadOS Multi Window apps are not YET supported.
+
+
+
+October 9 2020 EOCore Module 2.3.24
+
+EOCore Release
+Enhancements
+
+- Tested for iOS 14 using xCode 12.0.1.
+- Intercept NSURLSession and log and send full Request /response payloads
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
 
 
 
