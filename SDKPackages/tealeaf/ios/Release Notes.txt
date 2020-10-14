@@ -8,7 +8,7 @@
 # prohibited.
 ###############################################################################################
 
-October 14 2020 Tealeaf Module 10.6.35
+October 14 2020 Tealeaf Module 10.6.36
 
 Tealeaf Release
 Enhancements
