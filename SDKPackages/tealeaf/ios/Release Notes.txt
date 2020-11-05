@@ -202,11 +202,6 @@ Known Issues
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
 
-
-# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
-# prohibited.
-###############################################################################
-
 June 12 2020 Release
 Tealeaf Module 10.6.20
 Enhancements
@@ -269,9 +264,6 @@ Known Issues
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
 
 
-# prohibited.
-###############################################################################
-
 March 16 2020 Release
 Tealeaf Module 10.5.5
 Enhancements
@@ -310,9 +302,6 @@ Known Issues
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
 
 
-# prohibited.
-###############################################################################
-
 March 16 2020 Release
 Tealeaf Module 10.5.5
 Enhancements
@@ -350,9 +339,6 @@ Known Issues
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
 
-
-# prohibited.
-###############################################################################
 
 February 3 2020 Release
 Tealeaf Module 10.5.3
@@ -393,10 +379,6 @@ Known Issues
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
 
 
-# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
-# prohibited.
-###############################################################################
-
 February 3 2020 Release
 Tealeaf Module 10.5.3
 Enhancements
@@ -435,10 +417,6 @@ Known Issues
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
 
-
-# prohibited.
-###############################################################################
-
 November 13 2019 Release
 Tealeaf Module 10.4.36
 Enhancements
@@ -476,10 +454,6 @@ Known Issues
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
 
-
-# prohibited.
-###############################################################################
-
 November 13 2019 Release
 Tealeaf Module 10.4.36
 Enhancements
@@ -516,10 +490,6 @@ Known Issues
 - After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
-
-
-# prohibited.
-###############################################################################
 
 October 29 2019 Release
 Tealeaf Module 10.4.34
@@ -572,11 +542,6 @@ Known Issues
 - After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
-
-
-# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
-# prohibited.
-###############################################################################
 
 October 29 2019 Release
 Tealeaf Module 10.4.34
