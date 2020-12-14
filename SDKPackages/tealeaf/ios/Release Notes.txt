@@ -8,7 +8,35 @@
 # prohibited.
 ###############################################################################################
 
-October 14 2020 Tealeaf Module 10.6.36
+December 14 2020 Tealeaf Module 10.6.39
+
+Tealeaf Release
+Enhancements
+
+- None.
+
+Bug Fixes
+
+- Removed "UIWebview" text that was being flagged by Apple.
+
+Known Issues
+
+- Captures gesture even when the gestureRecognizer is set to return 'NO', this is an Apple defect.
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- The pink boarder on Gestures screenview is off when captured using ER, because if timing or garbage collection.
+- Template issue - The back link is missing during capture on some screens Progressindicator, AlertViewController, Gestures screenview and picker view.
+- Template issue - Battery icon not visible in green anymore.
+- Improvement :- "connectionType" remains N/A if device is on WiFi on app start. 
+- DoPostOnScreenChange is not working as expected, because of temp queue.
+- Reporting of multiple carrier names in JSON if the device has Dual SIM is a beta feature.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Certain Alerts may appear correctly during replay.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS Multi Window apps are not YET supported.
+
+
+
+October 14 2020 Tealeaf Module 10.6.35
 
 Tealeaf Release
 Enhancements
@@ -65,6 +93,26 @@ Known Issues
 - Certain Alerts may appear correctly during replay.
 - If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
 - iPadOS Multi Window apps are not YET supported.
+
+
+
+October 9 2020 EOCore Module 2.3.24
+
+EOCore Release
+Enhancements
+
+- Tested for iOS 14 using xCode 12.0.1.
+- Intercept NSURLSession and log and send full Request /response payloads
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
 
 
 October 9 2020 EOCore Module 2.3.24
@@ -166,7 +214,6 @@ Known Issues
 - If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
 - iPadOS Multi Window apps are not YET supported.
 
-June 12 2020 Release
 EOCore Module 2.3.10
 Enhancements
 
@@ -182,6 +229,76 @@ Known Issues
 - After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+# prohibited.
+###############################################################################
+
+June 12 2020 Release
+Tealeaf Module 10.6.20
+Enhancements
+
+- Added logLayoutWithImage API.
+- Added masking configurations for individual screens.
+- Added support for masking based on contents of a Text Field. Only supported in Layout Based Replay. Feature is and will not be available for Enhanced Replay.
+- Add CookieSecure flag to TealeafBasicConfig.
+- Updated Image tool to support:
+	1. MacOS catalina
+	2. Dark Mode on desktop
+	3. Other compiler errors/warnings.
+	4. MD5, SHA256 and SHA512 hashing algorithms for images.
+- Implemented posting data on screen change if DoPostOnScreenChange is set to YES.
+- Basic data collection and replay on a single window, full screen iPadOS 13.x applications.
+- Intercept NSURLSession HTTP requests and log them as type 3.
+- Add "darkMode" ClentState json object that tells if dark mode is active.
+- Updated Tealeaf SDK to use SHA256 hash algorithm by default instead of MD5.
+- Created a separate optional MD5 library.
+- Created a separate optional SHA512 library.
+- Added support for Enhanced Replay for React Native.
+- Removed references to NSURLConnection
+
+
+Bug Fixes
+
+- Fix bug in reading user agent from WKWebView.
+- Type 2 was broken for hybrid because of WKActionSheet related class, its fixed.
+- Fixed background color for Navigation and Status Bar.
+- Added SubViewArrayZIndexIncrementTrigger property in TealeafAdvancedConfig.json to help with zindex overlapped objects.
+
+Known Issues
+
+- The pink boarder on Gestures screenview is off when captured using ER, because if timing or garbage collection.
+- Template issue - The back link is missing during capture on some screens Progressindicator, AlertViewController, Gestures screenview and picker view.
+- Template issue - Battery icon not visible in green anymore.
+- Improvement :- "connectionType" remains N/A if device is on WiFi on app start. 
+- DoPostOnScreenChange is not working as expected, because of temp queue.
+- Reporting of multiple carrier names in JSON if the device has Dual SIM is a beta feature.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Certain Alerts may appear correctly during replay.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS Multi Window apps are not YET supported.
+
+EOCore Module 2.3.10
+Enhancements
+
+- Created a separate optional MD5 library.
+- Created a separate optional SHA512 library.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# prohibited.
+###############################################################################
 
 March 16 2020 Release
 Tealeaf Module 10.5.5
@@ -203,7 +320,7 @@ Known Issues
 - If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
 - iPadOS 13 (single window full screen app) onwards are in beta. Multi Window apps are not YET supported.
 
-March 16 2020 Release
+
 EOCore Module 2.2.6
 Enhancements
 
@@ -219,6 +336,51 @@ Known Issues
 - After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# prohibited.
+###############################################################################
+
+March 16 2020 Release
+Tealeaf Module 10.5.5
+Enhancements
+
+- Added support for Enhanced Replay for React Native.
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS 13 (single window full screen app) onwards are in beta. Multi Window apps are not YET supported.
+
+
+EOCore Module 2.2.6
+Enhancements
+
+- Removed support for UIWebView due to reported Apple warnings when applications are submitted to AppStore: 
+  ITMS-90809: Deprecated API Usage.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# prohibited.
+###############################################################################
 
 February 3 2020 Release
 Tealeaf Module 10.5.3
@@ -241,7 +403,7 @@ Known Issues
 - If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
 - iPadOS 13 (single window full screen app) onwards are in beta. Multi Window apps are not YET supported.
 
-February 3 2020 Release
+
 EOCore Module 2.2.6
 Enhancements
 
@@ -257,6 +419,53 @@ Known Issues
 - After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+# prohibited.
+###############################################################################
+
+February 3 2020 Release
+Tealeaf Module 10.5.3
+Enhancements
+
+- Removed support for UIWebView due to reported Apple warnings when applications are submitted to AppStore: 
+  ITMS-90809: Deprecated API Usage.
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS 13 (single window full screen app) onwards are in beta. Multi Window apps are not YET supported.
+
+
+EOCore Module 2.2.6
+Enhancements
+
+- Removed support for UIWebView due to reported Apple warnings when applications are submitted to AppStore: 
+  ITMS-90809: Deprecated API Usage.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# prohibited.
+###############################################################################
 
 November 13 2019 Release
 Tealeaf Module 10.4.36
@@ -278,7 +487,7 @@ Known Issues
 - Alerts are broken on replay. It will be fixed in next version.
 
 
-November 13 2019 Release
+
 EOCore Module 2.1.83
 Enhancements
 
@@ -294,6 +503,51 @@ Known Issues
 - After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# prohibited.
+###############################################################################
+
+November 13 2019 Release
+Tealeaf Module 10.4.36
+Enhancements
+
+- New build using Catalina OS and XCode 11.2.
+
+Bug Fixes
+
+- User events are getting captured even when they have been configured not to : refactored code to track disabled viewcontroller in the screen manager state machine.
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+
+
+
+EOCore Module 2.1.83
+Enhancements
+
+- Add networkCarrierNames for modules.
+- Add ipv6 for modules.
+
+Bug Fixes
+
+- Fixed an issue with cocoapods using two dot notation versus three dot notation.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# prohibited.
+###############################################################################
 
 October 29 2019 Release
 Tealeaf Module 10.4.34
@@ -330,7 +584,7 @@ Known Issues
 - Alerts are broken on replay. It will be fixed in next version.
 
 
-October 29 2019 Release
+
 EOCore Module 2.1.83
 Enhancements
 
@@ -346,6 +600,65 @@ Known Issues
 - After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
 - Dual sim features are in beta. Example information using multiple carriers.
 - arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
+# Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
+# prohibited.
+###############################################################################
+
+October 29 2019 Release
+Tealeaf Module 10.4.34
+Enhancements
+
+- Added accessibility data to json payload - id, hint and label to type 4, type 10 and type 11
+- Added IPV6. IP address is already there in the payload. Configuration settings RemoveIp and IpPlaceholder will apply to both ip and ipv6
+- Added support for MaxNumberOfFilesToCache in case of archival of unsent json data. HasToPersistLocalCache has to be true to make it work. If HasToPersistLocalCache is false, nothing is cached to local storage like before.
+- Add support for multiple carriers in the json payload
+- Add exact name of the iOS device to json payload. It is called machineNameEnglish and machineNameHW and can be found in mobileEnvironment.
+- Added support for "Dynamic Update" i.e. sending multiple layout type 10 messages for a single screen view load type 2 message. Before each type 10 would require its own type 2. 
+- Code injection can now be turned off individually for : NSData, UIViewController, UITableView, UITableViewCell, UIImage, UIAlertAction, UIPageControl, UIPickerView, UIDatePicker, UIWebView, WKWebView. Look for NSObject+TealeafEarlyLoads.m file for details. Add those methods to your NSObject extensions.
+- Pixel Density for screenshots is now configurable via TealeafBasicConfig.plist ScreenShotPixelDensity setting. Default is 1.5. 0 or negative values are invalid.
+
+Bug Fixes
+
+- Fixed bugs related to layout config, enhanced replay, log levels.
+- Fixed an issue where mobile state was missing from json payload
+- Fixed issue related to wkactionsheet unload which was causing incorrect navlist and replay 
+- Fixed issue related to PostMessageMaxBytesSize
+- Fixed React Native specific exception about textStorage
+- Fixed logEvent method to accept empty values dictionary
+- Fixed iOS 13.x relates issues - TabBar crash, Status Bar crash, custom UIColor crash
+- Fixed issue related to highlight not showing up correctly on type 4 textChange events
+- Ignored new found apple classes/view controllers such as PredicationViewController
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Alerts are broken on replay. It will be fixed in next version.
+
+
+
+EOCore Module 2.1.83
+Enhancements
+
+- Add networkCarrierNames for modules.
+- Add ipv6 for modules.
+
+Bug Fixes
+
+- Fixed an issue with cocoapods using two dot notation versus three dot notation.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+- arm64e bitcode slice is not created. Filed support ticket with Apple.
+
+
 
 July 12 2019 Release
 Tealeaf Module 10.4.6
@@ -372,7 +685,7 @@ Known Issues
 The following issues are for Enhanced Replay:
 - When configured to capture nothing for a page, the library captures the UIAlertController screen.
 
-July 12 2019 Release
+
 EOCore Module 2.1.44
 Enhancements
 
