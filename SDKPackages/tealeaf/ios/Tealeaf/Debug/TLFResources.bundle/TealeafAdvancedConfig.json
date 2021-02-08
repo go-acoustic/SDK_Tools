@@ -1,5 +1,5 @@
 {
-  "LibraryVersion": "10.6.40",
+  "LibraryVersion": "10.6.42",
   "FilterMessageTypes": false,
   "MessageTypes": "4,5,6",
   "AddMessageTypeHeader": true,
@@ -49,5 +49,6 @@
   "canvas:click": 0,
   "InitialZIndex": 500,
   "UseXpathId": false,
-  "SubViewArrayZIndexIncrementTrigger": 502
+  "SubViewArrayZIndexIncrementTrigger": 502,
+  "AddGestureRecognizerUIScrollView": true
 }
