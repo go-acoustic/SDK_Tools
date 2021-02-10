@@ -8,6 +8,44 @@
 # prohibited.
 ###############################################################################################
 
+February 10 2021 Tealeaf Module 10.3.100
+
+Tealeaf Release
+Enhancements
+
+- Updated to support Android 4 to 10, or API 16 to 30(R).
+- Added GMT timezone offset.
+- Added HTTP server redirects.
+- Added Max cache file support.
+- Added IPV6 support.
+- Added Screenshot density configuration.
+- Added Masking per Activity screen feature.
+- Added Masking by UI control ID & by value regex list.  Backward compatibility support using JSON or TealeafBasicConfig.
+- Added SHA-256 and SHA-512 image hashing support.
+- Added killswitch support for hybrid app.
+
+
+Bug Fixes
+
+- Type 4 & type 11 UI events associated to next screen.
+- Hybrid app killswitch should disable UIC library messages.
+- Made changes to library internal exceptions to not force flush to server, unless it is a crash. This will fix issues with items not in order for tempqueue.
+- Fixed Set-Cookie case requirement.
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- On SaaS, replay of the attached Hybrid session does not scrolls to replay the gestures during replay resulting.
+- On Enhanced Replay, change events are not currently captured on Android SDK.
+- On SaaS, on Layout capture we are missing toggle control during session replay.
+- Tap Hold sometimes produces a type 11 gesture on Linear Layout.
+- On Android 10 device, replay page might contain blank region on the top.
+  Also Enhanced mobile replay for tap event might show Y-coordinate incorrectly.
+- Hybrid app using Google Webview creates multiple screenviews on AndroidX & Android 9.
+- Click event on the viewGroup on the android application does not highlight on both On-Prem and SaaS.
+
+
+
 February 10 2021 EOCore Module 2.0.79
 
 EOCore Release
