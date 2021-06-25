@@ -1,4 +1,4 @@
-<!-- control_canvas.tlt version_5 -->
+<!-- control_canvas.tlt version_6 -->
 <div style="{{default(template(["position"],"android\\css_position.tlt"),"<!--json position not specified or problem with css_position.tlt -->")}}
             {{if(exists([],"paddingTop"),cssDecl(div(numericToFloat(["paddingTop"]),[$"clientEnvironment"]["pixelDensity"]),"padding-top"),"")}}
             {{if(exists([],"paddingBottom"),cssDecl(div(numericToFloat(["paddingBottom"]),[$"clientEnvironment"]["pixelDensity"]),"padding-bottom"),"")}}
@@ -20,5 +20,5 @@
                 ,"")}}
                 {{if(exists([],"image"),concat("background-size:100%",";"),"")}}
                 {{if(exists([],"image"),concat("background-repeat:no-repeat",";"),"")}}"
-    />
+    ></div>
 </div>

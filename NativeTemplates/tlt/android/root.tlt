@@ -1,12 +1,13 @@
-<!-- root.tlt version_28 -->
+<!-- root.tlt version_29 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html>
 <head>
   <!-- Android replay -->
   <title>{{["layout"]["name"]}}</title>
   <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
-  <link rel="stylesheet" href="http://localhost:38000/fontAwesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="http://localhost:38000/fontAwesome/css/font-awesome.min.css"  type="text/css">
   {{template([],"android\\custom\\headAdditions1.tlt","")}}
-  <style>
+  <style type="text/css">
   :root {
     --theme-color: {{if(exists([],"layout","style","colorAccent"),htmlColor(["layout"]["style"]["colorAccent"]),"ff0080")}};
     --hot-pink: #ff0080;
@@ -176,7 +177,7 @@
   }
   
   </style>
-  <script> 
+  <script type="application/javascript"> 
   // To fix progress spinners, because we only render in Mozilla
   function checkStyle() {
     var progressContainers = document.getElementsByClassName("mblProgContainer");
