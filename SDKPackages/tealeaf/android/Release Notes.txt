@@ -13,7 +13,7 @@ February 10 2021 Tealeaf Module 10.3.100
 Tealeaf Release
 Enhancements
 
-- Updated to support Android 4 to 10, or API 16 to 30(R).
+- Updated to support Android 4 to 11, or API 16 to 30(R).
 - Added GMT timezone offset.
 - Added HTTP server redirects.
 - Added Max cache file support.
