@@ -8,6 +8,40 @@
 # prohibited.
 ###############################################################################################
 
+September 23 2021 Tealeaf Module 10.3.119
+
+Tealeaf Release
+Enhancements
+
+- Allow screenshot when a particular screen is config. to disable screen logging in LayoutConfig.json file.
+- Removed dependency on Google Play Service library.
+- Support Dialog Screenshot.
+
+
+Bug Fixes
+
+- Orientation change event not handled sometimes.
+- Manual flushing of data causing intermittent Gesture event update failure.
+- Touch event gets moved to the next screen.
+- ReactNative App touch screen masking show up next screen.
+- Z-Index padding for NavigationView to support replay.
+- Screenshot compression that reduces image size.
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- On SaaS, replay of the attached Hybrid session does not scrolls to replay the gestures during replay resulting.
+- On Enhanced Replay, change events are not currently captured on Android SDK.
+- On SaaS, on Layout capture we are missing toggle control during session replay.
+- Tap Hold sometimes produces a type 11 gesture on Linear Layout.
+- On Android 10 device, replay page might contain blank region on the top.
+  Also Enhanced mobile replay for tap event might show Y-coordinate incorrectly.
+- Hybrid app using Google Webview creates multiple screenviews on AndroidX & Android 9.
+- Click event on the viewGroup on the android application does not highlight on both On-Prem and SaaS.
+- AspectJ plugin not compatible with Android Gradle Plugin 4.1.1 and above.
+
+
+
 September 23 2021 EOCore Module 2.0.84
 
 EOCore Release
