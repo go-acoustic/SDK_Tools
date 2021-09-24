@@ -8,6 +8,23 @@
 # prohibited.
 ###############################################################################################
 
+September 23 2021 EOCore Module 2.0.84
+
+EOCore Release
+Enhancements
+
+- Added a new property "DisableCookieManager" to handle CookieManager use cases.
+
+Bug Fixes
+
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+Known Issues
+
+- None.
+
+
+
 September 23 2021 TeaCuts Module 3.0.7
 
 TeaCuts Release
