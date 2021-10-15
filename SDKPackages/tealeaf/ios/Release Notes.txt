@@ -44,6 +44,24 @@ Known Issues
 
 
 
+October 14 2021 TealeafMD5Hash Module 1.0.20
+
+TealeafMD5Hash Release
+Enhancements
+- Library is now being built for xcframeworks with latest xcode 12.5.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
 October 13 2021 TealeafMD5Hash Module 1.0.20
 
 TealeafMD5Hash Release
