@@ -1,0 +1,6 @@
+framework module DAMod {
+    umbrella header "DigitalAnalytics.h"
+    
+    export *
+    module * { export * }
+}

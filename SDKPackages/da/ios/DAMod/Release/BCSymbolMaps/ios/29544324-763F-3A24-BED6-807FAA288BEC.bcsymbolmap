@@ -1,0 +1,491 @@
+BCSymbolMap Version: 2.0
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
+iPhoneOS15.0.sdk
+/Users/easdk/Library/Developer/Xcode/DerivedData/DAMod-btwkmkigywzscdbdeznqsiewdpxv/Build/Intermediates.noindex/ArchiveIntermediates/XCDAMod/IntermediateBuildFilesPath/DAMod.build/ReleaseAuto-iphoneos/XCDAMod.build/DerivedSources/DAMod_vers.c
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod
++[DATag tagWith:clientId:]
+-[DATag init]
+-[DATag makePageViewTag:cg:se:sr:attributes:cm_mmc:]
+-[DATag makeTechnicalPropertiesTag:cg:se:sr:attributes:cm_mmc:]
+-[DATag makeProductViewTag:pr:pm:cg:attributes:]
+-[DATag makeShopAction5Tag:pm:qt:bp:cg:cc:attributes:]
+-[DATag makeShopAction9Tag:pm:qt:bp:cg:on:tr:cd:cc:attributes:]
+-[DATag makeOrderTag:tr:sg:cd:ct:sa:zp:cc:attributes:]
+-[DATag makeRegistrationTag:em:ct:sa:zp:attributes:]
+-[DATag makeElementTag:ecat:attributes:]
+-[DATag makeConversionEventTag:cat:ccid:cpt:attributes:]
+-[DATag makeLinkClickTag:nm:hr:]
+-[DATag makeImpressionTag:sp:re:]
+-[DATag makeAttributeStringFrom:tid:]
+-[DATag buildFinalTag:]
+-[DATag sha1From:]
+-[DATag arrayFromAttributesString:]
+-[DATag stringFromAttributesArray:]
+-[DATag applicationName]
+-[DATag setApplicationName:]
+-[DATag clientId]
+-[DATag setClientId:]
+-[DATag tag]
+-[DATag setTag:]
+-[DATag .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_SELECTOR_REFERENCES_.13
+_OBJC_CLASSLIST_REFERENCES_$_.14
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_SELECTOR_REFERENCES_.28
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_CLASSLIST_REFERENCES_$_.31
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.35
+_OBJC_SELECTOR_REFERENCES_.39
+_OBJC_SELECTOR_REFERENCES_.45
+_OBJC_SELECTOR_REFERENCES_.47
+_OBJC_CLASSLIST_REFERENCES_$_.58
+_OBJC_SELECTOR_REFERENCES_.60
+_OBJC_SELECTOR_REFERENCES_.62
+_OBJC_SELECTOR_REFERENCES_.66
+_OBJC_SELECTOR_REFERENCES_.94
+_OBJC_SELECTOR_REFERENCES_.98
+_OBJC_CLASSLIST_REFERENCES_$_.101
+_OBJC_SELECTOR_REFERENCES_.103
+_OBJC_SELECTOR_REFERENCES_.105
+_OBJC_SELECTOR_REFERENCES_.109
+_OBJC_SELECTOR_REFERENCES_.113
+_OBJC_SELECTOR_REFERENCES_.119
+_OBJC_SELECTOR_REFERENCES_.121
+_OBJC_SELECTOR_REFERENCES_.123
+_OBJC_SELECTOR_REFERENCES_.125
+_OBJC_CLASSLIST_REFERENCES_$_.126
+_OBJC_SELECTOR_REFERENCES_.128
+_OBJC_SELECTOR_REFERENCES_.132
+_OBJC_SELECTOR_REFERENCES_.138
+_OBJC_CLASSLIST_REFERENCES_$_.139
+_OBJC_SELECTOR_REFERENCES_.141
+_OBJC_SELECTOR_REFERENCES_.143
+_OBJC_SELECTOR_REFERENCES_.145
+__OBJC_$_CLASS_METHODS_DATag
+__OBJC_METACLASS_RO_$_DATag
+__OBJC_$_INSTANCE_METHODS_DATag
+_OBJC_IVAR_$_DATag.applicationName
+_OBJC_IVAR_$_DATag.clientId
+_OBJC_IVAR_$_DATag.tag
+__OBJC_$_INSTANCE_VARIABLES_DATag
+__OBJC_$_PROP_LIST_DATag
+__OBJC_CLASS_RO_$_DATag
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DATag.m
+DAMod/DATag.m
+llvm.loop.mustprogress
+-[DAMessage init]
+-[DAMessage initWithQueryString:]
+-[DAMessage initWithDictionary:]
+-[DAMessage jsonDictionary]
+-[DAMessage dictionary]
+-[DAMessage setDictionary:]
+-[DAMessage .cxx_destruct]
+_OBJC_IVAR_$_DAMessage.dictionary
+_OBJC_SELECTOR_REFERENCES_.8
+_OBJC_CLASSLIST_REFERENCES_$_.9
+__OBJC_METACLASS_RO_$_DAMessage
+__OBJC_$_INSTANCE_METHODS_DAMessage
+__OBJC_$_INSTANCE_VARIABLES_DAMessage
+__OBJC_$_PROP_LIST_DAMessage
+__OBJC_CLASS_RO_$_DAMessage
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAMessage.m
+DAMod/DAMessage.m
++[DATagsRingBuffer sharedInstance]
+___34+[DATagsRingBuffer sharedInstance]_block_invoke
+___copy_helper_block_e8_
+___destroy_helper_block_e8_
+-[DATagsRingBuffer init]
+-[DATagsRingBuffer addObject:]
+-[DATagsRingBuffer count]
+-[DATagsRingBuffer objectAtIndex:]
+-[DATagsRingBuffer removeObjectAtIndex:]
+-[DATagsRingBuffer maxTagsCount]
+-[DATagsRingBuffer setMaxTagsCount:]
+-[DATagsRingBuffer removeFirstOnOverflow]
+-[DATagsRingBuffer setRemoveFirstOnOverflow:]
+-[DATagsRingBuffer firstPageView]
+-[DATagsRingBuffer setFirstPageView:]
+-[DATagsRingBuffer ringBuffer]
+-[DATagsRingBuffer setRingBuffer:]
+-[DATagsRingBuffer .cxx_destruct]
+_sharedInstance.predicate
+_sharedInstance.sharedInstance
+___block_descriptor_40_e8__e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.5
+_OBJC_SELECTOR_REFERENCES_.7
+_OBJC_SELECTOR_REFERENCES_.15
+__OBJC_$_CLASS_METHODS_DATagsRingBuffer
+__OBJC_METACLASS_RO_$_DATagsRingBuffer
+__OBJC_$_INSTANCE_METHODS_DATagsRingBuffer
+_OBJC_IVAR_$_DATagsRingBuffer.removeFirstOnOverflow
+_OBJC_IVAR_$_DATagsRingBuffer.firstPageView
+_OBJC_IVAR_$_DATagsRingBuffer.maxTagsCount
+_OBJC_IVAR_$_DATagsRingBuffer.ringBuffer
+__OBJC_$_INSTANCE_VARIABLES_DATagsRingBuffer
+__OBJC_$_PROP_LIST_DATagsRingBuffer
+__OBJC_CLASS_RO_$_DATagsRingBuffer
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DATagsRingBuffer.m
+DAMod/DATagsRingBuffer.m
+__destroy_helper_block_e8_
+__copy_helper_block_e8_
+__34+[DATagsRingBuffer sharedInstance]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/dispatch/once.h
++[DAConstraintsChecker satisfy:constraintsFor:]
++[DAConstraintsChecker satisfy:constraints:]
+_allConstraints
+_OBJC_SELECTOR_REFERENCES_.89
+_OBJC_SELECTOR_REFERENCES_.91
+_OBJC_CLASSLIST_REFERENCES_$_.92
+_OBJC_SELECTOR_REFERENCES_.96
+_OBJC_SELECTOR_REFERENCES_.100
+_OBJC_CLASSLIST_REFERENCES_$_.104
+_OBJC_SELECTOR_REFERENCES_.106
+_OBJC_SELECTOR_REFERENCES_.108
+_OBJC_SELECTOR_REFERENCES_.110
+_OBJC_SELECTOR_REFERENCES_.112
+_OBJC_CLASSLIST_REFERENCES_$_.113
+_OBJC_SELECTOR_REFERENCES_.115
+__OBJC_$_CLASS_METHODS_DAConstraintsChecker
+__OBJC_METACLASS_RO_$_DAConstraintsChecker
+__OBJC_CLASS_RO_$_DAConstraintsChecker
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAConstraintsChecker.m
+DAMod/DAConstraintsChecker.m
++[NSDictionary(QueryString) dictionaryWithQueryString:]
+-[NSMutableDictionary(SafeDigitalAnalytics) safeSetObject:forKey:]
+_OBJC_SELECTOR_REFERENCES_.10
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_SELECTOR_REFERENCES_.14
+_OBJC_SELECTOR_REFERENCES_.20
+_OBJC_SELECTOR_REFERENCES_.22
+__OBJC_$_CATEGORY_CLASS_METHODS_NSDictionary_$_QueryString
+__OBJC_$_CATEGORY_NSDictionary_$_QueryString
+_OBJC_CLASSLIST_REFERENCES_$_.24
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSMutableDictionary_$_SafeDigitalAnalytics
+__OBJC_$_CATEGORY_NSMutableDictionary_$_SafeDigitalAnalytics
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/NSDictionary+QueryString.m
+DAMod/NSDictionary+QueryString.m
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
++[DATagDictionary tagWithApplicationName:clientId:]
+-[DATagDictionary init]
+-[DATagDictionary makePageViewTag:cg:se:sr:attributes:cm_mmc:]
+-[DATagDictionary makeTechnicalPropertiesTag:cg:se:sr:attributes:cm_mmc:]
+-[DATagDictionary makeProductViewTag:pr:pm:cg:attributes:]
+-[DATagDictionary makeShopAction5Tag:pm:qt:bp:cg:cc:attributes:]
+-[DATagDictionary makeShopAction9Tag:pm:qt:bp:cg:on:tr:cd:cc:attributes:]
+-[DATagDictionary makeOrderTag:tr:sg:cd:ct:sa:zp:cc:attributes:]
+-[DATagDictionary makeRegistrationTag:em:ct:sa:zp:cy:attributes:]
+-[DATagDictionary makeElementTag:ecat:attributes:]
+-[DATagDictionary makeConversionEventTag:cat:ccid:cpt:attributes:]
+-[DATagDictionary makeLinkClickTag:nm:hr:]
+-[DATagDictionary makeImpressionTag:sp:re:]
+-[DATagDictionary attributesDictionaryFrom:tid:]
+-[DATagDictionary sha1From:]
+-[DATagDictionary stringFromAttributesArray:]
+-[DATagDictionary buildFinalDictionary]
+-[DATagDictionary tagDictionary]
+-[DATagDictionary applicationName]
+-[DATagDictionary setApplicationName:]
+-[DATagDictionary clientId]
+-[DATagDictionary setClientId:]
+-[DATagDictionary tagDict]
+-[DATagDictionary setTagDict:]
+-[DATagDictionary .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.5
+_OBJC_CLASSLIST_REFERENCES_$_.10
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_CLASSLIST_REFERENCES_$_.29
+_OBJC_SELECTOR_REFERENCES_.41
+_OBJC_SELECTOR_REFERENCES_.43
+_OBJC_CLASSLIST_REFERENCES_$_.44
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.68
+_OBJC_SELECTOR_REFERENCES_.86
+_OBJC_SELECTOR_REFERENCES_.88
+_OBJC_CLASSLIST_REFERENCES_$_.135
+_OBJC_SELECTOR_REFERENCES_.137
+_OBJC_SELECTOR_REFERENCES_.139
+_OBJC_SELECTOR_REFERENCES_.161
+_OBJC_SELECTOR_REFERENCES_.173
+_OBJC_SELECTOR_REFERENCES_.177
+_OBJC_SELECTOR_REFERENCES_.181
+_OBJC_SELECTOR_REFERENCES_.183
+_OBJC_SELECTOR_REFERENCES_.185
+_OBJC_CLASSLIST_REFERENCES_$_.186
+_OBJC_SELECTOR_REFERENCES_.188
+_OBJC_SELECTOR_REFERENCES_.192
+_OBJC_SELECTOR_REFERENCES_.196
+_OBJC_SELECTOR_REFERENCES_.198
+_OBJC_CLASSLIST_REFERENCES_$_.199
+_OBJC_SELECTOR_REFERENCES_.201
+_OBJC_SELECTOR_REFERENCES_.203
+_OBJC_SELECTOR_REFERENCES_.205
+_OBJC_SELECTOR_REFERENCES_.231
+_OBJC_SELECTOR_REFERENCES_.235
+__OBJC_$_CLASS_METHODS_DATagDictionary
+__OBJC_METACLASS_RO_$_DATagDictionary
+__OBJC_$_INSTANCE_METHODS_DATagDictionary
+_OBJC_IVAR_$_DATagDictionary.applicationName
+_OBJC_IVAR_$_DATagDictionary.clientId
+_OBJC_IVAR_$_DATagDictionary.tagDict
+__OBJC_$_INSTANCE_VARIABLES_DATagDictionary
+__OBJC_$_PROP_LIST_DATagDictionary
+__OBJC_CLASS_RO_$_DATagDictionary
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DATagDictionary.m
+DAMod/DATagDictionary.m
++[DigitalAnalytics startup]
++[DigitalAnalytics startNewSession]
++[DigitalAnalytics shutdown]
++[DigitalAnalytics sessionId]
++[DigitalAnalytics setCXAAdvertisingId:]
++[DigitalAnalytics getCXAAdvertisingId]
++[DigitalAnalytics visitorId]
++[DigitalAnalytics libraryVersion]
++[DigitalAnalytics firePageView:category:searchTerm:searchResult:attributes:cmmmc:]
++[DigitalAnalytics fireProductview:productId:productName:category:attributes:]
++[DigitalAnalytics fireShopAction5:productName:quantity:baseUnitPrice:category:currencyCode:attributes:]
++[DigitalAnalytics fireShopAction9:productName:quantity:baseUnitPrice:category:orderId:orderSubTotal:customerId:currencyCode:attributes:]
++[DigitalAnalytics fireOrder:subtotal:shippingCharge:customerId:customerCity:customerState:customerZip:currencyCode:attributes:]
++[DigitalAnalytics fireRegistration:email:customerCity:customerState:customerZip:customerCountry:attributes:]
++[DigitalAnalytics fireElement:elementCategory:attributes:]
++[DigitalAnalytics fireConversionEvent:actionType:eventCategory:eventPoints:attributes:]
++[DigitalAnalytics fireLinkClick:linkName:link:]
++[DigitalAnalytics fireImpression:cmsp:cmre:]
++[DigitalAnalytics activateClientId:]
++[DigitalAnalytics resetToDefaultClientId]
++[DigitalAnalytics setOptOut:]
++[DigitalAnalytics getOptOut]
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_CLASSLIST_REFERENCES_$_.28
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_CLASSLIST_REFERENCES_$_.37
+_OBJC_CLASSLIST_REFERENCES_$_.54
+_OBJC_SELECTOR_REFERENCES_.58
+_OBJC_SELECTOR_REFERENCES_.78
+_OBJC_SELECTOR_REFERENCES_.102
+_OBJC_SELECTOR_REFERENCES_.116
+_OBJC_SELECTOR_REFERENCES_.126
+_OBJC_SELECTOR_REFERENCES_.134
+_OBJC_SELECTOR_REFERENCES_.142
+_OBJC_SELECTOR_REFERENCES_.144
+_OBJC_SELECTOR_REFERENCES_.146
+_OBJC_SELECTOR_REFERENCES_.148
+__OBJC_$_CLASS_METHODS_DigitalAnalytics
+__OBJC_METACLASS_RO_$_DigitalAnalytics
+__OBJC_CLASS_RO_$_DigitalAnalytics
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DigitalAnalytics.m
+DAMod/DigitalAnalytics.m
++[DAMod sharedInstance]
+___23+[DAMod sharedInstance]_block_invoke
+-[DAMod init]
+-[DAMod start]
+-[DAMod stop]
+-[DAMod newSession]
+-[DAMod resetSession]
+-[DAMod enable]
+-[DAMod disable]
+-[DAMod isEnabled]
+-[DAMod name]
+-[DAMod settingsBundlePath]
+-[DAMod sessionId]
+-[DAMod setCXAAdvertisingId:]
+-[DAMod getCXAAdvertisingId]
+-[DAMod visitorId]
+-[DAMod constraintsFor:]
+-[DAMod canFire]
+-[DAMod networkReachabilityChanged:]
+-[DAMod firePageView:category:searchTerm:searchResult:attributes:cmmmc:]
+-[DAMod firePageView:cg:se:sr:attributes:cm_mmc:]
+-[DAMod fireTechnicalProperties:cg:se:sr:attributes:cm_mmc:]
+-[DAMod fireProductView:pr:pm:cg:attributes:]
+-[DAMod fireShopAction5:pm:qt:bp:cg:cc:attributes:]
+-[DAMod fireShopAction9:pm:qt:bp:cg:on:tr:cd:cc:attributes:]
+-[DAMod fireOrder:tr:sg:cd:ct:sa:zp:cc:attributes:]
+-[DAMod fireRegistration:em:ct:sa:zp:cy:attributes:]
+-[DAMod fireElement:ecat:attributes:]
+-[DAMod fireConversionEvent:cat:ccid:cpt:attributes:]
+-[DAMod fireLinkClick:nm:hr:]
+-[DAMod fireImpression:cmsp:cmre:]
+-[DAMod fireImpression:sp:re:]
+-[DAMod isRequiredStringParamPassed:paramDescription:]
+-[DAMod emptyStringIfNil:]
+-[DAMod postTagDictionary:]
+-[DAMod postTagString:]
+-[DAMod httpHeadersForSessionId:andJson:]
+-[DAMod technicalPropertiesHeaders]
++[DAMod deviceModel]
++[DAMod deviceType]
++[DAMod isTechnicalPropertiesTagJson:]
++[DAMod setActiveClientId:]
++[DAMod clearActiveClientId]
+-[DAMod setOptOut:]
+-[DAMod getOptOut]
+-[DAMod isOptOutAnonymous]
+-[DAMod bModuleEnabled]
+-[DAMod daTagsRingBuffer]
+-[DAMod reachability]
+-[DAMod hostNetworkStatus]
+-[DAMod applicationName]
+-[DAMod setApplicationName:]
+-[DAMod clientId]
+-[DAMod setClientId:]
+-[DAMod optOutModeStr]
+-[DAMod setOptOutModeStr:]
+-[DAMod .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.17
+_OBJC_CLASSLIST_REFERENCES_$_.22
+_OBJC_CLASSLIST_REFERENCES_$_.25
+_OBJC_SELECTOR_REFERENCES_.29
+_OBJC_SELECTOR_REFERENCES_.31
+_OBJC_CLASSLIST_REFERENCES_$_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_CLASSLIST_REFERENCES_$_.51
+_OBJC_SELECTOR_REFERENCES_.53
+_OBJC_SELECTOR_REFERENCES_.56
+_OBJC_CLASSLIST_REFERENCES_$_.63
+_OBJC_SELECTOR_REFERENCES_.65
+_OBJC_SELECTOR_REFERENCES_.69
+_OBJC_SELECTOR_REFERENCES_.71
+_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_SELECTOR_REFERENCES_.75
+_OBJC_SELECTOR_REFERENCES_.77
+_OBJC_SELECTOR_REFERENCES_.79
+_OBJC_SELECTOR_REFERENCES_.81
+_OBJC_CLASSLIST_REFERENCES_$_.84
+_OBJC_SELECTOR_REFERENCES_.90
+_OBJC_SELECTOR_REFERENCES_.104
+_OBJC_CLASSLIST_REFERENCES_$_.111
+_OBJC_SELECTOR_REFERENCES_.117
+_OBJC_SELECTOR_REFERENCES_.129
+_OBJC_SELECTOR_REFERENCES_.149
+_OBJC_SELECTOR_REFERENCES_.151
+_OBJC_SELECTOR_REFERENCES_.155
+_OBJC_SELECTOR_REFERENCES_.165
+_OBJC_SELECTOR_REFERENCES_.167
+_OBJC_SELECTOR_REFERENCES_.169
+_OBJC_CLASSLIST_REFERENCES_$_.174
+_OBJC_SELECTOR_REFERENCES_.176
+_OBJC_SELECTOR_REFERENCES_.178
+_OBJC_SELECTOR_REFERENCES_.180
+_OBJC_CLASSLIST_REFERENCES_$_.185
+_OBJC_SELECTOR_REFERENCES_.187
+_OBJC_SELECTOR_REFERENCES_.189
+_OBJC_SELECTOR_REFERENCES_.191
+_OBJC_SELECTOR_REFERENCES_.193
+_OBJC_SELECTOR_REFERENCES_.195
+_OBJC_SELECTOR_REFERENCES_.197
+_OBJC_CLASSLIST_REFERENCES_$_.198
+_OBJC_SELECTOR_REFERENCES_.200
+_OBJC_SELECTOR_REFERENCES_.202
+_OBJC_SELECTOR_REFERENCES_.204
+_OBJC_SELECTOR_REFERENCES_.206
+_OBJC_SELECTOR_REFERENCES_.212
+_OBJC_CLASSLIST_REFERENCES_$_.213
+_OBJC_SELECTOR_REFERENCES_.217
+_OBJC_SELECTOR_REFERENCES_.219
+_OBJC_SELECTOR_REFERENCES_.223
+_OBJC_CLASSLIST_REFERENCES_$_.226
+_OBJC_SELECTOR_REFERENCES_.228
+_OBJC_SELECTOR_REFERENCES_.230
+_OBJC_SELECTOR_REFERENCES_.234
+_OBJC_SELECTOR_REFERENCES_.238
+_OBJC_SELECTOR_REFERENCES_.242
+_OBJC_CLASSLIST_REFERENCES_$_.243
+_OBJC_SELECTOR_REFERENCES_.245
+_OBJC_SELECTOR_REFERENCES_.251
+_OBJC_SELECTOR_REFERENCES_.255
+__OBJC_$_CLASS_METHODS_DAMod
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_EOLifecycleObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_EOLifecycleObject
+__OBJC_$_PROTOCOL_CLASS_METHODS_EOLifecycleObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_EOLifecycleObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_EOLifecycleObject
+__OBJC_PROTOCOL_$_EOLifecycleObject
+__OBJC_LABEL_PROTOCOL_$_EOLifecycleObject
+__OBJC_CLASS_PROTOCOLS_$_DAMod
+__OBJC_METACLASS_RO_$_DAMod
+__OBJC_$_INSTANCE_METHODS_DAMod
+_OBJC_IVAR_$_DAMod.bModuleEnabled
+_OBJC_IVAR_$_DAMod.daTagsRingBuffer
+_OBJC_IVAR_$_DAMod.reachability
+_OBJC_IVAR_$_DAMod.hostNetworkStatus
+_OBJC_IVAR_$_DAMod.applicationName
+_OBJC_IVAR_$_DAMod.clientId
+_OBJC_IVAR_$_DAMod.optOutModeStr
+__OBJC_$_INSTANCE_VARIABLES_DAMod
+__OBJC_$_PROP_LIST_DAMod
+__OBJC_CLASS_RO_$_DAMod
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAMod.m
+DAMod/DAMod.m
+__23+[DAMod sharedInstance]_block_invoke
++[DAModSession sharedInstance]
+___30+[DAModSession sharedInstance]_block_invoke
+-[DAModSession init]
+-[DAModSession newSession]
+-[DAModSession sessionDirectoryPath]
+-[DAModSession sessionDirectoryExists]
+-[DAModSession sessionFilePath]
+-[DAModSession sessionFileExists]
+-[DAModSession createSessionDirectory]
+-[DAModSession contentsOfSessionFile]
+-[DAModSession updateSessionFile]
+-[DAModSession newUserId]
+-[DAModSession newSessionId]
+-[DAModSession visitorId]
+-[DAModSession cjuid]
+-[DAModSession setCjuid:]
+-[DAModSession cjsid]
+-[DAModSession .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.32
+_OBJC_CLASSLIST_REFERENCES_$_.33
+_OBJC_SELECTOR_REFERENCES_.37
+_OBJC_SELECTOR_REFERENCES_.49
+_OBJC_SELECTOR_REFERENCES_.51
+_OBJC_CLASSLIST_REFERENCES_$_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_CLASSLIST_REFERENCES_$_.55
+_OBJC_SELECTOR_REFERENCES_.57
+_OBJC_SELECTOR_REFERENCES_.59
+_OBJC_SELECTOR_REFERENCES_.61
+_OBJC_SELECTOR_REFERENCES_.63
+_OBJC_CLASSLIST_REFERENCES_$_.64
+_OBJC_CLASSLIST_REFERENCES_$_.69
+_OBJC_CLASSLIST_REFERENCES_$_.82
+_OBJC_SELECTOR_REFERENCES_.84
+__OBJC_$_CLASS_METHODS_DAModSession
+__OBJC_METACLASS_RO_$_DAModSession
+__OBJC_$_INSTANCE_METHODS_DAModSession
+_OBJC_IVAR_$_DAModSession.cjuid
+_OBJC_IVAR_$_DAModSession.cjsid
+__OBJC_$_INSTANCE_VARIABLES_DAModSession
+__OBJC_$_PROP_LIST_DAModSession
+__OBJC_CLASS_RO_$_DAModSession
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAModSession.m
+DAMod/DAModSession.m
+__30+[DAModSession sharedInstance]_block_invoke
