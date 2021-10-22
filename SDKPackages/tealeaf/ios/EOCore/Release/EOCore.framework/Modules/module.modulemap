@@ -1,6 +1,0 @@
-framework module EOCore {
-  umbrella header "EOCore.h"
-
-  export *
-  module * { export * }
-}
