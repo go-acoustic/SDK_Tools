@@ -14,8 +14,6 @@
 	<true/>
 	<key>DoPostOnIntervals</key>
 	<true/>
-	<key>DoPostOnScreenChange</key>
-	<true/>
 	<key>DynamicConfigurationEnabled</key>
 	<true/>
 	<key>HasToPersistLocalCache</key>
