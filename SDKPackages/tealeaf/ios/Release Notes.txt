@@ -26,6 +26,24 @@ Known Issues
 
 
 
+October 21 2021 EOCore Module 2.3.68
+
+EOCore Release
+Enhancements
+
+- Library is now being built for xcframeworks with latest xcode 13.0.
+
+Bug Fixes
+
+- Added extra checks and synchronized for queue that is posting back to server during application going to background or to terminate. There was some crashes reported, but unable to reproduce locally.
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
 October 21 2021 TealeafSHA2Hash Module 1.0.25
 
 TealeafSHA2Hash Release
