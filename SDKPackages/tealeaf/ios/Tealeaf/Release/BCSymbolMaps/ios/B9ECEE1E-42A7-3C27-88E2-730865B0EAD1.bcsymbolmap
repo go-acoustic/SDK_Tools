@@ -1,0 +1,3956 @@
+BCSymbolMap Version: 2.0
+Apple clang version 13.0.0 (clang-1300.0.29.3)
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
+iPhoneOS15.0.sdk
+/Users/easdk/Library/Developer/Xcode/DerivedData/Tealeaf-bkholazjcphhdgcowilahtlbzqdd/Build/Intermediates.noindex/ArchiveIntermediates/XCTealeaf/IntermediateBuildFilesPath/Tealeaf.build/ReleaseAuto-iphoneos/XCTealeaf.build/DerivedSources/Tealeaf_vers.c
+/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/Tealeaf_15_0_iPhone_8_Plus_SQ/TealeafBuild/iOS-SDK/iOSSrc/Tealeaf
+-[NSURL(TLFLibExtensions) relativeURLString]
+_OBJC_SELECTOR_REFERENCES_
+_OBJC_CLASSLIST_REFERENCES_$_
+_OBJC_SELECTOR_REFERENCES_.2
+_OBJC_SELECTOR_REFERENCES_.4
+_OBJC_SELECTOR_REFERENCES_.8
+_OBJC_SELECTOR_REFERENCES_.14
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSURL_$_TLFLibExtensions
+__OBJC_$_CATEGORY_NSURL_$_TLFLibExtensions
+Tealeaf/NSURL+TLFLibExtensions.m
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
++[UIAlertAction(TLFInjection) tlfInject]
+___40+[UIAlertAction(TLFInjection) tlfInject]_block_invoke
+_tlfNewUIAlertAction_actionWithTitle
+___copy_helper_block_e8_
+___destroy_helper_block_e8_
+-[UIAlertAction(TLFInjection) setTealeafLayoutObject:]
+-[UIAlertAction(TLFInjection) tealeafLayoutObject]
+___Block_byref_object_copy_
+___Block_byref_object_dispose_
+___Block_byref_object_copy_.18
+___Block_byref_object_dispose_.19
+___tlfNewUIAlertAction_actionWithTitle_block_invoke
+___copy_helper_block_e8_32r40r
+___destroy_helper_block_e8_32r40r
+_tlfInject.onceToken
+___block_descriptor_40_e8__e5_v8?0l
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIAlertAction_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_UIAlertAction_$_TLFInjection
+__OBJC_$_PROTOCOL_CLASS_METHODS_TLFInjectable
+__OBJC_$_PROTOCOL_METHOD_TYPES_TLFInjectable
+__OBJC_PROTOCOL_$_TLFInjectable
+__OBJC_LABEL_PROTOCOL_$_TLFInjectable
+__OBJC_CATEGORY_PROTOCOLS_$_UIAlertAction_$_TLFInjection
+__OBJC_$_PROP_LIST_UIAlertAction_$_TLFInjection
+__OBJC_$_CATEGORY_UIAlertAction_$_TLFInjection
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.17
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.23
+___block_descriptor_48_e8_32r40r_e23_v16?0"UIAlertAction"8l
+Tealeaf/UIAlertAction+TLFInjection.m
+__destroy_helper_block_e8_32r40r
+__copy_helper_block_e8_32r40r
+__tlfNewUIAlertAction_actionWithTitle_block_invoke
+__Block_byref_object_dispose_
+__Block_byref_object_copy_
+__destroy_helper_block_e8_
+__copy_helper_block_e8_
+tlfNewUIAlertAction_actionWithTitle
+__40+[UIAlertAction(TLFInjection) tlfInject]_block_invoke
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/dispatch/once.h
++[UIView(TLFInjection) tlfInject]
+___33+[UIView(TLFInjection) tlfInject]_block_invoke
+_tlfNewUIView_addGestureRecognizer
+-[UIView(TLFInjection) tlfInjectDelegate:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIView_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_UIView_$_TLFInjection
+__OBJC_$_PROTOCOL_REFS_TLFInjectableWithDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_TLFInjectableWithDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_TLFInjectableWithDelegate
+__OBJC_PROTOCOL_$_TLFInjectableWithDelegate
+__OBJC_LABEL_PROTOCOL_$_TLFInjectableWithDelegate
+__OBJC_CATEGORY_PROTOCOLS_$_UIView_$_TLFInjection
+__OBJC_$_CATEGORY_UIView_$_TLFInjection
+_OBJC_SELECTOR_REFERENCES_.10
+Tealeaf/UIView+TLFInjection.m
+tlfNewUIView_addGestureRecognizer
+__33+[UIView(TLFInjection) tlfInject]_block_invoke
++[UIGestureRecognizer(TLFInjection) tlfInject]
+___46+[UIGestureRecognizer(TLFInjection) tlfInject]_block_invoke
+_tlfNewUIGestureRecognizer_setDelegate
+-[UIGestureRecognizer(TLFInjection) tlfInjectDelegate:]
+-[UIGestureRecognizer(TLFInjection) gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
+_OBJC_SELECTOR_REFERENCES_.6
+_OBJC_SELECTOR_REFERENCES_.12
+_OBJC_CLASSLIST_REFERENCES_$_.13
+_OBJC_SELECTOR_REFERENCES_.18
+_OBJC_CLASSLIST_REFERENCES_$_.19
+_OBJC_CLASSLIST_REFERENCES_$_.22
+_OBJC_CLASSLIST_REFERENCES_$_.25
+_OBJC_CLASSLIST_REFERENCES_$_.28
+_OBJC_CLASSLIST_REFERENCES_$_.31
+_OBJC_CLASSLIST_REFERENCES_$_.34
+_OBJC_CLASSLIST_REFERENCES_$_.37
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIGestureRecognizer_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_UIGestureRecognizer_$_TLFInjection
+__OBJC_CATEGORY_PROTOCOLS_$_UIGestureRecognizer_$_TLFInjection
+__OBJC_$_CATEGORY_UIGestureRecognizer_$_TLFInjection
+_OBJC_SELECTOR_REFERENCES_.47
+Tealeaf/UIGestureRecognizer+TLFInjection.m
+tlfNewUIGestureRecognizer_setDelegate
+__46+[UIGestureRecognizer(TLFInjection) tlfInject]_block_invoke
++[UIDatePicker(TLFInjection) tlfInject]
+___39+[UIDatePicker(TLFInjection) tlfInject]_block_invoke
+-[UIDatePicker(TLFInjection) setTealeafNumOfColumns:]
+-[UIDatePicker(TLFInjection) tealeafNumOfColumns]
+-[UIDatePicker(TLFInjection) setTealeafNumOfVisibleRows:]
+-[UIDatePicker(TLFInjection) tealeafNumOfVisibleRows]
+___block_descriptor_32_e5_v8?0l
+___block_literal_global
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIDatePicker_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_UIDatePicker_$_TLFInjection
+__OBJC_CATEGORY_PROTOCOLS_$_UIDatePicker_$_TLFInjection
+__OBJC_$_PROP_LIST_UIDatePicker_$_TLFInjection
+__OBJC_$_CATEGORY_UIDatePicker_$_TLFInjection
+Tealeaf/UIDatePicker+TLFInjection.m
+__39+[UIDatePicker(TLFInjection) tlfInject]_block_invoke
+-[TLFL_AlertView initWithController:andZIndex:]
+-[TLFL_AlertView init:andZIndex:]
+-[TLFL_AlertView createAlertController:andView:andZIndex:]
+-[TLFL_AlertView getViewHeightForText:]
+-[TLFL_AlertView createListButton:andYPosition:andFont:andTintColor:andBaseId:andIdIndex:andZIndex:]
+-[TLFL_AlertView setId:ForLayoutObject:]
+-[TLFL_AlertView jsonRepresentation]
+___36-[TLFL_AlertView jsonRepresentation]_block_invoke
+___copy_helper_block_e8_32s
+___destroy_helper_block_e8_32s
+-[TLFL_AlertView title]
+-[TLFL_AlertView setTitle:]
+-[TLFL_AlertView message]
+-[TLFL_AlertView setMessage:]
+-[TLFL_AlertView buttons]
+-[TLFL_AlertView setButtons:]
+-[TLFL_AlertView dataContainer]
+-[TLFL_AlertView setDataContainer:]
+-[TLFL_AlertView .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.25
+_OBJC_CLASSLIST_REFERENCES_$_.26
+_OBJC_SELECTOR_REFERENCES_.28
+_OBJC_SELECTOR_REFERENCES_.30
+_OBJC_SELECTOR_REFERENCES_.33
+_OBJC_SELECTOR_REFERENCES_.35
+_OBJC_SELECTOR_REFERENCES_.37
+_OBJC_SELECTOR_REFERENCES_.39
+_OBJC_SELECTOR_REFERENCES_.41
+_OBJC_SELECTOR_REFERENCES_.43
+_OBJC_SELECTOR_REFERENCES_.45
+_OBJC_SELECTOR_REFERENCES_.49
+_OBJC_SELECTOR_REFERENCES_.51
+_OBJC_CLASSLIST_REFERENCES_$_.52
+_OBJC_SELECTOR_REFERENCES_.54
+_OBJC_SELECTOR_REFERENCES_.58
+_OBJC_CLASSLIST_REFERENCES_$_.59
+_OBJC_SELECTOR_REFERENCES_.61
+_OBJC_SELECTOR_REFERENCES_.63
+_OBJC_SELECTOR_REFERENCES_.65
+_OBJC_SELECTOR_REFERENCES_.67
+_OBJC_CLASSLIST_REFERENCES_$_.68
+_OBJC_SELECTOR_REFERENCES_.70
+_OBJC_SELECTOR_REFERENCES_.72
+_OBJC_SELECTOR_REFERENCES_.74
+_OBJC_CLASSLIST_REFERENCES_$_.75
+_OBJC_SELECTOR_REFERENCES_.77
+_OBJC_CLASSLIST_REFERENCES_$_.78
+_OBJC_SELECTOR_REFERENCES_.80
+_OBJC_SELECTOR_REFERENCES_.82
+_OBJC_SELECTOR_REFERENCES_.84
+_OBJC_SELECTOR_REFERENCES_.86
+_OBJC_SELECTOR_REFERENCES_.88
+_OBJC_SELECTOR_REFERENCES_.90
+_OBJC_CLASSLIST_REFERENCES_$_.91
+_OBJC_SELECTOR_REFERENCES_.95
+_OBJC_SELECTOR_REFERENCES_.97
+_OBJC_SELECTOR_REFERENCES_.99
+_OBJC_SELECTOR_REFERENCES_.103
+_OBJC_SELECTOR_REFERENCES_.105
+_OBJC_SELECTOR_REFERENCES_.107
+_OBJC_SELECTOR_REFERENCES_.109
+_OBJC_SELECTOR_REFERENCES_.111
+_OBJC_SELECTOR_REFERENCES_.113
+_OBJC_SELECTOR_REFERENCES_.115
+_OBJC_SELECTOR_REFERENCES_.117
+_OBJC_SELECTOR_REFERENCES_.119
+_OBJC_CLASSLIST_REFERENCES_$_.120
+_OBJC_SELECTOR_REFERENCES_.122
+_OBJC_SELECTOR_REFERENCES_.124
+_OBJC_SELECTOR_REFERENCES_.126
+_OBJC_SELECTOR_REFERENCES_.128
+_OBJC_SELECTOR_REFERENCES_.130
+_OBJC_CLASSLIST_REFERENCES_$_.131
+_OBJC_SELECTOR_REFERENCES_.133
+_OBJC_CLASSLIST_REFERENCES_$_.134
+_OBJC_SELECTOR_REFERENCES_.136
+_OBJC_SELECTOR_REFERENCES_.140
+_OBJC_SELECTOR_REFERENCES_.142
+_OBJC_SELECTOR_REFERENCES_.144
+_OBJC_SELECTOR_REFERENCES_.148
+_OBJC_SELECTOR_REFERENCES_.150
+_OBJC_SELECTOR_REFERENCES_.152
+_OBJC_SELECTOR_REFERENCES_.154
+_OBJC_SELECTOR_REFERENCES_.158
+_OBJC_SELECTOR_REFERENCES_.160
+_OBJC_SELECTOR_REFERENCES_.162
+___block_descriptor_40_e8_32s_e29_v16?0"NSMutableDictionary"8l
+_OBJC_SELECTOR_REFERENCES_.165
+_OBJC_IVAR_$_TLFL_AlertView._title
+_OBJC_IVAR_$_TLFL_AlertView._message
+_OBJC_IVAR_$_TLFL_AlertView._buttons
+_OBJC_IVAR_$_TLFL_AlertView._dataContainer
+__OBJC_METACLASS_RO_$_TLFL_AlertView
+__OBJC_$_INSTANCE_METHODS_TLFL_AlertView
+__OBJC_$_INSTANCE_VARIABLES_TLFL_AlertView
+__OBJC_$_PROP_LIST_TLFL_AlertView
+__OBJC_CLASS_RO_$_TLFL_AlertView
+Tealeaf/TLFL_AlertView.m
+Tealeaf/TLFL_AlertView.h
+__destroy_helper_block_e8_32s
+__copy_helper_block_e8_32s
+__36-[TLFL_AlertView jsonRepresentation]_block_invoke
+-[TLFL_TextView_RCT initWithRCTTxt:andZIndex:]
+-[TLFL_TextView_RCT jsonRepresentation]
+___39-[TLFL_TextView_RCT jsonRepresentation]_block_invoke
+___39-[TLFL_TextView_RCT jsonRepresentation]_block_invoke.17
+_OBJC_CLASSLIST_REFERENCES_$_.9
+_OBJC_SELECTOR_REFERENCES_.11
+_OBJC_SELECTOR_REFERENCES_.13
+__OBJC_METACLASS_RO_$_TLFL_TextView_RCT
+__OBJC_$_INSTANCE_METHODS_TLFL_TextView_RCT
+__OBJC_CLASS_RO_$_TLFL_TextView_RCT
+Tealeaf/TLFL_TextView_RCT.m
+__39-[TLFL_TextView_RCT jsonRepresentation]_block_invoke.17
+__39-[TLFL_TextView_RCT jsonRepresentation]_block_invoke
+-[TLFLayoutPlaceHolder initSetup]
+-[TLFLayoutPlaceHolder initEmptyWithClassName:]
+-[TLFLayoutPlaceHolder hasAddedScreenViewLoad]
+-[TLFLayoutPlaceHolder setHasAddedScreenViewLoad:]
+-[TLFLayoutPlaceHolder hasAddedMessageToTempQueue]
+-[TLFLayoutPlaceHolder setHasAddedMessageToTempQueue:]
+-[TLFLayoutPlaceHolder className]
+-[TLFLayoutPlaceHolder .cxx_destruct]
+_OBJC_IVAR_$_TLFLayoutPlaceHolder._hasAddedScreenViewLoad
+_OBJC_IVAR_$_TLFLayoutPlaceHolder._hasAddedMessageToTempQueue
+_OBJC_IVAR_$_TLFLayoutPlaceHolder._className
+__OBJC_METACLASS_RO_$_TLFLayoutPlaceHolder
+__OBJC_$_INSTANCE_METHODS_TLFLayoutPlaceHolder
+__OBJC_$_INSTANCE_VARIABLES_TLFLayoutPlaceHolder
+__OBJC_$_PROP_LIST_TLFLayoutPlaceHolder
+__OBJC_CLASS_RO_$_TLFLayoutPlaceHolder
+Tealeaf/TLFLayoutPlaceHolder.m
+Tealeaf/TLFLayoutPlaceHolder.h
+-[TLFClientStateMessage init]
+-[TLFClientStateMessage initWithCarrier:iso:andLevel:]
+-[TLFClientStateMessage initWithDeviceOrientation:andScreenOrientation:andScreenSize:]
+-[TLFClientStateMessage setTraitStyle]
+-[TLFClientStateMessage jsonDictionary]
+-[TLFClientStateMessage encodeWithCoder:]
+-[TLFClientStateMessage initWithCoder:]
+-[TLFClientStateMessage deviceOrientation]
+-[TLFClientStateMessage setDeviceOrientation:]
+-[TLFClientStateMessage uiOrientation]
+-[TLFClientStateMessage setUiOrientation:]
+-[TLFClientStateMessage latitude]
+-[TLFClientStateMessage setLatitude:]
+-[TLFClientStateMessage longitude]
+-[TLFClientStateMessage setLongitude:]
+-[TLFClientStateMessage freeStorage]
+-[TLFClientStateMessage setFreeStorage:]
+-[TLFClientStateMessage battery]
+-[TLFClientStateMessage setBattery:]
+-[TLFClientStateMessage freeMemory]
+-[TLFClientStateMessage setFreeMemory:]
+-[TLFClientStateMessage connectionType]
+-[TLFClientStateMessage setConnectionType:]
+-[TLFClientStateMessage networkReachability]
+-[TLFClientStateMessage setNetworkReachability:]
+-[TLFClientStateMessage carrier]
+-[TLFClientStateMessage setCarrier:]
+-[TLFClientStateMessage carriers]
+-[TLFClientStateMessage setCarriers:]
+-[TLFClientStateMessage countryCode]
+-[TLFClientStateMessage setCountryCode:]
+-[TLFClientStateMessage ip]
+-[TLFClientStateMessage setIp:]
+-[TLFClientStateMessage ipv6]
+-[TLFClientStateMessage setIpv6:]
+-[TLFClientStateMessage darkMode]
+-[TLFClientStateMessage setDarkMode:]
+-[TLFClientStateMessage bOrientationSet]
+-[TLFClientStateMessage setBOrientationSet:]
+-[TLFClientStateMessage .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.38
+_OBJC_SELECTOR_REFERENCES_.40
+_OBJC_SELECTOR_REFERENCES_.42
+_OBJC_SELECTOR_REFERENCES_.44
+_OBJC_CLASSLIST_REFERENCES_$_.45
+_OBJC_SELECTOR_REFERENCES_.53
+_OBJC_SELECTOR_REFERENCES_.55
+_OBJC_SELECTOR_REFERENCES_.57
+_OBJC_SELECTOR_REFERENCES_.59
+_OBJC_SELECTOR_REFERENCES_.69
+_OBJC_SELECTOR_REFERENCES_.71
+_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_SELECTOR_REFERENCES_.75
+_OBJC_SELECTOR_REFERENCES_.79
+_OBJC_SELECTOR_REFERENCES_.81
+_OBJC_SELECTOR_REFERENCES_.83
+_OBJC_SELECTOR_REFERENCES_.85
+_OBJC_SELECTOR_REFERENCES_.87
+_OBJC_SELECTOR_REFERENCES_.89
+_OBJC_SELECTOR_REFERENCES_.91
+_OBJC_SELECTOR_REFERENCES_.93
+_OBJC_SELECTOR_REFERENCES_.101
+_OBJC_CLASSLIST_REFERENCES_$_.108
+_OBJC_SELECTOR_REFERENCES_.110
+_OBJC_SELECTOR_REFERENCES_.112
+_OBJC_SELECTOR_REFERENCES_.116
+_OBJC_CLASSLIST_REFERENCES_$_.117
+_OBJC_SELECTOR_REFERENCES_.121
+_OBJC_SELECTOR_REFERENCES_.123
+_OBJC_SELECTOR_REFERENCES_.125
+_OBJC_SELECTOR_REFERENCES_.127
+_OBJC_CLASSLIST_REFERENCES_$_.128
+_OBJC_SELECTOR_REFERENCES_.132
+_OBJC_CLASSLIST_REFERENCES_$_.133
+_OBJC_SELECTOR_REFERENCES_.135
+_OBJC_SELECTOR_REFERENCES_.137
+_OBJC_SELECTOR_REFERENCES_.139
+_OBJC_SELECTOR_REFERENCES_.141
+_OBJC_SELECTOR_REFERENCES_.143
+_OBJC_SELECTOR_REFERENCES_.145
+_OBJC_SELECTOR_REFERENCES_.147
+_OBJC_SELECTOR_REFERENCES_.149
+_OBJC_SELECTOR_REFERENCES_.151
+_OBJC_SELECTOR_REFERENCES_.153
+_OBJC_SELECTOR_REFERENCES_.155
+_OBJC_SELECTOR_REFERENCES_.157
+_OBJC_SELECTOR_REFERENCES_.161
+_OBJC_SELECTOR_REFERENCES_.163
+_OBJC_SELECTOR_REFERENCES_.167
+_OBJC_CLASSLIST_REFERENCES_$_.168
+_OBJC_SELECTOR_REFERENCES_.170
+_OBJC_SELECTOR_REFERENCES_.172
+_OBJC_SELECTOR_REFERENCES_.174
+_OBJC_SELECTOR_REFERENCES_.176
+_OBJC_SELECTOR_REFERENCES_.178
+_OBJC_SELECTOR_REFERENCES_.180
+_OBJC_SELECTOR_REFERENCES_.182
+_OBJC_SELECTOR_REFERENCES_.184
+_OBJC_SELECTOR_REFERENCES_.186
+_OBJC_SELECTOR_REFERENCES_.188
+_OBJC_SELECTOR_REFERENCES_.190
+_OBJC_SELECTOR_REFERENCES_.192
+_OBJC_SELECTOR_REFERENCES_.194
+_OBJC_SELECTOR_REFERENCES_.196
+_OBJC_SELECTOR_REFERENCES_.198
+_OBJC_SELECTOR_REFERENCES_.200
+_OBJC_SELECTOR_REFERENCES_.202
+_OBJC_IVAR_$_TLFClientStateMessage._deviceOrientation
+_OBJC_IVAR_$_TLFClientStateMessage._uiOrientation
+_OBJC_IVAR_$_TLFClientStateMessage._latitude
+_OBJC_IVAR_$_TLFClientStateMessage._longitude
+_OBJC_IVAR_$_TLFClientStateMessage._freeStorage
+_OBJC_IVAR_$_TLFClientStateMessage._battery
+_OBJC_IVAR_$_TLFClientStateMessage._freeMemory
+_OBJC_IVAR_$_TLFClientStateMessage._connectionType
+_OBJC_IVAR_$_TLFClientStateMessage._networkReachability
+_OBJC_IVAR_$_TLFClientStateMessage._carrier
+_OBJC_IVAR_$_TLFClientStateMessage._carriers
+_OBJC_IVAR_$_TLFClientStateMessage._countryCode
+_OBJC_IVAR_$_TLFClientStateMessage._ip
+_OBJC_IVAR_$_TLFClientStateMessage._ipv6
+_OBJC_IVAR_$_TLFClientStateMessage._darkMode
+_OBJC_IVAR_$_TLFClientStateMessage._bOrientationSet
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSCoding
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSCoding
+__OBJC_PROTOCOL_$_NSCoding
+__OBJC_LABEL_PROTOCOL_$_NSCoding
+__OBJC_CLASS_PROTOCOLS_$_TLFClientStateMessage
+__OBJC_METACLASS_RO_$_TLFClientStateMessage
+__OBJC_$_INSTANCE_METHODS_TLFClientStateMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFClientStateMessage
+__OBJC_$_PROP_LIST_TLFClientStateMessage
+__OBJC_CLASS_RO_$_TLFClientStateMessage
+Tealeaf/TLFClientStateMessage.m
+Tealeaf/TLFClientStateMessage.h
+-[TLFL_SearchBar initWithSearchBar:andZIndex:andControlsDict:]
+-[TLFL_SearchBar jsonRepresentation]
+___36-[TLFL_SearchBar jsonRepresentation]_block_invoke
+___36-[TLFL_SearchBar jsonRepresentation]_block_invoke.110
+-[TLFL_SearchBar barStyleToString:]
+-[TLFL_SearchBar searchBarStyleToString:]
+-[TLFL_SearchBar tintColor]
+-[TLFL_SearchBar setTintColor:]
+-[TLFL_SearchBar barTintColor]
+-[TLFL_SearchBar setBarTintColor:]
+-[TLFL_SearchBar translucent]
+-[TLFL_SearchBar setTranslucent:]
+-[TLFL_SearchBar barStyle]
+-[TLFL_SearchBar setBarStyle:]
+-[TLFL_SearchBar searchBarStyle]
+-[TLFL_SearchBar setSearchBarStyle:]
+-[TLFL_SearchBar showsBookmarkButton]
+-[TLFL_SearchBar setShowsBookmarkButton:]
+-[TLFL_SearchBar showsCancelButton]
+-[TLFL_SearchBar setShowsCancelButton:]
+-[TLFL_SearchBar showsSearchResultsButton]
+-[TLFL_SearchBar setShowsSearchResultsButton:]
+-[TLFL_SearchBar searchResultsButtonSelected]
+-[TLFL_SearchBar setSearchResultsButtonSelected:]
+-[TLFL_SearchBar scopeButtonTitles]
+-[TLFL_SearchBar setScopeButtonTitles:]
+-[TLFL_SearchBar selectedScopeButtonIndex]
+-[TLFL_SearchBar setSelectedScopeButtonIndex:]
+-[TLFL_SearchBar showsScopeBar]
+-[TLFL_SearchBar setShowsScopeBar:]
+-[TLFL_SearchBar dataContainer]
+-[TLFL_SearchBar setDataContainer:]
+-[TLFL_SearchBar .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.16
+_OBJC_SELECTOR_REFERENCES_.20
+_OBJC_SELECTOR_REFERENCES_.22
+_OBJC_SELECTOR_REFERENCES_.24
+_OBJC_SELECTOR_REFERENCES_.26
+_OBJC_SELECTOR_REFERENCES_.32
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_SELECTOR_REFERENCES_.46
+_OBJC_SELECTOR_REFERENCES_.48
+_OBJC_SELECTOR_REFERENCES_.50
+_OBJC_SELECTOR_REFERENCES_.52
+_OBJC_CLASSLIST_REFERENCES_$_.55
+_OBJC_CLASSLIST_REFERENCES_$_.70
+_OBJC_SELECTOR_REFERENCES_.76
+_OBJC_CLASSLIST_REFERENCES_$_.77
+_OBJC_CLASSLIST_REFERENCES_$_.80
+_OBJC_CLASSLIST_REFERENCES_$_.81
+_OBJC_CLASSLIST_REFERENCES_$_.94
+_OBJC_SELECTOR_REFERENCES_.98
+_OBJC_SELECTOR_REFERENCES_.100
+_OBJC_SELECTOR_REFERENCES_.104
+_OBJC_SELECTOR_REFERENCES_.106
+_OBJC_SELECTOR_REFERENCES_.114
+_OBJC_SELECTOR_REFERENCES_.118
+_OBJC_SELECTOR_REFERENCES_.134
+_OBJC_SELECTOR_REFERENCES_.138
+_OBJC_IVAR_$_TLFL_SearchBar._tintColor
+_OBJC_IVAR_$_TLFL_SearchBar._barTintColor
+_OBJC_IVAR_$_TLFL_SearchBar._translucent
+_OBJC_IVAR_$_TLFL_SearchBar._barStyle
+_OBJC_IVAR_$_TLFL_SearchBar._searchBarStyle
+_OBJC_IVAR_$_TLFL_SearchBar._showsBookmarkButton
+_OBJC_IVAR_$_TLFL_SearchBar._showsCancelButton
+_OBJC_IVAR_$_TLFL_SearchBar._showsSearchResultsButton
+_OBJC_IVAR_$_TLFL_SearchBar._searchResultsButtonSelected
+_OBJC_IVAR_$_TLFL_SearchBar._scopeButtonTitles
+_OBJC_IVAR_$_TLFL_SearchBar._selectedScopeButtonIndex
+_OBJC_IVAR_$_TLFL_SearchBar._showsScopeBar
+_OBJC_IVAR_$_TLFL_SearchBar._dataContainer
+__OBJC_METACLASS_RO_$_TLFL_SearchBar
+__OBJC_$_INSTANCE_METHODS_TLFL_SearchBar
+__OBJC_$_INSTANCE_VARIABLES_TLFL_SearchBar
+__OBJC_$_PROP_LIST_TLFL_SearchBar
+__OBJC_CLASS_RO_$_TLFL_SearchBar
+Tealeaf/TLFL_SearchBar.m
+Tealeaf/TLFL_SearchBar.h
+__36-[TLFL_SearchBar jsonRepresentation]_block_invoke.110
+__36-[TLFL_SearchBar jsonRepresentation]_block_invoke
+-[TLFApplication sendEvent:]
+-[TLFApplication sendAction:to:from:forEvent:]
+_OBJC_CLASSLIST_REFERENCES_$_.3
+_OBJC_SELECTOR_REFERENCES_.5
+_OBJC_SELECTOR_REFERENCES_.7
+__OBJC_METACLASS_RO_$_TLFApplication
+__OBJC_$_INSTANCE_METHODS_TLFApplication
+__OBJC_CLASS_RO_$_TLFApplication
+Tealeaf/TLFApplication.m
+-[TLFLayoutObject initWithObject:andFrame:andZIndex:]
+-[TLFLayoutObject initWithView:andZIndex:]
+-[TLFLayoutObject initWithFrame:andZIndex:]
+-[TLFLayoutObject jsonRepresentation]
+-[TLFLayoutObject jsonRepresentationMinimal]
+-[TLFLayoutObject jsonRepresentationWithBase:andStyle:andCurrState:]
+-[TLFLayoutObject jsonRepresentationWithStyle:andCurrState:]
+-[TLFLayoutObject addStyleToDictionary:]
+-[TLFLayoutObject addBaseItemsToDictionary:]
+-[TLFLayoutObject appendMapIdToBaseDictionary:]
++[TLFLayoutObject getID:andIDType:fromObj:]
+-[TLFLayoutObject resetIdTo:]
+-[TLFLayoutObject setIdFor:]
+-[TLFLayoutObject setCssIdFor:withTLFId:]
+-[TLFLayoutObject setXpathId:]
+-[TLFLayoutObject getTLTypeString:]
+-[TLFLayoutObject isBackButtonView:]
++[TLFLayoutObject processLayoutForView:andZIndex:andControlsDict:]
++[TLFLayoutObject shouldAutoLog:]
++[TLFLayoutObject isUIImagePickerControllerInHierarchy:]
++[TLFLayoutObject isValidLayoutView:]
++[TLFLayoutObject findCorrectParent:]
++[TLFLayoutObject findParentOfType:inView:]
++[TLFLayoutObject processLayoutForView:andProcessChildren:andZindex:andControlsDict:]
++[TLFLayoutObject processLayoutForView:andProcessChildren:andCollectImageData:andViewController:andZindex:andControlsDict:]
++[TLFLayoutObject findChildOf:WithTextMatching:]
++[TLFLayoutObject addToControlsDictionary:andControlsDict:]
++[TLFLayoutObject controlsDictionaryToArray:]
++[TLFLayoutObject processLayoutForSubViewArray:uiViewType:andZIndex:andControlsDict:]
+-[TLFLayoutObject position]
+-[TLFLayoutObject setPosition:]
+-[TLFLayoutObject tlType]
+-[TLFLayoutObject setTlType:]
+-[TLFLayoutObject theID]
+-[TLFLayoutObject setTheID:]
+-[TLFLayoutObject cssId]
+-[TLFLayoutObject setCssId:]
+-[TLFLayoutObject theHash]
+-[TLFLayoutObject setTheHash:]
+-[TLFLayoutObject classType]
+-[TLFLayoutObject setClassType:]
+-[TLFLayoutObject parentClassType]
+-[TLFLayoutObject setParentClassType:]
+-[TLFLayoutObject bgColor]
+-[TLFLayoutObject setBgColor:]
+-[TLFLayoutObject hasBorder]
+-[TLFLayoutObject setHasBorder:]
+-[TLFLayoutObject borderColor]
+-[TLFLayoutObject setBorderColor:]
+-[TLFLayoutObject borderRadius]
+-[TLFLayoutObject setBorderRadius:]
+-[TLFLayoutObject tlfIdType]
+-[TLFLayoutObject setTlfIdType:]
+-[TLFLayoutObject textInfo]
+-[TLFLayoutObject setTextInfo:]
+-[TLFLayoutObject zIndex]
+-[TLFLayoutObject setZIndex:]
+-[TLFLayoutObject accessibilityDict]
+-[TLFLayoutObject setAccessibilityDict:]
+-[TLFLayoutObject isBackButton]
+-[TLFLayoutObject setIsBackButton:]
+-[TLFLayoutObject .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.42
+_OBJC_CLASSLIST_REFERENCES_$_.60
+_OBJC_SELECTOR_REFERENCES_.62
+_OBJC_SELECTOR_REFERENCES_.64
+_OBJC_SELECTOR_REFERENCES_.66
+_OBJC_SELECTOR_REFERENCES_.68
+_OBJC_SELECTOR_REFERENCES_.92
+_OBJC_SELECTOR_REFERENCES_.94
+_OBJC_SELECTOR_REFERENCES_.96
+_OBJC_SELECTOR_REFERENCES_.102
+_OBJC_CLASSLIST_REFERENCES_$_.105
+_OBJC_CLASSLIST_REFERENCES_$_.112
+_OBJC_SELECTOR_REFERENCES_.120
+_OBJC_SELECTOR_REFERENCES_.159
+_OBJC_SELECTOR_REFERENCES_.169
+_OBJC_SELECTOR_REFERENCES_.173
+_OBJC_SELECTOR_REFERENCES_.175
+_OBJC_SELECTOR_REFERENCES_.177
+_OBJC_CLASSLIST_REFERENCES_$_.178
+_OBJC_CLASSLIST_REFERENCES_$_.185
+_OBJC_SELECTOR_REFERENCES_.187
+_OBJC_SELECTOR_REFERENCES_.189
+_OBJC_SELECTOR_REFERENCES_.191
+_OBJC_SELECTOR_REFERENCES_.193
+_OBJC_SELECTOR_REFERENCES_.197
+_OBJC_SELECTOR_REFERENCES_.199
+_OBJC_SELECTOR_REFERENCES_.201
+_OBJC_SELECTOR_REFERENCES_.203
+_OBJC_CLASSLIST_REFERENCES_$_.206
+_OBJC_SELECTOR_REFERENCES_.208
+_OBJC_SELECTOR_REFERENCES_.210
+_OBJC_SELECTOR_REFERENCES_.212
+_OBJC_CLASSLIST_REFERENCES_$_.213
+_OBJC_SELECTOR_REFERENCES_.217
+_OBJC_SELECTOR_REFERENCES_.219
+_OBJC_SELECTOR_REFERENCES_.221
+_OBJC_SELECTOR_REFERENCES_.225
+_OBJC_SELECTOR_REFERENCES_.227
+_OBJC_SELECTOR_REFERENCES_.287
+_OBJC_SELECTOR_REFERENCES_.293
+_OBJC_SELECTOR_REFERENCES_.305
+_OBJC_SELECTOR_REFERENCES_.323
+_OBJC_CLASSLIST_REFERENCES_$_.324
+_OBJC_SELECTOR_REFERENCES_.326
+_OBJC_CLASSLIST_REFERENCES_$_.331
+_OBJC_CLASSLIST_REFERENCES_$_.332
+_OBJC_SELECTOR_REFERENCES_.334
+_OBJC_CLASSLIST_REFERENCES_$_.337
+_OBJC_SELECTOR_REFERENCES_.341
+_OBJC_SELECTOR_REFERENCES_.343
+_OBJC_SELECTOR_REFERENCES_.345
+_OBJC_SELECTOR_REFERENCES_.347
+_OBJC_CLASSLIST_REFERENCES_$_.348
+_OBJC_CLASSLIST_REFERENCES_$_.349
+_OBJC_SELECTOR_REFERENCES_.351
+_OBJC_SELECTOR_REFERENCES_.353
+_OBJC_SELECTOR_REFERENCES_.355
+_OBJC_CLASSLIST_REFERENCES_$_.356
+_OBJC_CLASSLIST_REFERENCES_$_.357
+_OBJC_SELECTOR_REFERENCES_.359
+_OBJC_SELECTOR_REFERENCES_.361
+_OBJC_SELECTOR_REFERENCES_.365
+_OBJC_SELECTOR_REFERENCES_.367
+_OBJC_CLASSLIST_REFERENCES_$_.368
+_OBJC_CLASSLIST_REFERENCES_$_.369
+_OBJC_SELECTOR_REFERENCES_.371
+_OBJC_CLASSLIST_REFERENCES_$_.372
+_OBJC_CLASSLIST_REFERENCES_$_.373
+_OBJC_SELECTOR_REFERENCES_.375
+_OBJC_CLASSLIST_REFERENCES_$_.376
+_OBJC_CLASSLIST_REFERENCES_$_.377
+_OBJC_SELECTOR_REFERENCES_.379
+_OBJC_CLASSLIST_REFERENCES_$_.380
+_OBJC_SELECTOR_REFERENCES_.382
+_OBJC_CLASSLIST_REFERENCES_$_.383
+_OBJC_SELECTOR_REFERENCES_.385
+_OBJC_CLASSLIST_REFERENCES_$_.386
+_OBJC_SELECTOR_REFERENCES_.388
+_OBJC_CLASSLIST_REFERENCES_$_.389
+_OBJC_CLASSLIST_REFERENCES_$_.390
+_OBJC_SELECTOR_REFERENCES_.392
+_OBJC_CLASSLIST_REFERENCES_$_.393
+_OBJC_CLASSLIST_REFERENCES_$_.394
+_OBJC_SELECTOR_REFERENCES_.396
+_OBJC_CLASSLIST_REFERENCES_$_.397
+_OBJC_CLASSLIST_REFERENCES_$_.398
+_OBJC_SELECTOR_REFERENCES_.400
+_OBJC_CLASSLIST_REFERENCES_$_.401
+_OBJC_CLASSLIST_REFERENCES_$_.402
+_OBJC_SELECTOR_REFERENCES_.404
+_OBJC_CLASSLIST_REFERENCES_$_.405
+_OBJC_CLASSLIST_REFERENCES_$_.406
+_OBJC_SELECTOR_REFERENCES_.408
+_OBJC_CLASSLIST_REFERENCES_$_.409
+_OBJC_CLASSLIST_REFERENCES_$_.410
+_OBJC_SELECTOR_REFERENCES_.412
+_OBJC_CLASSLIST_REFERENCES_$_.415
+_OBJC_SELECTOR_REFERENCES_.417
+_OBJC_CLASSLIST_REFERENCES_$_.418
+_OBJC_CLASSLIST_REFERENCES_$_.419
+_OBJC_SELECTOR_REFERENCES_.421
+_OBJC_CLASSLIST_REFERENCES_$_.422
+_OBJC_CLASSLIST_REFERENCES_$_.423
+_OBJC_SELECTOR_REFERENCES_.425
+_OBJC_CLASSLIST_REFERENCES_$_.426
+_OBJC_CLASSLIST_REFERENCES_$_.427
+_OBJC_SELECTOR_REFERENCES_.429
+_OBJC_CLASSLIST_REFERENCES_$_.430
+_OBJC_SELECTOR_REFERENCES_.432
+_OBJC_CLASSLIST_REFERENCES_$_.433
+_OBJC_SELECTOR_REFERENCES_.435
+_OBJC_CLASSLIST_REFERENCES_$_.438
+_OBJC_SELECTOR_REFERENCES_.440
+_OBJC_CLASSLIST_REFERENCES_$_.441
+_OBJC_CLASSLIST_REFERENCES_$_.442
+_OBJC_SELECTOR_REFERENCES_.444
+_OBJC_CLASSLIST_REFERENCES_$_.445
+_OBJC_CLASSLIST_REFERENCES_$_.446
+_OBJC_SELECTOR_REFERENCES_.448
+_OBJC_SELECTOR_REFERENCES_.450
+_OBJC_SELECTOR_REFERENCES_.452
+_OBJC_SELECTOR_REFERENCES_.454
+_OBJC_SELECTOR_REFERENCES_.456
+_OBJC_SELECTOR_REFERENCES_.458
+_OBJC_SELECTOR_REFERENCES_.460
+_OBJC_SELECTOR_REFERENCES_.462
+_OBJC_SELECTOR_REFERENCES_.464
+_OBJC_CLASSLIST_REFERENCES_$_.465
+_OBJC_SELECTOR_REFERENCES_.467
+_OBJC_SELECTOR_REFERENCES_.469
+_OBJC_SELECTOR_REFERENCES_.473
+_OBJC_SELECTOR_REFERENCES_.475
+_OBJC_SELECTOR_REFERENCES_.477
+__OBJC_$_CLASS_METHODS_TLFLayoutObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
+__OBJC_$_PROP_LIST_NSObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_NSObject
+__OBJC_PROTOCOL_$_NSObject
+__OBJC_LABEL_PROTOCOL_$_NSObject
+__OBJC_$_PROTOCOL_REFS_TLFJSONObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_TLFJSONObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_TLFJSONObject
+__OBJC_PROTOCOL_$_TLFJSONObject
+__OBJC_LABEL_PROTOCOL_$_TLFJSONObject
+__OBJC_CLASS_PROTOCOLS_$_TLFLayoutObject
+__OBJC_METACLASS_RO_$_TLFLayoutObject
+__OBJC_$_INSTANCE_METHODS_TLFLayoutObject
+_OBJC_IVAR_$_TLFLayoutObject._hasBorder
+_OBJC_IVAR_$_TLFLayoutObject._isBackButton
+_OBJC_IVAR_$_TLFLayoutObject._tlType
+_OBJC_IVAR_$_TLFLayoutObject._position
+_OBJC_IVAR_$_TLFLayoutObject._theID
+_OBJC_IVAR_$_TLFLayoutObject._cssId
+_OBJC_IVAR_$_TLFLayoutObject._theHash
+_OBJC_IVAR_$_TLFLayoutObject._classType
+_OBJC_IVAR_$_TLFLayoutObject._parentClassType
+_OBJC_IVAR_$_TLFLayoutObject._bgColor
+_OBJC_IVAR_$_TLFLayoutObject._borderColor
+_OBJC_IVAR_$_TLFLayoutObject._borderRadius
+_OBJC_IVAR_$_TLFLayoutObject._tlfIdType
+_OBJC_IVAR_$_TLFLayoutObject._textInfo
+_OBJC_IVAR_$_TLFLayoutObject._zIndex
+_OBJC_IVAR_$_TLFLayoutObject._accessibilityDict
+__OBJC_$_INSTANCE_VARIABLES_TLFLayoutObject
+__OBJC_$_PROP_LIST_TLFLayoutObject
+__OBJC_CLASS_RO_$_TLFLayoutObject
+Tealeaf/TLFLayoutObject.m
+Tealeaf/TLFLayoutObject.h
+CGRectMake
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/CoreGraphics.framework/Headers/CGGeometry.h
++[TLFLayoutLogger logCustomControl:]
++[TLFLayoutLogger logScreenLayoutWithViewController:withTLFOptions:withPlaceHolder:shouldCreateLoadEvent:]
++[TLFLayoutLogger logScreenLayoutWithViewController:withTLFOptions:withPlaceHolder:withOriginalVC:]
+_OBJC_CLASSLIST_REFERENCES_$_.11
+_OBJC_CLASSLIST_REFERENCES_$_.14
+_OBJC_CLASSLIST_REFERENCES_$_.24
+_OBJC_CLASSLIST_REFERENCES_$_.29
+_OBJC_SELECTOR_REFERENCES_.31
+_OBJC_CLASSLIST_REFERENCES_$_.38
+_OBJC_CLASSLIST_REFERENCES_$_.41
+_OBJC_CLASSLIST_REFERENCES_$_.48
+_OBJC_CLASSLIST_REFERENCES_$_.51
+_OBJC_CLASSLIST_REFERENCES_$_.58
+_OBJC_SELECTOR_REFERENCES_.60
+__OBJC_$_CLASS_METHODS_TLFLayoutLogger
+__OBJC_METACLASS_RO_$_TLFLayoutLogger
+__OBJC_CLASS_RO_$_TLFLayoutLogger
+Tealeaf/TLFLayoutLogger.m
+-[UIView(TLFLayoutAdditions) tlfRelXY]
+-[UIView(TLFLayoutAdditions) setTlfRelXY:]
+-[UIView(TLFLayoutAdditions) tlfAddBackgroundOverride:]
+-[UIView(TLFLayoutAdditions) tlfReadBackgroundOverride]
+-[UIView(TLFLayoutAdditions) tlfGetTLFControlId]
+-[UIView(TLFLayoutAdditions) tlfGetTLFControlIdType]
+-[UIView(TLFLayoutAdditions) tlfIsTag]
+-[UIView(TLFLayoutAdditions) getAbbrivatedClassName]
+-[UIView(TLFLayoutAdditions) hideIBMTealeafSecureViewsFrom:withOperation:]
+-[UIView(TLFLayoutAdditions) ibmTealeafSnapshotBase64WithAlert:]
+___64-[UIView(TLFLayoutAdditions) ibmTealeafSnapshotBase64WithAlert:]_block_invoke
+___copy_helper_block_e8_32s40s48s
+___destroy_helper_block_e8_32s40s48s
+-[UIView(TLFLayoutAdditions) ibmTealeafSnapshotBase64]
+___54-[UIView(TLFLayoutAdditions) ibmTealeafSnapshotBase64]_block_invoke
+___copy_helper_block_e8_32s40s
+___destroy_helper_block_e8_32s40s
+-[UIView(TLFLayoutAdditions) getTealeafAccessibilityDictionary]
+_OBJC_CLASSLIST_REFERENCES_$_.21
+_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_SELECTOR_REFERENCES_.29
+_OBJC_CLASSLIST_REFERENCES_$_.46
+_OBJC_CLASSLIST_REFERENCES_$_.53
+_OBJC_CLASSLIST_REFERENCES_$_.56
+_OBJC_CLASSLIST_REFERENCES_$_.62
+_OBJC_CLASSLIST_REFERENCES_$_.65
+_OBJC_CLASSLIST_REFERENCES_$_.71
+_OBJC_CLASSLIST_REFERENCES_$_.74
+_OBJC_CLASSLIST_REFERENCES_$_.83
+_OBJC_CLASSLIST_REFERENCES_$_.98
+_OBJC_CLASSLIST_REFERENCES_$_.101
+_OBJC_CLASSLIST_REFERENCES_$_.104
+_OBJC_CLASSLIST_REFERENCES_$_.107
+_OBJC_CLASSLIST_REFERENCES_$_.114
+_OBJC_CLASSLIST_REFERENCES_$_.123
+_OBJC_CLASSLIST_REFERENCES_$_.126
+_OBJC_CLASSLIST_REFERENCES_$_.141
+_OBJC_CLASSLIST_REFERENCES_$_.142
+_OBJC_SELECTOR_REFERENCES_.146
+_OBJC_CLASSLIST_REFERENCES_$_.149
+_OBJC_CLASSLIST_REFERENCES_$_.152
+_OBJC_CLASSLIST_REFERENCES_$_.155
+_OBJC_CLASSLIST_REFERENCES_$_.160
+_OBJC_SELECTOR_REFERENCES_.164
+_OBJC_SELECTOR_REFERENCES_.166
+_OBJC_SELECTOR_REFERENCES_.168
+_OBJC_CLASSLIST_REFERENCES_$_.169
+_OBJC_SELECTOR_REFERENCES_.171
+_OBJC_CLASSLIST_REFERENCES_$_.172
+_OBJC_SELECTOR_REFERENCES_.204
+_OBJC_SELECTOR_REFERENCES_.206
+___block_descriptor_56_e8_32s40s48s_e16_v16?0"UIView"8l
+_OBJC_SELECTOR_REFERENCES_.209
+_OBJC_CLASSLIST_REFERENCES_$_.210
+_OBJC_SELECTOR_REFERENCES_.214
+___block_descriptor_48_e8_32s40s_e16_v16?0"UIView"8l
+_OBJC_SELECTOR_REFERENCES_.216
+_OBJC_CLASSLIST_REFERENCES_$_.217
+_OBJC_SELECTOR_REFERENCES_.223
+_OBJC_CLASSLIST_REFERENCES_$_.224
+_OBJC_SELECTOR_REFERENCES_.226
+_OBJC_SELECTOR_REFERENCES_.228
+_OBJC_SELECTOR_REFERENCES_.230
+_OBJC_SELECTOR_REFERENCES_.234
+_OBJC_SELECTOR_REFERENCES_.236
+_OBJC_SELECTOR_REFERENCES_.240
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIView_$_TLFLayoutAdditions
+__OBJC_$_PROP_LIST_UIView_$_TLFLayoutAdditions
+__OBJC_$_CATEGORY_UIView_$_TLFLayoutAdditions
+Tealeaf/UIView+TLFLayoutAdditions.m
+__destroy_helper_block_e8_32s40s
+__copy_helper_block_e8_32s40s
+__54-[UIView(TLFLayoutAdditions) ibmTealeafSnapshotBase64]_block_invoke
+__destroy_helper_block_e8_32s40s48s
+__copy_helper_block_e8_32s40s48s
+__64-[UIView(TLFLayoutAdditions) ibmTealeafSnapshotBase64WithAlert:]_block_invoke
++[TLFGeneralHelper cleanEventName:]
++[TLFGeneralHelper TLFJSONSerialize:]
++[TLFGeneralHelper TLFJSONParseString:error:ignoreNulls:]
++[TLFGeneralHelper now]
++[TLFGeneralHelper processNativeReplayAssets]
+___45+[TLFGeneralHelper processNativeReplayAssets]_block_invoke
+__customEventNameCleaner
+_OBJC_CLASSLIST_REFERENCES_$_.15
+_OBJC_CLASSLIST_REFERENCES_$_.20
+_OBJC_CLASSLIST_REFERENCES_$_.35
+__OBJC_$_CLASS_METHODS_TLFGeneralHelper
+__OBJC_METACLASS_RO_$_TLFGeneralHelper
+__OBJC_CLASS_RO_$_TLFGeneralHelper
+Tealeaf/TLFGeneralHelper.m
+__45+[TLFGeneralHelper processNativeReplayAssets]_block_invoke
++[NSData(TLFOverrides) tlfInject]
+___33+[NSData(TLFOverrides) tlfInject]_block_invoke
++[NSData(TLFOverrides) tlfDataWithContentsOfFile:]
++[NSData(TLFOverrides) tlfDataWithContentsOfFile:options:error:]
++[NSData(TLFOverrides) tlfDataWithContentsOfURL:]
++[NSData(TLFOverrides) tlfDataWithContentsOfURL:options:error:]
+-[NSData(TLFOverrides) tlfInitWithContentsOfFile:]
+-[NSData(TLFOverrides) tlfInitWithContentsOfFile:options:error:]
+-[NSData(TLFOverrides) tlfInitWithContentsOfURL:]
+-[NSData(TLFOverrides) tlfInitWithContentsOfURL:options:error:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSData_$_TLFOverrides
+__OBJC_$_CATEGORY_CLASS_METHODS_NSData_$_TLFOverrides
+__OBJC_CATEGORY_PROTOCOLS_$_NSData_$_TLFOverrides
+__OBJC_$_CATEGORY_NSData_$_TLFOverrides
+Tealeaf/NSData+TLFOverrides.m
+__33+[NSData(TLFOverrides) tlfInject]_block_invoke
+-[TLFL_PickerView initWithPickerView:andZIndex:andControlsDict:]
+-[TLFL_PickerView traverseAndAddObjsFromDatContainer:ToArray:]
+-[TLFL_PickerView addToData:withXLocation:withWidth:]
+-[TLFL_PickerView getSelectedObjects:withDatePicker:withColN:withRowN:andZIndex:andControlsDict:withTLFLPosition:]
+-[TLFL_PickerView fixSelectedLabels:withPosition:withDatePicker:withXDiff:withColN:withRowN:withLabel:]
+-[TLFL_PickerView getBottomObjects:withDatePicker:withColN:withRowN:removeObjPos:andZIndex:withBottomY:]
+-[TLFL_PickerView fixLabelId:withColN:withRowN:withDatePicker:]
+-[TLFL_PickerView getTopObjects:withBottomY:withDatePicker:withColN:withRowN:andZIndex:removeObjPos:]
+-[TLFL_PickerView getBaseObjects:removeObjPos:andZIndex:withBottomY:isBottomTable:withDatePicker:withColN:]
+-[TLFL_PickerView swapAndAppend:withFromlabel:withTolabel:]
+-[TLFL_PickerView fixRow:withRowNo:withRowY:withTotalHeight:withTLFLTableCell:withDataCount:withUpper:withXDiff:withDatePicker:withColN:withRowN:withlabel:]
+-[TLFL_PickerView fixLabel:withRowNo:withDataCount:withX:withUpper:]
+-[TLFL_PickerView fixSelectedRow:withX:withY:withWidth:withHeight:]
+-[TLFL_PickerView getRotateX:withDataCount:]
+-[TLFL_PickerView getTextAlphaColor:withDataCount:]
+-[TLFL_PickerView jsonRepresentation]
+___37-[TLFL_PickerView jsonRepresentation]_block_invoke
+___37-[TLFL_PickerView jsonRepresentation]_block_invoke_2
+-[TLFL_PickerView numberOfColumns]
+-[TLFL_PickerView setNumberOfColumns:]
+-[TLFL_PickerView numberOfRowsPerComponent]
+-[TLFL_PickerView setNumberOfRowsPerComponent:]
+-[TLFL_PickerView pickData]
+-[TLFL_PickerView setPickData:]
+-[TLFL_PickerView colWidths]
+-[TLFL_PickerView setColWidths:]
+-[TLFL_PickerView dataContainer]
+-[TLFL_PickerView setDataContainer:]
+-[TLFL_PickerView .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.40
+_OBJC_CLASSLIST_REFERENCES_$_.49
+_OBJC_CLASSLIST_REFERENCES_$_.64
+_OBJC_SELECTOR_REFERENCES_.78
+_OBJC_CLASSLIST_REFERENCES_$_.92
+_OBJC_SELECTOR_REFERENCES_.108
+_OBJC_CLASSLIST_REFERENCES_$_.109
+_OBJC_CLASSLIST_REFERENCES_$_.110
+_OBJC_CLASSLIST_REFERENCES_$_.111
+_OBJC_CLASSLIST_REFERENCES_$_.144
+_OBJC_SELECTOR_REFERENCES_.156
+___block_descriptor_32_e29_v16?0"NSMutableDictionary"8l
+_OBJC_SELECTOR_REFERENCES_.195
+_OBJC_IVAR_$_TLFL_PickerView._numberOfColumns
+_OBJC_IVAR_$_TLFL_PickerView._numberOfRowsPerComponent
+_OBJC_IVAR_$_TLFL_PickerView._pickData
+_OBJC_IVAR_$_TLFL_PickerView._colWidths
+_OBJC_IVAR_$_TLFL_PickerView._dataContainer
+__OBJC_METACLASS_RO_$_TLFL_PickerView
+__OBJC_$_INSTANCE_METHODS_TLFL_PickerView
+__OBJC_$_INSTANCE_VARIABLES_TLFL_PickerView
+__OBJC_$_PROP_LIST_TLFL_PickerView
+__OBJC_CLASS_RO_$_TLFL_PickerView
+Tealeaf/TLFL_PickerView.m
+Tealeaf/TLFL_PickerView.h
+__37-[TLFL_PickerView jsonRepresentation]_block_invoke_2
+__37-[TLFL_PickerView jsonRepresentation]_block_invoke
++[TLFMaskingManager sharedInstance]
+___35+[TLFMaskingManager sharedInstance]_block_invoke
+-[TLFMaskingManager init]
+-[TLFMaskingManager isMaskingEnabledForUIInputControl:]
+-[TLFMaskingManager applyMaskToUIInputControl:andText:]
+-[TLFMaskingManager screenMaskingDict]
+-[TLFMaskingManager screenTagRegex]
+-[TLFMaskingManager screenValueRegex]
+-[TLFMaskingManager maskingLevelForUIControls]
+-[TLFMaskingManager maskingTextOfUIInputControl:]
+-[TLFMaskingManager willMask:withText:]
+-[TLFMaskingManager applyMaskingLevel1ToItemValue:]
+-[TLFMaskingManager applyMaskingLevel3ToItemValue:]
+-[TLFMaskingManager currentMaskingLevelsDictionary]
+-[TLFMaskingManager setCurrentMaskingLevelsDictionary:]
+-[TLFMaskingManager tagRegexArray]
+-[TLFMaskingManager setTagRegexArray:]
+-[TLFMaskingManager valueRegexArray]
+-[TLFMaskingManager setValueRegexArray:]
+-[TLFMaskingManager .cxx_destruct]
+_sharedInstance.onceToken
+_sharedInstance.sharedInstance
+_OBJC_SELECTOR_REFERENCES_.3
+_OBJC_CLASSLIST_REFERENCES_$_.4
+_OBJC_CLASSLIST_REFERENCES_$_.72
+_OBJC_CLASSLIST_REFERENCES_$_.82
+_OBJC_CLASSLIST_REFERENCES_$_.85
+_OBJC_CLASSLIST_REFERENCES_$_.90
+_OBJC_CLASSLIST_REFERENCES_$_.103
+_OBJC_CLASSLIST_REFERENCES_$_.130
+__OBJC_$_CLASS_METHODS_TLFMaskingManager
+__OBJC_METACLASS_RO_$_TLFMaskingManager
+__OBJC_$_INSTANCE_METHODS_TLFMaskingManager
+_OBJC_IVAR_$_TLFMaskingManager._currentMaskingLevelsDictionary
+_OBJC_IVAR_$_TLFMaskingManager._tagRegexArray
+_OBJC_IVAR_$_TLFMaskingManager._valueRegexArray
+__OBJC_$_INSTANCE_VARIABLES_TLFMaskingManager
+__OBJC_$_PROP_LIST_TLFMaskingManager
+__OBJC_CLASS_RO_$_TLFMaskingManager
+Tealeaf/TLFMaskingManager.m
+__35+[TLFMaskingManager sharedInstance]_block_invoke
++[TLFConnectionAIC sharedInstance]
+___34+[TLFConnectionAIC sharedInstance]_block_invoke
+-[TLFConnectionAIC processRequest:withDelegate:]
+__OBJC_$_CLASS_METHODS_TLFConnectionAIC
+__OBJC_METACLASS_RO_$_TLFConnectionAIC
+__OBJC_$_INSTANCE_METHODS_TLFConnectionAIC
+__OBJC_CLASS_RO_$_TLFConnectionAIC
+Tealeaf/TLFConnectionAIC.m
+__34+[TLFConnectionAIC sharedInstance]_block_invoke
+-[NSObject(TealeafUIAlertActionAdditions) tealeafHandleActionForUIAlertAction:]
+_OBJC_CLASSLIST_REFERENCES_$_.1
+_OBJC_CLASSLIST_REFERENCES_$_.6
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSObject_$_TealeafUIAlertActionAdditions
+__OBJC_$_CATEGORY_NSObject_$_TealeafUIAlertActionAdditions
+Tealeaf/NSObject+TealeafUIAlertActionAdditions.m
+-[TLFLocationMessage init]
+-[TLFLocationMessage initWithLocation:]
+-[TLFLocationMessage jsonDictionary]
+-[TLFLocationMessage lat]
+-[TLFLocationMessage setLat:]
+-[TLFLocationMessage lng]
+-[TLFLocationMessage setLng:]
+-[TLFLocationMessage accuracy]
+-[TLFLocationMessage setAccuracy:]
+-[TLFLocationMessage error]
+-[TLFLocationMessage setError:]
+-[TLFLocationMessage .cxx_destruct]
+_OBJC_IVAR_$_TLFLocationMessage._lat
+_OBJC_IVAR_$_TLFLocationMessage._lng
+_OBJC_IVAR_$_TLFLocationMessage._accuracy
+_OBJC_CLASSLIST_REFERENCES_$_.43
+_OBJC_IVAR_$_TLFLocationMessage._error
+__OBJC_METACLASS_RO_$_TLFLocationMessage
+__OBJC_$_INSTANCE_METHODS_TLFLocationMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFLocationMessage
+__OBJC_$_PROP_LIST_TLFLocationMessage
+__OBJC_CLASS_RO_$_TLFLocationMessage
+Tealeaf/TLFLocationMessage.m
+Tealeaf/TLFLocationMessage.h
++[TLFScreenViewLogger logAppContext:applicationContext:referrer:]
++[TLFScreenViewLogger logScreenViewMessage:]
+___44+[TLFScreenViewLogger logScreenViewMessage:]_block_invoke
+_OBJC_CLASSLIST_REFERENCES_$_.5
+_OBJC_SELECTOR_REFERENCES_.9
+_OBJC_CLASSLIST_REFERENCES_$_.10
+_OBJC_CLASSLIST_REFERENCES_$_.17
+_OBJC_CLASSLIST_REFERENCES_$_.27
+__OBJC_$_CLASS_METHODS_TLFScreenViewLogger
+__OBJC_METACLASS_RO_$_TLFScreenViewLogger
+__OBJC_CLASS_RO_$_TLFScreenViewLogger
+Tealeaf/TLFScreenViewLogger.m
+__44+[TLFScreenViewLogger logScreenViewMessage:]_block_invoke
++[TLFCustomEvent sharedInstance]
+___32+[TLFCustomEvent sharedInstance]_block_invoke
+-[TLFCustomEvent logEvent:]
+-[TLFCustomEvent logEvent:values:]
+-[TLFCustomEvent logEvent:values:level:]
+-[TLFCustomEvent logNSExceptionEvent:]
+-[TLFCustomEvent logNSExceptionEvent:dataDictionary:]
+-[TLFCustomEvent logNSExceptionEvent:dataDictionary:isUnhandled:]
+-[TLFCustomEvent logNSErrorEvent:message:level:]
+-[TLFCustomEvent logNSErrorEvent:message:file:line:level:]
+-[TLFCustomEvent logNSURLSession:error:]
+-[TLFCustomEvent logNSURLSession:response:responseTimeInMilliseconds:]
+-[TLFCustomEvent logNSURLSession:request:]
+-[TLFCustomEvent logConnectionWithInitTime:loadTime:connection:request:response:error:]
+-[TLFCustomEvent logConnectionWithInitTime:loadTime:connection:request:response:data:error:]
+-[TLFCustomEvent logLocation:]
+-[TLFCustomEvent logLocationUpdateEventWithLatitude:longitude:level:]
+-[TLFCustomEvent logUILabelTextChange:]
+-[TLFCustomEvent logTextChangeEvent:data:]
+-[TLFCustomEvent logValueChangeEvent:data:]
+-[TLFCustomEvent logClickEvent:data:]
+-[TLFCustomEvent logScreenViewContext:applicationContext:referrer:]
+-[TLFCustomEvent logPrintScreenEvent]
+-[TLFCustomEvent logScreenLayoutWithImage:]
+-[TLFCustomEvent logScreenLayoutWithViewController:]
+-[TLFCustomEvent logScreenLayoutDynamicUpdateWithViewController:andRelatedViews:]
+-[TLFCustomEvent logScreenLayoutWithViewController:andName:]
+-[TLFCustomEvent logScreenLayoutWithViewController:andDelay:]
+-[TLFCustomEvent logScreenLayoutWithViewController:andDelay:andName:]
+___69-[TLFCustomEvent logScreenLayoutWithViewController:andDelay:andName:]_block_invoke
+___copy_helper_block_e8_32s40s48s56s
+___destroy_helper_block_e8_32s40s48s56s
+-[TLFCustomEvent logScreenLayoutWithViewController:andRelatedViews:]
+-[TLFCustomEvent logScreenLayoutWithViewController:andRelatedViews:andDelay:]
+___77-[TLFCustomEvent logScreenLayoutWithViewController:andRelatedViews:andDelay:]_block_invoke
+-[TLFCustomEvent logScreenLayoutWithViewController:andRelatedViews:withPlaceHolder:]
+-[TLFCustomEvent logScreenLayoutWithViewController:andRelatedViews:andName:]
+-[TLFCustomEvent logScreenLayoutWithViewController:andRelatedViews:andDelay:andName:]
+___85-[TLFCustomEvent logScreenLayoutWithViewController:andRelatedViews:andDelay:andName:]_block_invoke
+___copy_helper_block_e8_32s40s48s56s64s
+___destroy_helper_block_e8_32s40s48s56s64s
+-[TLFCustomEvent logScreenLayoutWithViewController:andRelatedViews:andName:withPlaceHolder:]
+-[TLFCustomEvent logScreenLayoutWithViewController:andTLFOptions:withPlaceHolder:shouldCreateLoadEvent:]
+-[TLFCustomEvent logFormCompletion:]
+-[TLFCustomEvent logFormCompletion:withValidData:]
+-[TLFCustomEvent logJSONMessagePayloadStr:]
+-[TLFCustomEvent logImageUrl:withUrl:]
+_OBJC_CLASSLIST_REFERENCES_$_.32
+_OBJC_CLASSLIST_REFERENCES_$_.54
+_OBJC_SELECTOR_REFERENCES_.56
+___block_descriptor_64_e8_32s40s48s56s_e5_v8?0l
+___block_descriptor_72_e8_32s40s48s56s64s_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.88
+__OBJC_$_CLASS_METHODS_TLFCustomEvent
+__OBJC_PROTOCOL_$_JSExport
+__OBJC_LABEL_PROTOCOL_$_JSExport
+__OBJC_$_PROTOCOL_REFS_TLFCustomEventJSProtocol
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_TLFCustomEventJSProtocol
+__OBJC_$_PROTOCOL_METHOD_TYPES_TLFCustomEventJSProtocol
+__OBJC_PROTOCOL_$_TLFCustomEventJSProtocol
+__OBJC_LABEL_PROTOCOL_$_TLFCustomEventJSProtocol
+__OBJC_CLASS_PROTOCOLS_$_TLFCustomEvent
+__OBJC_METACLASS_RO_$_TLFCustomEvent
+__OBJC_$_INSTANCE_METHODS_TLFCustomEvent
+__OBJC_CLASS_RO_$_TLFCustomEvent
+Tealeaf/TLFCustomEvent.m
+__destroy_helper_block_e8_32s40s48s56s64s
+__copy_helper_block_e8_32s40s48s56s64s
+__85-[TLFCustomEvent logScreenLayoutWithViewController:andRelatedViews:andDelay:andName:]_block_invoke
+__77-[TLFCustomEvent logScreenLayoutWithViewController:andRelatedViews:andDelay:]_block_invoke
+__destroy_helper_block_e8_32s40s48s56s
+__copy_helper_block_e8_32s40s48s56s
+__69-[TLFCustomEvent logScreenLayoutWithViewController:andDelay:andName:]_block_invoke
+__32+[TLFCustomEvent sharedInstance]_block_invoke
++[TealeafLibrary sharedInstance]
+___32+[TealeafLibrary sharedInstance]_block_invoke
+-[TealeafLibrary init]
+-[TealeafLibrary enableTealeafFramework]
+-[TealeafLibrary disableTealeafFramework]
+-[TealeafLibrary pauseTealeaf:]
+-[TealeafLibrary resumeTealeaf:]
+-[TealeafLibrary startTealeafLibrary]
+___37-[TealeafLibrary startTealeafLibrary]_block_invoke
+-[TealeafLibrary dealloc]
+-[TealeafLibrary checkKillSwitch]
+-[TealeafLibrary live]
+-[TealeafLibrary die]
+-[TealeafLibrary continueAfterKillSwitch]
+-[TealeafLibrary startNewSession]
+-[TealeafLibrary framworkVersion]
+-[TealeafLibrary getApplicationContextName]
+-[TealeafLibrary getCurrentSessionId]
+-[TealeafLibrary requestManualServerPost]
+-[TealeafLibrary setCXAAdvertisingId:]
+-[TealeafLibrary getCXAAdvertisingId]
+-[TealeafLibrary setupNotifications]
+-[TealeafLibrary removeNotifications]
+-[TealeafLibrary applicationDidBecomeActiveNotification:]
+-[TealeafLibrary applicationWillEnterForegroundNotification:]
+-[TealeafLibrary removeTealeafForNotifications:]
+-[TealeafLibrary checkForResourcePackaging]
+-[TealeafLibrary isEnabled]
+-[TealeafLibrary isCaptureUserEventsEnabled]
+-[TealeafLibrary isUsingPause]
+-[TealeafLibrary currentSessionStartedDate]
+-[TealeafLibrary setApplicationContextname:]
+-[TealeafLibrary deviceId]
+-[TealeafLibrary setDeviceId:]
+-[TealeafLibrary pagePaused]
+-[TealeafLibrary setPagePaused:]
+-[TealeafLibrary killSwitchManager]
+-[TealeafLibrary setKillSwitchManager:]
+-[TealeafLibrary .cxx_destruct]
+_sharedInstance
+_OBJC_CLASSLIST_REFERENCES_$_.12
+_OBJC_CLASSLIST_REFERENCES_$_.73
+_OBJC_CLASSLIST_REFERENCES_$_.115
+__OBJC_$_CLASS_METHODS_TealeafLibrary
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_TLFKillSwitchDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_TLFKillSwitchDelegate
+__OBJC_PROTOCOL_$_TLFKillSwitchDelegate
+__OBJC_LABEL_PROTOCOL_$_TLFKillSwitchDelegate
+__OBJC_CLASS_PROTOCOLS_$_TealeafLibrary
+__OBJC_METACLASS_RO_$_TealeafLibrary
+__OBJC_$_INSTANCE_METHODS_TealeafLibrary
+_OBJC_IVAR_$_TealeafLibrary._isEnabled
+_OBJC_IVAR_$_TealeafLibrary._isCaptureUserEventsEnabled
+_OBJC_IVAR_$_TealeafLibrary._isUsingPause
+_OBJC_IVAR_$_TealeafLibrary._currentSessionStartedDate
+_OBJC_IVAR_$_TealeafLibrary._applicationContextname
+_OBJC_IVAR_$_TealeafLibrary._deviceId
+_OBJC_IVAR_$_TealeafLibrary._pagePaused
+_OBJC_IVAR_$_TealeafLibrary._killSwitchManager
+__OBJC_$_INSTANCE_VARIABLES_TealeafLibrary
+__OBJC_$_PROP_LIST_TealeafLibrary
+__OBJC_CLASS_RO_$_TealeafLibrary
+Tealeaf/TealeafLibrary.m
+Tealeaf/TealeafLibrary.h
+__37-[TealeafLibrary startTealeafLibrary]_block_invoke
+__32+[TealeafLibrary sharedInstance]_block_invoke
+-[TLFImage initWithImageSize:]
+-[TLFImage initWithImage:]
+-[TLFImage initWithImage:andScreenShot:]
+-[TLFImage initWithImageEnhancedReplay:]
+-[TLFImage addImageInfo:andScreenShot:]
+-[TLFImage jsonRepresentation]
+-[TLFImage jsonKey]
+-[TLFImage size]
+-[TLFImage setSize:]
+-[TLFImage base64Image]
+-[TLFImage setBase64Image:]
+-[TLFImage value]
+-[TLFImage setValue:]
+-[TLFImage type]
+-[TLFImage setType:]
+-[TLFImage awesomeFontIcon]
+-[TLFImage setAwesomeFontIcon:]
+-[TLFImage .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.23
+_OBJC_CLASSLIST_REFERENCES_$_.95
+_OBJC_IVAR_$_TLFImage._size
+_OBJC_IVAR_$_TLFImage._base64Image
+_OBJC_IVAR_$_TLFImage._value
+_OBJC_IVAR_$_TLFImage._type
+_OBJC_IVAR_$_TLFImage._awesomeFontIcon
+__OBJC_METACLASS_RO_$_TLFImage
+__OBJC_$_INSTANCE_METHODS_TLFImage
+__OBJC_$_INSTANCE_VARIABLES_TLFImage
+__OBJC_$_PROP_LIST_TLFImage
+__OBJC_CLASS_RO_$_TLFImage
+Tealeaf/TLFImage.m
+Tealeaf/TLFImage.h
+-[TLFTapGestureData endWithGestureRecognizer:]
+__OBJC_METACLASS_RO_$_TLFTapGestureData
+__OBJC_$_INSTANCE_METHODS_TLFTapGestureData
+__OBJC_CLASS_RO_$_TLFTapGestureData
+Tealeaf/TLFTapGestureData.m
+-[TLFL_NavigationBar initWithNavigationBar:andZIndex:andControlsDict:]
+-[TLFL_NavigationBar jsonRepresentation]
+___40-[TLFL_NavigationBar jsonRepresentation]_block_invoke
+___40-[TLFL_NavigationBar jsonRepresentation]_block_invoke.47
+-[TLFL_NavigationBar deFaultNavBarColor:]
+-[TLFL_NavigationBar dataContainer]
+-[TLFL_NavigationBar setDataContainer:]
+-[TLFL_NavigationBar title]
+-[TLFL_NavigationBar setTitle:]
+-[TLFL_NavigationBar isTranslucent]
+-[TLFL_NavigationBar setIsTranslucent:]
+-[TLFL_NavigationBar .cxx_destruct]
+_OBJC_IVAR_$_TLFL_NavigationBar._dataContainer
+_OBJC_IVAR_$_TLFL_NavigationBar._title
+_OBJC_IVAR_$_TLFL_NavigationBar._isTranslucent
+__OBJC_METACLASS_RO_$_TLFL_NavigationBar
+__OBJC_$_INSTANCE_METHODS_TLFL_NavigationBar
+__OBJC_$_INSTANCE_VARIABLES_TLFL_NavigationBar
+__OBJC_$_PROP_LIST_TLFL_NavigationBar
+__OBJC_CLASS_RO_$_TLFL_NavigationBar
+Tealeaf/TLFL_NavigationBar.m
+Tealeaf/TLFL_NavigationBar.h
+__40-[TLFL_NavigationBar jsonRepresentation]_block_invoke.47
+__40-[TLFL_NavigationBar jsonRepresentation]_block_invoke
++[TLFCustomEventLogger logEvent:]
++[TLFCustomEventLogger logEvent:values:]
++[TLFCustomEventLogger logEvent:values:level:]
++[TLFCustomEventLogger isEventValid:]
++[TLFCustomEventLogger logFormCompletion:withValidData:]
+_OBJC_CLASSLIST_REFERENCES_$_.18
+__OBJC_$_CLASS_METHODS_TLFCustomEventLogger
+__OBJC_METACLASS_RO_$_TLFCustomEventLogger
+__OBJC_CLASS_RO_$_TLFCustomEventLogger
+Tealeaf/TLFCustomEventLogger.m
++[TLFMessageQueue sharedInstance]
+___33+[TLFMessageQueue sharedInstance]_block_invoke
+-[TLFMessageQueue init]
+-[TLFMessageQueue addTLFMessage:forSessionId:]
+-[TLFMessageQueue addInCorrectReplayOrderToQueue:forSessionId:]
+-[TLFMessageQueue flushQueue:]
+-[TLFMessageQueue flushAllQueues]
+-[TLFMessageQueue flushQueueDelayed:]
+___37-[TLFMessageQueue flushQueueDelayed:]_block_invoke
+-[TLFMessageQueue updateLayoutPlaceHolder:forTLFLayoutPlaceHolder:]
+-[TLFMessageQueue removeLayoutPlaceHolder:]
+-[TLFMessageQueue isKeyboardDisplayed]
+-[TLFMessageQueue hasScreenViewLoaded]
+-[TLFMessageQueue hasKeyboardPlaceholder]
+-[TLFMessageQueue hasFirstOrientationMsg]
+-[TLFMessageQueue lastKeyboardCtrl]
+-[TLFMessageQueue firstOrientationMsg]
+-[TLFMessageQueue lastMessage]
+-[TLFMessageQueue setLastMessage:]
+-[TLFMessageQueue lastGestureMessage]
+-[TLFMessageQueue setLastGestureMessage:]
+-[TLFMessageQueue tempQueue]
+-[TLFMessageQueue setTempQueue:]
+-[TLFMessageQueue .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.30
+_OBJC_CLASSLIST_REFERENCES_$_.33
+_OBJC_CLASSLIST_REFERENCES_$_.63
+_OBJC_CLASSLIST_REFERENCES_$_.96
+_OBJC_CLASSLIST_REFERENCES_$_.124
+_OBJC_CLASSLIST_REFERENCES_$_.127
+_OBJC_SELECTOR_REFERENCES_.129
+_OBJC_SELECTOR_REFERENCES_.131
+___block_descriptor_48_e8_32s40s_e5_v8?0l
+__OBJC_$_CLASS_METHODS_TLFMessageQueue
+__OBJC_METACLASS_RO_$_TLFMessageQueue
+__OBJC_$_INSTANCE_METHODS_TLFMessageQueue
+_OBJC_IVAR_$_TLFMessageQueue._isKeyboardDisplayed
+_OBJC_IVAR_$_TLFMessageQueue._hasScreenViewLoaded
+_OBJC_IVAR_$_TLFMessageQueue._hasKeyboardPlaceholder
+_OBJC_IVAR_$_TLFMessageQueue._hasFirstOrientationMsg
+_OBJC_IVAR_$_TLFMessageQueue._lastKeyboardCtrl
+_OBJC_IVAR_$_TLFMessageQueue._firstOrientationMsg
+_OBJC_IVAR_$_TLFMessageQueue._lastMessage
+_OBJC_IVAR_$_TLFMessageQueue._lastGestureMessage
+_OBJC_IVAR_$_TLFMessageQueue._tempQueue
+__OBJC_$_INSTANCE_VARIABLES_TLFMessageQueue
+__OBJC_$_PROP_LIST_TLFMessageQueue
+__OBJC_CLASS_RO_$_TLFMessageQueue
+Tealeaf/TLFMessageQueue.m
+Tealeaf/TLFMessageQueue.h
+__37-[TLFMessageQueue flushQueueDelayed:]_block_invoke
+__33+[TLFMessageQueue sharedInstance]_block_invoke
+-[TLFCustomSwipeGestureData initWithGestureRecognizer:]
+-[TLFCustomSwipeGestureData endWithGestureRecognizer:]
+__OBJC_METACLASS_RO_$_TLFCustomSwipeGestureData
+__OBJC_$_INSTANCE_METHODS_TLFCustomSwipeGestureData
+__OBJC_CLASS_RO_$_TLFCustomSwipeGestureData
+Tealeaf/TLFCustomSwipeGestureData.m
++[TLFLocationLogger logLocation:]
++[TLFLocationLogger logLocationUpdateEventWithLatitude:longitude:level:]
+__OBJC_$_CLASS_METHODS_TLFLocationLogger
+__OBJC_METACLASS_RO_$_TLFLocationLogger
+__OBJC_CLASS_RO_$_TLFLocationLogger
+Tealeaf/TLFLocationLogger.m
++[TLFScreenViewController sharedInstance]
+___41+[TLFScreenViewController sharedInstance]_block_invoke
+-[TLFScreenViewController init]
+-[TLFScreenViewController currentContextName]
+-[TLFScreenViewController .cxx_destruct]
+__OBJC_$_CLASS_METHODS_TLFScreenViewController
+__OBJC_METACLASS_RO_$_TLFScreenViewController
+__OBJC_$_INSTANCE_METHODS_TLFScreenViewController
+_OBJC_IVAR_$_TLFScreenViewController._currentContextName
+__OBJC_$_INSTANCE_VARIABLES_TLFScreenViewController
+__OBJC_$_PROP_LIST_TLFScreenViewController
+__OBJC_CLASS_RO_$_TLFScreenViewController
+Tealeaf/TLFScreenViewController.m
+Tealeaf/TLFScreenViewController.h
+__41+[TLFScreenViewController sharedInstance]_block_invoke
+-[TLFAppleSwipeGestureData endWithGestureRecognizer:]
+__OBJC_METACLASS_RO_$_TLFAppleSwipeGestureData
+__OBJC_$_INSTANCE_METHODS_TLFAppleSwipeGestureData
+__OBJC_CLASS_RO_$_TLFAppleSwipeGestureData
+Tealeaf/TLFAppleSwipeGestureData.m
+-[TLFAutoLayoutConfig initWith:andDisplayName:andDelay:andAutoLog:andTakeScreenShot:andNumberOfWebviews:andCaptureUserEvents:layoutCaptureEvent:andCaptureScreenVisits:screenshotCaptureEvent:maskingLevelsDictionary:tagRegexArray:valueRegexArray:]
+-[TLFAutoLayoutConfig initWith:andDisplayName:andDelay:]
+-[TLFAutoLayoutConfig initWith:andDelay:]
+-[TLFAutoLayoutConfig initForAutoLog:]
+-[TLFAutoLayoutConfig className]
+-[TLFAutoLayoutConfig setClassName:]
+-[TLFAutoLayoutConfig displayName]
+-[TLFAutoLayoutConfig setDisplayName:]
+-[TLFAutoLayoutConfig shouldAutoLog]
+-[TLFAutoLayoutConfig setShouldAutoLog:]
+-[TLFAutoLayoutConfig shouldTakeScreenShot]
+-[TLFAutoLayoutConfig setShouldTakeScreenShot:]
+-[TLFAutoLayoutConfig isWebView]
+-[TLFAutoLayoutConfig setIsWebView:]
+-[TLFAutoLayoutConfig shouldCaptureUserEvents]
+-[TLFAutoLayoutConfig setShouldCaptureUserEvents:]
+-[TLFAutoLayoutConfig shouldCaptureScreenVisits]
+-[TLFAutoLayoutConfig setShouldCaptureScreenVisits:]
+-[TLFAutoLayoutConfig screenLayoutCaptureEvent]
+-[TLFAutoLayoutConfig setScreenLayoutCaptureEvent:]
+-[TLFAutoLayoutConfig screenshotCaptureEvent]
+-[TLFAutoLayoutConfig setScreenshotCaptureEvent:]
+-[TLFAutoLayoutConfig delayInMS]
+-[TLFAutoLayoutConfig setDelayInMS:]
+-[TLFAutoLayoutConfig numberOfWebviews]
+-[TLFAutoLayoutConfig setNumberOfWebviews:]
+-[TLFAutoLayoutConfig delayInSecs]
+-[TLFAutoLayoutConfig currentMaskingLevelsDictionary]
+-[TLFAutoLayoutConfig setCurrentMaskingLevelsDictionary:]
+-[TLFAutoLayoutConfig tagRegexArray]
+-[TLFAutoLayoutConfig setTagRegexArray:]
+-[TLFAutoLayoutConfig valueRegexArray]
+-[TLFAutoLayoutConfig setValueRegexArray:]
+-[TLFAutoLayoutConfig .cxx_destruct]
+__OBJC_METACLASS_RO_$_TLFAutoLayoutConfig
+__OBJC_$_INSTANCE_METHODS_TLFAutoLayoutConfig
+_OBJC_IVAR_$_TLFAutoLayoutConfig._shouldAutoLog
+_OBJC_IVAR_$_TLFAutoLayoutConfig._shouldTakeScreenShot
+_OBJC_IVAR_$_TLFAutoLayoutConfig._isWebView
+_OBJC_IVAR_$_TLFAutoLayoutConfig._shouldCaptureUserEvents
+_OBJC_IVAR_$_TLFAutoLayoutConfig._shouldCaptureScreenVisits
+_OBJC_IVAR_$_TLFAutoLayoutConfig._className
+_OBJC_IVAR_$_TLFAutoLayoutConfig._displayName
+_OBJC_IVAR_$_TLFAutoLayoutConfig._screenLayoutCaptureEvent
+_OBJC_IVAR_$_TLFAutoLayoutConfig._screenshotCaptureEvent
+_OBJC_IVAR_$_TLFAutoLayoutConfig._delayInMS
+_OBJC_IVAR_$_TLFAutoLayoutConfig._numberOfWebviews
+_OBJC_IVAR_$_TLFAutoLayoutConfig._delayInSecs
+_OBJC_IVAR_$_TLFAutoLayoutConfig._currentMaskingLevelsDictionary
+_OBJC_IVAR_$_TLFAutoLayoutConfig._tagRegexArray
+_OBJC_IVAR_$_TLFAutoLayoutConfig._valueRegexArray
+__OBJC_$_INSTANCE_VARIABLES_TLFAutoLayoutConfig
+__OBJC_$_PROP_LIST_TLFAutoLayoutConfig
+__OBJC_CLASS_RO_$_TLFAutoLayoutConfig
+Tealeaf/TLFAutoLayoutConfig.m
+Tealeaf/TLFAutoLayoutConfig.h
++[TLFApplicationEventsActionsAIC sharedInstance]
+___48+[TLFApplicationEventsActionsAIC sharedInstance]_block_invoke
+-[TLFApplicationEventsActionsAIC init]
+-[TLFApplicationEventsActionsAIC handleSendAction:to:from:forEvent:]
+-[TLFApplicationEventsActionsAIC handleSendEvent:]
+__OBJC_$_CLASS_METHODS_TLFApplicationEventsActionsAIC
+__OBJC_METACLASS_RO_$_TLFApplicationEventsActionsAIC
+__OBJC_$_INSTANCE_METHODS_TLFApplicationEventsActionsAIC
+__OBJC_CLASS_RO_$_TLFApplicationEventsActionsAIC
+Tealeaf/TLFApplicationEventsActionsAIC.m
+__48+[TLFApplicationEventsActionsAIC sharedInstance]_block_invoke
++[TLFExceptionLogger logNSErrorEvent:message:file:line:level:]
++[TLFExceptionLogger logNSExceptionEvent:dataDictionary:level:]
++[TLFExceptionLogger logNSExceptionEvent:dataDictionary:isUnhandled:]
+__OBJC_$_CLASS_METHODS_TLFExceptionLogger
+__OBJC_METACLASS_RO_$_TLFExceptionLogger
+__OBJC_CLASS_RO_$_TLFExceptionLogger
+Tealeaf/TLFExceptionLogger.m
++[TLFUIControlAIC sharedInstance]
+___33+[TLFUIControlAIC sharedInstance]_block_invoke
+-[TLFUIControlAIC init]
+-[TLFUIControlAIC handleSetCurrentPageEventForPageControl:]
+-[TLFUIControlAIC handleWebViewDidFinishNavigation:]
+-[TLFUIControlAIC pageControlLoaded]
+-[TLFUIControlAIC setPageControlLoaded:]
+-[TLFUIControlAIC tealeafPreviousViewController]
+-[TLFUIControlAIC setTealeafPreviousViewController:]
+-[TLFUIControlAIC .cxx_destruct]
+__OBJC_$_CLASS_METHODS_TLFUIControlAIC
+__OBJC_METACLASS_RO_$_TLFUIControlAIC
+__OBJC_$_INSTANCE_METHODS_TLFUIControlAIC
+_OBJC_IVAR_$_TLFUIControlAIC._pageControlLoaded
+_OBJC_IVAR_$_TLFUIControlAIC._tealeafPreviousViewController
+__OBJC_$_INSTANCE_VARIABLES_TLFUIControlAIC
+__OBJC_$_PROP_LIST_TLFUIControlAIC
+__OBJC_CLASS_RO_$_TLFUIControlAIC
+Tealeaf/TLFUIControlAIC.m
+Tealeaf/TLFUIControlAIC.h
+__33+[TLFUIControlAIC sharedInstance]_block_invoke
++[TLFGestureController sharedInstance]
+___38+[TLFGestureController sharedInstance]_block_invoke
+-[TLFGestureController init]
++[TLFGestureController isTLFGestureLog:andAction:]
+-[TLFGestureController logTapWithTouches:andView:]
+-[TLFGestureController logTapWithTouches:]
+-[TLFGestureController hasGestureBeenLogged:]
+-[TLFGestureController beginTrackingGesturesForView:]
+-[TLFGestureController stopTrackingGesturesForView:]
+-[TLFGestureController addRecognizersToView:]
+-[TLFGestureController removeGesturesFromView:]
+-[TLFGestureController didCaptureGestureData:]
+-[TLFGestureController addTapRecognizerToView:withNumberOfTaps:andNumberOfTouches:andTarget:andSelector:]
+-[TLFGestureController addLongRecognizerToView:withNumberOfTaps:andNumberOfTouches:andTarget:andSelector:]
+-[TLFGestureController addTLFSwipeRecognizerToView:andNumberOfTouches:andTarget:andSelector:]
+-[TLFGestureController addPinchRecognizerToView:withTarget:andSelector:]
+-[TLFGestureController configureGesture:andAddToView:]
+-[TLFGestureController .cxx_destruct]
+_sharedInstance.once
+_OBJC_CLASSLIST_REFERENCES_$_.121
+__OBJC_$_CLASS_METHODS_TLFGestureController
+__OBJC_$_PROTOCOL_REFS_UIGestureRecognizerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_UIGestureRecognizerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_UIGestureRecognizerDelegate
+__OBJC_PROTOCOL_$_UIGestureRecognizerDelegate
+__OBJC_LABEL_PROTOCOL_$_UIGestureRecognizerDelegate
+__OBJC_$_PROTOCOL_REFS_TLFGestureDataDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_TLFGestureDataDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_TLFGestureDataDelegate
+__OBJC_PROTOCOL_$_TLFGestureDataDelegate
+__OBJC_LABEL_PROTOCOL_$_TLFGestureDataDelegate
+__OBJC_CLASS_PROTOCOLS_$_TLFGestureController
+__OBJC_METACLASS_RO_$_TLFGestureController
+__OBJC_$_INSTANCE_METHODS_TLFGestureController
+_OBJC_IVAR_$_TLFGestureController.dictGestures
+_OBJC_IVAR_$_TLFGestureController.gestureDelegate
+_OBJC_IVAR_$_TLFGestureController.tapRecognizer
+_OBJC_IVAR_$_TLFGestureController.doubleTapRecognizer
+_OBJC_IVAR_$_TLFGestureController.tapAndHoldRecognizer
+_OBJC_IVAR_$_TLFGestureController.pinchGestureRecognizer
+_OBJC_IVAR_$_TLFGestureController.rotateGestureRecognizer
+_OBJC_IVAR_$_TLFGestureController.tlfSwipeGestureRecognizer
+_OBJC_IVAR_$_TLFGestureController.tlfMockGestureRecognizer
+_OBJC_IVAR_$_TLFGestureController.manualTapLogging
+__OBJC_$_INSTANCE_VARIABLES_TLFGestureController
+__OBJC_$_PROP_LIST_TLFGestureController
+__OBJC_CLASS_RO_$_TLFGestureController
+Tealeaf/TLFGestureController.m
+__CGPointEqualToPoint
+__38+[TLFGestureController sharedInstance]_block_invoke
+-[TLFL_DatePicker initWithDatePicker:andZIndex:andControlsDict:]
+-[TLFL_DatePicker jsonRepresentation]
+___37-[TLFL_DatePicker jsonRepresentation]_block_invoke
+___37-[TLFL_DatePicker jsonRepresentation]_block_invoke_2
+-[TLFL_DatePicker date]
+-[TLFL_DatePicker setDate:]
+-[TLFL_DatePicker calendar]
+-[TLFL_DatePicker setCalendar:]
+-[TLFL_DatePicker timeZone]
+-[TLFL_DatePicker setTimeZone:]
+-[TLFL_DatePicker locale]
+-[TLFL_DatePicker setLocale:]
+-[TLFL_DatePicker .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.57
+_OBJC_IVAR_$_TLFL_DatePicker._date
+_OBJC_IVAR_$_TLFL_DatePicker._calendar
+_OBJC_IVAR_$_TLFL_DatePicker._timeZone
+_OBJC_IVAR_$_TLFL_DatePicker._locale
+__OBJC_METACLASS_RO_$_TLFL_DatePicker
+__OBJC_$_INSTANCE_METHODS_TLFL_DatePicker
+__OBJC_$_INSTANCE_VARIABLES_TLFL_DatePicker
+__OBJC_$_PROP_LIST_TLFL_DatePicker
+__OBJC_CLASS_RO_$_TLFL_DatePicker
+Tealeaf/TLFL_DatePicker.m
+Tealeaf/TLFL_DatePicker.h
+__37-[TLFL_DatePicker jsonRepresentation]_block_invoke_2
+__37-[TLFL_DatePicker jsonRepresentation]_block_invoke
++[TLFImageHelper hashFromNSData:]
++[TLFImageHelper hashFromNSDataSHA256:]
+__OBJC_$_CLASS_METHODS_TLFImageHelper
+__OBJC_METACLASS_RO_$_TLFImageHelper
+__OBJC_CLASS_RO_$_TLFImageHelper
+Tealeaf/TLFImageHelper.m
++[TLFUICPayloadLogger logJSONMessagePayload:]
++[TLFUICPayloadLogger logJSONMessagePayloadStr:]
+__OBJC_$_CLASS_METHODS_TLFUICPayloadLogger
+__OBJC_METACLASS_RO_$_TLFUICPayloadLogger
+__OBJC_CLASS_RO_$_TLFUICPayloadLogger
+Tealeaf/TLFUICPayloadLogger.m
++[TLFLevelManager sharedInstance]
+___33+[TLFLevelManager sharedInstance]_block_invoke
+-[TLFLevelManager init]
+-[TLFLevelManager isPrintScreenEnabled]
+-[TLFLevelManager logLevelForExceptionEvent]
+-[TLFLevelManager logLevelForEvent:]
+-[TLFLevelManager logLevelForAutolog:]
+-[TLFLevelManager logLevelForMobileState]
+-[TLFLevelManager logLevelForOrientationChange]
+-[TLFLevelManager logLevelForScreenChangeEvent]
+-[TLFLevelManager logLevelForAsyncConnectionInit]
+-[TLFLevelManager logLevelForSyncConnection]
+-[TLFLevelManager logLevelForSyncConnectionError]
+-[TLFLevelManager logLevelForAsyncConnectionDidReceiveResponse]
+-[TLFLevelManager logLevelForAsyncConnectionDidFinishWithError]
+-[TLFLevelManager logLevelForCustomEvent]
+-[TLFLevelManager logLevelForLayout]
+-[TLFLevelManager logLevelForGestures]
+-[TLFLevelManager logLevelForLocationEvent]
+-[TLFLevelManager logULevelForICPayload]
+-[TLFLevelManager isForCurrentLevelMonitoringEnabledForEvent:]
+__OBJC_$_CLASS_METHODS_TLFLevelManager
+__OBJC_METACLASS_RO_$_TLFLevelManager
+__OBJC_$_INSTANCE_METHODS_TLFLevelManager
+__OBJC_CLASS_RO_$_TLFLevelManager
+Tealeaf/TLFLevelManager.m
+__33+[TLFLevelManager sharedInstance]_block_invoke
+-[TLFGestureHandler resetHandlerForRecognizer:]
+-[TLFGestureHandler beginHandlingGesture:]
+-[TLFGestureHandler updateGesture:]
+-[TLFGestureHandler endGesture:]
+-[TLFGestureHandler handleGesture:]
+-[TLFGestureHandler getTLFDataFor:]
+-[TLFGestureHandler gestureRecognizer:shouldRecognizeSimultaneouslyWithGestureRecognizer:]
+-[TLFGestureHandler delegate]
+-[TLFGestureHandler setDelegate:]
+-[TLFGestureHandler .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.44
+_OBJC_CLASSLIST_REFERENCES_$_.47
+__OBJC_CLASS_PROTOCOLS_$_TLFGestureHandler
+__OBJC_METACLASS_RO_$_TLFGestureHandler
+__OBJC_$_INSTANCE_METHODS_TLFGestureHandler
+_OBJC_IVAR_$_TLFGestureHandler.recognizerMap
+_OBJC_IVAR_$_TLFGestureHandler._delegate
+__OBJC_$_INSTANCE_VARIABLES_TLFGestureHandler
+__OBJC_$_PROP_LIST_TLFGestureHandler
+__OBJC_CLASS_RO_$_TLFGestureHandler
+Tealeaf/TLFGestureHandler.m
+Tealeaf/TLFGestureHandler.h
++[TealeafDynamicLoad load]
+__OBJC_$_CLASS_METHODS_TealeafDynamicLoad
+__OBJC_METACLASS_RO_$_TealeafDynamicLoad
+__OBJC_CLASS_RO_$_TealeafDynamicLoad
+Tealeaf/TealeafDynamicLoad.m
++[TLFScreenViewManager sharedInstance]
+___38+[TLFScreenViewManager sharedInstance]_block_invoke
+-[TLFScreenViewManager init]
+-[TLFScreenViewManager currentViewController]
+-[TLFScreenViewManager didChangeScreenViewToADisabledViewController:]
+-[TLFScreenViewManager didChangeScreenView:withCustomScreenViewName:isAlert:withTLFLayoutPlaceHolder:addPlaceHolderIfNil:isVisit:]
+-[TLFScreenViewManager resetScreenLoadTime]
+-[TLFScreenViewManager currentScreenViewOffset]
+-[TLFScreenViewManager getCurrentTLFLayoutPlaceHolder:]
+-[TLFScreenViewManager removeCurrentTLFLayoutPlaceHolder]
++[TLFScreenViewManager getLayoutConfigFor:]
++[TLFScreenViewManager currentScreenLayoutConfig]
++[TLFScreenViewManager previousScreenLayoutConfig]
++[TLFScreenViewManager isEnhancedReplayPage]
+-[TLFScreenViewManager previousViewControllerName]
+-[TLFScreenViewManager previousViewController]
+-[TLFScreenViewManager currentScreenViewName]
+-[TLFScreenViewManager previousScreenViewName]
+-[TLFScreenViewManager currentTLFLayoutPlaceHolder]
+-[TLFScreenViewManager setCurrentTLFLayoutPlaceHolder:]
+-[TLFScreenViewManager currentScreenViewMessage]
+-[TLFScreenViewManager setCurrentScreenViewMessage:]
+-[TLFScreenViewManager .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.36
+_OBJC_CLASSLIST_REFERENCES_$_.50
+_OBJC_CLASSLIST_REFERENCES_$_.61
+__OBJC_$_CLASS_METHODS_TLFScreenViewManager
+__OBJC_METACLASS_RO_$_TLFScreenViewManager
+__OBJC_$_INSTANCE_METHODS_TLFScreenViewManager
+_OBJC_IVAR_$_TLFScreenViewManager._screenLoadTime
+_OBJC_IVAR_$_TLFScreenViewManager._currentScreenId
+_OBJC_IVAR_$_TLFScreenViewManager._previousScreenId
+_OBJC_IVAR_$_TLFScreenViewManager.currentViewController
+_OBJC_IVAR_$_TLFScreenViewManager.previousViewControllerName
+_OBJC_IVAR_$_TLFScreenViewManager.previousViewController
+_OBJC_IVAR_$_TLFScreenViewManager._currentScreenViewName
+_OBJC_IVAR_$_TLFScreenViewManager._previousScreenViewName
+_OBJC_IVAR_$_TLFScreenViewManager._currentTLFLayoutPlaceHolder
+_OBJC_IVAR_$_TLFScreenViewManager._currentScreenViewMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFScreenViewManager
+__OBJC_$_PROP_LIST_TLFScreenViewManager
+__OBJC_CLASS_RO_$_TLFScreenViewManager
+Tealeaf/TLFScreenViewManager.m
+Tealeaf/TLFScreenViewManager.h
+__38+[TLFScreenViewManager sharedInstance]_block_invoke
+-[TLFL_TextField initWithTextField:andZIndex:]
+-[TLFL_TextField jsonRepresentation]
+___36-[TLFL_TextField jsonRepresentation]_block_invoke
+___36-[TLFL_TextField jsonRepresentation]_block_invoke.52
+-[TLFL_TextField borderStyle]
+-[TLFL_TextField setBorderStyle:]
+-[TLFL_TextField placeHolderText]
+-[TLFL_TextField setPlaceHolderText:]
+-[TLFL_TextField lineBreak]
+-[TLFL_TextField setLineBreak:]
+-[TLFL_TextField placeHolderTextAlignment]
+-[TLFL_TextField setPlaceHolderTextAlignment:]
+-[TLFL_TextField .cxx_destruct]
+_OBJC_IVAR_$_TLFL_TextField._borderStyle
+_OBJC_IVAR_$_TLFL_TextField._placeHolderText
+_OBJC_IVAR_$_TLFL_TextField._lineBreak
+_OBJC_IVAR_$_TLFL_TextField._placeHolderTextAlignment
+__OBJC_METACLASS_RO_$_TLFL_TextField
+__OBJC_$_INSTANCE_METHODS_TLFL_TextField
+__OBJC_$_INSTANCE_VARIABLES_TLFL_TextField
+__OBJC_$_PROP_LIST_TLFL_TextField
+__OBJC_CLASS_RO_$_TLFL_TextField
+Tealeaf/TLFL_TextField.m
+Tealeaf/TLFL_TextField.h
+__36-[TLFL_TextField jsonRepresentation]_block_invoke.52
+__36-[TLFL_TextField jsonRepresentation]_block_invoke
++[TLFHttpHelper sharedInstance]
+___31+[TLFHttpHelper sharedInstance]_block_invoke
+-[TLFHttpHelper init]
+-[TLFHttpHelper setupTealeafHeaders]
++[TLFHttpHelper screenDimiensions]
++[TLFHttpHelper appName]
++[TLFHttpHelper appVersionMajorMinor]
++[TLFHttpHelper XTealeafPropertyString]
+-[TLFHttpHelper setAdditionalHttpHeaders:]
+-[TLFHttpHelper addAdditionalHttpHeader:forName:]
+-[TLFHttpHelper getAdditionalHttpHeadersForSessionId:andJson:]
+-[TLFHttpHelper getWorklightAndUICHeadersForSessionId:andJson:]
+-[TLFHttpHelper getSaasHeadersForSessionId:andJson:]
+-[TLFHttpHelper getIdFromJsonPayload:]
+-[TLFHttpHelper isTealeafHybridBridgeRequest:webView:]
++[TLFHttpHelper setAdditionalHeadersInto:]
+-[TLFHttpHelper messageTypesFromMessagesArray:]
+-[TLFHttpHelper messageTypesFromJson:]
+-[TLFHttpHelper .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.79
+_OBJC_CLASSLIST_REFERENCES_$_.158
+_OBJC_CLASSLIST_REFERENCES_$_.173
+__OBJC_$_CLASS_METHODS_TLFHttpHelper
+__OBJC_METACLASS_RO_$_TLFHttpHelper
+__OBJC_$_INSTANCE_METHODS_TLFHttpHelper
+_OBJC_IVAR_$_TLFHttpHelper.tealeafHeaders
+__OBJC_$_INSTANCE_VARIABLES_TLFHttpHelper
+__OBJC_CLASS_RO_$_TLFHttpHelper
+Tealeaf/TLFHttpHelper.m
+NSEqualRanges
+__31+[TLFHttpHelper sharedInstance]_block_invoke
++[TLFCoreInterface enableFramework]
++[TLFCoreInterface disableFramework]
++[TLFCoreInterface postedMessageCount]
++[TLFCoreInterface getCurrentSessionId]
++[TLFCoreInterface getCurrentSessionStartTime]
++[TLFCoreInterface postMessage:withSessionId:]
++[TLFCoreInterface startNewSessionWith:andSessionId:]
++[TLFCoreInterface updateConfigWithData:]
++[TLFCoreInterface getConfigItem:]
++[TLFCoreInterface getBOOLconfigItemForKey:withDefault:]
++[TLFCoreInterface getStringItemForKey:withDefault:]
++[TLFCoreInterface getNumberItemForKey:withDefault:]
++[TLFCoreInterface setConfigItem:value:]
++[TLFCoreInterface loggingLevel]
++[TLFCoreInterface isDynamicConfigurationEnabled]
++[TLFCoreInterface isManualPostEnabled]
++[TLFCoreInterface isDoPostOnScreenChangeEnabled]
++[TLFCoreInterface configurationCheck]
++[TLFCoreInterface compressData:]
++[TLFCoreInterface deviceTotalStorageCapacity]
++[TLFCoreInterface deviceTotalStorageFreeCapacity]
++[TLFCoreInterface deviceTotalMemory]
++[TLFCoreInterface deviceUserMemory]
++[TLFCoreInterface networkCarrierName]
++[TLFCoreInterface networkCarrierNames]
++[TLFCoreInterface networkWiFiIPAddress]
++[TLFCoreInterface networkIPAddress]
++[TLFCoreInterface networkIPV6Address]
++[TLFCoreInterface currentNetworkStatus]
++[TLFCoreInterface currentNetworkReachabilityName]
++[TLFCoreInterface currentConnectionType]
++[TLFCoreInterface appVersion]
++[TLFCoreInterface appVersionMajorMinor]
++[TLFCoreInterface appName]
++[TLFCoreInterface currentDeviceOrientation]
++[TLFCoreInterface currentScreenDimensions]
++[TLFCoreInterface currentOrientationName]
++[TLFCoreInterface currentUIOrientation]
++[TLFCoreInterface deviceID]
++[TLFCoreInterface generateUUID]
+__OBJC_$_CLASS_METHODS_TLFCoreInterface
+__OBJC_METACLASS_RO_$_TLFCoreInterface
+__OBJC_CLASS_RO_$_TLFCoreInterface
+Tealeaf/TLFCoreInterface.m
+-[TLFL_TabBar initWithTabBar:andZIndex:]
+-[TLFL_TabBar jsonRepresentation]
+___33-[TLFL_TabBar jsonRepresentation]_block_invoke
+___33-[TLFL_TabBar jsonRepresentation]_block_invoke.58
+-[TLFL_TabBar dataContainer]
+-[TLFL_TabBar setDataContainer:]
+-[TLFL_TabBar tintColor]
+-[TLFL_TabBar setTintColor:]
+-[TLFL_TabBar .cxx_destruct]
+_OBJC_IVAR_$_TLFL_TabBar._dataContainer
+_OBJC_IVAR_$_TLFL_TabBar._tintColor
+__OBJC_METACLASS_RO_$_TLFL_TabBar
+__OBJC_$_INSTANCE_METHODS_TLFL_TabBar
+__OBJC_$_INSTANCE_VARIABLES_TLFL_TabBar
+__OBJC_$_PROP_LIST_TLFL_TabBar
+__OBJC_CLASS_RO_$_TLFL_TabBar
+Tealeaf/TLFL_TabBar.m
+Tealeaf/TLFL_TabBar.h
+__33-[TLFL_TabBar jsonRepresentation]_block_invoke.58
+__33-[TLFL_TabBar jsonRepresentation]_block_invoke
+-[TLFControlMessage init]
+-[TLFControlMessage initWithNSObject:]
+-[TLFControlMessage initWithView:]
+-[TLFControlMessage initWithView:andPreviousDictionary:]
+-[TLFControlMessage initWithAction:to:from:forEvent:]
+-[TLFControlMessage initWithView:editTime:prevState:view:]
+-[TLFControlMessage initWithPickerView:view:didSelectRow:inComponent:]
+-[TLFControlMessage initWithTableView:view:didSelectRowAtPath:]
+-[TLFControlMessage initWithAlertAction:view:]
+-[TLFControlMessage initWithControl:editTime:prevState:control:]
+-[TLFControlMessage initWithViewButtonClick:view:andUIAlertController:]
+-[TLFControlMessage initWithKeyboardNotification:textBox:]
+-[TLFControlMessage initWithCustomControl:]
+-[TLFControlMessage encodeWithCoder:]
+-[TLFControlMessage initWithCoder:]
+-[TLFControlMessage jsonDictionary]
+-[TLFControlMessage cleanUp]
+-[TLFControlMessage setIdAndTypeWithObject:]
+-[TLFControlMessage incrementAndSetHitCounterFor:]
+-[TLFControlMessage setHitCounterFor:]
+-[TLFControlMessage setPrevStateDictFor:]
+-[TLFControlMessage updatePrevStateDictFor:]
+-[TLFControlMessage setCurStateDictFor:]
+-[TLFControlMessage updateCurStateDictFor:]
+-[TLFControlMessage processUIView:]
+-[TLFControlMessage processUIButton:]
+-[TLFControlMessage processUISwitch:]
+-[TLFControlMessage processUIStepper:]
+-[TLFControlMessage processUISegment:]
+-[TLFControlMessage processUISlider:]
+-[TLFControlMessage processUIPageControl:]
+-[TLFControlMessage processUIPickerView:didSelectRow:inComponent:]
+-[TLFControlMessage processUIDatePicker:]
+-[TLFControlMessage padWithSpaceFirstChar:]
+-[TLFControlMessage processUIScrollView:]
+-[TLFControlMessage processUITableViewCell:]
+-[TLFControlMessage processUICollectionViewCell:]
+-[TLFControlMessage processUILabel:]
+-[TLFControlMessage processUITextField:]
+-[TLFControlMessage processUITextView:]
+-[TLFControlMessage processUISearchBar:withSender:withAction:]
+-[TLFControlMessage processAction:withDefault:]
+-[TLFControlMessage processSpecial:withAction:]
+-[TLFControlMessage proccessPreviousDictionaryInputForKey:andDefault:]
+-[TLFControlMessage processSelected:]
+-[TLFControlMessage processTextLabel:forControl:]
+-[TLFControlMessage processFont:]
+-[TLFControlMessage processContentOffSet:]
+-[TLFControlMessage processRelativeTouchCoordinateFromEvent:andView:]
+-[TLFControlMessage getPreviousLabelTextForView:]
+-[TLFControlMessage getTLFItemTypeForSecureTextEntry:]
+-[TLFControlMessage setBGColorsWithColor:]
+-[TLFControlMessage setTextColorsWithColor:textBGColor:]
+-[TLFControlMessage updateStateDictionaries]
+-[TLFControlMessage determineLogLevel]
+-[TLFControlMessage addStringRelativeCoord:andControlSize:]
+-[TLFControlMessage checkForRelativeCoords:]
+-[TLFControlMessage hashTag]
+-[TLFControlMessage setHashTag:]
+-[TLFControlMessage tag]
+-[TLFControlMessage setTag:]
+-[TLFControlMessage hidden]
+-[TLFControlMessage setHidden:]
+-[TLFControlMessage tlfIdType]
+-[TLFControlMessage setTlfIdType:]
+-[TLFControlMessage focusInOffset]
+-[TLFControlMessage setFocusInOffset:]
+-[TLFControlMessage dwell]
+-[TLFControlMessage setDwell:]
+-[TLFControlMessage tlType]
+-[TLFControlMessage setTlType:]
+-[TLFControlMessage title]
+-[TLFControlMessage setTitle:]
+-[TLFControlMessage tlEventType]
+-[TLFControlMessage setTlEventType:]
+-[TLFControlMessage iosType]
+-[TLFControlMessage setIosType:]
+-[TLFControlMessage x]
+-[TLFControlMessage setX:]
+-[TLFControlMessage y]
+-[TLFControlMessage setY:]
+-[TLFControlMessage width]
+-[TLFControlMessage setWidth:]
+-[TLFControlMessage height]
+-[TLFControlMessage setHeight:]
+-[TLFControlMessage relXY]
+-[TLFControlMessage setRelXY:]
+-[TLFControlMessage absX]
+-[TLFControlMessage setAbsX:]
+-[TLFControlMessage absY]
+-[TLFControlMessage setAbsY:]
+-[TLFControlMessage textFontName]
+-[TLFControlMessage setTextFontName:]
+-[TLFControlMessage textFontSize]
+-[TLFControlMessage setTextFontSize:]
+-[TLFControlMessage hitCount]
+-[TLFControlMessage setHitCount:]
+-[TLFControlMessage currState]
+-[TLFControlMessage setCurrState:]
+-[TLFControlMessage prevState]
+-[TLFControlMessage setPrevState:]
+-[TLFControlMessage eventHandlerFunction]
+-[TLFControlMessage setEventHandlerFunction:]
+-[TLFControlMessage imgHash]
+-[TLFControlMessage setImgHash:]
+-[TLFControlMessage bgColor]
+-[TLFControlMessage setBgColor:]
+-[TLFControlMessage alphaBGColor]
+-[TLFControlMessage setAlphaBGColor:]
+-[TLFControlMessage textColor]
+-[TLFControlMessage setTextColor:]
+-[TLFControlMessage textAlphaColor]
+-[TLFControlMessage setTextAlphaColor:]
+-[TLFControlMessage textBGColor]
+-[TLFControlMessage setTextBGColor:]
+-[TLFControlMessage textBGAlphaColor]
+-[TLFControlMessage setTextBGAlphaColor:]
+-[TLFControlMessage relTouchPoint]
+-[TLFControlMessage setRelTouchPoint:]
+-[TLFControlMessage absTouchPoint]
+-[TLFControlMessage setAbsTouchPoint:]
+-[TLFControlMessage base64Representation]
+-[TLFControlMessage setBase64Representation:]
+-[TLFControlMessage controlImageDiff]
+-[TLFControlMessage setControlImageDiff:]
+-[TLFControlMessage accessibilityDict]
+-[TLFControlMessage setAccessibilityDict:]
+-[TLFControlMessage .cxx_destruct]
+_OBJC_IVAR_$_TLFControlMessage._textFontSize
+_OBJC_IVAR_$_TLFControlMessage.currStateDict
+_OBJC_IVAR_$_TLFControlMessage.prevStateDict
+_OBJC_IVAR_$_TLFControlMessage.prevStateDictInput
+_OBJC_CLASSLIST_REFERENCES_$_.67
+_OBJC_CLASSLIST_REFERENCES_$_.84
+_OBJC_CLASSLIST_REFERENCES_$_.86
+_OBJC_CLASSLIST_REFERENCES_$_.87
+_OBJC_CLASSLIST_REFERENCES_$_.89
+_OBJC_CLASSLIST_REFERENCES_$_.159
+_OBJC_CLASSLIST_REFERENCES_$_.162
+_OBJC_CLASSLIST_REFERENCES_$_.175
+_OBJC_SELECTOR_REFERENCES_.179
+_OBJC_SELECTOR_REFERENCES_.181
+_OBJC_CLASSLIST_REFERENCES_$_.182
+_OBJC_CLASSLIST_REFERENCES_$_.183
+_OBJC_SELECTOR_REFERENCES_.185
+_OBJC_CLASSLIST_REFERENCES_$_.196
+_OBJC_CLASSLIST_REFERENCES_$_.201
+_OBJC_SELECTOR_REFERENCES_.205
+_OBJC_CLASSLIST_REFERENCES_$_.211
+_OBJC_SELECTOR_REFERENCES_.213
+_OBJC_CLASSLIST_REFERENCES_$_.214
+_OBJC_SELECTOR_REFERENCES_.220
+_OBJC_SELECTOR_REFERENCES_.224
+_OBJC_CLASSLIST_REFERENCES_$_.225
+_OBJC_CLASSLIST_REFERENCES_$_.226
+_OBJC_SELECTOR_REFERENCES_.238
+_OBJC_SELECTOR_REFERENCES_.242
+_OBJC_SELECTOR_REFERENCES_.246
+_OBJC_SELECTOR_REFERENCES_.250
+_OBJC_SELECTOR_REFERENCES_.252
+_OBJC_SELECTOR_REFERENCES_.256
+_OBJC_SELECTOR_REFERENCES_.260
+_OBJC_SELECTOR_REFERENCES_.262
+_OBJC_SELECTOR_REFERENCES_.264
+_OBJC_SELECTOR_REFERENCES_.270
+_OBJC_SELECTOR_REFERENCES_.282
+_OBJC_SELECTOR_REFERENCES_.284
+_OBJC_SELECTOR_REFERENCES_.286
+_OBJC_CLASSLIST_REFERENCES_$_.287
+_OBJC_SELECTOR_REFERENCES_.289
+_OBJC_SELECTOR_REFERENCES_.291
+_OBJC_SELECTOR_REFERENCES_.295
+_OBJC_SELECTOR_REFERENCES_.303
+_OBJC_SELECTOR_REFERENCES_.311
+_OBJC_SELECTOR_REFERENCES_.313
+_OBJC_SELECTOR_REFERENCES_.315
+_OBJC_SELECTOR_REFERENCES_.317
+_OBJC_SELECTOR_REFERENCES_.319
+_OBJC_SELECTOR_REFERENCES_.325
+_OBJC_SELECTOR_REFERENCES_.327
+_OBJC_SELECTOR_REFERENCES_.329
+_OBJC_SELECTOR_REFERENCES_.331
+_OBJC_SELECTOR_REFERENCES_.333
+_OBJC_SELECTOR_REFERENCES_.337
+_OBJC_SELECTOR_REFERENCES_.339
+_OBJC_SELECTOR_REFERENCES_.349
+_OBJC_SELECTOR_REFERENCES_.369
+_OBJC_SELECTOR_REFERENCES_.373
+_OBJC_SELECTOR_REFERENCES_.377
+_OBJC_SELECTOR_REFERENCES_.381
+_OBJC_SELECTOR_REFERENCES_.389
+_OBJC_SELECTOR_REFERENCES_.393
+_OBJC_SELECTOR_REFERENCES_.397
+_OBJC_SELECTOR_REFERENCES_.401
+_OBJC_SELECTOR_REFERENCES_.405
+_OBJC_SELECTOR_REFERENCES_.407
+_OBJC_SELECTOR_REFERENCES_.409
+_OBJC_SELECTOR_REFERENCES_.411
+_OBJC_SELECTOR_REFERENCES_.413
+_OBJC_SELECTOR_REFERENCES_.415
+_OBJC_SELECTOR_REFERENCES_.419
+_OBJC_SELECTOR_REFERENCES_.423
+_OBJC_SELECTOR_REFERENCES_.427
+_OBJC_SELECTOR_REFERENCES_.438
+_OBJC_SELECTOR_REFERENCES_.446
+_OBJC_SELECTOR_REFERENCES_.466
+_OBJC_SELECTOR_REFERENCES_.468
+_OBJC_SELECTOR_REFERENCES_.472
+_OBJC_SELECTOR_REFERENCES_.474
+_OBJC_SELECTOR_REFERENCES_.478
+_OBJC_SELECTOR_REFERENCES_.482
+_OBJC_SELECTOR_REFERENCES_.486
+_OBJC_SELECTOR_REFERENCES_.490
+_OBJC_SELECTOR_REFERENCES_.494
+_OBJC_SELECTOR_REFERENCES_.506
+_OBJC_SELECTOR_REFERENCES_.508
+_OBJC_CLASSLIST_REFERENCES_$_.513
+_OBJC_SELECTOR_REFERENCES_.515
+_OBJC_SELECTOR_REFERENCES_.517
+_OBJC_SELECTOR_REFERENCES_.519
+_OBJC_SELECTOR_REFERENCES_.521
+_OBJC_SELECTOR_REFERENCES_.523
+_OBJC_SELECTOR_REFERENCES_.525
+_OBJC_SELECTOR_REFERENCES_.527
+_OBJC_SELECTOR_REFERENCES_.529
+_OBJC_SELECTOR_REFERENCES_.533
+_OBJC_SELECTOR_REFERENCES_.535
+_OBJC_SELECTOR_REFERENCES_.537
+_OBJC_SELECTOR_REFERENCES_.539
+_OBJC_SELECTOR_REFERENCES_.541
+_OBJC_SELECTOR_REFERENCES_.543
+_OBJC_SELECTOR_REFERENCES_.545
+_OBJC_SELECTOR_REFERENCES_.547
+_OBJC_SELECTOR_REFERENCES_.549
+_OBJC_SELECTOR_REFERENCES_.553
+_OBJC_SELECTOR_REFERENCES_.555
+_OBJC_SELECTOR_REFERENCES_.557
+_OBJC_SELECTOR_REFERENCES_.559
+_OBJC_SELECTOR_REFERENCES_.561
+_OBJC_CLASSLIST_REFERENCES_$_.562
+_OBJC_SELECTOR_REFERENCES_.564
+_OBJC_SELECTOR_REFERENCES_.568
+_OBJC_SELECTOR_REFERENCES_.574
+_OBJC_SELECTOR_REFERENCES_.582
+_OBJC_SELECTOR_REFERENCES_.584
+_OBJC_SELECTOR_REFERENCES_.586
+_OBJC_SELECTOR_REFERENCES_.588
+_OBJC_SELECTOR_REFERENCES_.602
+_OBJC_SELECTOR_REFERENCES_.608
+_OBJC_SELECTOR_REFERENCES_.610
+_OBJC_SELECTOR_REFERENCES_.612
+_OBJC_SELECTOR_REFERENCES_.616
+_OBJC_SELECTOR_REFERENCES_.620
+_OBJC_SELECTOR_REFERENCES_.624
+_OBJC_SELECTOR_REFERENCES_.626
+_OBJC_SELECTOR_REFERENCES_.630
+_OBJC_SELECTOR_REFERENCES_.636
+_OBJC_SELECTOR_REFERENCES_.638
+_OBJC_SELECTOR_REFERENCES_.642
+_OBJC_CLASSLIST_REFERENCES_$_.645
+_OBJC_SELECTOR_REFERENCES_.647
+_OBJC_SELECTOR_REFERENCES_.649
+_OBJC_SELECTOR_REFERENCES_.651
+_OBJC_SELECTOR_REFERENCES_.653
+_OBJC_SELECTOR_REFERENCES_.657
+_OBJC_SELECTOR_REFERENCES_.659
+_OBJC_SELECTOR_REFERENCES_.661
+_OBJC_CLASSLIST_REFERENCES_$_.662
+_OBJC_SELECTOR_REFERENCES_.666
+_OBJC_SELECTOR_REFERENCES_.684
+_OBJC_SELECTOR_REFERENCES_.686
+_OBJC_CLASSLIST_REFERENCES_$_.687
+_OBJC_SELECTOR_REFERENCES_.689
+_OBJC_SELECTOR_REFERENCES_.691
+_OBJC_SELECTOR_REFERENCES_.693
+_OBJC_SELECTOR_REFERENCES_.695
+_OBJC_CLASSLIST_REFERENCES_$_.696
+_OBJC_SELECTOR_REFERENCES_.698
+_OBJC_SELECTOR_REFERENCES_.700
+_OBJC_SELECTOR_REFERENCES_.702
+_OBJC_SELECTOR_REFERENCES_.704
+_OBJC_SELECTOR_REFERENCES_.706
+_OBJC_SELECTOR_REFERENCES_.708
+_OBJC_SELECTOR_REFERENCES_.716
+_OBJC_SELECTOR_REFERENCES_.720
+_OBJC_SELECTOR_REFERENCES_.722
+_OBJC_SELECTOR_REFERENCES_.726
+_OBJC_SELECTOR_REFERENCES_.730
+_OBJC_SELECTOR_REFERENCES_.732
+_OBJC_SELECTOR_REFERENCES_.738
+_OBJC_SELECTOR_REFERENCES_.740
+_OBJC_SELECTOR_REFERENCES_.742
+_OBJC_SELECTOR_REFERENCES_.744
+_OBJC_SELECTOR_REFERENCES_.746
+_OBJC_SELECTOR_REFERENCES_.748
+_OBJC_SELECTOR_REFERENCES_.752
+_OBJC_SELECTOR_REFERENCES_.758
+_OBJC_SELECTOR_REFERENCES_.760
+_OBJC_SELECTOR_REFERENCES_.762
+_OBJC_SELECTOR_REFERENCES_.770
+_OBJC_CLASSLIST_REFERENCES_$_.771
+_OBJC_CLASSLIST_REFERENCES_$_.774
+_OBJC_SELECTOR_REFERENCES_.780
+_OBJC_SELECTOR_REFERENCES_.784
+_OBJC_SELECTOR_REFERENCES_.788
+_OBJC_CLASSLIST_REFERENCES_$_.789
+_OBJC_SELECTOR_REFERENCES_.791
+_OBJC_SELECTOR_REFERENCES_.793
+_OBJC_SELECTOR_REFERENCES_.797
+_OBJC_SELECTOR_REFERENCES_.799
+_OBJC_SELECTOR_REFERENCES_.801
+_OBJC_SELECTOR_REFERENCES_.803
+_OBJC_CLASSLIST_REFERENCES_$_.804
+_OBJC_SELECTOR_REFERENCES_.806
+_OBJC_IVAR_$_TLFControlMessage._bgColor
+_OBJC_IVAR_$_TLFControlMessage._alphaBGColor
+_OBJC_SELECTOR_REFERENCES_.808
+_OBJC_IVAR_$_TLFControlMessage._textColor
+_OBJC_IVAR_$_TLFControlMessage._textAlphaColor
+_OBJC_IVAR_$_TLFControlMessage._textBGColor
+_OBJC_IVAR_$_TLFControlMessage._textBGAlphaColor
+_OBJC_SELECTOR_REFERENCES_.810
+_OBJC_SELECTOR_REFERENCES_.814
+_OBJC_SELECTOR_REFERENCES_.816
+_OBJC_SELECTOR_REFERENCES_.818
+_OBJC_CLASSLIST_REFERENCES_$_.819
+_OBJC_SELECTOR_REFERENCES_.821
+_OBJC_SELECTOR_REFERENCES_.825
+_OBJC_IVAR_$_TLFControlMessage._hashTag
+_OBJC_IVAR_$_TLFControlMessage._tag
+_OBJC_IVAR_$_TLFControlMessage._hidden
+_OBJC_IVAR_$_TLFControlMessage._tlfIdType
+_OBJC_IVAR_$_TLFControlMessage._focusInOffset
+_OBJC_IVAR_$_TLFControlMessage._dwell
+_OBJC_IVAR_$_TLFControlMessage._tlType
+_OBJC_IVAR_$_TLFControlMessage._title
+_OBJC_IVAR_$_TLFControlMessage._tlEventType
+_OBJC_IVAR_$_TLFControlMessage._iosType
+_OBJC_IVAR_$_TLFControlMessage._x
+_OBJC_IVAR_$_TLFControlMessage._y
+_OBJC_IVAR_$_TLFControlMessage._width
+_OBJC_IVAR_$_TLFControlMessage._height
+_OBJC_IVAR_$_TLFControlMessage._relXY
+_OBJC_IVAR_$_TLFControlMessage._absX
+_OBJC_IVAR_$_TLFControlMessage._absY
+_OBJC_IVAR_$_TLFControlMessage._textFontName
+_OBJC_IVAR_$_TLFControlMessage._hitCount
+_OBJC_IVAR_$_TLFControlMessage._currState
+_OBJC_IVAR_$_TLFControlMessage._prevState
+_OBJC_IVAR_$_TLFControlMessage._eventHandlerFunction
+_OBJC_IVAR_$_TLFControlMessage._imgHash
+_OBJC_IVAR_$_TLFControlMessage._relTouchPoint
+_OBJC_IVAR_$_TLFControlMessage._absTouchPoint
+_OBJC_IVAR_$_TLFControlMessage._base64Representation
+_OBJC_IVAR_$_TLFControlMessage._controlImageDiff
+_OBJC_IVAR_$_TLFControlMessage._accessibilityDict
+__OBJC_METACLASS_RO_$_TLFControlMessage
+__OBJC_$_INSTANCE_METHODS_TLFControlMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFControlMessage
+__OBJC_$_PROP_LIST_TLFControlMessage
+__OBJC_CLASS_RO_$_TLFControlMessage
+Tealeaf/TLFControlMessage.m
+Tealeaf/TLFControlMessage.h
++[UIPageControl(TLFInjection) tlfInject]
+___40+[UIPageControl(TLFInjection) tlfInject]_block_invoke
+_setCurrentPageTLF
+-[UIPageControl(TLFInjection) setTealeafPreviousPage:]
+-[UIPageControl(TLFInjection) tealeafPreviousPage]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIPageControl_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_UIPageControl_$_TLFInjection
+__OBJC_CATEGORY_PROTOCOLS_$_UIPageControl_$_TLFInjection
+__OBJC_$_PROP_LIST_UIPageControl_$_TLFInjection
+__OBJC_$_CATEGORY_UIPageControl_$_TLFInjection
+Tealeaf/UIPageControl+TLFInjection.m
+setCurrentPageTLF
+__40+[UIPageControl(TLFInjection) tlfInject]_block_invoke
+-[TLFLPosition jsonRepresentation]
++[TLFLPosition tlflPositionWithFrame:]
+-[TLFLPosition frame]
+-[TLFLPosition setFrame:]
+-[TLFLPosition absolute]
+-[TLFLPosition setAbsolute:]
+__OBJC_$_CLASS_METHODS_TLFLPosition
+__OBJC_METACLASS_RO_$_TLFLPosition
+__OBJC_$_INSTANCE_METHODS_TLFLPosition
+_OBJC_IVAR_$_TLFLPosition._absolute
+_OBJC_IVAR_$_TLFLPosition._frame
+__OBJC_$_INSTANCE_VARIABLES_TLFLPosition
+__OBJC_$_PROP_LIST_TLFLPosition
+__OBJC_CLASS_RO_$_TLFLPosition
+Tealeaf/TLFLPosition.m
+Tealeaf/TLFLPosition.h
++[TLFSessionManager sharedInstance]
+___35+[TLFSessionManager sharedInstance]_block_invoke
+-[TLFSessionManager init]
+-[TLFSessionManager startNewSession]
+-[TLFSessionManager getCurrentSessionId]
+-[TLFSessionManager newSessionId:]
+-[TLFSessionManager timestamp]
+-[TLFSessionManager timestampFromSessionStart]
+-[TLFSessionManager currentSessionId]
+-[TLFSessionManager setCurrentSessionId:]
+-[TLFSessionManager .cxx_destruct]
+__OBJC_$_CLASS_METHODS_TLFSessionManager
+__OBJC_METACLASS_RO_$_TLFSessionManager
+__OBJC_$_INSTANCE_METHODS_TLFSessionManager
+_OBJC_IVAR_$_TLFSessionManager._currentSessionStartedDate
+_OBJC_IVAR_$_TLFSessionManager._currentSessionId
+__OBJC_$_INSTANCE_VARIABLES_TLFSessionManager
+__OBJC_$_PROP_LIST_TLFSessionManager
+__OBJC_CLASS_RO_$_TLFSessionManager
+Tealeaf/TLFSessionManager.m
+__35+[TLFSessionManager sharedInstance]_block_invoke
++[UITableView(TLFInjection) tlfInject]
+___38+[UITableView(TLFInjection) tlfInject]_block_invoke
+_tlfNewUITableView_setDelegate
+_tlfNewUITableView_reloadData
+-[UITableView(TLFInjection) tlfInjectDelegate:]
+-[UITableView(TLFInjection) _tlfTableView:didSelectRowAtIndexPath:]
+-[UITableView(TLFInjection) tlfTableView:didSelectRowAtIndexPath:]
+-[UITableView(TLFInjection) setTealeafSearchBar:]
+-[UITableView(TLFInjection) tealeafSearchBar]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UITableView_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_UITableView_$_TLFInjection
+__OBJC_CATEGORY_PROTOCOLS_$_UITableView_$_TLFInjection
+__OBJC_$_PROP_LIST_UITableView_$_TLFInjection
+__OBJC_$_CATEGORY_UITableView_$_TLFInjection
+Tealeaf/UITableView+TLFInjection.m
+tlfNewUITableView_reloadData
+tlfNewUITableView_setDelegate
+__38+[UITableView(TLFInjection) tlfInject]_block_invoke
+-[NSObject(TLFAdditions_Private) tlfURLReference]
+-[NSObject(TLFAdditions_Private) setTlfURLReference:]
+-[NSObject(TLFAdditions_Private) tlfFileReference]
+-[NSObject(TLFAdditions_Private) setTlfFileReference:]
+-[NSObject(TLFAdditions_Private) tlfManualId]
+-[NSObject(TLFAdditions_Private) setTlfManualId:]
+-[NSObject(TLFAdditions_Private) tlfManualName]
+-[NSObject(TLFAdditions_Private) setTlfManualName:]
+-[NSObject(TLFAdditions_Private) tlfGeneratedId]
+-[NSObject(TLFAdditions_Private) setTlfGeneratedId:]
+-[NSObject(TLFAdditions_Private) tlfHitCounter]
+-[NSObject(TLFAdditions_Private) setTlfHitCounter:]
+-[NSObject(TLFAdditions_Private) tlfPrevStateDict]
+-[NSObject(TLFAdditions_Private) setTlfPrevStateDict:]
+-[NSObject(TLFAdditions_Private) tlfCurStateDict]
+-[NSObject(TLFAdditions_Private) setTlfCurStateDict:]
++[NSObject(TLFAdditions_Private) swizzleWithClass:originalSelector:andTLFSelector:]
++[NSObject(TLFAdditions_Private) swizzleWithInstance:originalSelector:andTLFSelector:]
++[NSObject(TLFAdditions_Private) getUrlFromPath:]
++[NSObject(TLFAdditions_Private) getRelativePathForFile:]
++[NSObject(TLFAdditions_Private) getFileNameFromPath:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSObject_$_TLFAdditions_Private
+__OBJC_$_CATEGORY_CLASS_METHODS_NSObject_$_TLFAdditions_Private
+__OBJC_$_PROP_LIST_NSObject_$_TLFAdditions_Private
+__OBJC_$_CATEGORY_NSObject_$_TLFAdditions_Private
+Tealeaf/NSObject+TLFAdditions_Private.m
++[TLFUIEventsLogger logAction:to:from:forEvent:]
++[TLFUIEventsLogger logAction:editTime:prevState:control:]
++[TLFUIEventsLogger logAction:editTime:prevState:view:]
++[TLFUIEventsLogger logPickerViewAction:view:didSelectRow:inComponent:]
++[TLFUIEventsLogger logViewButtonClick:view:andUIAlertController:]
++[TLFUIEventsLogger logClickEvent:data:]
++[TLFUIEventsLogger logKeyboardNotificationEvent:textBox:]
++[TLFUIEventsLogger logUILabelTextChange:]
++[TLFUIEventsLogger shouldLogGesture:]
++[TLFUIEventsLogger logGestureWithDictionary:]
+___46+[TLFUIEventsLogger logGestureWithDictionary:]_block_invoke
+___46+[TLFUIEventsLogger logGestureWithDictionary:]_block_invoke.134
++[TLFUIEventsLogger logTLFControlMessage:]
++[TLFUIEventsLogger logCustomControl:]
++[TLFUIEventsLogger logValueChangeEvent:data:]
++[TLFUIEventsLogger logTextChangeEvent:data:]
++[TLFUIEventsLogger logTableViewAction:view:didSelectRowAtPath:]
++[TLFUIEventsLogger logUIAlertAction:view:]
+_OBJC_CLASSLIST_REFERENCES_$_.16
+_OBJC_CLASSLIST_REFERENCES_$_.99
+_OBJC_CLASSLIST_REFERENCES_$_.106
+___block_descriptor_40_e8_32s_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.129
+_OBJC_CLASSLIST_REFERENCES_$_.143
+__OBJC_$_CLASS_METHODS_TLFUIEventsLogger
+__OBJC_METACLASS_RO_$_TLFUIEventsLogger
+__OBJC_CLASS_RO_$_TLFUIEventsLogger
+Tealeaf/TLFUIEventsLogger.m
+__46+[TLFUIEventsLogger logGestureWithDictionary:]_block_invoke.134
+__46+[TLFUIEventsLogger logGestureWithDictionary:]_block_invoke
+-[TLFFormCompletionMessage init]
+-[TLFFormCompletionMessage initWithSubmitted:andIsValid:]
+-[TLFFormCompletionMessage jsonDictionary]
+-[TLFFormCompletionMessage submitted]
+-[TLFFormCompletionMessage setSubmitted:]
+-[TLFFormCompletionMessage valid]
+-[TLFFormCompletionMessage setValid:]
+_OBJC_IVAR_$_TLFFormCompletionMessage._submitted
+_OBJC_IVAR_$_TLFFormCompletionMessage._valid
+__OBJC_METACLASS_RO_$_TLFFormCompletionMessage
+__OBJC_$_INSTANCE_METHODS_TLFFormCompletionMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFFormCompletionMessage
+__OBJC_$_PROP_LIST_TLFFormCompletionMessage
+__OBJC_CLASS_RO_$_TLFFormCompletionMessage
+Tealeaf/TLFFormCompletionMessage.m
+Tealeaf/TLFFormCompletionMessage.h
++[TLFGestureData getTLFGestureDataFor:]
++[TLFGestureData getMockTapWithTouches:]
++[TLFGestureData getMockTapWithTouches:andView:]
++[TLFGestureData getTLFGestureDataWithTLType:andGestureType:andTouches:]
+-[TLFGestureData init]
+-[TLFGestureData initWithGestureRecognizer:]
+-[TLFGestureData beginWithGestureRecognizer:]
+-[TLFGestureData updateWithGestureRecognizer:]
+-[TLFGestureData endWithGestureRecognizer:]
+-[TLFGestureData resetTouchesForRecognizer:]
+-[TLFGestureData resetTouchesWithNumberOfTouches:]
+-[TLFGestureData getTouches]
+-[TLFGestureData processLocation:]
+-[TLFGestureData jsonRepresentation]
+-[TLFGestureData processHitView:]
+-[TLFGestureData addLocationDataWithPoint:andView:toArray:withHitTest:]
+-[TLFGestureData addTouchesDataWithTouchSet:]
+-[TLFGestureData addTouchesDataWithTouchSet:andView:]
+-[TLFGestureData addTouchesDataWithRegonizer:]
+-[TLFGestureData hasTouches]
+-[TLFGestureData controlBeganHash]
+-[TLFGestureData setControlBeganHash:]
+-[TLFGestureData controlEndHash]
+-[TLFGestureData setControlEndHash:]
+-[TLFGestureData tlfEvent]
+-[TLFGestureData setTlfEvent:]
+-[TLFGestureData gestureType]
+-[TLFGestureData setGestureType:]
+-[TLFGestureData direction]
+-[TLFGestureData setDirection:]
+-[TLFGestureData numberOfTouches]
+-[TLFGestureData setNumberOfTouches:]
+-[TLFGestureData numberOfTaps]
+-[TLFGestureData setNumberOfTaps:]
+-[TLFGestureData velocity]
+-[TLFGestureData setVelocity:]
+-[TLFGestureData velocityX]
+-[TLFGestureData setVelocityX:]
+-[TLFGestureData velocityY]
+-[TLFGestureData setVelocityY:]
+-[TLFGestureData firstTouch]
+-[TLFGestureData setFirstTouch:]
+-[TLFGestureData timeElapsed]
+-[TLFGestureData setTimeElapsed:]
+-[TLFGestureData endOnlyEventType]
+-[TLFGestureData setEndOnlyEventType:]
+-[TLFGestureData startedGesture]
+-[TLFGestureData setStartedGesture:]
+-[TLFGestureData isValidGesture]
+-[TLFGestureData setIsValidGesture:]
+-[TLFGestureData .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.7
+_OBJC_CLASSLIST_REFERENCES_$_.8
+_OBJC_CLASSLIST_REFERENCES_$_.66
+_OBJC_CLASSLIST_REFERENCES_$_.150
+_OBJC_CLASSLIST_REFERENCES_$_.186
+__OBJC_$_CLASS_METHODS_TLFGestureData
+__OBJC_METACLASS_RO_$_TLFGestureData
+__OBJC_$_INSTANCE_METHODS_TLFGestureData
+_OBJC_IVAR_$_TLFGestureData.startTime
+_OBJC_IVAR_$_TLFGestureData.lastUpdate
+_OBJC_IVAR_$_TLFGestureData.frequency
+_OBJC_IVAR_$_TLFGestureData.touches
+_OBJC_IVAR_$_TLFGestureData.touchesNeedReset
+_OBJC_IVAR_$_TLFGestureData._endOnlyEventType
+_OBJC_IVAR_$_TLFGestureData._startedGesture
+_OBJC_IVAR_$_TLFGestureData._isValidGesture
+_OBJC_IVAR_$_TLFGestureData._controlBeganHash
+_OBJC_IVAR_$_TLFGestureData._controlEndHash
+_OBJC_IVAR_$_TLFGestureData._tlfEvent
+_OBJC_IVAR_$_TLFGestureData._gestureType
+_OBJC_IVAR_$_TLFGestureData._direction
+_OBJC_IVAR_$_TLFGestureData._numberOfTouches
+_OBJC_IVAR_$_TLFGestureData._numberOfTaps
+_OBJC_IVAR_$_TLFGestureData._velocity
+_OBJC_IVAR_$_TLFGestureData._velocityX
+_OBJC_IVAR_$_TLFGestureData._velocityY
+_OBJC_IVAR_$_TLFGestureData._timeElapsed
+_OBJC_IVAR_$_TLFGestureData._firstTouch
+__OBJC_$_INSTANCE_VARIABLES_TLFGestureData
+__OBJC_$_PROP_LIST_TLFGestureData
+__OBJC_CLASS_RO_$_TLFGestureData
+Tealeaf/TLFGestureData.m
+Tealeaf/TLFGestureData.h
+-[TLFL_StatusBar initWithBkGdColor:isTranslucetn:andZIndex:]
+-[TLFL_StatusBar jsonRepresentation]
+___36-[TLFL_StatusBar jsonRepresentation]_block_invoke
+___36-[TLFL_StatusBar jsonRepresentation]_block_invoke.135
+-[TLFL_StatusBar carrier]
+-[TLFL_StatusBar setCarrier:]
+-[TLFL_StatusBar time]
+-[TLFL_StatusBar setTime:]
+-[TLFL_StatusBar connectionType]
+-[TLFL_StatusBar setConnectionType:]
+-[TLFL_StatusBar barColor]
+-[TLFL_StatusBar setBarColor:]
+-[TLFL_StatusBar contentColor]
+-[TLFL_StatusBar setContentColor:]
+-[TLFL_StatusBar batteryColor]
+-[TLFL_StatusBar setBatteryColor:]
+-[TLFL_StatusBar cellStrength]
+-[TLFL_StatusBar setCellStrength:]
+-[TLFL_StatusBar batteryLevel]
+-[TLFL_StatusBar setBatteryLevel:]
+-[TLFL_StatusBar batteryId]
+-[TLFL_StatusBar setBatteryId:]
+-[TLFL_StatusBar wifi]
+-[TLFL_StatusBar setWifi:]
+-[TLFL_StatusBar transulcent]
+-[TLFL_StatusBar setTransulcent:]
+-[TLFL_StatusBar iOSStyle]
+-[TLFL_StatusBar setIOSStyle:]
+-[TLFL_StatusBar .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.119
+_OBJC_IVAR_$_TLFL_StatusBar._carrier
+_OBJC_IVAR_$_TLFL_StatusBar._time
+_OBJC_IVAR_$_TLFL_StatusBar._connectionType
+_OBJC_IVAR_$_TLFL_StatusBar._barColor
+_OBJC_IVAR_$_TLFL_StatusBar._contentColor
+_OBJC_IVAR_$_TLFL_StatusBar._batteryColor
+_OBJC_IVAR_$_TLFL_StatusBar._cellStrength
+_OBJC_IVAR_$_TLFL_StatusBar._batteryLevel
+_OBJC_IVAR_$_TLFL_StatusBar._batteryId
+_OBJC_IVAR_$_TLFL_StatusBar._wifi
+_OBJC_IVAR_$_TLFL_StatusBar._transulcent
+_OBJC_IVAR_$_TLFL_StatusBar._iOSStyle
+__OBJC_METACLASS_RO_$_TLFL_StatusBar
+__OBJC_$_INSTANCE_METHODS_TLFL_StatusBar
+__OBJC_$_INSTANCE_VARIABLES_TLFL_StatusBar
+__OBJC_$_PROP_LIST_TLFL_StatusBar
+__OBJC_CLASS_RO_$_TLFL_StatusBar
+Tealeaf/TLFL_StatusBar.m
+Tealeaf/TLFL_StatusBar.h
+__36-[TLFL_StatusBar jsonRepresentation]_block_invoke.135
+__36-[TLFL_StatusBar jsonRepresentation]_block_invoke
+-[TLFLText initWithText:forControl:]
+-[TLFLText initWithFont:andTextColor:]
+-[TLFLText initWithLabel:]
+-[TLFLText initWithLabel:forControl:]
+-[TLFLText initWithTextField:]
+-[TLFLText initWithTextView:]
+-[TLFLText initWithButton:]
+-[TLFLText setValuesForText:andAlignment:andTextColor:andFont:]
+-[TLFLText addStyleToDictionary:]
+-[TLFLText addCurrentStateToDictionary:]
+-[TLFLText font]
+-[TLFLText setFont:]
+-[TLFLText text]
+-[TLFLText setText:]
+-[TLFLText alignment]
+-[TLFLText setAlignment:]
+-[TLFLText textColor]
+-[TLFLText setTextColor:]
+-[TLFLText .cxx_destruct]
+__OBJC_METACLASS_RO_$_TLFLText
+__OBJC_$_INSTANCE_METHODS_TLFLText
+_OBJC_IVAR_$_TLFLText._font
+_OBJC_IVAR_$_TLFLText._text
+_OBJC_IVAR_$_TLFLText._alignment
+_OBJC_IVAR_$_TLFLText._textColor
+__OBJC_$_INSTANCE_VARIABLES_TLFLText
+__OBJC_$_PROP_LIST_TLFLText
+__OBJC_CLASS_RO_$_TLFLText
+Tealeaf/TLFLText.m
+Tealeaf/TLFLText.h
++[TLFConfigurationManager sharedInstance]
+___41+[TLFConfigurationManager sharedInstance]_block_invoke
+-[TLFConfigurationManager autoLogLocation]
+-[TLFConfigurationManager setAutoLogLocation:]
+-[TLFConfigurationManager autoLogLayout]
+-[TLFConfigurationManager dynamicConfigurationEnabled]
+-[TLFConfigurationManager imageDataOnScreenLayoutEnabled]
+-[TLFConfigurationManager setImageDataOnScreenLayoutEnabled:]
+-[TLFConfigurationManager postMessageUrl]
+-[TLFConfigurationManager setPostMessageUrl:]
+-[TLFConfigurationManager killSwitchEnabled]
+-[TLFConfigurationManager setKillSwitchEnabled:]
+-[TLFConfigurationManager killSwitchIntervals]
+-[TLFConfigurationManager setKillSwitchIntervals:]
+-[TLFConfigurationManager killSwitchNumberOfTries]
+-[TLFConfigurationManager setKillSwitchNumberOfTries:]
+-[TLFConfigurationManager killSwitchTimeOut]
+-[TLFConfigurationManager setKillSwitchTimeOut:]
+-[TLFConfigurationManager killSwitchUrl]
+-[TLFConfigurationManager setKillSwitchUrl:]
+-[TLFConfigurationManager shouldInjectMethodWithName:]
+-[TLFConfigurationManager isAddMessageTypeHeaderEnabled]
+-[TLFConfigurationManager setIsAddMessageTypeHeaderEnabled:]
+-[TLFConfigurationManager isAutoInstrumentationDisabled]
+-[TLFConfigurationManager setIsAutoInstrumentationDisabled:]
+-[TLFConfigurationManager isFilterMessageTypesEnabled]
+-[TLFConfigurationManager setIsFilterMessageTypesEnabled:]
+-[TLFConfigurationManager javaScriptInjectionDelay]
+-[TLFConfigurationManager setJavaScriptInjectionDelay:]
+-[TLFConfigurationManager loggingLevel]
+-[TLFConfigurationManager isManualPostEnabled]
+-[TLFConfigurationManager maxStringsLength]
+-[TLFConfigurationManager setMaxStringsLength:]
+-[TLFConfigurationManager messageTypeHeader]
+-[TLFConfigurationManager setMessageTypeHeader:]
+-[TLFConfigurationManager messageTypesToBeFiltered]
+-[TLFConfigurationManager setMessageTypesToBeFiltered:]
+-[TLFConfigurationManager percentOfScreenshotsSize]
+-[TLFConfigurationManager setPercentOfScreenshotsSize:]
+-[TLFConfigurationManager pixelDensity]
+-[TLFConfigurationManager setPixelDensity:]
+-[TLFConfigurationManager initialZIndex]
+-[TLFConfigurationManager setInitialZIndex:]
+-[TLFConfigurationManager subViewArrayZIndexIncrementTrigger]
+-[TLFConfigurationManager setSubViewArrayZIndexIncrementTrigger:]
+-[TLFConfigurationManager disableKeyboardCapture]
+-[TLFConfigurationManager setDisableKeyboardCapture:]
+-[TLFConfigurationManager webViewInjectionForDisabledAutoCapture]
+-[TLFConfigurationManager setWebViewInjectionForDisabledAutoCapture:]
+-[TLFConfigurationManager disableAlertAutoCapture]
+-[TLFConfigurationManager setDisableAlertAutoCapture:]
+-[TLFConfigurationManager disableAlertBackgroundForDisabledLogViewLayout]
+-[TLFConfigurationManager setDisableAlertBackgroundForDisabledLogViewLayout:]
+-[TLFConfigurationManager screenshotFormat]
+-[TLFConfigurationManager setScreenshotFormat:]
+-[TLFConfigurationManager appendMapIds]
+-[TLFConfigurationManager autoLayout]
+-[TLFConfigurationManager sessionTimeout]
+-[TLFConfigurationManager setSessionTimeout:]
+-[TLFConfigurationManager sessionizationCookieName]
+-[TLFConfigurationManager setSessionizationCookieName:]
+-[TLFConfigurationManager isGestureDetectorEnabled]
+-[TLFConfigurationManager setIsGestureDetectorEnabled:]
+-[TLFConfigurationManager isCaptureNativeGesturesOnWebviewEnabled]
+-[TLFConfigurationManager setIsCaptureNativeGesturesOnWebviewEnabled:]
+-[TLFConfigurationManager getConfigItemAsBool:]
+-[TLFConfigurationManager getConfigItemAsBool:withDefault:]
+-[TLFConfigurationManager getConfigItemAsString:]
+-[TLFConfigurationManager getConfigItemAsNumber:]
+-[TLFConfigurationManager setConfigurationItem:withBOOL:]
+-[TLFConfigurationManager setConfigurationItem:value:]
+-[TLFConfigurationManager getConfigurationItem:]
+_OBJC_CLASSLIST_REFERENCES_$_.39
+__OBJC_$_CLASS_METHODS_TLFConfigurationManager
+__OBJC_METACLASS_RO_$_TLFConfigurationManager
+__OBJC_$_INSTANCE_METHODS_TLFConfigurationManager
+__OBJC_$_PROP_LIST_TLFConfigurationManager
+__OBJC_CLASS_RO_$_TLFConfigurationManager
+Tealeaf/TLFConfigurationManager.m
+__41+[TLFConfigurationManager sharedInstance]_block_invoke
+-[UIImage(TLFLayoutAdditions_Private) averageColor]
+-[UIImage(TLFLayoutAdditions_Private) colorAtPixel:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIImage_$_TLFLayoutAdditions_Private
+__OBJC_$_CATEGORY_UIImage_$_TLFLayoutAdditions_Private
+Tealeaf/UIImage+TLFLayoutAdditions_Private.m
+-[UIView(TLFLayoutAdditions_Private) tlfBackgroundOverride]
+-[UIView(TLFLayoutAdditions_Private) setTlfBackgroundOverride:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIView_$_TLFLayoutAdditions_Private
+__OBJC_$_PROP_LIST_UIView_$_TLFLayoutAdditions_Private
+__OBJC_$_CATEGORY_UIView_$_TLFLayoutAdditions_Private
+Tealeaf/UIView+TLFLayoutAdditions_Private.m
++[TLFColorHelper getActualColor:]
++[TLFColorHelper setColorValues:colorHex:alpha:]
++[TLFColorHelper getRGBAColorValue:withAlpha:]
+__OBJC_$_CLASS_METHODS_TLFColorHelper
+__OBJC_METACLASS_RO_$_TLFColorHelper
+__OBJC_CLASS_RO_$_TLFColorHelper
+Tealeaf/TLFColorHelper.m
+cmin
+cmax
+-[TLFErrorEventMessage init]
+-[TLFErrorEventMessage initWithError:message:file:line:]
+-[TLFErrorEventMessage jsonDictionary]
+-[TLFErrorEventMessage error]
+-[TLFErrorEventMessage setError:]
+-[TLFErrorEventMessage message]
+-[TLFErrorEventMessage setMessage:]
+-[TLFErrorEventMessage file]
+-[TLFErrorEventMessage setFile:]
+-[TLFErrorEventMessage line]
+-[TLFErrorEventMessage setLine:]
+-[TLFErrorEventMessage .cxx_destruct]
+_OBJC_IVAR_$_TLFErrorEventMessage._error
+_OBJC_IVAR_$_TLFErrorEventMessage._message
+_OBJC_IVAR_$_TLFErrorEventMessage._file
+_OBJC_IVAR_$_TLFErrorEventMessage._line
+__OBJC_METACLASS_RO_$_TLFErrorEventMessage
+__OBJC_$_INSTANCE_METHODS_TLFErrorEventMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFErrorEventMessage
+__OBJC_$_PROP_LIST_TLFErrorEventMessage
+__OBJC_CLASS_RO_$_TLFErrorEventMessage
+Tealeaf/TLFErrorEventMessage.m
+Tealeaf/TLFErrorEventMessage.h
++[TLFNotificationObserver sharedInstance]
+___41+[TLFNotificationObserver sharedInstance]_block_invoke
+-[TLFNotificationObserver init]
+-[TLFNotificationObserver dealloc]
+-[TLFNotificationObserver AddAllObservers]
+-[TLFNotificationObserver removeAllObservers]
+-[TLFNotificationObserver startObserving]
+-[TLFNotificationObserver stopObserving]
+-[TLFNotificationObserver keyboardDidShowNotification:]
+-[TLFNotificationObserver keyboardDidHideNotification:]
+-[TLFNotificationObserver textFieldTextDidBeginEditingNotification:]
+-[TLFNotificationObserver textFieldTextDidChangeNotification:]
+-[TLFNotificationObserver textFieldTextDidEndEditingNotification:]
+-[TLFNotificationObserver textFieldTextDidEndEditingNotificationForcedOn:]
+-[TLFNotificationObserver textViewTextDidBeginEditingNotification:]
+-[TLFNotificationObserver textViewTextDidEndEditingNotification:]
+-[TLFNotificationObserver tableViewSelectionDidChangeNotification:]
+_sharedInstance._singletonPredicate
+__OBJC_$_CLASS_METHODS_TLFNotificationObserver
+__OBJC_METACLASS_RO_$_TLFNotificationObserver
+__OBJC_$_INSTANCE_METHODS_TLFNotificationObserver
+__OBJC_CLASS_RO_$_TLFNotificationObserver
+Tealeaf/TLFNotificationObserver.m
+__41+[TLFNotificationObserver sharedInstance]_block_invoke
++[TLFCoreModule sharedInstance]
+___31+[TLFCoreModule sharedInstance]_block_invoke
+-[TLFCoreModule init]
+-[TLFCoreModule enable]
+-[TLFCoreModule isEnabled]
+-[TLFCoreModule disable]
+-[TLFCoreModule settingsBundlePath]
+-[TLFCoreModule saveCurrentConfigurableItems:]
+-[TLFCoreModule handleUncaughtException:]
+-[TLFCoreModule httpHeadersForSessionId:andJson:]
+-[TLFCoreModule addCookiesToRequest:]
+-[TLFCoreModule tlfAppWillTerminate]
+__OBJC_$_CLASS_METHODS_TLFCoreModule
+__OBJC_$_PROTOCOL_REFS_EOLifecycleObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_EOLifecycleObject
+__OBJC_$_PROTOCOL_CLASS_METHODS_EOLifecycleObject
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_EOLifecycleObject
+__OBJC_$_PROTOCOL_METHOD_TYPES_EOLifecycleObject
+__OBJC_PROTOCOL_$_EOLifecycleObject
+__OBJC_LABEL_PROTOCOL_$_EOLifecycleObject
+__OBJC_CLASS_PROTOCOLS_$_TLFCoreModule
+__OBJC_METACLASS_RO_$_TLFCoreModule
+__OBJC_$_INSTANCE_METHODS_TLFCoreModule
+__OBJC_$_PROP_LIST_TLFCoreModule
+__OBJC_CLASS_RO_$_TLFCoreModule
+Tealeaf/TLFCoreModule.m
+__31+[TLFCoreModule sharedInstance]_block_invoke
+-[UIImage(TLFLayoutAdditions) addReferenceUrl:]
+-[UIImage(TLFLayoutAdditions) readReferenceUrl]
+-[UIImage(TLFLayoutAdditions) tealeafHash]
+-[UIImage(TLFLayoutAdditions) tealeafHashWithData:]
+-[UIImage(TLFLayoutAdditions) tealeafHashWithDataHelper:]
+-[UIImage(TLFLayoutAdditions) hasAlpha]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIImage_$_TLFLayoutAdditions
+__OBJC_$_CATEGORY_UIImage_$_TLFLayoutAdditions
+Tealeaf/UIImage+TLFLayoutAdditions.m
+-[TLFLText_RCT initWithNSTextStorage:withUIInput:]
+-[TLFLText_RCT fontImage]
+-[TLFLText_RCT setFontImage:]
+-[TLFLText_RCT .cxx_destruct]
+_OBJC_IVAR_$_TLFLText_RCT._fontImage
+__OBJC_METACLASS_RO_$_TLFLText_RCT
+__OBJC_$_INSTANCE_METHODS_TLFLText_RCT
+__OBJC_$_INSTANCE_VARIABLES_TLFLText_RCT
+__OBJC_$_PROP_LIST_TLFLText_RCT
+__OBJC_CLASS_RO_$_TLFLText_RCT
+Tealeaf/TLFLText_RCT.m
+Tealeaf/TLFLText_RCT.h
++[TLFLocationManager sharedInstance]
+___36+[TLFLocationManager sharedInstance]_block_invoke
+-[TLFLocationManager init]
+-[TLFLocationManager currentLocation]
+-[TLFLocationManager startLocationMonitoring]
+-[TLFLocationManager stopLocationMonitoring]
+-[TLFLocationManager isMonitoringLocation]
+-[TLFLocationManager initialSetup]
+-[TLFLocationManager startUpdatingLocation]
+-[TLFLocationManager deniedPermission]
+-[TLFLocationManager logLocationAtSpecifiedTime]
+-[TLFLocationManager hasBeenDeniedPermission]
+-[TLFLocationManager hasPermissionToLogLocation:]
+-[TLFLocationManager logCLLocation:]
+-[TLFLocationManager locationManager:didUpdateLocations:]
+-[TLFLocationManager locationManager:didFailWithError:]
+-[TLFLocationManager locationManager:didChangeAuthorizationStatus:]
+-[TLFLocationManager tlfConfiguration]
+-[TLFLocationManager setTlfConfiguration:]
+-[TLFLocationManager locationManager]
+-[TLFLocationManager setLocationManager:]
+-[TLFLocationManager .cxx_destruct]
+__OBJC_$_CLASS_METHODS_TLFLocationManager
+__OBJC_$_PROTOCOL_REFS_CLLocationManagerDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_CLLocationManagerDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_CLLocationManagerDelegate
+__OBJC_PROTOCOL_$_CLLocationManagerDelegate
+__OBJC_LABEL_PROTOCOL_$_CLLocationManagerDelegate
+__OBJC_CLASS_PROTOCOLS_$_TLFLocationManager
+__OBJC_METACLASS_RO_$_TLFLocationManager
+__OBJC_$_INSTANCE_METHODS_TLFLocationManager
+_OBJC_IVAR_$_TLFLocationManager.lastLocation
+_OBJC_IVAR_$_TLFLocationManager.started
+_OBJC_IVAR_$_TLFLocationManager.didRequestAuth
+_OBJC_IVAR_$_TLFLocationManager.didPostOnStartUp
+_OBJC_IVAR_$_TLFLocationManager._tlfConfiguration
+_OBJC_IVAR_$_TLFLocationManager._locationManager
+__OBJC_$_INSTANCE_VARIABLES_TLFLocationManager
+__OBJC_$_PROP_LIST_TLFLocationManager
+__OBJC_CLASS_RO_$_TLFLocationManager
+Tealeaf/TLFLocationManager.m
+Tealeaf/TLFLocationManager.h
+__36+[TLFLocationManager sharedInstance]_block_invoke
+-[TLFL_ProgressView initWithProgressView:andZIndex:]
+-[TLFL_ProgressView jsonRepresentation]
+___39-[TLFL_ProgressView jsonRepresentation]_block_invoke
+___39-[TLFL_ProgressView jsonRepresentation]_block_invoke.28
+-[TLFL_ProgressView percentComplete]
+-[TLFL_ProgressView setPercentComplete:]
+-[TLFL_ProgressView trackColor]
+-[TLFL_ProgressView setTrackColor:]
+-[TLFL_ProgressView progressColor]
+-[TLFL_ProgressView setProgressColor:]
+-[TLFL_ProgressView .cxx_destruct]
+_OBJC_IVAR_$_TLFL_ProgressView._percentComplete
+_OBJC_IVAR_$_TLFL_ProgressView._trackColor
+_OBJC_IVAR_$_TLFL_ProgressView._progressColor
+__OBJC_METACLASS_RO_$_TLFL_ProgressView
+__OBJC_$_INSTANCE_METHODS_TLFL_ProgressView
+__OBJC_$_INSTANCE_VARIABLES_TLFL_ProgressView
+__OBJC_$_PROP_LIST_TLFL_ProgressView
+__OBJC_CLASS_RO_$_TLFL_ProgressView
+Tealeaf/TLFL_ProgressView.m
+Tealeaf/TLFL_ProgressView.h
+__39-[TLFL_ProgressView jsonRepresentation]_block_invoke.28
+__39-[TLFL_ProgressView jsonRepresentation]_block_invoke
++[TLFWKWebViewHelper sharedInstance]
+___36+[TLFWKWebViewHelper sharedInstance]_block_invoke
+-[TLFWKWebViewHelper registerAPIsAndInjectInWebView:]
+-[TLFWKWebViewHelper injectScreenCaptureAPIToJSInWebView:]
+-[TLFWKWebViewHelper injectMessageRedirectAPIToJSInWebView:]
+-[TLFWKWebViewHelper injectAddAdditionalHeaderAPIToJSInWebView:]
+-[TLFWKWebViewHelper injectEnableDisableTealeafAPIToJSInWebView:]
+-[TLFWKWebViewHelper registerTealeafJSCallBacksInWebView:]
+-[TLFWKWebViewHelper userContentController:didReceiveScriptMessage:]
+__OBJC_$_CLASS_METHODS_TLFWKWebViewHelper
+__OBJC_$_PROTOCOL_REFS_WKScriptMessageHandler
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_WKScriptMessageHandler
+__OBJC_$_PROTOCOL_METHOD_TYPES_WKScriptMessageHandler
+__OBJC_PROTOCOL_$_WKScriptMessageHandler
+__OBJC_LABEL_PROTOCOL_$_WKScriptMessageHandler
+__OBJC_CLASS_PROTOCOLS_$_TLFWKWebViewHelper
+__OBJC_METACLASS_RO_$_TLFWKWebViewHelper
+__OBJC_$_INSTANCE_METHODS_TLFWKWebViewHelper
+__OBJC_$_PROP_LIST_TLFWKWebViewHelper
+__OBJC_CLASS_RO_$_TLFWKWebViewHelper
+Tealeaf/TLFWKWebViewHelper.m
+__36+[TLFWKWebViewHelper sharedInstance]_block_invoke
+-[TLFResourcePackager processResourcesForNativeReplay]
+-[TLFResourcePackager processAssetCatalogImages]
+-[TLFResourcePackager createImageMessage:]
+-[TLFResourcePackager createWorkingDirectory]
+-[TLFResourcePackager copyFile:toDest:]
+-[TLFResourcePackager listAllFilesOfType:inDirectory:]
+-[TLFResourcePackager getDestPathForResource]
+-[TLFResourcePackager getDestPathForLibraryFile:]
+-[TLFResourcePackager processFile:isLibrary:]
+-[TLFResourcePackager recursivelyProcessFilesInDirectory:]
+___58-[TLFResourcePackager recursivelyProcessFilesInDirectory:]_block_invoke
+-[TLFResourcePackager .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.145
+___block_descriptor_32_e27_B24?0"NSURL"8"NSError"16l
+__OBJC_METACLASS_RO_$_TLFResourcePackager
+__OBJC_$_INSTANCE_METHODS_TLFResourcePackager
+_OBJC_IVAR_$_TLFResourcePackager.workingPath
+_OBJC_IVAR_$_TLFResourcePackager.resourcePath
+_OBJC_IVAR_$_TLFResourcePackager.documentsPath
+_OBJC_IVAR_$_TLFResourcePackager.libraryPath
+_OBJC_IVAR_$_TLFResourcePackager.tempPath
+_OBJC_IVAR_$_TLFResourcePackager.fileList
+__OBJC_$_INSTANCE_VARIABLES_TLFResourcePackager
+__OBJC_CLASS_RO_$_TLFResourcePackager
+Tealeaf/TLFResourcePackager.m
+__58-[TLFResourcePackager recursivelyProcessFilesInDirectory:]_block_invoke
++[TLFEnvironmentalManager sharedInstance]
+___41+[TLFEnvironmentalManager sharedInstance]_block_invoke
+-[TLFEnvironmentalManager init]
+-[TLFEnvironmentalManager startMonitoring]
+-[TLFEnvironmentalManager stopMonitoring]
+-[TLFEnvironmentalManager getCurrentBatteryLevel]
+-[TLFEnvironmentalManager deviceID]
+-[TLFEnvironmentalManager storeNetworkStatus:]
+-[TLFEnvironmentalManager eoOrientationChanged:]
+-[TLFEnvironmentalManager currentNetworkStatus]
+-[TLFEnvironmentalManager currentBatteryLevel]
+-[TLFEnvironmentalManager deviceTotalStorageCapacity]
+-[TLFEnvironmentalManager deviceTotalStorageFreeCapacity]
+-[TLFEnvironmentalManager deviceTotalMemory]
+-[TLFEnvironmentalManager deviceUserMemory]
+-[TLFEnvironmentalManager networkCarrierName]
+-[TLFEnvironmentalManager networkCarrierNames]
+-[TLFEnvironmentalManager networkWiFiIPAddress]
+-[TLFEnvironmentalManager networkIPAddress]
+-[TLFEnvironmentalManager networkIPV6Address]
+-[TLFEnvironmentalManager currentConnectionType]
+-[TLFEnvironmentalManager currentNetworkReachabilityName]
+-[TLFEnvironmentalManager currentDeviceOrientation]
+-[TLFEnvironmentalManager currentScreenDimensions]
+-[TLFEnvironmentalManager currentOrientationName]
+-[TLFEnvironmentalManager currentUIOrientation]
+-[TLFEnvironmentalManager currentUIOrientationInDegrees]
+-[TLFEnvironmentalManager currentDeviceOrientationInDegrees]
+-[TLFEnvironmentalManager appVersion]
+-[TLFEnvironmentalManager appVersionMajorMinor]
+-[TLFEnvironmentalManager appName]
+-[TLFEnvironmentalManager setUserAgentFromBrowser]
+-[TLFEnvironmentalManager setCXAAdvertisingId:]
+-[TLFEnvironmentalManager getCXAAdvertisingId]
+-[TLFEnvironmentalManager isEnabled]
+-[TLFEnvironmentalManager hasNetworkStatus]
+-[TLFEnvironmentalManager latitude]
+-[TLFEnvironmentalManager setLatitude:]
+-[TLFEnvironmentalManager longitude]
+-[TLFEnvironmentalManager setLongitude:]
+-[TLFEnvironmentalManager currentStatus]
+-[TLFEnvironmentalManager setCurrentStatus:]
+-[TLFEnvironmentalManager .cxx_destruct]
+__OBJC_$_CLASS_METHODS_TLFEnvironmentalManager
+__OBJC_METACLASS_RO_$_TLFEnvironmentalManager
+__OBJC_$_INSTANCE_METHODS_TLFEnvironmentalManager
+_OBJC_IVAR_$_TLFEnvironmentalManager._isEnabled
+_OBJC_IVAR_$_TLFEnvironmentalManager._hasNetworkStatus
+_OBJC_IVAR_$_TLFEnvironmentalManager._latitude
+_OBJC_IVAR_$_TLFEnvironmentalManager._longitude
+_OBJC_IVAR_$_TLFEnvironmentalManager._currentStatus
+__OBJC_$_INSTANCE_VARIABLES_TLFEnvironmentalManager
+__OBJC_$_PROP_LIST_TLFEnvironmentalManager
+__OBJC_CLASS_RO_$_TLFEnvironmentalManager
+Tealeaf/TLFEnvironmentalManager.m
+Tealeaf/TLFEnvironmentalManager.h
+__41+[TLFEnvironmentalManager sharedInstance]_block_invoke
++[WKWebView(TLFInjection) tlfInject]
+___36+[WKWebView(TLFInjection) tlfInject]_block_invoke
+_tlfNewWKWebView_loadRequest
+_tlfNewWKView_loadHTMLStringBaseURL
+_tlfNewWKWebView_loadDataMIMETypeCharacterEncodingNameBaseURL
+_tlfNewWKWebView_loadFileURL
+_tlfNewWKWebView_setNavigationDelegate
+-[WKWebView(TLFInjection) tlfInjectDelegate:]
+-[WKWebView(TLFInjection) tlfInjectSecondDelegate:]
+-[WKWebView(TLFInjection) _tlfWebViewDidFinishNavigation:didFinishNavigation:]
+-[WKWebView(TLFInjection) tlfWebViewDidFinishNavigation:didFinishNavigation:]
+___77-[WKWebView(TLFInjection) tlfWebViewDidFinishNavigation:didFinishNavigation:]_block_invoke
+__OBJC_$_CATEGORY_INSTANCE_METHODS_WKWebView_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_WKWebView_$_TLFInjection
+__OBJC_$_PROTOCOL_REFS_TLFInjectableWithSecondDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_TLFInjectableWithSecondDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_TLFInjectableWithSecondDelegate
+__OBJC_PROTOCOL_$_TLFInjectableWithSecondDelegate
+__OBJC_LABEL_PROTOCOL_$_TLFInjectableWithSecondDelegate
+__OBJC_CATEGORY_PROTOCOLS_$_WKWebView_$_TLFInjection
+__OBJC_$_CATEGORY_WKWebView_$_TLFInjection
+Tealeaf/WKWebView+TLFInjection.m
+__77-[WKWebView(TLFInjection) tlfWebViewDidFinishNavigation:didFinishNavigation:]_block_invoke
+tlfNewWKWebView_setNavigationDelegate
+tlfNewWKWebView_loadFileURL
+tlfNewWKWebView_loadDataMIMETypeCharacterEncodingNameBaseURL
+tlfNewWKView_loadHTMLStringBaseURL
+tlfNewWKWebView_loadRequest
+__36+[WKWebView(TLFInjection) tlfInject]_block_invoke
+-[TLFScreenViewPlaceHolder initWithTLFLayoutPlaceHolderId:]
+-[TLFScreenViewPlaceHolder layoutPlaceHolderId]
+-[TLFScreenViewPlaceHolder .cxx_destruct]
+_OBJC_IVAR_$_TLFScreenViewPlaceHolder._layoutPlaceHolderId
+__OBJC_METACLASS_RO_$_TLFScreenViewPlaceHolder
+__OBJC_$_INSTANCE_METHODS_TLFScreenViewPlaceHolder
+__OBJC_$_INSTANCE_VARIABLES_TLFScreenViewPlaceHolder
+__OBJC_$_PROP_LIST_TLFScreenViewPlaceHolder
+__OBJC_CLASS_RO_$_TLFScreenViewPlaceHolder
+Tealeaf/TLFScreenViewPlaceHolder.m
+Tealeaf/TLFScreenViewPlaceHolder.h
+-[TLFLData init]
+-[TLFLData initWithSubViewArray:uiViewType:andZIndex:andControlsDict:]
+-[TLFLData initWithSubViewArray:forParentControl:]
+-[TLFLData addTLFLObject:]
+___26-[TLFLData addTLFLObject:]_block_invoke
+-[TLFLData jsonKey]
+-[TLFLData jsonRepresentation]
+-[TLFLData sortTLFLArrayByPosition:]
+___36-[TLFLData sortTLFLArrayByPosition:]_block_invoke
+-[TLFLData data]
+-[TLFLData setData:]
+-[TLFLData .cxx_destruct]
+___block_descriptor_40_e8_32s_e15_B32?08Q16^B24l
+___block_descriptor_32_e11_q24?0816l
+__OBJC_METACLASS_RO_$_TLFLData
+__OBJC_$_INSTANCE_METHODS_TLFLData
+_OBJC_IVAR_$_TLFLData._data
+__OBJC_$_INSTANCE_VARIABLES_TLFLData
+__OBJC_$_PROP_LIST_TLFLData
+__OBJC_CLASS_RO_$_TLFLData
+Tealeaf/TLFLData.m
+Tealeaf/TLFLData.h
+__36-[TLFLData sortTLFLArrayByPosition:]_block_invoke
+__26-[TLFLData addTLFLObject:]_block_invoke
+-[TLFL_Label init]
+-[TLFL_Label initWithFrame:andZIndex:]
+-[TLFL_Label initWithUILabel:andZIndex:]
+-[TLFL_Label jsonRepresentation]
+___32-[TLFL_Label jsonRepresentation]_block_invoke
+___32-[TLFL_Label jsonRepresentation]_block_invoke.70
+-[TLFL_Label lines]
+-[TLFL_Label setLines:]
+-[TLFL_Label lineBreak]
+-[TLFL_Label setLineBreak:]
+-[TLFL_Label rotateX]
+-[TLFL_Label setRotateX:]
+-[TLFL_Label textAlphaColor]
+-[TLFL_Label setTextAlphaColor:]
+-[TLFL_Label .cxx_destruct]
+_OBJC_IVAR_$_TLFL_Label._lines
+_OBJC_IVAR_$_TLFL_Label._lineBreak
+_OBJC_IVAR_$_TLFL_Label._rotateX
+_OBJC_IVAR_$_TLFL_Label._textAlphaColor
+__OBJC_METACLASS_RO_$_TLFL_Label
+__OBJC_$_INSTANCE_METHODS_TLFL_Label
+__OBJC_$_INSTANCE_VARIABLES_TLFL_Label
+__OBJC_$_PROP_LIST_TLFL_Label
+__OBJC_CLASS_RO_$_TLFL_Label
+Tealeaf/TLFL_Label.m
+Tealeaf/TLFL_Label.h
+__32-[TLFL_Label jsonRepresentation]_block_invoke.70
+__32-[TLFL_Label jsonRepresentation]_block_invoke
+-[TLFL_TableView initWithTableView:andZIndex:andControlsDict:]
+-[TLFL_TableView jsonRepresentation]
+___36-[TLFL_TableView jsonRepresentation]_block_invoke
+___36-[TLFL_TableView jsonRepresentation]_block_invoke.85
+-[TLFL_TableView getTableStyleString:]
+-[TLFL_TableView findTableCellContainer:]
+-[TLFL_TableView tableStyle]
+-[TLFL_TableView setTableStyle:]
+-[TLFL_TableView dataContainer]
+-[TLFL_TableView setDataContainer:]
+-[TLFL_TableView .cxx_destruct]
+_OBJC_IVAR_$_TLFL_TableView._tableStyle
+_OBJC_IVAR_$_TLFL_TableView._dataContainer
+__OBJC_METACLASS_RO_$_TLFL_TableView
+__OBJC_$_INSTANCE_METHODS_TLFL_TableView
+__OBJC_$_INSTANCE_VARIABLES_TLFL_TableView
+__OBJC_$_PROP_LIST_TLFL_TableView
+__OBJC_CLASS_RO_$_TLFL_TableView
+Tealeaf/TLFL_TableView.m
+Tealeaf/TLFL_TableView.h
+__36-[TLFL_TableView jsonRepresentation]_block_invoke.85
+__36-[TLFL_TableView jsonRepresentation]_block_invoke
+-[TLFRotationGestureData initWithGestureRecognizer:]
+-[TLFRotationGestureData endWithGestureRecognizer:]
+__OBJC_METACLASS_RO_$_TLFRotationGestureData
+__OBJC_$_INSTANCE_METHODS_TLFRotationGestureData
+__OBJC_CLASS_RO_$_TLFRotationGestureData
+Tealeaf/TLFRotationGestureData.m
+-[TLFLayoutMessage init]
+-[TLFLayoutMessage initWithLayoutDictionary:]
+-[TLFLayoutMessage jsonDictionary]
+-[TLFLayoutMessage layout]
+-[TLFLayoutMessage setLayout:]
+-[TLFLayoutMessage uiOrientation]
+-[TLFLayoutMessage setUiOrientation:]
+-[TLFLayoutMessage deviceWidth]
+-[TLFLayoutMessage setDeviceWidth:]
+-[TLFLayoutMessage deviceHeight]
+-[TLFLayoutMessage setDeviceHeight:]
+-[TLFLayoutMessage backgroundImageData]
+-[TLFLayoutMessage setBackgroundImageData:]
+-[TLFLayoutMessage .cxx_destruct]
+_OBJC_IVAR_$_TLFLayoutMessage._layout
+_OBJC_IVAR_$_TLFLayoutMessage._uiOrientation
+_OBJC_IVAR_$_TLFLayoutMessage._deviceWidth
+_OBJC_IVAR_$_TLFLayoutMessage._deviceHeight
+_OBJC_IVAR_$_TLFLayoutMessage._backgroundImageData
+__OBJC_METACLASS_RO_$_TLFLayoutMessage
+__OBJC_$_INSTANCE_METHODS_TLFLayoutMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFLayoutMessage
+__OBJC_$_PROP_LIST_TLFLayoutMessage
+__OBJC_CLASS_RO_$_TLFLayoutMessage
+Tealeaf/TLFLayoutMessage.m
+Tealeaf/TLFLayoutMessage.h
+-[TLFL_SegmentedControl initWithSegmentedControl:andZIndex:andControlsDict:]
+-[TLFL_SegmentedControl jsonRepresentation]
+___43-[TLFL_SegmentedControl jsonRepresentation]_block_invoke
+___43-[TLFL_SegmentedControl jsonRepresentation]_block_invoke.72
+-[TLFL_SegmentedControl dataContainer]
+-[TLFL_SegmentedControl setDataContainer:]
+-[TLFL_SegmentedControl tintColor]
+-[TLFL_SegmentedControl setTintColor:]
+-[TLFL_SegmentedControl .cxx_destruct]
+_OBJC_IVAR_$_TLFL_SegmentedControl._dataContainer
+_OBJC_IVAR_$_TLFL_SegmentedControl._tintColor
+__OBJC_METACLASS_RO_$_TLFL_SegmentedControl
+__OBJC_$_INSTANCE_METHODS_TLFL_SegmentedControl
+__OBJC_$_INSTANCE_VARIABLES_TLFL_SegmentedControl
+__OBJC_$_PROP_LIST_TLFL_SegmentedControl
+__OBJC_CLASS_RO_$_TLFL_SegmentedControl
+Tealeaf/TLFL_SegmentedControl.m
+Tealeaf/TLFL_SegmentedControl.h
+__43-[TLFL_SegmentedControl jsonRepresentation]_block_invoke.72
+__43-[TLFL_SegmentedControl jsonRepresentation]_block_invoke
+-[TLFExceptionEventMessage init]
+-[TLFExceptionEventMessage initWithException:data:isUnhandled:]
+-[TLFExceptionEventMessage jsonDictionary]
+-[TLFExceptionEventMessage unhandled]
+-[TLFExceptionEventMessage setUnhandled:]
+-[TLFExceptionEventMessage excpetion]
+-[TLFExceptionEventMessage setExcpetion:]
+-[TLFExceptionEventMessage dataDictionary]
+-[TLFExceptionEventMessage setDataDictionary:]
+-[TLFExceptionEventMessage .cxx_destruct]
+_OBJC_IVAR_$_TLFExceptionEventMessage._unhandled
+_OBJC_IVAR_$_TLFExceptionEventMessage._excpetion
+_OBJC_IVAR_$_TLFExceptionEventMessage._dataDictionary
+__OBJC_METACLASS_RO_$_TLFExceptionEventMessage
+__OBJC_$_INSTANCE_METHODS_TLFExceptionEventMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFExceptionEventMessage
+__OBJC_$_PROP_LIST_TLFExceptionEventMessage
+__OBJC_CLASS_RO_$_TLFExceptionEventMessage
+Tealeaf/TLFExceptionEventMessage.m
+Tealeaf/TLFExceptionEventMessage.h
+-[TLFL_TableCell initWithTableViewCell:andZIndex:andControlsDict:]
+-[TLFL_TableCell jsonRepresentation]
+___36-[TLFL_TableCell jsonRepresentation]_block_invoke
+___36-[TLFL_TableCell jsonRepresentation]_block_invoke.42
+-[TLFL_TableCell getTableStyleString:]
+-[TLFL_TableCell dataContainer]
+-[TLFL_TableCell setDataContainer:]
+-[TLFL_TableCell tableRowStyle]
+-[TLFL_TableCell setTableRowStyle:]
+-[TLFL_TableCell .cxx_destruct]
+_OBJC_IVAR_$_TLFL_TableCell._dataContainer
+_OBJC_IVAR_$_TLFL_TableCell._tableRowStyle
+__OBJC_METACLASS_RO_$_TLFL_TableCell
+__OBJC_$_INSTANCE_METHODS_TLFL_TableCell
+__OBJC_$_INSTANCE_VARIABLES_TLFL_TableCell
+__OBJC_$_PROP_LIST_TLFL_TableCell
+__OBJC_CLASS_RO_$_TLFL_TableCell
+Tealeaf/TLFL_TableCell.m
+Tealeaf/TLFL_TableCell.h
+__36-[TLFL_TableCell jsonRepresentation]_block_invoke.42
+__36-[TLFL_TableCell jsonRepresentation]_block_invoke
++[TLFUserInterfaceAIC sharedInstance]
+___37+[TLFUserInterfaceAIC sharedInstance]_block_invoke
+-[TLFUserInterfaceAIC handleTableView:didSelectRowAtPath:]
+-[TLFUserInterfaceAIC handleReloadDataForTableView:]
+-[TLFUserInterfaceAIC handleTableViewSelectionDidChangeNotification:]
+-[TLFUserInterfaceAIC handleShowUIAlertController:]
+-[TLFUserInterfaceAIC handlePickerView:didSelectRow:inComponent:]
+__OBJC_$_CLASS_METHODS_TLFUserInterfaceAIC
+__OBJC_METACLASS_RO_$_TLFUserInterfaceAIC
+__OBJC_$_INSTANCE_METHODS_TLFUserInterfaceAIC
+__OBJC_CLASS_RO_$_TLFUserInterfaceAIC
+Tealeaf/TLFUserInterfaceAIC.m
+__37+[TLFUserInterfaceAIC sharedInstance]_block_invoke
+-[TLFCustomEventMessage init]
+-[TLFCustomEventMessage initWithName:andValues:]
+-[TLFCustomEventMessage initWithName:andValue:]
+-[TLFCustomEventMessage jsonDictionary]
+-[TLFCustomEventMessage name]
+-[TLFCustomEventMessage setName:]
+-[TLFCustomEventMessage value]
+-[TLFCustomEventMessage setValue:]
+-[TLFCustomEventMessage values]
+-[TLFCustomEventMessage setValues:]
+-[TLFCustomEventMessage .cxx_destruct]
+_OBJC_IVAR_$_TLFCustomEventMessage._name
+_OBJC_IVAR_$_TLFCustomEventMessage._value
+_OBJC_IVAR_$_TLFCustomEventMessage._values
+__OBJC_METACLASS_RO_$_TLFCustomEventMessage
+__OBJC_$_INSTANCE_METHODS_TLFCustomEventMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFCustomEventMessage
+__OBJC_$_PROP_LIST_TLFCustomEventMessage
+__OBJC_CLASS_RO_$_TLFCustomEventMessage
+Tealeaf/TLFCustomEventMessage.m
+Tealeaf/TLFCustomEventMessage.h
+-[TLFBackButton initWithFrame:]
+-[TLFBackButton title]
+-[TLFBackButton setTitle:]
+-[TLFBackButton orignalHash]
+-[TLFBackButton setOrignalHash:]
+-[TLFBackButton .cxx_destruct]
+_OBJC_IVAR_$_TLFBackButton._title
+_OBJC_IVAR_$_TLFBackButton._orignalHash
+__OBJC_METACLASS_RO_$_TLFBackButton
+__OBJC_$_INSTANCE_METHODS_TLFBackButton
+__OBJC_$_INSTANCE_VARIABLES_TLFBackButton
+__OBJC_$_PROP_LIST_TLFBackButton
+__OBJC_CLASS_RO_$_TLFBackButton
+Tealeaf/TLFBackButton.m
+Tealeaf/TLFBackButton.h
+-[TLFTextChangePlaceHolder initWithTextControlId:]
+-[TLFTextChangePlaceHolder textControlId]
+-[TLFTextChangePlaceHolder .cxx_destruct]
+_OBJC_IVAR_$_TLFTextChangePlaceHolder._textControlId
+__OBJC_METACLASS_RO_$_TLFTextChangePlaceHolder
+__OBJC_$_INSTANCE_METHODS_TLFTextChangePlaceHolder
+__OBJC_$_INSTANCE_VARIABLES_TLFTextChangePlaceHolder
+__OBJC_$_PROP_LIST_TLFTextChangePlaceHolder
+__OBJC_CLASS_RO_$_TLFTextChangePlaceHolder
+Tealeaf/TLFTextChangePlaceHolder.m
+Tealeaf/TLFTextChangePlaceHolder.h
++[TLFApplicationHelper sharedInstance]
+___38+[TLFApplicationHelper sharedInstance]_block_invoke
+-[TLFApplicationHelper init]
+-[TLFApplicationHelper enableTealeafFramework]
+-[TLFApplicationHelper disableTealeafFramework]
+-[TLFApplicationHelper pauseTealeaf]
+-[TLFApplicationHelper resumeTealeaf]
+-[TLFApplicationHelper currentSessionId]
+-[TLFApplicationHelper startNewTLFSession]
+-[TLFApplicationHelper isTLFEnabled]
+-[TLFApplicationHelper setDeviceId:]
+-[TLFApplicationHelper getDeviceId]
+-[TLFApplicationHelper setCXAAdvertisingId:]
+-[TLFApplicationHelper getCXAAdvertisingId]
+-[TLFApplicationHelper applicationContextName]
+-[TLFApplicationHelper frameworkVersion]
+-[TLFApplicationHelper requestManualServerPost]
+-[TLFApplicationHelper setLogLevel:forEvent:]
+-[TLFApplicationHelper logLevelForEvent:]
+-[TLFApplicationHelper setKillSwitchUrl:]
+-[TLFApplicationHelper setPostMessageUrl:]
+-[TLFApplicationHelper setConfigurableItem:value:]
+-[TLFApplicationHelper valueForConfigurableItem:]
+-[TLFApplicationHelper defaultValueForConfigurableItem:]
+-[TLFApplicationHelper sendEvent:]
+-[TLFApplicationHelper sendAction:to:from:forEvent:]
+-[TLFApplicationHelper setAdditionalHttpHeaders:]
+-[TLFApplicationHelper addAdditionalHttpHeader:forName:]
+-[TLFApplicationHelper setAdditionalHttpCookies:]
+-[TLFApplicationHelper addAdditionalHttpCookie:]
+-[TLFApplicationHelper getAdditionalHttpHeaders]
+-[TLFApplicationHelper getAdditionalHttpCookies]
+-[TLFApplicationHelper sessionizeRequest:]
+-[TLFApplicationHelper isTealeafHybridBridgeRequest:webView:]
+-[TLFApplicationHelper InjectTealeafHybridBridgeOnWebViewDidFinishLoad:]
+-[TLFApplicationHelper layoutConfigItems]
+-[TLFApplicationHelper TLFLibDelegate]
+-[TLFApplicationHelper setTLFLibDelegate:]
+-[TLFApplicationHelper .cxx_destruct]
+__OBJC_$_CLASS_METHODS_TLFApplicationHelper
+__OBJC_$_PROTOCOL_REFS_TLFLibDelegate
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_TLFLibDelegate
+__OBJC_$_PROTOCOL_METHOD_TYPES_TLFLibDelegate
+__OBJC_PROTOCOL_$_TLFLibDelegate
+__OBJC_LABEL_PROTOCOL_$_TLFLibDelegate
+__OBJC_$_PROTOCOL_REFS_TLFApplicationHelperJSProtocol
+__OBJC_$_PROTOCOL_INSTANCE_METHODS_TLFApplicationHelperJSProtocol
+__OBJC_$_PROTOCOL_METHOD_TYPES_TLFApplicationHelperJSProtocol
+__OBJC_PROTOCOL_$_TLFApplicationHelperJSProtocol
+__OBJC_LABEL_PROTOCOL_$_TLFApplicationHelperJSProtocol
+__OBJC_CLASS_PROTOCOLS_$_TLFApplicationHelper
+__OBJC_METACLASS_RO_$_TLFApplicationHelper
+__OBJC_$_INSTANCE_METHODS_TLFApplicationHelper
+_OBJC_IVAR_$_TLFApplicationHelper._sharedConfig
+_OBJC_IVAR_$_TLFApplicationHelper._TLFLibDelegate
+__OBJC_$_INSTANCE_VARIABLES_TLFApplicationHelper
+__OBJC_$_PROP_LIST_TLFApplicationHelper
+__OBJC_CLASS_RO_$_TLFApplicationHelper
+Tealeaf/TLFApplicationHelper.m
+Tealeaf/TLFApplicationHelper.h
+__38+[TLFApplicationHelper sharedInstance]_block_invoke
+-[TLFL_ActivityIndicator initWithActivityIndicator:andZIndex:]
+-[TLFL_ActivityIndicator jsonRepresentation]
+___44-[TLFL_ActivityIndicator jsonRepresentation]_block_invoke
+___44-[TLFL_ActivityIndicator jsonRepresentation]_block_invoke.30
+-[TLFL_ActivityIndicator style]
+-[TLFL_ActivityIndicator setStyle:]
+-[TLFL_ActivityIndicator color]
+-[TLFL_ActivityIndicator setColor:]
+-[TLFL_ActivityIndicator isAnimating]
+-[TLFL_ActivityIndicator setIsAnimating:]
+-[TLFL_ActivityIndicator .cxx_destruct]
+_OBJC_IVAR_$_TLFL_ActivityIndicator._style
+_OBJC_IVAR_$_TLFL_ActivityIndicator._color
+_OBJC_IVAR_$_TLFL_ActivityIndicator._isAnimating
+__OBJC_METACLASS_RO_$_TLFL_ActivityIndicator
+__OBJC_$_INSTANCE_METHODS_TLFL_ActivityIndicator
+__OBJC_$_INSTANCE_VARIABLES_TLFL_ActivityIndicator
+__OBJC_$_PROP_LIST_TLFL_ActivityIndicator
+__OBJC_CLASS_RO_$_TLFL_ActivityIndicator
+Tealeaf/TLFL_ActivityIndicator.m
+Tealeaf/TLFL_ActivityIndicator.h
+__44-[TLFL_ActivityIndicator jsonRepresentation]_block_invoke.30
+__44-[TLFL_ActivityIndicator jsonRepresentation]_block_invoke
++[UIPickerView(TLFInjection) tlfInject]
+___39+[UIPickerView(TLFInjection) tlfInject]_block_invoke
+_tlfNewUIPickerView_setDelegate
+-[UIPickerView(TLFInjection) tlfInjectDelegate:]
+-[UIPickerView(TLFInjection) _tlfPickerView:didSelectRow:inComponent:]
+-[UIPickerView(TLFInjection) tlfPickerView:didSelectRow:inComponent:]
+-[UIPickerView(TLFInjection) setTealeafNumberOfColumns:]
+-[UIPickerView(TLFInjection) tealeafNumberOfColumns]
+-[UIPickerView(TLFInjection) setTealeafNumberOfVisibleRows:]
+-[UIPickerView(TLFInjection) tealeafNumberOfVisibleRows]
+-[UIPickerView(TLFInjection) setTealeafSelectedRow:]
+-[UIPickerView(TLFInjection) tealeafSelectedRow]
+-[UIPickerView(TLFInjection) setTealeafSelectedColumn:]
+-[UIPickerView(TLFInjection) tealeafSelectedColumn]
+-[UIPickerView(TLFInjection) setTealeafCurrentValue:]
+-[UIPickerView(TLFInjection) tealeafCurrentValue]
+-[UIPickerView(TLFInjection) setTealeafPrevSelectedRow:]
+-[UIPickerView(TLFInjection) tealeafPrevSelectedRow]
+-[UIPickerView(TLFInjection) setTealeafPrevSelectedColumn:]
+-[UIPickerView(TLFInjection) tealeafPrevSelectedColumn]
+-[UIPickerView(TLFInjection) setTealeafPrevValue:]
+-[UIPickerView(TLFInjection) tealeafPrevValue]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIPickerView_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_UIPickerView_$_TLFInjection
+__OBJC_CATEGORY_PROTOCOLS_$_UIPickerView_$_TLFInjection
+__OBJC_$_PROP_LIST_UIPickerView_$_TLFInjection
+__OBJC_$_CATEGORY_UIPickerView_$_TLFInjection
+Tealeaf/UIPickerView+TLFInjection.m
+tlfNewUIPickerView_setDelegate
+__39+[UIPickerView(TLFInjection) tlfInject]_block_invoke
++[TLFCookieHelper sharedInstance]
+___33+[TLFCookieHelper sharedInstance]_block_invoke
+-[TLFCookieHelper init]
+-[TLFCookieHelper setupAdditionalCookies]
+-[TLFCookieHelper setAdditionalHttpCookies:]
+-[TLFCookieHelper addAdditionalHttpCookie:]
+-[TLFCookieHelper getAdditionalHttpCookies]
++[TLFCookieHelper hasCookieInStore:value:domain:deleteIfOnlyNameMatches:]
++[TLFCookieHelper addX_Tealeaf_SessionHeaderAndTLTSIDCookie:sessionId:]
++[TLFCookieHelper addCookieWithName:andValue:toRequest:]
++[TLFCookieHelper setAdditionalCookiesInto:]
+-[TLFCookieHelper sessionizeRequest:]
+-[TLFCookieHelper .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.76
+__OBJC_$_CLASS_METHODS_TLFCookieHelper
+__OBJC_METACLASS_RO_$_TLFCookieHelper
+__OBJC_$_INSTANCE_METHODS_TLFCookieHelper
+_OBJC_IVAR_$_TLFCookieHelper.httpCookies
+__OBJC_$_INSTANCE_VARIABLES_TLFCookieHelper
+__OBJC_CLASS_RO_$_TLFCookieHelper
+Tealeaf/TLFCookieHelper.m
+__33+[TLFCookieHelper sharedInstance]_block_invoke
++[TLFTextAndKeyboardAIC sharedInstance]
+___39+[TLFTextAndKeyboardAIC sharedInstance]_block_invoke
+-[TLFTextAndKeyboardAIC init]
+-[TLFTextAndKeyboardAIC keyboardDidShowNotification:]
+-[TLFTextAndKeyboardAIC keyboardDidHideNotification:]
+-[TLFTextAndKeyboardAIC textFieldTextDidBeginEditingNotification:]
+-[TLFTextAndKeyboardAIC textFieldTextDidChangeNotification:]
+-[TLFTextAndKeyboardAIC textFieldTextDidEndEditingNotification:]
+-[TLFTextAndKeyboardAIC textFieldTextDidEndEditingNotificationForcedOn:]
+-[TLFTextAndKeyboardAIC textViewTextDidBeginEditingNotification:]
+-[TLFTextAndKeyboardAIC textViewTextDidEndEditingNotification:]
+-[TLFTextAndKeyboardAIC .cxx_destruct]
+__OBJC_$_CLASS_METHODS_TLFTextAndKeyboardAIC
+__OBJC_METACLASS_RO_$_TLFTextAndKeyboardAIC
+__OBJC_$_INSTANCE_METHODS_TLFTextAndKeyboardAIC
+_OBJC_IVAR_$_TLFTextAndKeyboardAIC._textFieldBeingEdited
+_OBJC_IVAR_$_TLFTextAndKeyboardAIC._arrayKeystrokes
+_OBJC_IVAR_$_TLFTextAndKeyboardAIC._textFieldEditTime
+_OBJC_IVAR_$_TLFTextAndKeyboardAIC._textViewEditTime
+__OBJC_$_INSTANCE_VARIABLES_TLFTextAndKeyboardAIC
+__OBJC_CLASS_RO_$_TLFTextAndKeyboardAIC
+Tealeaf/TLFTextAndKeyboardAIC.m
+__39+[TLFTextAndKeyboardAIC sharedInstance]_block_invoke
+-[TLFL_ImageView initWithImageView:andZIndex:]
+-[TLFL_ImageView initWithImageView:processImage:andZIndex:]
+-[TLFL_ImageView initWithImage:AndFrame:andZIndex:]
+-[TLFL_ImageView initWithImage:andZIndex:]
+-[TLFL_ImageView initWithImageWithBase64:andZIndex:]
+-[TLFL_ImageView jsonRepresentation]
+___36-[TLFL_ImageView jsonRepresentation]_block_invoke
+-[TLFL_ImageView imageData]
+-[TLFL_ImageView setImageData:]
+-[TLFL_ImageView .cxx_destruct]
+_OBJC_IVAR_$_TLFL_ImageView._imageData
+__OBJC_METACLASS_RO_$_TLFL_ImageView
+__OBJC_$_INSTANCE_METHODS_TLFL_ImageView
+__OBJC_$_INSTANCE_VARIABLES_TLFL_ImageView
+__OBJC_$_PROP_LIST_TLFL_ImageView
+__OBJC_CLASS_RO_$_TLFL_ImageView
+Tealeaf/TLFL_ImageView.m
+Tealeaf/TLFL_ImageView.h
+__36-[TLFL_ImageView jsonRepresentation]_block_invoke
+-[TLFL_Button initWithButton:andZIndex:andControlsDict:]
+-[TLFL_Button initWithTabBar:andButtonIndex:andZIndex:]
+-[TLFL_Button initWithFrame:andZIndex:]
+-[TLFL_Button jsonRepresentation]
+___33-[TLFL_Button jsonRepresentation]_block_invoke
+___33-[TLFL_Button jsonRepresentation]_block_invoke.160
+-[TLFL_Button getButonTypeString:]
++[TLFL_Button shouldRenderButton:]
+-[TLFL_Button buttonType]
+-[TLFL_Button setButtonType:]
+-[TLFL_Button dataContainer]
+-[TLFL_Button setDataContainer:]
+-[TLFL_Button .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.113
+_OBJC_CLASSLIST_REFERENCES_$_.137
+_OBJC_CLASSLIST_REFERENCES_$_.146
+_OBJC_IVAR_$_TLFL_Button._buttonType
+_OBJC_IVAR_$_TLFL_Button._dataContainer
+__OBJC_$_CLASS_METHODS_TLFL_Button
+__OBJC_METACLASS_RO_$_TLFL_Button
+__OBJC_$_INSTANCE_METHODS_TLFL_Button
+__OBJC_$_INSTANCE_VARIABLES_TLFL_Button
+__OBJC_$_PROP_LIST_TLFL_Button
+__OBJC_CLASS_RO_$_TLFL_Button
+Tealeaf/TLFL_Button.m
+Tealeaf/TLFL_Button.h
+__33-[TLFL_Button jsonRepresentation]_block_invoke.160
+__33-[TLFL_Button jsonRepresentation]_block_invoke
++[TLFUILifeCycleAIC sharedInstance]
+___35+[TLFUILifeCycleAIC sharedInstance]_block_invoke
+-[TLFUILifeCycleAIC init]
+-[TLFUILifeCycleAIC resetValues:]
+-[TLFUILifeCycleAIC viewController:viewWillAppear:]
+-[TLFUILifeCycleAIC viewController:viewDidAppear:isAlertUnload:baseAlertName:]
+___78-[TLFUILifeCycleAIC viewController:viewDidAppear:isAlertUnload:baseAlertName:]_block_invoke
+-[TLFUILifeCycleAIC viewController:viewWillDisappear:]
+-[TLFUILifeCycleAIC viewController:viewDidDisappear:]
+-[TLFUILifeCycleAIC viewControllerAlertController:viewDidDisappear:]
+-[TLFUILifeCycleAIC viewController:didRotateFromIinterfaceOrientation:]
+___71-[TLFUILifeCycleAIC viewController:didRotateFromIinterfaceOrientation:]_block_invoke
+-[TLFUILifeCycleAIC getDelayBasedOnConfigItem:]
+-[TLFUILifeCycleAIC getDefaultVC:]
+-[TLFUILifeCycleAIC unloadPages]
+-[TLFUILifeCycleAIC isValidSwiftUI]
+-[TLFUILifeCycleAIC setIsValidSwiftUI:]
+-[TLFUILifeCycleAIC isEnhancedReplayPage]
+-[TLFUILifeCycleAIC setIsEnhancedReplayPage:]
+-[TLFUILifeCycleAIC captureNonVariadic]
+-[TLFUILifeCycleAIC setCaptureNonVariadic:]
+-[TLFUILifeCycleAIC .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.122
+___block_descriptor_56_e8_32s40s48s_e5_v8?0l
+_OBJC_CLASSLIST_REFERENCES_$_.132
+_OBJC_CLASSLIST_REFERENCES_$_.153
+_OBJC_CLASSLIST_REFERENCES_$_.174
+__OBJC_$_CLASS_METHODS_TLFUILifeCycleAIC
+__OBJC_METACLASS_RO_$_TLFUILifeCycleAIC
+__OBJC_$_INSTANCE_METHODS_TLFUILifeCycleAIC
+_OBJC_IVAR_$_TLFUILifeCycleAIC._isValidSwiftUI
+_OBJC_IVAR_$_TLFUILifeCycleAIC._isEnhancedReplayPage
+_OBJC_IVAR_$_TLFUILifeCycleAIC._captureNonVariadic
+_OBJC_IVAR_$_TLFUILifeCycleAIC._unloadPages
+__OBJC_$_INSTANCE_VARIABLES_TLFUILifeCycleAIC
+__OBJC_$_PROP_LIST_TLFUILifeCycleAIC
+__OBJC_CLASS_RO_$_TLFUILifeCycleAIC
+Tealeaf/TLFUILifeCycleAIC.m
+Tealeaf/TLFUILifeCycleAIC.h
+__71-[TLFUILifeCycleAIC viewController:didRotateFromIinterfaceOrientation:]_block_invoke
+__78-[TLFUILifeCycleAIC viewController:viewDidAppear:isAlertUnload:baseAlertName:]_block_invoke
+__35+[TLFUILifeCycleAIC sharedInstance]_block_invoke
++[TLFUICPayloadAIC sharedInstance]
+___34+[TLFUICPayloadAIC sharedInstance]_block_invoke
+-[TLFUICPayloadAIC init]
++[TLFUICPayloadAIC processHybridBridgeCommand:data:]
++[TLFUICPayloadAIC TLFJSONParseString:error:ignoreNulls:]
++[TLFUICPayloadAIC findDcid:]
+-[TLFUICPayloadAIC getDcid:]
+-[TLFUICPayloadAIC dcidDict]
+-[TLFUICPayloadAIC setDcidDict:]
+-[TLFUICPayloadAIC .cxx_destruct]
+__OBJC_$_CLASS_METHODS_TLFUICPayloadAIC
+__OBJC_METACLASS_RO_$_TLFUICPayloadAIC
+__OBJC_$_INSTANCE_METHODS_TLFUICPayloadAIC
+_OBJC_IVAR_$_TLFUICPayloadAIC._dcidDict
+__OBJC_$_INSTANCE_VARIABLES_TLFUICPayloadAIC
+__OBJC_$_PROP_LIST_TLFUICPayloadAIC
+__OBJC_CLASS_RO_$_TLFUICPayloadAIC
+Tealeaf/TLFUICPayloadAIC.m
+Tealeaf/TLFUICPayloadAIC.h
+__34+[TLFUICPayloadAIC sharedInstance]_block_invoke
+-[TLFL_WKWebView initWithWKWebView:andZIndex:]
+-[TLFL_WKWebView jsonRepresentation]
+___36-[TLFL_WKWebView jsonRepresentation]_block_invoke
+-[TLFL_WKWebView url]
+-[TLFL_WKWebView setUrl:]
+-[TLFL_WKWebView dcid]
+-[TLFL_WKWebView setDcid:]
+-[TLFL_WKWebView .cxx_destruct]
+_OBJC_IVAR_$_TLFL_WKWebView._url
+_OBJC_IVAR_$_TLFL_WKWebView._dcid
+__OBJC_METACLASS_RO_$_TLFL_WKWebView
+__OBJC_$_INSTANCE_METHODS_TLFL_WKWebView
+__OBJC_$_INSTANCE_VARIABLES_TLFL_WKWebView
+__OBJC_$_PROP_LIST_TLFL_WKWebView
+__OBJC_CLASS_RO_$_TLFL_WKWebView
+Tealeaf/TLFL_WKWebView.m
+Tealeaf/TLFL_WKWebView.h
+__36-[TLFL_WKWebView jsonRepresentation]_block_invoke
+-[TLFL_PageControl initWithPageControl:andZIndex:]
+-[TLFL_PageControl jsonRepresentation]
+___38-[TLFL_PageControl jsonRepresentation]_block_invoke
+___38-[TLFL_PageControl jsonRepresentation]_block_invoke.40
+-[TLFL_PageControl hidesForSinglePage]
+-[TLFL_PageControl setHidesForSinglePage:]
+-[TLFL_PageControl numberOfPages]
+-[TLFL_PageControl setNumberOfPages:]
+-[TLFL_PageControl currentPage]
+-[TLFL_PageControl setCurrentPage:]
+-[TLFL_PageControl pageIndicatorTintColor]
+-[TLFL_PageControl setPageIndicatorTintColor:]
+-[TLFL_PageControl currentPageIndicatorTintColor]
+-[TLFL_PageControl setCurrentPageIndicatorTintColor:]
+-[TLFL_PageControl .cxx_destruct]
+_OBJC_IVAR_$_TLFL_PageControl._hidesForSinglePage
+_OBJC_IVAR_$_TLFL_PageControl._numberOfPages
+_OBJC_IVAR_$_TLFL_PageControl._currentPage
+_OBJC_IVAR_$_TLFL_PageControl._pageIndicatorTintColor
+_OBJC_IVAR_$_TLFL_PageControl._currentPageIndicatorTintColor
+__OBJC_METACLASS_RO_$_TLFL_PageControl
+__OBJC_$_INSTANCE_METHODS_TLFL_PageControl
+__OBJC_$_INSTANCE_VARIABLES_TLFL_PageControl
+__OBJC_$_PROP_LIST_TLFL_PageControl
+__OBJC_CLASS_RO_$_TLFL_PageControl
+Tealeaf/TLFL_PageControl.m
+Tealeaf/TLFL_PageControl.h
+__38-[TLFL_PageControl jsonRepresentation]_block_invoke.40
+__38-[TLFL_PageControl jsonRepresentation]_block_invoke
+-[TLFL_Switch initWithSwitch:andZIndex:]
+-[TLFL_Switch jsonRepresentation]
+___33-[TLFL_Switch jsonRepresentation]_block_invoke
+-[TLFL_Switch isOn]
+-[TLFL_Switch setIsOn:]
+_OBJC_IVAR_$_TLFL_Switch._isOn
+__OBJC_METACLASS_RO_$_TLFL_Switch
+__OBJC_$_INSTANCE_METHODS_TLFL_Switch
+__OBJC_$_INSTANCE_VARIABLES_TLFL_Switch
+__OBJC_$_PROP_LIST_TLFL_Switch
+__OBJC_CLASS_RO_$_TLFL_Switch
+Tealeaf/TLFL_Switch.m
+Tealeaf/TLFL_Switch.h
+__33-[TLFL_Switch jsonRepresentation]_block_invoke
+-[TLFLocationData jsonRepresentation]
+-[TLFLocationData location]
+-[TLFLocationData setLocation:]
+-[TLFLocationData relativeLocation]
+-[TLFLocationData setRelativeLocation:]
+-[TLFLocationData control]
+-[TLFLocationData setControl:]
+-[TLFLocationData .cxx_destruct]
+__OBJC_METACLASS_RO_$_TLFLocationData
+__OBJC_$_INSTANCE_METHODS_TLFLocationData
+_OBJC_IVAR_$_TLFLocationData._control
+_OBJC_IVAR_$_TLFLocationData._location
+_OBJC_IVAR_$_TLFLocationData._relativeLocation
+__OBJC_$_INSTANCE_VARIABLES_TLFLocationData
+__OBJC_$_PROP_LIST_TLFLocationData
+__OBJC_CLASS_RO_$_TLFLocationData
+Tealeaf/TLFLocationData.m
+Tealeaf/TLFLocationData.h
+-[TLFL_TextView initWithTextView:andZIndex:]
+-[TLFL_TextView jsonRepresentation]
+___35-[TLFL_TextView jsonRepresentation]_block_invoke
+___35-[TLFL_TextView jsonRepresentation]_block_invoke.38
+-[TLFL_TextView editable]
+-[TLFL_TextView setEditable:]
+-[TLFL_TextView borderStyle]
+-[TLFL_TextView setBorderStyle:]
+_OBJC_IVAR_$_TLFL_TextView._editable
+_OBJC_IVAR_$_TLFL_TextView._borderStyle
+__OBJC_METACLASS_RO_$_TLFL_TextView
+__OBJC_$_INSTANCE_METHODS_TLFL_TextView
+__OBJC_$_INSTANCE_VARIABLES_TLFL_TextView
+__OBJC_$_PROP_LIST_TLFL_TextView
+__OBJC_CLASS_RO_$_TLFL_TextView
+Tealeaf/TLFL_TextView.m
+Tealeaf/TLFL_TextView.h
+__35-[TLFL_TextView jsonRepresentation]_block_invoke.38
+__35-[TLFL_TextView jsonRepresentation]_block_invoke
++[NSObject(TLFInjection) shouldSwizzleSelector:withClass:]
+-[NSObject(TLFInjection) tlfSetTestFlag:]
+-[NSObject(TLFInjection) tlfResetTestFlagValue]
+-[NSObject(TLFInjection) tlfGetTestFlagValue]
++[NSObject(TLFInjection) tlfSetClassTestFlag:]
++[NSObject(TLFInjection) tlfResetClassTestFlagValue]
++[NSObject(TLFInjection) tlfGetClassTestFlagValue]
++[NSObject(TLFInjection) tlfSwizzleInstanceMethodWithOrigSel:andNewMethodImp:]
++[NSObject(TLFInjection) tlfSwizzleClassMethodWithOrigSel:andNewMethodImp:]
++[NSObject(TLFInjection) swizzleWithInstance:currentSelector:andNewSelector:]
++[NSObject(TLFInjection) injectCodeToDelegate:currentSelector:hostObject:targetSelector:newSelector:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSObject_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_NSObject_$_TLFInjection
+__OBJC_$_CATEGORY_NSObject_$_TLFInjection
+Tealeaf/NSObject+TLFInjection.m
+swizzleClassMethod
+swizzleInstanceMethod
+tlfVerifyFunctionPointer
+-[TLFSwipeGestureRecognizer reset]
+-[TLFSwipeGestureRecognizer canPreventGestureRecognizer:]
+-[TLFSwipeGestureRecognizer shouldRequireFailureOfGestureRecognizer:]
+-[TLFSwipeGestureRecognizer shouldBeRequiredToFailByGestureRecognizer:]
+-[TLFSwipeGestureRecognizer touchesBegan:withEvent:]
+-[TLFSwipeGestureRecognizer touchesMoved:withEvent:]
+-[TLFSwipeGestureRecognizer touchesEnded:withEvent:]
+-[TLFSwipeGestureRecognizer touchesCancelled:withEvent:]
+-[TLFSwipeGestureRecognizer updateTouchesArray:withEvent:]
+-[TLFSwipeGestureRecognizer getTouches]
+-[TLFSwipeGestureRecognizer isValidSwipeForPointSet:]
+-[TLFSwipeGestureRecognizer numberOfTouchesRequired]
+-[TLFSwipeGestureRecognizer setNumberOfTouchesRequired:]
+-[TLFSwipeGestureRecognizer direction]
+-[TLFSwipeGestureRecognizer setDirection:]
+-[TLFSwipeGestureRecognizer velocityX]
+-[TLFSwipeGestureRecognizer setVelocityX:]
+-[TLFSwipeGestureRecognizer velocityY]
+-[TLFSwipeGestureRecognizer setVelocityY:]
+-[TLFSwipeGestureRecognizer .cxx_destruct]
+_OBJC_IVAR_$_TLFSwipeGestureRecognizer.touchArray
+_OBJC_IVAR_$_TLFSwipeGestureRecognizer.startTime
+_OBJC_IVAR_$_TLFSwipeGestureRecognizer.endTime
+_OBJC_IVAR_$_TLFSwipeGestureRecognizer._numberOfTouchesRequired
+_OBJC_IVAR_$_TLFSwipeGestureRecognizer._direction
+_OBJC_IVAR_$_TLFSwipeGestureRecognizer._velocityX
+_OBJC_IVAR_$_TLFSwipeGestureRecognizer._velocityY
+__OBJC_METACLASS_RO_$_TLFSwipeGestureRecognizer
+__OBJC_$_INSTANCE_METHODS_TLFSwipeGestureRecognizer
+__OBJC_$_INSTANCE_VARIABLES_TLFSwipeGestureRecognizer
+__OBJC_$_PROP_LIST_TLFSwipeGestureRecognizer
+__OBJC_CLASS_RO_$_TLFSwipeGestureRecognizer
+Tealeaf/TLFSwipeGestureRecognizer.m
+Tealeaf/TLFSwipeGestureRecognizer.h
++[TLFL_ContainerView getDividerWithFrame:andColor:andXpathId:andZIndex:]
+-[TLFL_ContainerView initWithView:andProcessChildren:andZIndex:andControlsDict:]
+-[TLFL_ContainerView initWithFrame:andColor:andZIndex:]
+-[TLFL_ContainerView jsonRepresentation]
+___40-[TLFL_ContainerView jsonRepresentation]_block_invoke
+-[TLFL_ContainerView dataContainer]
+-[TLFL_ContainerView setDataContainer:]
+-[TLFL_ContainerView .cxx_destruct]
+_OBJC_IVAR_$_TLFL_ContainerView._dataContainer
+__OBJC_$_CLASS_METHODS_TLFL_ContainerView
+__OBJC_METACLASS_RO_$_TLFL_ContainerView
+__OBJC_$_INSTANCE_METHODS_TLFL_ContainerView
+__OBJC_$_INSTANCE_VARIABLES_TLFL_ContainerView
+__OBJC_$_PROP_LIST_TLFL_ContainerView
+__OBJC_CLASS_RO_$_TLFL_ContainerView
+Tealeaf/TLFL_ContainerView.m
+Tealeaf/TLFL_ContainerView.h
+__40-[TLFL_ContainerView jsonRepresentation]_block_invoke
+-[TLFGestureMessage initWithGestureDictionary:]
+-[TLFGestureMessage jsonDictionary]
+-[TLFGestureMessage gesture]
+-[TLFGestureMessage setGesture:]
+-[TLFGestureMessage base64Representation]
+-[TLFGestureMessage setBase64Representation:]
+-[TLFGestureMessage .cxx_destruct]
+_OBJC_IVAR_$_TLFGestureMessage._gesture
+_OBJC_IVAR_$_TLFGestureMessage._base64Representation
+__OBJC_METACLASS_RO_$_TLFGestureMessage
+__OBJC_$_INSTANCE_METHODS_TLFGestureMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFGestureMessage
+__OBJC_$_PROP_LIST_TLFGestureMessage
+__OBJC_CLASS_RO_$_TLFGestureMessage
+Tealeaf/TLFGestureMessage.m
+Tealeaf/TLFGestureMessage.h
++[TLFMiscLogger logPrintScreenEvent]
++[TLFMiscLogger logImageData:]
+__OBJC_$_CLASS_METHODS_TLFMiscLogger
+__OBJC_METACLASS_RO_$_TLFMiscLogger
+__OBJC_CLASS_RO_$_TLFMiscLogger
+Tealeaf/TLFMiscLogger.m
++[TLFGestureAIC sharedInstance]
+___31+[TLFGestureAIC sharedInstance]_block_invoke
+__OBJC_$_CLASS_METHODS_TLFGestureAIC
+__OBJC_METACLASS_RO_$_TLFGestureAIC
+__OBJC_CLASS_RO_$_TLFGestureAIC
+Tealeaf/TLFGestureAIC.m
+__31+[TLFGestureAIC sharedInstance]_block_invoke
+-[TLFPinchGestureData initWithGestureRecognizer:]
+-[TLFPinchGestureData endWithGestureRecognizer:]
+__OBJC_METACLASS_RO_$_TLFPinchGestureData
+__OBJC_$_INSTANCE_METHODS_TLFPinchGestureData
+__OBJC_CLASS_RO_$_TLFPinchGestureData
+Tealeaf/TLFPinchGestureData.m
++[TLFAutoInstrumentationManger sharedInstance]
+___46+[TLFAutoInstrumentationManger sharedInstance]_block_invoke
+-[TLFAutoInstrumentationManger init]
+-[TLFAutoInstrumentationManger getTLFDelay]
+-[TLFAutoInstrumentationManger getConfigFor:withCustomName:withClassCaller:]
+-[TLFAutoInstrumentationManger getConfigForClass:withCustomName:]
+-[TLFAutoInstrumentationManger populateAutoLogListFromJSONDictionary:]
+___70-[TLFAutoInstrumentationManger populateAutoLogListFromJSONDictionary:]_block_invoke
+-[TLFAutoInstrumentationManger tlfDelay]
+-[TLFAutoInstrumentationManger setTlfDelay:]
+-[TLFAutoInstrumentationManger dicAutoLogList]
+-[TLFAutoInstrumentationManger setDicAutoLogList:]
+-[TLFAutoInstrumentationManger .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.69
+___block_descriptor_48_e8_32s40s_e15_v32?0816^B24l
+__OBJC_$_CLASS_METHODS_TLFAutoInstrumentationManger
+__OBJC_METACLASS_RO_$_TLFAutoInstrumentationManger
+__OBJC_$_INSTANCE_METHODS_TLFAutoInstrumentationManger
+_OBJC_IVAR_$_TLFAutoInstrumentationManger._tlfDelay
+_OBJC_IVAR_$_TLFAutoInstrumentationManger._dicAutoLogList
+__OBJC_$_INSTANCE_VARIABLES_TLFAutoInstrumentationManger
+__OBJC_$_PROP_LIST_TLFAutoInstrumentationManger
+__OBJC_CLASS_RO_$_TLFAutoInstrumentationManger
+Tealeaf/TLFAutoInstrumentationManger.m
+__70-[TLFAutoInstrumentationManger populateAutoLogListFromJSONDictionary:]_block_invoke
+__46+[TLFAutoInstrumentationManger sharedInstance]_block_invoke
++[TLFKillSwitchManager sharedInstance]
+___38+[TLFKillSwitchManager sharedInstance]_block_invoke
+-[TLFKillSwitchManager init]
+-[TLFKillSwitchManager handleKillSwitchResponseData:response:error:]
+-[TLFKillSwitchManager onKillSwitchTimer:]
+___42-[TLFKillSwitchManager onKillSwitchTimer:]_block_invoke
+-[TLFKillSwitchManager check]
+___29-[TLFKillSwitchManager check]_block_invoke
+-[TLFKillSwitchManager networkReachabilityChanged:]
+-[TLFKillSwitchManager delegate]
+-[TLFKillSwitchManager setDelegate:]
+-[TLFKillSwitchManager .cxx_destruct]
+___block_descriptor_40_e8_32s_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+__OBJC_$_CLASS_METHODS_TLFKillSwitchManager
+__OBJC_METACLASS_RO_$_TLFKillSwitchManager
+__OBJC_$_INSTANCE_METHODS_TLFKillSwitchManager
+_OBJC_IVAR_$_TLFKillSwitchManager.killSwitchTimer
+_OBJC_IVAR_$_TLFKillSwitchManager.killSwitchEnabled
+_OBJC_IVAR_$_TLFKillSwitchManager.killSwitchRetries
+_OBJC_IVAR_$_TLFKillSwitchManager.retryCounter
+_OBJC_IVAR_$_TLFKillSwitchManager.killSwitchInterval
+_OBJC_IVAR_$_TLFKillSwitchManager.killSwitchURLStr
+_OBJC_IVAR_$_TLFKillSwitchManager.killSwitchURLTimeout
+_OBJC_IVAR_$_TLFKillSwitchManager.killSwitchURL
+_OBJC_IVAR_$_TLFKillSwitchManager.reachability
+_OBJC_IVAR_$_TLFKillSwitchManager.hostNetworkStatus
+_OBJC_IVAR_$_TLFKillSwitchManager.delegate
+__OBJC_$_INSTANCE_VARIABLES_TLFKillSwitchManager
+__OBJC_$_PROP_LIST_TLFKillSwitchManager
+__OBJC_CLASS_RO_$_TLFKillSwitchManager
+Tealeaf/TLFKillSwitchManager.m
+__29-[TLFKillSwitchManager check]_block_invoke
+__42-[TLFKillSwitchManager onKillSwitchTimer:]_block_invoke
+__38+[TLFKillSwitchManager sharedInstance]_block_invoke
+-[TLFKeyboardPlaceHolder init]
+-[TLFKeyboardPlaceHolder initLoad]
+-[TLFKeyboardPlaceHolder initUnload]
+-[TLFKeyboardPlaceHolder keyboardEvent]
+-[TLFKeyboardPlaceHolder .cxx_destruct]
+_OBJC_IVAR_$_TLFKeyboardPlaceHolder._keyboardEvent
+__OBJC_METACLASS_RO_$_TLFKeyboardPlaceHolder
+__OBJC_$_INSTANCE_METHODS_TLFKeyboardPlaceHolder
+__OBJC_$_INSTANCE_VARIABLES_TLFKeyboardPlaceHolder
+__OBJC_$_PROP_LIST_TLFKeyboardPlaceHolder
+__OBJC_CLASS_RO_$_TLFKeyboardPlaceHolder
+Tealeaf/TLFKeyboardPlaceHolder.m
+Tealeaf/TLFKeyboardPlaceHolder.h
++[TLFAutoInstrumentationHelper shouldAutoLogLayoutFor:]
++[TLFAutoInstrumentationHelper shouldLogScreenViewChangeFor:]
++[TLFAutoInstrumentationHelper shouldAutoLogGesturesFor:]
++[TLFAutoInstrumentationHelper isNonNavigationController:]
++[TLFAutoInstrumentationHelper isAllowableClass:]
++[TLFAutoInstrumentationHelper isNonHandledClass:]
++[TLFAutoInstrumentationHelper isNonContainedViewController:]
+__OBJC_$_CLASS_METHODS_TLFAutoInstrumentationHelper
+__OBJC_METACLASS_RO_$_TLFAutoInstrumentationHelper
+__OBJC_CLASS_RO_$_TLFAutoInstrumentationHelper
+Tealeaf/TLFAutoInstrumentationHelper.m
+-[TLFL_Stepper initWithStepper:andZIndex:]
+-[TLFL_Stepper jsonRepresentation]
+___34-[TLFL_Stepper jsonRepresentation]_block_invoke
+__OBJC_METACLASS_RO_$_TLFL_Stepper
+__OBJC_$_INSTANCE_METHODS_TLFL_Stepper
+__OBJC_CLASS_RO_$_TLFL_Stepper
+Tealeaf/TLFL_Stepper.m
+__34-[TLFL_Stepper jsonRepresentation]_block_invoke
++[UIViewController(TLFInjection) tlfInject]
+___43+[UIViewController(TLFInjection) tlfInject]_block_invoke
+_tlfNewUIViewController_viewWillAppear
+_tlfNewUIViewController_viewDidAppear
+_tlfNewUIViewController_viewWillDisappear
+_tlfNewUIViewController_viewDidDisappear
+_tlfNewUIViewController_didRotateFromInterfaceOrientation
+-[UIViewController(TLFInjection) setTealeafWebviewPageLoadedCount:]
+-[UIViewController(TLFInjection) tealeafWebviewPageLoadedCount]
+-[UIViewController(TLFInjection) setTealeafLayoutCaptured:]
+-[UIViewController(TLFInjection) tealeafLayoutCaptured]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIViewController_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_UIViewController_$_TLFInjection
+__OBJC_CATEGORY_PROTOCOLS_$_UIViewController_$_TLFInjection
+__OBJC_$_PROP_LIST_UIViewController_$_TLFInjection
+__OBJC_$_CATEGORY_UIViewController_$_TLFInjection
+Tealeaf/UIViewController+TLFInjection.m
+tlfNewUIViewController_didRotateFromInterfaceOrientation
+tlfNewUIViewController_viewDidDisappear
+tlfNewUIViewController_viewWillDisappear
+tlfNewUIViewController_viewDidAppear
+tlfNewUIViewController_viewWillAppear
+__43+[UIViewController(TLFInjection) tlfInject]_block_invoke
+-[TLFConnectionMessage jsonDictionary]
+-[TLFConnectionMessage init]
+-[TLFConnectionMessage initWithConnection:request:response:error:]
+-[TLFConnectionMessage statusCode]
+-[TLFConnectionMessage setStatusCode:]
+-[TLFConnectionMessage connectionInitTime]
+-[TLFConnectionMessage setConnectionInitTime:]
+-[TLFConnectionMessage responseTime]
+-[TLFConnectionMessage setResponseTime:]
+-[TLFConnectionMessage loadTime]
+-[TLFConnectionMessage setLoadTime:]
+-[TLFConnectionMessage responseDataSize]
+-[TLFConnectionMessage setResponseDataSize:]
+-[TLFConnectionMessage url]
+-[TLFConnectionMessage setUrl:]
+-[TLFConnectionMessage responseDescription]
+-[TLFConnectionMessage setResponseDescription:]
+-[TLFConnectionMessage headers]
+-[TLFConnectionMessage setHeaders:]
+-[TLFConnectionMessage cookies]
+-[TLFConnectionMessage setCookies:]
+-[TLFConnectionMessage payload]
+-[TLFConnectionMessage setPayload:]
+-[TLFConnectionMessage .cxx_destruct]
+_OBJC_IVAR_$_TLFConnectionMessage._url
+_OBJC_IVAR_$_TLFConnectionMessage._responseDescription
+_OBJC_CLASSLIST_REFERENCES_$_.102
+_OBJC_IVAR_$_TLFConnectionMessage._statusCode
+_OBJC_IVAR_$_TLFConnectionMessage._connectionInitTime
+_OBJC_IVAR_$_TLFConnectionMessage._responseTime
+_OBJC_IVAR_$_TLFConnectionMessage._loadTime
+_OBJC_IVAR_$_TLFConnectionMessage._responseDataSize
+_OBJC_IVAR_$_TLFConnectionMessage._headers
+_OBJC_IVAR_$_TLFConnectionMessage._cookies
+_OBJC_IVAR_$_TLFConnectionMessage._payload
+__OBJC_CLASS_PROTOCOLS_$_TLFConnectionMessage
+__OBJC_METACLASS_RO_$_TLFConnectionMessage
+__OBJC_$_INSTANCE_METHODS_TLFConnectionMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFConnectionMessage
+__OBJC_$_PROP_LIST_TLFConnectionMessage
+__OBJC_CLASS_RO_$_TLFConnectionMessage
+Tealeaf/TLFConnectionMessage.m
+Tealeaf/TLFConnectionMessage.h
+-[TLFLongPressGestureData initWithGestureRecognizer:]
+__OBJC_METACLASS_RO_$_TLFLongPressGestureData
+__OBJC_$_INSTANCE_METHODS_TLFLongPressGestureData
+__OBJC_CLASS_RO_$_TLFLongPressGestureData
+Tealeaf/TLFLongPressGestureData.m
++[TLFClientStateLogger logCarrierEvent:country:level:]
++[TLFClientStateLogger isCarrierInfoValidForCarrier:country:]
++[TLFClientStateLogger logOrientationChangeTo:withScreenSize:]
++[TLFClientStateLogger logNetworkStatusChangeTo:]
++[TLFClientStateLogger logDarkMode]
+__OBJC_$_CLASS_METHODS_TLFClientStateLogger
+__OBJC_METACLASS_RO_$_TLFClientStateLogger
+__OBJC_CLASS_RO_$_TLFClientStateLogger
+Tealeaf/TLFClientStateLogger.m
++[UITableViewCell(TLFInjection) tlfInject]
+___42+[UITableViewCell(TLFInjection) tlfInject]_block_invoke
+_tlfNewUITableViewCellTouchesEndedWithEvent
+__OBJC_$_CATEGORY_CLASS_METHODS_UITableViewCell_$_TLFInjection
+__OBJC_CATEGORY_PROTOCOLS_$_UITableViewCell_$_TLFInjection
+__OBJC_$_CATEGORY_UITableViewCell_$_TLFInjection
+Tealeaf/UITableViewCell+TLFInjection.m
+tlfNewUITableViewCellTouchesEndedWithEvent
+__42+[UITableViewCell(TLFInjection) tlfInject]_block_invoke
++[TLFLayoutProccessor sharedInstance]
+___37+[TLFLayoutProccessor sharedInstance]_block_invoke
+-[TLFLayoutProccessor init]
+-[TLFLayoutProccessor setPreviousMainViewController:]
+-[TLFLayoutProccessor getPreviousMainViewController]
+-[TLFLayoutProccessor setCurrentMainViewController:]
+-[TLFLayoutProccessor getCurrentMainViewController]
++[TLFLayoutProccessor getCurrentBackgroundMainViewControllerOfAlertController]
++[TLFLayoutProccessor createLayoutDictionary:WithViewController:withTLFOptions:withOriginalVC:]
++[TLFLayoutProccessor findNavigationBarInTLFOptions:]
++[TLFLayoutProccessor findTabBarInTLFOptions:]
++[TLFLayoutProccessor findNavigationBarInApplicationAndViewController:]
++[TLFLayoutProccessor findTabBarInApplicationAndViewController:]
++[TLFLayoutProccessor getBits]
+-[TLFLayoutProccessor previousViewController]
+-[TLFLayoutProccessor setPreviousViewController:]
+-[TLFLayoutProccessor currentViewController]
+-[TLFLayoutProccessor setCurrentViewController:]
+-[TLFLayoutProccessor .cxx_destruct]
+_OBJC_CLASSLIST_REFERENCES_$_.100
+_OBJC_CLASSLIST_REFERENCES_$_.151
+_OBJC_CLASSLIST_REFERENCES_$_.167
+_OBJC_CLASSLIST_REFERENCES_$_.180
+__OBJC_$_CLASS_METHODS_TLFLayoutProccessor
+__OBJC_METACLASS_RO_$_TLFLayoutProccessor
+__OBJC_$_INSTANCE_METHODS_TLFLayoutProccessor
+_OBJC_IVAR_$_TLFLayoutProccessor._previousMainViewController
+_OBJC_IVAR_$_TLFLayoutProccessor._previousViewController
+_OBJC_IVAR_$_TLFLayoutProccessor._currentViewController
+__OBJC_$_INSTANCE_VARIABLES_TLFLayoutProccessor
+__OBJC_$_PROP_LIST_TLFLayoutProccessor
+__OBJC_CLASS_RO_$_TLFLayoutProccessor
+Tealeaf/TLFLayoutProccessor.m
+Tealeaf/TLFLayoutProccessor.h
+__37+[TLFLayoutProccessor sharedInstance]_block_invoke
+-[TLFMessage init]
+-[TLFMessage jsonDictionary]
+-[TLFMessage setLogLevel:]
+-[TLFMessage type]
+-[TLFMessage setType:]
+-[TLFMessage fromWeb]
+-[TLFMessage setFromWeb:]
+-[TLFMessage count]
+-[TLFMessage setCount:]
+-[TLFMessage screenviewOffset]
+-[TLFMessage setScreenviewOffset:]
+_OBJC_IVAR_$_TLFMessage._fromWeb
+_OBJC_IVAR_$_TLFMessage._type
+_OBJC_IVAR_$_TLFMessage._screenviewOffset
+_OBJC_IVAR_$_TLFMessage._count
+__OBJC_METACLASS_RO_$_TLFMessage
+__OBJC_$_INSTANCE_METHODS_TLFMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFMessage
+__OBJC_$_PROP_LIST_TLFMessage
+__OBJC_CLASS_RO_$_TLFMessage
+Tealeaf/TLFMessage.m
+Tealeaf/TLFMessage.h
++[TLFMiscLogger(TLFPrintScreenUtilities) isPrintScreenEnabled]
++[TLFMiscLogger(TLFPrintScreenUtilities) captureView]
++[TLFMiscLogger(TLFPrintScreenUtilities) captureViewNewAPI]
++[TLFMiscLogger(TLFPrintScreenUtilities) convertToData:]
++[TLFMiscLogger(TLFPrintScreenUtilities) scaleImage:toSize:]
+__OBJC_$_CATEGORY_CLASS_METHODS_TLFMiscLogger_$_TLFPrintScreenUtilities
+__OBJC_$_CATEGORY_TLFMiscLogger_$_TLFPrintScreenUtilities
+Tealeaf/TLFMiscLogger+TLFPrintScreenUtilities.m
++[TLFLayoutHelper isPrivate:]
++[TLFLayoutHelper getClassName:]
++[TLFLayoutHelper getTextAlignmentString:]
++[TLFLayoutHelper getLineBreakString:]
++[TLFLayoutHelper getBorderTypeString:]
++[TLFLayoutHelper addStyleColor:toStyleDictionary:withColorKey:andAlphaKey:]
++[TLFLayoutHelper addStyleColor:toStyleDictionary:withColorKey:andAlphaKey:andSetAlpha:]
++[TLFLayoutHelper isClear:]
++[TLFLayoutHelper colorFromImage:sampledAtPoint:]
++[TLFLayoutHelper colorAtPosition:inImage:]
++[TLFLayoutHelper viewToUIImage:]
++[TLFLayoutHelper calculateScaledSizeForViewFrame:withImageSize:andContentMode:]
++[TLFLayoutHelper shouldLogView:]
++[TLFLayoutHelper getCssId:]
+__OBJC_$_CLASS_METHODS_TLFLayoutHelper
+__OBJC_METACLASS_RO_$_TLFLayoutHelper
+__OBJC_CLASS_RO_$_TLFLayoutHelper
+Tealeaf/TLFLayoutHelper.m
+CGPointMake
+-[TLFScreenViewMessage init]
+-[TLFScreenViewMessage initWithLogicalPageName:screenviewType:referrer:WithTLFLayoutPlaceHolder:addPlaceHolderIfNil:]
+-[TLFScreenViewMessage initWithLogicalPageName:screenviewType:]
+-[TLFScreenViewMessage jsonDictionary]
+-[TLFScreenViewMessage contextDictionary]
+-[TLFScreenViewMessage base64Representation]
+-[TLFScreenViewMessage setBase64Representation:]
+-[TLFScreenViewMessage logicalPageName]
+-[TLFScreenViewMessage setLogicalPageName:]
+-[TLFScreenViewMessage screenviewType]
+-[TLFScreenViewMessage setScreenviewType:]
+-[TLFScreenViewMessage referrer]
+-[TLFScreenViewMessage setReferrer:]
+-[TLFScreenViewMessage layoutPlaceHolder]
+-[TLFScreenViewMessage setLayoutPlaceHolder:]
+-[TLFScreenViewMessage .cxx_destruct]
+_OBJC_IVAR_$_TLFScreenViewMessage._logicalPageName
+_OBJC_IVAR_$_TLFScreenViewMessage._screenviewType
+_OBJC_IVAR_$_TLFScreenViewMessage._referrer
+_OBJC_IVAR_$_TLFScreenViewMessage._layoutPlaceHolder
+_OBJC_IVAR_$_TLFScreenViewMessage.base64Representation
+__OBJC_METACLASS_RO_$_TLFScreenViewMessage
+__OBJC_$_INSTANCE_METHODS_TLFScreenViewMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFScreenViewMessage
+__OBJC_$_PROP_LIST_TLFScreenViewMessage
+__OBJC_CLASS_RO_$_TLFScreenViewMessage
+Tealeaf/TLFScreenViewMessage.m
+Tealeaf/TLFScreenViewMessage.h
++[NSURLSession(TLFInjection) tlfInject]
+___39+[NSURLSession(TLFInjection) tlfInject]_block_invoke
+_tlfNewNSURLSession_dataTaskWithRequest
+_tlfNewNSURLSession_dataTaskWithURL
+_tlfNewNSURLSession_uploadTaskWithRequest
+-[NSURLSession(TLFInjection) tealeafHandleCompletionForNSURLSession:request:response:data:error:initTime:loadTime:]
+___Block_byref_object_copy_.51
+___Block_byref_object_dispose_.52
+___tlfNewNSURLSession_dataTaskWithRequest_block_invoke
+___copy_helper_block_e8_32s40s48r56r
+___destroy_helper_block_e8_32s40s48r56r
+___tlfNewNSURLSession_dataTaskWithURL_block_invoke
+___tlfNewNSURLSession_uploadTaskWithRequest_block_invoke
+__OBJC_$_CATEGORY_INSTANCE_METHODS_NSURLSession_$_TLFInjection
+__OBJC_$_CATEGORY_CLASS_METHODS_NSURLSession_$_TLFInjection
+__OBJC_CATEGORY_PROTOCOLS_$_NSURLSession_$_TLFInjection
+__OBJC_$_CATEGORY_NSURLSession_$_TLFInjection
+___block_descriptor_72_e8_32s40s48r56r_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+Tealeaf/NSURLSession+TLFInjection.m
+__tlfNewNSURLSession_uploadTaskWithRequest_block_invoke
+__tlfNewNSURLSession_dataTaskWithURL_block_invoke
+__destroy_helper_block_e8_32s40s48r56r
+__copy_helper_block_e8_32s40s48r56r
+__tlfNewNSURLSession_dataTaskWithRequest_block_invoke
+tlfNewNSURLSession_uploadTaskWithRequest
+tlfNewNSURLSession_dataTaskWithURL
+tlfNewNSURLSession_dataTaskWithRequest
+__39+[NSURLSession(TLFInjection) tlfInject]_block_invoke
++[TLFCodeInjection load]
++[TLFCodeInjection inject]
++[TLFCodeInjection earlyInjectionWebView]
+__OBJC_$_CLASS_METHODS_TLFCodeInjection
+__OBJC_METACLASS_RO_$_TLFCodeInjection
+__OBJC_CLASS_RO_$_TLFCodeInjection
+Tealeaf/TLFCodeInjection.m
++[TLFUICPayloadMessage sharedInstance]
+___38+[TLFUICPayloadMessage sharedInstance]_block_invoke
+-[TLFUICPayloadMessage init]
+-[TLFUICPayloadMessage initWithPayloadStr:]
+-[TLFUICPayloadMessage initWithPayload:]
++[TLFUICPayloadMessage TLFJSONSerialize:]
+-[TLFUICPayloadMessage jsonDictionary]
+-[TLFUICPayloadMessage checkUnload:]
+-[TLFUICPayloadMessage isUnload]
+-[TLFUICPayloadMessage jsonPayload]
+-[TLFUICPayloadMessage setJsonPayload:]
+-[TLFUICPayloadMessage .cxx_destruct]
+_OBJC_IVAR_$_TLFUICPayloadMessage._isUnload
+_OBJC_IVAR_$_TLFUICPayloadMessage._jsonPayload
+__OBJC_$_CLASS_METHODS_TLFUICPayloadMessage
+__OBJC_METACLASS_RO_$_TLFUICPayloadMessage
+__OBJC_$_INSTANCE_METHODS_TLFUICPayloadMessage
+__OBJC_$_INSTANCE_VARIABLES_TLFUICPayloadMessage
+__OBJC_$_PROP_LIST_TLFUICPayloadMessage
+__OBJC_CLASS_RO_$_TLFUICPayloadMessage
+Tealeaf/TLFUICPayloadMessage.m
+Tealeaf/TLFUICPayloadMessage.h
+__38+[TLFUICPayloadMessage sharedInstance]_block_invoke
++[TLFConnectionLogger logConnection:request:response:error:]
++[TLFConnectionLogger logConnection:response:responseTimeInMilliseconds:]
++[TLFConnectionLogger logConnectionWithInitTime:loadTime:connection:request:response:data:error:]
+__OBJC_$_CLASS_METHODS_TLFConnectionLogger
+__OBJC_METACLASS_RO_$_TLFConnectionLogger
+__OBJC_CLASS_RO_$_TLFConnectionLogger
+Tealeaf/TLFConnectionLogger.m
+-[TLFMessagePlaceHolder init]
+-[TLFMessagePlaceHolder jsonDictionary]
+-[TLFMessagePlaceHolder myId]
+-[TLFMessagePlaceHolder setMyId:]
+-[TLFMessagePlaceHolder sessionId]
+-[TLFMessagePlaceHolder setSessionId:]
+-[TLFMessagePlaceHolder .cxx_destruct]
+_OBJC_IVAR_$_TLFMessagePlaceHolder._myId
+_OBJC_IVAR_$_TLFMessagePlaceHolder._sessionId
+__OBJC_METACLASS_RO_$_TLFMessagePlaceHolder
+__OBJC_$_INSTANCE_METHODS_TLFMessagePlaceHolder
+__OBJC_$_INSTANCE_VARIABLES_TLFMessagePlaceHolder
+__OBJC_$_PROP_LIST_TLFMessagePlaceHolder
+__OBJC_CLASS_RO_$_TLFMessagePlaceHolder
+Tealeaf/TLFMessagePlaceHolder.m
+Tealeaf/TLFMessagePlaceHolder.h
++[TLFMath calculateDistanceFromPoint:toLineFromPoint:toEndPoint:]
++[TLFMath calculateLengthOfLineFrom:toEnd:]
++[TLFMath calculateBestFitLineWithCGPoints:toStartPoint:andEndPoint:andDirection:]
+__OBJC_$_CLASS_METHODS_TLFMath
+__OBJC_METACLASS_RO_$_TLFMath
+__OBJC_CLASS_RO_$_TLFMath
+Tealeaf/TLFMath.m
+__inline_isnand
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/math.h
+-[TLFL_Unsupported initWithView:andZIndex:]
+__OBJC_METACLASS_RO_$_TLFL_Unsupported
+__OBJC_$_INSTANCE_METHODS_TLFL_Unsupported
+__OBJC_CLASS_RO_$_TLFL_Unsupported
+Tealeaf/TLFL_Unsupported.m
+-[TLFL_BarItem initWithView:andTitle:andImage:andIsSelected:andZIndex:]
+-[TLFL_BarItem jsonRepresentation]
+___34-[TLFL_BarItem jsonRepresentation]_block_invoke
+___34-[TLFL_BarItem jsonRepresentation]_block_invoke.21
+-[TLFL_BarItem title]
+-[TLFL_BarItem setTitle:]
+-[TLFL_BarItem buttonImage]
+-[TLFL_BarItem setButtonImage:]
+-[TLFL_BarItem isSelected]
+-[TLFL_BarItem setIsSelected:]
+-[TLFL_BarItem badge]
+-[TLFL_BarItem setBadge:]
+-[TLFL_BarItem .cxx_destruct]
+_OBJC_IVAR_$_TLFL_BarItem._title
+_OBJC_IVAR_$_TLFL_BarItem._buttonImage
+_OBJC_IVAR_$_TLFL_BarItem._isSelected
+_OBJC_IVAR_$_TLFL_BarItem._badge
+__OBJC_METACLASS_RO_$_TLFL_BarItem
+__OBJC_$_INSTANCE_METHODS_TLFL_BarItem
+__OBJC_$_INSTANCE_VARIABLES_TLFL_BarItem
+__OBJC_$_PROP_LIST_TLFL_BarItem
+__OBJC_CLASS_RO_$_TLFL_BarItem
+Tealeaf/TLFL_BarItem.m
+Tealeaf/TLFL_BarItem.h
+__34-[TLFL_BarItem jsonRepresentation]_block_invoke.21
+__34-[TLFL_BarItem jsonRepresentation]_block_invoke
++[TLFTouchEventHelper processTouchEvents:]
++[TLFTouchEventHelper getRelativeTouchPoint:]
++[TLFTouchEventHelper getAbsoluteTouchPoint:]
++[TLFTouchEventHelper getLocationDataDictionaryWithRelative:andAbs:]
+__OBJC_$_CLASS_METHODS_TLFTouchEventHelper
+__OBJC_METACLASS_RO_$_TLFTouchEventHelper
+__OBJC_CLASS_RO_$_TLFTouchEventHelper
+Tealeaf/TLFTouchEventHelper.m
++[UIImage(TLFOverrides) tlfInject]
+___34+[UIImage(TLFOverrides) tlfInject]_block_invoke
++[UIImage(TLFOverrides) tlfImageNamed:]
++[UIImage(TLFOverrides) tlfImageNamed:inBundle:compatibleWithTraitCollection:]
++[UIImage(TLFOverrides) tlfImageWithContentsOfFile:]
++[UIImage(TLFOverrides) tlfImageWithData:]
++[UIImage(TLFOverrides) tlfImageWithData:scale:]
+-[UIImage(TLFOverrides) tlfInitWithContentsOfFile:]
+-[UIImage(TLFOverrides) tlfInitWithData:]
+-[UIImage(TLFOverrides) tlfInitWithData:scale:]
++[UIImage(TLFOverrides) tlfImageWithCIImage:]
++[UIImage(TLFOverrides) tlfImageWithCIImage:scale:orientation:]
+-[UIImage(TLFOverrides) logImageUrl:withUrl:]
+__OBJC_$_CATEGORY_INSTANCE_METHODS_UIImage_$_TLFOverrides
+__OBJC_$_CATEGORY_CLASS_METHODS_UIImage_$_TLFOverrides
+__OBJC_CATEGORY_PROTOCOLS_$_UIImage_$_TLFOverrides
+__OBJC_$_CATEGORY_UIImage_$_TLFOverrides
+Tealeaf/UIImage+TLFOverrides.m
+__34+[UIImage(TLFOverrides) tlfInject]_block_invoke
+-[TLFL_Slider initWithSliderView:andZIndex:]
+-[TLFL_Slider jsonRepresentation]
+___33-[TLFL_Slider jsonRepresentation]_block_invoke
+___33-[TLFL_Slider jsonRepresentation]_block_invoke.46
+-[TLFL_Slider minTrackColor]
+-[TLFL_Slider setMinTrackColor:]
+-[TLFL_Slider maxTrackColor]
+-[TLFL_Slider setMaxTrackColor:]
+-[TLFL_Slider thumbColor]
+-[TLFL_Slider setThumbColor:]
+-[TLFL_Slider minValue]
+-[TLFL_Slider setMinValue:]
+-[TLFL_Slider maxValue]
+-[TLFL_Slider setMaxValue:]
+-[TLFL_Slider currentValue]
+-[TLFL_Slider setCurrentValue:]
+-[TLFL_Slider .cxx_destruct]
+_OBJC_IVAR_$_TLFL_Slider._minTrackColor
+_OBJC_IVAR_$_TLFL_Slider._maxTrackColor
+_OBJC_IVAR_$_TLFL_Slider._thumbColor
+_OBJC_IVAR_$_TLFL_Slider._minValue
+_OBJC_IVAR_$_TLFL_Slider._maxValue
+_OBJC_IVAR_$_TLFL_Slider._currentValue
+__OBJC_METACLASS_RO_$_TLFL_Slider
+__OBJC_$_INSTANCE_METHODS_TLFL_Slider
+__OBJC_$_INSTANCE_VARIABLES_TLFL_Slider
+__OBJC_$_PROP_LIST_TLFL_Slider
+__OBJC_CLASS_RO_$_TLFL_Slider
+Tealeaf/TLFL_Slider.m
+Tealeaf/TLFL_Slider.h
+__33-[TLFL_Slider jsonRepresentation]_block_invoke.46
+__33-[TLFL_Slider jsonRepresentation]_block_invoke
++[TLFLFont tlfFontWithUIFont:]
+-[TLFLFont jsonRepresentation]
+-[TLFLFont jsonKey]
++[TLFLFont getFontFamily:]
++[TLFLFont getFontStyle:]
++[TLFLFont getFontWeight:]
+-[TLFLFont name]
+-[TLFLFont setName:]
+-[TLFLFont weight]
+-[TLFLFont setWeight:]
+-[TLFLFont style]
+-[TLFLFont setStyle:]
+-[TLFLFont family]
+-[TLFLFont setFamily:]
+-[TLFLFont size]
+-[TLFLFont setSize:]
+-[TLFLFont .cxx_destruct]
+__OBJC_$_CLASS_METHODS_TLFLFont
+__OBJC_METACLASS_RO_$_TLFLFont
+__OBJC_$_INSTANCE_METHODS_TLFLFont
+_OBJC_IVAR_$_TLFLFont._name
+_OBJC_IVAR_$_TLFLFont._weight
+_OBJC_IVAR_$_TLFLFont._style
+_OBJC_IVAR_$_TLFLFont._family
+_OBJC_IVAR_$_TLFLFont._size
+__OBJC_$_INSTANCE_VARIABLES_TLFLFont
+__OBJC_$_PROP_LIST_TLFLFont
+__OBJC_CLASS_RO_$_TLFLFont
+Tealeaf/TLFLFont.m
+Tealeaf/TLFLFont.h

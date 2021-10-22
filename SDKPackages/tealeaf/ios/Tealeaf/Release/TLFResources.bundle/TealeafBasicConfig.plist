@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AppKey</key>
-	<string>c7759ff3abb1435993e99a52ba6c0c96</string>
+	<string>b6c3709b7a4c479bb4b5a9fb8fec324c</string>
 	<key>CaptureNativeGesturesOnWebview</key>
 	<false/>
 	<key>DisableAutoInstrumentation</key>
@@ -13,7 +13,7 @@
 	<key>JavaScriptInjectionDelay</key>
 	<integer>100</integer>
 	<key>KillSwitchEnabled</key>
-	<false/>
+	<true/>
 	<key>KillSwitchMaxNumberOfTries</key>
 	<integer>3</integer>
 	<key>KillSwitchTimeInterval</key>
@@ -21,7 +21,7 @@
 	<key>KillSwitchTimeout</key>
 	<integer>5</integer>
 	<key>KillSwitchUrl</key>
-	<string></string>
+	<string>https://lib-us-2.brilliantcollector.com/collector/switch/b6c3709b7a4c479bb4b5a9fb8fec324c</string>
 	<key>UseWhiteList</key>
 	<false/>
 	<key>WhiteListParam</key>
@@ -69,7 +69,7 @@
 	<key>ScreenShotPixelDensity</key>
 	<real>1.5</real>
 	<key>PostMessageUrl</key>
-	<string>http://lib-us-2.brilliantcollector.com/collector/collectorPost</string>
+	<string>https://lib-us-2.brilliantcollector.com/collector/collectorPost</string>
 	<key>DoPostOnScreenChange</key>
 	<false/>
 	<key>printScreen</key>

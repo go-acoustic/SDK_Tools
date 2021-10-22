@@ -1,4 +1,0 @@
-OTHER_LDFLAGS = $(inherited) -ObjC -lz -framework CoreTelephony -framework SystemConfiguration -framework CoreLocation -framework WebKit -lEOCore -framework Tealeaf
-HEADER_SEARCH_PATHS = $(inherited) "Tealeaf/Tealeaf.framework/Headers/"
-LIBRARY_SEARCH_PATHS = $(inherited) "Tealeaf/"
-FRAMEWORK_SEARCH_PATHS = $(inherited) "Tealeaf/"
