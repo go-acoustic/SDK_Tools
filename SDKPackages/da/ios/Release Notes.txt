@@ -8,6 +8,24 @@
 # prohibited.
 ###############################################################################################
 
+October 28 2021 DAMod Module 1.1.49
+
+DAMod Release
+Enhancements
+
+- Built with Xcode 13.1.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+
+
 October 28 2021 EOCore Module 2.3.72
 
 EOCore Release
