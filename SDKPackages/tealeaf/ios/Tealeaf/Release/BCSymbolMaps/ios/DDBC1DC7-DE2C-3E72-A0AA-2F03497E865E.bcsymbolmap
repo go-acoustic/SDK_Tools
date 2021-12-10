@@ -2,12 +2,12 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.3)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
 iPhoneOS15.0.sdk
-/Users/easdk/Library/Developer/Xcode/DerivedData/Tealeaf-bkholazjcphhdgcowilahtlbzqdd/Build/Intermediates.noindex/ArchiveIntermediates/XCTealeaf/IntermediateBuildFilesPath/EOCore.build/ReleaseAuto-iphoneos/XCEOCore.build/DerivedSources/EOCore_vers.c
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/Tealeaf_15_0_iPhone_8_Plus_SQ/TealeafBuild/iOS-SDK/iOSSrc/EOCore
+/Users/easdk/Library/Developer/Xcode/DerivedData/Tealeaf-cgdqhnzryqgaumchpefvcbukbuui/Build/Intermediates.noindex/ArchiveIntermediates/XCTealeaf/IntermediateBuildFilesPath/EOCore.build/ReleaseAuto-iphoneos/XCEOCore.build/DerivedSources/EOCore_vers.c
+/Users/easdk/builds/workspace/ealeaf_PullRequest_Check_develop/TealeafBuild/iOS-SDK/iOSSrc/EOCore
 +[EOTestingHelper logForTesting:]
 ___33+[EOTestingHelper logForTesting:]_block_invoke
-___copy_helper_block_e8_32s
-___destroy_helper_block_e8_32s
+___copy_helper_block_e4_20s
+___destroy_helper_block_e4_20s
 _OBJC_CLASSLIST_REFERENCES_$_
 _OBJC_SELECTOR_REFERENCES_
 _OBJC_SELECTOR_REFERENCES_.2
@@ -17,13 +17,13 @@ _OBJC_SELECTOR_REFERENCES_.8
 _OBJC_CLASSLIST_REFERENCES_$_.9
 _OBJC_SELECTOR_REFERENCES_.11
 _OBJC_SELECTOR_REFERENCES_.13
-___block_descriptor_40_e8_32s_e5_v8?0l
+___block_descriptor_24_e4_20s_e5_v4?0l
 __OBJC_$_CLASS_METHODS_EOTestingHelper
 __OBJC_METACLASS_RO_$_EOTestingHelper
 __OBJC_CLASS_RO_$_EOTestingHelper
 EOCore/EOTestingHelper.m
-__destroy_helper_block_e8_32s
-__copy_helper_block_e8_32s
+__destroy_helper_block_e4_20s
+__copy_helper_block_e4_20s
 __33+[EOTestingHelper logForTesting:]_block_invoke
 -[NSString(EOCoreExtensions) tealeafClass]
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSString_$_EOCoreExtensions
@@ -33,8 +33,8 @@ EOCore/NSString+EOCoreExtensions.m
 -[EOApplicationLifecycleManager stopMonitoringApplicationChanges]
 -[EOApplicationLifecycleManager tlfApplicationDidEnterBackground:]
 ___66-[EOApplicationLifecycleManager tlfApplicationDidEnterBackground:]_block_invoke
-___copy_helper_block_e8_32s40r
-___destroy_helper_block_e8_32s40r
+___copy_helper_block_e4_20s24r
+___destroy_helper_block_e4_20s24r
 ___66-[EOApplicationLifecycleManager tlfApplicationDidEnterBackground:]_block_invoke.50
 -[EOApplicationLifecycleManager tlfApplicationWillEnterForeground:]
 -[EOApplicationLifecycleManager tlfApplicationDidBecomeActive:]
@@ -61,9 +61,9 @@ _OBJC_SELECTOR_REFERENCES_.41
 _OBJC_CLASSLIST_REFERENCES_$_.42
 _OBJC_SELECTOR_REFERENCES_.44
 _OBJC_SELECTOR_REFERENCES_.46
-___block_descriptor_48_e8_32s40r_e5_v8?0l
+___block_descriptor_28_e4_20s24r_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.49
-___block_descriptor_32_e5_v8?0l
+___block_descriptor_20_e5_v4?0l
 ___block_literal_global
 _OBJC_SELECTOR_REFERENCES_.52
 ___block_literal_global.53
@@ -81,13 +81,13 @@ EOCore/EOApplicationLifecycleManager.m
 EOCore/EOApplicationLifecycleManager.h
 __63-[EOApplicationLifecycleManager tlfApplicationDidBecomeActive:]_block_invoke
 __66-[EOApplicationLifecycleManager tlfApplicationDidEnterBackground:]_block_invoke.50
-__destroy_helper_block_e8_32s40r
-__copy_helper_block_e8_32s40r
+__destroy_helper_block_e4_20s24r
+__copy_helper_block_e4_20s24r
 __66-[EOApplicationLifecycleManager tlfApplicationDidEnterBackground:]_block_invoke
 +[EOApplicationHelper sharedInstance]
 ___37+[EOApplicationHelper sharedInstance]_block_invoke
-___copy_helper_block_e8_
-___destroy_helper_block_e8_
+___copy_helper_block_e4_
+___destroy_helper_block_e4_
 -[EOApplicationHelper configurationCheck]
 -[EOApplicationHelper updateConfigWithData:forModuleName:]
 -[EOApplicationHelper getConfigItem:forModuleName:]
@@ -97,7 +97,7 @@ ___destroy_helper_block_e8_
 -[EOApplicationHelper setConfigItem:value:forModuleName:]
 _sharedInstance.sharedInstance
 _sharedInstance.onceToken
-___block_descriptor_40_e8__e5_v8?0l
+___block_descriptor_24_e4__e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.10
 _OBJC_SELECTOR_REFERENCES_.18
 _OBJC_CLASSLIST_REFERENCES_$_.19
@@ -107,8 +107,8 @@ __OBJC_METACLASS_RO_$_EOApplicationHelper
 __OBJC_$_INSTANCE_METHODS_EOApplicationHelper
 __OBJC_CLASS_RO_$_EOApplicationHelper
 EOCore/EOApplicationHelper.m
-__destroy_helper_block_e8_
-__copy_helper_block_e8_
+__destroy_helper_block_e4_
+__copy_helper_block_e4_
 __37+[EOApplicationHelper sharedInstance]_block_invoke
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/dispatch/once.h
 -[NSDictionary(EOCoreExtensions) toJson]
@@ -223,10 +223,10 @@ _OBJC_SELECTOR_REFERENCES_.73
 _OBJC_SELECTOR_REFERENCES_.75
 __OBJC_METACLASS_RO_$_EOQueue
 __OBJC_$_INSTANCE_METHODS_EOQueue
-_OBJC_IVAR_$_EOQueue._serialNumber
 _OBJC_IVAR_$_EOQueue._module
 _OBJC_IVAR_$_EOQueue._sessions
 _OBJC_IVAR_$_EOQueue._currentSessionID
+_OBJC_IVAR_$_EOQueue._serialNumber
 _OBJC_IVAR_$_EOQueue._currentSessionStartTime
 __OBJC_$_INSTANCE_VARIABLES_EOQueue
 __OBJC_$_PROP_LIST_EOQueue
@@ -235,8 +235,8 @@ EOCore/EOQueue.m
 EOCore/EOQueue.h
 +[MiCloudIBMLogClient postToIBMMiCloudSDKTool:]
 ___47+[MiCloudIBMLogClient postToIBMMiCloudSDKTool:]_block_invoke
-___copy_helper_block_e8_32s40s48s
-___destroy_helper_block_e8_32s40s48s
+___copy_helper_block_e4_20s24s28s
+___destroy_helper_block_e4_20s24s28s
 +[MiCloudIBMLogClient onlyMiCloudIBMLogClient]
 ___46+[MiCloudIBMLogClient onlyMiCloudIBMLogClient]_block_invoke
 -[MiCloudIBMLogClient init]
@@ -269,7 +269,7 @@ ___28-[MiCloudIBMLogClient post:]_block_invoke
 -[MiCloudIBMLogClient .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.6
 _OBJC_CLASSLIST_REFERENCES_$_.16
-___block_descriptor_56_e8_32s40s48s_e5_v8?0l
+___block_descriptor_32_e4_20s24s28s_e5_v4?0l
 _onlyMiCloudIBMLogClient.onlyInstance
 _onlyMiCloudIBMLogClient.onceToken
 _OBJC_SELECTOR_REFERENCES_.31
@@ -321,8 +321,8 @@ llvm.loop.mustprogress
 __Block_byref_object_dispose_
 __Block_byref_object_copy_
 __46+[MiCloudIBMLogClient onlyMiCloudIBMLogClient]_block_invoke
-__destroy_helper_block_e8_32s40s48s
-__copy_helper_block_e8_32s40s48s
+__destroy_helper_block_e4_20s24s28s
+__copy_helper_block_e4_20s24s28s
 __47+[MiCloudIBMLogClient postToIBMMiCloudSDKTool:]_block_invoke
 +[EOReachability reachabilityWithHostName:]
 +[EOReachability reachabilityWithAddress:]
@@ -374,9 +374,9 @@ __OBJC_METACLASS_RO_$_EOSession
 __OBJC_$_INSTANCE_METHODS_EOSession
 _OBJC_IVAR_$_EOSession._coreSessionID
 _OBJC_IVAR_$_EOSession._sessionID
-_OBJC_IVAR_$_EOSession._startTime
 _OBJC_IVAR_$_EOSession._timezoneOffset
 _OBJC_IVAR_$_EOSession._messages
+_OBJC_IVAR_$_EOSession._startTime
 __OBJC_$_INSTANCE_VARIABLES_EOSession
 __OBJC_$_PROP_LIST_EOSession
 __OBJC_CLASS_RO_$_EOSession
@@ -582,7 +582,7 @@ _OBJC_SELECTOR_REFERENCES_.166
 _OBJC_SELECTOR_REFERENCES_.168
 _OBJC_SELECTOR_REFERENCES_.170
 _OBJC_SELECTOR_REFERENCES_.172
-___block_descriptor_32_e25_q24?0"NSURL"8"NSURL"16l
+___block_descriptor_20_e24_i12?0"NSURL"4"NSURL"8l
 _OBJC_SELECTOR_REFERENCES_.175
 _OBJC_SELECTOR_REFERENCES_.177
 _OBJC_SELECTOR_REFERENCES_.179
@@ -790,9 +790,9 @@ __OBJC_CLASS_PROTOCOLS_$_EOCore
 __OBJC_METACLASS_RO_$_EOCore
 __OBJC_$_INSTANCE_METHODS_EOCore
 _OBJC_IVAR_$_EOCore._enabled
-_OBJC_IVAR_$_EOCore._currentLoggingLevel
 _OBJC_IVAR_$_EOCore._currentSessionID
 _OBJC_IVAR_$_EOCore._classReferences
+_OBJC_IVAR_$_EOCore._currentLoggingLevel
 _OBJC_IVAR_$_EOCore._tempConfigDict
 __OBJC_$_INSTANCE_VARIABLES_EOCore
 __OBJC_$_PROP_LIST_EOCore
@@ -826,7 +826,7 @@ ___51-[EOServerConnection performUploadTaskWithRequest:]_block_invoke
 _OBJC_CLASSLIST_REFERENCES_$_.11
 _OBJC_SELECTOR_REFERENCES_.48
 _OBJC_CLASSLIST_REFERENCES_$_.51
-___block_descriptor_40_e8_32s_e46_v32?0"NSData"8"NSURLResponse"16"NSError"24l
+___block_descriptor_24_e4_20s_e45_v16?0"NSData"4"NSURLResponse"8"NSError"12l
 _OBJC_CLASSLIST_REFERENCES_$_.73
 _OBJC_CLASSLIST_REFERENCES_$_.80
 _OBJC_SELECTOR_REFERENCES_.124
@@ -990,7 +990,7 @@ _OBJC_SELECTOR_REFERENCES_.249
 _OBJC_CLASSLIST_REFERENCES_$_.266
 _OBJC_SELECTOR_REFERENCES_.268
 _OBJC_SELECTOR_REFERENCES_.274
-___block_descriptor_40_e8_32s_e20_v24?08"NSError"16l
+___block_descriptor_24_e4_20s_e19_v12?04"NSError"8l
 _OBJC_SELECTOR_REFERENCES_.277
 _OBJC_SELECTOR_REFERENCES_.279
 _OBJC_SELECTOR_REFERENCES_.281
@@ -1030,7 +1030,6 @@ EOCore/EOEnvironmentalSerivce.h
 __49-[EOEnvironmentalSerivce setUserAgentFromBrowser]_block_invoke
 NSEqualRanges
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
-NSMakeRange
 __30-[EOEnvironmentalSerivce init]_block_invoke
 __40+[EOEnvironmentalSerivce sharedInstance]_block_invoke
 -[EOMessage init]
