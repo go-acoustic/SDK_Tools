@@ -8,6 +8,69 @@
 # prohibited.
 ###############################################################################################
 
+December 10 2021 EOCore Module 2.3.185
+
+EOCore Release
+Enhancements
+
+- None.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
+
+December 09 2021 EOCore Module 2.3.183
+
+EOCore Release
+Enhancements
+
+- None.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
+
+December 09 2021 EOCore Module 2.3.183
+
+EOCore Release
+Enhancements
+
+- None.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
+
 October 28 2021 Tealeaf Module 10.6.138
 
 Tealeaf Release
@@ -55,6 +118,67 @@ Known Issues
 
 - After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
 - Dual sim features are in beta. Example information using multiple carriers.
+
+
+
+October 28 2021 EOCore Module 2.3.71
+
+EOCore Release
+Enhancements
+
+- Built with Xcode 13.1.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
+October 28 2021 EOCore Module 2.3.71
+
+EOCore Release
+Enhancements
+
+- Built with Xcode 13.1.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
+October 28 2021 EOCore Module 2.3.71
+
+EOCore Release
+Enhancements
+
+- Built with Xcode 13.1.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
 
 
 October 21 2021 Tealeaf Module 10.6.137
@@ -215,6 +339,168 @@ October 21 2021 TealeafMD5Hash Module 1.0.25
 TealeafMD5Hash Release
 Enhancements
 - Library is now being built for xcframeworks with latest xcode 13.0.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
+October 14 2021 TealeafSHA2Hash Module 1.0.23
+
+TealeafSHA2Hash Release
+Enhancements
+- Library is now being built for xcframeworks with latest xcode 13.0.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
+October 14 2021 TealeafMD5Hash Module 1.0.24
+
+TealeafMD5Hash Release
+Enhancements
+- Library is now being built for xcframeworks with latest xcode 13.0.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
+October 14 2021 TealeafMD5Hash Module 1.0.23
+
+TealeafMD5Hash Release
+Enhancements
+- Library is now being built for xcframeworks with latest xcode 13.0.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
+October 14 2021 TealeafMD5Hash Module 1.0.22
+
+TealeafMD5Hash Release
+Enhancements
+- Library is now being built for xcframeworks with latest xcode 13.0.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
+October 14 2021 TealeafMD5Hash Module 1.0.20
+
+TealeafMD5Hash Release
+Enhancements
+- Library is now being built for xcframeworks with latest xcode 12.5.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
+October 14 2021 TealeafMD5Hash Module 1.0.20
+
+TealeafMD5Hash Release
+Enhancements
+- Library is now being built for xcframeworks with latest xcode 12.5.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
+October 14 2021 TealeafMD5Hash Module 1.0.20
+
+TealeafMD5Hash Release
+Enhancements
+- Library is now being built for xcframeworks with latest xcode 12.5.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
+October 13 2021 TealeafMD5Hash Module 1.0.20
+
+TealeafMD5Hash Release
+Enhancements
+- Library is now being built for xcframeworks with latest xcode 12.5.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
+October 13 2021 TealeafMD5Hash Module 1.0.20
+
+TealeafMD5Hash Release
+Enhancements
+- Library is now being built for xcframeworks with latest xcode 12.5.
 
 
 Bug Fixes
