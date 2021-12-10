@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.0.0 (clang-1300.0.29.3)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk
 iPhoneOS15.0.sdk
-/Users/easdk/Library/Developer/Xcode/DerivedData/DAMod-btwkmkigywzscdbdeznqsiewdpxv/Build/Intermediates.noindex/ArchiveIntermediates/XCDAMod/IntermediateBuildFilesPath/DAMod.build/ReleaseAuto-iphoneos/XCDAMod.build/DerivedSources/DAMod_vers.c
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod
+/Users/easdk/Library/Developer/Xcode/DerivedData/DAMod-gxrnrxvbelrsvegncuinmjpvkdwf/Build/Intermediates.noindex/ArchiveIntermediates/XCDAMod/IntermediateBuildFilesPath/DAMod.build/DebugXCDevice-iphoneos/XCDAMod.build/DerivedSources/DAMod_vers.c
+/Users/easdk/builds/workspace/iOS_DA_PullRequest_Check_develop/DAModBuild/iOS-SDK/iOSSrc/DAMod
 +[DATag tagWith:clientId:]
 -[DATag init]
 -[DATag makePageViewTag:cg:se:sr:attributes:cm_mmc:]
@@ -82,7 +82,7 @@ _OBJC_IVAR_$_DATag.tag
 __OBJC_$_INSTANCE_VARIABLES_DATag
 __OBJC_$_PROP_LIST_DATag
 __OBJC_CLASS_RO_$_DATag
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DATag.m
+/Users/easdk/builds/workspace/iOS_DA_PullRequest_Check_develop/DAModBuild/iOS-SDK/iOSSrc/DAMod/DAMod/DATag.m
 DAMod/DATag.m
 llvm.loop.mustprogress
 -[DAMessage init]
@@ -100,12 +100,12 @@ __OBJC_$_INSTANCE_METHODS_DAMessage
 __OBJC_$_INSTANCE_VARIABLES_DAMessage
 __OBJC_$_PROP_LIST_DAMessage
 __OBJC_CLASS_RO_$_DAMessage
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAMessage.m
+/Users/easdk/builds/workspace/iOS_DA_PullRequest_Check_develop/DAModBuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAMessage.m
 DAMod/DAMessage.m
 +[DATagsRingBuffer sharedInstance]
 ___34+[DATagsRingBuffer sharedInstance]_block_invoke
-___copy_helper_block_e4_
-___destroy_helper_block_e4_
+___copy_helper_block_e8_
+___destroy_helper_block_e8_
 -[DATagsRingBuffer init]
 -[DATagsRingBuffer addObject:]
 -[DATagsRingBuffer count]
@@ -122,7 +122,7 @@ ___destroy_helper_block_e4_
 -[DATagsRingBuffer .cxx_destruct]
 _sharedInstance.predicate
 _sharedInstance.sharedInstance
-___block_descriptor_24_e4__e5_v4?0l
+___block_descriptor_40_e8__e5_v8?0l
 _OBJC_SELECTOR_REFERENCES_.5
 _OBJC_SELECTOR_REFERENCES_.7
 _OBJC_SELECTOR_REFERENCES_.15
@@ -136,10 +136,10 @@ _OBJC_IVAR_$_DATagsRingBuffer.ringBuffer
 __OBJC_$_INSTANCE_VARIABLES_DATagsRingBuffer
 __OBJC_$_PROP_LIST_DATagsRingBuffer
 __OBJC_CLASS_RO_$_DATagsRingBuffer
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DATagsRingBuffer.m
+/Users/easdk/builds/workspace/iOS_DA_PullRequest_Check_develop/DAModBuild/iOS-SDK/iOSSrc/DAMod/DAMod/DATagsRingBuffer.m
 DAMod/DATagsRingBuffer.m
-__destroy_helper_block_e4_
-__copy_helper_block_e4_
+__destroy_helper_block_e8_
+__copy_helper_block_e8_
 __34+[DATagsRingBuffer sharedInstance]_block_invoke
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/usr/include/dispatch/once.h
 +[DAConstraintsChecker satisfy:constraintsFor:]
@@ -148,19 +148,31 @@ _allConstraints
 _OBJC_SELECTOR_REFERENCES_.89
 _OBJC_SELECTOR_REFERENCES_.91
 _OBJC_CLASSLIST_REFERENCES_$_.92
-_OBJC_SELECTOR_REFERENCES_.96
-_OBJC_SELECTOR_REFERENCES_.100
-_OBJC_CLASSLIST_REFERENCES_$_.104
-_OBJC_SELECTOR_REFERENCES_.106
-_OBJC_SELECTOR_REFERENCES_.108
-_OBJC_SELECTOR_REFERENCES_.110
-_OBJC_SELECTOR_REFERENCES_.112
-_OBJC_CLASSLIST_REFERENCES_$_.113
+_satisfy:constraintsFor:.tlfDebug
+_OBJC_CLASSLIST_REFERENCES_$_.95
+_OBJC_SELECTOR_REFERENCES_.97
+_OBJC_SELECTOR_REFERENCES_.99
+_satisfy:constraintsFor:.tlfDebug.106
+_satisfy:constraintsFor:.tlfDebug.109
 _OBJC_SELECTOR_REFERENCES_.115
+_OBJC_SELECTOR_REFERENCES_.117
+_OBJC_CLASSLIST_REFERENCES_$_.118
+_OBJC_SELECTOR_REFERENCES_.120
+_OBJC_CLASSLIST_REFERENCES_$_.121
+_OBJC_SELECTOR_REFERENCES_.127
+_satisfy:constraints:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.131
+_satisfy:constraints:.tlfDebug.132
+_OBJC_CLASSLIST_REFERENCES_$_.135
+_OBJC_SELECTOR_REFERENCES_.137
+_satisfy:constraints:.tlfDebug.138
+_satisfy:constraints:.tlfDebug.141
+_satisfy:constraints:.tlfDebug.142
+_satisfy:constraints:.tlfDebug.145
 __OBJC_$_CLASS_METHODS_DAConstraintsChecker
 __OBJC_METACLASS_RO_$_DAConstraintsChecker
 __OBJC_CLASS_RO_$_DAConstraintsChecker
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAConstraintsChecker.m
+/Users/easdk/builds/workspace/iOS_DA_PullRequest_Check_develop/DAModBuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAConstraintsChecker.m
 DAMod/DAConstraintsChecker.m
 +[NSDictionary(QueryString) dictionaryWithQueryString:]
 -[NSMutableDictionary(SafeDigitalAnalytics) safeSetObject:forKey:]
@@ -174,8 +186,10 @@ __OBJC_$_CATEGORY_NSDictionary_$_QueryString
 _OBJC_CLASSLIST_REFERENCES_$_.24
 __OBJC_$_CATEGORY_INSTANCE_METHODS_NSMutableDictionary_$_SafeDigitalAnalytics
 __OBJC_$_CATEGORY_NSMutableDictionary_$_SafeDigitalAnalytics
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/NSDictionary+QueryString.m
+/Users/easdk/builds/workspace/iOS_DA_PullRequest_Check_develop/DAModBuild/iOS-SDK/iOSSrc/DAMod/DAMod/NSDictionary+QueryString.m
 DAMod/NSDictionary+QueryString.m
+NSMakeRange
+/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.0.sdk/System/Library/Frameworks/Foundation.framework/Headers/NSRange.h
 +[DATagDictionary tagWithApplicationName:clientId:]
 -[DATagDictionary init]
 -[DATagDictionary makePageViewTag:cg:se:sr:attributes:cm_mmc:]
@@ -213,8 +227,6 @@ _OBJC_SELECTOR_REFERENCES_.48
 _OBJC_SELECTOR_REFERENCES_.68
 _OBJC_SELECTOR_REFERENCES_.86
 _OBJC_SELECTOR_REFERENCES_.88
-_OBJC_CLASSLIST_REFERENCES_$_.135
-_OBJC_SELECTOR_REFERENCES_.137
 _OBJC_SELECTOR_REFERENCES_.139
 _OBJC_SELECTOR_REFERENCES_.161
 _OBJC_SELECTOR_REFERENCES_.173
@@ -242,7 +254,7 @@ _OBJC_IVAR_$_DATagDictionary.tagDict
 __OBJC_$_INSTANCE_VARIABLES_DATagDictionary
 __OBJC_$_PROP_LIST_DATagDictionary
 __OBJC_CLASS_RO_$_DATagDictionary
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DATagDictionary.m
+/Users/easdk/builds/workspace/iOS_DA_PullRequest_Check_develop/DAModBuild/iOS-SDK/iOSSrc/DAMod/DAMod/DATagDictionary.m
 DAMod/DATagDictionary.m
 +[DigitalAnalytics startup]
 +[DigitalAnalytics startNewSession]
@@ -266,30 +278,54 @@ DAMod/DATagDictionary.m
 +[DigitalAnalytics resetToDefaultClientId]
 +[DigitalAnalytics setOptOut:]
 +[DigitalAnalytics getOptOut]
-_OBJC_SELECTOR_REFERENCES_.19
-_OBJC_SELECTOR_REFERENCES_.21
+_startup.tlfDebug
+_OBJC_CLASSLIST_REFERENCES_$_.11
+_startup.tlfDebug.19
 _OBJC_SELECTOR_REFERENCES_.23
+_startNewSession.tlfDebug
 _OBJC_SELECTOR_REFERENCES_.25
-_OBJC_SELECTOR_REFERENCES_.27
-_OBJC_CLASSLIST_REFERENCES_$_.28
-_OBJC_SELECTOR_REFERENCES_.34
-_OBJC_SELECTOR_REFERENCES_.36
-_OBJC_CLASSLIST_REFERENCES_$_.37
-_OBJC_CLASSLIST_REFERENCES_$_.54
-_OBJC_SELECTOR_REFERENCES_.58
+_shutdown.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.29
+_sessionId.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.31
+_OBJC_SELECTOR_REFERENCES_.37
+_visitorId.tlfDebug
+_OBJC_CLASSLIST_REFERENCES_$_.38
+_OBJC_SELECTOR_REFERENCES_.44
+_libraryVersion.tlfDebug
+_OBJC_CLASSLIST_REFERENCES_$_.47
+_OBJC_SELECTOR_REFERENCES_.49
+_OBJC_SELECTOR_REFERENCES_.53
+_OBJC_CLASSLIST_REFERENCES_$_.64
+_firePageView:category:searchTerm:searchResult:attributes:cmmmc:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.70
+_fireProductview:productId:productName:category:attributes:.tlfDebug
 _OBJC_SELECTOR_REFERENCES_.78
-_OBJC_SELECTOR_REFERENCES_.102
-_OBJC_SELECTOR_REFERENCES_.116
+_fireShopAction5:productName:quantity:baseUnitPrice:category:currencyCode:attributes:.tlfDebug
+_fireShopAction9:productName:quantity:baseUnitPrice:category:orderId:orderSubTotal:customerId:currencyCode:attributes:.tlfDebug
+_fireOrder:subtotal:shippingCharge:customerId:customerCity:customerState:customerZip:currencyCode:attributes:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.112
+_fireRegistration:email:customerCity:customerState:customerZip:customerCountry:attributes:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.118
+_fireElement:elementCategory:attributes:.tlfDebug
 _OBJC_SELECTOR_REFERENCES_.126
-_OBJC_SELECTOR_REFERENCES_.134
-_OBJC_SELECTOR_REFERENCES_.142
+_fireConversionEvent:actionType:eventCategory:eventPoints:attributes:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.136
+_fireLinkClick:linkName:link:.tlfDebug
 _OBJC_SELECTOR_REFERENCES_.144
-_OBJC_SELECTOR_REFERENCES_.146
-_OBJC_SELECTOR_REFERENCES_.148
+_fireImpression:cmsp:cmre:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.152
+_activateClientId:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.154
+_resetToDefaultClientId.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.156
+_setOptOut:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.158
+_getOptOut.tlfDebug
 __OBJC_$_CLASS_METHODS_DigitalAnalytics
 __OBJC_METACLASS_RO_$_DigitalAnalytics
 __OBJC_CLASS_RO_$_DigitalAnalytics
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DigitalAnalytics.m
+/Users/easdk/builds/workspace/iOS_DA_PullRequest_Check_develop/DAModBuild/iOS-SDK/iOSSrc/DAMod/DAMod/DigitalAnalytics.m
 DAMod/DigitalAnalytics.m
 +[DAMod sharedInstance]
 ___23+[DAMod sharedInstance]_block_invoke
@@ -348,70 +384,147 @@ ___23+[DAMod sharedInstance]_block_invoke
 -[DAMod optOutModeStr]
 -[DAMod setOptOutModeStr:]
 -[DAMod .cxx_destruct]
+_sharedInstance.tlfDebug
+_init.tlfDebug
 _OBJC_CLASSLIST_REFERENCES_$_.17
-_OBJC_CLASSLIST_REFERENCES_$_.22
-_OBJC_CLASSLIST_REFERENCES_$_.25
-_OBJC_SELECTOR_REFERENCES_.29
-_OBJC_SELECTOR_REFERENCES_.31
-_OBJC_CLASSLIST_REFERENCES_$_.40
-_OBJC_SELECTOR_REFERENCES_.42
-_OBJC_SELECTOR_REFERENCES_.44
-_OBJC_SELECTOR_REFERENCES_.50
-_OBJC_CLASSLIST_REFERENCES_$_.51
-_OBJC_SELECTOR_REFERENCES_.53
-_OBJC_SELECTOR_REFERENCES_.56
-_OBJC_CLASSLIST_REFERENCES_$_.63
+_OBJC_SELECTOR_REFERENCES_.19
+_start.tlfDebug
+_OBJC_CLASSLIST_REFERENCES_$_.32
+_OBJC_SELECTOR_REFERENCES_.34
+_OBJC_SELECTOR_REFERENCES_.36
+_OBJC_CLASSLIST_REFERENCES_$_.37
+_start.tlfDebug.40
+_OBJC_CLASSLIST_REFERENCES_$_.43
+_OBJC_SELECTOR_REFERENCES_.51
+_start.tlfDebug.54
+_OBJC_CLASSLIST_REFERENCES_$_.61
+_OBJC_SELECTOR_REFERENCES_.63
 _OBJC_SELECTOR_REFERENCES_.65
-_OBJC_SELECTOR_REFERENCES_.69
-_OBJC_SELECTOR_REFERENCES_.71
-_OBJC_SELECTOR_REFERENCES_.73
-_OBJC_SELECTOR_REFERENCES_.75
-_OBJC_SELECTOR_REFERENCES_.77
-_OBJC_SELECTOR_REFERENCES_.79
-_OBJC_SELECTOR_REFERENCES_.81
-_OBJC_CLASSLIST_REFERENCES_$_.84
+_start.tlfDebug.66
+_start.tlfDebug.69
+_start.tlfDebug.72
+_OBJC_SELECTOR_REFERENCES_.74
+_stop.tlfDebug
+_stop.tlfDebug.77
+_stop.tlfDebug.80
+_OBJC_SELECTOR_REFERENCES_.82
+_OBJC_SELECTOR_REFERENCES_.84
+_newSession.tlfDebug
+_newSession.tlfDebug.87
+_OBJC_CLASSLIST_REFERENCES_$_.88
 _OBJC_SELECTOR_REFERENCES_.90
-_OBJC_SELECTOR_REFERENCES_.104
-_OBJC_CLASSLIST_REFERENCES_$_.111
-_OBJC_SELECTOR_REFERENCES_.117
-_OBJC_SELECTOR_REFERENCES_.129
+_OBJC_CLASSLIST_REFERENCES_$_.91
+_OBJC_SELECTOR_REFERENCES_.93
+_resetSession.tlfDebug
+_resetSession.tlfDebug.96
+_enable.tlfDebug
+_enable.tlfDebug.99
+_OBJC_SELECTOR_REFERENCES_.101
+_disable.tlfDebug
+_disable.tlfDebug.106
+_OBJC_CLASSLIST_REFERENCES_$_.109
+_OBJC_SELECTOR_REFERENCES_.111
+_settingsBundlePath.tlfDebug
+_settingsBundlePath.tlfDebug.122
+_settingsBundlePath.tlfDebug.125
+_settingsBundlePath.tlfDebug.128
+_OBJC_SELECTOR_REFERENCES_.130
+_OBJC_SELECTOR_REFERENCES_.134
+_constraintsFor:.tlfDebug
+_canFire.tlfDebug
 _OBJC_SELECTOR_REFERENCES_.149
-_OBJC_SELECTOR_REFERENCES_.151
-_OBJC_SELECTOR_REFERENCES_.155
-_OBJC_SELECTOR_REFERENCES_.165
+_canFire.tlfDebug.150
+_canFire.tlfDebug.153
+_networkReachabilityChanged:.tlfDebug
+_networkReachabilityChanged:.tlfDebug.156
+_networkReachabilityChanged:.tlfDebug.159
+_networkReachabilityChanged:.tlfDebug.162
+_networkReachabilityChanged:.tlfDebug.165
 _OBJC_SELECTOR_REFERENCES_.167
 _OBJC_SELECTOR_REFERENCES_.169
-_OBJC_CLASSLIST_REFERENCES_$_.174
-_OBJC_SELECTOR_REFERENCES_.176
-_OBJC_SELECTOR_REFERENCES_.178
-_OBJC_SELECTOR_REFERENCES_.180
-_OBJC_CLASSLIST_REFERENCES_$_.185
-_OBJC_SELECTOR_REFERENCES_.187
-_OBJC_SELECTOR_REFERENCES_.189
-_OBJC_SELECTOR_REFERENCES_.191
-_OBJC_SELECTOR_REFERENCES_.193
-_OBJC_SELECTOR_REFERENCES_.195
-_OBJC_SELECTOR_REFERENCES_.197
-_OBJC_CLASSLIST_REFERENCES_$_.198
+_OBJC_SELECTOR_REFERENCES_.175
+_OBJC_SELECTOR_REFERENCES_.179
+_OBJC_CLASSLIST_REFERENCES_$_.182
+_OBJC_SELECTOR_REFERENCES_.184
+_OBJC_SELECTOR_REFERENCES_.186
+_OBJC_SELECTOR_REFERENCES_.190
+_firePageView:cg:se:sr:attributes:cm_mmc:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.194
+_fireTechnicalProperties:cg:se:sr:attributes:cm_mmc:.tlfDebug
 _OBJC_SELECTOR_REFERENCES_.200
-_OBJC_SELECTOR_REFERENCES_.202
-_OBJC_SELECTOR_REFERENCES_.204
-_OBJC_SELECTOR_REFERENCES_.206
-_OBJC_SELECTOR_REFERENCES_.212
-_OBJC_CLASSLIST_REFERENCES_$_.213
-_OBJC_SELECTOR_REFERENCES_.217
-_OBJC_SELECTOR_REFERENCES_.219
-_OBJC_SELECTOR_REFERENCES_.223
-_OBJC_CLASSLIST_REFERENCES_$_.226
-_OBJC_SELECTOR_REFERENCES_.228
-_OBJC_SELECTOR_REFERENCES_.230
-_OBJC_SELECTOR_REFERENCES_.234
+_fireProductView:pr:pm:cg:attributes:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.208
+_fireShopAction5:pm:qt:bp:cg:cc:attributes:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.216
+_fireShopAction9:pm:qt:bp:cg:on:tr:cd:cc:attributes:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.220
+_fireOrder:tr:sg:cd:ct:sa:zp:cc:attributes:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.222
+_fireRegistration:em:ct:sa:zp:cy:attributes:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.226
+_fireElement:ecat:attributes:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.232
+_fireConversionEvent:cat:ccid:cpt:attributes:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.236
+_fireLinkClick:nm:hr:.tlfDebug
 _OBJC_SELECTOR_REFERENCES_.238
-_OBJC_SELECTOR_REFERENCES_.242
-_OBJC_CLASSLIST_REFERENCES_$_.243
-_OBJC_SELECTOR_REFERENCES_.245
-_OBJC_SELECTOR_REFERENCES_.251
-_OBJC_SELECTOR_REFERENCES_.255
+_OBJC_SELECTOR_REFERENCES_.240
+_fireImpression:sp:re:.tlfDebug
+_isRequiredStringParamPassed:paramDescription:.tlfDebug
+_isRequiredStringParamPassed:paramDescription:.tlfDebug.243
+_OBJC_SELECTOR_REFERENCES_.247
+_OBJC_CLASSLIST_REFERENCES_$_.248
+_OBJC_SELECTOR_REFERENCES_.250
+_OBJC_SELECTOR_REFERENCES_.252
+_OBJC_SELECTOR_REFERENCES_.254
+_OBJC_CLASSLIST_REFERENCES_$_.259
+_postTagDictionary:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.263
+_postTagDictionary:.tlfDebug.264
+_OBJC_SELECTOR_REFERENCES_.268
+_OBJC_SELECTOR_REFERENCES_.270
+_OBJC_SELECTOR_REFERENCES_.272
+_postTagDictionary:.tlfDebug.273
+_postTagDictionary:.tlfDebug.274
+_postTagDictionary:.tlfDebug.275
+_OBJC_SELECTOR_REFERENCES_.277
+_OBJC_SELECTOR_REFERENCES_.279
+_postTagString:.tlfDebug
+_postTagString:.tlfDebug.280
+_postTagString:.tlfDebug.281
+_postTagString:.tlfDebug.282
+_postTagString:.tlfDebug.283
+_OBJC_CLASSLIST_REFERENCES_$_.284
+_OBJC_SELECTOR_REFERENCES_.286
+_OBJC_SELECTOR_REFERENCES_.288
+_OBJC_SELECTOR_REFERENCES_.290
+_OBJC_SELECTOR_REFERENCES_.292
+_httpHeadersForSessionId:andJson:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.298
+_OBJC_CLASSLIST_REFERENCES_$_.299
+_OBJC_SELECTOR_REFERENCES_.303
+_OBJC_SELECTOR_REFERENCES_.305
+_OBJC_SELECTOR_REFERENCES_.309
+_OBJC_CLASSLIST_REFERENCES_$_.312
+_OBJC_SELECTOR_REFERENCES_.314
+_OBJC_SELECTOR_REFERENCES_.316
+_technicalPropertiesHeaders.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.320
+_deviceModel.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.324
+_deviceType.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.328
+_OBJC_CLASSLIST_REFERENCES_$_.329
+_OBJC_SELECTOR_REFERENCES_.331
+_isTechnicalPropertiesTagJson:.tlfDebug
+_setActiveClientId:.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.339
+_setActiveClientId:.tlfDebug.340
+_setActiveClientId:.tlfDebug.345
+_setActiveClientId:.tlfDebug.348
+_clearActiveClientId.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.350
+_isOptOutAnonymous.tlfDebug
 __OBJC_$_CLASS_METHODS_DAMod
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_NSObject
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_OPT_NSObject
@@ -439,7 +552,7 @@ _OBJC_IVAR_$_DAMod.optOutModeStr
 __OBJC_$_INSTANCE_VARIABLES_DAMod
 __OBJC_$_PROP_LIST_DAMod
 __OBJC_CLASS_RO_$_DAMod
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAMod.m
+/Users/easdk/builds/workspace/iOS_DA_PullRequest_Check_develop/DAModBuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAMod.m
 DAMod/DAMod.m
 __23+[DAMod sharedInstance]_block_invoke
 +[DAModSession sharedInstance]
@@ -461,21 +574,34 @@ ___30+[DAModSession sharedInstance]_block_invoke
 -[DAModSession cjsid]
 -[DAModSession .cxx_destruct]
 _OBJC_SELECTOR_REFERENCES_.32
-_OBJC_CLASSLIST_REFERENCES_$_.33
-_OBJC_SELECTOR_REFERENCES_.37
-_OBJC_SELECTOR_REFERENCES_.49
-_OBJC_SELECTOR_REFERENCES_.51
-_OBJC_CLASSLIST_REFERENCES_$_.52
+_sessionDirectoryPath.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.50
+_sessionDirectoryExists.tlfDebug
+_sessionFilePath.tlfDebug
 _OBJC_SELECTOR_REFERENCES_.54
-_OBJC_CLASSLIST_REFERENCES_$_.55
-_OBJC_SELECTOR_REFERENCES_.57
-_OBJC_SELECTOR_REFERENCES_.59
-_OBJC_SELECTOR_REFERENCES_.61
-_OBJC_SELECTOR_REFERENCES_.63
-_OBJC_CLASSLIST_REFERENCES_$_.64
-_OBJC_CLASSLIST_REFERENCES_$_.69
-_OBJC_CLASSLIST_REFERENCES_$_.82
-_OBJC_SELECTOR_REFERENCES_.84
+_sessionFileExists.tlfDebug
+_OBJC_SELECTOR_REFERENCES_.58
+_createSessionDirectory.tlfDebug
+_createSessionDirectory.tlfDebug.63
+_OBJC_SELECTOR_REFERENCES_.67
+_OBJC_CLASSLIST_REFERENCES_$_.68
+_OBJC_CLASSLIST_REFERENCES_$_.71
+_OBJC_SELECTOR_REFERENCES_.73
+_OBJC_SELECTOR_REFERENCES_.75
+_contentsOfSessionFile.tlfDebug
+_contentsOfSessionFile.tlfDebug.78
+_OBJC_SELECTOR_REFERENCES_.80
+_OBJC_CLASSLIST_REFERENCES_$_.83
+_OBJC_SELECTOR_REFERENCES_.85
+_OBJC_SELECTOR_REFERENCES_.92
+_OBJC_SELECTOR_REFERENCES_.96
+_updateSessionFile.tlfDebug
+_updateSessionFile.tlfDebug.99
+_newUserId.tlfDebug
+_newSessionId.tlfDebug
+_OBJC_CLASSLIST_REFERENCES_$_.104
+_OBJC_SELECTOR_REFERENCES_.106
+_OBJC_SELECTOR_REFERENCES_.108
 __OBJC_$_CLASS_METHODS_DAModSession
 __OBJC_METACLASS_RO_$_DAModSession
 __OBJC_$_INSTANCE_METHODS_DAModSession
@@ -484,6 +610,6 @@ _OBJC_IVAR_$_DAModSession.cjsid
 __OBJC_$_INSTANCE_VARIABLES_DAModSession
 __OBJC_$_PROP_LIST_DAModSession
 __OBJC_CLASS_RO_$_DAModSession
-/Users/easdk/builds/workspace/experience-analytics-sdk/iOS/DA_15_0_iPhone_8_Plus_SQ/DABuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAModSession.m
+/Users/easdk/builds/workspace/iOS_DA_PullRequest_Check_develop/DAModBuild/iOS-SDK/iOSSrc/DAMod/DAMod/DAModSession.m
 DAMod/DAModSession.m
 __30+[DAModSession sharedInstance]_block_invoke
