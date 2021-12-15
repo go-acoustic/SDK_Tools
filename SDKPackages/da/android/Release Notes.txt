@@ -1,5 +1,5 @@
 ###############################################################################################
-# Copyright (C) 2020 Acoustic, L.P. All rights reserved.
+# Copyright (C) 2021 Acoustic, L.P. All rights reserved.
 # 
 # NOTICE: This file contains material that is confidential and proprietary to
 # Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -7,6 +7,75 @@
 # Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
 # prohibited.
 ###############################################################################################
+
+December 15 2021 DigitalAnalytics Module 1.1.33
+
+DigitalAnalytics Release
+Enhancements
+
+- New build supporting from 16 to 29.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+
+December 15 2021 EOCore Module 2.0.91
+
+EOCore Release
+Enhancements
+
+- Added a new property "DisableCookieManager" to handle CookieManager use cases.
+
+Bug Fixes
+
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+Known Issues
+
+- None.
+
+
+
+September 23 2021 EOCore Module 2.0.84
+
+EOCore Release
+Enhancements
+
+- Added a new property "DisableCookieManager" to handle CookieManager use cases.
+
+Bug Fixes
+
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+Known Issues
+
+- None.
+
+
+
+February 10 2021 EOCore Module 2.0.79
+
+EOCore Release
+Enhancements
+
+- Changed to support Android Enhance Image Replay feature with per screen configuration.
+- Changed to support Sha256 and Sha512 image hashing.
+
+Bug Fixes
+
+- Fixed an issue when instrument with Tealeaf & DA in the sample app when posting data.
+- Secure cookie.
+
+Known Issues
+
+- None.
+
+
 
 August 11 2020 DigitalAnalytics Module 1.1.28
 
