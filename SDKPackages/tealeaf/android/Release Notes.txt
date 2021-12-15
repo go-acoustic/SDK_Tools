@@ -8,6 +8,25 @@
 # prohibited.
 ###############################################################################################
 
+December 15 2021 tealeafMD5 Module 1.0.11
+
+tealeafMD5 Release
+Enhancements
+
+- None.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
 December 15 2021 EOCore Module 2.0.91
 
 EOCore Release
