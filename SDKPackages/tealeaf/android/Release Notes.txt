@@ -8,6 +8,23 @@
 # prohibited.
 ###############################################################################################
 
+December 15 2021 EOCore Module 2.0.91
+
+EOCore Release
+Enhancements
+
+- Added a new property "DisableCookieManager" to handle CookieManager use cases.
+
+Bug Fixes
+
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+Known Issues
+
+- None.
+
+
+
 September 23 2021 Tealeaf Module 10.3.119
 
 Tealeaf Release
