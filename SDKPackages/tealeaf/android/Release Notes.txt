@@ -8,6 +8,44 @@
 # prohibited.
 ###############################################################################################
 
+December 30 2021 tealeafSHA Module 1.0.12
+
+tealeafSHA Release
+Enhancements
+
+- None.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
+December 30 2021 tealeafMD5 Module 1.0.12
+
+tealeafMD5 Release
+Enhancements
+
+- None.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
 December 30 2021 EOCore Module 2.0.93
 
 EOCore Release
