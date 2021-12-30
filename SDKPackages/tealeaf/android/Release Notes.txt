@@ -8,6 +8,52 @@
 # prohibited.
 ###############################################################################################
 
+December 30 2021 Tealeaf Module 10.3.121
+
+Tealeaf Release
+Enhancements
+
+- Adjust buildsystem.
+
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- On SaaS, replay of the attached Hybrid session does not scrolls to replay the gestures during replay resulting.
+- On Enhanced Replay, change events are not currently captured on Android SDK.
+- On SaaS, on Layout capture we are missing toggle control during session replay.
+- Tap Hold sometimes produces a type 11 gesture on Linear Layout.
+- On Android 10 device, replay page might contain blank region on the top.
+  Also Enhanced mobile replay for tap event might show Y-coordinate incorrectly.
+- Hybrid app using Google Webview creates multiple screenviews on AndroidX & Android 9.
+- Click event on the viewGroup on the android application does not highlight on both On-Prem and SaaS.
+- AspectJ plugin not compatible with Android Gradle Plugin 4.1.1 and above.
+
+
+
+December 30 2021 tealeafMD5 Module 1.0.12
+
+tealeafMD5 Release
+Enhancements
+
+- None.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
+
 December 15 2021 tealeafMD5 Module 1.0.12
 
 tealeafMD5 Release
