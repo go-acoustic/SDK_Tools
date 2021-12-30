@@ -8,6 +8,22 @@
 # prohibited.
 ###############################################################################################
 
+December 30 2021 DigitalAnalytics Module 1.1.36
+
+DigitalAnalytics Release
+Enhancements
+
+- Adjust buildsystem.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+
 December 15 2021 DigitalAnalytics Module 1.1.33
 
 DigitalAnalytics Release
