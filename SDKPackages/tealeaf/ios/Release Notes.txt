@@ -1,5 +1,5 @@
 ###############################################################################################
-# Copyright (C) 2021 Acoustic, L.P. All rights reserved.
+# Copyright (C) 2022 Acoustic, L.P. All rights reserved.
 # 
 # NOTICE: This file contains material that is confidential and proprietary to
 # Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -7,6 +7,25 @@
 # Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
 # prohibited.
 ###############################################################################################
+
+May 18 2022 TealeafSHA2Hash Module 1.0.25
+
+TealeafSHA2Hash Release
+Enhancements
+
+- None.
+
+
+Bug Fixes
+
+- None.
+
+
+Known Issues
+
+- None.
+
+
 
 December 10 2021 Tealeaf Module 10.6.144
 
