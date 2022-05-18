@@ -8,24 +8,6 @@
 # prohibited.
 ###############################################################################################
 
-May 18 2022 TealeafSHA2Hash Module 1.0.25
-
-TealeafSHA2Hash Release
-Enhancements
-
-- None.
-
-
-Bug Fixes
-
-- None.
-
-
-Known Issues
-
-- None.
-
-
 
 December 10 2021 Tealeaf Module 10.6.144
 
