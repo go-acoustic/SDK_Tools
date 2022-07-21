@@ -62,6 +62,60 @@ Known Issues:
 
 
 
+July 21 2022 Tealeaf Module 10.6.202
+
+Tealeaf Release
+Bug Fixes:
+
+- Fixed an issue with capture of WKWebview being fired to early.
+- UIC queued data for WKWebview was being sent back in wrong order. Made an adjust to javascript script.
+- Update syntax due to swift issue with NSNumber during json creation.
+- Killswitch returns sometimes too slow and page displayed is not captured.
+- Gestures should not be captures on Webviews.
+
+
+Improvements:
+
+- Add support to custom webviews that extend from WKWebView.
+- Adjusted masking performance and it is perferred to masking per page to spped up performance. It can be indicated in TealeafLayoutConfig.json file.
+- In TealeafLayoutConfig, "IBMGlobalScreenSettings" changed to "GlobalScreenSettings".
+- Moved masking from TealeafBasicConfig to TealeafLayoutConfig.
+- Added extra debug information for WKWebview instrumentation. Just filter by "WKWebview:" in xcode console.
+- Add support for api calls for URLSessionDelegate.
+- New minimal os is 12.0 from 9.0 for library.
+- Correct name of page and get class name versus just getting UINavigationController.
+
+
+Our environment for this release:
+
+- Xcode 13.4
+- MacOS 12.4
+- iOS 12.x to 15.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues:
+
+- Captures gesture even when the gestureRecognizer is set to return 'NO', this is an Apple defect.
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- The pink boarder on Gestures screenview is off when captured using ER, because if timing or garbage collection.
+- Template issue - The back link is missing during capture on some screens Progressindicator, AlertViewController, Gestures screenview and picker view.
+- Template issue - Battery icon not visible in green anymore.
+- Improvement :- "connectionType" remains N/A if device is on WiFi on app start. 
+- DoPostOnScreenChange is not working as expected, because of temp queue.
+- Reporting of multiple carrier names in JSON if the device has Dual SIM is a beta feature.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Certain Alerts may appear correctly during replay.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS Multi Window apps are not YET supported.
+
+
+
 July 21 2022 EOCore Module 2.3.238
 
 EOCore Release
