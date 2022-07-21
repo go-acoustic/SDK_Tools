@@ -2,7 +2,7 @@
 //  EOPublicHeader.h
 //  EOCore
 //
-// Copyright (C) 2019 Acoustic, L.P. All rights reserved.
+// Copyright (C) 2022 Acoustic, L.P. All rights reserved.
 //
 // NOTICE: This file contains material that is confidential and proprietary to
 // Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -11,7 +11,7 @@
 // prohibited.
 //
 
-#define EOCORE_FRAMEWORK_VER @"2.3.185"
+#define EOCORE_FRAMEWORK_VER @"2.3.238"
 
 // Constants Config Items
 #define kEOConfig_CriticalBatteryLevel @"CriticalBatteryLevel"
@@ -36,7 +36,7 @@
 #define kEOConfig_PostMessageTimeInterval @"PostMessageTimeIntervals"
 #define kEOConfig_ManualPostEnabled @"ManualPostEnabled"
 #define kEOConfig_PostMessageTimeout @"PostMessageTimeout"
-#define kEOConfig_PostMessageURL @"PostMessageUrl"
+#define kEOConfig_PostMessageUrl @"PostMessageUrl"
 #define kEOConfig_CompressPostMessage @"CompressPostMessage"
 #define kEOConfig_URLEncoded @"URLEncoded"
 #define kEOConfig_CachingLevel @"CachingLevel"

@@ -8,6 +8,40 @@
 # prohibited.
 ###############################################################################################
 
+July 21 2022 EOCore Module 2.3.238
+
+EOCore Release
+Bug Fixes
+
+- Update syntax due to swift issue with NSNumber during json creation.
+
+
+Improvements:
+
+- New minimal os is 12.0 from 9.0 for library.
+- Add more debug information what is being used for configuration settings.
+
+
+Our environment for this release:
+
+- Xcode 13.4.1
+- MacOS 12.4
+- iOS 12.x to 15.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
 July 21 2022 DAMod Module 1.1.88
 
 DAMod Release
