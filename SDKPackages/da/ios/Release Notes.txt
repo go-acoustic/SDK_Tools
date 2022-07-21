@@ -8,6 +8,37 @@
 # prohibited.
 ###############################################################################################
 
+July 21 2022 DAMod Module 1.1.90
+
+DAMod Release
+Bug Fixes
+
+- None.
+
+
+Improvements:
+
+- New minimal os is 12.0 from 9.0 for library.
+
+
+Our environment for this release:
+
+- Xcode 13.4.1
+- MacOS 12.4
+- iOS 12.x to 15.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- None.
+
+
 July 21 2022 EOCore Module 2.3.238
 
 EOCore Release
