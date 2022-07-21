@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		QQnKUNv8zLS9zALPkcEj+MYmvck=
+		Led4n4ngUyta5fPClVC9aNPaBp4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -25,10 +25,6 @@
 	<dict>
 		<key>Headers/TealeafMD5Hash.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			akgkAHmpMgKQWonbFVB6PRloxyY=
-			</data>
 			<key>hash2</key>
 			<data>
 			orHyJEVw8Qt0am5y0y878vhB2mDKoEZSMs7ZKI0gLLc=
@@ -36,10 +32,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			VkMn7RQGbGwm9SlPJZ3m0YtjV8I=
-			</data>
 			<key>hash2</key>
 			<data>
 			qCZ+BBfgZ6rrZKaQoMFc1PRWLMFErmqsL8dPrypwmKg=
@@ -47,10 +39,6 @@
 		</dict>
 		<key>appenzeller_thumbnail.png</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			WLPKOMvMJz6Ey+d5eZ16RytAXzU=
-			</data>
 			<key>hash2</key>
 			<data>
 			9hayPI6adxfL+nUHj/0aEEIbMPoq2v0xFjtl4x2ZzBE=
