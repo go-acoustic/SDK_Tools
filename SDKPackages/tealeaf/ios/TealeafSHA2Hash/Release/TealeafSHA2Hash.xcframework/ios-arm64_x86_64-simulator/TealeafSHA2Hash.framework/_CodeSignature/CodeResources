@@ -10,7 +10,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		EevG8cwGCyGVUCldqqMovNIofYs=
+		ep5X5RshlX4uTauIMHsr3z15E/4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -21,10 +21,6 @@
 	<dict>
 		<key>Headers/TealeafSHA2Hash.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			2h/h84xsTB8oopYwuhrM75qna0o=
-			</data>
 			<key>hash2</key>
 			<data>
 			E3ZuCfwIot60FGqMMjfyOno5YnBYZMJxUxiN59A+UxY=
@@ -32,10 +28,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Jz5x4O0iHl60dxgPRZjppq0uq2M=
-			</data>
 			<key>hash2</key>
 			<data>
 			5p05uPiXImP/0p1ybup59+9AWcx6vVwTNcT81DKnwhg=
