@@ -6,7 +6,7 @@
 	<dict>
 		<key>DAMod.bundle/AdvancedConfig.json</key>
 		<data>
-		Mt5BPodrzwMq9VmEbqPducceFFg=
+		fnK9/Yshl4Ds85RABztvWolQeE0=
 		</data>
 		<key>DAMod.bundle/BasicConfig.plist</key>
 		<data>
@@ -18,7 +18,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		zX9N//+1wfyTYVhjN2OY26jO+QQ=
+		06d8a/byAM11ESMPP7hzsVx0CJM=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -29,21 +29,13 @@
 	<dict>
 		<key>DAMod.bundle/AdvancedConfig.json</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			Mt5BPodrzwMq9VmEbqPducceFFg=
-			</data>
 			<key>hash2</key>
 			<data>
-			3vAd2Ec8UJL4G2XzdaVjva6aTQyvHrzRz0IycxAf3rE=
+			01v806WM8V8Eh4y4eraqSUy5jIlN5duiLVTOjkfMULI=
 			</data>
 		</dict>
 		<key>DAMod.bundle/BasicConfig.plist</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			dSUb31j0Ow9kLmBTaatXBmkiPjU=
-			</data>
 			<key>hash2</key>
 			<data>
 			4YwPAickcYzZLH0kgqiKCB/u/f9sqUIvIIPeZ4bgmM0=
@@ -51,10 +43,6 @@
 		</dict>
 		<key>Headers/DigitalAnalytics.h</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			NnjrdDsUrysCJFPFK1/EdgHe/CI=
-			</data>
 			<key>hash2</key>
 			<data>
 			fxDKMXIdK9UxEArHXqz0I62NZcfwlhKPYlB86VgRKPo=
@@ -62,10 +50,6 @@
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
-			<key>hash</key>
-			<data>
-			AcaE5PufMW9yyEtJ52/YGZdpMrU=
-			</data>
 			<key>hash2</key>
 			<data>
 			Cg/SCItQs3mluAaNj3LSCC3bqBZKvId5+4LE0lgtcrQ=
