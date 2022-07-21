@@ -8,6 +8,38 @@
 # prohibited.
 ###############################################################################################
 
+July 21 2022 TealeafSHA2Hash Module 1.0.55
+
+TealeafSHA2Hash Release
+Bug Fixes
+
+- None.
+
+
+Improvements:
+
+- New minimal os is 12.0 from 9.0 for library.
+
+
+Our environment for this release:
+
+- Xcode 13.4.1
+- MacOS 12.4
+- iOS 12.x to 15.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- None.
+
+
+
 July 21 2022 TealeafMD5Hash Module 1.0.55
 
 TealeafMD5Hash Release
