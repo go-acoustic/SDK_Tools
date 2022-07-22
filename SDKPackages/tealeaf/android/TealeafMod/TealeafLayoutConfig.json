@@ -9,7 +9,7 @@
 ********************************************************************************************/
 {
   "AutoLayout": {
-    "IBMGlobalScreenSettings": {
+    "GlobalScreenSettings": {
       "ScreenChange": true,
       "DisplayName": "",
       "CaptureLayoutDelay": 500,

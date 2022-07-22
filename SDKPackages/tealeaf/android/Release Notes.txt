@@ -8,6 +8,41 @@
 # prohibited.
 ###############################################################################################
 
+July 22 2022 Tealeaf Module 10.3.274
+
+Tealeaf Release
+Enhancements
+
+- Replaced AsyncTask with Java Concurrency Library.
+- Added Accessibility object.
+- Upgraded to target API level 21 to 32.
+- Removed Teacuts library.  Automation integrated within TealeafMod, or instrument with new extension classes.
+- EditText auto instrumentation supported in TealeafMod.
+- Type 4 auto instrumentation supported in TealeafMod.
+- Google Webview auto instrumentation supported in TealeafMod.
+- Single Touch event auto instrumentation supported in TealeafMod.
+- Popup Dialog types including BottomSheetDialog simplified instrumentation steps.
+
+Bug Fixes
+
+- Improved performance.
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- On SaaS, replay of the attached Hybrid session does not scrolls to replay the gestures during replay resulting.
+- On Enhanced Replay, change events are not currently captured on Android SDK.
+- On SaaS, on Layout capture we are missing toggle control during session replay.
+- Tap Hold sometimes produces a type 11 gesture on Linear Layout.
+- On Android 10 device, replay page might contain blank region on the top.
+  Also Enhanced mobile replay for tap event might show Y-coordinate incorrectly.
+- Hybrid app using Google Webview creates multiple screenviews on AndroidX & Android 9.
+- Click event on the viewGroup on the android application does not highlight on both On-Prem and SaaS.
+- Popup Dialog might show transparent background color on replay page.
+- ClickEventEnabled might not work on RecyclerViews in popup dialog.
+
+
+
 July 22 2022 EOCore Module 2.0.288
 
 EOCore Release
