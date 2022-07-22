@@ -62,6 +62,24 @@ Known Issues
 
 
 
+July 22 2022 EOCore Module 2.0.288
+
+EOCore Release
+Enhancements
+
+- Upgraded to target API level 21 to 32.
+
+Bug Fixes
+
+- Fixed to support DA & Tealeaf libraries used in same app.
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+Known Issues
+
+- None.
+
+
+
 December 30 2021 EOCore Module 2.0.93
 
 EOCore Release
