@@ -8,6 +8,23 @@
 # prohibited.
 ###############################################################################################
 
+July 22 2022 DigitalAnalytics Module 1.1.199
+
+DigitalAnalytics Release
+Enhancements
+
+- Upgraded to API level 21-32.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+
+
 July 22 2022 EOCore Module 2.0.288
 
 EOCore Release
