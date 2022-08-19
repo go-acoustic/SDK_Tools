@@ -56,13 +56,12 @@ August 19 2022 EOCore Module 2.3.242
 EOCore Release
 Bug Fixes
 
-- Update syntax due to swift issue with NSNumber during json creation.
+- None.
 
 
 Improvements:
 
-- New minimal os is 12.0 from 9.0 for library.
-- Add more debug information what is being used for configuration settings.
+- None.
 
 
 Our environment for this release:
