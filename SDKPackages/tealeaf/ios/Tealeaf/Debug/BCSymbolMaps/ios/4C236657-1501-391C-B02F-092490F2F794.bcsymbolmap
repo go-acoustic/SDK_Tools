@@ -1047,6 +1047,10 @@ ___35+[TLFMaskingManager sharedInstance]_block_invoke
 -[TLFMaskingManager setTagRegexArray:]
 -[TLFMaskingManager valueRegexArray]
 -[TLFMaskingManager setValueRegexArray:]
+-[TLFMaskingManager accessibilityIdArray]
+-[TLFMaskingManager setAccessibilityIdArray:]
+-[TLFMaskingManager accessibilityLabelArray]
+-[TLFMaskingManager setAccessibilityLabelArray:]
 -[TLFMaskingManager currentTLFAutoLayoutConfig]
 -[TLFMaskingManager setCurrentTLFAutoLayoutConfig:]
 -[TLFMaskingManager .cxx_destruct]
@@ -1056,38 +1060,42 @@ _OBJC_SELECTOR_REFERENCES_.3
 _OBJC_CLASSLIST_REFERENCES_$_.6
 _updateMaskingSettings:.tlfDebug
 _updateMaskingSettings:.eoMiCloudSDKMachine
-_OBJC_CLASSLIST_REFERENCES_$_.39
-_OBJC_CLASSLIST_REFERENCES_$_.50
-_OBJC_CLASSLIST_REFERENCES_$_.61
+_OBJC_CLASSLIST_REFERENCES_$_.58
+_OBJC_CLASSLIST_REFERENCES_$_.69
+_OBJC_CLASSLIST_REFERENCES_$_.76
 _OBJC_CLASSLIST_REFERENCES_$_.115
+_OBJC_CLASSLIST_REFERENCES_$_.127
+_OBJC_SELECTOR_REFERENCES_.129
 _applyMaskToUIInputControl:andText:.tlfDebug
 _applyMaskToUIInputControl:andText:.eoMiCloudSDKMachine
-_OBJC_SELECTOR_REFERENCES_.127
-_OBJC_SELECTOR_REFERENCES_.129
-_applyMaskToUIInputControl:andText:.tlfDebug.130
-_applyMaskToUIInputControl:andText:.eoMiCloudSDKMachine.131
-_OBJC_CLASSLIST_REFERENCES_$_.145
-_OBJC_SELECTOR_REFERENCES_.147
-_OBJC_CLASSLIST_REFERENCES_$_.153
-_OBJC_CLASSLIST_REFERENCES_$_.158
-_OBJC_CLASSLIST_REFERENCES_$_.171
-_OBJC_SELECTOR_REFERENCES_.179
+_applyMaskToUIInputControl:andText:.tlfDebug.142
+_applyMaskToUIInputControl:andText:.eoMiCloudSDKMachine.143
+_OBJC_CLASSLIST_REFERENCES_$_.154
+_OBJC_CLASSLIST_REFERENCES_$_.157
+_OBJC_CLASSLIST_REFERENCES_$_.164
+_OBJC_CLASSLIST_REFERENCES_$_.165
 _willMask:withText:.tlfDebug
 _willMask:withText:.eoMiCloudSDKMachine
-_OBJC_SELECTOR_REFERENCES_.181
-_willMask:withText:.tlfDebug.182
-_willMask:withText:.eoMiCloudSDKMachine.183
+_willMask:withText:.tlfDebug.172
+_willMask:withText:.eoMiCloudSDKMachine.173
+_OBJC_CLASSLIST_REFERENCES_$_.174
+_OBJC_CLASSLIST_REFERENCES_$_.187
+_OBJC_SELECTOR_REFERENCES_.189
+_willMask:withText:.tlfDebug.196
+_willMask:withText:.eoMiCloudSDKMachine.197
+_willMask:withText:.tlfDebug.200
+_willMask:withText:.eoMiCloudSDKMachine.201
 _applyMaskingLevel3ToItemValue:.tlfDebug
 _applyMaskingLevel3ToItemValue:.eoMiCloudSDKMachine
-_OBJC_SELECTOR_REFERENCES_.189
-_OBJC_SELECTOR_REFERENCES_.191
-_OBJC_CLASSLIST_REFERENCES_$_.200
+_OBJC_CLASSLIST_REFERENCES_$_.218
 __OBJC_$_CLASS_METHODS_TLFMaskingManager
 __OBJC_METACLASS_RO_$_TLFMaskingManager
 __OBJC_$_INSTANCE_METHODS_TLFMaskingManager
 _OBJC_IVAR_$_TLFMaskingManager._currentMaskingLevelsDictionary
 _OBJC_IVAR_$_TLFMaskingManager._tagRegexArray
 _OBJC_IVAR_$_TLFMaskingManager._valueRegexArray
+_OBJC_IVAR_$_TLFMaskingManager._accessibilityIdArray
+_OBJC_IVAR_$_TLFMaskingManager._accessibilityLabelArray
 _OBJC_IVAR_$_TLFMaskingManager._currentTLFAutoLayoutConfig
 __OBJC_$_INSTANCE_VARIABLES_TLFMaskingManager
 __OBJC_$_PROP_LIST_TLFMaskingManager
@@ -1210,11 +1218,11 @@ _logEvent:values:.eoMiCloudSDKMachine
 _OBJC_CLASSLIST_REFERENCES_$_.15
 _logEvent:values:.tlfDebug.57
 _logEvent:values:.eoMiCloudSDKMachine.58
-_OBJC_CLASSLIST_REFERENCES_$_.69
 _OBJC_CLASSLIST_REFERENCES_$_.73
 _OBJC_CLASSLIST_REFERENCES_$_.87
 _OBJC_CLASSLIST_REFERENCES_$_.96
 ___block_descriptor_64_e8_32s40s48s56s_e5_v8?0l
+_OBJC_SELECTOR_REFERENCES_.127
 ___block_descriptor_72_e8_32s40s48s56s64s_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.128
 _logScreenLayoutWithViewController:andTLFOptions:withPlaceHolder:shouldCreateLoadEvent:.tlfDebug
@@ -1285,6 +1293,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.12
 _enableTealeafFramework.tlfDebug
 _enableTealeafFramework.eoMiCloudSDKMachine
 _OBJC_CLASSLIST_REFERENCES_$_.25
+_OBJC_CLASSLIST_REFERENCES_$_.39
 _OBJC_CLASSLIST_REFERENCES_$_.79
 _startTealeafLibrary.tlfDebug
 _startTealeafLibrary.eoMiCloudSDKMachine
@@ -1304,7 +1313,6 @@ _startTealeafLibrary.tlfDebug.150
 _startTealeafLibrary.eoMiCloudSDKMachine.151
 _checkKillSwitch.tlfDebug
 _checkKillSwitch.eoMiCloudSDKMachine
-_OBJC_CLASSLIST_REFERENCES_$_.164
 _checkKillSwitch.tlfDebug.173
 _checkKillSwitch.eoMiCloudSDKMachine.174
 _checkKillSwitch.tlfDebug.179
@@ -1399,6 +1407,7 @@ __32+[TealeafLibrary sharedInstance]_block_invoke
 _initWithImageEnhancedReplay:.tlfDebug
 _initWithImageEnhancedReplay:.eoMiCloudSDKMachine
 _OBJC_SELECTOR_REFERENCES_.56
+_OBJC_CLASSLIST_REFERENCES_$_.61
 _OBJC_CLASSLIST_REFERENCES_$_.67
 _OBJC_CLASSLIST_REFERENCES_$_.72
 _addImageInfo:andScreenShot:.tlfDebug
@@ -1496,7 +1505,10 @@ _OBJC_CLASSLIST_REFERENCES_$_.119
 _addTLFMessage:forSessionId:.tlfDebug.133
 _addTLFMessage:forSessionId:.eoMiCloudSDKMachine.134
 _OBJC_CLASSLIST_REFERENCES_$_.146
+_OBJC_CLASSLIST_REFERENCES_$_.171
 _OBJC_CLASSLIST_REFERENCES_$_.173
+_OBJC_SELECTOR_REFERENCES_.179
+_OBJC_SELECTOR_REFERENCES_.181
 _addInCorrectReplayOrderToQueue:forSessionId:.tlfDebug
 _addInCorrectReplayOrderToQueue:forSessionId:.eoMiCloudSDKMachine
 _flushQueue:.tlfDebug
@@ -1541,6 +1553,7 @@ __37-[TLFMessageQueue flushQueueDelayed:]_block_invoke
 __33+[TLFMessageQueue sharedInstance]_block_invoke
 -[TLFCustomSwipeGestureData initWithGestureRecognizer:]
 -[TLFCustomSwipeGestureData endWithGestureRecognizer:]
+_OBJC_CLASSLIST_REFERENCES_$_.50
 __OBJC_METACLASS_RO_$_TLFCustomSwipeGestureData
 __OBJC_$_INSTANCE_METHODS_TLFCustomSwipeGestureData
 __OBJC_CLASS_RO_$_TLFCustomSwipeGestureData
@@ -1901,8 +1914,6 @@ ___38+[TLFScreenViewManager sharedInstance]_block_invoke
 -[TLFScreenViewManager .cxx_destruct]
 _getLayoutConfigFor:.tlfDebug
 _getLayoutConfigFor:.eoMiCloudSDKMachine
-_OBJC_CLASSLIST_REFERENCES_$_.58
-_OBJC_CLASSLIST_REFERENCES_$_.76
 _currentScreenLayoutConfig.tlfDebug
 _currentScreenLayoutConfig.eoMiCloudSDKMachine
 _previousScreenLayoutConfig.tlfDebug
@@ -1995,6 +2006,7 @@ _getWorklightAndUICHeadersForSessionId:andJson:.tlfDebug.176
 _getWorklightAndUICHeadersForSessionId:andJson:.eoMiCloudSDKMachine.177
 _getSaasHeadersForSessionId:andJson:.tlfDebug
 _getSaasHeadersForSessionId:andJson:.eoMiCloudSDKMachine
+_OBJC_SELECTOR_REFERENCES_.191
 _getSaasHeadersForSessionId:andJson:.tlfDebug.194
 _getSaasHeadersForSessionId:andJson:.eoMiCloudSDKMachine.195
 _getSaasHeadersForSessionId:andJson:.tlfDebug.200
@@ -2232,7 +2244,6 @@ _OBJC_CLASSLIST_REFERENCES_$_.86
 _OBJC_CLASSLIST_REFERENCES_$_.89
 _initWithAction:to:from:forEvent:.tlfDebug
 _initWithAction:to:from:forEvent:.eoMiCloudSDKMachine
-_OBJC_CLASSLIST_REFERENCES_$_.157
 _OBJC_CLASSLIST_REFERENCES_$_.176
 _OBJC_CLASSLIST_REFERENCES_$_.181
 _OBJC_SELECTOR_REFERENCES_.197
@@ -2637,6 +2648,8 @@ ___46+[TLFUIEventsLogger logGestureWithDictionary:]_block_invoke.180
 +[TLFUIEventsLogger logUIAlertAction:view:]
 _shouldLogGesture:.tlfDebug
 _shouldLogGesture:.eoMiCloudSDKMachine
+_OBJC_CLASSLIST_REFERENCES_$_.145
+_OBJC_SELECTOR_REFERENCES_.147
 ___block_descriptor_40_e8_32s_e5_v8?0l
 _OBJC_CLASSLIST_REFERENCES_$_.175
 _OBJC_SELECTOR_REFERENCES_.185
@@ -3161,6 +3174,7 @@ _userContentController:didReceiveScriptMessage:.tlfDebug
 _userContentController:didReceiveScriptMessage:.eoMiCloudSDKMachine
 _userContentController:didReceiveScriptMessage:.tlfDebug.142
 _userContentController:didReceiveScriptMessage:.eoMiCloudSDKMachine.143
+_OBJC_CLASSLIST_REFERENCES_$_.158
 _OBJC_CLASSLIST_REFERENCES_$_.177
 _userContentController:didReceiveScriptMessage:.tlfDebug.188
 _userContentController:didReceiveScriptMessage:.eoMiCloudSDKMachine.189
@@ -3799,8 +3813,8 @@ _textFieldTextDidEndEditingNotificationForcedOn:.tlfDebug
 _textFieldTextDidEndEditingNotificationForcedOn:.eoMiCloudSDKMachine
 _textFieldTextDidEndEditingNotificationForcedOn:.tlfDebug.103
 _textFieldTextDidEndEditingNotificationForcedOn:.eoMiCloudSDKMachine.104
-_textFieldTextDidEndEditingNotificationForcedOn:.tlfDebug.120
-_textFieldTextDidEndEditingNotificationForcedOn:.eoMiCloudSDKMachine.121
+_textFieldTextDidEndEditingNotificationForcedOn:.tlfDebug.124
+_textFieldTextDidEndEditingNotificationForcedOn:.eoMiCloudSDKMachine.125
 _textFieldTextDidEndEditingNotificationForcedOn:.tlfDebug.134
 _textFieldTextDidEndEditingNotificationForcedOn:.eoMiCloudSDKMachine.135
 _textFieldTextDidEndEditingNotificationForcedOn:.tlfDebug.140
@@ -3858,7 +3872,6 @@ _initWithButton:andZIndex:andControlsDict:.tlfDebug
 _initWithButton:andZIndex:andControlsDict:.eoMiCloudSDKMachine
 _OBJC_CLASSLIST_REFERENCES_$_.140
 _OBJC_CLASSLIST_REFERENCES_$_.147
-_OBJC_CLASSLIST_REFERENCES_$_.154
 _initWithTabBar:andButtonIndex:andZIndex:.tlfDebug
 _initWithTabBar:andButtonIndex:andZIndex:.eoMiCloudSDKMachine
 _OBJC_IVAR_$_TLFL_Button._buttonType
@@ -3918,7 +3931,6 @@ _viewController:viewDidAppear:isAlertUnload:baseAlertName:.tlfDebug.196
 _viewController:viewDidAppear:isAlertUnload:baseAlertName:.eoMiCloudSDKMachine.197
 _viewController:viewDidAppear:isAlertUnload:baseAlertName:.tlfDebug.204
 _viewController:viewDidAppear:isAlertUnload:baseAlertName:.eoMiCloudSDKMachine.205
-_OBJC_CLASSLIST_REFERENCES_$_.218
 _OBJC_CLASSLIST_REFERENCES_$_.225
 _viewController:viewDidAppear:isAlertUnload:baseAlertName:.tlfDebug.230
 _viewController:viewDidAppear:isAlertUnload:baseAlertName:.eoMiCloudSDKMachine.231

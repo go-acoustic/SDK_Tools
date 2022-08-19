@@ -41,7 +41,7 @@
 	<key>printScreen</key>
 	<integer>2</integer>
 	<key>ScreenshotFormat</key>
-	<string>png</string>
+	<string>jpg</string>
 	<key>SessionTimeout</key>
 	<integer>30</integer>
 	<key>SessionizationCookieName</key>
