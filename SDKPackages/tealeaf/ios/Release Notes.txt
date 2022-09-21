@@ -8,6 +8,53 @@
 # prohibited.
 ###############################################################################################
 
+September 21 2022 Tealeaf Module 10.6.223
+
+Tealeaf Release
+Bug Fixes:
+
+- Adjust display name for UITabBarController.
+- Adjust for a killswitch url which is not reachable and disable library.
+- Adjust to disable library if no capture is needed. There was an issue with webviews.
+- Adjust for wkwebview id creation before being added to layout. This fixes issues with dom data not matching webview id from type 10 data for replay.
+
+
+Improvements:
+
+- XCTealeafReactNative will updated from iOS 10 to iOS 12 as minimal version.
+
+
+Our environment for this release:
+
+- Xcode 13.4.1
+- MacOS 12.6
+- iOS 12.x to 15.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues:
+
+- Captures gesture even when the gestureRecognizer is set to return 'NO', this is an Apple defect.
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- The pink boarder on Gestures screenview is off when captured using ER, because if timing or garbage collection.
+- Template issue - The back link is missing during capture on some screens Progressindicator, AlertViewController, Gestures screenview and picker view.
+- Template issue - Battery icon not visible in green anymore.
+- Improvement :- "connectionType" remains N/A if device is on WiFi on app start. 
+- DoPostOnScreenChange is not working as expected, because of temp queue.
+- Reporting of multiple carrier names in JSON if the device has Dual SIM is a beta feature.
+- React Native has an issue for dynamic builds. We will use static version instead.
+- Certain Alerts may appear correctly during replay.
+- If a View Controller has more than one WKWebViews, gestures may be off by a few pixels
+- iPadOS Multi Window apps are not YET supported.
+
+
+
+
 September 21 2022 EOCore Module 2.3.246
 
 EOCore Release
