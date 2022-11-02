@@ -8,6 +8,33 @@
 # prohibited.
 ###############################################################################################
 
+November 1 2022 EOCore Module 2.0.295
+
+EOCore Release
+Bug Fixes
+
+- Fixed to support DA & Tealeaf libraries used in same app.
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+
+Improvements
+
+- Add support for remote configuration.
+- Upgraded to target API level 21 to 32.
+
+
+Our environment for this release:
+
+- Android Studio Dolphin 2021.3.1
+- MacOS 12.6
+- target API level 21 to 32
+
+
+Known Issues
+
+- None.
+
+
 July 22 2022 Tealeaf Module 10.3.274
 
 Tealeaf Release
@@ -40,6 +67,78 @@ Known Issues
 - Click event on the viewGroup on the android application does not highlight on both On-Prem and SaaS.
 - Popup Dialog might show transparent background color on replay page.
 - ClickEventEnabled might not work on RecyclerViews in popup dialog.
+
+
+
+July 22 2022 EOCore Module 2.0.288
+
+EOCore Release
+Enhancements
+
+- Upgraded to target API level 21 to 32.
+
+Bug Fixes
+
+- Fixed to support DA & Tealeaf libraries used in same app.
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+Known Issues
+
+- None.
+
+
+
+July 22 2022 EOCore Module 2.0.288
+
+EOCore Release
+Enhancements
+
+- Upgraded to target API level 21 to 32.
+
+Bug Fixes
+
+- Fixed to support DA & Tealeaf libraries used in same app.
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+Known Issues
+
+- None.
+
+
+
+July 22 2022 EOCore Module 2.0.288
+
+EOCore Release
+Enhancements
+
+- Upgraded to target API level 21 to 32.
+
+Bug Fixes
+
+- Fixed to support DA & Tealeaf libraries used in same app.
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+Known Issues
+
+- None.
+
+
+
+July 22 2022 EOCore Module 2.0.288
+
+EOCore Release
+Enhancements
+
+- Upgraded to target API level 21 to 32.
+
+Bug Fixes
+
+- Fixed to support DA & Tealeaf libraries used in same app.
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+Known Issues
+
+- None.
 
 
 
