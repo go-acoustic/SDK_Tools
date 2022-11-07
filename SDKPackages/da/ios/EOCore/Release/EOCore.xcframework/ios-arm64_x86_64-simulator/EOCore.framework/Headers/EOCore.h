@@ -153,9 +153,10 @@
 //network information
 - (kEONetworkStatus)currentNetworkStatus;
 - (NSString *)currentNetworkReachabilityName;
+- (NSString *)currentConnection;
 - (NSString *)currentConnectionType;
 - (NSString *)networkCarrierName;
--(NSMutableArray*)networkCarrierNames;
+- (NSMutableArray*)networkCarrierNames;
 - (NSString *)networkWiFiIPAddress;
 - (NSString *)networkIPAddress;
 - (NSString *)networkIPV6Address;
