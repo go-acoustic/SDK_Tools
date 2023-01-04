@@ -98,10 +98,16 @@
 - (BOOL)postMessage:(EOMessage *)message forModuleName:(NSString *)moduleName withSessionID:(NSString *)sessionID;
 
 /*!
- * @abstract Request to flush queues to their respective target urls.
+ * @abstract Request to flush queues to their respective target urls asynchronous manner.
  * @discussion Request a flush of all queues. These queues will be prepared and the flush will then happen in the background.
  */
 - (void)flushQueues;
+
+/*!
+ * @abstract Request to flush queues to their respective target urls synchronous manner.
+ * @discussion Request a flush of all queues. These queues will be prepared and the flush will then happen in the background.
+ */
+- (void)flushQueuesSynchronous;
 
 /*!
  * @abstract Gets the module's configuration item from AdvancedConfig.json or BasicConfig.plist that matches the specified key.

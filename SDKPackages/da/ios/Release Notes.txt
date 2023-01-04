@@ -1,5 +1,5 @@
 ###############################################################################################
-# Copyright (C) 2022 Acoustic, L.P. All rights reserved.
+# Copyright (C) 2023 Acoustic, L.P. All rights reserved.
 # 
 # NOTICE: This file contains material that is confidential and proprietary to
 # Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -7,6 +7,37 @@
 # Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
 # prohibited.
 ###############################################################################################
+
+January 04 2023 EOCore Module 2.3.257
+
+EOCore Release
+Bug Fixes
+
+- None.
+
+
+Improvements:
+
+- Add ability to post data during a fatalError in Swift via synchronous post.
+
+Our environment for this release:
+
+- Xcode 14.1
+- MacOS 13.0.1
+- iOS 12.x to 16.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
 
 
 November 08 2022 DAMod Module 1.1.99
@@ -43,7 +74,79 @@ Known Issues
 - None.
 
 
+November 08 2022 DAMod Module 1.1.93
+
+DAMod Release
+Bug Fixes
+
+- None.
+
+
+Improvements:
+
+- Updated to new Apple xcode 14 standards(https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes).
+	- No more bitcode, because bitcode is now deprecated, builds for iOS, tvOS, and watchOS no longer include bitcode by default. 
+	- Only arm64 & x86_64, building iOS projects with deployment targets for the armv7, armv7s, and i386 architectures is no longer supported.
+	- Building for deployment to OS releases older than macOS 10.13, iOS 11, tvOS 11, and watchOS 4 is no longer supported.
+
+
+Our environment for this release:
+
+- Xcode 14.0.1
+- MacOS 12.6
+- iOS 12.x to 16.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- None.
+
+
 November 08 2022 EOCore Module 2.3.253
+
+EOCore Release
+Bug Fixes
+
+- None.
+
+
+Improvements:
+
+- Add support for remote configuration.
+- Add support to report 5G connection.
+- Updated to new Apple xcode 14 standards(https://developer.apple.com/documentation/xcode-release-notes/xcode-14-release-notes).
+	- No more bitcode, because bitcode is now deprecated, builds for iOS, tvOS, and watchOS no longer include bitcode by default. 
+	- Only arm64 & x86_64, building iOS projects with deployment targets for the armv7, armv7s, and i386 architectures is no longer supported.
+	- Building for deployment to OS releases older than macOS 10.13, iOS 11, tvOS 11, and watchOS 4 is no longer supported.
+
+
+Our environment for this release:
+
+- Xcode 14.0.1
+- MacOS 12.6
+- iOS 12.x to 16.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
+November 07 2022 EOCore Module 2.3.253
 
 EOCore Release
 Bug Fixes
