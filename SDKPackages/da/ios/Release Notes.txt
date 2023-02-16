@@ -8,6 +8,39 @@
 # prohibited.
 ###############################################################################################
 
+February 16 2023 DAMod Module 1.1.101
+
+DAMod Release
+Bug Fixes
+
+- None.
+
+
+Improvements:
+
+- None.
+
+
+Our environment for this release:
+
+- Xcode 14.2
+- MacOS 13.2
+- iOS 12.x to 16.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- None.
+
+
+
+
 February 15 2023 EOCore Module 2.3.259
 
 EOCore Release
