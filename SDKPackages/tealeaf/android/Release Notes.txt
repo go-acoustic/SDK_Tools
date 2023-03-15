@@ -8,7 +8,7 @@
 # prohibited.
 ###############################################################################################
 
-March 14 2023 Tealeaf Module 10.3.329
+March 15 2023 Tealeaf Module 10.3.329
 
 Tealeaf Release
 Bug Fixes
@@ -40,6 +40,33 @@ Known Issues
 - Popup Dialog might show transparent background color on replay page.
 - ClickEventEnabled might not work on RecyclerViews in popup dialog.
 
+
+
+March 14 2023 EOCore Module 2.0.312
+
+EOCore Release
+Bug Fixes
+
+- Fixed to support DA & Tealeaf libraries used in same app.
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+
+Improvements
+
+- Add support for remote configuration.
+- Upgraded to target API level 21 to 33.
+
+
+Our environment for this release:
+
+- Android Studio Dolphin 2021.3.1
+- MacOS 12.6
+- target API level 21 to 32
+
+
+Known Issues
+
+- None.
 
 
 July 22 2022 Tealeaf Module 10.3.274
