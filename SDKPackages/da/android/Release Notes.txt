@@ -1,5 +1,5 @@
 ###############################################################################################
-# Copyright (C) 2022 Acoustic, L.P. All rights reserved.
+# Copyright (C) 2023 Acoustic, L.P. All rights reserved.
 # 
 # NOTICE: This file contains material that is confidential and proprietary to
 # Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -8,7 +8,7 @@
 # prohibited.
 ###############################################################################################
 
-November 1 2022 DigitalAnalytics Module 1.1.208
+March 14 2023 DigitalAnalytics Module 1.1.221
 
 DigitalAnalytics Release
 Enhancements
@@ -23,6 +23,33 @@ Known Issues
 
 - None.
 
+
+
+March 14 2023 EOCore Module 2.0.312
+
+EOCore Release
+Bug Fixes
+
+- Fixed to support DA & Tealeaf libraries used in same app.
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+
+
+Improvements
+
+- Add support for remote configuration.
+- Upgraded to target API level 21 to 33.
+
+
+Our environment for this release:
+
+- Android Studio Dolphin 2021.3.1
+- MacOS 12.6
+- target API level 21 to 32
+
+
+Known Issues
+
+- None.
 
 
 July 22 2022 DigitalAnalytics Module 1.1.199
