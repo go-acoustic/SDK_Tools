@@ -3,7 +3,7 @@
     "GlobalScreenSettings": {
       "ScreenChange": true,
       "DisplayName": "",
-      "CaptureLayoutDelay": 500,
+      "CaptureLayoutDelay": 0,
       "ScreenShot": true,
       "NumberOfWebViews": 0,
       "CaptureUserEvents": true,
@@ -21,41 +21,20 @@
         },
         "MaskIdList": [
           "textView1",
-          "login.password",
-          "editText*"
+          "login.password"
         ],
         "MaskValueList": [
           "^3[47][0-9]{13}$",
           "^4[0-9]{12}(?:[0-9]{3})?$"
         ],
         "MaskAccessibilityIdList": [
-          "*accessibility description",
+          "accessibility description",
           "myAccessId"
         ],
         "MaskAccessibilityLabelList": [
-          "*accessibility description",
-          "*label"
+          "label"
         ]
       }
-    },
-    "BaseFragment": {
-      "ScreenChange": false,
-      "DisplayName": "Base Fragment",
-      "CaptureLayoutDelay": 1
-    },
-    "ControlsActivity1": {
-      "ScreenChange": true,
-      "DisplayName": "C1",
-      "CaptureLayoutDelay": 1,
-      "Masking": {
-        "MaskIdList": [],
-        "MaskValueList": []
-      }
-    },
-    "EOCoreMockAppActivityLayout": {
-      "ScreenChange": true,
-      "DisplayName": "BaseTestPage",
-      "CaptureLayoutDelay": 1
     }
   },
   "AppendMapIds": {

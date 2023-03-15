@@ -8,31 +8,38 @@
 # prohibited.
 ###############################################################################################
 
-March 14 2023 EOCore Module 2.0.312
+March 14 2023 Tealeaf Module 10.3.329
 
-EOCore Release
+Tealeaf Release
 Bug Fixes
 
-- Fixed to support DA & Tealeaf libraries used in same app.
-- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
+- Minor changes.
 
 
 Improvements
-
-- Add support for remote configuration.
-- Upgraded to target API level 21 to 33.
-
+- Added support for Tealeaf.enable with Appkey and PostmessageURL.
+- Added support for Fragments auto instrumentation.
+- Added support for SearchView auto instrumentation.
 
 Our environment for this release:
 
-- Android Studio Dolphin 2021.3.1
-- MacOS 12.6
-- target API level 21 to 32
+-
 
 
 Known Issues
 
-- None.
+- Dual sim features are in beta. Example information using multiple carriers.
+- On SaaS, replay of the attached Hybrid session does not scrolls to replay the gestures during replay resulting.
+- On Enhanced Replay, change events are not currently captured on Android SDK.
+- On SaaS, on Layout capture we are missing toggle control during session replay.
+- Tap Hold sometimes produces a type 11 gesture on Linear Layout.
+- On Android 10 device, replay page might contain blank region on the top.
+  Also Enhanced mobile replay for tap event might show Y-coordinate incorrectly.
+- Hybrid app using Google Webview creates multiple screenviews on AndroidX & Android 9.
+- Click event on the viewGroup on the android application does not highlight on both On-Prem and SaaS.
+- Popup Dialog might show transparent background color on replay page.
+- ClickEventEnabled might not work on RecyclerViews in popup dialog.
+
 
 
 July 22 2022 Tealeaf Module 10.3.274
