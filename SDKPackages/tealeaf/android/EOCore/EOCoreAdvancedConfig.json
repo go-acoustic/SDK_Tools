@@ -6,7 +6,7 @@
     "CompressPostMessage": true,
     "DefaultOrientation": 0,
     "DisableCookieManager": false,
-    "LibraryVersion": "2.0.295",
+    "LibraryVersion": "2.0.312",
     "MNCMCC": {
         "00": "N/A",
         "20201": "Cosmote",
@@ -1501,7 +1501,7 @@
     "MaxNumberOfFilesToCache": 5,
     "MessageVersion": "6.0.0.0",
     "OrientationDelayNotificationToModules": 1000,
-    "OrientationSensorDelay": 3,
+    "OrientationSensorDelay": 100000,
     "PostMessageMaxBytesSize": 2048000,
     "PostMessageSocketTimeout": 3000,
     "PostMessageTimeout": 3000,

@@ -1,5 +1,5 @@
 ###############################################################################################
-# Copyright (C) 2022 Acoustic, L.P. All rights reserved.
+# Copyright (C) 2023 Acoustic, L.P. All rights reserved.
 # 
 # NOTICE: This file contains material that is confidential and proprietary to
 # Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -8,20 +8,20 @@
 # prohibited.
 ###############################################################################################
 
-November 1 2022 Tealeaf Module 10.3.294
+March 14 2023 EOCore Module 2.0.312
 
-Tealeaf Release
+EOCore Release
 Bug Fixes
 
-- PixelCopy needed for screenshot.
+- Fixed to support DA & Tealeaf libraries used in same app.
+- Fixed an issue when HTTPCookie is used by Volley HTTP client causing duplicate cookies.
 
 
 Improvements
 
 - Add support for remote configuration.
-- Per screen masking.
-- Add support for http URL connection type automation.
-- Add support for Chip and ChipGroup.
+- Upgraded to target API level 21 to 33.
+
 
 Our environment for this release:
 
@@ -32,18 +32,7 @@ Our environment for this release:
 
 Known Issues
 
-- Dual sim features are in beta. Example information using multiple carriers.
-- On SaaS, replay of the attached Hybrid session does not scrolls to replay the gestures during replay resulting.
-- On Enhanced Replay, change events are not currently captured on Android SDK.
-- On SaaS, on Layout capture we are missing toggle control during session replay.
-- Tap Hold sometimes produces a type 11 gesture on Linear Layout.
-- On Android 10 device, replay page might contain blank region on the top.
-  Also Enhanced mobile replay for tap event might show Y-coordinate incorrectly.
-- Hybrid app using Google Webview creates multiple screenviews on AndroidX & Android 9.
-- Click event on the viewGroup on the android application does not highlight on both On-Prem and SaaS.
-- Popup Dialog might show transparent background color on replay page.
-- ClickEventEnabled might not work on RecyclerViews in popup dialog.
-
+- None.
 
 
 July 22 2022 Tealeaf Module 10.3.274
