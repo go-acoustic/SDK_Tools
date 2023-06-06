@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2022 Acoustic, L.P. All rights reserved.
+// Copyright (C) 2023 Acoustic, L.P. All rights reserved.
 //
 // NOTICE: This file contains material that is confidential and proprietary to
 // Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -32,11 +32,26 @@
  */
 - (BOOL)enableTealeafFramework;
 
+/*!
+ * @abstract Turns on the Tealeaf framework
+ * @param appKey - The string representation of the application key.
+ * @param postUrl - The string representation of the post message URL, colloector, target page.
+ * @return Returns YES or NO based on whether the framework was successfully enabled or not and update values.
+ */
+- (BOOL)enableTealeafFramework:(NSString*)appKey withPostMessageUrl:(NSString*)postUrl;
+
 /**
  * @abstract Turns off the Tealeaf Framework.
  * @return Returns YES or NO based on whether the framework was successfully enabled or not.
  */
 - (BOOL)disableTealeafFramework;
+
+/*!
+ * @abstract Set up react native flag.
+ * @param isReactN - Whether it is a react native application.
+ * @return Returns YES or NO based on whether it is react native.
+ */
+- (BOOL)isReactNative:(BOOL)isReactN;
 
 /*!
  * @abstract Pauses capture of data on the Tealeaf framework
@@ -49,6 +64,13 @@
  * @return Returns YES or NO based on whether the framework was successfully resumed or not.
  */
 - (BOOL)resumeTealeaf;
+
+/**
+ * @abstract Resumes capture of data on the Tealeaf framework
+ * @param pageName - The current page name to be used.
+ * @return Returns YES or NO based on whether the framework was successfully resumed or not.
+ */
+- (BOOL)resumeTealeaf:(NSString*)pageName;
 
 /**
  Setup the Kill Switch URL. This is the URL to be checked when the framework initializes. If the page is not reachable the framework will not initialize. Setting the URL will update the configurable plist file for that user's device.
