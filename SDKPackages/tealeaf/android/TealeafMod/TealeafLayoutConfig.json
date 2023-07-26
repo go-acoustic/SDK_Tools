@@ -3,13 +3,13 @@
     "GlobalScreenSettings": {
       "ScreenChange": true,
       "DisplayName": "",
-      "CaptureLayoutDelay": 0,
+      "CaptureLayoutDelay": 500,
       "ScreenShot": true,
       "NumberOfWebViews": 0,
       "CaptureUserEvents": true,
       "CaptureScreenVisits": true,
       "CaptureLayoutOn": 2,
-      "CaptureScreenshotOn": 1,
+      "CaptureScreenshotOn": 2,
       "Masking": {
         "HasMasking": true,
         "HasCustomMask": true,
@@ -35,6 +35,32 @@
           "label"
         ]
       }
+    }
+  },
+  "MainActivity": {
+    "ScreenChange": true,
+    "DisplayName": "Home",
+    "CaptureLayoutOn": 2,
+    "Masking": {
+      "HasMasking": true,
+      "HasCustomMask": true,
+      "Sensitive": {
+        "capitalCaseAlphabet": "X",
+        "number": "9",
+        "smallCaseAlphabet": "x",
+        "symbol": "#"
+      },
+      "MaskIdList": [
+        "username"
+      ],
+      "MaskValueList": [
+      ],
+      "MaskAccessibilityIdList": [
+      ],
+      "MaskAccessibilityLabelList": [
+        "Masking",
+        "Test Masking"
+      ]
     }
   },
   "AppendMapIds": {
