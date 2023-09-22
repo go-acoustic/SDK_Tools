@@ -8,6 +8,39 @@
 # prohibited.
 ###############################################################################################
 
+September 22 2023 EOCore Module 2.3.262
+
+EOCore Release
+Bug Fixes
+
+- Fix an issue with not getting network updated.
+
+
+Improvements:
+
+- Support use case of no sim card for carriers object.
+
+Our environment for this release:
+
+- Xcode 14.2
+- MacOS 13.2
+- iOS 12.x to 16.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
+
 June 06 2023 Tealeaf Module 10.6.263
 
 Tealeaf Release
