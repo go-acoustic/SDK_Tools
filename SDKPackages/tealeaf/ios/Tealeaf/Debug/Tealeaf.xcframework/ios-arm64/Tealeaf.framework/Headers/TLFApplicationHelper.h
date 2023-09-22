@@ -18,7 +18,9 @@
 
 @interface TLFApplicationHelper : NSObject <TLFLibDelegate, TLFApplicationHelperJSProtocol>
 
-@property(nonatomic, unsafe_unretained)NSObject<TLFLibDelegate> *TLFLibDelegate;
+@property (nonatomic, unsafe_unretained)NSObject<TLFLibDelegate> *TLFLibDelegate;
+@property (nonatomic, assign) BOOL hasSendEvent;
+@property (nonatomic, assign) BOOL hasSendAction;
 
 /*!
  * @abstract Returns the common application helper.
