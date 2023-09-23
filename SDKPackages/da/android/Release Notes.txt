@@ -8,7 +8,7 @@
 # prohibited.
 ###############################################################################################
 
-March 14 2023 DigitalAnalytics Module 1.1.221
+September 23 2023 DigitalAnalytics Module 1.1.235
 
 DigitalAnalytics Release
 Enhancements
