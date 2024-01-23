@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2022 Acoustic, L.P. All rights reserved.
+// Copyright (C) 2023 Acoustic, L.P. All rights reserved.
 //
 // NOTICE: This file contains material that is confidential and proprietary to
 // Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -432,4 +432,35 @@
  @return if the url was successfully added to UIImage or not.
  */
 -(BOOL)logImageUrl:(UIImage*)image withUrl:(NSString*)url;
+
+/**
+ Log performance data.
+ @param navigationStart This attribute must return the time immediately after the user agent finishes prompting to unload the previous document. If there is no previous document, this attribute must return the same value as fetchStart.
+ @param unloadEventStart If the previous document and the current document have the same origin [IETF RFC 6454], this attribute must return the time immediately before the user agent starts the unload event of the previous document. If there is no previous document or the previous document has a different origin than the current document, this attribute must return zero.
+ @param unloadEventEnd f the previous document and the current document have the same same origin, this attribute must return the time immediately after the user agent finishes the unload event of the previous document. If there is no previous document or the previous document has a different origin than the current document or the unload is not yet completed, this attribute must return zero.
+   If there are HTTP redirects or equivalent when navigating and not all the redirects or equivalent are from the same origin, both unloadEventStart and unloadEventEnd must return the zero.
+ @param redirectStart If there are HTTP redirects or equivalent when navigating and if all the redirects or equivalent are from the same origin, this attribute must return the starting time of the fetch that initiates the redirect. Otherwise, this attribute must return zero.
+ @param redirectEnd If there are HTTP redirects or equivalent when navigating and all redirects and equivalents are from the same origin, this attribute must return the time immediately after receiving the last byte of the response of the last redirect. Otherwise, this attribute must return zero.
+ @param fetchStart If the new resource is to be fetched using HTTP GET or equivalent, fetchStart must return the time immediately before the user agent starts checking any relevant application caches. Otherwise, it must return the time when the user agent starts fetching the resource.
+ @param domainLookupStart This attribute must return the time immediately before the user agent starts the domain name lookup for the current document. If a persistent connection [RFC 2616] is used or the current document is retrieved from relevant application caches or local resources, this attribute must return the same value as fetchStart.
+ @param domainLookupEnd This attribute must return the time immediately after the user agent finishes the domain name lookup for the current document. If a persistent connection [RFC 2616] is used or the current document is retrieved from relevant application caches or local resources, this attribute must return the same value as fetchStart.
+ @param connectStart This attribute must return the time immediately before the user agent start establishing the connection to the server to retrieve the document. If a persistent connection [RFC 2616] is used or the current document is retrieved from relevant application caches or local resources, this attribute must return value of domainLookupEnd.
+ @param connectEnd This attribute must return the time immediately after the user agent finishes establishing the connection to the server to retrieve the current document. If a persistent connection [RFC 2616] is used or the current document is retrieved from relevant application caches or local resources, this attribute must return the value of domainLookupEnd
+ @param secureConnectionStart This attribute is optional. User agents that don't have this attribute available must set it as undefined. When this attribute is available, if the scheme of the current page is HTTPS, this attribute must return the time immediately before the user agent starts the handshake process to secure the current connection. If this attribute is available but HTTPS is not used, this attribute must return zero.
+ @param requestStart This attribute must return the time immediately before the user agent starts requesting the current document from the server, or from relevant application caches or from local resources.
+ @param responseStart This attribute must return the time immediately after the user agent receives the first byte of the response from the server, or from relevant application caches or from local resources.
+ @param responseEnd This attribute must return the time immediately after the user agent receives the last byte of the current document or immediately before the transport connection is closed, whichever comes first. The document here can be received either from the server, relevant application caches or from local resources.
+ @param domLoading This attribute must return the time immediately before the user agent sets the current document readiness to "loading".
+ @param domInteractive This attribute must return the time immediately before the user agent sets the current document readiness to "interactive".
+ @param domContentLoadedEventStart This attribute must return the time immediately before the user agent fires the DOMContentLoaded event at the Document.
+ @param domContentLoadedEventEnd This attribute must return the time immediately after the document's DOMContentLoaded event completes.
+ @param domComplete This attribute must return the time immediately before the user agent sets the current document readiness to "complete".
+ @param loadEventStart This attribute must return the time immediately before the load event of the current document is fired. It must return zero when the load event is not fired yet.
+ @param loadEventEnd This attribute must return the time when the load event of the current document is completed. It must return zero when the load event is not fired or is not completed.
+ @param renderTime Time it took to render the page.
+ @param perNavType This attribute must return the type of the last non-redirect navigation in the current browsing context.
+ @param redirectCount This attribute must return the number of redirects since the last non-redirect navigation under the current browsing context. If there is no redirect or there is any redirect that is not from the same origin as the destination document, this attribute must return zero.
+ @return boolean value as to whether the message was successfully logged or not
+ */
+-(BOOL)logPerformance:(NSNumber*)navigationStart unloadEventStart:(NSNumber*)unloadEventStart unloadEventEnd:(NSNumber*)unloadEventEnd redirectStart:(NSNumber*)redirectStart redirectEnd:(NSNumber*)redirectEnd fetchStart:(NSNumber*)fetchStart domainLookupStart:(NSNumber*)domainLookupStart domainLookupEnd:(NSNumber*)domainLookupEnd connectStart:(NSNumber*)connectStart connectEnd:(NSNumber*)connectEnd secureConnectionStart:(NSNumber*)secureConnectionStart requestStart:(NSNumber*)requestStart responseStart:(NSNumber*)responseStart responseEnd:(NSNumber*)responseEnd domLoading:(NSNumber*)domLoading domInteractive:(NSNumber*)domInteractive domContentLoadedEventStart:(NSNumber*)domContentLoadedEventStart domContentLoadedEventEnd:(NSNumber*)domContentLoadedEventEnd domComplete:(NSNumber*)domComplete loadEventStart:(NSNumber*)loadEventStart loadEventEnd:(NSNumber*)loadEventEnd renderTime:(NSNumber*)renderTime perNavType:(TLFPerformanceNavigationType)perNavType redirectCount:(NSNumber*)redirectCount;
 @end

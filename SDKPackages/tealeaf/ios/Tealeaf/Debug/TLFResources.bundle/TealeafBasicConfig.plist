@@ -48,6 +48,8 @@
 	<string>TLTSID</string>
 	<key>CookieSecure</key>
 	<false/>
+	<key>disableTLTDID</key>
+	<false/>
 	<key>SetGestureDetector</key>
 	<true/>
 </dict>

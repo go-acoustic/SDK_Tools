@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2022 Acoustic, L.P. All rights reserved.
+// Copyright (C) 2023 Acoustic, L.P. All rights reserved.
 //
 // NOTICE: This file contains material that is confidential and proprietary to
 // Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -34,6 +34,13 @@ typedef NS_ENUM(int, kTLFMonitoringLevelType) {
     kTLFMonitoringLevelIgnore = 0,
     kTLFMonitoringLevelCellularAndWiFi = 1,
     kTLFMonitoringLevelWiFi = 2,
+};
+
+typedef NS_ENUM(int, TLFPerformanceNavigationType) {
+    TLFNavigate = 0,
+    TLFReload = 1,
+    TLFBack_Forward = 2,
+    TLFReserved = 255,
 };
 
 extern NSString* kTLFButtonClickEvent;
@@ -125,6 +132,7 @@ extern NSString* kTLFMobileStateEvent;
 #define kConfigurableItemRemoveSwiftUIDuplicates                            @"RemoveSwiftUIDuplicates"
 #define kConfigurableItemLogFullRequestResponsePayloads                     @"LogFullRequestResponsePayloads"
 #define kConfigurableItemLogViewLayoutOnScreenTransition                    @"LogViewLayoutOnScreenTransition"
+#define kConfigurableItemDisableTLTDID                                      @"disableTLTDID"
 
 // TLF Public Protocols
 @protocol TLFSavePrintScreenOperationDelegate <NSObject>
