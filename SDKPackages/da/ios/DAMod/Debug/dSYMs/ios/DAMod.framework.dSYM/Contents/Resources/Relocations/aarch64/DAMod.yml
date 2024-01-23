@@ -1,0 +1,313 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/easdk/Library/Developer/Xcode/DerivedData/DAMod-eogxyghkikqzivcmowacjcziypxg/Build/Intermediates.noindex/ArchiveIntermediates/XCDAMod/InstallationBuildProductsLocation/Library/Frameworks/DAMod.framework/DAMod'
+relocations:
+  - { offsetInCU: 0x33, offset: 0x33, size: 0x8, addend: 0x0, symName: _DAModVersionString, symObjAddr: 0x0, symBinAddr: 0x25990, symSize: 0x0 }
+  - { offsetInCU: 0x67, offset: 0x67, size: 0x8, addend: 0x0, symName: _DAModVersionNumber, symObjAddr: 0x28, symBinAddr: 0x259B8, symSize: 0x0 }
+  - { offsetInCU: 0x27, offset: 0xA3, size: 0x8, addend: 0x0, symName: '+[DATag tagWith:clientId:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xE4 }
+  - { offsetInCU: 0x158, offset: 0x1D4, size: 0x8, addend: 0x0, symName: '+[DATag tagWith:clientId:]', symObjAddr: 0x0, symBinAddr: 0x4000, symSize: 0xE4 }
+  - { offsetInCU: 0x1B8, offset: 0x234, size: 0x8, addend: 0x0, symName: '-[DATag init]', symObjAddr: 0xE4, symBinAddr: 0x40E4, symSize: 0xA4 }
+  - { offsetInCU: 0x1EE, offset: 0x26A, size: 0x8, addend: 0x0, symName: '-[DATag makePageViewTag:cg:se:sr:attributes:cm_mmc:]', symObjAddr: 0x188, symBinAddr: 0x4188, symSize: 0x34C }
+  - { offsetInCU: 0x2AA, offset: 0x326, size: 0x8, addend: 0x0, symName: '-[DATag makeTechnicalPropertiesTag:cg:se:sr:attributes:cm_mmc:]', symObjAddr: 0x4D4, symBinAddr: 0x44D4, symSize: 0x3A0 }
+  - { offsetInCU: 0x3A5, offset: 0x421, size: 0x8, addend: 0x0, symName: '-[DATag makeProductViewTag:pr:pm:cg:attributes:]', symObjAddr: 0x874, symBinAddr: 0x4874, symSize: 0x1B4 }
+  - { offsetInCU: 0x444, offset: 0x4C0, size: 0x8, addend: 0x0, symName: '-[DATag makeShopAction5Tag:pm:qt:bp:cg:cc:attributes:]', symObjAddr: 0xA28, symBinAddr: 0x4A28, symSize: 0x29C }
+  - { offsetInCU: 0x521, offset: 0x59D, size: 0x8, addend: 0x0, symName: '-[DATag makeShopAction9Tag:pm:qt:bp:cg:on:tr:cd:cc:attributes:]', symObjAddr: 0xCC4, symBinAddr: 0x4CC4, symSize: 0x324 }
+  - { offsetInCU: 0x62B, offset: 0x6A7, size: 0x8, addend: 0x0, symName: '-[DATag makeOrderTag:tr:sg:cd:ct:sa:zp:cc:attributes:]', symObjAddr: 0xFE8, symBinAddr: 0x4FE8, symSize: 0x26C }
+  - { offsetInCU: 0x708, offset: 0x784, size: 0x8, addend: 0x0, symName: '-[DATag makeRegistrationTag:em:ct:sa:zp:attributes:]', symObjAddr: 0x1254, symBinAddr: 0x5254, symSize: 0x1DC }
+  - { offsetInCU: 0x7B6, offset: 0x832, size: 0x8, addend: 0x0, symName: '-[DATag makeElementTag:ecat:attributes:]', symObjAddr: 0x1430, symBinAddr: 0x5430, symSize: 0x164 }
+  - { offsetInCU: 0x838, offset: 0x8B4, size: 0x8, addend: 0x0, symName: '-[DATag makeConversionEventTag:cat:ccid:cpt:attributes:]', symObjAddr: 0x1594, symBinAddr: 0x5594, symSize: 0x1B4 }
+  - { offsetInCU: 0x8D7, offset: 0x953, size: 0x8, addend: 0x0, symName: '-[DATag makeLinkClickTag:nm:hr:]', symObjAddr: 0x1748, symBinAddr: 0x5748, symSize: 0x1D8 }
+  - { offsetInCU: 0x961, offset: 0x9DD, size: 0x8, addend: 0x0, symName: '-[DATag makeImpressionTag:sp:re:]', symObjAddr: 0x1920, symBinAddr: 0x5920, symSize: 0x1B0 }
+  - { offsetInCU: 0x9CF, offset: 0xA4B, size: 0x8, addend: 0x0, symName: '-[DATag makeAttributeStringFrom:tid:]', symObjAddr: 0x1AD0, symBinAddr: 0x5AD0, symSize: 0x508 }
+  - { offsetInCU: 0xAAE, offset: 0xB2A, size: 0x8, addend: 0x0, symName: '-[DATag buildFinalTag:]', symObjAddr: 0x2014, symBinAddr: 0x6014, symSize: 0x394 }
+  - { offsetInCU: 0xB75, offset: 0xBF1, size: 0x8, addend: 0x0, symName: '-[DATag sha1From:]', symObjAddr: 0x23A8, symBinAddr: 0x63A8, symSize: 0x1AC }
+  - { offsetInCU: 0xC16, offset: 0xC92, size: 0x8, addend: 0x0, symName: '-[DATag arrayFromAttributesString:]', symObjAddr: 0x2554, symBinAddr: 0x6554, symSize: 0xC8 }
+  - { offsetInCU: 0xC5C, offset: 0xCD8, size: 0x8, addend: 0x0, symName: '-[DATag stringFromAttributesArray:]', symObjAddr: 0x261C, symBinAddr: 0x661C, symSize: 0xC8 }
+  - { offsetInCU: 0xCA2, offset: 0xD1E, size: 0x8, addend: 0x0, symName: '-[DATag applicationName]', symObjAddr: 0x26E4, symBinAddr: 0x66E4, symSize: 0x1C }
+  - { offsetInCU: 0xCD8, offset: 0xD54, size: 0x8, addend: 0x0, symName: '-[DATag setApplicationName:]', symObjAddr: 0x2700, symBinAddr: 0x6700, symSize: 0x34 }
+  - { offsetInCU: 0xD16, offset: 0xD92, size: 0x8, addend: 0x0, symName: '-[DATag clientId]', symObjAddr: 0x2734, symBinAddr: 0x6734, symSize: 0x1C }
+  - { offsetInCU: 0xD4C, offset: 0xDC8, size: 0x8, addend: 0x0, symName: '-[DATag setClientId:]', symObjAddr: 0x2750, symBinAddr: 0x6750, symSize: 0x34 }
+  - { offsetInCU: 0xD8A, offset: 0xE06, size: 0x8, addend: 0x0, symName: '-[DATag tag]', symObjAddr: 0x2784, symBinAddr: 0x6784, symSize: 0x1C }
+  - { offsetInCU: 0xDC0, offset: 0xE3C, size: 0x8, addend: 0x0, symName: '-[DATag setTag:]', symObjAddr: 0x27A0, symBinAddr: 0x67A0, symSize: 0x34 }
+  - { offsetInCU: 0xDFE, offset: 0xE7A, size: 0x8, addend: 0x0, symName: '-[DATag .cxx_destruct]', symObjAddr: 0x27D4, symBinAddr: 0x67D4, symSize: 0x58 }
+  - { offsetInCU: 0x27, offset: 0x1085, size: 0x8, addend: 0x0, symName: '-[DAMessage init]', symObjAddr: 0x0, symBinAddr: 0x682C, symSize: 0xBC }
+  - { offsetInCU: 0x145, offset: 0x11A3, size: 0x8, addend: 0x0, symName: '-[DAMessage init]', symObjAddr: 0x0, symBinAddr: 0x682C, symSize: 0xBC }
+  - { offsetInCU: 0x17B, offset: 0x11D9, size: 0x8, addend: 0x0, symName: '-[DAMessage initWithQueryString:]', symObjAddr: 0xBC, symBinAddr: 0x68E8, symSize: 0x1A4 }
+  - { offsetInCU: 0x1D3, offset: 0x1231, size: 0x8, addend: 0x0, symName: '-[DAMessage initWithDictionary:]', symObjAddr: 0x260, symBinAddr: 0x6A8C, symSize: 0x160 }
+  - { offsetInCU: 0x217, offset: 0x1275, size: 0x8, addend: 0x0, symName: '-[DAMessage jsonDictionary]', symObjAddr: 0x3C0, symBinAddr: 0x6BEC, symSize: 0xB0 }
+  - { offsetInCU: 0x24D, offset: 0x12AB, size: 0x8, addend: 0x0, symName: '-[DAMessage dictionary]', symObjAddr: 0x470, symBinAddr: 0x6C9C, symSize: 0x24 }
+  - { offsetInCU: 0x283, offset: 0x12E1, size: 0x8, addend: 0x0, symName: '-[DAMessage setDictionary:]', symObjAddr: 0x494, symBinAddr: 0x6CC0, symSize: 0x3C }
+  - { offsetInCU: 0x2C1, offset: 0x131F, size: 0x8, addend: 0x0, symName: '-[DAMessage .cxx_destruct]', symObjAddr: 0x4D0, symBinAddr: 0x6CFC, symSize: 0x38 }
+  - { offsetInCU: 0x27, offset: 0x13BC, size: 0x8, addend: 0x0, symName: '+[DATagsRingBuffer sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x6D34, symSize: 0xB4 }
+  - { offsetInCU: 0x34, offset: 0x13C9, size: 0x8, addend: 0x0, symName: '+[DATagsRingBuffer sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x6D34, symSize: 0xB4 }
+  - { offsetInCU: 0x5D, offset: 0x13F2, size: 0x8, addend: 0x0, symName: _sharedInstance.predicate, symObjAddr: 0x2BB8, symBinAddr: 0x347F8, symSize: 0x0 }
+  - { offsetInCU: 0x72, offset: 0x1407, size: 0x8, addend: 0x0, symName: _sharedInstance.sharedInstance, symObjAddr: 0x2BC0, symBinAddr: 0x34800, symSize: 0x0 }
+  - { offsetInCU: 0x2AA, offset: 0x163F, size: 0x8, addend: 0x0, symName: '___34+[DATagsRingBuffer sharedInstance]_block_invoke', symObjAddr: 0xB4, symBinAddr: 0x6DE8, symSize: 0x68 }
+  - { offsetInCU: 0x2E7, offset: 0x167C, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer init]', symObjAddr: 0x11C, symBinAddr: 0x6E50, symSize: 0xF0 }
+  - { offsetInCU: 0x31D, offset: 0x16B2, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer addObject:]', symObjAddr: 0x20C, symBinAddr: 0x6F40, symSize: 0xD4 }
+  - { offsetInCU: 0x35D, offset: 0x16F2, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer count]', symObjAddr: 0x2E0, symBinAddr: 0x7014, symSize: 0x30 }
+  - { offsetInCU: 0x393, offset: 0x1728, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer objectAtIndex:]', symObjAddr: 0x310, symBinAddr: 0x7044, symSize: 0x80 }
+  - { offsetInCU: 0x3D7, offset: 0x176C, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer removeObjectAtIndex:]', symObjAddr: 0x390, symBinAddr: 0x70C4, symSize: 0x68 }
+  - { offsetInCU: 0x417, offset: 0x17AC, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer maxTagsCount]', symObjAddr: 0x3F8, symBinAddr: 0x712C, symSize: 0x1C }
+  - { offsetInCU: 0x44D, offset: 0x17E2, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer setMaxTagsCount:]', symObjAddr: 0x414, symBinAddr: 0x7148, symSize: 0x24 }
+  - { offsetInCU: 0x48B, offset: 0x1820, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer removeFirstOnOverflow]', symObjAddr: 0x438, symBinAddr: 0x716C, symSize: 0x20 }
+  - { offsetInCU: 0x4C1, offset: 0x1856, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer setRemoveFirstOnOverflow:]', symObjAddr: 0x458, symBinAddr: 0x718C, symSize: 0x30 }
+  - { offsetInCU: 0x4FF, offset: 0x1894, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer firstPageView]', symObjAddr: 0x488, symBinAddr: 0x71BC, symSize: 0x20 }
+  - { offsetInCU: 0x535, offset: 0x18CA, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer setFirstPageView:]', symObjAddr: 0x4A8, symBinAddr: 0x71DC, symSize: 0x30 }
+  - { offsetInCU: 0x573, offset: 0x1908, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer ringBuffer]', symObjAddr: 0x4D8, symBinAddr: 0x720C, symSize: 0x1C }
+  - { offsetInCU: 0x5A9, offset: 0x193E, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer setRingBuffer:]', symObjAddr: 0x4F4, symBinAddr: 0x7228, symSize: 0x34 }
+  - { offsetInCU: 0x5E7, offset: 0x197C, size: 0x8, addend: 0x0, symName: '-[DATagsRingBuffer .cxx_destruct]', symObjAddr: 0x528, symBinAddr: 0x725C, symSize: 0x30 }
+  - { offsetInCU: 0x27, offset: 0x1A96, size: 0x8, addend: 0x0, symName: '+[DAConstraintsChecker satisfy:constraintsFor:]', symObjAddr: 0x0, symBinAddr: 0x728C, symSize: 0x3F48 }
+  - { offsetInCU: 0x40, offset: 0x1AAF, size: 0x8, addend: 0x0, symName: _allConstraints, symObjAddr: 0x8FC0, symBinAddr: 0x34808, symSize: 0x0 }
+  - { offsetInCU: 0xA7, offset: 0x1B16, size: 0x8, addend: 0x0, symName: '+[DAConstraintsChecker satisfy:constraintsFor:]', symObjAddr: 0x0, symBinAddr: 0x728C, symSize: 0x3F48 }
+  - { offsetInCU: 0xD0, offset: 0x1B3F, size: 0x8, addend: 0x0, symName: '_satisfy:constraintsFor:.tlfDebug', symObjAddr: 0x6718, symBinAddr: 0x34558, symSize: 0x0 }
+  - { offsetInCU: 0xE5, offset: 0x1B54, size: 0x8, addend: 0x0, symName: '_satisfy:constraintsFor:.tlfDebug.92', symObjAddr: 0x671C, symBinAddr: 0x3455C, symSize: 0x0 }
+  - { offsetInCU: 0xFA, offset: 0x1B69, size: 0x8, addend: 0x0, symName: '_satisfy:constraintsFor:.tlfDebug.95', symObjAddr: 0x6720, symBinAddr: 0x34560, symSize: 0x0 }
+  - { offsetInCU: 0x18F, offset: 0x1BFE, size: 0x8, addend: 0x0, symName: '+[DAConstraintsChecker satisfy:constraints:]', symObjAddr: 0x3F48, symBinAddr: 0xB1D4, symSize: 0x1128 }
+  - { offsetInCU: 0x1B8, offset: 0x1C27, size: 0x8, addend: 0x0, symName: '_satisfy:constraints:.tlfDebug', symObjAddr: 0x6724, symBinAddr: 0x34564, symSize: 0x0 }
+  - { offsetInCU: 0x1CD, offset: 0x1C3C, size: 0x8, addend: 0x0, symName: '_satisfy:constraints:.tlfDebug.102', symObjAddr: 0x6728, symBinAddr: 0x34568, symSize: 0x0 }
+  - { offsetInCU: 0x1E2, offset: 0x1C51, size: 0x8, addend: 0x0, symName: '_satisfy:constraints:.tlfDebug.106', symObjAddr: 0x672C, symBinAddr: 0x3456C, symSize: 0x0 }
+  - { offsetInCU: 0x1F7, offset: 0x1C66, size: 0x8, addend: 0x0, symName: '_satisfy:constraints:.tlfDebug.109', symObjAddr: 0x6730, symBinAddr: 0x34570, symSize: 0x0 }
+  - { offsetInCU: 0x20C, offset: 0x1C7B, size: 0x8, addend: 0x0, symName: '_satisfy:constraints:.tlfDebug.110', symObjAddr: 0x6734, symBinAddr: 0x34574, symSize: 0x0 }
+  - { offsetInCU: 0x221, offset: 0x1C90, size: 0x8, addend: 0x0, symName: '_satisfy:constraints:.tlfDebug.113', symObjAddr: 0x6738, symBinAddr: 0x34578, symSize: 0x0 }
+  - { offsetInCU: 0x27, offset: 0x20EE, size: 0x8, addend: 0x0, symName: '+[NSDictionary(QueryString) dictionaryWithQueryString:]', symObjAddr: 0x0, symBinAddr: 0xC2FC, symSize: 0x4B4 }
+  - { offsetInCU: 0xD3, offset: 0x219A, size: 0x8, addend: 0x0, symName: '+[NSDictionary(QueryString) dictionaryWithQueryString:]', symObjAddr: 0x0, symBinAddr: 0xC2FC, symSize: 0x4B4 }
+  - { offsetInCU: 0x1F1, offset: 0x22B8, size: 0x8, addend: 0x0, symName: '-[NSMutableDictionary(SafeDigitalAnalytics) safeSetObject:forKey:]', symObjAddr: 0x4B4, symBinAddr: 0xC7B0, symSize: 0x108 }
+  - { offsetInCU: 0x27, offset: 0x2413, size: 0x8, addend: 0x0, symName: '+[DATagDictionary tagWithApplicationName:clientId:]', symObjAddr: 0x0, symBinAddr: 0xC8B8, symSize: 0x104 }
+  - { offsetInCU: 0x14C, offset: 0x2538, size: 0x8, addend: 0x0, symName: '+[DATagDictionary tagWithApplicationName:clientId:]', symObjAddr: 0x0, symBinAddr: 0xC8B8, symSize: 0x104 }
+  - { offsetInCU: 0x1AC, offset: 0x2598, size: 0x8, addend: 0x0, symName: '-[DATagDictionary init]', symObjAddr: 0x104, symBinAddr: 0xC9BC, symSize: 0xA4 }
+  - { offsetInCU: 0x1E2, offset: 0x25CE, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makePageViewTag:cg:se:sr:attributes:cm_mmc:]', symObjAddr: 0x1A8, symBinAddr: 0xCA60, symSize: 0x324 }
+  - { offsetInCU: 0x281, offset: 0x266D, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makeTechnicalPropertiesTag:cg:se:sr:attributes:cm_mmc:]', symObjAddr: 0x4CC, symBinAddr: 0xCD84, symSize: 0x4E4 }
+  - { offsetInCU: 0x36D, offset: 0x2759, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makeProductViewTag:pr:pm:cg:attributes:]', symObjAddr: 0x9B0, symBinAddr: 0xD268, symSize: 0x1C8 }
+  - { offsetInCU: 0x3FE, offset: 0x27EA, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makeShopAction5Tag:pm:qt:bp:cg:cc:attributes:]', symObjAddr: 0xB78, symBinAddr: 0xD430, symSize: 0x2E4 }
+  - { offsetInCU: 0x4CA, offset: 0x28B6, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makeShopAction9Tag:pm:qt:bp:cg:on:tr:cd:cc:attributes:]', symObjAddr: 0xE5C, symBinAddr: 0xD714, symSize: 0x3AC }
+  - { offsetInCU: 0x5C5, offset: 0x29B1, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makeOrderTag:tr:sg:cd:ct:sa:zp:cc:attributes:]', symObjAddr: 0x1208, symBinAddr: 0xDAC0, symSize: 0x2C4 }
+  - { offsetInCU: 0x691, offset: 0x2A7D, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makeRegistrationTag:em:ct:sa:zp:cy:attributes:]', symObjAddr: 0x14CC, symBinAddr: 0xDD84, symSize: 0x244 }
+  - { offsetInCU: 0x73F, offset: 0x2B2B, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makeElementTag:ecat:attributes:]', symObjAddr: 0x1710, symBinAddr: 0xDFC8, symSize: 0x170 }
+  - { offsetInCU: 0x7B3, offset: 0x2B9F, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makeConversionEventTag:cat:ccid:cpt:attributes:]', symObjAddr: 0x1880, symBinAddr: 0xE138, symSize: 0x1C8 }
+  - { offsetInCU: 0x844, offset: 0x2C30, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makeLinkClickTag:nm:hr:]', symObjAddr: 0x1A48, symBinAddr: 0xE300, symSize: 0x1B0 }
+  - { offsetInCU: 0x8C0, offset: 0x2CAC, size: 0x8, addend: 0x0, symName: '-[DATagDictionary makeImpressionTag:sp:re:]', symObjAddr: 0x1BF8, symBinAddr: 0xE4B0, symSize: 0x13C }
+  - { offsetInCU: 0x920, offset: 0x2D0C, size: 0x8, addend: 0x0, symName: '-[DATagDictionary attributesDictionaryFrom:tid:]', symObjAddr: 0x1D34, symBinAddr: 0xE5EC, symSize: 0x40C }
+  - { offsetInCU: 0x9F0, offset: 0x2DDC, size: 0x8, addend: 0x0, symName: '-[DATagDictionary sha1From:]', symObjAddr: 0x217C, symBinAddr: 0xEA34, symSize: 0x178 }
+  - { offsetInCU: 0xA81, offset: 0x2E6D, size: 0x8, addend: 0x0, symName: '-[DATagDictionary stringFromAttributesArray:]', symObjAddr: 0x22F4, symBinAddr: 0xEBAC, symSize: 0xC8 }
+  - { offsetInCU: 0xAC7, offset: 0x2EB3, size: 0x8, addend: 0x0, symName: '-[DATagDictionary buildFinalDictionary]', symObjAddr: 0x23BC, symBinAddr: 0xEC74, symSize: 0x348 }
+  - { offsetInCU: 0xB45, offset: 0x2F31, size: 0x8, addend: 0x0, symName: '-[DATagDictionary tagDictionary]', symObjAddr: 0x2704, symBinAddr: 0xEFBC, symSize: 0x30 }
+  - { offsetInCU: 0xB7C, offset: 0x2F68, size: 0x8, addend: 0x0, symName: '-[DATagDictionary applicationName]', symObjAddr: 0x2734, symBinAddr: 0xEFEC, symSize: 0x1C }
+  - { offsetInCU: 0xBB2, offset: 0x2F9E, size: 0x8, addend: 0x0, symName: '-[DATagDictionary setApplicationName:]', symObjAddr: 0x2750, symBinAddr: 0xF008, symSize: 0x34 }
+  - { offsetInCU: 0xBF0, offset: 0x2FDC, size: 0x8, addend: 0x0, symName: '-[DATagDictionary clientId]', symObjAddr: 0x2784, symBinAddr: 0xF03C, symSize: 0x1C }
+  - { offsetInCU: 0xC26, offset: 0x3012, size: 0x8, addend: 0x0, symName: '-[DATagDictionary setClientId:]', symObjAddr: 0x27A0, symBinAddr: 0xF058, symSize: 0x34 }
+  - { offsetInCU: 0xC64, offset: 0x3050, size: 0x8, addend: 0x0, symName: '-[DATagDictionary tagDict]', symObjAddr: 0x27D4, symBinAddr: 0xF08C, symSize: 0x28 }
+  - { offsetInCU: 0xC9A, offset: 0x3086, size: 0x8, addend: 0x0, symName: '-[DATagDictionary setTagDict:]', symObjAddr: 0x27FC, symBinAddr: 0xF0B4, symSize: 0x38 }
+  - { offsetInCU: 0xCD8, offset: 0x30C4, size: 0x8, addend: 0x0, symName: '-[DATagDictionary .cxx_destruct]', symObjAddr: 0x2834, symBinAddr: 0xF0EC, symSize: 0x58 }
+  - { offsetInCU: 0x27, offset: 0x3289, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics startup]', symObjAddr: 0x0, symBinAddr: 0xF144, symSize: 0x438 }
+  - { offsetInCU: 0x34, offset: 0x3296, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics startup]', symObjAddr: 0x0, symBinAddr: 0xF144, symSize: 0x438 }
+  - { offsetInCU: 0x5D, offset: 0x32BF, size: 0x8, addend: 0x0, symName: _startup.tlfDebug, symObjAddr: 0x67C0, symBinAddr: 0x3457C, symSize: 0x0 }
+  - { offsetInCU: 0x72, offset: 0x32D4, size: 0x8, addend: 0x0, symName: _startup.tlfDebug.7, symObjAddr: 0x67C4, symBinAddr: 0x34580, symSize: 0x0 }
+  - { offsetInCU: 0xCB, offset: 0x332D, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics startNewSession]', symObjAddr: 0x438, symBinAddr: 0xF57C, symSize: 0x2B8 }
+  - { offsetInCU: 0xF4, offset: 0x3356, size: 0x8, addend: 0x0, symName: _startNewSession.tlfDebug, symObjAddr: 0x67C8, symBinAddr: 0x34584, symSize: 0x0 }
+  - { offsetInCU: 0x138, offset: 0x339A, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics shutdown]', symObjAddr: 0x6F0, symBinAddr: 0xF834, symSize: 0x2B8 }
+  - { offsetInCU: 0x161, offset: 0x33C3, size: 0x8, addend: 0x0, symName: _shutdown.tlfDebug, symObjAddr: 0x67CC, symBinAddr: 0x34588, symSize: 0x0 }
+  - { offsetInCU: 0x1A5, offset: 0x3407, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics sessionId]', symObjAddr: 0x9A8, symBinAddr: 0xFAEC, symSize: 0x300 }
+  - { offsetInCU: 0x1CE, offset: 0x3430, size: 0x8, addend: 0x0, symName: _sessionId.tlfDebug, symObjAddr: 0x67D0, symBinAddr: 0x3458C, symSize: 0x0 }
+  - { offsetInCU: 0x212, offset: 0x3474, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics visitorId]', symObjAddr: 0xDB0, symBinAddr: 0xFEF4, symSize: 0x300 }
+  - { offsetInCU: 0x23B, offset: 0x349D, size: 0x8, addend: 0x0, symName: _visitorId.tlfDebug, symObjAddr: 0x67D4, symBinAddr: 0x34590, symSize: 0x0 }
+  - { offsetInCU: 0x27F, offset: 0x34E1, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics libraryVersion]', symObjAddr: 0x10B0, symBinAddr: 0x101F4, symSize: 0x2F0 }
+  - { offsetInCU: 0x2A8, offset: 0x350A, size: 0x8, addend: 0x0, symName: _libraryVersion.tlfDebug, symObjAddr: 0x67D8, symBinAddr: 0x34594, symSize: 0x0 }
+  - { offsetInCU: 0x2EC, offset: 0x354E, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics firePageView:category:searchTerm:searchResult:attributes:cmmmc:]', symObjAddr: 0x13A0, symBinAddr: 0x104E4, symSize: 0x4F0 }
+  - { offsetInCU: 0x315, offset: 0x3577, size: 0x8, addend: 0x0, symName: '_firePageView:category:searchTerm:searchResult:attributes:cmmmc:.tlfDebug', symObjAddr: 0x67DC, symBinAddr: 0x34598, symSize: 0x0 }
+  - { offsetInCU: 0x3D5, offset: 0x3637, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics fireProductview:productId:productName:category:attributes:]', symObjAddr: 0x1890, symBinAddr: 0x109D4, symSize: 0x4B0 }
+  - { offsetInCU: 0x3FE, offset: 0x3660, size: 0x8, addend: 0x0, symName: '_fireProductview:productId:productName:category:attributes:.tlfDebug', symObjAddr: 0x67E0, symBinAddr: 0x3459C, symSize: 0x0 }
+  - { offsetInCU: 0x4AF, offset: 0x3711, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics fireShopAction5:productName:quantity:baseUnitPrice:category:currencyCode:attributes:]', symObjAddr: 0x1D40, symBinAddr: 0x10E84, symSize: 0x53C }
+  - { offsetInCU: 0x4D8, offset: 0x373A, size: 0x8, addend: 0x0, symName: '_fireShopAction5:productName:quantity:baseUnitPrice:category:currencyCode:attributes:.tlfDebug', symObjAddr: 0x67E4, symBinAddr: 0x345A0, symSize: 0x0 }
+  - { offsetInCU: 0x5A7, offset: 0x3809, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics fireShopAction9:productName:quantity:baseUnitPrice:category:orderId:orderSubTotal:customerId:currencyCode:attributes:]', symObjAddr: 0x227C, symBinAddr: 0x113C0, symSize: 0x614 }
+  - { offsetInCU: 0x5D0, offset: 0x3832, size: 0x8, addend: 0x0, symName: '_fireShopAction9:productName:quantity:baseUnitPrice:category:orderId:orderSubTotal:customerId:currencyCode:attributes:.tlfDebug', symObjAddr: 0x67E8, symBinAddr: 0x345A4, symSize: 0x0 }
+  - { offsetInCU: 0x6CC, offset: 0x392E, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics fireOrder:subtotal:shippingCharge:customerId:customerCity:customerState:customerZip:currencyCode:attributes:]', symObjAddr: 0x2890, symBinAddr: 0x119D4, symSize: 0x5CC }
+  - { offsetInCU: 0x6F6, offset: 0x3958, size: 0x8, addend: 0x0, symName: '_fireOrder:subtotal:shippingCharge:customerId:customerCity:customerState:customerZip:currencyCode:attributes:.tlfDebug', symObjAddr: 0x67EC, symBinAddr: 0x345A8, symSize: 0x0 }
+  - { offsetInCU: 0x7E4, offset: 0x3A46, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics fireRegistration:email:customerCity:customerState:customerZip:customerCountry:attributes:]', symObjAddr: 0x2E5C, symBinAddr: 0x11FA0, symSize: 0x520 }
+  - { offsetInCU: 0x80F, offset: 0x3A71, size: 0x8, addend: 0x0, symName: '_fireRegistration:email:customerCity:customerState:customerZip:customerCountry:attributes:.tlfDebug', symObjAddr: 0x67F0, symBinAddr: 0x345AC, symSize: 0x0 }
+  - { offsetInCU: 0x8E9, offset: 0x3B4B, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics fireElement:elementCategory:attributes:]', symObjAddr: 0x337C, symBinAddr: 0x124C0, symSize: 0x430 }
+  - { offsetInCU: 0x914, offset: 0x3B76, size: 0x8, addend: 0x0, symName: '_fireElement:elementCategory:attributes:.tlfDebug', symObjAddr: 0x67F4, symBinAddr: 0x345B0, symSize: 0x0 }
+  - { offsetInCU: 0x9AE, offset: 0x3C10, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics fireConversionEvent:actionType:eventCategory:eventPoints:attributes:]', symObjAddr: 0x37AC, symBinAddr: 0x128F0, symSize: 0x494 }
+  - { offsetInCU: 0x9D9, offset: 0x3C3B, size: 0x8, addend: 0x0, symName: '_fireConversionEvent:actionType:eventCategory:eventPoints:attributes:.tlfDebug', symObjAddr: 0x67F8, symBinAddr: 0x345B4, symSize: 0x0 }
+  - { offsetInCU: 0xA93, offset: 0x3CF5, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics fireLinkClick:linkName:link:]', symObjAddr: 0x3C40, symBinAddr: 0x12D84, symSize: 0x430 }
+  - { offsetInCU: 0xABE, offset: 0x3D20, size: 0x8, addend: 0x0, symName: '_fireLinkClick:linkName:link:.tlfDebug', symObjAddr: 0x67FC, symBinAddr: 0x345B8, symSize: 0x0 }
+  - { offsetInCU: 0xB58, offset: 0x3DBA, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics fireImpression:cmsp:cmre:]', symObjAddr: 0x4070, symBinAddr: 0x131B4, symSize: 0x430 }
+  - { offsetInCU: 0xB83, offset: 0x3DE5, size: 0x8, addend: 0x0, symName: '_fireImpression:cmsp:cmre:.tlfDebug', symObjAddr: 0x6800, symBinAddr: 0x345BC, symSize: 0x0 }
+  - { offsetInCU: 0xC1D, offset: 0x3E7F, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics activateClientId:]', symObjAddr: 0x44A0, symBinAddr: 0x135E4, symSize: 0x2C8 }
+  - { offsetInCU: 0xC48, offset: 0x3EAA, size: 0x8, addend: 0x0, symName: '_activateClientId:.tlfDebug', symObjAddr: 0x6804, symBinAddr: 0x345C0, symSize: 0x0 }
+  - { offsetInCU: 0xC9D, offset: 0x3EFF, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics resetToDefaultClientId]', symObjAddr: 0x4768, symBinAddr: 0x138AC, symSize: 0x290 }
+  - { offsetInCU: 0xCC8, offset: 0x3F2A, size: 0x8, addend: 0x0, symName: _resetToDefaultClientId.tlfDebug, symObjAddr: 0x6808, symBinAddr: 0x345C4, symSize: 0x0 }
+  - { offsetInCU: 0xD0E, offset: 0x3F70, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics setOptOut:]', symObjAddr: 0x49F8, symBinAddr: 0x13B3C, symSize: 0x2F0 }
+  - { offsetInCU: 0xD39, offset: 0x3F9B, size: 0x8, addend: 0x0, symName: '_setOptOut:.tlfDebug', symObjAddr: 0x680C, symBinAddr: 0x345C8, symSize: 0x0 }
+  - { offsetInCU: 0xD8E, offset: 0x3FF0, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics getOptOut]', symObjAddr: 0x4CE8, symBinAddr: 0x13E2C, symSize: 0x300 }
+  - { offsetInCU: 0xDB9, offset: 0x401B, size: 0x8, addend: 0x0, symName: _getOptOut.tlfDebug, symObjAddr: 0x6810, symBinAddr: 0x345CC, symSize: 0x0 }
+  - { offsetInCU: 0xE4C, offset: 0x40AE, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics setCXAAdvertisingId:]', symObjAddr: 0xCA8, symBinAddr: 0xFDEC, symSize: 0xA8 }
+  - { offsetInCU: 0xE90, offset: 0x40F2, size: 0x8, addend: 0x0, symName: '+[DigitalAnalytics getCXAAdvertisingId]', symObjAddr: 0xD50, symBinAddr: 0xFE94, symSize: 0x60 }
+  - { offsetInCU: 0x27, offset: 0x42BB, size: 0x8, addend: 0x0, symName: '+[DAMod sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x1412C, symSize: 0x160 }
+  - { offsetInCU: 0x34, offset: 0x42C8, size: 0x8, addend: 0x0, symName: '+[DAMod sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x1412C, symSize: 0x160 }
+  - { offsetInCU: 0x5D, offset: 0x42F1, size: 0x8, addend: 0x0, symName: _sharedInstance.predicate, symObjAddr: 0x1E770, symBinAddr: 0x34810, symSize: 0x0 }
+  - { offsetInCU: 0x72, offset: 0x4306, size: 0x8, addend: 0x0, symName: _sharedInstance.sharedInstance, symObjAddr: 0x1E778, symBinAddr: 0x34818, symSize: 0x0 }
+  - { offsetInCU: 0x2D8, offset: 0x456C, size: 0x8, addend: 0x0, symName: '-[DAMod init]', symObjAddr: 0x1C8, symBinAddr: 0x142F4, symSize: 0x330 }
+  - { offsetInCU: 0x301, offset: 0x4595, size: 0x8, addend: 0x0, symName: _init.tlfDebug, symObjAddr: 0x10694, symBinAddr: 0x345D4, symSize: 0x0 }
+  - { offsetInCU: 0x337, offset: 0x45CB, size: 0x8, addend: 0x0, symName: '-[DAMod start]', symObjAddr: 0x4F8, symBinAddr: 0x14624, symSize: 0xB70 }
+  - { offsetInCU: 0x360, offset: 0x45F4, size: 0x8, addend: 0x0, symName: _start.tlfDebug, symObjAddr: 0x10698, symBinAddr: 0x345D8, symSize: 0x0 }
+  - { offsetInCU: 0x375, offset: 0x4609, size: 0x8, addend: 0x0, symName: _start.tlfDebug.18, symObjAddr: 0x1069C, symBinAddr: 0x345DC, symSize: 0x0 }
+  - { offsetInCU: 0x38A, offset: 0x461E, size: 0x8, addend: 0x0, symName: _start.tlfDebug.24, symObjAddr: 0x106A0, symBinAddr: 0x345E0, symSize: 0x0 }
+  - { offsetInCU: 0x39F, offset: 0x4633, size: 0x8, addend: 0x0, symName: _start.tlfDebug.30, symObjAddr: 0x106A4, symBinAddr: 0x345E4, symSize: 0x0 }
+  - { offsetInCU: 0x3B4, offset: 0x4648, size: 0x8, addend: 0x0, symName: _start.tlfDebug.33, symObjAddr: 0x106A8, symBinAddr: 0x345E8, symSize: 0x0 }
+  - { offsetInCU: 0x3C9, offset: 0x465D, size: 0x8, addend: 0x0, symName: _start.tlfDebug.36, symObjAddr: 0x106AC, symBinAddr: 0x345EC, symSize: 0x0 }
+  - { offsetInCU: 0x44C, offset: 0x46E0, size: 0x8, addend: 0x0, symName: '-[DAMod stop]', symObjAddr: 0x1068, symBinAddr: 0x15194, symSize: 0x510 }
+  - { offsetInCU: 0x475, offset: 0x4709, size: 0x8, addend: 0x0, symName: _stop.tlfDebug, symObjAddr: 0x106B0, symBinAddr: 0x345F0, symSize: 0x0 }
+  - { offsetInCU: 0x48A, offset: 0x471E, size: 0x8, addend: 0x0, symName: _stop.tlfDebug.39, symObjAddr: 0x106B4, symBinAddr: 0x345F4, symSize: 0x0 }
+  - { offsetInCU: 0x49F, offset: 0x4733, size: 0x8, addend: 0x0, symName: _stop.tlfDebug.42, symObjAddr: 0x106B8, symBinAddr: 0x345F8, symSize: 0x0 }
+  - { offsetInCU: 0x4E3, offset: 0x4777, size: 0x8, addend: 0x0, symName: '-[DAMod newSession]', symObjAddr: 0x1578, symBinAddr: 0x156A4, symSize: 0x3C8 }
+  - { offsetInCU: 0x50C, offset: 0x47A0, size: 0x8, addend: 0x0, symName: _newSession.tlfDebug, symObjAddr: 0x106BC, symBinAddr: 0x345FC, symSize: 0x0 }
+  - { offsetInCU: 0x521, offset: 0x47B5, size: 0x8, addend: 0x0, symName: _newSession.tlfDebug.45, symObjAddr: 0x106C0, symBinAddr: 0x34600, symSize: 0x0 }
+  - { offsetInCU: 0x565, offset: 0x47F9, size: 0x8, addend: 0x0, symName: '-[DAMod resetSession]', symObjAddr: 0x1940, symBinAddr: 0x15A6C, symSize: 0x444 }
+  - { offsetInCU: 0x58E, offset: 0x4822, size: 0x8, addend: 0x0, symName: _resetSession.tlfDebug, symObjAddr: 0x106C4, symBinAddr: 0x34604, symSize: 0x0 }
+  - { offsetInCU: 0x5A3, offset: 0x4837, size: 0x8, addend: 0x0, symName: _resetSession.tlfDebug.50, symObjAddr: 0x106C8, symBinAddr: 0x34608, symSize: 0x0 }
+  - { offsetInCU: 0x5E7, offset: 0x487B, size: 0x8, addend: 0x0, symName: '-[DAMod enable]', symObjAddr: 0x1D84, symBinAddr: 0x15EB0, symSize: 0x3B8 }
+  - { offsetInCU: 0x611, offset: 0x48A5, size: 0x8, addend: 0x0, symName: _enable.tlfDebug, symObjAddr: 0x106CC, symBinAddr: 0x3460C, symSize: 0x0 }
+  - { offsetInCU: 0x627, offset: 0x48BB, size: 0x8, addend: 0x0, symName: _enable.tlfDebug.53, symObjAddr: 0x106D0, symBinAddr: 0x34610, symSize: 0x0 }
+  - { offsetInCU: 0x66C, offset: 0x4900, size: 0x8, addend: 0x0, symName: '-[DAMod disable]', symObjAddr: 0x213C, symBinAddr: 0x16268, symSize: 0x40C }
+  - { offsetInCU: 0x697, offset: 0x492B, size: 0x8, addend: 0x0, symName: _disable.tlfDebug, symObjAddr: 0x106D4, symBinAddr: 0x34614, symSize: 0x0 }
+  - { offsetInCU: 0x6AD, offset: 0x4941, size: 0x8, addend: 0x0, symName: _disable.tlfDebug.56, symObjAddr: 0x106D8, symBinAddr: 0x34618, symSize: 0x0 }
+  - { offsetInCU: 0x6F3, offset: 0x4987, size: 0x8, addend: 0x0, symName: '-[DAMod settingsBundlePath]', symObjAddr: 0x2584, symBinAddr: 0x166B0, symSize: 0x720 }
+  - { offsetInCU: 0x71E, offset: 0x49B2, size: 0x8, addend: 0x0, symName: _settingsBundlePath.tlfDebug, symObjAddr: 0x106DC, symBinAddr: 0x3461C, symSize: 0x0 }
+  - { offsetInCU: 0x734, offset: 0x49C8, size: 0x8, addend: 0x0, symName: _settingsBundlePath.tlfDebug.64, symObjAddr: 0x106E0, symBinAddr: 0x34620, symSize: 0x0 }
+  - { offsetInCU: 0x74A, offset: 0x49DE, size: 0x8, addend: 0x0, symName: _settingsBundlePath.tlfDebug.67, symObjAddr: 0x106E4, symBinAddr: 0x34624, symSize: 0x0 }
+  - { offsetInCU: 0x760, offset: 0x49F4, size: 0x8, addend: 0x0, symName: _settingsBundlePath.tlfDebug.70, symObjAddr: 0x106E8, symBinAddr: 0x34628, symSize: 0x0 }
+  - { offsetInCU: 0x7BD, offset: 0x4A51, size: 0x8, addend: 0x0, symName: '-[DAMod sessionId]', symObjAddr: 0x2CA4, symBinAddr: 0x16DD0, symSize: 0x314 }
+  - { offsetInCU: 0x7E8, offset: 0x4A7C, size: 0x8, addend: 0x0, symName: _sessionId.tlfDebug, symObjAddr: 0x106EC, symBinAddr: 0x3462C, symSize: 0x0 }
+  - { offsetInCU: 0x82E, offset: 0x4AC2, size: 0x8, addend: 0x0, symName: '-[DAMod visitorId]', symObjAddr: 0x30A4, symBinAddr: 0x171D0, symSize: 0x314 }
+  - { offsetInCU: 0x859, offset: 0x4AED, size: 0x8, addend: 0x0, symName: _visitorId.tlfDebug, symObjAddr: 0x106F0, symBinAddr: 0x34630, symSize: 0x0 }
+  - { offsetInCU: 0x89F, offset: 0x4B33, size: 0x8, addend: 0x0, symName: '-[DAMod constraintsFor:]', symObjAddr: 0x33B8, symBinAddr: 0x174E4, symSize: 0x3DC }
+  - { offsetInCU: 0x8CA, offset: 0x4B5E, size: 0x8, addend: 0x0, symName: '_constraintsFor:.tlfDebug', symObjAddr: 0x106F4, symBinAddr: 0x34634, symSize: 0x0 }
+  - { offsetInCU: 0x94B, offset: 0x4BDF, size: 0x8, addend: 0x0, symName: '-[DAMod canFire]', symObjAddr: 0x3794, symBinAddr: 0x178C0, symSize: 0x514 }
+  - { offsetInCU: 0x976, offset: 0x4C0A, size: 0x8, addend: 0x0, symName: _canFire.tlfDebug, symObjAddr: 0x106F8, symBinAddr: 0x34638, symSize: 0x0 }
+  - { offsetInCU: 0x98C, offset: 0x4C20, size: 0x8, addend: 0x0, symName: _canFire.tlfDebug.78, symObjAddr: 0x106FC, symBinAddr: 0x3463C, symSize: 0x0 }
+  - { offsetInCU: 0x9A2, offset: 0x4C36, size: 0x8, addend: 0x0, symName: _canFire.tlfDebug.81, symObjAddr: 0x10700, symBinAddr: 0x34640, symSize: 0x0 }
+  - { offsetInCU: 0x9E8, offset: 0x4C7C, size: 0x8, addend: 0x0, symName: '-[DAMod networkReachabilityChanged:]', symObjAddr: 0x3CA8, symBinAddr: 0x17DD4, symSize: 0x710 }
+  - { offsetInCU: 0xA0F, offset: 0x4CA3, size: 0x8, addend: 0x0, symName: '_networkReachabilityChanged:.tlfDebug', symObjAddr: 0x10704, symBinAddr: 0x34644, symSize: 0x0 }
+  - { offsetInCU: 0xA25, offset: 0x4CB9, size: 0x8, addend: 0x0, symName: '_networkReachabilityChanged:.tlfDebug.84', symObjAddr: 0x10708, symBinAddr: 0x34648, symSize: 0x0 }
+  - { offsetInCU: 0xA3B, offset: 0x4CCF, size: 0x8, addend: 0x0, symName: '_networkReachabilityChanged:.tlfDebug.87', symObjAddr: 0x1070C, symBinAddr: 0x3464C, symSize: 0x0 }
+  - { offsetInCU: 0xA51, offset: 0x4CE5, size: 0x8, addend: 0x0, symName: '_networkReachabilityChanged:.tlfDebug.90', symObjAddr: 0x10710, symBinAddr: 0x34650, symSize: 0x0 }
+  - { offsetInCU: 0xA67, offset: 0x4CFB, size: 0x8, addend: 0x0, symName: '_networkReachabilityChanged:.tlfDebug.93', symObjAddr: 0x10714, symBinAddr: 0x34654, symSize: 0x0 }
+  - { offsetInCU: 0xAAE, offset: 0x4D42, size: 0x8, addend: 0x0, symName: '-[DAMod firePageView:category:searchTerm:searchResult:attributes:cmmmc:]', symObjAddr: 0x43B8, symBinAddr: 0x184E4, symSize: 0x43C }
+  - { offsetInCU: 0xAD9, offset: 0x4D6D, size: 0x8, addend: 0x0, symName: '_firePageView:category:searchTerm:searchResult:attributes:cmmmc:.tlfDebug', symObjAddr: 0x10718, symBinAddr: 0x34658, symSize: 0x0 }
+  - { offsetInCU: 0xB93, offset: 0x4E27, size: 0x8, addend: 0x0, symName: '-[DAMod firePageView:cg:se:sr:attributes:cm_mmc:]', symObjAddr: 0x47F4, symBinAddr: 0x18920, symSize: 0x584 }
+  - { offsetInCU: 0xBBE, offset: 0x4E52, size: 0x8, addend: 0x0, symName: '_firePageView:cg:se:sr:attributes:cm_mmc:.tlfDebug', symObjAddr: 0x1071C, symBinAddr: 0x3465C, symSize: 0x0 }
+  - { offsetInCU: 0xC78, offset: 0x4F0C, size: 0x8, addend: 0x0, symName: '-[DAMod fireTechnicalProperties:cg:se:sr:attributes:cm_mmc:]', symObjAddr: 0x4D78, symBinAddr: 0x18EA4, symSize: 0x54C }
+  - { offsetInCU: 0xCA3, offset: 0x4F37, size: 0x8, addend: 0x0, symName: '_fireTechnicalProperties:cg:se:sr:attributes:cm_mmc:.tlfDebug', symObjAddr: 0x10720, symBinAddr: 0x34660, symSize: 0x0 }
+  - { offsetInCU: 0xD5D, offset: 0x4FF1, size: 0x8, addend: 0x0, symName: '-[DAMod fireProductView:pr:pm:cg:attributes:]', symObjAddr: 0x52C4, symBinAddr: 0x193F0, symSize: 0x5AC }
+  - { offsetInCU: 0xD88, offset: 0x501C, size: 0x8, addend: 0x0, symName: '_fireProductView:pr:pm:cg:attributes:.tlfDebug', symObjAddr: 0x10724, symBinAddr: 0x34664, symSize: 0x0 }
+  - { offsetInCU: 0xE32, offset: 0x50C6, size: 0x8, addend: 0x0, symName: '-[DAMod fireShopAction5:pm:qt:bp:cg:cc:attributes:]', symObjAddr: 0x5870, symBinAddr: 0x1999C, symSize: 0x60C }
+  - { offsetInCU: 0xE5D, offset: 0x50F1, size: 0x8, addend: 0x0, symName: '_fireShopAction5:pm:qt:bp:cg:cc:attributes:.tlfDebug', symObjAddr: 0x10728, symBinAddr: 0x34668, symSize: 0x0 }
+  - { offsetInCU: 0xF27, offset: 0x51BB, size: 0x8, addend: 0x0, symName: '-[DAMod fireShopAction9:pm:qt:bp:cg:on:tr:cd:cc:attributes:]', symObjAddr: 0x5E7C, symBinAddr: 0x19FA8, symSize: 0x780 }
+  - { offsetInCU: 0xF52, offset: 0x51E6, size: 0x8, addend: 0x0, symName: '_fireShopAction9:pm:qt:bp:cg:on:tr:cd:cc:attributes:.tlfDebug', symObjAddr: 0x1072C, symBinAddr: 0x3466C, symSize: 0x0 }
+  - { offsetInCU: 0x104C, offset: 0x52E0, size: 0x8, addend: 0x0, symName: '-[DAMod fireOrder:tr:sg:cd:ct:sa:zp:cc:attributes:]', symObjAddr: 0x65FC, symBinAddr: 0x1A728, symSize: 0x6CC }
+  - { offsetInCU: 0x1077, offset: 0x530B, size: 0x8, addend: 0x0, symName: '_fireOrder:tr:sg:cd:ct:sa:zp:cc:attributes:.tlfDebug', symObjAddr: 0x10730, symBinAddr: 0x34670, symSize: 0x0 }
+  - { offsetInCU: 0x1161, offset: 0x53F5, size: 0x8, addend: 0x0, symName: '-[DAMod fireRegistration:em:ct:sa:zp:cy:attributes:]', symObjAddr: 0x6CC8, symBinAddr: 0x1ADF4, symSize: 0x5EC }
+  - { offsetInCU: 0x118C, offset: 0x5420, size: 0x8, addend: 0x0, symName: '_fireRegistration:em:ct:sa:zp:cy:attributes:.tlfDebug', symObjAddr: 0x10734, symBinAddr: 0x34674, symSize: 0x0 }
+  - { offsetInCU: 0x1256, offset: 0x54EA, size: 0x8, addend: 0x0, symName: '-[DAMod fireElement:ecat:attributes:]', symObjAddr: 0x72B4, symBinAddr: 0x1B3E0, symSize: 0x480 }
+  - { offsetInCU: 0x1281, offset: 0x5515, size: 0x8, addend: 0x0, symName: '_fireElement:ecat:attributes:.tlfDebug', symObjAddr: 0x10738, symBinAddr: 0x34678, symSize: 0x0 }
+  - { offsetInCU: 0x130B, offset: 0x559F, size: 0x8, addend: 0x0, symName: '-[DAMod fireConversionEvent:cat:ccid:cpt:attributes:]', symObjAddr: 0x7734, symBinAddr: 0x1B860, symSize: 0x538 }
+  - { offsetInCU: 0x1336, offset: 0x55CA, size: 0x8, addend: 0x0, symName: '_fireConversionEvent:cat:ccid:cpt:attributes:.tlfDebug', symObjAddr: 0x1073C, symBinAddr: 0x3467C, symSize: 0x0 }
+  - { offsetInCU: 0x13E0, offset: 0x5674, size: 0x8, addend: 0x0, symName: '-[DAMod fireLinkClick:nm:hr:]', symObjAddr: 0x7C6C, symBinAddr: 0x1BD98, symSize: 0x4B4 }
+  - { offsetInCU: 0x140B, offset: 0x569F, size: 0x8, addend: 0x0, symName: '_fireLinkClick:nm:hr:.tlfDebug', symObjAddr: 0x10740, symBinAddr: 0x34680, symSize: 0x0 }
+  - { offsetInCU: 0x1495, offset: 0x5729, size: 0x8, addend: 0x0, symName: '-[DAMod fireImpression:cmsp:cmre:]', symObjAddr: 0x8120, symBinAddr: 0x1C24C, symSize: 0x45C }
+  - { offsetInCU: 0x14C0, offset: 0x5754, size: 0x8, addend: 0x0, symName: '_fireImpression:cmsp:cmre:.tlfDebug', symObjAddr: 0x10744, symBinAddr: 0x34684, symSize: 0x0 }
+  - { offsetInCU: 0x155A, offset: 0x57EE, size: 0x8, addend: 0x0, symName: '-[DAMod fireImpression:sp:re:]', symObjAddr: 0x857C, symBinAddr: 0x1C6A8, symSize: 0x4B4 }
+  - { offsetInCU: 0x1585, offset: 0x5819, size: 0x8, addend: 0x0, symName: '_fireImpression:sp:re:.tlfDebug', symObjAddr: 0x10748, symBinAddr: 0x34688, symSize: 0x0 }
+  - { offsetInCU: 0x160F, offset: 0x58A3, size: 0x8, addend: 0x0, symName: '-[DAMod isRequiredStringParamPassed:paramDescription:]', symObjAddr: 0x8A30, symBinAddr: 0x1CB5C, symSize: 0x424 }
+  - { offsetInCU: 0x163A, offset: 0x58CE, size: 0x8, addend: 0x0, symName: '_isRequiredStringParamPassed:paramDescription:.tlfDebug', symObjAddr: 0x1074C, symBinAddr: 0x3468C, symSize: 0x0 }
+  - { offsetInCU: 0x1650, offset: 0x58E4, size: 0x8, addend: 0x0, symName: '_isRequiredStringParamPassed:paramDescription:.tlfDebug.127', symObjAddr: 0x10750, symBinAddr: 0x34690, symSize: 0x0 }
+  - { offsetInCU: 0x16B5, offset: 0x5949, size: 0x8, addend: 0x0, symName: '-[DAMod postTagDictionary:]', symObjAddr: 0x8ED4, symBinAddr: 0x1D000, symSize: 0xCD0 }
+  - { offsetInCU: 0x16E0, offset: 0x5974, size: 0x8, addend: 0x0, symName: '_postTagDictionary:.tlfDebug', symObjAddr: 0x10754, symBinAddr: 0x34694, symSize: 0x0 }
+  - { offsetInCU: 0x16F6, offset: 0x598A, size: 0x8, addend: 0x0, symName: '_postTagDictionary:.tlfDebug.138', symObjAddr: 0x10758, symBinAddr: 0x34698, symSize: 0x0 }
+  - { offsetInCU: 0x170C, offset: 0x59A0, size: 0x8, addend: 0x0, symName: '_postTagDictionary:.tlfDebug.141', symObjAddr: 0x1075C, symBinAddr: 0x3469C, symSize: 0x0 }
+  - { offsetInCU: 0x1722, offset: 0x59B6, size: 0x8, addend: 0x0, symName: '_postTagDictionary:.tlfDebug.142', symObjAddr: 0x10760, symBinAddr: 0x346A0, symSize: 0x0 }
+  - { offsetInCU: 0x1738, offset: 0x59CC, size: 0x8, addend: 0x0, symName: '_postTagDictionary:.tlfDebug.143', symObjAddr: 0x10764, symBinAddr: 0x346A4, symSize: 0x0 }
+  - { offsetInCU: 0x17FE, offset: 0x5A92, size: 0x8, addend: 0x0, symName: '-[DAMod postTagString:]', symObjAddr: 0x9BA4, symBinAddr: 0x1DCD0, symSize: 0xC90 }
+  - { offsetInCU: 0x1829, offset: 0x5ABD, size: 0x8, addend: 0x0, symName: '_postTagString:.tlfDebug', symObjAddr: 0x10768, symBinAddr: 0x346A8, symSize: 0x0 }
+  - { offsetInCU: 0x183F, offset: 0x5AD3, size: 0x8, addend: 0x0, symName: '_postTagString:.tlfDebug.144', symObjAddr: 0x1076C, symBinAddr: 0x346AC, symSize: 0x0 }
+  - { offsetInCU: 0x1855, offset: 0x5AE9, size: 0x8, addend: 0x0, symName: '_postTagString:.tlfDebug.145', symObjAddr: 0x10770, symBinAddr: 0x346B0, symSize: 0x0 }
+  - { offsetInCU: 0x186B, offset: 0x5AFF, size: 0x8, addend: 0x0, symName: '_postTagString:.tlfDebug.146', symObjAddr: 0x10774, symBinAddr: 0x346B4, symSize: 0x0 }
+  - { offsetInCU: 0x1881, offset: 0x5B15, size: 0x8, addend: 0x0, symName: '_postTagString:.tlfDebug.147', symObjAddr: 0x10778, symBinAddr: 0x346B8, symSize: 0x0 }
+  - { offsetInCU: 0x1939, offset: 0x5BCD, size: 0x8, addend: 0x0, symName: '-[DAMod httpHeadersForSessionId:andJson:]', symObjAddr: 0xA834, symBinAddr: 0x1E960, symSize: 0x3AC }
+  - { offsetInCU: 0x1964, offset: 0x5BF8, size: 0x8, addend: 0x0, symName: '_httpHeadersForSessionId:andJson:.tlfDebug', symObjAddr: 0x1077C, symBinAddr: 0x346BC, symSize: 0x0 }
+  - { offsetInCU: 0x19DF, offset: 0x5C73, size: 0x8, addend: 0x0, symName: '-[DAMod technicalPropertiesHeaders]', symObjAddr: 0xABE0, symBinAddr: 0x1ED0C, symSize: 0x448 }
+  - { offsetInCU: 0x1A0A, offset: 0x5C9E, size: 0x8, addend: 0x0, symName: _technicalPropertiesHeaders.tlfDebug, symObjAddr: 0x10780, symBinAddr: 0x346C0, symSize: 0x0 }
+  - { offsetInCU: 0x1A51, offset: 0x5CE5, size: 0x8, addend: 0x0, symName: '+[DAMod deviceModel]', symObjAddr: 0xB028, symBinAddr: 0x1F154, symSize: 0x32C }
+  - { offsetInCU: 0x1A7C, offset: 0x5D10, size: 0x8, addend: 0x0, symName: _deviceModel.tlfDebug, symObjAddr: 0x10784, symBinAddr: 0x346C4, symSize: 0x0 }
+  - { offsetInCU: 0x1ADC, offset: 0x5D70, size: 0x8, addend: 0x0, symName: '+[DAMod deviceType]', symObjAddr: 0xB354, symBinAddr: 0x1F480, symSize: 0x324 }
+  - { offsetInCU: 0x1B07, offset: 0x5D9B, size: 0x8, addend: 0x0, symName: _deviceType.tlfDebug, symObjAddr: 0x10788, symBinAddr: 0x346C8, symSize: 0x0 }
+  - { offsetInCU: 0x1B62, offset: 0x5DF6, size: 0x8, addend: 0x0, symName: '+[DAMod isTechnicalPropertiesTagJson:]', symObjAddr: 0xB678, symBinAddr: 0x1F7A4, symSize: 0x404 }
+  - { offsetInCU: 0x1B8D, offset: 0x5E21, size: 0x8, addend: 0x0, symName: '_isTechnicalPropertiesTagJson:.tlfDebug', symObjAddr: 0x1078C, symBinAddr: 0x346CC, symSize: 0x0 }
+  - { offsetInCU: 0x1C2E, offset: 0x5EC2, size: 0x8, addend: 0x0, symName: '+[DAMod setActiveClientId:]', symObjAddr: 0xBA7C, symBinAddr: 0x1FBA8, symSize: 0x91C }
+  - { offsetInCU: 0x1C59, offset: 0x5EED, size: 0x8, addend: 0x0, symName: '_setActiveClientId:.tlfDebug', symObjAddr: 0x10790, symBinAddr: 0x346D0, symSize: 0x0 }
+  - { offsetInCU: 0x1C6F, offset: 0x5F03, size: 0x8, addend: 0x0, symName: '_setActiveClientId:.tlfDebug.174', symObjAddr: 0x10794, symBinAddr: 0x346D4, symSize: 0x0 }
+  - { offsetInCU: 0x1C85, offset: 0x5F19, size: 0x8, addend: 0x0, symName: '_setActiveClientId:.tlfDebug.179', symObjAddr: 0x10798, symBinAddr: 0x346D8, symSize: 0x0 }
+  - { offsetInCU: 0x1C9B, offset: 0x5F2F, size: 0x8, addend: 0x0, symName: '_setActiveClientId:.tlfDebug.182', symObjAddr: 0x1079C, symBinAddr: 0x346DC, symSize: 0x0 }
+  - { offsetInCU: 0x1CF1, offset: 0x5F85, size: 0x8, addend: 0x0, symName: '+[DAMod clearActiveClientId]', symObjAddr: 0xC398, symBinAddr: 0x204C4, symSize: 0x294 }
+  - { offsetInCU: 0x1D1C, offset: 0x5FB0, size: 0x8, addend: 0x0, symName: _clearActiveClientId.tlfDebug, symObjAddr: 0x107A0, symBinAddr: 0x346E0, symSize: 0x0 }
+  - { offsetInCU: 0x1D62, offset: 0x5FF6, size: 0x8, addend: 0x0, symName: '-[DAMod setOptOut:]', symObjAddr: 0xC62C, symBinAddr: 0x20758, symSize: 0x3E4 }
+  - { offsetInCU: 0x1D8D, offset: 0x6021, size: 0x8, addend: 0x0, symName: '_setOptOut:.tlfDebug', symObjAddr: 0x107A4, symBinAddr: 0x346E4, symSize: 0x0 }
+  - { offsetInCU: 0x1DE2, offset: 0x6076, size: 0x8, addend: 0x0, symName: '-[DAMod getOptOut]', symObjAddr: 0xCA10, symBinAddr: 0x20B3C, symSize: 0x2D4 }
+  - { offsetInCU: 0x1E0D, offset: 0x60A1, size: 0x8, addend: 0x0, symName: _getOptOut.tlfDebug, symObjAddr: 0x107A8, symBinAddr: 0x346E8, symSize: 0x0 }
+  - { offsetInCU: 0x1E53, offset: 0x60E7, size: 0x8, addend: 0x0, symName: '-[DAMod isOptOutAnonymous]', symObjAddr: 0xCCE4, symBinAddr: 0x20E10, symSize: 0x2C8 }
+  - { offsetInCU: 0x1E7E, offset: 0x6112, size: 0x8, addend: 0x0, symName: _isOptOutAnonymous.tlfDebug, symObjAddr: 0x107AC, symBinAddr: 0x346EC, symSize: 0x0 }
+  - { offsetInCU: 0x1FD8, offset: 0x626C, size: 0x8, addend: 0x0, symName: '___23+[DAMod sharedInstance]_block_invoke', symObjAddr: 0x160, symBinAddr: 0x1428C, symSize: 0x68 }
+  - { offsetInCU: 0x2015, offset: 0x62A9, size: 0x8, addend: 0x0, symName: '-[DAMod isEnabled]', symObjAddr: 0x2548, symBinAddr: 0x16674, symSize: 0x20 }
+  - { offsetInCU: 0x204C, offset: 0x62E0, size: 0x8, addend: 0x0, symName: '-[DAMod name]', symObjAddr: 0x2568, symBinAddr: 0x16694, symSize: 0x1C }
+  - { offsetInCU: 0x2083, offset: 0x6317, size: 0x8, addend: 0x0, symName: '-[DAMod setCXAAdvertisingId:]', symObjAddr: 0x2FB8, symBinAddr: 0x170E4, symSize: 0x8C }
+  - { offsetInCU: 0x20C9, offset: 0x635D, size: 0x8, addend: 0x0, symName: '-[DAMod getCXAAdvertisingId]', symObjAddr: 0x3044, symBinAddr: 0x17170, symSize: 0x60 }
+  - { offsetInCU: 0x2100, offset: 0x6394, size: 0x8, addend: 0x0, symName: '-[DAMod emptyStringIfNil:]', symObjAddr: 0x8E54, symBinAddr: 0x1CF80, symSize: 0x80 }
+  - { offsetInCU: 0x2146, offset: 0x63DA, size: 0x8, addend: 0x0, symName: '-[DAMod bModuleEnabled]', symObjAddr: 0xCFAC, symBinAddr: 0x210D8, symSize: 0x20 }
+  - { offsetInCU: 0x217C, offset: 0x6410, size: 0x8, addend: 0x0, symName: '-[DAMod daTagsRingBuffer]', symObjAddr: 0xCFCC, symBinAddr: 0x210F8, symSize: 0x1C }
+  - { offsetInCU: 0x21B2, offset: 0x6446, size: 0x8, addend: 0x0, symName: '-[DAMod reachability]', symObjAddr: 0xCFE8, symBinAddr: 0x21114, symSize: 0x1C }
+  - { offsetInCU: 0x21E8, offset: 0x647C, size: 0x8, addend: 0x0, symName: '-[DAMod hostNetworkStatus]', symObjAddr: 0xD004, symBinAddr: 0x21130, symSize: 0x1C }
+  - { offsetInCU: 0x221E, offset: 0x64B2, size: 0x8, addend: 0x0, symName: '-[DAMod applicationName]', symObjAddr: 0xD020, symBinAddr: 0x2114C, symSize: 0x1C }
+  - { offsetInCU: 0x2254, offset: 0x64E8, size: 0x8, addend: 0x0, symName: '-[DAMod setApplicationName:]', symObjAddr: 0xD03C, symBinAddr: 0x21168, symSize: 0x34 }
+  - { offsetInCU: 0x2292, offset: 0x6526, size: 0x8, addend: 0x0, symName: '-[DAMod clientId]', symObjAddr: 0xD070, symBinAddr: 0x2119C, symSize: 0x1C }
+  - { offsetInCU: 0x22C8, offset: 0x655C, size: 0x8, addend: 0x0, symName: '-[DAMod setClientId:]', symObjAddr: 0xD08C, symBinAddr: 0x211B8, symSize: 0x34 }
+  - { offsetInCU: 0x2306, offset: 0x659A, size: 0x8, addend: 0x0, symName: '-[DAMod optOutModeStr]', symObjAddr: 0xD0C0, symBinAddr: 0x211EC, symSize: 0x1C }
+  - { offsetInCU: 0x233C, offset: 0x65D0, size: 0x8, addend: 0x0, symName: '-[DAMod setOptOutModeStr:]', symObjAddr: 0xD0DC, symBinAddr: 0x21208, symSize: 0x34 }
+  - { offsetInCU: 0x237A, offset: 0x660E, size: 0x8, addend: 0x0, symName: '-[DAMod .cxx_destruct]', symObjAddr: 0xD110, symBinAddr: 0x2123C, symSize: 0x78 }
+  - { offsetInCU: 0x27, offset: 0x6D79, size: 0x8, addend: 0x0, symName: '+[DAModSession sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x212B4, symSize: 0x160 }
+  - { offsetInCU: 0x34, offset: 0x6D86, size: 0x8, addend: 0x0, symName: '+[DAModSession sharedInstance]', symObjAddr: 0x0, symBinAddr: 0x212B4, symSize: 0x160 }
+  - { offsetInCU: 0x5D, offset: 0x6DAF, size: 0x8, addend: 0x0, symName: _sharedInstance.predicate, symObjAddr: 0x8978, symBinAddr: 0x34820, symSize: 0x0 }
+  - { offsetInCU: 0x72, offset: 0x6DC4, size: 0x8, addend: 0x0, symName: _sharedInstance.sharedInstance, symObjAddr: 0x8980, symBinAddr: 0x34828, symSize: 0x0 }
+  - { offsetInCU: 0x1B2, offset: 0x6F04, size: 0x8, addend: 0x0, symName: '-[DAModSession init]', symObjAddr: 0x1C8, symBinAddr: 0x2147C, symSize: 0x300 }
+  - { offsetInCU: 0x1DB, offset: 0x6F2D, size: 0x8, addend: 0x0, symName: _init.tlfDebug, symObjAddr: 0x3C4C, symBinAddr: 0x347B0, symSize: 0x0 }
+  - { offsetInCU: 0x211, offset: 0x6F63, size: 0x8, addend: 0x0, symName: '-[DAModSession newSession]', symObjAddr: 0x4C8, symBinAddr: 0x2177C, symSize: 0x49C }
+  - { offsetInCU: 0x23A, offset: 0x6F8C, size: 0x8, addend: 0x0, symName: _newSession.tlfDebug, symObjAddr: 0x3C50, symBinAddr: 0x347B4, symSize: 0x0 }
+  - { offsetInCU: 0x2A1, offset: 0x6FF3, size: 0x8, addend: 0x0, symName: '-[DAModSession sessionDirectoryPath]', symObjAddr: 0x964, symBinAddr: 0x21C18, symSize: 0x35C }
+  - { offsetInCU: 0x2CA, offset: 0x701C, size: 0x8, addend: 0x0, symName: _sessionDirectoryPath.tlfDebug, symObjAddr: 0x3C54, symBinAddr: 0x347B8, symSize: 0x0 }
+  - { offsetInCU: 0x322, offset: 0x7074, size: 0x8, addend: 0x0, symName: '-[DAModSession sessionDirectoryExists]', symObjAddr: 0xCC0, symBinAddr: 0x21F74, symSize: 0x300 }
+  - { offsetInCU: 0x34B, offset: 0x709D, size: 0x8, addend: 0x0, symName: _sessionDirectoryExists.tlfDebug, symObjAddr: 0x3C58, symBinAddr: 0x347BC, symSize: 0x0 }
+  - { offsetInCU: 0x38F, offset: 0x70E1, size: 0x8, addend: 0x0, symName: '-[DAModSession sessionFilePath]', symObjAddr: 0xFC0, symBinAddr: 0x22274, symSize: 0x32C }
+  - { offsetInCU: 0x3B8, offset: 0x710A, size: 0x8, addend: 0x0, symName: _sessionFilePath.tlfDebug, symObjAddr: 0x3C5C, symBinAddr: 0x347C0, symSize: 0x0 }
+  - { offsetInCU: 0x3FC, offset: 0x714E, size: 0x8, addend: 0x0, symName: '-[DAModSession sessionFileExists]', symObjAddr: 0x12EC, symBinAddr: 0x225A0, symSize: 0x300 }
+  - { offsetInCU: 0x425, offset: 0x7177, size: 0x8, addend: 0x0, symName: _sessionFileExists.tlfDebug, symObjAddr: 0x3C60, symBinAddr: 0x347C4, symSize: 0x0 }
+  - { offsetInCU: 0x469, offset: 0x71BB, size: 0x8, addend: 0x0, symName: '-[DAModSession createSessionDirectory]', symObjAddr: 0x15EC, symBinAddr: 0x228A0, symSize: 0x4FC }
+  - { offsetInCU: 0x492, offset: 0x71E4, size: 0x8, addend: 0x0, symName: _createSessionDirectory.tlfDebug, symObjAddr: 0x3C64, symBinAddr: 0x347C8, symSize: 0x0 }
+  - { offsetInCU: 0x4A7, offset: 0x71F9, size: 0x8, addend: 0x0, symName: _createSessionDirectory.tlfDebug.25, symObjAddr: 0x3C68, symBinAddr: 0x347CC, symSize: 0x0 }
+  - { offsetInCU: 0x4EB, offset: 0x723D, size: 0x8, addend: 0x0, symName: '-[DAModSession contentsOfSessionFile]', symObjAddr: 0x1AE8, symBinAddr: 0x22D9C, symSize: 0x4E4 }
+  - { offsetInCU: 0x514, offset: 0x7266, size: 0x8, addend: 0x0, symName: _contentsOfSessionFile.tlfDebug, symObjAddr: 0x3C6C, symBinAddr: 0x347D0, symSize: 0x0 }
+  - { offsetInCU: 0x529, offset: 0x727B, size: 0x8, addend: 0x0, symName: _contentsOfSessionFile.tlfDebug.30, symObjAddr: 0x3C70, symBinAddr: 0x347D4, symSize: 0x0 }
+  - { offsetInCU: 0x591, offset: 0x72E3, size: 0x8, addend: 0x0, symName: '-[DAModSession updateSessionFile]', symObjAddr: 0x1FCC, symBinAddr: 0x23280, symSize: 0x568 }
+  - { offsetInCU: 0x5BA, offset: 0x730C, size: 0x8, addend: 0x0, symName: _updateSessionFile.tlfDebug, symObjAddr: 0x3C74, symBinAddr: 0x347D8, symSize: 0x0 }
+  - { offsetInCU: 0x5CF, offset: 0x7321, size: 0x8, addend: 0x0, symName: _updateSessionFile.tlfDebug.37, symObjAddr: 0x3C78, symBinAddr: 0x347DC, symSize: 0x0 }
+  - { offsetInCU: 0x663, offset: 0x73B5, size: 0x8, addend: 0x0, symName: '-[DAModSession newUserId]', symObjAddr: 0x2534, symBinAddr: 0x237E8, symSize: 0x404 }
+  - { offsetInCU: 0x68E, offset: 0x73E0, size: 0x8, addend: 0x0, symName: _newUserId.tlfDebug, symObjAddr: 0x3C7C, symBinAddr: 0x347E0, symSize: 0x0 }
+  - { offsetInCU: 0x71A, offset: 0x746C, size: 0x8, addend: 0x0, symName: '-[DAModSession newSessionId]', symObjAddr: 0x2938, symBinAddr: 0x23BEC, symSize: 0x330 }
+  - { offsetInCU: 0x745, offset: 0x7497, size: 0x8, addend: 0x0, symName: _newSessionId.tlfDebug, symObjAddr: 0x3C80, symBinAddr: 0x347E4, symSize: 0x0 }
+  - { offsetInCU: 0x7A0, offset: 0x74F2, size: 0x8, addend: 0x0, symName: '-[DAModSession visitorId]', symObjAddr: 0x2C68, symBinAddr: 0x23F1C, symSize: 0x318 }
+  - { offsetInCU: 0x7CB, offset: 0x751D, size: 0x8, addend: 0x0, symName: _visitorId.tlfDebug, symObjAddr: 0x3C84, symBinAddr: 0x347E8, symSize: 0x0 }
+  - { offsetInCU: 0x902, offset: 0x7654, size: 0x8, addend: 0x0, symName: '___30+[DAModSession sharedInstance]_block_invoke', symObjAddr: 0x160, symBinAddr: 0x21414, symSize: 0x68 }
+  - { offsetInCU: 0x93F, offset: 0x7691, size: 0x8, addend: 0x0, symName: '-[DAModSession cjuid]', symObjAddr: 0x2F80, symBinAddr: 0x24234, symSize: 0x1C }
+  - { offsetInCU: 0x975, offset: 0x76C7, size: 0x8, addend: 0x0, symName: '-[DAModSession setCjuid:]', symObjAddr: 0x2F9C, symBinAddr: 0x24250, symSize: 0x34 }
+  - { offsetInCU: 0x9B3, offset: 0x7705, size: 0x8, addend: 0x0, symName: '-[DAModSession cjsid]', symObjAddr: 0x2FD0, symBinAddr: 0x24284, symSize: 0x1C }
+  - { offsetInCU: 0x9E9, offset: 0x773B, size: 0x8, addend: 0x0, symName: '-[DAModSession .cxx_destruct]', symObjAddr: 0x2FEC, symBinAddr: 0x242A0, symSize: 0x48 }
+...
