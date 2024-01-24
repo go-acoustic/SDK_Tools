@@ -8,6 +8,23 @@
 # prohibited.
 ###############################################################################################
 
+January 24 2024 DigitalAnalytics Module 1.1.238
+
+DigitalAnalytics Release
+Enhancements
+
+- Upgraded to API level 21-32.
+
+Bug Fixes
+
+- None.
+
+Known Issues
+
+- None.
+
+
+
 January 23 2024 EOCore Module 2.0.343
 
 EOCore Release
