@@ -15,7 +15,7 @@ DAMod - Contains Debug and Release of library that will collect DigitalAnalytics
 
 Hosted at https://github.com/acoustic-analytics
 SampleCode folder              - Has several sample applications which demonstrates how to integrate and use the library.
-                                 It can be found at https://github.com/acoustic-analytics.
+                                 It can be found at https://github.com/go-acoustic.
                                  + Samples/KitchenSinkNew - An Objective-C sample application which demonstrates how to integrate and use the DigitalAnalytics SDK.
 																 + Samples/SwiftDigitalAnalyticsPages - A Swift sample application which demonstrates how to integrate and use the DigitalAnalytics SDK.
 
