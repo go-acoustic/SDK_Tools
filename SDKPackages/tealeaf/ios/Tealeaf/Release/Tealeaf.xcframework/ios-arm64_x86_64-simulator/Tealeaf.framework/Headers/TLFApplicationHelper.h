@@ -42,11 +42,23 @@
  */
 - (BOOL)enableTealeafFramework:(NSString*)appKey withPostMessageUrl:(NSString*)postUrl;
 
+/*!
+ * @abstract Turns on the Tealeaf framework for unit tests
+ * @return Returns YES or NO based on whether the framework was successfully enabled or not and update values.
+ */
+- (BOOL)enableTealeafFrameworkForUnitTests;
+
 /**
  * @abstract Turns off the Tealeaf Framework.
  * @return Returns YES or NO based on whether the framework was successfully enabled or not.
  */
 - (BOOL)disableTealeafFramework;
+
+/**
+ * @abstract Turns off the Tealeaf Framework for unit tests.
+ * @return Returns YES or NO based on whether the framework was successfully enabled or not.
+ */
+- (BOOL)disableTealeafFrameworkForUnitTests;
 
 /*!
  * @abstract Set up react native flag.
