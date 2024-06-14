@@ -8,6 +8,40 @@
 # prohibited.
 ###############################################################################################
 
+June 14 2024 EOCore Module 2.3.272
+
+EOCore Release
+Bug Fixes:
+
+- None
+
+
+Improvements:
+
+- Adjust for ConnectResources.bundle.
+- Add PrivacyInfo.xcprivacy and sign xcframeworks.
+
+
+Our environment for this release:
+
+- Xcode 15.4
+- MacOS 14.5
+- iOS 12.x to 17.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
 January 23 2024 DAMod Module 1.1.106
 
 DAMod Release
