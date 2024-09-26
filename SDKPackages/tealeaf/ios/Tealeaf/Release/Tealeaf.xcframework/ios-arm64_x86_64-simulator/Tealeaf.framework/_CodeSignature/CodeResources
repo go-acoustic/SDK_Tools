@@ -14,11 +14,19 @@
 		</data>
 		<key>Headers/TLFCustomEvent.h</key>
 		<data>
-		jVZnpHWicRsWjKG+MuZCGBfjnBs=
+		TGgTAPT2ib3wUXwv1/K0pdIpFGA=
+		</data>
+		<key>Headers/TLFEnums.h</key>
+		<data>
+		2jnoTKP/uUrzdHWS0qzwIextSSw=
 		</data>
 		<key>Headers/TLFLevelManager.h</key>
 		<data>
 		GhmvRhoW4qBrQxjR7qTGu4YLc6E=
+		</data>
+		<key>Headers/TLFMessage.h</key>
+		<data>
+		uO52+vsUcFL3A5C1DZ7Tt3r/A0I=
 		</data>
 		<key>Headers/TLFPublicDefinitions.h</key>
 		<data>
@@ -26,15 +34,15 @@
 		</data>
 		<key>Headers/Tealeaf.h</key>
 		<data>
-		xFoRtcJWE15ak6PgzCCRHXJwzNo=
+		SslEihRqh6FnHZwZLLMOvtgPfBU=
 		</data>
 		<key>Headers/TealeafBridgingHeader.h</key>
 		<data>
-		3Qv7+avdVGaYCrH7n0rZT7OHjp8=
+		fXyJTzT7icTRLsDOWhaPB/mNmLU=
 		</data>
 		<key>Info.plist</key>
 		<data>
-		3gO6FaqVdyEyi30cdaYvA21IMM0=
+		2DOTktNIacL3QcUmILUXElEDT5k=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -46,7 +54,7 @@
 		</data>
 		<key>TLFResources.bundle/TealeafAdvancedConfig.json</key>
 		<data>
-		nMVhsr/MjV1KQGV8lpJnMGWzBR4=
+		sxZGw64NQqAtSh5jT6VpPlO7zpY=
 		</data>
 		<key>TLFResources.bundle/TealeafBasicConfig.plist</key>
 		<data>
@@ -77,7 +85,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			A0eMW0tPJTK78BB9ErjLBOd1gVxR1vx8LkY2HW8zufM=
+			ITHE82NA+NXM4U1yaMxPHLfaI1Tbf8qGe9CVfx45hM8=
+			</data>
+		</dict>
+		<key>Headers/TLFEnums.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			YWGteL4L1GCPJt884iJtwXJ9LU6ptxqghivfMMfw/2c=
 			</data>
 		</dict>
 		<key>Headers/TLFLevelManager.h</key>
@@ -85,6 +100,13 @@
 			<key>hash2</key>
 			<data>
 			D3ew8UBUW5YoDwe+yMI8RI5Ud7azM8dU5jTtKjJwwg8=
+			</data>
+		</dict>
+		<key>Headers/TLFMessage.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			KX0jFKrj+6dA1phArevhYHrVaO9dByv7X2OggjUjD7w=
 			</data>
 		</dict>
 		<key>Headers/TLFPublicDefinitions.h</key>
@@ -98,14 +120,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			rutK6l6KQW15JixB8CrMURlsNeX2imZwAHEETLuBLzA=
+			CocmdX9SojdkKu+3JAJB6/phC0F0SiT5UPOneErH/EI=
 			</data>
 		</dict>
 		<key>Headers/TealeafBridgingHeader.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			llOZauDbwCJAGc3NdqmU9iD4X+qdONmszC9vl0MFv2A=
+			muOAk84AMaChQ30HLsVMhRsSGAZjZB+hCGxJdhDsd9o=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -126,7 +148,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sF0JsNdS+qGRVF0y7dc2nxBqNdMMmmXJEkNniXNjU8c=
+			1o0ATZ4hKhWGgzBLea5tRBi9WVaZzxbmpcAw6/P4GPw=
 			</data>
 		</dict>
 		<key>TLFResources.bundle/TealeafBasicConfig.plist</key>

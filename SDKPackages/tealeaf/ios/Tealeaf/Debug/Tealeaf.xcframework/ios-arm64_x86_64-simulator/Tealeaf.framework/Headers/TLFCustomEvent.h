@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2023 Acoustic, L.P. All rights reserved.
+// Copyright (C) 2024 Acoustic, L.P. All rights reserved.
 //
 // NOTICE: This file contains material that is confidential and proprietary to
 // Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -15,8 +15,14 @@
  */
 
 #import <Foundation/Foundation.h>
-#import <Tealeaf/TLFPublicDefinitions.h>
 #import <CoreLocation/CoreLocation.h>
+#if TEALEAF_USE_REACT
+#import <TealeafReactNative/TLFPublicDefinitions.h>
+#import <TealeafReactNative/TLFMessage.h>
+#else
+#import <Tealeaf/TLFPublicDefinitions.h>
+#import <Tealeaf/TLFMessage.h>
+#endif
 
 /*!
  @class TLFCustomEvent
@@ -58,6 +64,14 @@
  @return BOOL Whether the message was successfully logged or not
  */
 - (BOOL)logEvent:(NSString *)eventName values:(NSDictionary *)values level:(kTLFMonitoringLevelType)level;
+
+/*!
+ @brief logMessage allows for the logging of TLFMessage object.
+ @discussion When connected to a Cellular network only events with a log level less than or equal to the PostMessageLevelCellular level (configured in EOCoreSettings.bundle > BasicConfig.plist) will be posted. When connected to a Wifi network only events with a log level less than or equal to the PostMessageLevelWifi level (configured in EOCoreSettings.bundle > BasicConfig.plist) will be posted. If the network state cannot be determined then PostMessageLevelCellular will be used by default.
+ @param message - Message object to log.
+ @return BOOL Whether the message was successfully logged or not
+ */
+- (BOOL)logMessage:(TLFMessage *)message;
 
 #pragma mark - Errors and Exceptions
 /*!

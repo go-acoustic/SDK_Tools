@@ -4,7 +4,7 @@
 //
 //  Created by Shridhar Damale on 13/10/17.
 //
-//  Copyright (C) 2021 Acoustic, L.P. All rights reserved.
+//  Copyright (C) 2024 Acoustic, L.P. All rights reserved.
 //
 //  NOTICE: This file contains material that is confidential and proprietary to
 //  Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -28,3 +28,8 @@ FOUNDATION_EXPORT const unsigned char TealeafVersionString[];
 #import "TLFCustomEvent.h"
 #import "TLFPublicDefinitions.h"
 #import "TealeafBridgingHeader.h"
+
+// Needed for Connect
+#import "TLFMessage.h"
+#import "TLFEnums.h"
+#import "TLFLevelManager.h"
