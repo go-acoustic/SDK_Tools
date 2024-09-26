@@ -2,9 +2,9 @@
     "CachedFileMaxBytesSize": 5120000,
     "CompressPostMessage": true,
     "DefaultOrientation": 0,
-    "LibraryVersion": "2.3.273",
+    "LibraryVersion": "2.3.287",
     "MaxNumberOfFilesToCache": 5,
-    "MessageVersion": "6.0.0.0",
+    "MessageVersion": "6.0.0",
     "PostMessageMaxBytesSize": 2000000,
     "PostMessageTimeout": 300,
     "TurnOffCorrectOrientationUpdates": false

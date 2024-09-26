@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2019 Acoustic, L.P. All rights reserved.
+// Copyright (C) 2024 Acoustic, L.P. All rights reserved.
 //
 // NOTICE: This file contains material that is confidential and proprietary to
 // Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -14,6 +14,7 @@
  @copyright Acoustic, L.P. 2019
  */
 #import <Foundation/Foundation.h>
+#import <UIKit/UIView.h>
 #import <EOCore/NSString+EOCoreExtensions.h>
 
 /* Module Names */
@@ -92,4 +93,11 @@
  * @return Whether it was able to set the value based on the configuration item key.
  */
 - (BOOL)setConfigItem:(NSString*)item value:(id)value forModuleName:(NSString *)moduleName;
+
+/*!
+ * @abstract Get the current UIWindow on the screen.
+ * @discussion Get the current UIWindow on the screen.
+ * @return Get the current UIWindow on the screen.
+ */
+- (UIWindow *)getUIWindow;
 @end

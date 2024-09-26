@@ -6,19 +6,11 @@
 	<dict>
 		<key>ios-arm64/EOCore.framework/EOCore</key>
 		<data>
-		NO3FmDAKg3brBKnlUsHeEvB6RK0=
-		</data>
-		<key>ios-arm64/EOCore.framework/EOCoreSettings.bundle/EOCoreAdvancedConfig.json</key>
-		<data>
-		LmLvmRft3y+Nbb2djYwLRrf8Uas=
-		</data>
-		<key>ios-arm64/EOCore.framework/EOCoreSettings.bundle/EOCoreBasicConfig.plist</key>
-		<data>
-		mAxVIEXHt1oGRe+jgamVXM9uS+I=
+		9zXzxAd2cQdSMj0FDnhF8q0tGuA=
 		</data>
 		<key>ios-arm64/EOCore.framework/Headers/EOApplicationHelper.h</key>
 		<data>
-		iKaO2RnzrDwXTxZ02C71Gd2CXKQ=
+		HkqCkqXLzXTegazRcGeqgKfsNgg=
 		</data>
 		<key>ios-arm64/EOCore.framework/Headers/EOCore.h</key>
 		<data>
@@ -34,7 +26,7 @@
 		</data>
 		<key>ios-arm64/EOCore.framework/Headers/EOPublicHeader.h</key>
 		<data>
-		YHg4UOE4RibMl+cjDedg3tzkj6I=
+		x8yedwWW3qEpdKjx3wrNnS8hVMM=
 		</data>
 		<key>ios-arm64/EOCore.framework/Headers/EOReachability.h</key>
 		<data>
@@ -50,7 +42,7 @@
 		</data>
 		<key>ios-arm64/EOCore.framework/Info.plist</key>
 		<data>
-		5sDI0Q0LrySDXorS3iyVeiB09cI=
+		1GR/shR5uZxxn5PXs+xJXqekvrs=
 		</data>
 		<key>ios-arm64/EOCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -62,23 +54,15 @@
 		</data>
 		<key>ios-arm64/EOCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		T1eKNUW5Cr2m4y8PNMHBvGjY7Ew=
+		de/X/tynIDQTr2KX9V2anhlu7NA=
 		</data>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/EOCore</key>
 		<data>
-		oKuSZIRdMYCmwa42+rwRr7qLBTQ=
-		</data>
-		<key>ios-arm64_x86_64-simulator/EOCore.framework/EOCoreSettings.bundle/EOCoreAdvancedConfig.json</key>
-		<data>
-		LmLvmRft3y+Nbb2djYwLRrf8Uas=
-		</data>
-		<key>ios-arm64_x86_64-simulator/EOCore.framework/EOCoreSettings.bundle/EOCoreBasicConfig.plist</key>
-		<data>
-		mAxVIEXHt1oGRe+jgamVXM9uS+I=
+		Oe9oecKUJGm/C7H+YoIy8023O3E=
 		</data>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/Headers/EOApplicationHelper.h</key>
 		<data>
-		iKaO2RnzrDwXTxZ02C71Gd2CXKQ=
+		HkqCkqXLzXTegazRcGeqgKfsNgg=
 		</data>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/Headers/EOCore.h</key>
 		<data>
@@ -94,7 +78,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/Headers/EOPublicHeader.h</key>
 		<data>
-		YHg4UOE4RibMl+cjDedg3tzkj6I=
+		x8yedwWW3qEpdKjx3wrNnS8hVMM=
 		</data>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/Headers/EOReachability.h</key>
 		<data>
@@ -110,7 +94,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/Info.plist</key>
 		<data>
-		OHguMXKygPpZjeoLGhdg38yvN88=
+		s2yBzS7Gw9OVc5eKCPM82j1iK3k=
 		</data>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/Modules/module.modulemap</key>
 		<data>
@@ -122,7 +106,7 @@
 		</data>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/_CodeSignature/CodeResources</key>
 		<data>
-		aJNgMG0MxU5ZqyHPSoxuUQh4uHU=
+		ZDgW+BduDZDNNkZFX8QZZRtGwN0=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -131,44 +115,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			NO3FmDAKg3brBKnlUsHeEvB6RK0=
+			9zXzxAd2cQdSMj0FDnhF8q0tGuA=
 			</data>
 			<key>hash2</key>
 			<data>
-			tTr+y3jADCU4Y+S4zIzj+aOAKYOLgWs/P/W2hPM02xQ=
-			</data>
-		</dict>
-		<key>ios-arm64/EOCore.framework/EOCoreSettings.bundle/EOCoreAdvancedConfig.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LmLvmRft3y+Nbb2djYwLRrf8Uas=
-			</data>
-			<key>hash2</key>
-			<data>
-			iX8viBwAXgjJZzFDF/ySDZ/63xQIufgyn+dpt178mCw=
-			</data>
-		</dict>
-		<key>ios-arm64/EOCore.framework/EOCoreSettings.bundle/EOCoreBasicConfig.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mAxVIEXHt1oGRe+jgamVXM9uS+I=
-			</data>
-			<key>hash2</key>
-			<data>
-			WOvH8vEwCDK33IgqmAMtwGD2oBLPvbYE5JuNZhqhr6o=
+			OJ55+lgrSekfJfQwRSV8jPZ7RuIca2REAoh+duHIySs=
 			</data>
 		</dict>
 		<key>ios-arm64/EOCore.framework/Headers/EOApplicationHelper.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iKaO2RnzrDwXTxZ02C71Gd2CXKQ=
+			HkqCkqXLzXTegazRcGeqgKfsNgg=
 			</data>
 			<key>hash2</key>
 			<data>
-			xVHdW3EWdC3bos367A1NSnU7d7DeHr/CVnQScfzt29c=
+			SG2LtjfSrlMJE1s4zBYpZqxvAfujEClWefte1ratNfA=
 			</data>
 		</dict>
 		<key>ios-arm64/EOCore.framework/Headers/EOCore.h</key>
@@ -208,11 +170,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YHg4UOE4RibMl+cjDedg3tzkj6I=
+			x8yedwWW3qEpdKjx3wrNnS8hVMM=
 			</data>
 			<key>hash2</key>
 			<data>
-			lOsfkSOuY7R3S3xKrCtrmfRF//BrS3HAhwxDQi+jqiM=
+			IhUj7yjA14X1L55Day5MnV50+qn+k9NBSCEPwQEK1NE=
 			</data>
 		</dict>
 		<key>ios-arm64/EOCore.framework/Headers/EOReachability.h</key>
@@ -252,11 +214,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			5sDI0Q0LrySDXorS3iyVeiB09cI=
+			1GR/shR5uZxxn5PXs+xJXqekvrs=
 			</data>
 			<key>hash2</key>
 			<data>
-			DnuVRPkyz0GXaqcHKe6OYbG2zdw0sy2AciBEe0o7Otg=
+			5mczV91ORVzIJCva/ZDHaE4nBa74/qft8Nx19cLt93M=
 			</data>
 		</dict>
 		<key>ios-arm64/EOCore.framework/Modules/module.modulemap</key>
@@ -285,55 +247,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			T1eKNUW5Cr2m4y8PNMHBvGjY7Ew=
+			de/X/tynIDQTr2KX9V2anhlu7NA=
 			</data>
 			<key>hash2</key>
 			<data>
-			SVcR+Qcr2pt9nROnEQIKeJoSIu61o08ssUBaaCuxJvg=
+			G/FCdMQS44X/joO71485Uk22F7E8lcxo2qYBKIi5nKY=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/EOCore</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			oKuSZIRdMYCmwa42+rwRr7qLBTQ=
+			Oe9oecKUJGm/C7H+YoIy8023O3E=
 			</data>
 			<key>hash2</key>
 			<data>
-			nNdMQkR4gG0hUhoWw9UPnDiHpsDXfV8GXVrKOHMWTbQ=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/EOCore.framework/EOCoreSettings.bundle/EOCoreAdvancedConfig.json</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			LmLvmRft3y+Nbb2djYwLRrf8Uas=
-			</data>
-			<key>hash2</key>
-			<data>
-			iX8viBwAXgjJZzFDF/ySDZ/63xQIufgyn+dpt178mCw=
-			</data>
-		</dict>
-		<key>ios-arm64_x86_64-simulator/EOCore.framework/EOCoreSettings.bundle/EOCoreBasicConfig.plist</key>
-		<dict>
-			<key>hash</key>
-			<data>
-			mAxVIEXHt1oGRe+jgamVXM9uS+I=
-			</data>
-			<key>hash2</key>
-			<data>
-			WOvH8vEwCDK33IgqmAMtwGD2oBLPvbYE5JuNZhqhr6o=
+			qC1+YB/ExSDr1abmTtdbbhkpdcypcVN70FBiTKufEHU=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/Headers/EOApplicationHelper.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			iKaO2RnzrDwXTxZ02C71Gd2CXKQ=
+			HkqCkqXLzXTegazRcGeqgKfsNgg=
 			</data>
 			<key>hash2</key>
 			<data>
-			xVHdW3EWdC3bos367A1NSnU7d7DeHr/CVnQScfzt29c=
+			SG2LtjfSrlMJE1s4zBYpZqxvAfujEClWefte1ratNfA=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/Headers/EOCore.h</key>
@@ -373,11 +313,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			YHg4UOE4RibMl+cjDedg3tzkj6I=
+			x8yedwWW3qEpdKjx3wrNnS8hVMM=
 			</data>
 			<key>hash2</key>
 			<data>
-			lOsfkSOuY7R3S3xKrCtrmfRF//BrS3HAhwxDQi+jqiM=
+			IhUj7yjA14X1L55Day5MnV50+qn+k9NBSCEPwQEK1NE=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/Headers/EOReachability.h</key>
@@ -417,11 +357,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OHguMXKygPpZjeoLGhdg38yvN88=
+			s2yBzS7Gw9OVc5eKCPM82j1iK3k=
 			</data>
 			<key>hash2</key>
 			<data>
-			e/psq2u5UE8fwLPolghenerURbO6++hrGV/LQQ4yvoE=
+			hNd4wDGB7u1Db4csmpQ26AZHY/riZav2P2c7Arx1+cg=
 			</data>
 		</dict>
 		<key>ios-arm64_x86_64-simulator/EOCore.framework/Modules/module.modulemap</key>
@@ -450,11 +390,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			aJNgMG0MxU5ZqyHPSoxuUQh4uHU=
+			ZDgW+BduDZDNNkZFX8QZZRtGwN0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ssRbtUI95bxMft51rvwLaVUtVyvnVZBmnyx7p48wvX0=
+			O50pV6fKGrm/ybT1tH5T2FhfL0EglLkvruODQYSo7q4=
 			</data>
 		</dict>
 	</dict>
