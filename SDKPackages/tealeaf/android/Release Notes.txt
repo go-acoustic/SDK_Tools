@@ -8,6 +8,33 @@
 # prohibited.
 ###############################################################################################
 
+September 27 2024 EOCore Module 2.1.5
+
+EOCore Release
+Bug Fixes
+
+- None.
+
+
+Improvements
+
+- In maven central, libraries moved from namespace acoustic-analytics to go-acoustic.
+
+
+Our environment for this release:
+
+- MacOS 15.0
+- Android Studio Koala | 2024.1.1, Android 13 or API 34
+- minimal API 21
+
+
+Known Issues
+
+- None.
+
+
+
+
 September 27 2024 Tealeaf Module 10.4.6
 
 Tealeaf Release
