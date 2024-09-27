@@ -1,0 +1,74 @@
+{
+  "AutoLayout": {
+    "GlobalScreenSettings": {
+      "ScreenChange": true,
+      "DisplayName": "",
+      "CaptureLayoutDelay": 500,
+      "ScreenShot": true,
+      "NumberOfWebViews": 0,
+      "CaptureUserEvents": true,
+      "CaptureScreenVisits": true,
+      "CaptureLayoutOn": 2,
+      "CaptureScreenshotOn": 2,
+      "Masking": {
+        "HasMasking": true,
+        "HasCustomMask": true,
+        "Sensitive": {
+          "capitalCaseAlphabet": "X",
+          "number": "9",
+          "smallCaseAlphabet": "x",
+          "symbol": "#"
+        },
+        "MaskIdList": [
+          "textView1",
+          "login.password"
+        ],
+        "MaskValueList": [
+          "^3[47][0-9]{13}$",
+          "^4[0-9]{12}(?:[0-9]{3})?$"
+        ],
+        "MaskAccessibilityIdList": [
+          "accessibility description",
+          "myAccessId"
+        ],
+        "MaskAccessibilityLabelList": [
+          "label"
+        ]
+      }
+    },
+    "MainActivity": {
+      "ScreenChange": true,
+      "DisplayName": "Home",
+      "CaptureLayoutOn": 2,
+      "Masking": {
+        "HasMasking": true,
+        "HasCustomMask": true,
+        "Sensitive": {
+          "capitalCaseAlphabet": "X",
+          "number": "9",
+          "smallCaseAlphabet": "x",
+          "symbol": "#"
+        },
+        "MaskIdList": [
+          "username"
+        ],
+        "MaskValueList": [
+        ],
+        "MaskAccessibilityIdList": [
+        ],
+        "MaskAccessibilityLabelList": [
+          "Masking",
+          "Test Masking"
+        ]
+      }
+    }
+  },
+  "AppendMapIds": {
+    "com.tl.uic.appDarkHoloAuto:id/imageButton": {
+      "mid": "botonDeImagen"
+    },
+    "com.tl.uic.appDarkHoloAuto:id/toggleButton1": {
+      "mid": "toggleButton"
+    }
+  }
+}

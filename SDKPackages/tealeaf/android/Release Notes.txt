@@ -8,6 +8,41 @@
 # prohibited.
 ###############################################################################################
 
+September 27 2024 Tealeaf Module 10.4.6
+
+Tealeaf Release
+Bug Fixes
+
+- None.
+
+
+Improvements
+
+- In maven central, libraries moved from namespace acoustic-analytics to go-acoustic.
+
+
+Our environment for this release:
+
+- MacOS 15.0
+- Android Studio Koala | 2024.1.1, Android 13 or API 34
+- minimal API 21
+
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- On SaaS, replay of the attached Hybrid session does not scrolls to replay the gestures during replay resulting.
+- On Enhanced Replay, change events are not currently captured on Android SDK.
+- On SaaS, on Layout capture we are missing toggle control during session replay.
+- Tap Hold sometimes produces a type 11 gesture on Linear Layout.
+  Also Enhanced mobile replay for tap event might show Y-coordinate incorrectly.
+- Click event on the viewGroup on the android application does not highlight on both On-Prem and SaaS.
+- Popup Dialog might show transparent background color on replay page.
+- ClickEventEnabled might not work on RecyclerViews in popup dialog.
+- Last tap event might appear on the next screen sometimes on replay.
+
+
+
 September 27 2024 EOCore Module 2.1.5
 
 EOCore Release
