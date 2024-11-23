@@ -8,6 +8,40 @@
 # prohibited.
 ###############################################################################################
 
+November 23 2024 EOCore Module 2.3.289
+
+EOCore Release
+Bug Fixes:
+
+- None
+
+
+Improvements:
+
+- When flush is executed in EOCore, it will display if payload is not empty.
+
+
+Our environment for this release:
+
+- Xcode 16.0
+- MacOS 15.0
+- iOS 13.x to 18.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
+
 September 26 2024 Tealeaf Module 10.6.298
 
 Tealeaf Release
