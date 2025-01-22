@@ -1,5 +1,5 @@
 ###############################################################################################
-# Copyright (C) 2024 Acoustic, L.P. All rights reserved.
+# Copyright (C) 2025 Acoustic, L.P. All rights reserved.
 # 
 # NOTICE: This file contains material that is confidential and proprietary to
 # Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -7,6 +7,40 @@
 # Acoustic, L.P. Any unauthorized copying or distribution of content from this file is
 # prohibited.
 ###############################################################################################
+
+January 22 2025 EOCore Module 2.3.307
+
+EOCore Release
+Bug Fixes:
+
+- Fix issue with xcframework signature to fix issue with validation.
+- Fix issue with Swift Package checksum.
+
+
+Improvements:
+
+- None.
+
+
+Our environment for this release:
+
+- Xcode 16.0
+- MacOS 15.0
+- iOS 13.x to 18.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
 
 November 23 2024 EOCore Module 2.3.289
 
