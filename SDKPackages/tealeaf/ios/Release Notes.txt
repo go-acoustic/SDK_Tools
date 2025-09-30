@@ -8,6 +8,40 @@
 # prohibited.
 ###############################################################################################
 
+September 30 2025 EOCore Module 2.3.323
+
+EOCore Release
+Bug Fixes:
+
+- None.
+
+
+Improvements:
+
+- Adjust ios library to support react native for npm plugin.
+- Adjust ios library to new minimal of 15.1.
+
+
+Our environment for this release:
+
+- Xcode 26.0.1
+- MacOS 15.6.1
+- iOS 15.1 to 26.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
+
 January 22 2025 Tealeaf Module 10.6.317
 
 Tealeaf Release
