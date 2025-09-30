@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2015 Acoustic, L.P. All rights reserved.
+// Copyright (C) 2025 Acoustic, L.P. All rights reserved.
 //
 // NOTICE: This file contains material that is confidential and proprietary to
 // Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -11,11 +11,7 @@
 #import <EOCore/EOCore.h>
 
 //TODO: Move this to EOCORE ???
-#if TEALEAF_USE_REACT
-#import <TealeafReactNative/TLFPublicDefinitions.h>
-#else
 #import <Tealeaf/TLFPublicDefinitions.h>
-#endif
 
 @interface TLFMessage : EOMessage
 

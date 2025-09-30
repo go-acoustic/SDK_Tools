@@ -1,5 +1,5 @@
 //
-// Copyright (C) 2024 Acoustic, L.P. All rights reserved.
+// Copyright (C) 2025 Acoustic, L.P. All rights reserved.
 //
 // NOTICE: This file contains material that is confidential and proprietary to
 // Acoustic, L.P. and/or other developers. No license is granted under any intellectual or
@@ -16,13 +16,8 @@
 
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
-#if TEALEAF_USE_REACT
-#import <TealeafReactNative/TLFPublicDefinitions.h>
-#import <TealeafReactNative/TLFMessage.h>
-#else
 #import <Tealeaf/TLFPublicDefinitions.h>
 #import <Tealeaf/TLFMessage.h>
-#endif
 
 /*!
  @class TLFCustomEvent
