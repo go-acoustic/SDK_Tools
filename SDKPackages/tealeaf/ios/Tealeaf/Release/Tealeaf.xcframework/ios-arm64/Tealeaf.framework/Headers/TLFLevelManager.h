@@ -13,7 +13,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "TLFPublicDefinitions.h"
+#import <Tealeaf/TLFPublicDefinitions.h>
 
 @interface TLFLevelManager : NSObject
 +(instancetype)sharedInstance;
