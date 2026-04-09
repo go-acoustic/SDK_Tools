@@ -8,6 +8,37 @@
 # prohibited.
 ###############################################################################################
 
+April 09 2026 EOCore Module 2.3.337
+
+EOCore Release
+Bug Fixes:
+
+- Default to system value for User-Agent header if it is not available
+
+
+Improvements:
+
+- None.
+
+Our environment for this release:
+
+- Xcode 26.0.1
+- MacOS 15.6.1
+- iOS 15.1 to 26.x
+- Supported architectures:
+	- simulator
+		- arm64
+		- x86_64
+	- device
+		- arm64
+
+
+Known Issues
+
+- After iOS 13, library no longer supports iPad because of Apple changes in iPad OS.
+- Dual sim features are in beta. Example information using multiple carriers.
+
+
 January 30 2026 Tealeaf Module 10.6.331
 
 Tealeaf Release
