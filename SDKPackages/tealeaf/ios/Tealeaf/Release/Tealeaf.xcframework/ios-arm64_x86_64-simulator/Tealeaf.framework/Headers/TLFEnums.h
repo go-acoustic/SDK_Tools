@@ -27,6 +27,10 @@ typedef NS_ENUM(NSUInteger, TLFMessageType)
     TLFMessageTypeLocation = 13,
     TLFMessageTypeFormCompletion = 15,
     TLFMessageTypeSignal = 21,
+    TLFMessageTypePushRegistration = 22,
+    TLFMessageTypePushAction = 23,
+    // 24 is reserved for a future push message sub-type and is intentionally unassigned.
+    TLFMessageTypePushReceived = 25,
     TLFMessageTypeJSONString = 99,
     TLFMessageTypeScreenViewPlaceHolder = 100,
     TLFMessageTypeScreenLayoutPlaceHolder = 101,

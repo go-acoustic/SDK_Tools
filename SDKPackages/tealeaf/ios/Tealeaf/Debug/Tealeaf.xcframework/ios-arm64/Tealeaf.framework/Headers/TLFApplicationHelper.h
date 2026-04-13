@@ -119,6 +119,21 @@
 - (BOOL)isTLFEnabled;
 
 /**
+ Returns a BOOL value indicating if the Tealeaf Framework is both enabled and
+ ready to log messages.
+
+ This is a stronger check than isTLFEnabled. The framework sets isEnabled = YES
+ before the asynchronous kill-switch check completes. Calling
+ TLFSessionManager.getCurrentSessionId() in that window creates a spurious
+ session whose ID does not match the one created by startNewSession(). This
+ method additionally checks hasKillSwitchCompleted, which is only set to YES
+ inside startTealeafLibrary — after startNewSession() has run — guaranteeing
+ a valid session ID exists before any message is logged.
+ @return YES if the framework is enabled and a valid session ID exists.
+ */
+- (BOOL)isReadyForLogging;
+
+/**
  Returns a string variable which represents the Tealeaf Framework version.
  @return The string representation of the Tealeaf Framework version.
  */
