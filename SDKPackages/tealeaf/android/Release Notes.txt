@@ -8,6 +8,41 @@
 # prohibited.
 ###############################################################################################
 
+April 15 2026 Tealeaf Module 10.4.23
+
+Tealeaf Release
+Bug Fixes
+
+- None.
+
+
+Improvements
+
+- Update push signals.
+
+
+Our environment for this release:
+
+- MacOS 26.1.
+- Android Studio Otter | 2025.2.1 Patch 1
+- minimal API 21 to 36.x
+
+
+Known Issues
+
+- Dual sim features are in beta. Example information using multiple carriers.
+- On SaaS, replay of the attached Hybrid session does not scrolls to replay the gestures during replay resulting.
+- On Enhanced Replay, change events are not currently captured on Android SDK.
+- On SaaS, on Layout capture we are missing toggle control during session replay.
+- Tap Hold sometimes produces a type 11 gesture on Linear Layout.
+  Also Enhanced mobile replay for tap event might show Y-coordinate incorrectly.
+- Click event on the viewGroup on the android application does not highlight on both On-Prem and SaaS.
+- Popup Dialog might show transparent background color on replay page.
+- ClickEventEnabled might not work on RecyclerViews in popup dialog.
+- Last tap event might appear on the next screen sometimes on replay.
+
+
+
 April 14 2026 Tealeaf Module 10.4.21
 
 Tealeaf Release
